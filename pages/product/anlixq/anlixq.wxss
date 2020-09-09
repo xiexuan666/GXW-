@@ -1,0 +1,179 @@
+/* pages/product/anlixq/anlixq.wxss  */
+page {
+  background-color: #ffffff;
+}
+
+.titleimg {
+  width: 100%;
+}
+
+.titleimg image {
+  width: 100%;
+}
+
+.anlixq {
+  width: 100%;
+  flex-flow: row;
+
+  /* width: 90%; */
+}
+
+
+.anlixq-nr {
+  width: 684rpx;
+  /* width: 556rpx; */
+  margin: 0 auto;
+  border-bottom: 2rpx solid #E6E6E6;
+  padding-bottom: 25rpx;
+}
+
+.anlixq-nr-p1 {
+   width: 100%;
+  color: #595757;
+  padding-left: 0rpx;
+  font-size: 30rpx;
+  font-weight: 100;
+  padding-top: 13rpx;
+  padding-bottom: 15rpx;
+  font-family: Noto Sans SC;
+
+}
+
+.anlixq-nr-b {
+  width: 100%;
+  height: 45rpx;
+  /* margin-top: -20rpx; */
+}
+
+.anlixq-nr-bp {
+  width: 185rpx;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+}
+
+.anlixq-nr-bp image {
+  float: left;
+  width: 27rpx;
+  height: 27rpx;
+  margin-top: 8rpx;
+}
+
+.anlixq-nr-bp .bp2 {
+  margin-left: 4rpx;
+}
+
+.anlixq-nr-bp .bp3 {
+  width: 20rpx;
+  height: 30rpx;
+  margin-top: 7rpx;
+}
+
+.anlixq-nr-bpl {
+
+  color: #595757;
+  padding-left: 6rpx;
+  font-size: 28rpx;
+  font-weight: 300;
+  text-align: center;
+  float: left;
+  line-height: 40rpx;
+}
+
+.zhong {
+  display: inline-block;
+
+}
+
+.anlixq-nr-bp3 {
+  text-align: right;
+}
+
+.yitu {
+  width: 700rpx;
+  margin: 0 auto;
+  margin-top: 105rpx;
+}
+
+.yitu-img {
+  width: 100%;
+  margin-bottom: 15rpx;
+}
+
+.yitu-img image {
+  width: 100%;
+}
+
+.padding-r {
+  padding-right: 11rpx;
+}
+
+.btnbox {
+  border-right: solid #ACC0D8 1px;
+  width: 80rpx;
+  height: 85rpx;
+  position: relative;
+  overflow: hidden;
+  background: #00a345;
+  color: #fff;
+  font-size: 33rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 625rpx;
+  margin-top: -83rpx;
+  padding: 1 10rpx;
+}
+
+.btnbox .btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 9;
+  /* margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  opacity: 0; */
+}
+
+.btnbox .consume {
+  display: block;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.btnbox_hover {
+  background: #e6a301
+}
+
+.xian {
+  margin-left: 605rpx;
+  border-right: 4rpx solid #888b90;
+  height: 85rpx;
+  width: 1rpx;
+}
+
+.quanbu {
+  text-align: right;
+  margin-top: -123rpx;
+  position: relative;
+  align-items: center
+}
+.type{
+  width: 84% !important;
+  color: #e6a301;
+}
+.linqi {
+  width: 85%;
+  color: #595757;
+  padding-left: 0rpx;
+  font-size: 30rpx;
+  font-weight: 100;
+  padding-top: 13rpx;
+  padding-bottom: 15rpx;
+  font-family: Noto Sans SC;}

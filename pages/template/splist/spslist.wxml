@@ -1,0 +1,33 @@
+<!--pages/template/splist/spslist.wxml-->
+<!-- 多个视频播放 -->
+<template name="videolist">
+	<view class="videolist-nr" data-wz="视频模板changy">
+		<block wx:for="{{videolist}}" wx:key="index">
+			<view class="splistbeijs">
+				<view class="videolist-nrli" style="height:{{attr.h?attr.h:'auto'}}rpx;width:{{attr.w?attr.w:'auto'}}rpx">
+					<view class="videolist-fenm" catchtap="tzxlcp" data-ind="{{index}}" wx:if="{{index!=attr.playind}}">
+						<!-- <image class="bofpaly"  bindtap="spplay" lazy-load="{{true}}" data-ind="{{index}}" src='/images/tubiao/play.png'></image> -->
+						<image class="videolist-fenmim" src='{{item.series_photo}}' lazy-load="{{true}}" style="height:{{attr.h?attr.h:'auto'}}rpx;width:{{attr.w?attr.w:'auto'}}rpx"></image>
+					</view>
+
+					<view class="videolist-sp">
+						<video id="{{'myVideolist'+index}}" bindpause="ztpause" data-ind="{{index}}" bindplay='ztplay' class="videos" src="{{item.series_video}}" enable-play-gesture binderror="videoErrorCallback" vslide-gesture="{{false}}" show-center-play-btn="{{false}}" custom-cache="{{false}}" autoplay="{{attr.autoplay?attr.autoplay:false}}" loop="{{attr.loop?attr.loop:'false'}}" style="height:{{attr.h?attr.h:'auto'}}rpx;width:{{attr.w?attr.w:'auto'}}rpx" controls="center" >
+						</video>
+					</view>
+				</view>
+				<view class="xiliesplistnr" catchtap="tzxlcp" data-ind="{{index}}">
+					<view class="xiliesplistnr-nr">
+						<view class="xilienr-nrl">
+							<view class="xilienr-nrlp1">{{item.name}}</view>
+							<view class="xilienr-nrlp2">{{item.series_synopsis}}</view>
+						</view>
+						<view class="xilienr-nrrplay" catchtap="spplay" data-ind="{{index}}" wx:if="{{shenhestatus}}">
+							<image wx:if="{{attr.playind!=index}}" lazy-load="{{true}}" data-ind="{{index}}" class="xilienr-nrrplay1 " src="/images/tubiao/splist1.png"></image>
+							<image wx:if="{{attr.playind==index}}" lazy-load="{{true}}" data-ind="{{index}}" class="xilienr-nrrplay1 " src="/images/tubiao/splist2.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</template>

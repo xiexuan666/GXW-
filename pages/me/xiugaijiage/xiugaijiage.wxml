@@ -1,0 +1,60 @@
+<!--pages/me/xiugaijiage/xiugaijiage.wxml-->
+<!-- 选择案例 -->
+<view class="xuanz">
+	<view class="xuanz-nr">
+		<block wx:for="{{xiugnr}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="xuanz-nr-ul">
+				<view class="xuanz-nr-title">{{item.name}}</view>
+				<view class="xuanz-nr-scroll">
+					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
+						<view class="xuanz-nr-li" >
+							<block wx:for="{{item.list}}" wx:for-index="indexs" wx:for-item="items" wx:key="indexs">
+								<view class="xuanz-nr-li-p   {{items.id==item.xuanz?'xp-active':''}}"  data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{indexs}}" data-ids="{{item.id}}"  data-idc="{{items.id}}">
+									{{items.name}}
+									<view class="xuanz-nr-lix">x</view>
+								</view>
+
+							</block>
+						</view>
+					</scroll-view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+<!-- 选择end -->
+
+
+<!-- 修改的内容 -->
+
+<view class="cpxqgus-nrb">
+	<view class="cpxqgus-nrb-h4">
+		{{cpname}}
+	</view>
+	<view class="cpxqgus-nrbul">
+		<block wx:for="{{product_guige}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
+			<view class="cpxqgus-nrbli">
+				<view class="cpxqgus-nrblit">
+					<view class="cpxqgus-nrblitl">
+						<view class="cpxqgus-nrblitlp1">规格{{item.guig}}</view>
+						<view class="cpxqgus-nrblitlp2">型号{{item.xinh}}</view>
+					</view>
+					<view class="cpxqgus-nrblitr">
+						<view class="cpxqgus-nrblitrp2">元/片</view>
+						<view class="cpxqgus-nrblitrp1"><input class="inp"  bindinput="fanbianh" data-ind="{{index}}" value="{{item.jiage}}"></input></view>
+					</view>
+				</view>
+				<view class="cpxli-tu" bindtap="dakerw" data-img="{{item}}">
+					<image mode="widthFix" src="{{item.url}}"></image>
+				</view>
+			</view>
+		</block> 
+	
+
+	</view>
+</view>
+
+<!-- 保存 -->
+<view class="adddel">
+ <view class="adddelr adddelgt" bindtap="baocjiage">保存</view> 
+</view>

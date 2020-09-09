@@ -1,0 +1,213 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.2",
+	"appid": "wxe049bcffef9a81dc",
+	"projectname": "gxwslyk",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/souye/souye",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品案例",
+					"pathName": "pages/product/product",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品系列详情",
+					"pathName": "pages/product/cp/xlcp",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商家",
+					"pathName": "pages/jinxs/jinxs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "管理",
+					"pathName": "pages/me/guanli/guanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申请",
+					"pathName": "pages/me/ruzhu/ruzhu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pdf课件",
+					"pathName": "pages/me/guanli/kejian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "案例详情",
+					"pathName": "pages/product/anlixq/anlixq",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品详情",
+					"pathName": "pages/product/cp/cpxq",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "当地案例管理",
+					"pathName": "pages/me/shangcanli/guanlianli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "当地案例删除",
+					"pathName": "pages/me/shangcanli/anlishanc",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加案例",
+					"pathName": "pages/me/shangcanli/xingzeng",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "修改价格",
+					"pathName": "pages/me/xiugaijiage/xiugaijiage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/product/sousuo",
+					"pathName": "pages/product/sousuo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/me/shouc/shouc",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品搜索",
+					"pathName": "pages/product/sousuo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索案例",
+					"pathName": "pages/product/sousuo2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "直播",
+					"pathName": "pages/me/zb/zb",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/me/pyquan/pyquan",
+					"pathName": "pages/me/pyquan/pyquan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商家入驻",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,30 @@
+/* pages/me/guanli/kejian.wxss */
+page{
+  background-color: #F7F7F7;
+}
+.pdflist{
+  width: 100%;
+  margin-top: 25rpx;
+}
+.pdflist-ul{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.pdflist-li{
+  margin-bottom: 40rpx;
+}
+.pdflist-li-img{
+  width: 700rpx;
+ 
+}
+.pdflist-li-img image{
+  width: 100%;
+  
+}
+.pdflist-li-p{
+  font-size: 31rpx;
+  font-weight: 500;
+  color: #595757;
+  
+
+}

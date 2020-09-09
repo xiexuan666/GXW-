@@ -1,0 +1,54 @@
+<!--pages/product/anlixq/anlixq.wxml-->
+<!--  -->
+<view class="titleimg">
+	<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{anlixiaq.zhuye}}"></image>
+</view>
+
+
+<view class="anlixq">
+	<view class="anlixq-nr">
+		<view class="anlixq-nr-p1" wx:if='{{!anlixiaq.vr_address}}'>{{anlixiaq.name}}</view>
+		<view class="linqi" wx:else >{{anlixiaq.name}}</view>
+
+		<view class="line-left"></view>
+
+		<view class="anlixq-nr-b">
+			<view class="anlixq-nr-bp">
+				<image class="bp1" src="/images/tubiao/anl1.png"></image>
+				<view class="anlixq-nr-bpl">户型{{anlixiaq.huxing}}</view>
+			</view>
+			<view class="anlixq-nr-bp">
+				<view class="zhong">
+					<image class="bp2" src="/images/tubiao/anl2.png"></image>
+					<view class="anlixq-nr-bpl">面积{{anlixiaq.mianji}}m²</view>
+				</view>
+			</view>
+			<view class="anlixq-nr-bp anlixq-nr-bp3">
+				<view class="zhong">
+					<image class="bp3" src="/images/tubiao/anl3.png"></image>
+					<view class="anlixq-nr-bpl padding-r">城市{{anlixiaq.chengshi}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 全景VR -->
+	<view class="quanbu" wx:if='{{anlixiaq.vr_address}}'  >
+		<view class="xian"></view>
+		<view class="btnbox">
+			<button class="btn" bindtap="handlequan"></button>
+			<view class="consume">全景VR </view>
+		</view>
+	</view>
+
+</view>
+
+
+
+<view class="yitu">
+	<block wx:for="{{anlixiaq.images}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+		<view class="yitu-img" bindtap="dakerw" data-img="{{item.url}}">
+			<image mode="widthFix" src="{{item.url}}"></image>
+		</view>
+	</block>
+
+</view>

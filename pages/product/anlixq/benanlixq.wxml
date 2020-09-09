@@ -1,0 +1,5 @@
+<!--pages/product/anlixq/benanlixq.wxml-->
+<block wx:for="{{images}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
+<view class="titleimg"> <image mode="widthFix" src="{{item.url}}"></image></view>
+</block>  
+

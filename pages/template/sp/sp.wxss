@@ -1,0 +1,57 @@
+/* pages/template/sp/sp.wxss */
+/* 视频列表 */
+.videolist-nr{
+  width: 100%;
+}
+.videolist-nrli{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 22rpx;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+
+.videolist-fenm{
+  position: absolute;
+  top:0 rpx;
+  left: 0 rpx;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 24rpx;
+  overflow: hidden;
+  font-size: 0rpx;
+  line-height: 0rpx;
+
+}
+.videolist-fenm .bofpaly{
+  position: absolute;
+  width: 130rpx;
+  height: 91rpx;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  
+}
+.videolist-fenm .videolist-fenmim{
+  width: 100%;
+  height: 100%;
+  font-size: 0rpx;
+  line-height:0rpx;
+}
+.videolist-sp{
+  width: 100%;
+  font-size: 0rpx;
+  line-height: 0rpx;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.videos{
+  font-size: 0rpx;
+  top: 0rpx;
+  border-radius: 24rpx;
+}
+/* 视频列表end */

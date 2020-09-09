@@ -1,0 +1,11 @@
+/* pages/me/shenhezt/shenhezt.wxss */
+.ps{
+  width: 80%;
+  padding-top: 240rpx;
+  margin:0 auto ;
+}
+.shan{
+  padding-top: 40px;
+  width: 60%;
+  margin: 0 auto;
+}

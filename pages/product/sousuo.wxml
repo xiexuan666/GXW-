@@ -1,0 +1,33 @@
+<!--pages/product/sousuo.wxml-->
+<view class="sous">
+  <view class="sous-nr"> 
+    <view class="sous-nr-l">
+      <input class="int" value="{{zhi}}" bindinput='cpsous'  placeholder="雪花白"></input>
+    </view>
+    <view class="sous-nr-r" bindtap="sousjier">搜索</view>
+  </view>
+</view>
+
+<!-- 产品 -->
+<view class="cpbottom-nr" >
+  <view class="cpbottom-nrul">
+    <block wx:for="{{cp}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
+      <view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}">
+        <view class="cpbottom-img"><image mode="aspectFit" lazy-load="{{true}}" src="{{item.product_url}}"></image></view>
+        <view class="cpbottom-bot">
+          <view class="cpbottom-botp">{{item.name}}</view>
+          <view class="shouc" catchtap="sccp" data-ind="{{index}}">
+            <view class="shouc-p">收藏</view>
+            <view class="img">
+              <image wx:if="{{!item.sczt}}" src="/images/tubiao/me1.png"></image>
+              <image wx:if="{{item.sczt}}" src="/images/tubiao/sc1.png"></image>
+            </view>
+            
+            
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+

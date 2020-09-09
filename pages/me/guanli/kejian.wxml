@@ -1,0 +1,12 @@
+<!--pages/me/guanli/kejian.wxml-->
+<view class="pdflist">
+  <view class="pdflist-ul">
+    <block wx:for="{{pdflist}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
+      <view class="pdflist-li" bindtap="pdf"  data-name="{{item.name}}" data-url="{{item.material_url}}">
+        <view class="pdflist-li-img"><image src="{{item.images_url}}"></image></view>
+        <view class="pdflist-li-p">{{item.name}}</view>
+        <view class="pdflist-li-p">{{item.synopsis}}</view>
+      </view>
+    </block>
+  </view>
+</view>

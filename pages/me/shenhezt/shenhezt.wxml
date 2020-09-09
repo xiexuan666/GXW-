@@ -1,0 +1,5 @@
+<!--pages/me/shenhezt/shenhezt.wxml-->
+<view class="ps">{{sjzt.message}}</view>
+
+<view class="shan" wx:if="{{sjzt.status==3}}"><button type="primary" bindtap="tzsh">重新提交申请</button></view>
+

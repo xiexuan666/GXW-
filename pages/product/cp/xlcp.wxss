@@ -1,0 +1,129 @@
+/* pages/product/cp/xlcp.wxss */
+
+/* 产品 */
+
+.guigbiet{
+  width: 700rpx;
+  margin: 0 auto;
+  font-size: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 8rpx;
+}
+
+.cpbottom-nr{
+  margin-top: 25rpx;
+  margin-bottom: 40rpx;
+
+}
+.cpbottom-nrul{
+  padding-top: 10rpx;
+  width: 700rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 20rpx;
+}
+.cpbottom-nrli{
+  float: left;
+  width: 337rpx;
+  overflow: hidden;
+  margin-bottom: 50rpx;
+  
+}
+
+.cpbottom-nrli.zuo{
+  margin-right: 25rpx;
+}
+.cpbottom-img{
+  width: 333rpx;
+  height: 333rpx;
+  border: 1rpx #f4f4f6 solid;
+}
+.cpbottom-img image{
+ width: 100%;
+ height: 100%;
+ transform: rotateZ(90deg);
+}
+.cpbottom-bot{
+  width: 100%;
+  margin-top: 10rpx;
+  position: relative;
+  height: 40rpx;
+}
+.cpbottom-botp{
+  font-size: 28rpx;
+  font-weight: 100;
+  line-height: 40rpx;
+}
+
+.shouc{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  /* width: 100rpx; */
+  /* height: 60rpx; */
+}
+.shouc .img{
+  float: right;
+  height: 100%;
+  width: 26rpx;
+  height: 26rpx;
+  padding-top: 7rpx;
+}
+.shouc .img image{
+  
+  width: 26rpx;
+  height: 26rpx;
+  line-height: 0rpx;
+  margin:0rpx;
+  display:block;
+
+}
+.shouc-p{
+  height: 100%;
+  float: right;
+  padding-left: 4rpx;
+  padding-right: 6rpx;
+  font-size: 24rpx;
+  font-weight: 100;
+  line-height: 40rpx;
+}
+/* 产品end */
+
+.xilistzhut{
+  margin-top: 25rpx;
+}
+.xiliezt-nr{
+  width: 700rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.xilie-img{
+  width: 100%;
+}
+.xilie-img image{
+  width: 100%;
+  border-radius: 20rpx;
+}
+.xilie-title{
+  margin: 0 auto;
+  margin-top: 25rpx;
+  margin-bottom: 17rpx;
+  width:695rpx;
+}
+.xili-title-p{
+  font-size: 36rpx;
+  font-weight: 500;
+  text-align: center;
+}
+.xili-title-p2{
+  font-size: 20rpx;
+  font-weight: 100;
+  line-height: 40rpx;
+  text-align: center;
+}
+.xili-title-ps{
+  font-size: 32rpx;
+  font-weight: 500;
+  display: inline-block;
+}

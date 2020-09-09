@@ -1,0 +1,27 @@
+<!--pages/product/sousuo2.wxml-->
+<view class="sous">
+  <view class="sous-nr"> 
+    <view class="sous-nr-l">
+      <input class="int" value="{{zhi}}" bindinput="ansous" placeholder=""></input>
+    </view>
+    <view class="sous-nr-r" bindtap="anlijier">搜索</view>
+  </view>
+</view>
+
+<!-- 案例 -->
+<view class="anlilist" >
+  <view class="anlilist-ul">
+    <block wx:for="{{annrshuz}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
+      <view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
+        <view class="anlilist-liimg"><image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image></view>
+        <view class="anlilist-lib">
+          <view class="anlilist-libp1 font-loadeds">{{item.name}}</view>
+          <view class="anlilist-libp2">{{item.shuxing}}</view>
+        </view>
+      </view>
+    </block>
+  
+
+
+  </view>
+</view>

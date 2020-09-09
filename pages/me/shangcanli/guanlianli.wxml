@@ -1,0 +1,27 @@
+<!--pages/me/shangcanli/guanlianli.wxml-->
+<view class="guananli-t">
+  <view class="guananli-tp">管理</view>
+</view> 
+ 
+<view class="anlilist" >
+  <view class="anlilist-ul">
+    <block wx:for="{{caselist}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
+      <view class="anlilist-li "  bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}" data-store="{{item.store_id}}">
+        <view class="anlilist-liimg"><image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image></view>
+        <view class="anlilist-lib">
+          <view class="anlilist-libp1 font-loadeds">{{item.name}}</view>
+          <view class="anlilist-libp0 " wx:if="{{item.status==0}}">审核中</view>
+          <view class="anlilist-libp0 " wx:if="{{item.status==1}}">审核通过</view>
+          <view class="anlilist-libp0 " wx:if="{{item.status==2}}">审核不通过：{{item.message}}</view>
+        </view>
+      </view>
+    </block>
+     
+  </view>
+</view>
+
+<!-- 新增删除 -->
+<view class="adddel">
+ <view class="adddell adddelgt" bindtap="anlixingzeng">新增</view> 
+ <view class="adddelr adddelgt" bindtap="anlisc">删除</view> 
+</view>

@@ -1,0 +1,107 @@
+<!--pages/jinxs/jinxs.wxml-->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="/images/tubiao/bei.jpg"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="{{bendijxs.logo}}"></image>
+			</view>
+			<view class="name-p">{{bendijxs.store_name}}</view>
+		</view>
+	</view>
+</view>
+
+<!-- 经销商内容 -->
+<view class="jxsnr">
+	<view class="jxsnr-ul">
+		<view class="jxsnr-li  ">
+			<view class="jxsnr-li-l  jxsnr-li-lsa">
+				<view class="jxsnr-tubiao tu1">
+					<image mode="heightFix" src="/images/tubiao/dt1.png"></image>
+				</view>
+				<view class="jxsnr-li-lp">营业时间：</view>
+			</view>
+			<view class="jxsnr-li-r">{{bendijxs.open_time}}</view>
+		</view>
+		<!-- 地址 -->
+		<view class="jxsnr-li">
+			<view class="jxsnr-li-l jxsnr-li-ls">
+				<view class="jxsnr-tubiao tu2">
+					<image mode="heightFix" src="/images/tubiao/dt2.png"></image>
+				</view>
+				<view class="jxsnr-li-lpp"><text space="emsp">地  址：</text></view>
+			</view>
+			<!-- {{bendijxs.address}} -->
+			<view class="jxsnr-li-r jxsnr-li-r3">
+				<view class="jxsnr-li-rp">{{bendijxs.address}}</view>
+			</view>
+			<view class="dhxuanf dhxuanfs">
+				<!-- <view class="dhxuanf-nr  dhxuanf-nrs" bindtap="daohan">
+					<view class="dhxuanf-nrp dhxuanf-nrps">一键导航</view>
+				</view> -->
+				<view class="dh-list" bindtap="daohan">
+					<image mode="heightFix" src="/images/peztup/dt.jpg" class="imges"></image>
+				</view>
+			</view>
+		</view>
+		<!-- 联系人 -->
+		<view class="jxsnr-li  ">
+			<view class="jxsnr-li-l jxsnr-li-lsb">
+				<view class="jxsnr-tubiao tu3">
+					<image mode="heightFix" src="/images/tubiao/dt3.png"></image>
+				</view>
+				<view class="jxsnr-li-lp"><text space="ensp">联 系 人：</text></view>
+			</view>
+			<view class="jxsnr-li-r">{{bendijxs.shopowner}}</view>
+		</view>
+		<!-- 联系电话 -->
+		<view class="jxsnr-li">
+			<view class="jxsnr-li-l jxsnr-li-lsc">
+				<view class="jxsnr-tubiao tu4">
+					<image mode="heightFix" src="/images/tubiao/dt4.png"></image>
+				</view>
+				<view class="jxsnr-li-lp">联系电话：</view>
+			</view>
+			<!-- <view class="jxsnr-li-r jxsnr-li-r2">{{bendijxs.phone}}</view> -->
+					<view class="jxsnr-li-r jxsnr-li-r2">0757-81545645</view>
+
+			<view class="dhxuanf" bindtap="calling" >
+				<image src="/images/peztup/dh.jpg" mode="heightFix" class="imges-img"></image>
+			</view>
+
+
+
+			<!-- <view class="dhxuanf-nr" bindtap="calling">
+				<view class="dhxuanf-nr-img" >
+					<image src="/images/tubiao/dt6.png"></image>
+				</view>
+				<view class="dhxuanf-nrp">一键呼叫</view>
+			</view> -->
+
+
+		</view>
+
+
+		<!-- <view class="jxsnr-li">
+      <view class="jxsnr-li-l jxsnr-li-l5">
+        <view class="jxsnr-tubiao tu5"><image mode="widthFix" src="/images/tubiao/dt5.png"></image></view>
+         <view class="jxsnr-li-lp jxsnr-li-lp5">联系本地客服</view>
+      </view>
+      <view class="jxsnr-li-r jxsnr-li-rs"><image  show-menu-by-longpress  data-img="{{bendijxs.wxhao}}" src="{{bendijxs.wxhao}}"></image></view>
+    </view> -->
+
+
+	</view>
+</view>
+
+
+<!-- 导航 -->
+<map id="map" longitude="{{dt.longitude}}" latitude="{{dt.latitude}}" scale="{{dt.scale}}" markers="{{dt.markers}}" show-location show-compass style="width: 100%; height: 600rpx;"></map>
+
+
+
+
+
+<view class="tubiaos">角色道提供技术支持</view>

@@ -1,0 +1,161 @@
+<!--pages/product/product.wxml-->
+<!-- 系列视频列表 -->
+<import src="/pages/template/splist/spslist.wxml" />
+<!-- 产品或案例 -->
+<view class="product-cpanli">
+	<view class="cpanli-nr">
+		<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+			产品
+			<view class="cpanli-nr-lid"></view>
+		</view>
+		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+			案例
+			<view class="cpanli-nr-lid"></view>
+		</view>
+	</view>
+	<view class="cpanli-nrb" wx:if='{{cactiv==2}}'>
+		<view class="cpanli-nrbli {{twoactiv==1?'cpanli-nrbli-activ':''}} " data-ind="{{1}}" bindtap="anlixuanz">全国案例</view>
+		<view class="cpanli-nrbli {{twoactiv==2?'cpanli-nrbli-activ':''}} " data-ind="{{2}}" bindtap="anlixuanz">本地案例</view>
+	</view>
+</view>
+
+<!-- 搜索产品 -->
+<view class="sous" wx:if='{{cactiv==1}}'>
+	<view class="sous-nr" bindtap="tzsous">
+		<image src="/images/tubiao/sous.png"></image>
+		<input disabled="{{true}}" placeholder="大家都在搜：进口岩板"></input>
+	</view>
+</view>
+
+<view class="sous" wx:if='{{cactiv==2&&twoactiv==1}}'>
+	<view class="sous-nr" bindtap="tzsous2">
+		<image src="/images/tubiao/sous.png"></image>
+		<input disabled="{{true}}" placeholder="大家都在搜：案例"></input>
+
+	</view>
+</view>
+<!-- 搜索产品 -->
+
+
+
+<!-- 选择产品 -->
+<view class="xuanz" wx:if='{{cactiv==1}}'>
+	<view class="xuanz-nr">
+		<block wx:for="{{titlej}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="xuanz-nr-ul">
+				<view class="xuanz-nr-title">{{item.title}}</view>
+				<view class="xuanz-nr-scroll">
+					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
+						<view class="xuanz-nr-li">
+							<block wx:for="{{item.children}}" wx:for-index="indexs" wx:for-item="items" wx:key="index">
+								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="toubxuanz" data-ind="{{index}}" data-idc="{{items.id}}">
+									{{items.title}}
+									<view class="xuanz-nr-lix">x</view>
+								</view>
+							</block>
+						</view>
+					</scroll-view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+<!-- 选择 -->
+
+
+
+<!-- 选择案例 -->
+<view class="xuanz" wx:if='{{cactiv==2&&twoactiv==1}}'>
+	<view class="xuanz-nr">
+		<block wx:for="{{anlishuj}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="xuanz-nr-ul">
+				<view class="xuanz-nr-title">{{item.title}}</view>
+				<view class="xuanz-nr-scroll">
+					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
+						<view class="xuanz-nr-li">
+							<block wx:for="{{item.children}}" wx:for-index="indexs" wx:for-item="items" wx:key="index">
+								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{index}}" data-idc="{{items.id}}">
+									{{items.title}}
+									<view class="xuanz-nr-lix">x</view>
+								</view>
+							</block>
+						</view>
+					</scroll-view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+<!-- 选择end -->
+
+
+<!-- 系列end -->
+
+
+<!-- 视频列表 -->
+<block>
+	<view class="xiliesplist" wx:if="{{!cpxians&&cactiv==1}}">
+		<template is="videolist" data="{{videolist:xilievideolist,attr:attr,shenhestatus:shenhestatus}}" />
+	</view>
+</block>
+
+
+<!-- 产品 -->
+<view class="cpbottom-nr" wx:if="{{cpxians&&cactiv==1}}">
+	<view class="cpbottom-nrul">
+		<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}">
+				<view class="cpbottom-img">
+					<image mode="aspectFit" lazy-load="{{true}}" src="{{item.product_url}}"></image>
+				</view>
+				<view class="cpbottom-bot">
+					<view class="cpbottom-botp">{{item.name}}</view>
+					<view class="shouc" catchtap="sccp" data-ind="{{index}}">
+						<view class="shouc-p">收藏</view>
+						<view class="img">
+							<image wx:if="{{!item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/me1.png"></image>
+							<image wx:if="{{item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/sc1.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+
+<!-- 案例 -->
+<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
+	<view class="anlilist-ul">
+		<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
+				<view class="anlilist-liimg">
+					<image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image>
+				</view>
+				<view class="anlilist-lib">
+					<view class="anlilist-libp1 font-loadeds">{{item.name}}</view>
+					<view class="anlilist-libp2">{{item.shuxing}}</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+
+<!-- 本地案例 -->
+<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==2}}'>
+	<view class="anlilist-ul">
+		<block wx:for="{{bendanlinr}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="anlilist-li" bindtap="bendanlitz" data-ind="{{index}}">
+				<view class="anlilist-liimg">
+					<image mode="widthFix" lazy-load="{{true}}" src="{{item.photo}}"></image>
+				</view>
+				<view class="anlilist-lib anlilist-libs">
+					<view class="anlilist-libp1">{{item.name}}</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+<view class="tubiaos">角色道提供技术支持</view>

@@ -1,0 +1,87 @@
+/* pages/product/anlixq/benanlixq.wxss */
+page{
+  background-color: #ffffff;
+}
+.titleimg{
+  width: 100%;
+}
+.titleimg image{
+  width: 100%;
+}
+
+.anlixq{
+  width: 100%;
+}
+.anlixq-nr{
+  width: 700rpx;
+  margin: 0 auto;
+  border-bottom:2rpx  solid #E6E6E6;
+  padding-bottom: 25rpx;
+}
+.anlixq-nr-p1{
+  color: #595757;
+  padding-left: 0rpx;
+  font-size: 34rpx;
+  font-weight: 100;
+  padding-top: 13rpx;
+  font-family: Noto Sans SC;
+}
+.anlixq-nr-b{
+  width: 100%;
+  height: 40rpx;
+  margin-top: 15rpx;
+}
+.anlixq-nr-bp{
+  width: 233rpx;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+}
+.anlixq-nr-bp image{
+  float: left;
+  width: 27rpx;
+  height: 27rpx;
+  margin-top: 8rpx;
+}
+
+.anlixq-nr-bp .bp2{
+  margin-left: 4rpx;
+}
+.anlixq-nr-bp .bp3{
+  width: 20rpx;
+  height: 30rpx;
+  margin-top: 7rpx;
+}
+.anlixq-nr-bpl{
+  
+  color: #595757;
+  padding-left:6rpx;
+  font-size: 29rpx;
+  font-weight: 300;
+  text-align: center;
+  float: left;
+  line-height: 40rpx;
+}
+.zhong{
+  display: inline-block;
+  
+}
+.anlixq-nr-bp3{
+  text-align: right;
+}
+
+.yitu{
+  width: 700rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.yitu-img{
+  width: 100%;
+  margin-bottom: 15rpx;
+}
+.yitu-img image{
+  width: 100%;
+}
+.padding-r{
+  padding-right: 11rpx;
+}

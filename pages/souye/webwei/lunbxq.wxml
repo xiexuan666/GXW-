@@ -1,0 +1,4 @@
+<!--pages/souye/webwei/lunbxq.wxml-->
+<view class="lubxq">
+  <image mode="widthFix" src="{{url}}"></image>
+</view>

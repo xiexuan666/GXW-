@@ -1,0 +1,19 @@
+/* pages/me/pyquan/pyquan.wxss */
+.pyq-ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 10rpx;
+
+}
+.pyq-li{
+  height: 400rpx;
+  width: 230rpx;
+  margin: 0 10rpx;
+  margin-bottom: 20rpx;
+
+}
+.pyq-li image{
+  width: 100%;
+  height: 100%;
+}

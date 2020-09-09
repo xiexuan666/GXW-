@@ -1,0 +1,40 @@
+<!--pages/me/guanli/guanli.wxml-->
+<!--pages/me/me.wxml-->
+<view class="jinx-t">
+  <view class="jinx-tnr">
+    <view class="jinx-bei"><image src="/images/tubiao/bei.jpg"></image></view>
+    <view class="jinx-toux">
+      <view class="toux-img"><image src="{{sjzts.logo}}"></image></view>
+      <view class="name-p">{{sjzts.store_name}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="glnr">
+  <view class="glul">
+    <view class="glli" bindtap="dhtz" data-ind="0">
+      <view class="glili-img"><image src="/images/tubiao/gl1.png"></image></view>
+      <view class="glili-p">直播间</view>
+    </view>
+    <view class="glli" bindtap="dhtz" data-ind="1">
+      <view class="glili-img" ><image src="/images/tubiao/gl2.png"></image></view>
+      <view class="glili-p">课件</view>
+    </view>
+    <view class="glli" bindtap="dhtz" data-ind="2">
+      <view class="glili-img" ><image src="/images/tubiao/gl3.png"></image></view>
+      <view class="glili-p">产品价格管理</view>
+    </view>
+    <view class="glli" bindtap="dhtz" data-ind="3">
+      <view class="glili-img" ><image src="/images/tubiao/gl4.png"></image></view>
+      <view class="glili-p">当地案例管理</view>
+    </view>
+     <view class="glli" bindtap="dhtz" data-ind="4">
+      <view class="glili-img" ><image src="/images/tubiao/gl4.png"></image></view>
+      <view class="glili-p">修改门店信息</view>
+    </view>
+     <view class="glli" bindtap="dhtz" data-ind="5">
+      <view class="glili-img" ><image src="/images/tubiao/gl2.png"></image></view>
+      <view class="glili-p">朋友圈宣传图</view>
+    </view>
+  </view>
+</view>

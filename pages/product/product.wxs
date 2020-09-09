@@ -1,0 +1,15 @@
+var filter = {
+  IsInArray: function(arr,val) { 
+    // 　for (var i = 0; i < 3; ++i) {
+    //   console.log(i);
+    //   if( i >= 1) break;
+    // }
+    return true;
+   } 
+}
+
+
+ 
+module.exports = {
+  IsInArray: filter.IsInArray
+}

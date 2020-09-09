@@ -1,0 +1,29 @@
+<!--pages/template/loginphone/loginphone.wxml-->
+<template name="login">
+<view class="lzj-index-getinfo-view  {{souq?'':'sq'}}" catchtap="tancxiaos" data-wez="登录模板位置pages/template">
+    <view class="lzj-index-getinfo1-view" catchtap="meiy">
+        <view class="lzj-index-getinfo1-img">
+          <image class="" src="/images/tubiao/bei.jpg"></image>
+        </view>
+        
+        <view class="lzj-index-getinfo-title-view">你好，小程序需要您的授权才能</view>
+        <view class="lzj-index-getinfo-title1-view">更好地为您服务哦</view>
+        <view class="lzj-index-getinfo-tips-view">· 获取您的公开信息(昵称、头像等)</view>
+        <button class="lzj-index-getinfo-btn-view" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    </view>
+</view>
+</template>
+
+<template name="phone">
+<view class="lzj-index-getinfo-view sjhaoma {{sj?'':'sq'}}" catchtap="tancxiaos">
+    <view class="lzj-index-getinfo1-view" catchtap="meiy">
+        <view class="lzj-index-getinfo1-img">
+          <image class="" src="/images/tubiao/bei.jpg"></image>
+        </view>
+        <view class="lzj-index-getinfo-title-view">需要获取你的手机号码</view>
+        <view class="lzj-index-getinfo-title1-view">才能开启会员服务</view>
+        <view class="lzj-index-getinfo-tips-view"> 获取您手机的号码</view>
+        <button class="lzj-index-getinfo-btn-view" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号码</button>
+    </view>
+</view>
+</template>

@@ -1,0 +1,140 @@
+.imgse {
+  width: 100%;
+}
+
+.seach {
+  width: 90%;
+  display: flex;
+  position: absolute;
+  top: 940rpx;
+  left: 45rpx;
+}
+.daoh{
+  width: 100%;
+  margin-top: 115rpx;
+  margin-bottom: 60rpx;
+}
+.daoh-ul{
+  width: 690rpx;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.daoh-li{
+  width: 325rpx;
+  float: left;
+  height: 140rpx;
+  position: relative;
+  overflow: hidden;
+
+}
+.daoh-li-zhong{
+  margin: 0 20rpx;
+}
+.daoh-li image{
+  position: absolute;
+  z-index: 0;
+  width: 333rpx;
+  height: 80rpx;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+
+/* 头部 */
+.toub{
+  width: 100%;
+  padding-bottom: 4rpx;
+}
+.toub-nr{
+  width: 690rpx;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.toub-nrl{
+  float: left;
+  font-size: 28rpx;
+  font-weight: 300;
+  color: #595757;
+ 
+}
+.toub-nrlp1{
+  font-size: 25rpx;
+  font-weight: 300;
+  color: #595757;
+}
+.toub-nrr{
+  float: right;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+.toub-nrlp2 {
+  color: #c69763;
+  padding-top: 60rpx;
+}
+
+/* 产品 */
+.produt{
+  width: 690rpx;
+  margin: 0 auto;
+ 
+}
+.produt-swiper{
+  height: 440rpx;
+}
+.produt-item{
+  width: 100%;
+ 
+}
+.produt-item image{
+  width: 100%;
+  
+}
+.item-img {
+  width: 100%;
+}
+.anli{
+  padding-top: 50rpx;
+}
+.sheng {
+  width: 200rpx;
+  height: 200rpx;
+}
+.tatli {
+  color: #999;
+}
+
+.blue-img {
+  width: 100%;
+  
+}
+.swiper-item {
+  width: 100%;
+}
+.lbswiper {
+  height: 440rpx;
+}
+/* 产品end */
+.wuy{
+  height: 30rpx;
+}
+
+.xian {
+  background-color: #ebdbc1;
+  border-radius: 10rpx;
+ color: #ceaa7c;
+
+}
+.xi {
+  background-color: #d4e4e3;
+  border-radius: 10rpx;
+ margin-left: 20rpx;
+ color: #70c7d8;
+
+}
+.ping {
+  background-color: #d4e4e3;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  color: #70c7d8;
+
+}

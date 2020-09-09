@@ -1,0 +1,25 @@
+<!--pages/template/sp/sp.wxml-->
+<!-- 多个视频播放 -->
+<template name="videolist">
+  <view class="videolist-nr" data-wz="视频模板sp/sp"  wx:if="{{status}}" >
+    <block wx:for="{{videolist}}" wx:key="index" >
+      <view class="videolist-nrli" style="height:{{attr.h?attr.h:'auto'}}rpx;width:{{attr.w?attr.w:'auto'}}rpx">
+        <view class="videolist-fenm"  wx:if="{{index!=attr.playind}}" >
+            <image class="bofpaly"  bindtap="spplay" data-ind="{{index}}" src='/images/tubiao/play.png'></image>
+            <image class="videolist-fenmim"  src='{{item.fm}}'  style="height:{{attr.h?attr.h:'auto'}}rpx;width:{{attr.w?attr.w:'auto'}}rpx"></image>
+        </view>
+        
+        <view class="videolist-sp"   >
+          <video id="{{'myVideolist'+index}}" bindpause="ztpause"  bindplay= 'ztplay'  class="videos"  src="{{item.src}}" enable-play-gesture binderror="videoErrorCallback" vslide-gesture="{{false}}"  
+            show-center-play-btn="{{false}}" 
+            custom-cache="{{false}}"
+            autoplay="{{attr.autoplay?attr.autoplay:false}}"
+            loop="{{attr.loop?attr.loop:'false'}}"
+            style="height:{{attr.h?attr.h:'auto'}}rpx;width:{{attr.w?attr.w:'auto'}}rpx"
+            controls="center" >
+          </video>
+        </view>
+      </view>
+    </block>  
+  </view>    
+</template>

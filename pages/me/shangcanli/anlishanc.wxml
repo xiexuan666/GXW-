@@ -1,0 +1,23 @@
+<!--pages/me/shangcanli/anlishanc.wxml-->
+<!-- <view class="guananli-t">
+  <view class="guananli-tp">管理</view>
+</view>  -->
+
+<view class="anlilist" >
+  <view class="anlilist-ul">
+    <block wx:for="{{caselist}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
+      <view class="anlilist-li  {{item.xuanzt?'anlilist-lis2':'anlilist-lis1'}}"  bindtap="anlishancxuanz" data-ind="{{index}}" data-idt="{{item.id}}" data-store="{{item.store_id}}">
+        <view class="anlilist-liimg"><image mode="aspectFill" src="{{item.photo}}"></image></view>
+        <view class="anlilist-lib">
+          <view class="anlilist-libp1 font-loadeds">{{item.name}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<!-- 新增删除 -->
+<view class="adddel">
+ <view class="adddelr adddelgt" bindtap="shanc">删除</view> 
+</view>
+

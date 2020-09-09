@@ -1,0 +1,37 @@
+<!--pages/me/shouc/shouc.wxml-->
+<!-- 产品或案例 -->
+<view class="product-cpanli">
+  <view class="cpanli-nr">
+    <view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+      产品
+       <view class="cpanli-nr-lid"></view>
+    </view>
+    <!-- <view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+      案例
+      <view class="cpanli-nr-lid"></view>
+    </view> -->
+  </view>
+ 
+</view>
+
+<!-- 产品 -->
+<view class="cpbottom-nr" >
+  <view class="cpbottom-nrul">
+    <block wx:for="{{cp}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
+      <view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}">
+        <view class="cpbottom-img"><image mode="aspectFit" lazy-load="{{true}}" src="{{item.product_url}}"></image></view>
+        <view class="cpbottom-bot">
+          <view class="cpbottom-botp">{{item.name}}</view>
+          <view class="shouc" catchtap="sccp" data-ind="{{index}}">
+            <view class="shouc-p">收藏</view>
+            <view class="img">
+              <image wx:if="{{!item.sczt}}" src="/images/tubiao/me1.png"></image>
+              <image wx:if="{{item.sczt}}" src="/images/tubiao/sc1.png"></image>
+            </view>
+            
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

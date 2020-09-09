@@ -1,0 +1,82 @@
+{
+  "pages": [
+    "pages/souye/souye",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/template/sp/sp",
+    "pages/souye/webwei/weibwei",
+    "pages/product/anlixq/webwei/weibwei",
+    "pages/product/product",
+    "pages/me/me",
+    "pages/jinxs/jinxs",
+    "pages/product/sousuo",
+    "pages/template/splist/spslist",
+    "pages/product/cp/xlcp",
+    "pages/me/guanli/guanli",
+    "pages/me/ruzhu/ruzhu",
+    "pages/me/guanli/kejian",
+    "pages/product/anlixq/anlixq",
+    "pages/product/cp/cpxq",
+    "pages/me/shangcanli/guanlianli",
+    "pages/me/shangcanli/anlishanc",
+    "pages/me/shangcanli/xingzeng",
+    "pages/me/xiugaijiage/xiugaijiage",
+    "pages/souye/webwei/lunbxq",
+    "pages/template/loginphone/loginphone",
+    "pages/me/shenhezt/shenhezt",
+    "pages/me/shouc/shouc",
+    "pages/souye/souye2",
+    "pages/product/sousuo2",
+    "pages/product/anlixq/benanlixq",
+    "pages/me/pyquan/pyquan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "雅奢生活",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序地图的定位"
+    }
+  },
+
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#B18A5E",
+    "backgroundColor": "#ffffff",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath":"pages/souye/souye",
+        "text":"首页",
+        "iconPath":"/images/tubiao/1.png",
+        "selectedIconPath":"/images/tubiao/11.png"
+      
+      },
+      {
+        "pagePath":"pages/product/product",
+        "text":"案例中心",
+        "iconPath":"/images/tubiao/2.png",
+        "selectedIconPath":"/images/tubiao/22.png"
+       
+      },
+      {
+        "pagePath":"pages/jinxs/jinxs",
+        "text":"预约设计",
+        "iconPath":"/images/tubiao/3.png",
+        "selectedIconPath":"/images/tubiao/33.png"
+       
+      },
+      {
+        "pagePath":"pages/me/me",
+        "text":"我的",
+        "iconPath":"/images/tubiao/4.png",
+        "selectedIconPath":"/images/tubiao/44.png"
+       
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

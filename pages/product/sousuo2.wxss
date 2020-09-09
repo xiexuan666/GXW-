@@ -1,0 +1,79 @@
+/* pages/product/sousuo2.wxss */
+.sous{
+  width: 100%;
+  margin-top: 10rpx;
+}
+.sous-nr{
+  overflow: hidden;
+  width: 680rpx;
+  margin: 0 auto;
+  height: 65rpx;
+}
+.sous-nr-l{
+  float: left;
+  width: 590rpx;
+  background-color: #F4F4F6;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.sous-nr-l .int{ 
+  width: 90%;
+  padding-left: 5%;
+  height: 100%;
+  line-height: 65rpx;
+  font-size: 27rpx;
+}
+.sous-nr-r{
+  float: left;
+  height: 100%;
+  font-size: 30rpx;
+  line-height: 65rpx;
+  padding-left: 16rpx;
+  color: #B59570;
+}
+
+/* 案例列表 */
+.anlilist{
+  margin-top: 20rpx;
+}
+.anlilist-ul{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.anlilist-li{
+  width: 100%;
+  margin-bottom: 40rpx;
+  box-shadow: 0 0 15rpx 0rpx #ccc;
+
+}
+.anlilist-liimg{
+  width: 100%;
+  overflow: hidden;
+  height: 440rpx;
+}
+.anlilist-liimg image{
+  width: 100%;
+}
+.anlilist-lib{
+  background-color:#F7F7F7;
+  /* height: 135rpx; */
+  padding-bottom: 10px;
+  
+}
+.anlilist-libs{
+  height: 120rpx;
+}
+.anlilist-libp1{
+  color: #716F6F;
+  padding-left: 24rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+  padding-top: 28rpx;
+}
+.anlilist-libp2{
+  padding-top: 3rpx;
+  color: #716F6F;
+  padding-left: 24rpx;
+  font-size: 24rpx;
+  font-weight: 100;
+}

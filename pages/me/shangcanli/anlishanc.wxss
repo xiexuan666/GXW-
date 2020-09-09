@@ -1,0 +1,120 @@
+/* pages/me/shangcanli/anlishanc.wxss */
+/* 案例列表 */
+.anlilist{
+  margin-top: 20rpx;
+}
+.anlilist-ul{
+  width: 680rpx;
+  margin: 0 auto;
+  margin-bottom: 120rpx;
+}
+.anlilist-li{
+  width: 600rpx;
+  margin-left: 80rpx;
+  margin-bottom: 40rpx;
+  
+}
+.anlilist-liimg{
+  width: 100%;
+  font-size: 0rpx;
+  height: 400rpx;
+ overflow: hidden;
+}
+.anlilist-liimg image{
+  width: 100%;
+  height: 100%;
+  
+}
+.anlilist-lib{
+  /* background-color:#F7F7F7; */
+  
+  
+}
+.anlilist-libp1{
+  color: #716F6F;
+  padding-left: 24rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+  padding-top: 14rpx;
+  padding-bottom: 40rpx;
+}
+.anlilist-libp2{
+  padding-top: 3rpx;
+  color: #716F6F;
+  padding-left: 24rpx;
+  font-size: 24rpx;
+  font-weight: 100;
+}
+
+.guananli-t{
+  width: 680rpx;
+  margin-bottom: 0 auto;
+}
+.guananli-tp{
+  color: #716F6F;
+  text-align: right;
+  font-size: 32rpx;
+  font-weight: 300;
+  margin-top: 30rpx;
+  margin-bottom: 35rpx;
+}
+.anlilist-lis1{
+  width: 625rpx;
+  margin-left: 64rpx;
+  position: relative;
+}
+.anlilist-lis1::after{
+  content: '';
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  border: 2px solid #716F6F;
+  left: -65rpx;
+  top: 40%;
+}
+.anlilist-lis2{
+  width: 625rpx;
+  margin-left: 64rpx;
+  position: relative;
+  box-shadow: 0 0 15rpx 0rpx #ccc;
+}
+.anlilist-lis2::after{
+  content: '';
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  border: 2px solid #716F6F;
+  left: -65rpx;
+  top: 40%;
+  background-color: #716F6F;
+  
+}
+
+/* 悬浮新增 */
+.adddel{
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  height: 100rpx;
+  
+
+}
+.adddelgt{
+  width: 100%;
+  float: left;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  color: #595757;
+  font-weight: 300;
+}
+.adddell{
+  background-color: #FFFFFF;
+}
+.adddelr{
+  
+  background-color: #EEEEEF;
+}

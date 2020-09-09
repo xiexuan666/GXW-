@@ -1,0 +1,73 @@
+/* pages/template/loginphone/loginphone.wxss */
+
+.lzj-index-getinfo-view{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0,0.3);
+  z-index: 9999;
+  display: none;
+ 
+}
+.sjhaoma{
+z-index: 99
+}
+.sq{
+display: block;
+}
+
+.lzj-index-getinfo1-view{
+  text-align:center;
+  height: 686rpx;
+  width: 680rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  border-radius:8rpx; 
+}
+.lzj-index-getinfo1-img{
+ height: 280rpx;
+  width: 608rpx;
+  margin:  0 auto;
+  margin-top: 40rpx;
+  overflow: hidden;
+}
+.lzj-index-getinfo1-img image{
+ width: 100%;
+ height: 100%;
+  
+}
+
+.lzj-index-getinfo-title-view{
+  font-size: 40rpx;
+  font-weight: 500;
+  margin-top: 50rpx;
+}
+.lzj-index-getinfo-title1-view{
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+.lzj-index-getinfo-tips-view{
+  font-size: 28rpx;
+  color: #999999;
+  margin-top: 16rpx;
+  margin-bottom: 60rpx;
+
+}
+
+.lzj-index-getinfo-btn-view{
+  color: white;
+  line-height: 96rpx;
+  height: 96rpx;
+  width: 100%;
+  position:absolute;
+  display: block;
+  bottom:0;
+  left: 0;
+  background-color: #f6ac19;
+}

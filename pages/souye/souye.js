@@ -8,12 +8,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    lunb:[{
-      url:"/images/shouye/11.png"
-    }, {
-      url:"/images/shouye/12.png"
-    }
-  ]
+    lunb:[],
+    lunbs:[]
+  //   lunbs:[{
+  //     url:"/images/shouye/11.png"
+  //   }, {
+  //     url:"/images/shouye/12.png"
+  //   }
+  // ]
   },
   
  //请求轮播
@@ -23,16 +25,58 @@ Page({
     console.log(url);
     http.promisServer(url).then(res=>{
     // tha.setData({lunb:res.data.allbannerList})
-      console.log(res.data.allbannerList)
+      console.log(res.data.allbannerList,'请求轮播图')
     })
     
  },
+  //请求轮播 视频
+  requestlunb:function(){
+    var tha=this
+    var url=baseUrl+'banner/index'
+    http.promisServer(url).then(res=>{
+    tha.setData({lunb:res.data.allbannerList})
+       console.log(res.data.allbannerList,'请求轮播图')
+    })
+    // var url2=baseUrl+'banner/indexVideo'
+    // http.promisServer(url2).then(resc=>{
+    //   console.log(resc)
+    //   var luns=resc.data.indexVideoList[0]
+    //   console.log(luns,999)
+    //   var sp=[{src:luns.link,fm:luns.url}]
+    //   console.log(sp)
+    //   tha.setData({videolist:sp})
+    // })
+  },
+   //请求推荐系列
+   qingqtuijxili:function(){
+    var tha=this
+    var url=baseUrl+'series/tuijianSeriesPage'
+    http.promisServer(url,{brandid:'1'}).then(res=>{
+      tha.setData({xilie:res.data.allseriessLists})
+      console.log(res,'推荐系列')
+    })
+  },
+   //请求推荐案例
+   qingqtuianli:function(){
+    var tha=this
+    var url=baseUrl+'case/tuijianCasePage'
+    http.promisServer(url,{brandid:'2'}).then(res=>{
+      tha.setData({lunbs:res.data.tuijianCaseList})
+      console.log(res,"推荐案例")
+    })
+  },
+    
  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+ //请求轮播
+ this.requestlunb()
+ //推荐系列
+//  this.qingqtuijxili()
+ //推荐案例
+ this.qingqtuianli()
   },
 
   /**

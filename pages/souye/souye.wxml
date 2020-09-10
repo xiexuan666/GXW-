@@ -1,8 +1,18 @@
 <!-- 搜索 -->
-<view class="contion">
-	<image mode="widthFix" src="/images/shouye/14.png" class="imgse"></image>
-	<image mode="widthFix" src="/images/shouye/10.png" class="seach" bindtap="seach"></image>
+<view class="lunb">
+	<swiper class="lbswiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}'>
+		<block wx:for="{{lunb}}" wx:key="index">
+			<swiper-item>
+				<view class="swiper-item lunbimg " data-url="{{item.link}}">
+					<image mode="widthFix" lazy-load="{{true}}" src="{{item.url}}"></image>
+				</view>
+			</swiper-item>
+		</block>
+	</swiper>
 </view>
+<!-- <image mode="widthFix" src="/images/shouye/14.png" class="imgse">{{}}</image> -->
+<image mode="widthFix" src="/images/shouye/10.png" class="seach" bindtap="seach"></image>
+
 
 
 <!-- 导航 -->
@@ -44,26 +54,28 @@
 			</view>
 		</view>
 	</view>
-	<swiper class="lbswiper">
-		<block wx:for="{{lunb}}" wx:key="index">
+	<swiper class="lbswipers">
+		<block wx:for="{{lunbs}}" wx:key="index">
 			<swiper-item>
-				<view class="swiper-item" data-url="{{item.link}}" bindtap="handlelun">
-					<image mode="aspectFill" src="{{item.url}}" class="item-img"></image>
+				<view class="swiper-item" data-url="{{item.photo}}" bindtap="handlelun">
+					<image mode="aspectFill" src="{{item.photo}}" class="item-img"></image>
+				</view>
+				<view class="header">
+					<view class="tatli">
+						{{item.name}}
+					</view>
+					<view class="header-img">
+						<text class="xian"># {{item.type_name}}</text>
+						<text class="xi"># {{item.chengshi}}</text>
+						<text class="ping"># {{item.huxing}}</text>
+					</view>
 				</view>
 			</swiper-item>
 		</block>
 	</swiper>
 
-	<view class="header">
-		<view class="tatli">
-			西安280m私宅 | 4年落地, 只为雅奢生活
-		</view>
-		<view class="header-img">
-			<text class="xian"># 现代</text>
-			<text class="xi"># 西安</text>
-			<text class="ping"># 平层</text>
-		</view>
-	</view>
+
+
 </view>
 
 

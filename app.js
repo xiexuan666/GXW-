@@ -26,7 +26,7 @@ App({
     dtkey:'77ABZ-KQC62-FVJUB-C7TTO-4DX6T-7WB2J',
     http: http,
     status: 0,
-    banben:'1.1.7',
+    banben:'1.0.1',
     jiage:999999,
     qqmapsdk:qqmapsdk
   },
@@ -344,13 +344,16 @@ App({
       fail(res){console.log(res,'字体加载错误')}
     });
   },
+
+
+
   //当前版本状态 
   banbzt:function(){
     var tha=this
       var p = new Promise(function(resolve, reject) {
         var url = tha.globalData.baseUrl + 'app/shezhishenhe' 
         var dta={
-          brandid:'1',
+          brandid:'2',
           shenhecode:tha.globalData.banben
         }
         http.promisServer(url,dta).then(function(resc){

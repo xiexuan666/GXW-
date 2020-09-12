@@ -12,7 +12,7 @@ Page({
     //第一次执行
     dyczx:0,
     //产品或案例
-    cactiv:1,
+    cactiv:2,
     //全国案例或本地案例
     twoactiv:1,
     //产品头部数据
@@ -38,7 +38,7 @@ Page({
     //案例spu可能性
     anliskubs:{},
     //案例选中的值
-    anlixuanz:[],
+    anlixuanz:2,
     // 案例内容数组
     annrshuz:[],
     //案例页数
@@ -322,7 +322,6 @@ Page({
     if(ind==1){twoactiv=1}
     if(ind==2){
       twoactiv=2
-      
       this.hdzuij()
     }
     this.setData({twoactiv:twoactiv})
@@ -335,11 +334,10 @@ Page({
    if(ind==cactiv){
      return false
    }
-   if(ind==1){
-     
-    cactiv=1
-    wx.setNavigationBarTitle({ title: '产品中心'})
-   }
+  //  if(ind==1){
+  //   cactiv=1
+  //   wx.setNavigationBarTitle({ title: '案例中心'})
+  //  }
    if(ind==2){
     this.chaxchuanlinr('',1,1)
     cactiv=2
@@ -467,7 +465,6 @@ Page({
     if(!num){
       this.chaxchuanlinr('',1,1)
     }
-
     var  anlishuj=this.data.anlishuj
     if(anlishuj.length==0){return false}
     anlishuj.forEach(e => {
@@ -685,7 +682,7 @@ Page({
     }
     
     //请求产品
-    this.qiangcp(1)
+    this.qiangcp(2)
      //请求系列
      this.qingvideolist()
     //请求案例列表

@@ -9,13 +9,11 @@ Page({
    */
   data: {
     lunb:[],
-    lunbs:[]
-  //   lunbs:[{
-  //     url:"/images/shouye/11.png"
-  //   }, {
-  //     url:"/images/shouye/12.png"
-  //   }
-  // ]
+    lunbs:[],
+    autoplay: true,
+    interval: 4000,
+    duration: 500,
+    circular: true,
   },
   
  //请求轮播
@@ -37,15 +35,7 @@ Page({
     tha.setData({lunb:res.data.allbannerList})
        console.log(res.data.allbannerList,'请求轮播图')
     })
-    // var url2=baseUrl+'banner/indexVideo'
-    // http.promisServer(url2).then(resc=>{
-    //   console.log(resc)
-    //   var luns=resc.data.indexVideoList[0]
-    //   console.log(luns,999)
-    //   var sp=[{src:luns.link,fm:luns.url}]
-    //   console.log(sp)
-    //   tha.setData({videolist:sp})
-    // })
+
   },
    //请求推荐系列
    qingqtuijxili:function(){
@@ -66,6 +56,13 @@ Page({
     })
   },
     
+
+
+
+  //更多跳转
+  // tzcpanliyes:function(){
+  //   wx.reLaunch({url: '/pages/product/product'})
+  // },
  
   /**
    * 生命周期函数--监听页面加载
@@ -76,7 +73,7 @@ Page({
  //推荐系列
 //  this.qingqtuijxili()
  //推荐案例
- this.qingqtuianli()
+//  this.qingqtuianli()
   },
 
   /**

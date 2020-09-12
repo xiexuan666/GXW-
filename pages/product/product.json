@@ -1,6 +1,6 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "产品中心",
+  "navigationBarTitleText": "案例中心",
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "dark"
 }

@@ -28,12 +28,13 @@
     "pages/souye/souye2",
     "pages/product/sousuo2",
     "pages/product/anlixq/benanlixq",
-    "pages/me/pyquan/pyquan"
+    "pages/me/pyquan/pyquan",
+    "pages/hotspot/hotspot"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "雅奢生活",
+    "navigationBarTitleText": "冠星王陶瓷未来家",
     "navigationBarTextStyle": "black"
   },
   "permission": {
@@ -50,30 +51,32 @@
     "list": [
       {
         "pagePath":"pages/souye/souye",
-        "text":"首页",
-        "iconPath":"/images/tubiao/1.png",
-        "selectedIconPath":"/images/tubiao/11.png"
+        "iconPath":"/images/tubiao/1-16.png",
+        "selectedIconPath":"/images/tubiao/1-16.png"
       
       },
       {
         "pagePath":"pages/product/product",
-        "text":"案例中心",
-        "iconPath":"/images/tubiao/2.png",
-        "selectedIconPath":"/images/tubiao/22.png"
+        "iconPath":"/images/tubiao/1-17.png",
+        "selectedIconPath":"/images/tubiao/1-17.png"
+       
+      },
+      {
+        "pagePath":"pages/hotspot/hotspot",
+        "iconPath":"/images/tubiao/1-15.png",
+        "selectedIconPath":"/images/tubiao/1-15.png"
        
       },
       {
         "pagePath":"pages/jinxs/jinxs",
-        "text":"预约设计",
-        "iconPath":"/images/tubiao/3.png",
-        "selectedIconPath":"/images/tubiao/33.png"
+        "iconPath":"/images/tubiao/1-18.png",
+        "selectedIconPath":"/images/tubiao/1-18.png"
        
       },
       {
         "pagePath":"pages/me/me",
-        "text":"我的",
-        "iconPath":"/images/tubiao/4.png",
-        "selectedIconPath":"/images/tubiao/44.png"
+        "iconPath":"/images/tubiao/1-19.png",
+        "selectedIconPath":"/images/tubiao/1-19.png"
        
       }
     ]

@@ -4,10 +4,10 @@
 <!-- 产品或案例 -->
 <view class="product-cpanli">
 	<view class="cpanli-nr">
-		<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+		<!-- <view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
 			产品
 			<view class="cpanli-nr-lid"></view>
-		</view>
+		</view> -->
 		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
 			案例
 			<view class="cpanli-nr-lid"></view>
@@ -19,22 +19,26 @@
 	</view>
 </view>
 
+
+
 <!-- 搜索产品 -->
-<view class="sous" wx:if='{{cactiv==1}}'>
+<!-- <view class="sous" wx:if='{{cactiv==1}}'>
 	<view class="sous-nr" bindtap="tzsous">
 		<image src="/images/tubiao/sous.png"></image>
 		<input disabled="{{true}}" placeholder="大家都在搜：进口岩板"></input>
 	</view>
-</view>
+</view> -->
+
 
 <view class="sous" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="sous-nr" bindtap="tzsous2">
 		<image src="/images/tubiao/sous.png"></image>
-		<input disabled="{{true}}" placeholder="大家都在搜：案例"></input>
-
+		<input disabled="{{true}}" placeholder="搜索 按小区查看"></input>
 	</view>
 </view>
 <!-- 搜索产品 -->
+
+
 
 
 
@@ -88,8 +92,8 @@
 </view>
 <!-- 选择end -->
 
-
 <!-- 系列end -->
+
 
 
 <!-- 视频列表 -->
@@ -124,8 +128,9 @@
 </view>
 
 
+
 <!-- 案例 -->
-<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
+<view class="anlilist" wx:if='{{cactiv==1&&twoactiv==1}}'>
 	<view class="anlilist-ul">
 		<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
@@ -142,8 +147,11 @@
 </view>
 
 
+
+
+
 <!-- 本地案例 -->
-<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==2}}'>
+<view class="anlilist" wx:if='{{cactiv==1&&twoactiv==2}}'>
 	<view class="anlilist-ul">
 		<block wx:for="{{bendanlinr}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 			<view class="anlilist-li" bindtap="bendanlitz" data-ind="{{index}}">

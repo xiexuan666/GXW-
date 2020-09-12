@@ -1,6 +1,6 @@
 <!-- 搜索 -->
 <view class="lunb">
-	<swiper class="lbswiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}'>
+	<swiper class="lbswiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}' indicator-dots="{{true}}" autoplay="{{true}}">
 		<block wx:for="{{lunb}}" wx:key="index">
 			<swiper-item>
 				<view class="swiper-item lunbimg " data-url="{{item.link}}">
@@ -10,34 +10,81 @@
 		</block>
 	</swiper>
 </view>
-<!-- <image mode="widthFix" src="/images/shouye/14.png" class="imgse">{{}}</image> -->
-<image mode="widthFix" src="/images/shouye/10.png" class="seach" bindtap="seach"></image>
-
 
 
 <!-- 导航 -->
 <view class="daoh">
 	<view class="daoh-ul">
-		<view class="daoh-li" bindtap="tzpinpai">
-			<image mode="widthFix" src="/images/shouye/8.png"></image>
+		<view class="daoh-li " bindtap="tzcase">
+			<image mode="widthFix" src="/images/tubiao/1-02.png"></image>
+			<view class="daoh-li-text">CASE</view>
+			<view class="daoh-li-p">看案例</view>
 		</view>
-		<view class="daoh-li daoh-li-zhong" bindtap="tzcpanliye">
-			<image mode="widthFix" src="/images/shouye/3.png"></image>
+		<view class="daoh-li " bindtap="tzproduct">
+			<image mode="widthFix" src="/images/tubiao/1-03.png"></image>
+			<view class="daoh-li-text">PRODUCT</view>
+			<view class="daoh-li-p">找产品</view>
 		</view>
-		<view class="daoh-li " bindtap="tzcpanliyes">
-			<image mode="widthFix" src="/images/shouye/15.png"></image>
+		<view class="daoh-li " bindtap="tzstrategy">
+			<image mode="widthFix" src="/images/tubiao/1-04.png"></image>
+			<view class="daoh-li-text">STRATEGY</view>
+			<view class="daoh-li-p">做攻略</view>
 		</view>
-		<view class="daoh-li daoh-li-zhong" bindtap="fujpinpai">
-			<image mode="widthFix" src="/images/shouye/4.png"></image>
+		<view class="daoh-li " bindtap="tzbrand">
+			<image mode="widthFix" src="/images/tubiao/1-05.png"></image>
+			<view class="daoh-li-text">BRAND</view>
+			<view class="daoh-li-p">逛品牌</view>
 		</view>
-		<view class="daoh-li " bindtap="yupanliye">
-			<image mode="widthFix" src="/images/shouye/9.png"></image>
-		</view>
-		<view class="daoh-li  daoh-li-zhong" bindtap="zhaopanliyes">
-			<image mode="widthFix" src="/images/shouye/16.png"></image>
+		<view class="daoh-li " bindtap="tzroom">
+			<image mode="widthFix" src="/images/tubiao/1-06.png"></image>
+			<view class="daoh-li-text">RESERVATION</view>
+			<view class="daoh-li-p">约量房</view>
 		</view>
 	</view>
 </view>
+
+
+
+<!-- 设计 -->
+<!-- <view class="design">
+	<view class="design-ul">
+		<view class="design-ims">
+			<image src="/images/tubiao/1-20.png"></image>
+		</view>
+		<view class="design-li">
+			<view class="stylist">村上</view>
+			<view class="shejis">家居设计师</view>
+		</view>
+		<view class="design-nav">
+			<view class="phone">
+				<image src="/images/tubiao/1-21.png"></image>一键拨打
+			</view>
+			<view class="zixun">
+				<image src="/images/tubiao/1-22.png"></image>咨询店主
+			</view>
+			<view class="daohang">
+				<image src="/images/tubiao/1-23.png"></image>一键导航
+			</view>
+		</view>
+		<view class="location">
+			<view class="location-p">
+				<image src="/images/tubiao/1-24.png"></image>
+				广东省佛山市禅城区南庄镇中国陶瓷总部基地
+			</view>
+		</view>
+	</view>
+</view> -->
+
+<view class="design">
+	<view class="design-li">
+		<image src="/images/tubiao/1-26.png"></image>
+	</view>
+</view>
+
+
+
+
+<!-- 设计end -->
 
 
 <!-- 产品展示 -->
@@ -46,7 +93,12 @@
 		<view class="toub-nr">
 			<view class="toub-nrl">
 				<view class="toub-nrlp1">
-					<image mode="widthFix" src="/images/shouye/13.png" class="sheng"></image>
+					<image mode="widthFix" src="/images/tubiao/1-25.png" class="sheng"></image>
+				</view>
+				<view class="anl-ul">
+					<view class="anl-li">
+						Case案例赏析
+					</view>
 				</view>
 			</view>
 			<view class="toub-nrr" bindtap="tzcpanliye">
@@ -54,56 +106,108 @@
 			</view>
 		</view>
 	</view>
+
 	<swiper class="lbswipers">
 		<block wx:for="{{lunbs}}" wx:key="index">
-			<swiper-item>
-				<view class="swiper-item" data-url="{{item.photo}}" bindtap="handlelun">
+			<swiper-item class="produt-item">
+				<view class="produt-item-img" data-url="{{item.photo}}" bindtap="handlelun">
 					<image mode="aspectFill" src="{{item.photo}}" class="item-img"></image>
-				</view>
-				<view class="header">
-					<view class="tatli">
-						{{item.name}}
-					</view>
-					<view class="header-img">
-						<text class="xian"># {{item.type_name}}</text>
-						<text class="xi"># {{item.chengshi}}</text>
-						<text class="ping"># {{item.huxing}}</text>
-					</view>
 				</view>
 			</swiper-item>
 		</block>
 	</swiper>
 
-
-
-</view>
-
-
-
-
-<!-- 案例展示 -->
-<view class="produt anli">
-	<view class="toub">
-		<view class="toub-nr">
-			<view class="toub-nrl">
-				<view class="toub-nrlp1">
-					<image mode="widthFix" src="/images/shouye/2.png" class="sheng"></image>
-				</view>
+	<view class="jxsnr-li-l  jxsnr-li-lsa">
+		<view class="jxsnr-tubiao-tu1">
+			<view class="jxsnr-li-lp">
+				<image src="/images/tubiao/1-09.png"></image>
+				<view class="lanbai">芬兰白</view>
 			</view>
-			<view class="toub-nrr" bindtap="tzcpanliyes">
-				<view class="toub-nrlp2">/ 更多</view>
+		</view>
+		<view class="jxsnr-tubiao-tu2">
+			<view class="jxsnr-li-lp2">
+				<image src="/images/tubiao/1-10.png"></image>
+				<view class="shuzi">5220</view>
+			</view>
+			<view class="fenxiang" bindtap="share">
+				<image src="/images/tubiao/1-11.png"></image>
+			</view>
+			<view class="shouc" bindtap="collect">
+				<image src="/images/tubiao/1-12.png"></image>
+			</view>
+			<view class="xingx" bindtap="star">
+				<image src="/images/tubiao/1-13.png"></image>
+			</view>
+		</view>
+	</view>
+
+	<view class="simple">
+		<view class="simple-ul">
+			<view class="simple-ul-p">[现代简约]客厅案列</view>
+			<view class="simple-li">佛山280m私宅|4年落地，只为"雅奢生活"</view>
+		</view>
+		<view class="simple-li-r">
+			<view class="cotione">
+				<view class="jxsnr-li-time">广东省佛山市禅城区</view>
+			</view>
+			<view class="cotione1">
+				<view class="jxsnr-li-r">2020.09.01</view>
 			</view>
 		</view>
 	</view>
 
 
-	<view class="produt-item-img " bindtap="anlitz">
-		<image mode="widthFix" src="/images/shouye/1.png" class="blue-img"></image>
-		<image mode="widthFix" src="/images/shouye/6.png" class="blue-img"></image>
-		<image mode="widthFix" src="/images/shouye/7.png" class="blue-img"></image>
+
+	<swiper class="lbswipers">
+		<block wx:for="{{lunbs}}" wx:key="index">
+			<swiper-item class="produt-item">
+				<view class="produt-item-img" data-url="{{item.photo}}" bindtap="handlelun">
+					<image mode="aspectFill" src="{{item.photo}}" class="item-img"></image>
+				</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<view class="jxsnr-li-l  jxsnr-li-lsa">
+		<view class="jxsnr-tubiao-tu1">
+			<view class="jxsnr-li-lp">
+				<image src="/images/tubiao/1-09.png"></image>
+
+				<view class="lanbai">爵士灰</view>
+			</view>
+		</view>
+		<view class="jxsnr-tubiao-tu2">
+			<view class="jxsnr-li-lp2">
+				<image src="/images/tubiao/1-10.png"></image>
+				<view class="shuzi">5220</view>
+			</view>
+			<view class="fenxiang">
+				<image src="/images/tubiao/1-11.png"></image>
+			</view>
+			<view class="shouc">
+				<image src="/images/tubiao/1-12.png"></image>
+			</view>
+			<view class="xingx">
+				<image src="/images/tubiao/1-13.png"></image>
+			</view>
+		</view>
+	</view>
+
+	<view class="simple">
+		<view class="simple-ul">
+			<view class="simple-ul-p">[现代简约]客厅案列</view>
+			<view class="simple-li">佛山280m私宅|4年落地，只为"雅奢生活"</view>
+		</view>
+		<view class="simple-li-r">
+			<view class="cotione">
+				<view class="jxsnr-li-time">广东省佛山市禅城区</view>
+			</view>
+			<view class="cotione1">
+				<view class="jxsnr-li-r">2020.09.01</view>
+			</view>
+		</view>
 	</view>
 </view>
-
 
 <view class="wuy"></view>
 <view class="tubiaos">角色道提供技术支持</view>

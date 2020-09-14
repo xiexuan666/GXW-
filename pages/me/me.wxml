@@ -9,50 +9,131 @@
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/bei.jpg"></image>
+			<!-- <image src="/images/tubiao/1-13.png"></image> -->
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img" wx:if="{{gerxinx}}">
 				<image src="{{gerxinx.wx_photo}}"></image>
 			</view>
 			<view class="toux-img" wx:if="{{!gerxinx}}" bindtap="dianjidl">
-				<image src="/images/tubiao/weiden.png"></image>
+				<!-- <image src="/images/tubiao/1-13.png"></image> -->
 			</view>
 			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
 		</view>
 	</view>
 </view>
 
+<!-- 个人钱包 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 <view class="me-list">
 	<view class="me-list-ul">
 		<view class="me-list-li" bindtap="melisttz" data-ind="0">
-			<view class="me-list-lil">个人收藏<image src="/images/tubiao/me1.png"></image>
+			<view class="me-list-lil">我的订单<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" bindtap="melisttz" data-ind="1" wx:if="{{sjzt.status==2}}">
-			<view class="me-list-lil">管理入口<image src="/images/tubiao/me2.png"></image>
+
+		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+			<view class="me-list-lil">购物车<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
+
+		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+			<view class="me-list-lil">收货地址<image src="/images/tubiao/1-13.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+			<view class="me-list-lil">我的卡券<image src="/images/tubiao/1-13.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+			<view class="me-list-lil">抽奖活动<image src="/images/tubiao/1-13.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+			<view class="me-list-lil">我的收藏<image src="/images/tubiao/1-13.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+			<view class="me-list-lil">联系客服<image src="/images/tubiao/1-13.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+
+		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+			<view class="me-list-lil">个人钱包<image src="/images/tubiao/1-13.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+
+		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+			<view class="me-list-lil">注册<image src="/images/tubiao/1-13.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+		<!-- <view class="me-list-li" bindtap="melisttz" data-ind="1" wx:if="{{sjzt.status==2}}">
+			<view class="me-list-lil">管理入口<image src="/images/tubiao/1-13.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view> -->
 		<view class="me-list-li" bindtap="melisttz" data-ind="2" wx:if="{{sjzt.status==0&&status}}">
-			<view class="me-list-lil">商家入驻<image src="/images/tubiao/me3.png"></image>
+			<view class="me-list-lil">商家入驻<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" bindtap="melisttz" data-ind="3" wx:if="{{sjzt.status==1||sjzt.status==3}}">
-			<view class="me-list-lil">审核状态<image src="/images/tubiao/me3.png"></image>
+
+
+		<!-- <view class="me-list-li" bindtap="melisttz" data-ind="3" wx:if="{{sjzt.status==1||sjzt.status==3}}">
+			<view class="me-list-lil">审核状态<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
-		</view>
+		</view> -->
 	</view>
 </view>
 
@@ -62,7 +143,7 @@
 	<view class="shenqmot-nr" catchtap="zhuzi">
 		<view class="shenqmot-nrt">申请入驻</view>
 		<view class="shenqmot-nrc">
-			<text class="shenqmot-nrp">	
+			<text class="shenqmot-nrp">
 为了更好地为商家服务以及保障消费者权益，本着平等合作、互惠互利的原则，在符合相关法律法规，不违反市场竞争的情况下，商家须遵循意大利I.T瓷砖总部的运营管理规范，商家入驻需了解以下入驻协议。
 
 ⦁	入驻商家的基本条件
@@ -87,4 +168,4 @@
 		<view class="shenqmot-nrb" catchtap="shenq">申请</view>
 	</view>
 </view>
-<view class="tubiao">角色道提供技术支持</view>
+<!-- <view class="tubiao">角色道提供技术支持</view> -->

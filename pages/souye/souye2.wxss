@@ -1,1 +1,47 @@
-/* pages/souye/souye2.wxss */
+.brand-list {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.brand-p {
+  font-size: 33rpx;
+  color: #c39a66;
+  text-align: center;
+}
+
+.introduce {
+  margin-top: 20rpx;
+  font-size: 33rpx;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50rpx;
+}
+
+.ceramics-title {
+  /* margin-top: 50rpx; */
+  font-size: 33rpx;
+  text-align: center;
+  font-weight: 700;
+}
+
+.ceramics-text {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  text-align: center;
+  font-weight: 300;
+}
+.ceramics-textp {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  text-align: center;
+  font-weight: 300;
+}
+.pinp {
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.pinpai image {
+  width: 640rpx;
+  height: 450rpx;
+}

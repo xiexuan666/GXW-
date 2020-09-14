@@ -70,8 +70,8 @@ tzcase:function(){
 },
 // 跳转量房
 tzroom:function(){
-wx.reLaunch({
-  url: '/pages/souye/souye2',
+wx.navigateTo({
+  url: '/pages/souye/souye3',
 })
 },
 // 跳转到装修攻略
@@ -79,6 +79,12 @@ tzstrategy:function(){
   wx.reLaunch({
     url: '/pages/hotspot/hotspot',
   })
+},
+// 跳转到品牌
+tzbrand:function(){
+wx.navigateTo({
+  url:"/pages/souye/souye2"
+})
 },
 
   /**

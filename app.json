@@ -29,7 +29,9 @@
     "pages/product/sousuo2",
     "pages/product/anlixq/benanlixq",
     "pages/me/pyquan/pyquan",
-    "pages/hotspot/hotspot"
+    "pages/hotspot/hotspot",
+    "pages/hotspot/strategy/strategy",
+    "pages/souye/souye3"
 
   ],
   "window": {

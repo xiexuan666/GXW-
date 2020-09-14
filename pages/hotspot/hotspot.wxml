@@ -83,8 +83,8 @@
 
 
 <!-- 内容 -->
-<view class="list" wx:if='{{cactiv==1&&cpxqzt==1}}'>
-	<block>
+<view class="list" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="fitment">
+	<block >
 		<navigator url="/images/tubiao/1-08.jpg" class="goods-list">
 			<image src="/images/tubiao/1-08.jpg">
 			</image>
@@ -104,7 +104,7 @@
 			</view>
 		</navigator>
 	</block>
-	<block>
+	<block  >
 		<navigator url="/images/tubiao/1-08.jpg" class="goods-list">
 			<image src="/images/tubiao/1-08.jpg">
 			</image>

@@ -1,0 +1,71 @@
+<view class="yuyue">
+	<view class="yuyue-title">
+		<view class="yuyue-start">
+			<image src="/images/tubiao/gxw.png"></image>
+		</view>
+		<view class="yuyue-text">
+			<view class="yuyue-p">
+				已有180054参与预约
+			</view>
+		</view>
+
+
+
+		<view class="time">
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">姓　　名</text>
+						<input name="xingm" bindinput='xueliInput' class="df_1" placeholder="请输入真实姓名" />
+					</view>
+				</view>
+			</view>
+
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">电　　话</text>
+						<input name="xingm" bindinput='xueliInput' class="df_1" placeholder="请输入有效电话" />
+					</view>
+				</view>
+			</view>
+
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">测量地址</text>
+						<input name="xingm" bindinput='xueliInput' class="df_1" placeholder="获取位置" />
+					</view>
+				</view>
+			</view>
+
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">上门日期</text>
+						<input name="xingm" bindinput='xueliInput' class="df_1" placeholder="请选择" />
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!-- 预约 -->
+		<view class="anniu">
+			<button   bindtap="subscribe">立即预约</button>
+		</view>
+
+
+
+
+		<view class="kef">
+			<view class="keffoot">
+				我们客服人员会及时与您取得联系，
+	         感谢您对冠星王陶瓷的信任
+			</view>
+		</view>
+
+
+
+	</view>
+
+</view>

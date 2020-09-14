@@ -9,6 +9,7 @@ Page({
    */
   data: {
   cpxqzt:1,
+  cactiv:1,
   },
    //产品详情导航选择
    cpxzxz:function(e){
@@ -133,6 +134,12 @@ Page({
     console.log(cactiv)
     this.setData({cactiv:cactiv})
    },
+  //  跳转到专修攻略
+  fitment:function(){
+wx.navigateTo({
+  url: '/pages/hotspot/strategy/strategy',
+})
+  },
 
   /**
    * 生命周期函数--监听页面加载

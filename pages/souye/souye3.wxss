@@ -1,0 +1,74 @@
+.yuyue-title {
+  width: 700rpx;
+  margin: 0 auto;
+
+}
+
+.yuyue-start image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.yuyue-text {
+  margin: 100rpx 0;
+}
+
+.yuyue-p {
+  font-size: 33rpx;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* 
+.time {
+  align-items: center;
+  justify-content: center;
+} */
+
+
+.search {
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.page_row {
+  padding: 10rpx 0;
+}
+
+.text {
+  padding: 0 20rpx;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.df_1 {
+  border: 1px solid #ccc;
+  border-radius: 25rpx;
+
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 30px;
+  background: #bd8f60;
+  color: white;
+  padding: 0rpx 100rpx;
+  margin-bottom: 30rpx;
+}
+
+.keffoot {
+  text-align: center;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-bottom: 30rpx;
+}

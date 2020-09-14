@@ -63,7 +63,8 @@ page {
 /* 头部 end*/
 /* 我的列表 */
 .me-list {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .me-list-ul {
@@ -173,3 +174,10 @@ page {
   font-size: 34rpx;
   font-weight: 100;
 }
+
+
+
+
+
+
+

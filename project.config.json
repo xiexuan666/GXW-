@@ -6,12 +6,13 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
-		"nodeModules": false,
+		"nodeModules": true,
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
@@ -195,13 +196,6 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/me/pyquan/pyquan",
-					"pathName": "pages/me/pyquan/pyquan",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "商家入驻",
 					"pathName": "pages/me/me",
 					"query": "",
@@ -216,15 +210,30 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/souye/souye2",
-					"pathName": "pages/souye/souye2",
+					"name": "热点视频",
+					"pathName": "pages/hotspot/hotspot",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "热点视频",
-					"pathName": "pages/hotspot/hotspot",
+					"name": "装修攻略",
+					"pathName": "pages/hotspot/strategy/strategy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "逛品牌",
+					"pathName": "pages/souye/souye",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "预约量房",
+					"pathName": "pages/souye/souye3",
+					"query": "",
 					"scene": null
 				}
 			]

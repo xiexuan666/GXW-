@@ -1,1 +1,44 @@
+<!-- 品牌 -->
+<view class="brand">
+	<view class="brand-list">
+		<view class="brand-title">
+			<view class="brand-p">
+				BRAND INTRODUCTIoc
+			</view>
+			<view class="introduce">
+				品牌介绍
+			</view>
+		</view>
+		<view class="ceramics">
+			<view class="ceramics-title">
+				冠星王陶瓷·雅奢生活创领者
+			</view>
+			<view class="ceramics-text">
+				　　冠星王陶瓷，中国陶瓷—线品牌。始创于1995年，是广东
+				冠星陶瓷企业旗下创始品牌。25年来专注高端瓷砖领域，冠星
+				王陶瓷已经拥有1000多家以上品牌专卖店，销售网点遍布全
+				国，出口业务覆盖澳洲、美国、加拿大、新加坡、韩国等国家
+				和地区。是一个集设计、研发、智造、营销为一体的全品类综
+				合型绿色陶瓷智造企业。
+			</view>
+			<view class="ceramics-textp">
+				　　冠星王极为重视产品设计和研发，与意大利3大顶级设计公
+				司建立长期战略合作，共同研发具有核心竞争力的高颜值瓷砖
+				产品;在智能制造上，冠星王陶瓷在清远源潭拥有占地800亩
+				的现代化、花园式、智能化、绿色环保生产基地，配套行业先
+				进设备，智能化生产线，行业首个超高立体式智能自动化仓储
+				系统，是陶瓷行业首个实现生产全过程智能化、自动化的陶瓷
+				企业，全面引领行业从“制造"迈向“智造”﹔在原料和品质上，
+				冠星王先后与西班牙原料巨头陶丽西(Torrecid ) .
+				ESMALGLASS意达加、美国福禄(Ferro)强强联手，全面保
+				证产品的品质。
+			</view>
+		</view>
 
+		<view class="pinp">
+			<view class="pinpai">
+				<image src="/images/tubiao/1-14.png"></image>
+			</view>
+		</view>
+	</view>
+</view>

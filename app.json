@@ -30,6 +30,7 @@
     "pages/product/anlixq/benanlixq",
     "pages/me/pyquan/pyquan",
     "pages/hotspot/hotspot"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

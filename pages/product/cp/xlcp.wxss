@@ -3,7 +3,9 @@
 /* 产品 */
 
 .guigbiet{
+  font-weight: 300;
   width: 700rpx;
+  color: #ccc;
   margin: 0 auto;
   font-size: 30rpx;
   padding-top: 10rpx;
@@ -95,7 +97,7 @@
 .xiliezt-nr{
   width: 700rpx;
   margin: 0 auto;
-  border-radius: 20rpx;
+  /* border-radius: 20rpx; */
   overflow: hidden;
 }
 .xilie-img{
@@ -103,7 +105,7 @@
 }
 .xilie-img image{
   width: 100%;
-  border-radius: 20rpx;
+  /* border-radius: 20rpx; */
 }
 .xilie-title{
   margin: 0 auto;

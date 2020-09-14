@@ -9,7 +9,12 @@ Page({
    */
   data: {
     lunb:[],
-    lunbs:[],
+    lunbs:[
+      {
+        url:"/images/tubiao/1-14.png"
+      },
+    
+    ],
     autoplay: true,
     interval: 4000,
     duration: 500,
@@ -57,13 +62,25 @@ Page({
   },
     
 
+// 跳转到案例
+tzcase:function(){
+  wx.reLaunch({
+    url: '/pages/product/product?zhi=2',
+  })
+},
+// 跳转量房
+tzroom:function(){
+wx.reLaunch({
+  url: '/pages/souye/souye2',
+})
+},
+// 跳转到装修攻略
+tzstrategy:function(){
+  wx.reLaunch({
+    url: '/pages/hotspot/hotspot',
+  })
+},
 
-
-  //更多跳转
-  // tzcpanliyes:function(){
-  //   wx.reLaunch({url: '/pages/product/product'})
-  // },
- 
   /**
    * 生命周期函数--监听页面加载
    */

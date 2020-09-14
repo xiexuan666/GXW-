@@ -9,6 +9,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 轮播图片
+    lunbs:[
+      {
+       url:"/images/tubiao/1-08.jpg"
+      },{
+        url:"/images/tubiao/1-14.png"
+      }
+    ],
     //第一次执行
     dyczx:0,
     //产品或案例

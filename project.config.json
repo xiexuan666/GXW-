@@ -206,6 +206,26 @@
 					"pathName": "pages/me/me",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品中心",
+					"pathName": "pages/product/cp/cpxq",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/souye/souye2",
+					"pathName": "pages/souye/souye2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "热点视频",
+					"pathName": "pages/hotspot/hotspot",
+					"scene": null
 				}
 			]
 		}

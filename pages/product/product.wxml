@@ -8,10 +8,10 @@
 			产品
 			<view class="cpanli-nr-lid"></view>
 		</view> -->
-		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+		<!-- <view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
 			案例
 			<view class="cpanli-nr-lid"></view>
-		</view>
+		</view> -->
 	</view>
 	<view class="cpanli-nrb" wx:if='{{cactiv==2}}'>
 		<view class="cpanli-nrbli {{twoactiv==1?'cpanli-nrbli-activ':''}} " data-ind="{{1}}" bindtap="anlixuanz">全国案例</view>
@@ -32,11 +32,144 @@
 
 <view class="sous" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="sous-nr" bindtap="tzsous2">
-		<image src="/images/tubiao/sous.png"></image>
+		<!-- <image src="/images/tubiao/sous.png"></image> -->
 		<input disabled="{{true}}" placeholder="搜索 按小区查看"></input>
 	</view>
 </view>
 <!-- 搜索产品 -->
+
+
+
+
+
+<!-- 选择案例 -->
+<view class="xuanz" wx:if='{{cactiv==2&&twoactiv==1}}'>
+	<view class="xuanz-nr">
+		<block wx:for="{{anlishuj}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="xuanz-nr-ul">
+				<view class="xuanz-nr-title">{{item.title}}</view>
+				<view class="xuanz-nr-scroll">
+					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
+						<view class="xuanz-nr-li">
+							<block wx:for="{{item.children}}" wx:for-index="indexs" wx:for-item="items" wx:key="index">
+								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{index}}" data-idc="{{items.id}}">
+									{{items.title}}
+									<view class="xuanz-nr-lix">x</view>
+								</view>
+							</block>
+						</view>
+					</scroll-view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+<!-- 选择end -->
+
+
+
+<!-- 案例 -->
+<!-- <view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
+	<view class="anlilist-ul">
+		<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
+				<view class="anlilist-liimg">
+					<image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image>
+				</view>
+				<view class="anlilist-lib">
+					<view class="anlilist-libp1 font-loadeds">{{item.name}}</view>
+					<view class="anlilist-libp2">{{item.shuxing}}</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+ -->
+<view class="produt" wx:if='{{cactiv==2&&twoactiv==1}}'>
+	<swiper class="lbswipers">
+		<block wx:for="{{lunbs}}" wx:key="index">
+			<swiper-item class="produt-item">
+				<view class="produt-item-img" data-url="{{item.photo}}" bindtap="anlitz">
+					<image mode="aspectFill" src="{{item.url}}" class="item-img"></image>
+				</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<view class="jxsnr-li-l  jxsnr-li-lsa">
+		<view class="jxsnr-tubiao-tu1">
+			<view class="jxsnr-li-lp">
+				<image src="/images/tubiao/1-09.png"></image>
+				<view class="lanbai">芬兰白</view>
+			</view>
+		</view>
+		<view class="jxsnr-tubiao-tu2">
+			<view class="jxsnr-li-lp2">
+				<image src="/images/tubiao/1-10.png"></image>
+				<view class="shuzi">5220</view>
+			</view>
+			<view class="fenxiang" bindtap="share">
+				<image src="/images/tubiao/1-11.png"></image>
+			</view>
+			<view class="shouc" bindtap="collect">
+				<image src="/images/tubiao/1-12.png"></image>
+			</view>
+			<view class="xingx" bindtap="star">
+				<image src="/images/tubiao/1-13.png"></image>
+			</view>
+		</view>
+	</view>
+
+	<view class="simple">
+		<view class="simple-ul">
+			<view class="simple-ul-p">[现代简约]客厅案列</view>
+			<view class="simple-li">佛山280m私宅|4年落地，只为"雅奢生活"</view>
+		</view>
+		<view class="simple-li-r">
+			<view class="cotione">
+				<view class="jxsnr-li-time">广东省佛山市禅城区</view>
+			</view>
+			<view class="cotione1">
+				<view class="jxsnr-li-r">2020.09.01</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+
+<!-- 本地案例 -->
+<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==2}}'>
+	<view class="anlilist-ul">
+		<block wx:for="{{bendanlinr}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="anlilist-li" bindtap="bendanlitz" data-ind="{{index}}">
+				<view class="anlilist-liimg">
+					<image mode="widthFix" lazy-load="{{true}}" src="{{item.photo}}"></image>
+				</view>
+				<view class="anlilist-lib anlilist-libs">
+					<view class="anlilist-libp1">{{item.name}}</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,29 +201,7 @@
 
 
 
-<!-- 选择案例 -->
-<view class="xuanz" wx:if='{{cactiv==2&&twoactiv==1}}'>
-	<view class="xuanz-nr">
-		<block wx:for="{{anlishuj}}" wx:for-index="index" wx:for-item="item" wx:key="index">
-			<view class="xuanz-nr-ul">
-				<view class="xuanz-nr-title">{{item.title}}</view>
-				<view class="xuanz-nr-scroll">
-					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
-						<view class="xuanz-nr-li">
-							<block wx:for="{{item.children}}" wx:for-index="indexs" wx:for-item="items" wx:key="index">
-								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{index}}" data-idc="{{items.id}}">
-									{{items.title}}
-									<view class="xuanz-nr-lix">x</view>
-								</view>
-							</block>
-						</view>
-					</scroll-view>
-				</view>
-			</view>
-		</block>
-	</view>
-</view>
-<!-- 选择end -->
+
 
 <!-- 系列end -->
 
@@ -129,41 +240,5 @@
 
 
 
-<!-- 案例 -->
-<view class="anlilist" wx:if='{{cactiv==1&&twoactiv==1}}'>
-	<view class="anlilist-ul">
-		<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
-			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
-				<view class="anlilist-liimg">
-					<image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image>
-				</view>
-				<view class="anlilist-lib">
-					<view class="anlilist-libp1 font-loadeds">{{item.name}}</view>
-					<view class="anlilist-libp2">{{item.shuxing}}</view>
-				</view>
-			</view>
-		</block>
-	</view>
-</view>
-
-
-
-
-
-<!-- 本地案例 -->
-<view class="anlilist" wx:if='{{cactiv==1&&twoactiv==2}}'>
-	<view class="anlilist-ul">
-		<block wx:for="{{bendanlinr}}" wx:for-index="index" wx:for-item="item" wx:key="index">
-			<view class="anlilist-li" bindtap="bendanlitz" data-ind="{{index}}">
-				<view class="anlilist-liimg">
-					<image mode="widthFix" lazy-load="{{true}}" src="{{item.photo}}"></image>
-				</view>
-				<view class="anlilist-lib anlilist-libs">
-					<view class="anlilist-libp1">{{item.name}}</view>
-				</view>
-			</view>
-		</block>
-	</view>
-</view>
 
 <view class="tubiaos">角色道提供技术支持</view>

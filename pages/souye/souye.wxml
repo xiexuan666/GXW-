@@ -111,7 +111,7 @@
 		<block wx:for="{{lunbs}}" wx:key="index">
 			<swiper-item class="produt-item">
 				<view class="produt-item-img" data-url="{{item.photo}}" bindtap="handlelun">
-					<image mode="aspectFill" src="{{item.photo}}" class="item-img"></image>
+					<image mode="aspectFill" src="{{item.url}}" class="item-img"></image>
 				</view>
 			</swiper-item>
 		</block>
@@ -162,7 +162,7 @@
 		<block wx:for="{{lunbs}}" wx:key="index">
 			<swiper-item class="produt-item">
 				<view class="produt-item-img" data-url="{{item.photo}}" bindtap="handlelun">
-					<image mode="aspectFill" src="{{item.photo}}" class="item-img"></image>
+					<image mode="aspectFill" src="{{item.url}}" class="item-img"></image>
 				</view>
 			</swiper-item>
 		</block>

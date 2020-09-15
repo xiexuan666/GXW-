@@ -39,19 +39,40 @@
 				</view>
 			</view>
 
+
+
+			<picker mode="date" value="{{date}}" start="2020-01-01" end="" bindchange="bindDateChange">
+				<view class="date" name="date">
+					<view class='page_row'>
+						<view class="search">
+							<view class="df search_arr">
+								<text class="text">上门日期</text>
+								<input name="addtime" value="{{date}}" placeholder="请选择日期" class="df_1"></input>
+							</view>
+						</view>
+					</view>
+				</view>
+			</picker>
+
+
+
+<!-- 
 			<view class='page_row'>
 				<view class="search">
 					<view class="df search_arr">
 						<text class="text">上门日期</text>
 						<input name="xingm" bindinput='xueliInput' class="df_1" placeholder="请选择" />
+
 					</view>
 				</view>
-			</view>
+			</view> -->
+
+
 		</view>
 
 		<!-- 预约 -->
 		<view class="anniu">
-			<button   bindtap="subscribe">立即预约</button>
+			<button bindtap="subscribe">立即预约</button>
 		</view>
 
 
@@ -60,7 +81,7 @@
 		<view class="kef">
 			<view class="keffoot">
 				我们客服人员会及时与您取得联系，
-	         感谢您对冠星王陶瓷的信任
+				感谢您对冠星王陶瓷的信任
 			</view>
 		</view>
 

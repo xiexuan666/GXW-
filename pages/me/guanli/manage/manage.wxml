@@ -1,0 +1,50 @@
+<!-- 活动管理 -->
+<view class="cpxq-dh" wx:if='{{cactiv==1}}'>
+	<view class="cpxq-dhnr">
+		<view class="cpxq-dhul">
+			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1?'active':''}} " data-ind="{{1}}" bindtap="cpxzxz">我参与的活动</view>
+			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}} " data-ind="{{2}}" bindtap="cpxzxz">正在进行活动</view>
+			<view class="cpxq-dhnrp cpxqp3 {{cpxqzt==3?'active':''}} " data-ind="{{3}}" bindtap="cpxzxz">未发布活动</view>
+			<view class="cpxq-dhnrp cpxqp4 {{cpxqzt==4?'active':''}} " data-ind="{{4}}" bindtap="cpxzxz">已下架活动</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+<!-- 参与的活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="search">
+		您暂时没有参加活动哦~
+	</view>
+</view>
+
+
+
+<!-- 正在进行活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}'>
+	<view class="search">
+		您暂时没有进行的活动哦~
+	</view>
+</view>
+
+<!-- 未发布活动 -->
+
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+	<view class="search">
+		您暂时没有发布的活动哦~
+	</view>
+</view>
+
+<!-- 已下架活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==4}}'>
+	<view class="search">
+		您暂时没有下架的活动哦~
+	</view>
+</view>
+
+
+<view class="anniu">
+	<button bindtap="subscribe">创建活动</button>
+</view>

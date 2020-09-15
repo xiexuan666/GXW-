@@ -2,11 +2,11 @@
 <view class="product-cpanli">
 	<view class="cpanli-nr">
 		<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
-			装修攻略
+			参与的活动
 			<view class="cpanli-nr-lid"></view>
 		</view>
 		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
-			热点视频
+			正进行活动
 			<view class="cpanli-nr-lid"></view>
 		</view>
 	</view>
@@ -14,64 +14,24 @@
 
 
 
-<!-- 热点视频 -->
-<view class="videolist" wx:if='{{cactiv==2}}'>
-	<view class="videolist-title">
-		<view class="videosp">
+<!-- 活动 -->
+<view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="history">
+		<view class="activity">
 			<image src="/images/tubiao/1-08.jpg"></image>
-			<view class="detail">
-				<text>村上村树</text>
-				<image src="/images/tubiao/1-12.png"></image>11
+		</view>
+		<view class="right">
+			<view class="right-li">
+				<view class="right-ul">
+					免费参与限时邀请解锁千元红包活动
+				</view>
+				<view class="right-l">
+					活动时问:2020.05.30-09.00至 2020.05.30-12.00
+				</view>
 			</view>
-		</view>
-
-		<view class="videotext">
-			<view class="video-p">
-				[如何装修]开放式厨房大空...
-			</view>
-		</view>
-	</view>
-
-	<view class="videolist-title">
-		<view class="videosp">
-			<image src="/images/tubiao/1-08.jpg"></image>
-			<view class="detail">
-				<text>村上村树</text>
-				<image src="/images/tubiao/1-12.png"></image>11
-			</view>
-		</view>
-
-		<view class="videotext">
-			<view class="video-p">
-				[如何装修]开放式厨房大空...
-			</view>
-		</view>
-	</view>
-</view>
-
-
-<!-- 搜索 -->
-<view class="sous" wx:if='{{cactiv==1}}'>
-	<view class="sous-nr" bindtap="tzsous">
-		<!-- <image src="/images/tubiao/sous.png"></image> -->
-		<input placeholder="搜索"></input>
-	</view>
-</view>
-
-
-<!-- 全部 -->
-<view class="cpxq-dh" wx:if='{{cactiv==1}}'>
-	<view class="cpxq-dhnr">
-		<view class="cpxq-dhul">
-			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1?'active':''}} " data-ind="{{1}}" bindtap="cpxzxz">全部</view>
-			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}} " data-ind="{{2}}" bindtap="cpxzxz">如何选砖</view>
-			<view class="cpxq-dhnrp cpxqp3 {{cpxqzt==3?'active':''}} " data-ind="{{3}}" bindtap="cpxzxz">如何装修</view>
-			<view class="cpxq-dhnrp cpxqp4 {{cpxqzt==4?'active':''}} " data-ind="{{4}}" bindtap="cpxzxz">爆款推荐</view>
-			<view class="cpxq-dhnrp cpxqp5 {{cpxqzt==5?'active':''}} " data-ind="{{5}}" bindtap="cpxzxz">新品上市</view>
-		</view>
-		<view class="data">
-			<view class="data-r">
-				共1120条数据
+			<view class="left" bindtap="fenxiang">
+				<image src="/images/tubiao/1-11.png"></image>
+				分享
 			</view>
 		</view>
 	</view>
@@ -80,48 +40,49 @@
 
 
 
-
-
-<!-- 内容 -->
-<view class="list" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="fitment">
-	<block >
-		<navigator url="/images/tubiao/1-08.jpg" class="goods-list">
-			<image src="/images/tubiao/1-08.jpg">
-			</image>
-			<view class="goods-list-right">
-				<view class="goods-title">
-					[爆款推荐]这个夏天，冠星王瓷砖让
-					你体验不—样的清凉。
+<view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="history">
+		<view class="activity">
+			<image src="/images/tubiao/1-01.jpg"></image>
+		</view>
+		<view class="right">
+			<view class="right-li">
+				<view class="right-ul">
+					免费参与限时邀请解锁千元红包活动
 				</view>
-				<view class="simple-li-r">
-					<view class="cotione">
-						<view class="jxsnr-li-time">5220</view>
-					</view>
-					<view class="cotione1">
-						<view class="jxsnr-li-r">2020.09.01</view>
-					</view>
+				<view class="right-l">
+					活动时问:2020.05.30-09.00至 2020.05.30-12.00
 				</view>
 			</view>
-		</navigator>
-	</block>
-	<block  >
-		<navigator url="/images/tubiao/1-08.jpg" class="goods-list">
-			<image src="/images/tubiao/1-08.jpg">
-			</image>
-			<view class="goods-list-right">
-				<view class="goods-title">
-					[爆款推荐]这个夏天，冠星王瓷砖让
-					你体验不—样的清凉。
+			<view class="left" bindtap="fenxiang">
+				<image src="/images/tubiao/1-11.png"></image>
+				分享
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+<view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="history">
+		<view class="activity">
+			<image src="/images/tubiao/1-14.png"></image>
+		</view>
+		<view class="right">
+			<view class="right-li">
+				<view class="right-ul">
+					免费参与限时邀请解锁千元红包活动
 				</view>
-				<view class="simple-li-r">
-					<view class="cotione">
-						<view class="jxsnr-li-time">5220</view>
-					</view>
-					<view class="cotione1">
-						<view class="jxsnr-li-r">2020.09.01</view>
-					</view>
+				<view class="right-l">
+					活动时问:2020.05.30-09.00至 2020.05.30-12.00
 				</view>
 			</view>
-		</navigator>
-	</block>
+			<view class="left" bindtap="fenxiang">
+				<image src="/images/tubiao/1-11.png"></image>
+				分享
+			</view>
+		</view>
+	</view>
 </view>

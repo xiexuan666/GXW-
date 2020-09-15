@@ -19,27 +19,23 @@ Page({
    if(ind==cpxqzt){return false}
    if(ind==1){
     cpxqzt=1
-    wx.setNavigationBarTitle({ title: '全部'})
+    wx.setNavigationBarTitle({ title: '我参与的活动'})
    }
    if(ind==2){
     cpxqzt=2
-    wx.setNavigationBarTitle({ title: '如何选砖'})
+    wx.setNavigationBarTitle({ title: '正在进行活动'})
    }
    if(ind==3){
     cpxqzt=3
-    wx.setNavigationBarTitle({ title: '如何装修'})
+    wx.setNavigationBarTitle({ title: '未发布活动'})
 
    }
    if(ind==4){
     cpxqzt=4
-    wx.setNavigationBarTitle({ title: '爆款推荐'})
+    wx.setNavigationBarTitle({ title: '已下架活动'})
 
    }
-   if(ind==5){
-    cpxqzt=5
-    wx.setNavigationBarTitle({ title: '新品上市'})
-
-   }
+ 
    this.setData({cpxqzt:cpxqzt})
   },
 
@@ -84,62 +80,41 @@ Page({
 
    // 查询出案例 id字符串 页数 1  
   // num 1第一次添加 2
-  chaxchuanlinr(idzfc,page,num){
-    if(!page){var page=1}
-    console.log(idzfc,"产品id字符串")
-    var anlifuhejiegs=this.data.anlifuhejieg
-    var annrshuzs=[]
-    if(num==2){
-      annrshuzs=this.data.annrshuz
-    }
-    if(num==1){
-      anlifuhejiegs=0
-    }
+  // chaxchuanlinr(idzfc,page,num){
+  //   if(!page){var page=1}
+  //   console.log(idzfc,"产品id字符串")
+  //   var anlifuhejiegs=this.data.anlifuhejieg
+  //   var annrshuzs=[]
+  //   if(num==2){
+  //     annrshuzs=this.data.annrshuz
+  //   }
+  //   if(num==1){
+  //     anlifuhejiegs=0
+  //   }
     
-    if(annrshuzs.length>=anlifuhejiegs&&annrshuzs.length!=0){
-      return false
-    }
-    var tha=this
-    var url = baseUrl + "case/casePage"
-    var dat={
-      page,
-      findCaseById:idzfc
-    }
+  //   if(annrshuzs.length>=anlifuhejiegs&&annrshuzs.length!=0){
+  //     return false
+  //   }
+  //   var tha=this
+  //   var url = baseUrl + "case/casePage"
+  //   var dat={
+  //     page,
+  //     findCaseById:idzfc
+  //   }
 
-    http.promisServer(url, dat).then(resc=>{
-      var annrshuz= annrshuzs.concat(resc.data.CaseList)
-      var anlifuhejieg=resc.data.casessCount
-      console.log(resc.data,'查出来的案例')
-      tha.setData({annrshuz,anlipage:page,anlifuhejieg,anlizfcid:idzfc})
-    })
-  },
-
-  canpiqieh:function(e){
-    var ind=app.hdindex(e,'ind')
-    console.log(ind)
-    var cactiv=this.data.cactiv;
-    if(ind==cactiv){
-      return false
-    }
-    if(ind==1){
-      
-     cactiv=1
-     wx.setNavigationBarTitle({ title: '装修攻略'})
-    }
-    if(ind==2){
-     this.chaxchuanlinr('',1,1)
-     cactiv=2
-     wx.setNavigationBarTitle({ title: '热点视频'})
-    }
-    console.log(cactiv)
-    this.setData({cactiv:cactiv})
-   },
-  //  跳转到专修攻略
-  fitment:function(){
+  //   http.promisServer(url, dat).then(resc=>{
+  //     var annrshuz= annrshuzs.concat(resc.data.CaseList)
+  //     var anlifuhejieg=resc.data.casessCount
+  //     console.log(resc.data,'查出来的案例')
+  //     tha.setData({annrshuz,anlipage:page,anlifuhejieg,anlizfcid:idzfc})
+  //   })
+  // },
+// 跳转到创建活动
+subscribe:function(){
 wx.navigateTo({
-  url: '/pages/hotspot/strategy/strategy',
+  url: '/pages/me/guanli/manage/newly',
 })
-  },
+},
 
   /**
    * 生命周期函数--监听页面加载

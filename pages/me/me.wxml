@@ -23,23 +23,12 @@
 	</view>
 </view>
 
-<!-- 个人钱包 -->
-
-
-
-
-
-
-
-
-
-
 
 
 
 <view class="me-list">
 	<view class="me-list-ul">
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+		<view class="me-list-li" >
 			<view class="me-list-lil">我的订单<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -47,7 +36,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+		<view class="me-list-li"  data-ind="0">
 			<view class="me-list-lil">购物车<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -55,7 +44,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+		<view class="me-list-li"  data-ind="0">
 			<view class="me-list-lil">收货地址<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -63,7 +52,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+		<view class="me-list-li"  data-ind="0">
 			<view class="me-list-lil">我的卡券<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -71,14 +60,14 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+		<view class="me-list-li"  data-ind="0">
 			<view class="me-list-lil">抽奖活动<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+		<view class="me-list-li"  data-ind="0">
 			<view class="me-list-lil">我的收藏<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -86,7 +75,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+		<view class="me-list-li"  data-ind="0">
 			<view class="me-list-lil">联系客服<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -95,7 +84,7 @@
 		</view>
 
 
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
+		<view class="me-list-li"  data-ind="0">
 			<view class="me-list-lil">个人钱包<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -104,20 +93,14 @@
 		</view>
 
 
-		<view class="me-list-li" bindtap="melisttz" data-ind="0">
-			<view class="me-list-lil">注册<image src="/images/tubiao/1-13.png"></image>
+		<view class="me-list-li" bindtap="handlezhuc">
+			<view class="me-list-lil">角色认证<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<!-- <view class="me-list-li" bindtap="melisttz" data-ind="1" wx:if="{{sjzt.status==2}}">
-			<view class="me-list-lil">管理入口<image src="/images/tubiao/1-13.png"></image>
-			</view>
-			<view class="me-list-lir">
-				<image src="/images/tubiao/youj.png"></image>
-			</view>
-		</view> -->
+
 		<view class="me-list-li" bindtap="melisttz" data-ind="2" wx:if="{{sjzt.status==0&&status}}">
 			<view class="me-list-lil">商家入驻<image src="/images/tubiao/1-13.png"></image>
 			</view>
@@ -127,19 +110,46 @@
 		</view>
 
 
-		<!-- <view class="me-list-li" bindtap="melisttz" data-ind="3" wx:if="{{sjzt.status==1||sjzt.status==3}}">
-			<view class="me-list-lil">审核状态<image src="/images/tubiao/1-13.png"></image>
+		<view class="me-list-li" bindtap="manage">
+			<view class="me-list-lil">商家管理<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
-		</view> -->
+		</view>
+
+
+		<!-- foot -->
+		<view class="list-item">
+			<view class="goods">
+				<view class="collect">
+					<image src="/images/tubiao/gxw.png"></image>
+				</view>
+				<view class="tab">
+					<view class="attrs1">
+						冠星王陶瓷
+					</view>
+					<view class="attrs2">
+						店主:村上
+					</view>
+					<view class="attrs">
+						广东省佛山市禅城区南庄镇中国陶瓷总部基地
+					</view>
+				</view>
+
+				<view class="contact">
+					<button class="btn">联系店主</button>
+					<button class="btn">在线咨询</button>
+				</view>
+			</view>
+		</view>
+
 	</view>
 </view>
 
 <!-- 申请模态框 -->
 
-<view class="shenqmot" catchtap="quxiaomtk" wx:if="{{mtkzt}}">
+<!-- <view class="shenqmot" catchtap="quxiaomtk" wx:if="{{mtkzt}}">
 	<view class="shenqmot-nr" catchtap="zhuzi">
 		<view class="shenqmot-nrt">申请入驻</view>
 		<view class="shenqmot-nrc">
@@ -167,5 +177,5 @@
 		</view>
 		<view class="shenqmot-nrb" catchtap="shenq">申请</view>
 	</view>
-</view>
+</view> -->
 <!-- <view class="tubiao">角色道提供技术支持</view> -->

@@ -14,7 +14,6 @@
     "pages/product/cp/xlcp",
     "pages/me/guanli/guanli",
     "pages/me/ruzhu/ruzhu",
-    "pages/me/guanli/kejian",
     "pages/product/anlixq/anlixq",
     "pages/product/cp/cpxq",
     "pages/me/shangcanli/guanlianli",
@@ -31,7 +30,13 @@
     "pages/me/pyquan/pyquan",
     "pages/hotspot/hotspot",
     "pages/hotspot/strategy/strategy",
-    "pages/souye/souye3"
+    "pages/souye/souye3",
+    "pages/me/ruzhu1/ruzhu2",
+    "pages/me/zhuc/zhuc",
+    "pages/me/guanli/manage/manage",
+    "pages/me/guanli/customer/customer",
+    "pages/me/guanli/manage/newly",
+    "pages/me/guanli/manage/store"
 
   ],
   "window": {

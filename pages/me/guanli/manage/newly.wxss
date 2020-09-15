@@ -1,0 +1,17 @@
+
+
+.collect {
+  font-size: 33rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 日期 */
+.section {
+  margin-top: 50rpx;
+  text-align: center;
+  background: #f7f7f7;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}

@@ -73,14 +73,9 @@ Page({
   // 跳转到注册页面
   handlezhuc:function(){
     app.Jump('me/zhuc/zhuc')
-  },
-  // 跳转到管理
-  manage:function(){
-wx.navigateTo({
-  url: '/pages/me/guanli/guanli',
-})
-  },
-  
+    
+  }
+  ,
   /**
    * 生命周期函数--监听页面加载
    */
@@ -131,9 +126,6 @@ wx.navigateTo({
    */
   onPullDownRefresh: function () {
 
-
-
-    
   },
 
   /**

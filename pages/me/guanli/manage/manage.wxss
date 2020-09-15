@@ -1,0 +1,94 @@
+/* pages/me/guanli/manage/manage.wxss */
+/* 全部 */
+.cpxq-dh {
+  width: 100%;
+  margin-top: 70rpx;
+}
+
+.cpxq-dhnr {
+  width: 680rpx;
+  margin: 0 auto;
+  padding-bottom: 14rpx;
+}
+
+.cpxq-dhul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.cpxq-dhnrp {
+  color: #888888;
+  font-size: 25rpx;
+  font-weight: 300;
+  border-right: 1px solid #888;
+}
+
+.cpxqp1 {
+  float: left;
+  padding: 0 15rpx;
+}
+
+.cpxqp2 {
+  display: inline-block;
+  padding: 0 15rpx;
+}
+
+.cpxqp3 {
+  float: right;
+  padding: 0 15rpx;
+}
+
+.cpxqp4 {
+  padding: 0 15rpx;
+}
+
+.cpxqp5 {
+  padding: 0 15rpx;
+}
+
+.data {
+  margin: 25rpx 0;
+}
+
+.data-r {
+  width: 610rpx;
+  margin: 0 auto;
+  color: #888;
+  font-size: 25rpx;
+  font-weight: 300;
+}
+
+
+
+.header {
+  margin-top: 100rpx;
+  width: 700rpx;
+  text-align: center;
+}
+.search {
+  color: #888;
+}
+
+
+/* 按钮 */
+button::after {
+  border: none;
+}
+
+button {
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 30px;
+  background: #f7ab08;
+  color: white;
+  padding: 0rpx 100rpx;
+  margin-bottom: 30rpx;
+}
+
+.keffoot {
+  text-align: center;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-bottom: 30rpx;
+}

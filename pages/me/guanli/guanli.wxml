@@ -1,40 +1,95 @@
-<!--pages/me/guanli/guanli.wxml-->
 <!--pages/me/me.wxml-->
+<import src="/pages/template/loginphone/loginphone.wxml" />
+<!-- 登录 -->
+<template is="login" data="{{souq: souq}}" />
+<!-- 获取手机 -->
+<template is="phone" data="{{sj: sj}}" />
+
+
 <view class="jinx-t">
-  <view class="jinx-tnr">
-    <view class="jinx-bei"><image src="/images/tubiao/bei.jpg"></image></view>
-    <view class="jinx-toux">
-      <view class="toux-img"><image src="{{sjzts.logo}}"></image></view>
-      <view class="name-p">{{sjzts.store_name}}</view>
-    </view>
-  </view>
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<!-- <image src="/images/tubiao/1-13.png"></image> -->
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img" wx:if="{{gerxinx}}">
+				<image src="{{gerxinx.wx_photo}}"></image>
+			</view>
+			<view class="toux-img" wx:if="{{!gerxinx}}" bindtap="dianjidl">
+				<!-- <image src="/images/tubiao/1-13.png"></image> -->
+			</view>
+			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
+		</view>
+	</view>
 </view>
 
-<view class="glnr">
-  <view class="glul">
-    <view class="glli" bindtap="dhtz" data-ind="0">
-      <view class="glili-img"><image src="/images/tubiao/gl1.png"></image></view>
-      <view class="glili-p">直播间</view>
-    </view>
-    <view class="glli" bindtap="dhtz" data-ind="1">
-      <view class="glili-img" ><image src="/images/tubiao/gl2.png"></image></view>
-      <view class="glili-p">课件</view>
-    </view>
-    <view class="glli" bindtap="dhtz" data-ind="2">
-      <view class="glili-img" ><image src="/images/tubiao/gl3.png"></image></view>
-      <view class="glili-p">产品价格管理</view>
-    </view>
-    <view class="glli" bindtap="dhtz" data-ind="3">
-      <view class="glili-img" ><image src="/images/tubiao/gl4.png"></image></view>
-      <view class="glili-p">当地案例管理</view>
-    </view>
-     <view class="glli" bindtap="dhtz" data-ind="4">
-      <view class="glili-img" ><image src="/images/tubiao/gl4.png"></image></view>
-      <view class="glili-p">修改门店信息</view>
-    </view>
-     <view class="glli" bindtap="dhtz" data-ind="5">
-      <view class="glili-img" ><image src="/images/tubiao/gl2.png"></image></view>
-      <view class="glili-p">朋友圈宣传图</view>
-    </view>
-  </view>
+
+
+<view class="me-list">
+	<view class="me-list-ul">
+		<view class="me-list-li" bindtap="huodmanage">
+			<view class="me-list-lil">活动管理
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="anlmanage">
+			<view class="me-list-lil">案例管理
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="chanpmanage">
+			<view class="me-list-lil">产品管理
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="kehmanage">
+			<view class="me-list-lil">客户管理
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="zixmanage">
+			<view class="me-list-lil">咨询管理
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="fangamanage">
+			<view class="me-list-lil">方案管理
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="shujmanage">
+			<view class="me-list-lil">数据管理
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+
+		<view class="me-list-li" bindtap="dianpmanage">
+			<view class="me-list-lil">店铺设置
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+	</view>
 </view>

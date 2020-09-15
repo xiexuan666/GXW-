@@ -1,0 +1,73 @@
+<!-- 下拉框 -->
+
+<view class='select_box'>
+	<view class='select' catchtap='selectTap'>
+		<text class='select_text'>{{selectData[index]}}</text>
+		<image class='select_img {{show&&"select_img_rotate"}}' src='/image/../images/tubiao/youj.png'></image>
+	</view>
+	<view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+		<text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+	</view>
+</view>
+
+
+
+
+<!-- 时间日期 -->
+<picker value="{{picker1Value}}" range="{{picker1Range}}" bindchange="normalPickerBindchange">
+	当前城市选择：{{picker1Range[picker1Value]}}
+</picker>
+<picker mode="time" value="{{timeValue}}" start="00:00" end="24:00" bindchange="timePickerBindchange">
+	当前时间选择: {{timeValue}}
+</picker>
+<picker mode="date" value="{{dateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">
+	当前日期选择: {{dateValue}}
+</picker>
+
+
+<!-- 获取定位 -->
+<button bindtap="getLocation" type="primary">点击获取当前地址位置</button>
+
+
+
+
+<!-- 开始时间结束时间 -->
+<view class="section" style="background:#dfe0e2;margin:20rpx;padding:20rpx">
+	<picker mode="date" value="{{date1}}" bindchange="bindDateStartChange">
+		<view class="picker">
+			开始日期: {{date1}}
+		</view>
+	</picker>
+</view>
+
+<view class="section" style="background:#dfe0e2;margin:20rpx;padding:20rpx">
+	<picker mode="date" value="{{date2}}" bindchange="bindDateEndChange">
+		<view class="picker">
+			结束日期: {{date2}}
+		</view>
+	</picker>
+</view>
+
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="query"> 查询 </button>
+
+
+
+<!-- 优惠券 -->
+<view class="container">
+  <view class="coupon-list">
+    <!-- 第一个 -->
+    <view class="sawtooth-bor item">
+      <view class="pt10 discount">
+        <text class="fs36">50</text>
+        <view class="fs12">满498使用</view>
+        <view class="fs12">有效期2018.03.16-2018.05.31</view>
+      </view>
+      <view class="textc receive">立即领取</view>
+    </view>
+    <!-- 第二个 -->
+    <view class="wrapper">
+    <view class="left"></view>
+    <view class="right"></view>
+    </view>
+  </view>
+</view>

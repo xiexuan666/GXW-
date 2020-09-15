@@ -1,31 +1,18 @@
-// pages/souye/souye3.js
+// pages/me/guanli/manage/newly.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-// 预约时间
-    dateValue:'2016-10-13'
+    
   },
-
-
-  // 预约日期
-  datePickerBindchange:function(e){
-    this.setData({
-     dateValue:e.detail.value
-    })
-   },
-   bindDateChange:function(e){
-     this.setData({
-       date:e.detail.value
-     })
-   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
 
   },
 

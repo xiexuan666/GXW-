@@ -1,107 +1,127 @@
-<!--pages/jinxs/jinxs.wxml-->
-<view class="jinx-t">
-	<view class="jinx-tnr">
-		<view class="jinx-bei">
-			<image src="/images/tubiao/bei.jpg"></image>
+<!-- 热点视频和装修 -->
+<view class="product-cpanli">
+	<view class="cpanli-nr">
+		<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+			装修攻略
+			<view class="cpanli-nr-lid"></view>
 		</view>
-		<view class="jinx-toux">
-			<view class="toux-img">
-				<image src="{{bendijxs.logo}}"></image>
-			</view>
-			<view class="name-p">{{bendijxs.store_name}}</view>
+		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+			热点视频
+			<view class="cpanli-nr-lid"></view>
 		</view>
 	</view>
 </view>
 
-<!-- 经销商内容 -->
-<view class="jxsnr">
-	<view class="jxsnr-ul">
-		<view class="jxsnr-li  ">
-			<view class="jxsnr-li-l  jxsnr-li-lsa">
-				<view class="jxsnr-tubiao tu1">
-					<image mode="heightFix" src="/images/tubiao/dt1.png"></image>
-				</view>
-				<view class="jxsnr-li-lp">营业时间：</view>
-			</view>
-			<view class="jxsnr-li-r">{{bendijxs.open_time}}</view>
-		</view>
-		<!-- 地址 -->
-		<view class="jxsnr-li">
-			<view class="jxsnr-li-l jxsnr-li-ls">
-				<view class="jxsnr-tubiao tu2">
-					<image mode="heightFix" src="/images/tubiao/dt2.png"></image>
-				</view>
-				<view class="jxsnr-li-lpp"><text space="emsp">地  址：</text></view>
-			</view>
-			<!-- {{bendijxs.address}} -->
-			<view class="jxsnr-li-r jxsnr-li-r3">
-				<view class="jxsnr-li-rp">{{bendijxs.address}}</view>
-			</view>
-			<view class="dhxuanf dhxuanfs">
-				<!-- <view class="dhxuanf-nr  dhxuanf-nrs" bindtap="daohan">
-					<view class="dhxuanf-nrp dhxuanf-nrps">一键导航</view>
-				</view> -->
-				<view class="dh-list" bindtap="daohan">
-					<image mode="heightFix" src="/images/peztup/dt.jpg" class="imges"></image>
-				</view>
+
+
+<!-- 热点视频 -->
+<view class="videolist" wx:if='{{cactiv==2}}'>
+	<view class="videolist-title">
+		<view class="videosp">
+			<image src="/images/tubiao/1-08.jpg"></image>
+			<view class="detail">
+				<text>村上村树</text>
+				<image src="/images/tubiao/1-12.png"></image>11
 			</view>
 		</view>
-		<!-- 联系人 -->
-		<view class="jxsnr-li  ">
-			<view class="jxsnr-li-l jxsnr-li-lsb">
-				<view class="jxsnr-tubiao tu3">
-					<image mode="heightFix" src="/images/tubiao/dt3.png"></image>
-				</view>
-				<view class="jxsnr-li-lp"><text space="ensp">联 系 人：</text></view>
+
+		<view class="videotext">
+			<view class="video-p">
+				[如何装修]开放式厨房大空...
 			</view>
-			<view class="jxsnr-li-r">{{bendijxs.shopowner}}</view>
 		</view>
-		<!-- 联系电话 -->
-		<view class="jxsnr-li">
-			<view class="jxsnr-li-l jxsnr-li-lsc">
-				<view class="jxsnr-tubiao tu4">
-					<image mode="heightFix" src="/images/tubiao/dt4.png"></image>
-				</view>
-				<view class="jxsnr-li-lp">联系电话：</view>
+	</view>
+
+	<view class="videolist-title">
+		<view class="videosp">
+			<image src="/images/tubiao/1-08.jpg"></image>
+			<view class="detail">
+				<text>村上村树</text>
+				<image src="/images/tubiao/1-12.png"></image>11
 			</view>
-			<!-- <view class="jxsnr-li-r jxsnr-li-r2">{{bendijxs.phone}}</view> -->
-					<view class="jxsnr-li-r jxsnr-li-r2">0757-81545645</view>
-
-			<view class="dhxuanf" bindtap="calling" >
-				<image src="/images/peztup/dh.jpg" mode="heightFix" class="imges-img"></image>
-			</view>
-
-
-
-			<!-- <view class="dhxuanf-nr" bindtap="calling">
-				<view class="dhxuanf-nr-img" >
-					<image src="/images/tubiao/dt6.png"></image>
-				</view>
-				<view class="dhxuanf-nrp">一键呼叫</view>
-			</view> -->
-
-
 		</view>
 
-
-		<!-- <view class="jxsnr-li">
-      <view class="jxsnr-li-l jxsnr-li-l5">
-        <view class="jxsnr-tubiao tu5"><image mode="widthFix" src="/images/tubiao/dt5.png"></image></view>
-         <view class="jxsnr-li-lp jxsnr-li-lp5">联系本地客服</view>
-      </view>
-      <view class="jxsnr-li-r jxsnr-li-rs"><image  show-menu-by-longpress  data-img="{{bendijxs.wxhao}}" src="{{bendijxs.wxhao}}"></image></view>
-    </view> -->
-
-
+		<view class="videotext">
+			<view class="video-p">
+				[如何装修]开放式厨房大空...
+			</view>
+		</view>
 	</view>
 </view>
 
 
-<!-- 导航 -->
-<map id="map" longitude="{{dt.longitude}}" latitude="{{dt.latitude}}" scale="{{dt.scale}}" markers="{{dt.markers}}" show-location show-compass style="width: 100%; height: 600rpx;"></map>
+<!-- 搜索 -->
+<view class="sous" wx:if='{{cactiv==1}}'>
+	<view class="sous-nr" bindtap="tzsous">
+		<!-- <image src="/images/tubiao/sous.png"></image> -->
+		<input placeholder="搜索"></input>
+	</view>
+</view>
+
+
+<!-- 全部 -->
+<view class="cpxq-dh" wx:if='{{cactiv==1}}'>
+	<view class="cpxq-dhnr">
+		<view class="cpxq-dhul">
+			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1?'active':''}} " data-ind="{{1}}" bindtap="cpxzxz">全部</view>
+			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}} " data-ind="{{2}}" bindtap="cpxzxz">如何选砖</view>
+			<view class="cpxq-dhnrp cpxqp3 {{cpxqzt==3?'active':''}} " data-ind="{{3}}" bindtap="cpxzxz">如何装修</view>
+			<view class="cpxq-dhnrp cpxqp4 {{cpxqzt==4?'active':''}} " data-ind="{{4}}" bindtap="cpxzxz">爆款推荐</view>
+			<view class="cpxq-dhnrp cpxqp5 {{cpxqzt==5?'active':''}} " data-ind="{{5}}" bindtap="cpxzxz">新品上市</view>
+		</view>
+		<view class="data">
+			<view class="data-r">
+				共1120条数据
+			</view>
+		</view>
+	</view>
+</view>
 
 
 
 
 
-<view class="tubiaos">角色道提供技术支持</view>
+
+<!-- 内容 -->
+<view class="list" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="fitment">
+	<block >
+		<navigator url="/images/tubiao/1-08.jpg" class="goods-list">
+			<image src="/images/tubiao/1-08.jpg">
+			</image>
+			<view class="goods-list-right">
+				<view class="goods-title">
+					[爆款推荐]这个夏天，冠星王瓷砖让
+					你体验不—样的清凉。
+				</view>
+				<view class="simple-li-r">
+					<view class="cotione">
+						<view class="jxsnr-li-time">5220</view>
+					</view>
+					<view class="cotione1">
+						<view class="jxsnr-li-r">2020.09.01</view>
+					</view>
+				</view>
+			</view>
+		</navigator>
+	</block>
+	<block  >
+		<navigator url="/images/tubiao/1-08.jpg" class="goods-list">
+			<image src="/images/tubiao/1-08.jpg">
+			</image>
+			<view class="goods-list-right">
+				<view class="goods-title">
+					[爆款推荐]这个夏天，冠星王瓷砖让
+					你体验不—样的清凉。
+				</view>
+				<view class="simple-li-r">
+					<view class="cotione">
+						<view class="jxsnr-li-time">5220</view>
+					</view>
+					<view class="cotione1">
+						<view class="jxsnr-li-r">2020.09.01</view>
+					</view>
+				</view>
+			</view>
+		</navigator>
+	</block>
+</view>

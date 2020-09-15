@@ -235,6 +235,47 @@
 					"pathName": "pages/souye/souye3",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/me/zhuc/zhuc",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/me/ruzhu1/ruzhu2",
+					"pathName": "pages/me/ruzhu1/ruzhu2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动管理",
+					"pathName": "pages/me/guanli/manage/manage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "客户管理",
+					"pathName": "pages/me/guanli/customer/customer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "创建免费活动",
+					"pathName": "pages/me/guanli/manage/newly",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "店铺设置",
+					"pathName": "pages/me/guanli/manage/store",
+					"scene": null
 				}
 			]
 		}

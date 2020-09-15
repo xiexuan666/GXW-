@@ -1,3 +1,4 @@
+/* pages/me/zhuc/zhuc.wxss */
 @import '/pages/template/loginphone/loginphone.wxss';
 page {
   background-color: #fff;
@@ -124,3 +125,26 @@ page {
 
 
 /* 我的列表 end*/
+
+
+/* 按钮 */
+button::after {
+  border: none;
+}
+
+button {
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 30px;
+  background: #bd8f60;
+  color: white;
+  padding: 0rpx 100rpx;
+  margin-bottom: 30rpx;
+}
+
+.keffoot {
+  text-align: center;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-bottom: 30rpx;
+}

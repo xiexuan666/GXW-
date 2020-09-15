@@ -21,6 +21,8 @@ Page({
     sjzt:{status:0},
     //当前状态
     status:0,
+    cpxqzt:1,
+    cactiv:1,
    
   },
   //个人列表跳转
@@ -57,6 +59,68 @@ Page({
     }
     
   },
+//产品详情导航选择
+cpxzxz:function(e){
+  var ind=app.hdindex(e,'ind')
+
+ var cpxqzt=this.data.cpxqzt;
+ if(ind==cpxqzt){return false}
+ if(ind==1){
+  cpxqzt=1
+  wx.setNavigationBarTitle({ title: '我参与的活动'})
+ }
+ if(ind==2){
+  cpxqzt=2
+  wx.setNavigationBarTitle({ title: '正在进行活动'})
+ }
+ this.setData({cpxqzt:cpxqzt})
+},
+
+//案例头部选择
+anlitopxuanz:function(e){
+  console.log(e,9999)
+  var ind=app.hdindex(e,'ind')
+  var id=app.hdindex(e,'idc')
+  var cpzt=app.hdindex(e,'cpzt')
+  var anlishuj=this.data.anlishuj
+  var anlixuanz=this.data.anlixuanz
+  if(cpzt){
+    anlixuanz[ind]=null;
+    anlishuj[ind].xuanz=''
+  }else{
+    anlixuanz[ind]=id
+    anlishuj[ind].xuanz=id
+  }
+  if(this.arrlength(anlixuanz)==0){
+    // 清除案例选中
+    this.antoucclear()
+    return false
+  }
+  // var anlimyData=this.data.anlimyData
+  var anliskubs=this.data.anliskubs
+  
+  var fanhui= toubu0({},anlishuj,anliskubs,anlixuanz)
+  this.setData({
+    anlishuj:fanhui.keys,
+    anlixuanz:anlixuanz,
+    anlizfcid:fanhui.idzfc,
+  })
+
+  if(fanhui.idzfc==''){
+    this.antoucclear(1)
+    wx.showToast({title: '没有相关结果',icon: 'none',duration: 700})
+    return false
+  }
+  //查询案例出内容
+  this.chaxchuanlinr(fanhui.idzfc,1)
+},
+
+
+
+
+
+
+
   //申请
   shenq:function(){
     app.Jump('me/ruzhu/ruzhu')
@@ -73,14 +137,9 @@ Page({
   // 跳转到注册页面
   handlezhuc:function(){
     app.Jump('me/zhuc/zhuc')
-  },
-  // 跳转到管理
-  manage:function(){
-wx.navigateTo({
-  url: '/pages/me/guanli/guanli',
-})
-  },
-  
+    
+  }
+  ,
   /**
    * 生命周期函数--监听页面加载
    */
@@ -131,9 +190,6 @@ wx.navigateTo({
    */
   onPullDownRefresh: function () {
 
-
-
-    
   },
 
   /**

@@ -11,37 +11,7 @@ Page({
   cpxqzt:1,
   cactiv:1,
   },
-   //产品详情导航选择
-   cpxzxz:function(e){
-    var ind=app.hdindex(e,'ind')
 
-   var cpxqzt=this.data.cpxqzt;
-   if(ind==cpxqzt){return false}
-   if(ind==1){
-    cpxqzt=1
-    wx.setNavigationBarTitle({ title: '全部'})
-   }
-   if(ind==2){
-    cpxqzt=2
-    wx.setNavigationBarTitle({ title: '如何选砖'})
-   }
-   if(ind==3){
-    cpxqzt=3
-    wx.setNavigationBarTitle({ title: '如何装修'})
-
-   }
-   if(ind==4){
-    cpxqzt=4
-    wx.setNavigationBarTitle({ title: '爆款推荐'})
-
-   }
-   if(ind==5){
-    cpxqzt=5
-    wx.setNavigationBarTitle({ title: '新品上市'})
-
-   }
-   this.setData({cpxqzt:cpxqzt})
-  },
 
   //案例头部选择
   anlitopxuanz:function(e){
@@ -124,12 +94,12 @@ Page({
     if(ind==1){
       
      cactiv=1
-     wx.setNavigationBarTitle({ title: '装修攻略'})
+     wx.setNavigationBarTitle({ title: '优惠活动'})
     }
     if(ind==2){
      this.chaxchuanlinr('',1,1)
      cactiv=2
-     wx.setNavigationBarTitle({ title: '热点视频'})
+     wx.setNavigationBarTitle({ title: '优惠活动'})
     }
     console.log(cactiv)
     this.setData({cactiv:cactiv})

@@ -1,0 +1,127 @@
+<!-- 数据管理 -->
+<view class="product-cpanli">
+	<view class="cpanli-nr">
+		<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+			引流数据
+			<view class="cpanli-nr-lid"></view>
+		</view>
+		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+			排行榜
+			<view class="cpanli-nr-lid"></view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 常用工具 -->
+<view class="collect" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="title">
+		<view class="contact">
+			<view class="tab">常用工具</view>
+		</view>
+		<view class="list">
+			<view class="list-item">
+				<view class="list-right">
+					<image src="/images/tubiao/1-11.png"></image>
+				</view>
+				<view class="character">分享获客</view>
+			</view>
+			<view class="list-item">
+				<view class="list-right">
+					<image src="/images/tubiao/1-11.png"></image>
+				</view>
+				<view class="character">智能海报</view>
+			</view>
+			<view class="list-item">
+				<view class="list-right">
+					<image src="/images/tubiao/1-11.png"></image>
+				</view>
+				<view class="character">卡券核销</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+
+
+<!-- 数据面板 -->
+<view class="price" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="title">
+		<view class="contact">
+			<view class="tab">数据面板</view>
+		</view>
+		<view class="lists">
+			<view class="list-items">
+				<view class="list-rights" style="color:#adb3bf;font-size:33rpx;font-weight: 700;">3055</view>
+				<view class="characters">累计进店</view>
+			</view>
+			<view class="list-items">
+				<view class="list-rights" style="color:#ff2a53;font-size:33rpx;font-weight: 700;">1952</view>
+				<view class="characters">累计获客</view>
+			</view>
+			<view class="list-items">
+				<view class="list-rights" style="color:#6967da;font-size:33rpx;font-weight: 700;">10</view>
+				<view class="characters">日总进店</view>
+			</view>
+			<view class="list-items">
+				<view class="list-rights" style="color:#0086fb;font-size:33rpx;font-weight: 700;">1</view>
+				<view class="characters">日新进店</view>
+			</view>
+			<view class="list-items">
+				<view class="list-rights" style="color:#000000;font-size:33rpx;font-weight: 700;">0</view>
+				<view class="characters">日新获客</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+<view class="links" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="ul">
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view class="shuz">15</view>
+		</view>
+
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view class="shuz">15</view>
+		</view>
+
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view class="shuz">15</view>
+		</view>
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view>15</view>
+		</view>
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view>15</view>
+		</view>
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view>15</view>
+		</view>
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view>15</view>
+		</view>
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view>15</view>
+		</view>
+		<view class="link">
+			<view class="link_child"> 推广人数 </view>
+			<view>15</view>
+		</view>
+
+	</view>
+</view>

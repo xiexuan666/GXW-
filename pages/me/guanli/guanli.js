@@ -87,6 +87,41 @@ Page({
         url: '/pages/me/guanli/manage/store',
       })
     },
+    // 跳转到数据管理
+    shujmanage:function(){
+      wx.navigateTo({
+        url: '/pages/me/guanli/manage/data',
+      })
+    },
+    //跳转到方案管理
+    fangamanage:function(){
+   wx.navigateTo({
+     url: '/pages/me/guanli/manage/scheme',
+   })
+    },
+
+    
+        //跳转到案例管理
+        anlmanage:function(){
+          wx.navigateTo({
+            url: '/pages/me/guanli/manage/anl',
+          })
+           },
+  
+               //跳转到产品管理
+               chanpmanage:function(){
+      wx.navigateTo({
+        url: '/pages/me/guanli/manage/chanp',
+      })
+       },
+  
+           //跳转到咨询管理
+           zixmanage:function(){
+      wx.navigateTo({
+        url: '/pages/me/guanli/manage/zixu',
+      })
+       },
+     
   
   /**
    * 生命周期函数--监听页面加载

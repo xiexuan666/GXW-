@@ -54,20 +54,103 @@
 
 <!-- 优惠券 -->
 <view class="container">
-  <view class="coupon-list">
-    <!-- 第一个 -->
-    <view class="sawtooth-bor item">
-      <view class="pt10 discount">
-        <text class="fs36">50</text>
-        <view class="fs12">满498使用</view>
-        <view class="fs12">有效期2018.03.16-2018.05.31</view>
-      </view>
-      <view class="textc receive">立即领取</view>
-    </view>
-    <!-- 第二个 -->
-    <view class="wrapper">
-    <view class="left"></view>
-    <view class="right"></view>
-    </view>
-  </view>
+	<view class="coupon-list">
+		<!-- 第一个 -->
+		<view class="sawtooth-bor item">
+			<view class="pt10 discount">
+				<text class="fs36">50</text>
+				<view class="fs12">满498使用</view>
+				<view class="fs12">有效期2018.03.16-2018.05.31</view>
+			</view>
+			<view class="textc receive">立即领取</view>
+		</view>
+		<!-- 第二个 -->
+		<view class="wrapper">
+			<view class="left"></view>
+			<view class="right"></view>
+		</view>
+	</view>
 </view>
+
+
+
+
+
+
+
+<view class="me-list">
+	<view class="me-list-ul">
+		<form>
+
+			<view class="me-list-li">
+				<view class="me-list-lil">商家名称</view>
+				<view class="me-list-lir">
+					<input class="form-lir-input" value="{{storename}}" name="storename" placeholder="请输入商家名称"></input>
+				</view>
+			</view>
+
+
+
+			<view class="me-list-li">
+				<view class="me-list-lil">地区</view>
+				<view class="me-list-lir">
+					<input class="form-lir-input" value="{{type}}" name="type" placeholder="请输入地区"></input>
+				</view>
+			</view>
+
+			<view class="me-list-li">
+				<view class="me-list-lil">联系人</view>
+				<view class="me-list-lir">
+					<input class="form-lir-input" value="{{shopowner}}" name="shopowner" placeholder="请输你的名字"></input>
+				</view>
+			</view>
+
+			<view class="me-list-li">
+				<view class="me-list-lil">联系方式</view>
+				<view class="me-list-lir">
+					<input class="form-lir-input" value="{{phone}}" name="phone" type="number" placeholder="请输入手机号码"></input>
+				</view>
+			</view>
+
+			<view class="me-list-li">
+				<view class="me-list-lil">详细地址
+				</view>
+				<view class="me-list-lir">
+					<input class="form-lir-input dz" value="{{address}}" name="address" placeholder="请选择详细地址"></input>
+				</view>
+			</view>
+
+
+
+			<view class="me-list-li">
+				<view class="me-list-lil">营业时间</view>
+				<view class="me-list-lir">
+					<picker mode="time" value="{{timestar}}" name="kais" start="00:00" end="24:00" bindchange="bindTimeChangestar">
+						<view class="picker">
+							{{timestar}}
+						</view>
+					</picker>
+				</view>
+			</view>
+
+			<view class="me-list-li">
+				<view class="me-list-lil">入驻时间</view>
+				<view class="me-list-lir">
+					<picker mode="time" value="{{timeend}}" name="jies" start="00:00" end="24:00" bindchange="bindTimeChangeend">
+						<view class="picker">
+							{{timeend}}
+						</view>
+					</picker>
+				</view>
+			</view>
+
+		</form>
+	</view>
+</view>
+
+
+
+
+
+
+

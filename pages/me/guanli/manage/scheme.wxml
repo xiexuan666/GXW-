@@ -1,0 +1,131 @@
+<!--pages/me/me.wxml-->
+<import src="/pages/template/loginphone/loginphone.wxml" />
+<!-- 登录 -->
+<template is="login" data="{{souq: souq}}" />
+<!-- 获取手机 -->
+<template is="phone" data="{{sj: sj}}" />
+
+
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<!-- <image src="/images/tubiao/1-13.png"></image> -->
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img" wx:if="{{gerxinx}}">
+				<image src="{{gerxinx.wx_photo}}"></image>
+			</view>
+			<view class="toux-img" wx:if="{{!gerxinx}}" bindtap="dianjidl">
+				<!-- <image src="/images/tubiao/1-13.png"></image> -->
+			</view>
+			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="me-list">
+	<view class="me-list-ul">
+		<view class="me-list-li">
+			<view class="me-list-lil">方案名称</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li">
+			<view class="me-list-lil">几栋几号</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li">
+			<view class="me-list-lil">客户姓名</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li">
+			<view class="me-list-lil">联系电话</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li">
+			<view class="me-list-lil">案例简介</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li">
+			<view class="me-list-lil">户　　型</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+
+		<view class="me-list-li">
+			<view class="me-list-lil">风　　格</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+
+		<view class="me-list-li">
+			<view class="me-list-lil">产品标签</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+
+		<view class="me-list-li">
+			<view class="me-list-lil">类　　型</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+
+
+		<view class="me-list-li">
+			<view class="me-list-lil">专修装修面积</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+
+		<view class="me-list-li">
+			<view class="me-list-lil">客户需求</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+
+		<view class="shanctup">
+			<view class="shanctup-ul">
+				<view class="shanctup-li">
+					<view class="shanctup-li-p1">商家LOGO (222*222, 限1张)</view>
+					<view class="shanctup-li-img">
+						<block wx:for="{{tupian}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+							<view class="shanctup-li-imgli" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shanc" data-img="{{item}}">
+								<image src="{{item}}"></image>
+							</view>
+						</block>
+					</view>
+					<view class="shanctupbutton" bindtap="shangctup">
+						<!-- <image mode="widthFix" src="/images/tubiao/zaop.png"></image> -->
+						<view class="shanctupbutton-p">添加图片</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+
+
+		<button id="btn" disabled="{{isDisabled}}">保存</button>
+		<button id="btn" disabled="{{isDisabled}}">取消</button>
+
+
+
+
+	</view>
+</view>

@@ -67,7 +67,7 @@
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li"  data-ind="0">
+		<view class="me-list-li"  data-ind="0" bindtap="melisttz">
 			<view class="me-list-lil">我的收藏<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">

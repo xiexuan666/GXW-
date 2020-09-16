@@ -275,6 +275,20 @@
 					"id": -1,
 					"name": "店铺设置",
 					"pathName": "pages/me/guanli/manage/store",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "数据管理",
+					"pathName": "pages/me/guanli/manage/data",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "方案管理",
+					"pathName": "pages/me/guanli/manage/scheme",
 					"scene": null
 				}
 			]

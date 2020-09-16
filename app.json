@@ -36,7 +36,14 @@
     "pages/me/guanli/manage/manage",
     "pages/me/guanli/customer/customer",
     "pages/me/guanli/manage/newly",
-    "pages/me/guanli/manage/store"
+    "pages/me/guanli/manage/store",
+    "pages/me/guanli/manage/data",
+    "pages/me/guanli/manage/scheme",
+    "pages/me/guanli/manage/anl",
+    "pages/me/guanli/manage/chanp",
+    "pages/me/guanli/manage/zixu"
+    
+
 
   ],
   "window": {

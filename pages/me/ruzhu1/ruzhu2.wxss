@@ -50,7 +50,7 @@ page {
 }
 
 .option {
-  
+
   display: block;
   line-height: 40rpx;
   font-size: 30rpx;
@@ -188,4 +188,165 @@ page {
   top: 5px;
   height: 90px;
   border-left: 2rpx dashed #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.me-list {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50rpx;
+}
+
+.me-list-ul {
+  width: 100%;
+  margin-top: 525rpx;
+  padding-bottom: 50rpx;
+
+}
+
+.me-list-li {
+  width: 100%;
+  height: 90rpx;
+  /* background-color: #ffffff; */
+  /* margin-bottom: 3rpx; */
+
+}
+
+.me-list-lil {
+  float: left;
+  position: relative;
+  padding-left: 100rpx;
+  line-height: 90rpx;
+  color: #595757;
+  font-weight: 300;
+  font-size: 30rpx;
+}
+
+.me-list-lil image {
+  position: absolute;
+  top: 35rpx;
+  left: 65rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.me-list-lir {
+  float: right;
+  padding-right: 40rpx;
+  padding-top: 26rpx;
+
+}
+
+.me-list-lir image {
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+}
+/* 图片上传 */
+
+.shanctup{
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 0rpx;
+}
+.shanctup-ul{
+  width: 100%;
+  padding-left:40rpx;
+}
+.shanctup-li{
+  width: 100%;
+  padding-top: 30rpx;
+  padding-bottom: 45rpx;
+}
+.shanctup-li-p1{
+  color: #595757;
+  font-weight: 500;
+  font-size: 34rpx;
+  line-height: 54rpx;
+}
+.shanctup-li-p2{
+  color: #595757;
+  font-weight: 300;
+  font-size: 24rpx;
+}
+.shanctup-li-img{
+  width: 100%;
+  margin-top: 15rpx;
+  overflow: hidden;
+}
+.shanctup-li-imgli{
+  height: 170rpx;
+  margin-right: 20rpx;
+  float: left;
+  width: 170rpx;
+  overflow: hidden;
+  border-radius:50% ;
+}
+.shanctup-li-img image{
+  width: 170rpx;
+  height: 170rpx;
+  font-size: 0rpx;
+  line-height: 0rpx;
+}
+
+
+.shanctupbutton{
+  margin-top: 30rpx;
+  border: 2rpx #595757 solid;
+  width: 120rpx;
+  padding: 30rpx 40rpx;
+  height: 100rpx;
+}
+.shanctupbutton image{
+  width: 100%;
+}
+.shanctupbutton-p{
+  text-align: center;
+  color: #595757;
+  font-weight: 100;
+  font-size: 28rpx;
+}
+
+.cs{
+  width: 470rpx;
+  margin: 0 auto;
+}
+.cs2{
+  width: 750rpx;
+  margin: 0 auto;
+}
+.shanctup-li-imglis{
+  border-radius: 0rpx;
+}
+
+.shuom{
+  
+  padding-left: 40rpx;
+  background: #ffffff;
+  padding-right: 15rpx;
+  padding-bottom: 20rpx;
+}
+.shuom-p{
+  color: #B4B5B6;
+  font-weight: 100;
+  font-size: 24rpx;
+}
+
+.btn-area{
+  background: #ffffff;
+}
+.btn-area button{
+  background: #ffffff;
+  border: 0rpx ;
+  padding: 10rpx 0rpx;
+  border-radius: 0rpx;
 }

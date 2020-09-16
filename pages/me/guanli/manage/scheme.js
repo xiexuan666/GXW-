@@ -38,32 +38,32 @@ Page({
         }
         app.Jump('me/shouc/shouc')
         break;
+      case '1':
+        app.Jump('me/guanli/guanli')
+        break;
+      case '2':
+        var gerxinx = wx.getStorageSync('gerxinx')
+        if (!gerxinx) {
+          this.setData({souq: false})
+          return false;
+        }
+        this.setData({mtkzt:true})
+        break;
+      case '3':
+        app.Jump('me/shenhezt/shenhezt')
+        break;  
+      default:
+        break;
     }
     
   },
-  //申请
-  shenq:function(){
-    app.Jump('me/ruzhu/ruzhu')
-    this.setData({mtkzt:false})
-  },
-  //取消模态框了
-  quxiaomtk:function(){
-    this.setData({mtkzt:false})
-  },
+
+ 
   //阻止冒泡
   zhuzi:function(){
     return false;
   },
-  // 跳转到注册页面
-  handlezhuc:function(){
-    app.Jump('me/zhuc/zhuc')
-  },
-  // 跳转到管理
-  manage:function(){
-wx.navigateTo({
-  url: '/pages/me/guanli/guanli',
-})
-  },
+  
   
   /**
    * 生命周期函数--监听页面加载
@@ -115,9 +115,6 @@ wx.navigateTo({
    */
   onPullDownRefresh: function () {
 
-
-
-    
   },
 
   /**

@@ -289,6 +289,21 @@
 					"id": -1,
 					"name": "方案管理",
 					"pathName": "pages/me/guanli/manage/scheme",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/me/shouc/shouc",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "案列",
+					"pathName": "pages/product/anlixq/anlixq",
+					"query": "",
 					"scene": null
 				}
 			]

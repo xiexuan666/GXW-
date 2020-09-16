@@ -279,7 +279,7 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 .anlilist-li{
   width: 100%;
   margin-bottom: 40rpx;
-  box-shadow: 0 0 15rpx 0rpx #ccc;
+  /* box-shadow: 0 0 15rpx 0rpx #ccc; */
 
 }
 .anlilist-liimg{
@@ -350,12 +350,14 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 }
 
 .simple-ul-p {
-  padding: 10rpx 0;
+  /* padding: 10rpx 0; */
   color: #595757;
 }
 
 .simple-li {
   color: #595757;
+  font-size: 28rpx;
+  font-weight: 300;
 }
 
 .jxsnr-li-lp {
@@ -366,13 +368,14 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 }
 
 .simple-ul {
-  margin: 20rpx 0;
+  margin: 20rpx 20rpx;
   font-weight: 300;
 }
 
 .simple {
   width: 100%;
   padding-bottom: 4rpx;
+
 }
 
 .simple-li-r {

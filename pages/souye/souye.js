@@ -86,6 +86,12 @@ wx.navigateTo({
   url:"/pages/souye/souye2"
 })
 },
+// 跳转到产品
+tzproduct:function(){
+  wx.navigateTo({
+    url:"/pages/product/product1"
+  })
+},
 
   /**
    * 生命周期函数--监听页面加载

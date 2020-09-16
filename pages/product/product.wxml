@@ -68,71 +68,56 @@
 
 
 
-<!-- 案例 -->
-<!-- <view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
+<!-- 全国案例 -->
+<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="anlilist-ul">
 		<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
 				<view class="anlilist-liimg">
 					<image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image>
 				</view>
-				<view class="anlilist-lib">
-					<view class="anlilist-libp1 font-loadeds">{{item.name}}</view>
-					<view class="anlilist-libp2">{{item.shuxing}}</view>
+				<view class="jxsnr-li-l  jxsnr-li-lsa">
+					<view class="jxsnr-tubiao-tu1">
+						<view class="jxsnr-li-lp">
+							<image src="/images/tubiao/1-09.png"></image>
+							<view class="lanbai">{{item.type_name}}</view>
+						</view>
+					</view>
+					<view class="jxsnr-tubiao-tu2">
+						<view class="jxsnr-li-lp2">
+							<image src="/images/tubiao/1-10.png"></image>
+							<view class="shuzi">{{item.views_count}}</view>
+						</view>
+						<view class="fenxiang" catchtap="share">
+							<image src="/images/tubiao/1-11.png"></image>
+						</view>
+						<view class="shouc" catchtap="collect">
+							<image src="/images/tubiao/1-12.png"></image>
+						</view>
+						<view class="xingx" catchtap="star">
+							<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-13.png"></image>
+							<image wx:if="{{items.sczt}}" src="/images/tubiao/1-13.png"></image>
+
+						</view>
+					</view>
+				</view>
+
+				<view class="simple">
+					<view class="simple-ul">
+						<view class="simple-ul-p">{{item.shuxing}}</view>
+						<view class="simple-li">{{item.name}}</view>
+					</view>
+					<view class="simple-li-r">
+						<view class="cotione">
+							<view class="jxsnr-li-time">{{item.chengshi}}</view>
+						</view>
+						<view class="cotione1">
+							<view class="jxsnr-li-r">{{item.update_time}}</view>
+						</view>
+					</view>
 				</view>
 			</view>
 		</block>
-	</view>
-</view>
- -->
-<view class="produt" wx:if='{{cactiv==2&&twoactiv==1}}'>
-	<swiper class="lbswipers">
-		<block wx:for="{{lunbs}}" wx:key="index">
-			<swiper-item class="produt-item">
-				<view class="produt-item-img" data-url="{{item.photo}}" bindtap="anlitz">
-					<image mode="aspectFill" src="{{item.url}}" class="item-img"></image>
-				</view>
-			</swiper-item>
-		</block>
-	</swiper>
-
-	<view class="jxsnr-li-l  jxsnr-li-lsa">
-		<view class="jxsnr-tubiao-tu1">
-			<view class="jxsnr-li-lp">
-				<image src="/images/tubiao/1-09.png"></image>
-				<view class="lanbai">芬兰白</view>
-			</view>
-		</view>
-		<view class="jxsnr-tubiao-tu2">
-			<view class="jxsnr-li-lp2">
-				<image src="/images/tubiao/1-10.png"></image>
-				<view class="shuzi">5220</view>
-			</view>
-			<view class="fenxiang" bindtap="share">
-				<image src="/images/tubiao/1-11.png"></image>
-			</view>
-			<view class="shouc" bindtap="collect">
-				<image src="/images/tubiao/1-12.png"></image>
-			</view>
-			<view class="xingx" bindtap="star">
-				<image src="/images/tubiao/1-13.png"></image>
-			</view>
-		</view>
-	</view>
-
-	<view class="simple">
-		<view class="simple-ul">
-			<view class="simple-ul-p">[现代简约]客厅案列</view>
-			<view class="simple-li">佛山280m私宅|4年落地，只为"雅奢生活"</view>
-		</view>
-		<view class="simple-li-r">
-			<view class="cotione">
-				<view class="jxsnr-li-time">广东省佛山市禅城区</view>
-			</view>
-			<view class="cotione1">
-				<view class="jxsnr-li-r">2020.09.01</view>
-			</view>
-		</view>
 	</view>
 </view>
 
@@ -155,21 +140,6 @@
 		</block>
 	</view>
 </view>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

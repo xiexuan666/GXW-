@@ -1,54 +1,68 @@
 <!--pages/product/anlixq/anlixq.wxml-->
 <!--  -->
 <view class="titleimg">
-	<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{anlixiaq.zhuye}}"></image>
+	<view class="header">
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{anlixiaq.zhuye}}"></image>
+	</view>
+	<view class="wenzi">
+		<view class="wenzis">
+			大户型现代
+		</view>
+		<view class="wenzis">
+			240m
+		</view>
+		<view class="wenzis">
+			广东省佛山市
+		</view>
+	</view>
 </view>
 
 
-<view class="anlixq">
-	<view class="anlixq-nr">
-		<view class="anlixq-nr-p1" wx:if='{{!anlixiaq.vr_address}}'>{{anlixiaq.name}}</view>
-		<view class="linqi" wx:else >{{anlixiaq.name}}</view>
 
-		<view class="line-left"></view>
-
-		<view class="anlixq-nr-b">
-			<view class="anlixq-nr-bp">
-				<image class="bp1" src="/images/tubiao/anl1.png"></image>
-				<view class="anlixq-nr-bpl">户型{{anlixiaq.huxing}}</view>
-			</view>
-			<view class="anlixq-nr-bp">
-				<view class="zhong">
-					<image class="bp2" src="/images/tubiao/anl2.png"></image>
-					<view class="anlixq-nr-bpl">面积{{anlixiaq.mianji}}m²</view>
-				</view>
-			</view>
-			<view class="anlixq-nr-bp anlixq-nr-bp3">
-				<view class="zhong">
-					<image class="bp3" src="/images/tubiao/anl3.png"></image>
-					<view class="anlixq-nr-bpl padding-r">城市{{anlixiaq.chengshi}}</view>
-				</view>
-			</view>
+<!-- 案列简介 -->
+<view class="total">
+	<view class="check">
+		<view class="anl">案列简介</view>
+		<view class="prices">
+			阿hi粉红色的几节课很符合看是货返iOS发黄齑淡饭哈卡就发货扣水电费好哈设计费黄色款哈师范就是卡货返萨金凤凰暗示法很快就货返看上去安徽省会计法会尽快
 		</view>
-	</view>
-	<!-- 全景VR -->
-	<view class="quanbu" wx:if='{{anlixiaq.vr_address}}'  >
-		<view class="xian"></view>
-		<view class="btnbox">
-			<button class="btn" bindtap="handlequan"></button>
-			<view class="consume">全景VR </view>
-		</view>
+		<image src="/images/tubiao/1-08.jpg"></image>
 	</view>
 
 </view>
 
 
 
-<view class="yitu">
-	<block wx:for="{{anlixiaq.images}}" wx:for-index="index" wx:for-item="item" wx:key="index">
-		<view class="yitu-img" bindtap="dakerw" data-img="{{item.url}}">
-			<image mode="widthFix" src="{{item.url}}"></image>
+
+
+
+
+
+
+<!-- 选用产品 -->
+
+<view class="title">
+	<view class="titles">
+		<view class="list">
+			选用产品
 		</view>
-	</block>
+
+		<view class="foot">
+			<view class="cizhuan">
+				<image src="/images/tubiao/9.png"></image>
+				<view class="lists-item">客厅-V157J939P</view>
+			</view>
+			<view class="cizhuan">
+				<image src="/images/tubiao/9.png"></image>
+				<view class="lists-item">客厅-V157J939P</view>
+			</view>
+			<view class="cizhuan">
+				<image src="/images/tubiao/9.png"></image>
+				<view class="lists-item">客厅-V157J939P</view>
+			</view>
+		</view>
+
+	</view>
+
 
 </view>

@@ -13,8 +13,6 @@ Page({
     lunbs:[
       {
        url:"/images/tubiao/1-08.jpg"
-      },{
-        url:"/images/tubiao/1-14.png"
       }
     ],
     //第一次执行
@@ -78,49 +76,7 @@ Page({
     shenhestatus:0,
     
   },
-  //视频点击播放
-  spplay:function(e){
-    var ind = app.hdindex(e,'ind')
-    var attr=this.data.attr
-    var playind=attr.playind
-    if(!this.videoContext){
-      
-      this.xuanhfz(this.data.xilievideolist)
-    }
-    //暂停单前播放的视频
-    if(playind==ind&&playind!=-1){
-      this.videoContext[playind].pause()
-      attr.playind=-1
-      this.setData({attr})
-      return false
-    } 
-    //暂停上一个播放的视频
-    if(playind!=-1){
-      this.videoContext[playind].pause()
-    }
-     attr.playind=ind
-     this.setData({attr})
-     this.videoContext[ind].play()
-  },
-  //视频循环赋值
-  xuanhfz:function(videolist){
-    var tha=this;
-    tha.videoContext=[]
-    videolist.forEach((element,index) => {
-      var str='myVideolist'+index
-      tha.videoContext[index] = wx.createVideoContext(str)
-    });
-  },
-  
-  //视频暂停
-  ztpause:function(e){
-      var ind = app.hdindex(e,'ind')
-      var attr=this.data.attr
-      if(ind==attr.playind){
-        attr.playind=-1
-        this.setData({attr})
-      }
-  },
+
 
 
   //产品头部选择
@@ -266,6 +222,7 @@ Page({
     var tha=this
     var url = baseUrl + "case/casePage"
     var dat={
+      brand_id:'2',
       page,
       findCaseById:idzfc
     }
@@ -589,7 +546,7 @@ Page({
     
   },
   //收藏产品
-  sccp:function(e){
+  star:function(e){
     var tha=this
     var gerxinx = wx.getStorageSync('gerxinx')
     var cp=this.data.cp
@@ -600,7 +557,7 @@ Page({
     }
     var url = baseUrl + "production/productCollectionSaves"
     var dat={
-      brandid:'1',
+      brandid:'2',
       userid:gerxinx.id,
       productid:cp[ind].id
     }
@@ -679,20 +636,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if(options.zhi){
-      if(options.zhi=2){
-        //请求案例内容
-        this.chaxchuanlinr('',1,1)
-      }
-      this.setData({cactiv:options.zhi})
+     //请求案例内容
+    this.chaxchuanlinr('',1,1)
+    
+    // if(options.zhi){
+    //   if(options.zhi=2){
+    //     //请求案例内容
+    //     this.chaxchuanlinr('',1,1)
+    //   }
+    //   this.setData({cactiv:options.zhi})
 
-    }else{
-    }
+    // }else{
+    // }
     
     //请求产品
-    this.qiangcp(2)
+    // this.qiangcp(2)
      //请求系列
-     this.qingvideolist()
+    //  this.qingvideolist()
     //请求案例列表
     this.rqwxanlist()
     

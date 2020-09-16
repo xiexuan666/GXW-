@@ -8,20 +8,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    ifnumber:true,
+    
   
   },
-  // 全景跳转
-  handlequan:function(){
-    var url=this.data.anlixiaq.vr_address;
-    console.log(url,1212);
-       wx.navigateTo({
-         url: '/pages/product/anlixq/webwei/weibwei?url=' + url,
-       })
-      //  this.setData({
-      //   ifnumber:!this.data.ifnumber
-      //  })
-      },
+  
 
   //点击打开图片
   dakerw:function(e){
@@ -39,17 +29,8 @@ Page({
    */
   onLoad: function (options) {
   
-    console.log(this.data);
-    
 
-    // app.loadFontFace()
-    // this.loadFontFace()
-    // var pages = getCurrentPages(); 
-    // var prevPage = pages[pages.length - 2];   //上一页
-    // console.log(pages)
-    // prevPage.setData({
-    //   cactiv: '2'
-    // })
+
   },
 
   /**

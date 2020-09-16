@@ -28,7 +28,8 @@ App({
     status: 0,
     banben:'1.0.1',
     jiage:999999,
-    qqmapsdk:qqmapsdk
+    qqmapsdk:qqmapsdk,
+    brandid:'2',
   },
 
    //一些方法

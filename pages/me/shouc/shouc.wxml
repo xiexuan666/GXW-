@@ -1,37 +1,69 @@
-<!--pages/me/shouc/shouc.wxml-->
-<!-- 产品或案例 -->
-<view class="product-cpanli">
-  <view class="cpanli-nr">
-    <view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
-      产品
-       <view class="cpanli-nr-lid"></view>
-    </view>
-    <!-- <view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
-      案例
-      <view class="cpanli-nr-lid"></view>
-    </view> -->
-  </view>
- 
+<!--pages/me/me.wxml-->
+<import src="/pages/template/loginphone/loginphone.wxml" />
+<!-- 登录 -->
+<template is="login" data="{{souq: souq}}" />
+<!-- 获取手机 -->
+<template is="phone" data="{{sj: sj}}" />
+
+
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<!-- <image src="/images/tubiao/1-13.png"></image> -->
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img" wx:if="{{gerxinx}}">
+				<image src="{{gerxinx.wx_photo}}"></image>
+			</view>
+			<view class="toux-img" wx:if="{{!gerxinx}}" bindtap="dianjidl">
+				<!-- <image src="/images/tubiao/1-13.png"></image> -->
+			</view>
+			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
+		</view>
+	</view>
 </view>
 
-<!-- 产品 -->
-<view class="cpbottom-nr" >
-  <view class="cpbottom-nrul">
-    <block wx:for="{{cp}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
-      <view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}">
-        <view class="cpbottom-img"><image mode="aspectFit" lazy-load="{{true}}" src="{{item.product_url}}"></image></view>
-        <view class="cpbottom-bot">
-          <view class="cpbottom-botp">{{item.name}}</view>
-          <view class="shouc" catchtap="sccp" data-ind="{{index}}">
-            <view class="shouc-p">收藏</view>
-            <view class="img">
-              <image wx:if="{{!item.sczt}}" src="/images/tubiao/me1.png"></image>
-              <image wx:if="{{item.sczt}}" src="/images/tubiao/sc1.png"></image>
-            </view>
-            
-          </view>
-        </view>
-      </view>
-    </block>
-  </view>
+
+
+<view class="me-list">
+	<view class="me-list-ul">
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">姓名</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1" placeholder="请输入真实姓名"></input>
+			</view>
+		</view>
+
+
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">联系电话</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">微信号</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">现居地址</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">爱好</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">备注</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+	</view>
 </view>

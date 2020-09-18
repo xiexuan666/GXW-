@@ -82,6 +82,7 @@
   width: 690rpx;
   margin: 0 auto;
 }
+
 .design-li image {
   width: 100%;
   height: 200rpx;
@@ -118,6 +119,8 @@
 }
 
 .daoh-li-p {
+  font-size: 30rpx;
+  font-weight: 300;
   text-align: center;
 
 
@@ -190,7 +193,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-left: 230rpx;
+  padding-left: 218rpx;
   padding-top: 24rpx;
 }
 
@@ -199,6 +202,7 @@
   width: 35rpx;
   height: 35rpx;
 }
+
 .jxsnr-li-lp2 {
   display: flex;
 }
@@ -225,6 +229,7 @@
   width: 35rpx;
   height: 35rpx;
 }
+
 .shuzi {
   color: #c59262;
 }
@@ -317,47 +322,54 @@
 }
 
 /* 案例列表 */
-.anlilist{
+.anlilist {
   margin-top: 38rpx;
 }
-.anlilist-ul{
+
+.anlilist-ul {
   width: 700rpx;
   margin: 0 auto;
 }
-.anlilist-li{
+
+.anlilist-li {
   width: 100%;
   margin-bottom: 40rpx;
   /* box-shadow: 0 0 15rpx 0rpx #ccc; */
 
 }
-.anlilist-liimg{
+
+.anlilist-liimg {
   width: 100%;
   overflow: hidden;
   height: 440rpx;
 }
-.anlilist-liimg image{
+
+.anlilist-liimg image {
   width: 100%;
 }
-.anlilist-lib{
-  background-color:#F7F7F7;
+
+.anlilist-lib {
+  background-color: #F7F7F7;
   padding-bottom: 10px;
-  
+
 }
-.anlilist-libs{
+
+.anlilist-libs {
   height: 120rpx;
 }
-.anlilist-libp1{
+
+.anlilist-libp1 {
   color: #716F6F;
   padding-left: 24rpx;
   font-size: 30rpx;
   font-weight: 300;
   padding-top: 28rpx;
 }
-.anlilist-libp2{
+
+.anlilist-libp2 {
   padding-top: 3rpx;
   color: #716F6F;
   padding-left: 24rpx;
   font-size: 24rpx;
   font-weight: 100;
 }
-

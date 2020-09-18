@@ -1,5 +1,5 @@
 <!--pages/product/anlixq/anlixq.wxml-->
-<!--  -->
+
 <view class="titleimg">
 	<view class="header">
 		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{anlixiaq.zhuye}}"></image>
@@ -28,41 +28,115 @@
 		</view>
 		<image src="/images/tubiao/1-08.jpg"></image>
 	</view>
-
 </view>
 
 
 
 
+<!-- 
 
-
-
-
-
-<!-- 选用产品 -->
-
-<view class="title">
-	<view class="titles">
-		<view class="list">
+<scroll-view scroll-x="true">
+	<view class="banner" scroll-x="true">
+		<view class="chanp">
 			选用产品
 		</view>
-
-		<view class="foot">
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
+		<view class="cizhuan">
+			<image src="/images/tubiao/9.png"></image>
+			<view class="lists-item">客厅-V157J939P</view>
 		</view>
-
+		<view class="cizhuan">
+			<image src="/images/tubiao/9.png"></image>
+			<view class="lists-item">客厅-V157J939P</view>
+		</view>
+		<view class="cizhuan">
+			<image src="/images/tubiao/9.png"></image>
+			<view class="lists-item">客厅-V157J939P</view>
+		</view>
+		<view class="cizhuan">
+			<image src="/images/tubiao/9.png"></image>
+			<view class="lists-item">客厅-V157J939P</view>
+		</view>
+		<view class="cizhuan">
+			<image src="/images/tubiao/9.png"></image>
+			<view class="lists-item">客厅-V157J939P</view>
+		</view>
+		<view class="cizhuan">
+			<image src="/images/tubiao/9.png"></image>
+			<view class="lists-item">客厅-V157J939P</view>
+		</view>
 	</view>
+</scroll-view> -->
 
 
+<!-- 商品评价详情 E -->
+<view class="appraise-user">
+	<view class="possess-layout margin-layouts">
+		<view class="main">
+			<view class="appraise-detail-top">共{{appraiseList.length}}条评论</view>
+			<block wx:for="{{appraiseList}}" wx:key="index1" wx:for-index="index1">
+				<view>
+					<view class="username-appraise-top">
+						<view class="username">
+							<image src="/images/tubiao/tx.png"></image>
+							<view>天快黑了</view>
+						</view>
+						<view>
+							<image class="praise" src="{{item.change? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" bindtap="praiseThiss"></image>
+							<view class="amount {{item.change? 'hover-active': ''}}">{{item.praise}}</view>
+						</view>
+					</view>
+				</view>
+				<view class="appraise-content"><text>相信经常不化妆的小仙女都知道眉毛的重要性, 明人不说暗话,今天小编就来给推一推哪些优惠的眉笔吧!!!</text><text>今天 15:07</text></view>
+				<view class="reply-username">
+					<block wx:if="{{item.reply_list.length > 2}}">
+						<view class="reply-usernames {{item.isOpen? 'reply-usernames-active': ''}}">
+							<block wx:for="{{item.reply_list}}" wx:key="index2" wx:for-index="index2">
+								<view class="username-appraise-tops">
+									<view class="username">
+										<image src="{{item.img}}"></image>
+										<view>{{item.nickname}}</view>
+									</view>
+									<view>
+										<image class="praise" src="{{item.changes? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
+										<view class="amount {{item.changes? 'hover-active': ''}}">{{item.praise}}</view>
+									</view>
+								</view>
+								<view class="appraise-content"><text>{{item.reply_content}}</text><text>{{item.time}}</text></view>
+							</block>
+						</view>
+						<view class="unfold-btn" bindtap="chooseUnfold" hidden="{{item.isOpen}}" data-value="{{item.isOpen}}" data-key="appraiseList.[{{index1}}]">展开{{item.reply_list.length - 1}}条回复</view>
+						<view class="unfold-btn" bindtap="chooseUnfold" hidden="{{!item.isOpen}}" data-value="{{item.isOpen}}" data-key="appraiseList.[{{index1}}]">收起{{item.reply_list.length - 1}}条回复</view>
+					</block>
+					<block wx:else>
+						<block wx:for="{{item.reply_list}}" wx:key="index2" wx:for-index="index2">
+							<view class="username-appraise-top">
+								<view class="username">
+									<image src="{{item.img}}"></image>
+									<view>{{item.nickname}}</view>
+								</view>
+								<view>
+									<image class="praise" src="{{item.changes? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
+									<view class="amount {{item.changes? 'hover-active': ''}}">{{item.praise}}</view>
+								</view>
+							</view>
+							<view class="appraise-content"><text>{{item.reply_content}}</text><text>{{item.time}}</text></view>
+						</block>
+					</block>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>
+
+<!-- 底部评论 S -->
+<view class="appraise-btn">
+	<view class="appraise-btn-left" >
+		<image src="/images/tubiao/1-06.png"></image>
+		<input placeholder="我要评论"></input>
+	</view>
+	<view class="appraise-btn-right"   >发表</view>
+</view>
+
+<view class="end">
+	- 这里就到底了哦 -
 </view>

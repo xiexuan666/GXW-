@@ -350,7 +350,7 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 }
 
 .simple-ul-p {
-  /* padding: 10rpx 0; */
+  padding: 10rpx 0;
   color: #595757;
 }
 
@@ -418,7 +418,7 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-left: 230rpx;
+  padding-left: 222rpx;
   padding-top: 24rpx;
 }
 .jxsnr-li-l {

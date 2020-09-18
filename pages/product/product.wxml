@@ -86,19 +86,22 @@
 					<view class="jxsnr-tubiao-tu2">
 						<view class="jxsnr-li-lp2">
 							<image src="/images/tubiao/1-10.png"></image>
-							<view class="shuzi">{{item.views_count}}</view>
+							<view class="shuzi">{{item.preview}}</view>
 						</view>
-						<view class="fenxiang" catchtap="share">
+						<view class="fenxiang" catchtap="share" data-ind="{{index}}">
 							<image src="/images/tubiao/1-11.png"></image>
 						</view>
-						<view class="shouc" catchtap="collect">
-							<image src="/images/tubiao/1-12.png"></image>
+						<view class="shouc" catchtap="collect" data-ind="{{index}}">
+							<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+							<image wx:if="{{items.sczt}}" src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
 						</view>
-						<view class="xingx" catchtap="star">
-							<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-13.png"></image>
-							<image wx:if="{{items.sczt}}" src="/images/tubiao/1-13.png"></image>
+						<view class="xingx" catchtap="star" data-ind="{{index}}">
 
+							<image wx:if="{{!items.scztt}}" src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
+							<image wx:if="{{items.scztt}}" src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
 						</view>
+
+
 					</view>
 				</view>
 
@@ -173,7 +176,6 @@
 
 
 
-<!-- 系列end -->
 
 
 
@@ -207,8 +209,6 @@
 		</block>
 	</view>
 </view>
-
-
 
 
 <view class="tubiaos">角色道提供技术支持</view>

@@ -20,9 +20,9 @@ App({
 
   globalData: {
     userInfo: null,
-     baseUrl:"http://192.168.0.105:8087/gxwslyk/",
+    //  baseUrl:"http://192.168.0.105:8087/gxwslyk/",
     // baseUrl:"https://cdn.juesedao.cn/gxw/1.png",
-    // baseUrl:"http://192.168.0.160:8087/gxwslyk/",
+    baseUrl:"http://192.168.0.160:8087/gxwslyk/",
     dtkey:'77ABZ-KQC62-FVJUB-C7TTO-4DX6T-7WB2J',
     http: http,
     status: 0,
@@ -35,7 +35,6 @@ App({
    //一些方法
   //跳转页面Jum('')
   Jump: function (url, query) {
-    
     var url = '/pages/' + url + "?"
     if(!query){
       wx.navigateTo({url: url,fail:function(){console.log('跳转失败'+url)}})
@@ -44,14 +43,12 @@ App({
     for (let key in query) {
       url += key + "=" + query[key] + "&"
     }
-    
     wx.navigateTo({url: url,fail:function(){console.log('跳转失败'+url)}})
   },
 
 
   //跳转页面Jum('')
   Jumpss: function (url, query) {
-    
     var url = '/pages/' + url + "?"+query;
     if(!query){
       wx.navigateTo({url: url,fail:function(){console.log('跳转失败'+url)}})

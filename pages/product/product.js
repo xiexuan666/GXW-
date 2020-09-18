@@ -15,6 +15,7 @@ Page({
        url:"/images/tubiao/1-08.jpg"
       }
     ],
+    cp:[],
     //第一次执行
     dyczx:0,
     //产品或案例
@@ -148,7 +149,8 @@ Page({
       var cp= cps.concat(resc.data.ProductList)
       var cpfuhejieg=resc.data.ProductsCount
       for(var i=0;i<cp.length;i++){
-        cp[i].sczt=false
+        annrshuz[i].sczt=false;
+        annrshuz[i].sczt1=false;
       }
       console.log(resc.data,'查出来的产品')
       tha.qinsouc(cp)
@@ -360,9 +362,15 @@ Page({
   anlitz:function(e){
     var ind=app.hdindex(e,'ind')
     var annrshuz=this.data.annrshuz
+    var url = baseUrl + "case/previewUpdate"
+    var dat = {
+      caseId:annrshuz[ind].id
+    }
+    http.promisServer(url,dat).then(resc=>{})
     // console.log(annrshuz[ind],'案例详情')
     app.globalData.anlixiaq=annrshuz[ind]
     app.Jump('product/anlixq/anlixq')
+
   },
    //跳转到本地案例详情
    bendanlitz:function(e){
@@ -527,7 +535,7 @@ Page({
     }
     var url = baseUrl + "production/findproductCollectionByUserId"
     var dat={
-      brandid:'1',
+      brandId:'2',
       userid:gerxinx.id,
 
     }
@@ -536,7 +544,8 @@ Page({
       cp.forEach(el1 => {
         sclist.forEach(el2 => {
           if(el1&&el2&&el1.id==el2.id){
-            el1.sczt=true
+            el1.sczt=true;
+            el1.sczt1=true;
           }
         });
       });
@@ -545,31 +554,66 @@ Page({
     })
     
   },
-  //收藏产品
-  star:function(e){
+  //点赞案列
+  collect:function(e){
     var tha=this
     var gerxinx = wx.getStorageSync('gerxinx')
-    var cp=this.data.cp
+    var annrshuz=this.data.annrshuz
+    var ind=app.hdindex(e,'ind')
+    console.log(ind,8888888);
+    
+    if(!gerxinx){
+      wx.showToast({title: '没有登录',icon: 'none',duration: 700})
+      return false
+    }
+    var url = baseUrl + "case/caseGreat"
+    var dat={
+      brandId:'2',
+      userId:gerxinx.id,
+      caseId:annrshuz[ind].id
+    }
+    console.log(dat,"点赞状态改变前")
+    http.promisServer(url, dat).then(resc=>{
+      if(resc.status==0){
+        annrshuz[ind].sczt=false
+        this.setData({annrshuz})
+        wx.showToast({title: '取消点赞',icon: 'none',duration: 800})
+      }else{
+        annrshuz[ind].sczt=true
+        this.setData({annrshuz})
+        wx.showToast({title: '点赞成功',icon: 'none',duration: 800})
+      }
+     
+      console.log(resc,'点赞状态改变')
+    })
+  },
+  
+   //收藏产品
+   star:function(e){
+    var tha=this
+    var gerxinx = wx.getStorageSync('gerxinx')
+    var annrshuz=this.data.annrshuz
     var ind=app.hdindex(e,'ind')
     if(!gerxinx){
       wx.showToast({title: '没有登录',icon: 'none',duration: 700})
       return false
     }
-    var url = baseUrl + "production/productCollectionSaves"
+    var url = baseUrl + "case/allCaseCollectionSaves"
     var dat={
-      brandid:'2',
-      userid:gerxinx.id,
-      productid:cp[ind].id
+      brand_id:'2',
+      user_id:gerxinx.id,
+      case_id:annrshuz[ind].id,
+      case_type_id:1,
     }
     console.log(dat,"收藏状态改变前")
     http.promisServer(url, dat).then(resc=>{
       if(resc.status==0){
-        cp[ind].sczt=false
-        this.setData({cp})
+        annrshuz[ind].scztt=false
+        this.setData({annrshuz})
         wx.showToast({title: '取消收藏',icon: 'none',duration: 800})
       }else{
-        cp[ind].sczt=true
-        this.setData({cp})
+        annrshuz[ind].scztt=true
+        this.setData({annrshuz})
         wx.showToast({title: '收藏成功',icon: 'none',duration: 800})
       }
      
@@ -632,6 +676,7 @@ Page({
     
     
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */

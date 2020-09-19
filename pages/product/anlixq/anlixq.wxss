@@ -78,19 +78,20 @@ page {
 
 
 .banner {
+  /* position: fixed; */
   height: 160rpx;
   width: 100%;
   display: flex;
   display: -webkit-box;
   flex-direction: column;
   text-align: center;
-  margin: 0 30rpx;
+  margin: 0rpx 30rpx;
 }
 
 /* 用户评价内容 */
 .appraise-user {
   width: 690rpx;
-  margin: 0 auto;
+  margin: 75rpx auto;
   border-top-left-radius: 20rpx;
   border-top-right-radius: 20rpx;
   overflow: hidden;
@@ -185,6 +186,7 @@ appraise-content view text:nth-child(2) {
 }
 
 .scroll-view-true {
+  margin: 50rpx  auto;
   width: 100%;
   display: flex;
   white-space: nowrap;
@@ -238,12 +240,8 @@ appraise-content view text:nth-child(2) {
   margin-right: 10rpx;
 }
 
+
 /* 评价 */
-.appraise-detail-top {
-  font-size: 24rpx;
-  color: #333333;
-  padding: 40rpx 0 0;
-}
 
 .username-appraise-top {
   display: flex;
@@ -327,12 +325,6 @@ appraise-content view text:nth-child(2) {
 }
 
 /* 底部 */
-.end {
-  font-size: 20rpx;
-  color: #999999;
-  text-align: center;
-  margin: 30rpx 0 151.3rpx;
-}
 
 .appraise-btn {
 
@@ -376,3 +368,154 @@ appraise-content view text:nth-child(2) {
   justify-content: center;
   color: #fff;
 }
+
+
+
+/* 常用工具 */
+.title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contact {
+  margin: 30rpx 0;
+}
+
+.tab {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 25rpx;
+  height: 200rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item {
+  padding: 0 40rpx;
+}
+
+.list-right image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.list-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 20rpx;
+}
+
+.collect {
+  width: 700rpx;
+  margin: 40rpx auto;
+}
+
+
+
+/* 设计 */
+.history {
+  width: 700rpx;
+  margin: 50rpx auto;
+}
+
+.search {
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+
+}
+
+.cun {
+  font-size: 22rpx;
+  align-items: center;
+  font-weight: 300;
+  margin: 0 10rpx;
+  padding: 20rpx 0;
+}
+
+.portrait image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.tup image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.lister image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.zix image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.boda {
+
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 30%;
+  height: 50rpx;
+  color: #fff;
+  padding: 20rpx 20rpx;
+}
+
+
+.lister {
+  background-color: #bd8f60;
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 200rpx;
+  color: #fff;
+  border-radius: 15rpx;
+  margin: -8rpx 0;
+  align-items: center;
+  text-align: center;
+}
+
+.zix {
+  background-color: #bd8f60;
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 200rpx;
+  color: #fff;
+  border-radius: 15rpx;
+  margin: 20rpx 0;
+  align-items: center;
+  text-align: center;
+
+}
+
+.toTop {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  /* background: #eee; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  position: fixed;
+  right: 67rpx;
+  bottom: 400rpx;
+}
+.toTop  image {
+  width: 100rpx;
+  height: 100rpx;
+}
+

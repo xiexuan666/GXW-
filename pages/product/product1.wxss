@@ -1,1 +1,199 @@
-/* pages/product/product1.wxss */
+@import '/pages/template/splist/spslist.wxss';
+/* 搜索 */
+.sous{
+  width: 100%;
+  margin-top: 27rpx;
+}
+.sous-nr{
+  width: 706rpx;
+  margin: 0rpx auto;
+  background: #F3F3F1;
+  border-radius: 10rpx;
+  height: 60rpx;
+  position: relative;
+}
+.sous-nr image{
+  position: absolute;
+  left: 20rpx;
+  top: 17rpx;
+  width: 32rpx;
+  height:32rpx;
+}
+.sous-nr input{
+  width: 600rpx;
+  padding-left: 70rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 25rpx;
+  
+}
+
+
+
+
+.xuanz{
+  width: 100%;
+  margin-top: 28rpx;
+}
+.xuanz-nr{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.xuanz-nr-ul{
+  overflow: hidden;
+}
+.xuanz-nr-title{
+  height: 50rpx;
+  line-height: 52rpx;
+  float: left;
+  width: 76rpx;
+  font-size: 26rpx;
+  padding-right: 0rpx;
+  font-weight: 700;
+  color: #595757;
+  
+
+} 
+.xuanz-nr-scroll{
+  height: 60rpx;
+  float: left;
+  width: 614rpx;
+  overflow: hidden;
+}
+.xuanz-nr-li-scroll{
+   width:100%;
+   height: 100%;
+}
+.xuanz-nr-li{
+  float: left;
+  height: 100%;
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+  /* 隐藏滚动条，但依旧具备可以滚动的功能 */
+/* ::-webkit-scrollbar{
+  display: none;
+}
+uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
+
+  display: none
+} */
+
+.xuanz-nr-li-p{
+  height: 50rpx;
+ 
+  line-height: 50rpx;
+  
+  font-size: 26rpx;
+  margin-left: 6rpx;
+  padding: 0 30rpx 0  12rpx  ;
+  display: inline-block;
+  font-weight: 100;
+  position: relative;
+  color: #888888;
+
+  
+}
+.xuanz-nr-lix{
+  display: none;
+  position: absolute;
+  top: 2rpx;
+  right: 2rpx;
+  width: 26rpx;
+  height: 26rpx;
+  text-align: center;
+  line-height: 22rpx;
+  background: #6a6a6a;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.xp-active{
+  background: #efefef;
+  border-radius: 14rpx;
+}
+.xp-active .xuanz-nr-lix{
+  display: block;
+}
+
+/* 产品 */
+.cpbottom-nr{
+  margin-top: 35rpx;
+
+}
+.cpbottom-nrul{
+  width: 700rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 60rpx;
+  min-height: 700rpx;
+}
+.cpbottom-nrli{
+  float: left;
+  width: 337rpx;
+  overflow: hidden;
+  margin-bottom: 50rpx;
+  
+}
+
+.cpbottom-nrli.zuo{
+  margin-right: 25rpx;
+}
+.cpbottom-img{
+  width: 333rpx;
+  height: 333rpx;
+  border: 1rpx #f4f4f6 solid;
+}
+.cpbottom-img image{
+ width: 100%;
+ height: 100%;
+ transform: rotateZ(90deg);
+
+}
+.cpbottom-bot{
+  width: 100%;
+  margin-top: 10rpx;
+  position: relative;
+  height: 40rpx;
+}
+.cpbottom-botp{
+  font-size: 28rpx;
+  font-weight: 100;
+  line-height: 40rpx;
+}
+
+
+.shouc{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  /* width: 100rpx; */
+  /* height: 60rpx; */
+}
+.shouc .img{
+  float: right;
+  height: 100%;
+  width: 26rpx;
+  height: 26rpx;
+  padding-top: 7rpx;
+}
+.shouc .img image{
+  
+  width: 26rpx;
+  height: 26rpx;
+  line-height: 0rpx;
+  margin:0rpx;
+  display:block;
+
+}
+.shouc-p{
+  height: 100%;
+  float: right;
+  padding-left: 4rpx;
+  padding-right: 6rpx;
+  font-size: 24rpx;
+  font-weight: 100;
+  line-height: 40rpx;
+}
+/* 产品end */

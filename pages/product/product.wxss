@@ -362,13 +362,23 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 
 .jxsnr-li-lp {
   display: flex;
+  align-items: center;
+  text-align: center;
   padding: 20rpx 0;
   font-weight: 300;
 
 }
+.lanbai {
+  padding: 0  10rpx;
+}
+.tubiaof {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
 .simple-ul {
-  margin: 20rpx 20rpx;
+  /* margin: 20rpx 20rpx; */
   font-weight: 300;
 }
 
@@ -380,7 +390,7 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 
 .simple-li-r {
   width: 690rpx;
-  margin: 0 auto;
+  margin: 20rpx auto;
   overflow: hidden;
 }
 
@@ -410,15 +420,16 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 }
 .jxsnr-tubiao-tu1 {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-content: center;
 }
 
 .jxsnr-tubiao-tu2 {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-left: 222rpx;
+  text-align: center;
+  /* justify-content: center;
+  align-content: center; */
+  padding-left: 218rpx;
   padding-top: 24rpx;
 }
 .jxsnr-li-l {
@@ -432,6 +443,8 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 }
 .jxsnr-li-lp2 {
   display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .jxsnr-li-lp2 image {

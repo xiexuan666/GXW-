@@ -1,224 +1,55 @@
-<!-- 下拉框 -->
-
-<view class='select_box'>
-	<view class='select' catchtap='selectTap'>
-		<text class='select_text'>{{selectData[index]}}</text>
-		<image class='select_img {{show&&"select_img_rotate"}}' src='/image/../images/tubiao/youj.png'></image>
-	</view>
-	<view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
-		<text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
-	</view>
-</view>
-
-
-
-
-<!-- 时间日期 -->
-<picker value="{{picker1Value}}" range="{{picker1Range}}" bindchange="normalPickerBindchange">
-	当前城市选择：{{picker1Range[picker1Value]}}
-</picker>
-<picker mode="time" value="{{timeValue}}" start="00:00" end="24:00" bindchange="timePickerBindchange">
-	当前时间选择: {{timeValue}}
-</picker>
-<picker mode="date" value="{{dateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">
-	当前日期选择: {{dateValue}}
-</picker>
-
-
-<!-- 获取定位 -->
-<button bindtap="getLocation" type="primary">点击获取当前地址位置</button>
-
-
-
-
-<!-- 开始时间结束时间 -->
-<view class="section" style="background:#dfe0e2;margin:20rpx;padding:20rpx">
-	<picker mode="date" value="{{date1}}" bindchange="bindDateStartChange">
-		<view class="picker">
-			开始日期: {{date1}}
+<view class='qiu' bindtouchstart="touchstar">
+	<view class='qiu_titleAndUser'>
+		<text class='title'>{{title}}</text>
+		<view class='user'>
+			<image class='userImg' src='{{userImg}}'></image>
+			<text class='userName' style='position: absolute; margin-left:20rpx;'>{{userName}}</text>
 		</view>
-	</picker>
-</view>
-
-<view class="section" style="background:#dfe0e2;margin:20rpx;padding:20rpx">
-	<picker mode="date" value="{{date2}}" bindchange="bindDateEndChange">
-		<view class="picker">
-			结束日期: {{date2}}
-		</view>
-	</picker>
-</view>
-
-<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="query"> 查询 </button>
-
-
-
-<!-- 优惠券 -->
-<view class="container">
-	<view class="coupon-list">
-		<!-- 第一个 -->
-		<view class="sawtooth-bor item">
-			<view class="pt10 discount">
-				<text class="fs36">50</text>
-				<view class="fs12">满498使用</view>
-				<view class="fs12">有效期2018.03.16-2018.05.31</view>
+		<view class='text_detail'>{{content}}</view>
+		<image wx:if="{{imgUrl !==''}}" class='img' src='https://qhds.drefore.cn{{imgUrl}}'></image>
+		<view class='three_but'>
+			<view class='three_view'>
+				<button class='share' open-type='share'>
+					<image class='countImg' src="../../resources/images/share.png" />
+				</button>
 			</view>
-			<view class="textc receive">立即领取</view>
-		</view>
-		<!-- 第二个 -->
-		<view class="wrapper">
-			<view class="left"></view>
-			<view class="right"></view>
+			<view class='three_view'>
+				<image bindtap='addWantImg' class='countImg' src='../../resources/images/anscount.png'></image>
+				<text class='count'>{{count}}</text>
+			</view>
+			<view class='three_view'>
+				<text class='time'>{{time}}</text>
+			</view>
 		</view>
 	</view>
 </view>
-
-
-
-
-
-
-
-<view class="me-list">
-	<view class="me-list-ul">
-		<form>
-
-			<view class="me-list-li">
-				<view class="me-list-lil">商家名称</view>
-				<view class="me-list-lir">
-					<input class="form-lir-input" value="{{storename}}" name="storename" placeholder="请输入商家名称"></input>
-				</view>
+<view class='reply'>
+	<view class='replyUser' wx:for="{{wantReplay}}" wx:key="{{index}}" bindtouchstart="touchstar">
+		<block wx:if="{{item.replyName === userName && item.state === true}}">
+			<image class='userImg' src='{{item.userImg}}'></image>
+			<text class='userName' style='position: absolute; margin-left:20rpx;'>{{item.userName}}</text>
+			<view class='reply_content' data-replyuserid='{{item.userID}}' data-replyname='{{item.userName}}' bindtap='getReplyUserID'>{{item.content}}</view>
+			<view class='reply_time'>{{item.time}}</view>
+		</block>
+		<block wx:else>
+			<image class='userImg' src='{{item.userImg}}'></image>
+			<view class='huifu'>
+				<text class='userName'>{{item.userName}}</text>
+				<text class='huifu_text'>回复@</text>
+				<text class='userName'>{{item.replyName}}</text>
 			</view>
-
-
-
-			<view class="me-list-li">
-				<view class="me-list-lil">地区</view>
-				<view class="me-list-lir">
-					<input class="form-lir-input" value="{{type}}" name="type" placeholder="请输入地区"></input>
-				</view>
-			</view>
-
-			<view class="me-list-li">
-				<view class="me-list-lil">联系人</view>
-				<view class="me-list-lir">
-					<input class="form-lir-input" value="{{shopowner}}" name="shopowner" placeholder="请输你的名字"></input>
-				</view>
-			</view>
-
-			<view class="me-list-li">
-				<view class="me-list-lil">联系方式</view>
-				<view class="me-list-lir">
-					<input class="form-lir-input" value="{{phone}}" name="phone" type="number" placeholder="请输入手机号码"></input>
-				</view>
-			</view>
-
-			<view class="me-list-li">
-				<view class="me-list-lil">详细地址
-				</view>
-				<view class="me-list-lir">
-					<input class="form-lir-input dz" value="{{address}}" name="address" placeholder="请选择详细地址"></input>
-				</view>
-			</view>
-
-
-
-			<view class="me-list-li">
-				<view class="me-list-lil">营业时间</view>
-				<view class="me-list-lir">
-					<picker mode="time" value="{{timestar}}" name="kais" start="00:00" end="24:00" bindchange="bindTimeChangestar">
-						<view class="picker">
-							{{timestar}}
-						</view>
-					</picker>
-				</view>
-			</view>
-
-			<view class="me-list-li">
-				<view class="me-list-lil">入驻时间</view>
-				<view class="me-list-lir">
-					<picker mode="time" value="{{timeend}}" name="jies" start="00:00" end="24:00" bindchange="bindTimeChangeend">
-						<view class="picker">
-							{{timeend}}
-						</view>
-					</picker>
-				</view>
-			</view>
-
-		</form>
+			<view class='reply_content' data-replyuserid='{{item.userID}}' data-replyname='{{item.userName}}' bindtap='getReplyUserID'>{{item.content}}</view>
+			<view class='reply_time'>{{item.time}}</view>
+		</block>
 	</view>
 </view>
-
-
-
-<!-- 商品评价详情 E -->
-<view class="appraise-user">
-	<view class="possess-layout margin-layouts">
-		<view class="main">
-			<view class="appraise-detail-top">共{{appraiseList.length}}条评论</view>
-			<block wx:for="{{appraiseList}}" wx:key="index1" wx:for-index="index1">
-				<view>
-					<view class="username-appraise-top">
-						<view class="username">
-							<image src="{{item.img}}"></image>
-							<view>{{item.username}}</view>
-						</view>
-						<view>
-							<image class="praise" src="{{item.change? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" bindtap="praiseThiss"></image>
-							<view class="amount {{item.change? 'hover-active': ''}}">{{item.praise}}</view>
-						</view>
-					</view>
-				</view>
-				<view class="appraise-content"><text>{{item.appraise_content}}</text><text>{{item.time}}</text></view>
-				<view class="reply-username">
-					<block wx:if="{{item.reply_list.length > 2}}">
-						<view class="reply-usernames {{item.isOpen? 'reply-usernames-active': ''}}">
-							<block wx:for="{{item.reply_list}}" wx:key="index2" wx:for-index="index2">
-								<view class="username-appraise-tops">
-									<view class="username">
-										<image src="{{item.img}}"></image>
-										<view>{{item.nickname}}</view>
-									</view>
-									<view>
-										<image class="praise" src="{{item.changes? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
-										<view class="amount {{item.changes? 'hover-active': ''}}">{{item.praise}}</view>
-									</view>
-								</view>
-								<view class="appraise-content"><text>{{item.reply_content}}</text><text>{{item.time}}</text></view>
-							</block>
-						</view>
-						<view class="unfold-btn" bindtap="chooseUnfold" hidden="{{item.isOpen}}" data-value="{{item.isOpen}}" data-key="appraiseList.[{{index1}}]">展开{{item.reply_list.length - 1}}条回复</view>
-						<view class="unfold-btn" bindtap="chooseUnfold" hidden="{{!item.isOpen}}" data-value="{{item.isOpen}}" data-key="appraiseList.[{{index1}}]">收起{{item.reply_list.length - 1}}条回复</view>
-					</block>
-					<block wx:else>
-						<block wx:for="{{item.reply_list}}" wx:key="index2" wx:for-index="index2">
-							<view class="username-appraise-top">
-								<view class="username">
-									<image src="{{item.img}}"></image>
-									<view>{{item.nickname}}</view>
-								</view>
-								<view>
-									<image class="praise" src="{{item.changes? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
-									<view class="amount {{item.changes? 'hover-active': ''}}">{{item.praise}}</view>
-								</view>
-							</view>
-							<view class="appraise-content"><text>{{item.reply_content}}</text><text>{{item.time}}</text></view>
-						</block>
-					</block>
-				</view>
-			</block>
-		</view>
-	</view>
-</view>
-
-<view class="end">
-	- 这里就到底了哦 -
-</view>
-
-<!-- 底部评论 S -->
-<view class="appraise-btn">
-	<view class="appraise-btn-left">
-		<image src="/images/tubiao/1-06.png"></image>
-		<view>说点什么吧</view>
-	</view>
-	<view class="appraise-btn-right">评价</view>
+<view class='ask'>
+	<block wx:if="{{check}}">
+		<input class='input' type='text' placeholder='我来评论' bindinput='contentInp' value='{{contentInp}}' focus='{{focus}}'></input>
+		<button class='button' bindtap='addWant'>评论</button>
+	</block>
+	<block wx:else>
+		<input class='input' type='text' placeholder='回复@{{replyName}}' bindinput='replyInp' value='{{replyInp}}' focus='{{focus}}'></input>
+		<button class='button' bindtap='addWant'>评论</button>
+	</block>
 </view>

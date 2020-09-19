@@ -33,7 +33,7 @@
 
 
 
-<!-- 
+
 
 <scroll-view scroll-x="true">
 	<view class="banner" scroll-x="true">
@@ -65,28 +65,31 @@
 			<view class="lists-item">客厅-V157J939P</view>
 		</view>
 	</view>
-</scroll-view> -->
+</scroll-view>
 
 
 <!-- 商品评价详情 E -->
 <view class="appraise-user">
 	<view class="possess-layout margin-layouts">
 		<view class="main">
-			<view class="appraise-detail-top">共{{appraiseList.length}}条评论</view>
 			<block wx:for="{{appraiseList}}" wx:key="index1" wx:for-index="index1">
 				<view>
 					<view class="username-appraise-top">
 						<view class="username">
 							<image src="/images/tubiao/tx.png"></image>
 							<view>天快黑了</view>
+
 						</view>
 						<view>
-							<image class="praise" src="{{item.change? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" bindtap="praiseThiss"></image>
+							<image class="praise" src="{{item.change? '/images/tubiao/dain.png': '/images/tubiao/dianzan.png'}}" data-curindex="{{index1}}" bindtap="praiseThiss"></image>
 							<view class="amount {{item.change? 'hover-active': ''}}">{{item.praise}}</view>
 						</view>
 					</view>
 				</view>
-				<view class="appraise-content"><text>相信经常不化妆的小仙女都知道眉毛的重要性, 明人不说暗话,今天小编就来给推一推哪些优惠的眉笔吧!!!</text><text>今天 15:07</text></view>
+				<view class="appraise-content">
+					<text>这个夏天，冠星王瓷砖让你体验不—样的清凉。</text>
+							<view>今天 15:07</view>
+				</view>
 				<view class="reply-username">
 					<block wx:if="{{item.reply_list.length > 2}}">
 						<view class="reply-usernames {{item.isOpen? 'reply-usernames-active': ''}}">
@@ -97,7 +100,7 @@
 										<view>{{item.nickname}}</view>
 									</view>
 									<view>
-										<image class="praise" src="{{item.changes? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
+										<image class="praise" src="{{item.changes? '/images/tubiao/dain.png': '/images/tubiao/dianzan..png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
 										<view class="amount {{item.changes? 'hover-active': ''}}">{{item.praise}}</view>
 									</view>
 								</view>
@@ -115,7 +118,7 @@
 									<view>{{item.nickname}}</view>
 								</view>
 								<view>
-									<image class="praise" src="{{item.changes? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
+									<image class="praise" src="{{item.changes? '/images/tubiao/dain.png': '/images/tubiao/dianzan.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
 									<view class="amount {{item.changes? 'hover-active': ''}}">{{item.praise}}</view>
 								</view>
 							</view>
@@ -130,13 +133,66 @@
 
 <!-- 底部评论 S -->
 <view class="appraise-btn">
-	<view class="appraise-btn-left" >
+	<view class="appraise-btn-left">
 		<image src="/images/tubiao/1-06.png"></image>
 		<input placeholder="我要评论"></input>
 	</view>
-	<view class="appraise-btn-right"   >发表</view>
+	<view class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</view>
+</view>
+<view class="collect">
+	<view class="title">
+		<view class="list-item">
+			<view class="list-right">
+				<image src="/images/tubiao/chak.png"></image>
+				<view class="character">5220</view>
+			</view>
+		</view>
+		<view class="list-item" catchtap="star" >
+			<view class="list-right">
+				<image src="/images/tubiao/shouc.png"></image>
+				<view class="character">收藏</view>
+			</view>
+		</view>
+		<view class="list-item">
+			<view class="list-right">
+				<image src="/images/tubiao/fangx.png"></image>
+				<view class="character">分享</view>
+			</view>
+		</view>
+	</view>
 </view>
 
-<view class="end">
-	- 这里就到底了哦 -
+
+
+<!-- 家居设计师 -->
+<view class=" history">
+	<view class="search">
+		<view class="portrait">
+			<image src="/images/tubiao/tx.png" mode="aspectFill"></image>
+		</view>
+		<view class="cun">
+			<view>村上　　家居设计师</view>
+			<view class="tup">
+				<image src="/images/tubiao/1-24.png"></image>
+				广东省佛山市禅城区南庄镇中国陶瓷总部基地
+			</view>
+		</view>
+		<view class="boda">
+			<view class="lister" bindtap="calling">
+				<image src="/images/tubiao/1-21.png"></image>
+				一键拨打
+			</view>
+			<view class="zix">
+				<image src="/images/tubiao/1-22.png"></image>
+				咨询店主
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="toTop" bindtap="handleToTop">
+	<image src="/images/tubiao/zhu.png"></image>
+
 </view>

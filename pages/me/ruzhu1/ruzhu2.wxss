@@ -1,750 +1,137 @@
 page {
-  background: #f3f7f7;
+  background-color: #f1f5fc;
 }
-
-.select_box {
-  background: #fff;
-  width: 80%;
-  margin: 30rpx auto;
-  position: relative;
-}
-
-.select {
-  box-sizing: border-box;
+ 
+.qiu {
   width: 100%;
-  height: 70rpx;
-  border: 1px solid #efefef;
-  border-radius: 8rpx;
-  display: flex;
-  align-items: center;
-  padding: 0 20rpx;
+  background-color: white;
 }
-
-.select_text {
-  font-size: 30rpx;
-  flex: 1;
+ 
+.qiu_titleAndUser {
+  margin-left: 20rpx;
 }
-
-.select_img {
-  width: 40rpx;
-  height: 40rpx;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.select_img_rotate {
-  transform: rotate(180deg);
-}
-
-.option_box {
-  position: absolute;
-  top: 70rpx;
-  width: 100%;
-  border: 1px solid #efefef;
-  box-sizing: border-box;
-  height: 0;
-  overflow-y: auto;
-  border-top: 0;
-  background: #fff;
-  transition: height 0.3s;
-}
-
-.option {
-
-  display: block;
-  line-height: 40rpx;
-  font-size: 30rpx;
-  border-bottom: 1px solid #efefef;
-  padding: 10rpx;
-}
-
-
-
-page {
-  width: 100%;
-  min-height: 100%;
-}
-
-.container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.coupon-list {
-  width: 710rpx;
-  margin: 0 auto;
-}
-
-.coupon-list .item:first-child {
-  margin-top: 20rpx;
-}
-
-.coupon-list .item {
-  width: 710rpx;
-  height: 250rpx;
-  margin-bottom: 20rpx;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* 第一个 */
-.sawtooth-bor {
-  display: flex;
-  color: #fff;
-  padding-left: 10rpx;
-  box-sizing: border-box;
-  /* 画出一个半径为8rpx的透明的圆，透明圆以外都是#ffb937颜色 */
-  background: radial-gradient(transparent 0, transparent 8rpx, #ffb937 8rpx);
-  /* 截取上面生成的渐变图的一部分，相当于截取30rpx的正方形中有一个直径10px的透明圆点 */
-  background-size: 30rpx 28rpx;
-  /* 根据优惠券div大小进行微调 */
-  background-position: 16rpx 0rpx;
-  background-color: #fff;
-  position: relative;
-}
-
-.sawtooth-bor:before {
-  content: ' ';
-  display: block;
-  /* 用相同的颜色覆盖 */
-  background-color: #ffb937;
-  /* 绝对定位，遮住中间所有的洞，只保留边角的锯齿 */
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  /* 为锯齿保留的距离 */
-  left: 20rpx;
-  right: 20rpx;
-  z-index: -1;
-}
-
-.discount {
-  border-right: 2rpx dashed #f5f5f5;
-  padding: 20rpx;
-  flex: 1;
-  box-sizing: border-box;
-  background-color: #ffb937;
-}
-
-.receive {
+ 
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 204rpx;
-  height: 100%;
-  padding: 20rpx;
-  box-sizing: border-box;
-  background-color: #ffb937;
-}
-
-/* 这是第二个 */
-.wrapper {
-  display: flex;
-  position: relative;
-  width: 320px;
-  height: 100px;
-  margin: auto;
-  filter: drop-shadow(2px 2px 3px #999);
-}
-
-.wrapper view {
-  height: 100%;
-}
-
-.wrapper text {
-  display: inline-block;
-  position: absolute;
-  right: 30%;
-  top: 5px;
-  border: 1px solid red;
-}
-
-.left {
-  background: #58a;
-  background: radial-gradient(circle at top right, transparent 5px, #44c9a1 0) top right, radial-gradient(circle at bottom right, transparent 5px, #44c9a1 0) bottom right;
-  background-size: 100% 60%;
-  background-repeat: no-repeat;
-  color: white;
-  width: 70%;
-  border-radius: 5px 0 0 5px;
-}
-
-.right {
-  background: #58a;
-  background: radial-gradient(circle at top left, transparent 5px, #44c9a1 0) top left, radial-gradient(circle at bottom left, transparent 5px, #44c9a1 0) bottom left;
-  background-size: 100% 60%;
-  background-repeat: no-repeat;
-  width: 30%;
-  color: white;
-  border-radius: 0 5px 5px 0;
-}
-
-.right::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  height: 90px;
-  border-left: 2rpx dashed #fff;
-}
-
-
-
-
-
-
-
-
-
-
-.me-list {
-  background-color: #fff;
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 50rpx;
-}
-
-.me-list-ul {
-  width: 100%;
-  margin-top: 525rpx;
-  padding-bottom: 50rpx;
-
-}
-
-.me-list-li {
-  width: 100%;
-  height: 90rpx;
-  /* background-color: #ffffff; */
-  /* margin-bottom: 3rpx; */
-
-}
-
-.me-list-lil {
-  float: left;
-  position: relative;
-  padding-left: 100rpx;
-  line-height: 90rpx;
-  color: #595757;
-  font-weight: 300;
-  font-size: 30rpx;
-}
-
-.me-list-lil image {
-  position: absolute;
-  top: 35rpx;
-  left: 65rpx;
-  width: 24rpx;
-  height: 24rpx;
-}
-
-.me-list-lir {
-  float: right;
-  padding-right: 40rpx;
-  padding-top: 26rpx;
-
-}
-
-.me-list-lir image {
-  float: right;
-  width: 40rpx;
-  height: 40rpx;
-}
-
-/* 图片上传 */
-
-.shanctup {
-  width: 100%;
-  background-color: #ffffff;
-  padding-top: 0rpx;
-}
-
-.shanctup-ul {
-  width: 100%;
-  padding-left: 40rpx;
-}
-
-.shanctup-li {
-  width: 100%;
-  padding-top: 30rpx;
-  padding-bottom: 45rpx;
-}
-
-.shanctup-li-p1 {
-  color: #595757;
-  font-weight: 500;
-  font-size: 34rpx;
-  line-height: 54rpx;
-}
-
-.shanctup-li-p2 {
-  color: #595757;
-  font-weight: 300;
-  font-size: 24rpx;
-}
-
-.shanctup-li-img {
-  width: 100%;
-  margin-top: 15rpx;
-  overflow: hidden;
-}
-
-.shanctup-li-imgli {
-  height: 170rpx;
-  margin-right: 20rpx;
-  float: left;
-  width: 170rpx;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.shanctup-li-img image {
-  width: 170rpx;
-  height: 170rpx;
-  font-size: 0rpx;
-  line-height: 0rpx;
-}
-
-
-.shanctupbutton {
-  margin-top: 30rpx;
-  border: 2rpx #595757 solid;
-  width: 120rpx;
-  padding: 30rpx 40rpx;
-  height: 100rpx;
-}
-
-.shanctupbutton image {
-  width: 100%;
-}
-
-.shanctupbutton-p {
-  text-align: center;
-  color: #595757;
-  font-weight: 100;
-  font-size: 28rpx;
-}
-
-.cs {
-  width: 470rpx;
-  margin: 0 auto;
-}
-
-.cs2 {
-  width: 750rpx;
-  margin: 0 auto;
-}
-
-.shanctup-li-imglis {
-  border-radius: 0rpx;
-}
-
-.shuom {
-
-  padding-left: 40rpx;
-  background: #ffffff;
-  padding-right: 15rpx;
-  padding-bottom: 20rpx;
-}
-
-.shuom-p {
-  color: #B4B5B6;
-  font-weight: 100;
-  font-size: 24rpx;
-}
-
-.btn-area {
-  background: #ffffff;
-}
-
-.btn-area button {
-  background: #ffffff;
-  border: 0rpx;
-  padding: 10rpx 0rpx;
-  border-radius: 0rpx;
-}
-
-
-
-
-.cpbottom-bot {
-  width: 100%;
-  margin-top: 10rpx;
-  position: relative;
-  height: 40rpx;
-}
-
-.cpbottom-botp {
-  font-size: 28rpx;
-  font-weight: 100;
-  line-height: 40rpx;
-}
-
-.shouc {
-  position: absolute;
-  right: 0rpx;
-  top: 0rpx;
-  /* width: 100rpx; */
-  /* height: 60rpx; */
-}
-
-.shouc .img {
-  float: right;
-  height: 100%;
-  width: 26rpx;
-  height: 26rpx;
-  padding-top: 7rpx;
-}
-
-.shouc .img image {
-
-  width: 26rpx;
-  height: 26rpx;
-  line-height: 0rpx;
-  margin: 0rpx;
-  display: block;
-
-}
-
-.shouc-p {
-  height: 100%;
-  float: right;
-  padding-left: 4rpx;
-  padding-right: 6rpx;
-  font-size: 24rpx;
-  font-weight: 100;
-  line-height: 40rpx;
-}
-
-.margin-layout {
-  background: #FFFFFF;
-  border-bottom-left-radius: 20rpx;
-  border-bottom-right-radius: 20rpx;
 }
  
-.margin-layouts {
-  border-radius: 20rpx;
-  background: #FFFFFF;
-  padding-bottom: 44rpx;
-}
-.comment-user {
-  display: flex;
-  justify-content: space-between;
-  font-size: 25rpx;
-  height: 100rpx;
-}
 .user {
-  height: 100rpx;
-  display: flex;
-  align-self: center;
-}
-.user-head-portrait {
-  width: 80rpx;
-  height: 80rpx;
-  border-radius: 50%;
-  align-self: center;
-  margin-right: 10rpx;
-}
-.user-name {
-  align-self: center;
-}
-.appraise-date {
-  align-self: center;
-  color: #8a8a8a;
-}
-.commodity {
   width: 100%;
-  height: 163rpx;
-  font-size: 24rpx;
-  display: flex;
-  align-items: center;
-  border-top: 1rpx solid #EEEEEE;
+  margin-top: 20rpx;
   margin-bottom: 20rpx;
 }
-.commdoity-image {
-  width: 16.53%;
-  display: flex;
+ 
+.userImg {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
 }
-.commodity-img {
-  width: 124rpx;
-  height: 124rpx;
-  align-self: center;
+ 
+.userName {
+  font-size: 30rpx;
+  color: #566f98;
 }
-.commodity-title .title {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  align-self: center;
-  margin-right: 20rpx; 
+ 
+.text_detail {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
 }
-commdoity-image-right {
-  width: 5.6%;
+ 
+.img {
+  width: 90%;
+  height: 500rpx;
+  margin: 20rpx 20rpx;
 }
-.commdoity-image-right image {
-  width: 42rpx;
-  height: 42rpx;
+ 
+.countImg {
+  width: 50rpx;
+  height: 50rpx;
 }
-.commodity-line {
-  -webkit-line-clamp: 2;
-  opacity: 0.75;
+ 
+.count {
+  font-size: 20rpx;
+  margin-left: 5rpx;
 }
-.goods-price {
-  margin-top: 34rpx;
-  color: #F73A3F;
-}
-.goods-price text:nth-child(2), .goods-price text:nth-child(3) {
-  font-size: 32rpx;
-}
-.goods-price text:nth-child(1), .goods-price text:nth-child(4) {
-  font-size: 18rpx;
-}
-/* 用户评价内容 */
-.appraise-user {
-  border-top-left-radius: 20rpx;
-  border-top-right-radius: 20rpx;
-  overflow: hidden;
-}
-.user-comment {
-  border-bottom: 1px solid #efefef;
-}
-.comment-user {
-  display: flex;
-  justify-content: space-between;
+ 
+.time {
   font-size: 25rpx;
-  height: 104rpx;
+  color: #757575;
+  margin-left: 410rpx;  
 }
  
-.user {
-  height: 100rpx;
-  display: flex;
-  align-self: center;
-}
- 
-.user-head-portrait {
-  width: 64rpx;
-  height: 64rpx;
-  border-radius: 50%;
-  align-self: center;
-  margin-right: 10rpx;
-}
- 
-.user-name {
-  align-self: center;
-  font-size: 20rpx;
-}
- 
-.user-name view:nth-child(2) image {
-  width: 14rpx;
-  height: 14rpx;
-}
- 
-.appraise-date {
-  align-self: center;
-  color: #666666;
-  padding-top: 20rpx;
-}
- 
-.appraise-content {
-  font-size: 24rpx;
-  margin: 0rpx 0 19rpx;
-}
-.appraise-content view {
-  line-height: 36rpx;
-}
-.appraise-content view text:nth-child(1) {
-  color: #999999;
-}
-appraise-content view text:nth-child(2) {
-  color: #000000;
-}
- 
-.evaluate-content {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #000000;
-}
- 
-.ellipsis {
-  /* -webkit-line-clamp: 5; */
-  opacity: 0.75;
-}
- 
-.unellipsis {
-  -webkit-line-clamp: 0;
-  opacity: 1;
-}
- 
-.content-jian {
-  float: right;
-}
- 
-.appraise-base {
-  margin: 0 0 20rpx;
-  display: flex;
-  justify-content: space-between;
-  font-size: 20rpx;
-  height: 40rpx;
-}
- 
-.scroll-view-true {
+.reply {
   width: 100%;
-  display: flex;
-  white-space: nowrap;
-}
-.scroll-view-true image {
-  width: 230rpx;
-  height: 240rpx;
-  margin-right: 10rpx;
-  padding-bottom: 11rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  margin-bottom: 100rpx;
 }
  
-.choice {
-  color: #8a8a8a;
-  align-self: center;
+.replyUser {
+  padding-top: 10rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  width: 100%;
 }
  
-.write-back {
-  display: flex;
-  color: #666666;
-  align-self: center;
-}
-.write-back view {
-  display: flex;
-  align-items: center;
+.reply_content {
+  width: 80%;
+  font-size: 30rpx;
+  margin-left: 90rpx;
+  margin-top: -30rpx;
 }
  
-.write-back view:nth-child(1){
-  margin-right: 72rpx;
+.reply_time {
+  width: 260rpx;
+  height: 50rpx;
+  font-size: 25rpx;
+  color: #757575;
+  margin-left: 480rpx;  
 }
  
-.write-back view:nth-child(1) image {
-  width: 28rpx;
-  height: 25rpx;
+.huifu {
+  position: absolute;
+  margin-left: 90rpx;
+  margin-top: -90rpx;
 }
  
-.write-back view:nth-child(2) image {
-  width: 27rpx;
-  height: 26rpx;
-}
-.hover-active {
-  color: #F73C41;
-}
-.wrte-back-img {
-  width: 28rpx;
-  height: 28rpx;
-  align-self: center;
-  margin-right: 10rpx;
+.huifu_text {
+  font-size: 30rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
 }
  
-/* 评价 */
-.appraise-detail-top {
-  font-size: 24rpx;
-  color: #333333;
-  padding: 40rpx 0 0;
-}
-.username-appraise-top {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 32rpx;
-}
-.username-appraise-tops {
-  display: flex;
-  justify-content: space-between;
-}
-.username-appraise-top view:nth-child(2), .username-appraise-tops view:nth-child(2) {
-  text-align: center;
-}
-.username-appraise-top .username, .username-appraise-tops .username {
-  display: flex;
-  font-size: 20rpx;
-  color: #666666;
-}
-.username-appraise-top .username image, .username-appraise-tops .username image {
-  width: 48rpx;
-  height: 48rpx;
-  border-radius: 50%;
-  margin-right: 20rpx;
-}
-.username-appraise-top .praise, .username-appraise-tops .praise {
-  width: 26rpx;
-  height: 26rpx;
-}
-.amount {
-  font-size: 20rpx;
-  color: #999999;
-}
-.appraise-content {
-  margin: -40rpx 68rpx 30rpx;
-}
-.appraise-content text:nth-child(1) {
-  font-size: 20rpx;
-  line-height: 30rpx;
-  color: #000000;
-  margin-right: 17rpx;
-}
-.appraise-content text:nth-child(2) {
-  font-size: 20rpx;
-  color: #999999;
-}
-.reply-username {
-  margin: 0 0 0 68rpx;
-}
-.reply-usernames {
-  height: 80rpx;
-  overflow: hidden;
-  margin: 0 0 0 68rpx;
-}
-.reply-usernames-active {
-  height: 100% !important;
-}
-/* 展开btn */
-.unfold-btn {
-  margin: 0 0 0 68rpx;
-  font-size: 24rpx;
-  color: #FF888C;
-  font-weight: Medium;
-  font-family: "PingFang-SC-Medium";
-}
-/* 底部 */
-.end {
-  font-size: 20rpx;
-  color: #999999;
-  text-align: center;
-  margin: 30rpx 0 151.3rpx;
-}
- 
-.appraise-btn {
-  height: 97.3rpx;
-  background: #FFFFFF;
+.ask {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+ 
+.input {
+  width: 600rpx;
+  border: 1rpx solid #f1f1f1;
+  margin: 12rpx 0rpx 12rpx 20rpx;
+  border-radius: 30rpx;
+  background: #f1f5fc;
+  font-size: 25rpx;
+  text-align: center;
+}
+ 
+.button {
+  background: #6fb442;
+  color: white;
+  border-radius: 30rpx;
+  font-size: 30rpx;
+  width: 130rpx;
+  height: 60rpx;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 21rpx;
-}
-.appraise-btn .appraise-btn-left {
-  height: 64rpx;
-  width: 620rpx;
-  background: #EEEEEE;
-  border-radius: 32rpx;
-  margin-right: 26rpx;
-  font-size: 24rpx;
-  color: #999999;
-  display: flex;
-  align-items: center;
-}
-.appraise-btn .appraise-btn-left image {
-  width: 29rpx;
-  height: 22rpx;
-  margin-left: 28rpx;
-  margin-right: 9rpx;
-}
-.appraise-btn-right {
-  font-size: 32rpx;
-  color: #F73A3F;
+  justify-content: center;
+  margin: 12rpx 20rpx;
 }

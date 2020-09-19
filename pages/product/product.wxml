@@ -32,7 +32,7 @@
 
 <view class="sous" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="sous-nr" bindtap="tzsous2">
-		<!-- <image src="/images/tubiao/sous.png"></image> -->
+		<image src="/images/tubiao/sous.png"></image>
 		<input disabled="{{true}}" placeholder="搜索 按小区查看"></input>
 	</view>
 </view>
@@ -88,17 +88,24 @@
 							<image src="/images/tubiao/1-10.png"></image>
 							<view class="shuzi">{{item.preview}}</view>
 						</view>
-						<view class="fenxiang" catchtap="share" data-ind="{{index}}">
-							<image src="/images/tubiao/1-11.png"></image>
-						</view>
-						<view class="shouc" catchtap="collect" data-ind="{{index}}">
-							<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
-							<image wx:if="{{items.sczt}}" src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
-						</view>
-						<view class="xingx" catchtap="star" data-ind="{{index}}">
 
-							<image wx:if="{{!items.scztt}}" src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
-							<image wx:if="{{items.scztt}}" src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+
+
+
+
+						<view class="tubiaof">
+							<view class="fenxiang" catchtap="share" data-ind="{{index}}">
+								<image src="/images/tubiao/1-11.png"></image>
+							</view>
+							<view class="shouc" catchtap="collect" data-ind="{{index}}">
+								<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+								<image wx:if="{{items.sczt}}" src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
+							</view>
+							<view class="xingx" catchtap="star" data-ind="{{index}}">
+
+								<image wx:if="{{!items.scztt}}" src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
+								<image wx:if="{{items.scztt}}" src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+							</view>
 						</view>
 
 

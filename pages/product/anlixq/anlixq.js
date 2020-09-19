@@ -8,7 +8,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    //本地信息
+    bendijxs:{},
     status: true, //评价框显示隐藏
     content: "",
    
@@ -31,22 +32,69 @@ Page({
         ],
     
       },
-      {
-        is_merchant: 0,
-        isOpen: false,
-        change: false,
-        praise: 0,
-        reply_list: [
-        ],
-    
-      },
-      
     ],
     userpingfen: [          // 天快黑了
       { pingfen: 4 }
     ],
 
   },
+
+  // 点击发表评论
+  handlefa: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+     if ( e.detail.value.input == '') {
+      wx.showToast({
+        title: '请输入内容',
+      })
+ 
+    } else  {
+      var that = this;
+      var textarea_item = {};
+      var textareaValue= e.detail.value.input;
+     
+      var release = this.data.release;
+      var id = release.length  
+      textarea_item.textareaValue = textareaValue;
+ 
+       release.push(textarea_item);// 将评论内容添加到评论列表
+  
+ 
+      this.setData({
+       
+        release: release,
+        releaseFocus: true, //隐藏输入框
+        releaseValue : '' //清空输入框内容
+      })
+      console.log(release)
+     
+ 
+    }
+    
+   
+  },
+  // 评论案列
+  // handlefa:function(){
+
+
+  // },
+//拨打电话
+calling: function () {
+  var bendijxs=this.data.bendijxs
+  if(!bendijxs){
+    return false
+  }
+  wx.makePhoneCall({
+    phoneNumber: bendijxs.phone, //此号码并非真实电话号码，仅用于测试
+    success: function () {
+      console.log("拨打电话成功！")
+    },
+    fail: function () {
+      console.log("拨打电话失败！")
+    }
+  })
+},
+
+
    //失去焦点时获取里面评论内容
    bindTextAreaBlur: function (e) {
     this.setData({
@@ -160,6 +208,14 @@ Page({
       current: img, // 当前显示图片的http链接 
       urls: [img]
     })
+  },
+  // 跳转到首页
+  handleToTop:function(){
+    wx.reLaunch({
+      url: '/pages/souye/souye',
+    })
+    // app.Jump('/pages/souye/souye')
+
   },
   
   

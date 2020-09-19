@@ -6,12 +6,9 @@
 
 .lunbimg image {
   width: 100%;
-
-
 }
 
 /* 轮播图end */
-
 
 /* 设计 */
 /* .design {
@@ -125,15 +122,11 @@
 
 
 }
-
 .daoh-li-text {
   color: #ccc;
   text-align: center;
   font-size: 17rpx;
 }
-
-
-
 
 
 /* 导航end */
@@ -198,12 +191,17 @@
 }
 
 .jxsnr-li-lp image {
-  padding: 0 15rpx;
+  
   width: 35rpx;
   height: 35rpx;
 }
+.lanbai {
+  padding: 0 10rpx;
+}
 
 .jxsnr-li-lp2 {
+  align-items: center;
+  text-align: center;
   display: flex;
 }
 
@@ -231,7 +229,13 @@
 }
 
 .shuzi {
+
   color: #c59262;
+}
+.tubiaof {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -269,6 +273,8 @@
 }
 
 .jxsnr-li-lp {
+  align-items: center;
+  text-align: center;
   display: flex;
   padding: 20rpx 0;
   font-weight: 300;
@@ -276,7 +282,7 @@
 }
 
 .simple-ul {
-  margin: 20rpx 0;
+  /* margin: 20rpx 0; */
   font-weight: 300;
 }
 
@@ -287,7 +293,7 @@
 
 .simple-li-r {
   width: 690rpx;
-  margin: 0 auto;
+  margin: 20rpx auto;
   overflow: hidden;
 }
 

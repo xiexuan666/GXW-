@@ -107,57 +107,57 @@
 		</view>
 	</view>
 
-	
-<!-- 案例 -->
-<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
-	<view class="anlilist-ul">
-		<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
-			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
-				<view class="anlilist-liimg">
-					<image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image>
-				</view>
-				<view class="jxsnr-li-l  jxsnr-li-lsa">
-					<view class="jxsnr-tubiao-tu1">
-						<view class="jxsnr-li-lp">
-							<image src="/images/tubiao/1-09.png"></image>
-							<view class="lanbai">{{item.type_name}}</view>
-						</view>
-					</view>
-					<view class="jxsnr-tubiao-tu2">
-						<view class="jxsnr-li-lp2">
-							<image src="/images/tubiao/1-10.png"></image>
-							<view class="shuzi">{{item.views_count}}</view>
-						</view>
-						<view class="fenxiang" bindtap="share">
-							<image src="/images/tubiao/1-11.png"></image>
-						</view>
-						<view class="shouc" bindtap="collect">
-							<image src="/images/tubiao/1-12.png"></image>
-						</view>
-						<view class="xingx" bindtap="star">
-							<image src="/images/tubiao/1-13.png"></image>
-						</view>
-					</view>
-				</view>
 
-				<view class="simple">
-					<view class="simple-ul">
-						<view class="simple-ul-p">{{item.shuxing}}</view>
-						<view class="simple-li">{{item.name}}</view>
+	<!-- 案例 -->
+	<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
+		<view class="anlilist-ul">
+			<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+				<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
+					<view class="anlilist-liimg">
+						<image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image>
 					</view>
-					<view class="simple-li-r">
-						<view class="cotione">
-							<view class="jxsnr-li-time">{{item.chengshi}}</view>
+					<view class="jxsnr-li-l  jxsnr-li-lsa">
+						<view class="jxsnr-tubiao-tu1">
+							<view class="jxsnr-li-lp">
+								<image src="/images/tubiao/1-09.png"></image>
+								<view class="lanbai">{{item.type_name}}</view>
+							</view>
 						</view>
-						<view class="cotione1">
-							<view class="jxsnr-li-r">{{item.update_time}}</view>
+						<view class="jxsnr-tubiao-tu2">
+							<view class="jxsnr-li-lp2">
+								<image src="/images/tubiao/1-10.png"></image>
+								<view class="shuzi">{{item.views_count}}</view>
+							</view>
+							<view class="fenxiang" bindtap="share">
+								<image src="/images/tubiao/1-11.png"></image>
+							</view>
+							<view class="shouc" bindtap="collect">
+								<image src="/images/tubiao/1-12.png"></image>
+							</view>
+							<view class="xingx" bindtap="star">
+								<image src="/images/tubiao/1-13.png"></image>
+							</view>
+						</view>
+					</view>
+
+					<view class="simple">
+						<view class="simple-ul">
+							<view class="simple-ul-p">{{item.shuxing}}</view>
+							<view class="simple-li">{{item.name}}</view>
+						</view>
+						<view class="simple-li-r">
+							<view class="cotione">
+								<view class="jxsnr-li-time">{{item.chengshi}}</view>
+							</view>
+							<view class="cotione1">
+								<view class="jxsnr-li-r">{{item.update_time}}</view>
+							</view>
 						</view>
 					</view>
 				</view>
-			</view>
-		</block>
+			</block>
+		</view>
 	</view>
-</view>
 
 
 	<swiper class="lbswipers">
@@ -174,7 +174,6 @@
 		<view class="jxsnr-tubiao-tu1">
 			<view class="jxsnr-li-lp">
 				<image src="/images/tubiao/1-09.png"></image>
-
 				<view class="lanbai">爵士灰</view>
 			</view>
 		</view>
@@ -183,15 +182,19 @@
 				<image src="/images/tubiao/1-10.png"></image>
 				<view class="shuzi">5220</view>
 			</view>
-			<view class="fenxiang">
-				<image src="/images/tubiao/1-11.png"></image>
+
+			<view class="tubiaof">
+				<view class="fenxiang">
+					<image src="/images/tubiao/1-11.png"></image>
+				</view>
+				<view class="shouc">
+					<image src="/images/tubiao/1-12.png"></image>
+				</view>
+				<view class="xingx">
+					<image src="/images/tubiao/1-13.png"></image>
+				</view>
 			</view>
-			<view class="shouc">
-				<image src="/images/tubiao/1-12.png"></image>
-			</view>
-			<view class="xingx">
-				<image src="/images/tubiao/1-13.png"></image>
-			</view>
+
 		</view>
 	</view>
 
@@ -209,6 +212,10 @@
 			</view>
 		</view>
 	</view>
+
+
+
+
 </view>
 
 <view class="wuy"></view>

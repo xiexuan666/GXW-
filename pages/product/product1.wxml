@@ -1,2 +1,72 @@
-<!--pages/product/product1.wxml-->
-<text>pages/product/product1.wxml</text>
+<import src="/pages/template/splist/spslist.wxml" /> 
+
+
+
+<view class="sous" >
+	<view class="sous-nr" bindtap="tzsous">
+		<image src="/images/tubiao/sous.png"></image>
+		<input disabled="{{true}}" placeholder="大家都在搜：进口岩板"></input>
+	</view>
+</view>
+
+
+
+
+
+<!-- 选择产品 -->
+<view class="xuanz" >
+	<view class="xuanz-nr">
+		<block wx:for="{{titlej}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="xuanz-nr-ul">
+				<view class="xuanz-nr-title">{{item.title}}</view>
+				<view class="xuanz-nr-scroll">
+					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
+						<view class="xuanz-nr-li">
+							<block wx:for="{{item.children}}" wx:for-index="indexs" wx:for-item="items" wx:key="index">
+								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="toubxuanz" data-ind="{{index}}" data-idc="{{items.id}}">
+									{{items.title}}
+									<view class="xuanz-nr-lix">x</view>
+								</view>
+							</block>
+						</view>
+					</scroll-view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+<!-- 选择 -->
+
+<!-- 视频列表 -->
+<block>
+	<view class="xiliesplist" wx:if="{{!cpxians&&cactiv==1}}">
+		<template is="videolist" data="{{videolist:xilievideolist,attr:attr,shenhestatus:shenhestatus}}" />
+	</view>
+</block>
+
+
+
+
+
+<!-- 产品 -->
+<view class="cpbottom-nr" >
+	<view class="cpbottom-nrul">
+		<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}">
+				<view class="cpbottom-img">
+					<image mode="aspectFit" lazy-load="{{true}}" src="{{item.product_url}}"></image>
+				</view>
+				<view class="cpbottom-bot">
+					<view class="cpbottom-botp">{{item.name}}</view>
+					<view class="shouc" catchtap="sccp" data-ind="{{index}}">
+						<view class="shouc-p">收藏</view>
+						<view class="img">
+							<image wx:if="{{!item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/me1.png"></image>
+							<image wx:if="{{item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/sc1.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

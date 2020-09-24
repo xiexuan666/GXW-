@@ -136,9 +136,9 @@ Page({
    },
   //  跳转到专修攻略
   fitment:function(){
-wx.navigateTo({
-  url: '/pages/hotspot/strategy/strategy',
-})
+    wx.navigateTo({
+      url: '/pages/hotspot/strategy/strategy',
+    })
   },
 
   /**

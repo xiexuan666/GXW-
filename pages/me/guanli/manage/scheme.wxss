@@ -61,6 +61,7 @@ page {
 
 
 .me-list {
+  position: relative;
   background-color: #fff;
   width: 90%;
   margin: 0 auto;
@@ -232,7 +233,7 @@ page {
   font-size: 30rpx;
   border-radius: 30rpx;
   background-color: #bd8f60;
-  margin: 20rpx  auto;
+  margin: 20rpx auto;
 }
 
 /* 按钮不可用 */

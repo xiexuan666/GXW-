@@ -9,12 +9,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // 轮播图片
-    lunbs:[
-      {
-       url:"/images/tubiao/1-08.jpg"
-      }
-    ],
     cp:[],
     //第一次执行
     dyczx:0,
@@ -77,8 +71,6 @@ Page({
     shenhestatus:0,
     
   },
-
-
 
   //产品头部选择
   toubxuanz:function(e){
@@ -301,10 +293,6 @@ Page({
    if(ind==cactiv){
      return false
    }
-  //  if(ind==1){
-  //   cactiv=1
-  //   wx.setNavigationBarTitle({ title: '案例中心'})
-  //  }
    if(ind==2){
     this.chaxchuanlinr('',1,1)
     cactiv=2
@@ -316,18 +304,6 @@ Page({
   //初始化
   init:function(){
     this.ztsuoysp()
-    // var canpxuanz=new Array(4);
-   
-    // var myData=this.data.myData
-    // var titlej=this.data.titlej
-    // var titlej=this.topclear(titlej)
-    // var fanhui= toubu(myData,titlej,skub,canpxuanz)
-    // this.setData({
-    //   myData:fanhui.myData,
-    //   titlej:fanhui.keys,
-    //   canpxuanz:canpxuanz,
-    //   cpxians:false
-    // })
     //从详情页面过来的
     if(app.globalData.anlixiaq||app.globalData.cpxiaqs||app.globalData.xiliexqs||app.globalData.benanlixq||app.globalData.sous2||app.globalData.sous1){
       app.globalData.anlixiaq=''
@@ -366,10 +342,11 @@ Page({
     var dat = {
       caseId:annrshuz[ind].id
     }
+    
     http.promisServer(url,dat).then(resc=>{})
     // console.log(annrshuz[ind],'案例详情')
     app.globalData.anlixiaq=annrshuz[ind]
-    app.Jump('product/anlixq/anlixq')
+    app.Jump('product/anlixq/anlixq?caseId='+dat.caseId)
 
   },
    //跳转到本地案例详情
@@ -406,6 +383,7 @@ Page({
     var url = baseUrl + "casecategory/selectCaseT"
     var dat={}
     http.promisServer(url, dat).then(resc=>{
+      console.log(resc)
       var anliskubs={}
       var anliknxb=resc.data.caseJiLuPage
       for (var i=0; i < anliknxb.length; i++) {
@@ -413,6 +391,7 @@ Page({
           count:anliknxb[i].count,
           id:anliknxb[i].case_id
         }
+        
       }
       tha.setData({anliskubs})
       wx.stopPullDownRefresh();
@@ -649,7 +628,6 @@ Page({
   },
   //请求当地案例
   qingqdangd:function(dqdz,page,num){
-    
     var tha=this
     var url = baseUrl + "case/selectbendiCase"
     var dat={
@@ -665,7 +643,6 @@ Page({
     if(bendanlinrs.length>=bendcount&&bendanlinrs.length!=0){
       return false
     }
-    
     console.log(dqdz,dat,'当前地区')
     http.promisServer(url, dat).then(resc=>{
       var bendanlinr=bendanlinrs.concat(resc.data.bendiCaseList)
@@ -673,8 +650,6 @@ Page({
       console.log(bendanlinr,bendcount,'本地案例')
       tha.setData({bendanlinr,bendcount,bendanlidq:dqdz,bendanlipage:page})
     })
-    
-    
   },
   
   /**
@@ -684,20 +659,6 @@ Page({
      //请求案例内容
     this.chaxchuanlinr('',1,1)
     
-    // if(options.zhi){
-    //   if(options.zhi=2){
-    //     //请求案例内容
-    //     this.chaxchuanlinr('',1,1)
-    //   }
-    //   this.setData({cactiv:options.zhi})
-
-    // }else{
-    // }
-    
-    //请求产品
-    // this.qiangcp(2)
-     //请求系列
-    //  this.qingvideolist()
     //请求案例列表
     this.rqwxanlist()
     
@@ -714,12 +675,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var dyczx=this.data.dyczx
-    if(dyczx>0){
-      this.init()
-    }
-    dyczx++
-    this.setData({dyczx})
+    // var dyczx=this.data.dyczx
+    // if(dyczx>0){
+    //   this.init()
+    // }
+    // dyczx++
+    // this.setData({dyczx})
 
     if(!app.globalData.status){
       app.banbzt().then(resc=>{
@@ -729,7 +690,7 @@ Page({
       this.setData({shenhestatus:app.globalData.status})
     }
      
-    //获取缓存信息
+    // //获取缓存信息
     this.huqhcgrxin()
 
 
@@ -755,8 +716,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    // this.setData({cactiv:-1})
-    // this.setData({cactiv:1})
+
   },
 
   /**
@@ -791,9 +751,7 @@ Page({
       // this.cptoucclear()
   },
   
-  /**
-   * 页面上拉触底事件的处理函数
-   */
+  /*** 页面上拉触底事件的处理函数*/
 
   onReachBottom: function () {
     var cactiv=this.data.cactiv
@@ -811,7 +769,6 @@ Page({
       this.chaxchucpnr(cpzfcid,cppage,2)
     }
     if(cactiv==2&&twoactiv==2){
-      
       var bendanlipage=this.data.bendanlipage
       var bendanlidq=this.data.bendanlidq
       bendanlipage++

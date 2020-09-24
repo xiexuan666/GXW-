@@ -1,0 +1,153 @@
+/* 头部 */
+.jinx-t {
+  width: 100%;
+  background-color: #bababa;
+}
+
+.jinx-tnr {
+  width: 100%;
+  position: relative;
+  height: 440rpx;
+}
+
+.jinx-bei {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.jinx-bei image {
+  width: 100%;
+}
+
+.jinx-toux {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name-p {
+  color: black;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+}
+
+/* 头部 end*/
+/* 优惠券活动 */
+
+.activity-ul {
+  padding: 50rpx 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -50rpx;
+  padding-bottom: 50rpx;
+}
+
+.activity {
+  position: relative;
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50rpx;
+
+}
+
+.activityli {
+  width: 100%;
+  padding-left: 100rpx;
+  line-height: 50rpx;
+  color: #595757;
+  font-weight: 300;
+  font-size: 30rpx;
+}
+
+.activity image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.activities {
+  color: #bd8f60;
+}
+
+/* 经销商内容 */
+.jxsnr {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 25rpx;
+  background-color: #c8c9ca;
+}
+
+.jxsnr-ul {
+  width: 90%;
+  padding: 20rpx   50rpx;
+}
+
+.jxsnr-li {
+  display: flex;
+  padding-bottom: 4rpx;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  padding: 10rpx   20rpx;
+}
+
+.jxsnr-tubiao image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.jxsnr-li-rp {
+  width: 100%;
+  font-size: 24rpx;
+  font-weight: 100;
+}
+.tu1 {
+  padding: 0  20rpx;
+}
+.jxsnr-li-r {
+  font-size: 24rpx;
+  font-weight: 100;
+}
+
+
+
+/* 导航 */
+.dhxuanf-nr{
+  width: 210rpx;
+  height: 55rpx;
+  background-color:#bd8f60 ;
+  left: 556rpx;
+  top: -190rpx;
+  position: relative;
+  border-radius: 20rpx;
+  color: #fff;
+  margin: 20rpx  0;
+}.dhxuanf-nrp{
+  line-height: 56rpx;
+  font-size: 25rpx;
+  font-weight: 100;
+  padding-left: 25rpx;
+}

@@ -60,6 +60,7 @@
   border-right: 1px solid #cfcfcf;
   padding: 0 15rpx;
 }
+
 .cpxqp4 {
   padding: 0 15rpx;
 }
@@ -210,4 +211,41 @@
 
 .padding-r {
   padding-right: 11rpx;
+}
+
+/* 底部的收藏 */
+.title {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  background: #bd8f60;
+  margin-top: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.list-item {
+  padding: 0 40rpx;
+}
+
+.list-right image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.list-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.character {
+  padding: 0  10rpx;
+  color: #fff;
+  font-weight: 300;
 }

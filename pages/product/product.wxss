@@ -318,16 +318,6 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .produt {
   width: 690rpx;
   margin: 50rpx auto;
@@ -340,8 +330,6 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 
 .produt-item image {
   width: 100%;
-  /* padding-top: 50rpx; */
-
 }
 
 .sheng {
@@ -368,17 +356,9 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   font-weight: 300;
 
 }
-.lanbai {
-  padding: 0  10rpx;
-}
-.tubiaof {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+
 
 .simple-ul {
-  /* margin: 20rpx 20rpx; */
   font-weight: 300;
 }
 
@@ -413,38 +393,41 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   font-weight: 400;
 }
 
-.jxsnr-li-r {
-  font-size: 28rpx;
-  font-weight: 300;
-  color: #595757;
-}
-.jxsnr-tubiao-tu1 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
 
+/* 五个小图标 */
 .jxsnr-tubiao-tu2 {
   display: flex;
-  text-align: center;
-  /* justify-content: center;
-  align-content: center; */
-  padding-left: 218rpx;
-  padding-top: 24rpx;
 }
-.jxsnr-li-l {
+
+.jxsnr-tubiao-tu1 {
   display: flex;
+}
+
+.tubiaop {
+  display: flex;
+}
+
+.liser {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding: 20rpx 0;
+  padding-left: 260rpx;
+  
 }
 
 .jxsnr-li-lp image {
-  padding: 0 15rpx;
   width: 35rpx;
   height: 35rpx;
 }
+
+
+
 .jxsnr-li-lp2 {
-  display: flex;
   align-items: center;
   text-align: center;
+  display: flex;
+
 }
 
 .jxsnr-li-lp2 image {
@@ -469,8 +452,8 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   width: 35rpx;
   height: 35rpx;
 }
+
 .shuzi {
   color: #c59262;
 }
-
 

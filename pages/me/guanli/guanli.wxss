@@ -64,10 +64,12 @@ page {
 
 
 .me-list {
+  position: relative;
   background-color: #fff;
   width: 90%;
   margin: 0 auto;
   border-radius: 50rpx;
+
 }
 
 .me-list-ul {

@@ -77,35 +77,10 @@
 	</view>
 </view>
 
-
-
-
-
-
 <!-- 内容 -->
-<view class="list" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="fitment">
+<view class="list" wx:if='{{cactiv==1&&cpxqzt==1}}' >
 	<block >
-		<navigator url="/images/tubiao/1-08.jpg" class="goods-list">
-			<image src="/images/tubiao/1-08.jpg">
-			</image>
-			<view class="goods-list-right">
-				<view class="goods-title">
-					[爆款推荐]这个夏天，冠星王瓷砖让
-					你体验不—样的清凉。
-				</view>
-				<view class="simple-li-r">
-					<view class="cotione">
-						<view class="jxsnr-li-time">5220</view>
-					</view>
-					<view class="cotione1">
-						<view class="jxsnr-li-r">2020.09.01</view>
-					</view>
-				</view>
-			</view>
-		</navigator>
-	</block>
-	<block  >
-		<navigator url="/images/tubiao/1-08.jpg" class="goods-list">
+		<navigator url="/pages/hotspot/strategy/strategy?id=1" class="goods-list">
 			<image src="/images/tubiao/1-08.jpg">
 			</image>
 			<view class="goods-list-right">

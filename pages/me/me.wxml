@@ -28,55 +28,31 @@
 
 <view class="me-list">
 	<view class="me-list-ul">
-		<view class="me-list-li" >
-			<view class="me-list-lil">我的订单<image src="/images/tubiao/1-13.png"></image>
+		<view class="me-list-li">
+			<view class="me-list-lil">我的订单<image src="/images/tubiao/38.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
-		<view class="me-list-li"  data-ind="0">
-			<view class="me-list-lil">购物车<image src="/images/tubiao/1-13.png"></image>
+		<view class="me-list-li" data-ind="0">
+			<view class="me-list-lil">收货地址<image src="/images/tubiao/40.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
-		<view class="me-list-li"  data-ind="0">
-			<view class="me-list-lil">收货地址<image src="/images/tubiao/1-13.png"></image>
+		<view class="me-list-li" data-ind="0">
+			<view class="me-list-lil">我的卡券<image src="/images/tubiao/41.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-
-		<view class="me-list-li"  data-ind="0">
-			<view class="me-list-lil">我的卡券<image src="/images/tubiao/1-13.png"></image>
-			</view>
-			<view class="me-list-lir">
-				<image src="/images/tubiao/youj.png"></image>
-			</view>
-		</view>
-
-		<view class="me-list-li"  data-ind="0">
-			<view class="me-list-lil">抽奖活动<image src="/images/tubiao/1-13.png"></image>
-			</view>
-			<view class="me-list-lir">
-				<image src="/images/tubiao/youj.png"></image>
-			</view>
-		</view>
-		<view class="me-list-li"  data-ind="0" bindtap="melisttz">
-			<view class="me-list-lil">我的收藏<image src="/images/tubiao/1-13.png"></image>
-			</view>
-			<view class="me-list-lir">
-				<image src="/images/tubiao/youj.png"></image>
-			</view>
-		</view>
-
-		<view class="me-list-li"  data-ind="0">
-			<view class="me-list-lil">联系客服<image src="/images/tubiao/1-13.png"></image>
+		<view class="me-list-li" data-ind="0">
+			<view class="me-list-lil">个人钱包<image src="/images/tubiao/47.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
@@ -84,17 +60,30 @@
 		</view>
 
 
-		<view class="me-list-li"  data-ind="0">
-			<view class="me-list-lil">个人钱包<image src="/images/tubiao/1-13.png"></image>
+		<view class="me-list-li" data-ind="0">
+			<view class="me-list-lil">活动参与<image src="/images/tubiao/47.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+		<view class="me-list-li" data-ind="0" bindtap="melisttz">
+			<view class="me-list-lil">我的收藏<image src="/images/tubiao/43.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+		<view class="me-list-li" data-ind="0">
+			<view class="me-list-lil">信息中心<image src="/images/tubiao/44.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
-
-		<view class="me-list-li" bindtap="handlezhuc">
-			<view class="me-list-lil">角色认证<image src="/images/tubiao/1-13.png"></image>
+		<view class="me-list-li" data-ind="0">
+			<view class="me-list-lil">联系客服<image src="/images/tubiao/46.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
@@ -102,13 +91,20 @@
 		</view>
 
 		<view class="me-list-li" bindtap="melisttz" data-ind="2" wx:if="{{sjzt.status==0&&status}}">
-			<view class="me-list-lil">商家入驻<image src="/images/tubiao/1-13.png"></image>
+			<view class="me-list-lil">商家入驻<image src="/images/tubiao/48.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
+		<view class="me-list-li" bindtap="handlezhuc">
+			<view class="me-list-lil">注册<image src="/images/tubiao/49.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
 
 		<view class="me-list-li" bindtap="manage">
 			<view class="me-list-lil">商家管理<image src="/images/tubiao/1-13.png"></image>
@@ -117,6 +113,7 @@
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
+
 
 
 		<!-- foot -->
@@ -136,10 +133,13 @@
 						广东省佛山市禅城区南庄镇中国陶瓷总部基地
 					</view>
 				</view>
-
 				<view class="contact">
-					<button class="btn">联系店主</button>
-					<button class="btn">在线咨询</button>
+					<button class="btn">
+						<image src="/images/tubiao/1-21.png"></image> 联系店主
+					</button>
+					<button class="btn">
+						<image src="/images/tubiao/1-22.png"></image>在线咨询
+					</button>
 				</view>
 			</view>
 		</view>

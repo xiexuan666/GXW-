@@ -42,7 +42,11 @@
     "pages/me/guanli/manage/scheme",
     "pages/me/guanli/manage/anl",
     "pages/me/guanli/manage/chanp",
-    "pages/me/guanli/manage/zixu"
+    "pages/me/guanli/manage/zixu",
+    "pages/souye/share/share",
+    "pages/souye/poster/poster",
+    "pages/me/fujin/fujin"
+
     
 
 
@@ -67,32 +71,39 @@
     "list": [
       {
         "pagePath":"pages/souye/souye",
+        "text": "首页",
         "iconPath":"/images/tubiao/1-16.png",
-        "selectedIconPath":"/images/tubiao/1-16.png"
+        "selectedIconPath":"/images/tubiao/111.png"
+      
       
       },
       {
         "pagePath":"pages/product/product",
+        "text": "案例",
         "iconPath":"/images/tubiao/1-17.png",
-        "selectedIconPath":"/images/tubiao/1-17.png"
+        "selectedIconPath":"/images/tubiao/112.png"
+
        
       },
       {
         "pagePath":"pages/hotspot/hotspot",
+        "text": "活动",
         "iconPath":"/images/tubiao/1-15.png",
         "selectedIconPath":"/images/tubiao/1-15.png"
        
       },
       {
         "pagePath":"pages/jinxs/jinxs",
+        "text": "攻略",
         "iconPath":"/images/tubiao/1-18.png",
-        "selectedIconPath":"/images/tubiao/1-18.png"
+        "selectedIconPath":"/images/tubiao/113.png"
        
       },
       {
         "pagePath":"pages/me/me",
+        "text": "我的",
         "iconPath":"/images/tubiao/1-19.png",
-        "selectedIconPath":"/images/tubiao/1-19.png"
+        "selectedIconPath":"/images/tubiao/114.png"
        
       }
     ]

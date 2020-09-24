@@ -1,7 +1,4 @@
 <import src="/pages/template/splist/spslist.wxml" /> 
-
-
-
 <view class="sous" >
 	<view class="sous-nr" bindtap="tzsous">
 		<image src="/images/tubiao/sous.png"></image>
@@ -61,8 +58,8 @@
 					<view class="shouc" catchtap="sccp" data-ind="{{index}}">
 						<view class="shouc-p">收藏</view>
 						<view class="img">
-							<image wx:if="{{!item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/me1.png"></image>
-							<image wx:if="{{item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/sc1.png"></image>
+							<image wx:if="{{!item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/1-13.png"></image>
+							<image wx:if="{{item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/33.png"></image>
 						</view>
 					</view>
 				</view>

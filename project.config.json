@@ -301,9 +301,22 @@
 				},
 				{
 					"id": -1,
-					"name": "案列",
-					"pathName": "pages/product/anlixq/anlixq",
+					"name": "海报",
+					"pathName": "pages/souye/poster/poster",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品中心",
+					"pathName": "pages/product/product1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "附近门店",
+					"pathName": "pages/me/fujin/fujin",
 					"scene": null
 				}
 			]

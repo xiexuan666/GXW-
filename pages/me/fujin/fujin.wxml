@@ -1,0 +1,77 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="/images/tubiao/1-30.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="/images/tubiao/gxw.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+
+<!-- 优惠券活动 -->
+<view class="activity">
+	<view class="activity-ul">
+		<view class="activityli">
+			<image src="/images/tubiao/1-27.png"></image>
+			<view class="activities">优惠券活动</view>
+		</view>
+		<view class="activityli" bindtap="tzroom" >
+			<image src="/images/tubiao/1-28.png"></image>
+			<view class="activities">预约量房</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 经销商内容 -->
+<view class="jxsnr">
+	<view class="jxsnr-ul">
+		<view class="jxsnr-li  ">
+			<view class="jxsnr-tubiao tu1">
+				<image mode="heightFix" src="/images/tubiao/46.png"></image>
+			</view>
+			<view class="jxsnr-li-r">9:00-22:00</view>
+		</view>
+		<!-- 地址 -->
+		<view class="jxsnr-li">
+			<view class="jxsnr-tubiao tu1">
+				<image mode="heightFix" src="/images/tubiao/46.png"></image>
+			</view>
+			<view class="jxsnr-li-rp">广东省佛山市禅城区南庄镇中国陶瓷总部基地</view>
+		</view>
+		<!-- 联系人 -->
+		<view class="jxsnr-li  ">
+			<view class="jxsnr-tubiao tu1">
+				<image mode="heightFix" src="/images/tubiao/46.png"></image>
+			</view>
+			<view class="jxsnr-li-r">徐小姐</view>
+		</view>
+		<!-- 联系电话 -->
+		<view class="jxsnr-li">
+			<view class="jxsnr-tubiao tu1">
+				<image mode="heightFix" src="/images/tubiao/46.png"></image>
+			</view>
+			<view class="jxsnr-li-r jxsnr-li-r2">0757-8888888</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 导航 -->
+<map id="map" longitude="{{dt.longitude}}" latitude="{{dt.latitude}}" scale="{{dt.scale}}" markers="{{dt.markers}}" show-location show-compass style="width: 100%; height: 600rpx;"></map>
+
+
+<view class="dhxuanf-nr  dhxuanf-nrs" bindtap="daohan">
+	<view class="dhxuanf-nrp dhxuanf-nrps">一键导航</view>
+</view>
+<view class="dhxuanf-nr" bindtap="calling">
+	<view class="dhxuanf-nrp">一键呼叫</view>
+</view>

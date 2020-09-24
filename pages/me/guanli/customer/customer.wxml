@@ -1,24 +1,14 @@
-<!--pages/me/me.wxml-->
-<import src="/pages/template/loginphone/loginphone.wxml" />
-<!-- 登录 -->
-<template is="login" data="{{souq: souq}}" />
-<!-- 获取手机 -->
-<template is="phone" data="{{sj: sj}}" />
-
-
+<!-- 头部 -->
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<!-- <image src="/images/tubiao/1-13.png"></image> -->
+			<image src="/images/tubiao/1-30.png"></image>
 		</view>
 		<view class="jinx-toux">
-			<view class="toux-img" wx:if="{{gerxinx}}">
-				<image src="{{gerxinx.wx_photo}}"></image>
+			<view class="toux-img">
+				<image src="/images/tubiao/gxw.png"></image>
 			</view>
-			<view class="toux-img" wx:if="{{!gerxinx}}" bindtap="dianjidl">
-				<!-- <image src="/images/tubiao/1-13.png"></image> -->
-			</view>
-			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
+			<view class="name-p">冠星王总部</view>
 		</view>
 	</view>
 </view>
@@ -26,12 +16,11 @@
 
 
 
-
-<view class="cpxq-dh" wx:if='{{cactiv==1}}'>
+<view class="cpxq-dh">
 	<view class="cpxq-dhnr">
 		<view class="cpxq-dhul">
-			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1?'active':''}}" data-ind="{{1}}" bindtap="cpxzxz">发送产品</view>
-			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}}" data-ind="{{2}}" bindtap="cpxzxz">发送案例</view>
+			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1}}" data-ind="{{1}}" bindtap="cpxzxz">发送产品</view>
+			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2}}" data-ind="{{2}}" bindtap="cpxzxz">发送案例</view>
 		</view>
 	</view>
 </view>

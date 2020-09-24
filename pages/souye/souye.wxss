@@ -10,83 +10,6 @@
 
 /* 轮播图end */
 
-/* 设计 */
-/* .design {
-  width: 100%;
-  margin-top: 60rpx;
-  margin-bottom: 60rpx;
-}
-
-.daoh-ul {
-  width: 690rpx;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.design-nav {
-  display: flex;
-  text-align: center;
-  align-content: center;
-}
-
-.design-ul {
-  text-align: center;
-}
-
-.design-li {
-  display: flex;
-  margin: 0 auto;
-}
-
-.design image {
-  width: 100%;
-}
-
-.design-nav image {
-  width: 25rpx;
-  height: 25rpx;
-}
-
-.location image {
-  width: 25rpx;
-  height: 25rpx;
-}
-
-.location-p {
-  font-size: 27rpx;
-  font-weight: 300;
-}
-
-.phone {
-  width: 25%;
-  padding: 0 15rpx;
-  background-color: #c59262;
-}
-
-.zixun {
-  width: 25%;
-  padding: 0 15rpx;
-  background-color: #c59262;
-}
-
-.daohang {
-  width: 25%;
-  padding: 0 15rpx;
-  background-color: #c59262;
-} */
-
-.design {
-  width: 690rpx;
-  margin: 0 auto;
-}
-
-.design-li image {
-  width: 100%;
-  height: 200rpx;
-
-}
-
-/* 设计end */
 
 /* 导航 */
 .daoh {
@@ -122,12 +45,12 @@
 
 
 }
+
 .daoh-li-text {
   color: #ccc;
   text-align: center;
   font-size: 17rpx;
 }
-
 
 /* 导航end */
 
@@ -170,34 +93,39 @@
   padding-top: 72rpx;
 }
 
-.jxsnr-li-l {
+/* 五个小图标 */
+.jxsnr-tubiao-tu2 {
   display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 .jxsnr-tubiao-tu1 {
   display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
-.jxsnr-tubiao-tu2 {
+.tubiaop {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-left: 218rpx;
-  padding-top: 24rpx;
+}
+
+.jxsnr-li-l {
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.liser {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding: 20rpx 0;
+  padding-left: 180rpx;
+  
 }
 
 .jxsnr-li-lp image {
-  
   width: 35rpx;
   height: 35rpx;
 }
-.lanbai {
-  padding: 0 10rpx;
-}
+
+
 
 .jxsnr-li-lp2 {
   align-items: center;
@@ -229,19 +157,14 @@
 }
 
 .shuzi {
-
   color: #c59262;
 }
-.tubiaof {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
 
 /* 头部end */
-/* 产品 */
 
+
+
+/* 产品 */
 .produt {
   width: 690rpx;
   margin: 50rpx auto;
@@ -273,16 +196,15 @@
 }
 
 .jxsnr-li-lp {
+  width: 150rpx;
   align-items: center;
-  text-align: center;
   display: flex;
   padding: 20rpx 0;
-  font-weight: 300;
+
 
 }
 
 .simple-ul {
-  /* margin: 20rpx 0; */
   font-weight: 300;
 }
 
@@ -340,8 +262,6 @@
 .anlilist-li {
   width: 100%;
   margin-bottom: 40rpx;
-  /* box-shadow: 0 0 15rpx 0rpx #ccc; */
-
 }
 
 .anlilist-liimg {
@@ -378,4 +298,299 @@
   padding-left: 24rpx;
   font-size: 24rpx;
   font-weight: 100;
+}
+
+
+/* 设计 */
+.history {
+  width: 700rpx;
+  margin: 50rpx auto;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+
+}
+
+.cun {
+  font-size: 22rpx;
+  align-items: center;
+  font-weight: 300;
+  margin: 0 10rpx;
+  padding: 20rpx 0;
+}
+
+.portrait image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.tup image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.lister image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.zix image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.boda {
+
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 30%;
+  height: 50rpx;
+  color: #fff;
+  padding: 20rpx 20rpx;
+}
+
+
+.lister {
+  background-color: #bd8f60;
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 200rpx;
+  color: #fff;
+  border-radius: 15rpx;
+  margin: -8rpx 0;
+  align-items: center;
+  text-align: center;
+}
+
+.zix {
+  background-color: #bd8f60;
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 200rpx;
+  color: #fff;
+  border-radius: 15rpx;
+  margin: 20rpx 0;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+/*模态框*/
+
+.toTop {
+  border-radius: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  /* position: fixed; */
+  right: 0rpx;
+  top: 485rpx;
+}
+
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-dialog-body {
+  /* overflow: scroll; */
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+
+.xuanz-nr-lix {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  /* left: 0; */
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+  font-size: 33rpx;
+}
+
+/*动画前初始位置*/
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.menus {
+  display: flex;
+  padding: 15rpx;
+}
+
+.floor image {
+  width: 165rpx;
+  height: 130rpx;
+}
+
+.content {
+  padding: 1rpx 20rpx;
+}
+
+.left {
+  margin: 25rpx 0;
+}
+
+.arrpw-l image {
+  width: 157rpx;
+  height: 59rpx;
+  padding: 0 20rpx;
+}
+
+.into {
+  float: right;
+  font-size: 33rpx;
+}
+
+
+
+
+
+
+
+
+
+
+/* 生成海报 */
+.erweima {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.poster image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.poster {
+  margin: 30rpx auto;
+  align-items: center;
+
+}
+
+.haib {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  font-weight: 300;
+  color: #cacacb;
+}
+
+.qux {
+  margin-top: 40rpx;
+  font-size: 33rpx;
+  color: #cacacb;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.shengcheng {
+  width: 80%;
+  height: 80%;
+  position: fixed;
+  top: 50rpx;
+  left: 50%;
+  margin-left: -40%;
+  z-index: 10;
+}
+
+.baocun {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+
+}
+
+button[class="baocun"]::after {
+  border: 0;
+}
+
+.baocun1 {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 50%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+
 }

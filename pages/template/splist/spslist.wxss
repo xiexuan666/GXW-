@@ -6,7 +6,7 @@
 }
 .splistbeijs{
   
-  box-shadow: 0 0 15rpx 0rpx #ccc;
+  /* box-shadow: 0 0 15rpx 0rpx #ccc; */
   width: 700rpx;
   margin:0 auto ;
   margin-bottom: 58rpx;

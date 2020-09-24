@@ -3,31 +3,11 @@
 <import src="/pages/template/splist/spslist.wxml" />
 <!-- 产品或案例 -->
 <view class="product-cpanli">
-	<view class="cpanli-nr">
-		<!-- <view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
-			产品
-			<view class="cpanli-nr-lid"></view>
-		</view> -->
-		<!-- <view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
-			案例
-			<view class="cpanli-nr-lid"></view>
-		</view> -->
-	</view>
 	<view class="cpanli-nrb" wx:if='{{cactiv==2}}'>
 		<view class="cpanli-nrbli {{twoactiv==1?'cpanli-nrbli-activ':''}} " data-ind="{{1}}" bindtap="anlixuanz">全国案例</view>
 		<view class="cpanli-nrbli {{twoactiv==2?'cpanli-nrbli-activ':''}} " data-ind="{{2}}" bindtap="anlixuanz">本地案例</view>
 	</view>
 </view>
-
-
-
-<!-- 搜索产品 -->
-<!-- <view class="sous" wx:if='{{cactiv==1}}'>
-	<view class="sous-nr" bindtap="tzsous">
-		<image src="/images/tubiao/sous.png"></image>
-		<input disabled="{{true}}" placeholder="大家都在搜：进口岩板"></input>
-	</view>
-</view> -->
 
 
 <view class="sous" wx:if='{{cactiv==2&&twoactiv==1}}'>
@@ -37,8 +17,6 @@
 	</view>
 </view>
 <!-- 搜索产品 -->
-
-
 
 
 
@@ -67,7 +45,6 @@
 <!-- 选择end -->
 
 
-
 <!-- 全国案例 -->
 <view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="anlilist-ul">
@@ -82,36 +59,30 @@
 							<image src="/images/tubiao/1-09.png"></image>
 							<view class="lanbai">{{item.type_name}}</view>
 						</view>
-					</view>
-					<view class="jxsnr-tubiao-tu2">
-						<view class="jxsnr-li-lp2">
-							<image src="/images/tubiao/1-10.png"></image>
-							<view class="shuzi">{{item.preview}}</view>
-						</view>
-
-
-
-
-
-						<view class="tubiaof">
-							<view class="fenxiang" catchtap="share" data-ind="{{index}}">
-								<image src="/images/tubiao/1-11.png"></image>
+						<view class="liser">
+							<view class="jxsnr-tubiao-tu2">
+								<view class="jxsnr-li-lp2">
+									<image src="/images/tubiao/1-10.png"></image>
+									<view class="shuzi">{{item.preview}}</view>
+								</view>
+								<view class="jxsnr-li-lp2" catchtap="collect" data-ind="{{index}}">
+									<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+									<image wx:if="{{items.sczt}}" src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
+									<view class="shuzi">{{item.preview}}</view>
+								</view>
 							</view>
-							<view class="shouc" catchtap="collect" data-ind="{{index}}">
-								<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
-								<image wx:if="{{items.sczt}}" src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
-							</view>
-							<view class="xingx" catchtap="star" data-ind="{{index}}">
-
-								<image wx:if="{{!items.scztt}}" src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
-								<image wx:if="{{items.scztt}}" src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+							<view class="tubiaop">
+								<view class="xingx" catchtap="star" data-ind="{{index}}">
+									<image wx:if="{{!items.scztt}}" src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
+									<image wx:if="{{items.scztt}}" src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+								</view>
+								<view class="fenxiang">
+									<image src="/images/tubiao/1-11.png"></image>
+								</view>
 							</view>
 						</view>
-
-
 					</view>
 				</view>
-
 				<view class="simple">
 					<view class="simple-ul">
 						<view class="simple-ul-p">{{item.shuxing}}</view>
@@ -178,11 +149,6 @@
 	</view>
 </view>
 <!-- 选择 -->
-
-
-
-
-
 
 
 

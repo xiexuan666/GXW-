@@ -30,9 +30,11 @@ Page({
     cpxqzt=2
     // wx.setNavigationBarTitle({ title: '全景体验'})
     var url=this.data.cpxiaqs.product_vr
-    
     app.Jump('souye/webwei/weibwei',{'url':url})
-    
+   }
+   if(ind==4){
+    cpxqzt=
+    wx.setNavigationBarTitle({ title: '视频展示'})
    }
    this.setData({cpxqzt:cpxqzt})
   },
@@ -116,6 +118,13 @@ Page({
     }
     this.setData({cpxiaqs})
     console.log(cpxiaqs,'案例详情')
+  },
+
+  // 跳转到海报
+  handleToTop:function(){
+wx.navigateTo({
+  url: '/pages/souye/poster/poster',
+})
   },
 
   /**

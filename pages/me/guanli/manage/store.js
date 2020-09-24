@@ -9,14 +9,6 @@ Page({
    */
   
   data: {
-    //授权登录状态
-    souq:true,
-    //  手机授权状态
-    sj:true,
-    //申请模态框
-    mtkzt:false,
-    // 个信息
-    gerxinx:null,
     //商家状态
     sjzt:{status:0},
     //当前状态

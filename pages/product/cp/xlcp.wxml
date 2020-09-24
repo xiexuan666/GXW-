@@ -1,39 +1,41 @@
 <!--pages/product/cp/xlcp.wxml-->
 <!-- 系列主图 -->
 <view class="xilie-title">
-  <!-- <view class="xili-title-p">{{titile.name}}</view> -->
-  <!-- <view class="xili-title-p2">{{titile.series_synopsis}}</view> -->
-  
+	<!-- <view class="xili-title-p">{{titile.name}}</view> -->
+	<!-- <view class="xili-title-p2">{{titile.series_synopsis}}</view> -->
+
 </view>
 <view class="xilistzhut">
-  <view class="xiliezt-nr">
-    <view class="xilie-img"><image mode="widthFix" lazy-load="{{true}}" src="{{titile.series_photo}}"></image></view>
-  </view>
-  
+	<view class="xiliezt-nr">
+		<view class="xilie-img">
+			<image mode="widthFix" lazy-load="{{true}}" src="{{titile.series_photo}}"></image>
+		</view>
+	</view>
+
 </view>
 
 <!-- 产品 -->
-<view class="cpbottom-nr" >
-  <block wx:for="{{cp}}"   wx:for-index="index" wx:for-item="item" wx:key="index" >
-    <view class="guigbiet">进口岩板|{{item.name}}</view>
-    <view class="cpbottom-nrul">
-        <block wx:for="{{item.productList}}"   wx:for-index="indexs" wx:for-item="items" wx:key="indexs" >
-          <view class="cpbottom-nrli {{indexs%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" data-inds="{{indexs}}">
-            <view class="cpbottom-img"><image mode="aspectFit" lazy-load="{{true}}" src="{{items.product_url}}"></image></view>
-            <view class="cpbottom-bot">
-              <view class="cpbottom-botp">{{items.name}}</view>
-              <view class="shouc" catchtap="sccp" data-ind="{{index}}" data-inds="{{indexs}}">
-                <view class="shouc-p">收藏</view>
-                <view class="img">
-                    <!-- <image wx:if="{{!items.sczt}}" src="/images/tubiao/1-11.png"></image> -->
-                  <image wx:if="{{!items.sczt}}" src="/images/tubiao/1-13.png"></image>
-                  <image wx:if="{{items.sczt}}" src="/images/tubiao/1-13.png"></image>
-                </view>
-                
-              </view>
-            </view>
-          </view>
-        </block>
-    </view>
-  </block>
+<view class="cpbottom-nr">
+	<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+		<view class="guigbiet">进口岩板|{{item.name}}</view>
+		<view class="cpbottom-nrul">
+			<block wx:for="{{item.productList}}" wx:for-index="indexs" wx:for-item="items" wx:key="indexs">
+				<view class="cpbottom-nrli {{indexs%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" data-inds="{{indexs}}">
+					<view class="cpbottom-img">
+						<image mode="aspectFit" lazy-load="{{true}}" src="{{items.product_url}}"></image>
+					</view>
+					<view class="cpbottom-bot">
+						<view class="cpbottom-botp">{{items.name}}</view>
+						<view class="shouc" catchtap="sccp" data-ind="{{index}}" data-inds="{{indexs}}">
+							<view class="img">
+								<image wx:if="{{!item.sczt}}" src="/images/tubiao/1-13.png"></image>
+								<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
+							</view>
+								<view class="shouc-p"><image src="/images/tubiao/fangx.png" class="img"></image></view>
+						</view>
+					</view>
+				</view>
+			</block>
+		</view>
+	</block>
 </view>

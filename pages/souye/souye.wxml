@@ -47,39 +47,40 @@
 
 <!-- 设计 -->
 <!-- <view class="design">
-	<view class="design-ul">
-		<view class="design-ims">
-			<image src="/images/tubiao/1-20.png"></image>
+	<view class="design-li">
+		<image src="/images/tubiao/1-26.png"></image>
+	</view>
+</view> -->
+
+
+<!-- 家居设计师 -->
+<view class=" history">
+	<view class="search">
+		<view class="portrait">
+			<image src="/images/tubiao/tx.png" mode="aspectFill"></image>
 		</view>
-		<view class="design-li">
-			<view class="stylist">村上</view>
-			<view class="shejis">家居设计师</view>
-		</view>
-		<view class="design-nav">
-			<view class="phone">
-				<image src="/images/tubiao/1-21.png"></image>一键拨打
-			</view>
-			<view class="zixun">
-				<image src="/images/tubiao/1-22.png"></image>咨询店主
-			</view>
-			<view class="daohang">
-				<image src="/images/tubiao/1-23.png"></image>一键导航
-			</view>
-		</view>
-		<view class="location">
-			<view class="location-p">
+		<view class="cun">
+			<view>村上　　家居设计师</view>
+			<view class="tup">
 				<image src="/images/tubiao/1-24.png"></image>
 				广东省佛山市禅城区南庄镇中国陶瓷总部基地
 			</view>
 		</view>
-	</view>
-</view> -->
-
-<view class="design">
-	<view class="design-li">
-		<image src="/images/tubiao/1-26.png"></image>
+		<view class="boda">
+			<view class="lister" bindtap="calling">
+				<image src="/images/tubiao/1-21.png"></image>
+				一键拨打
+			</view>
+			<view class="zix">
+				<image src="/images/tubiao/1-22.png"></image>
+				咨询店主
+			</view>
+		</view>
 	</view>
 </view>
+
+
+
 
 
 
@@ -109,7 +110,7 @@
 
 
 	<!-- 案例 -->
-	<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
+	<view class="anlilist">
 		<view class="anlilist-ul">
 			<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 				<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
@@ -128,13 +129,33 @@
 								<image src="/images/tubiao/1-10.png"></image>
 								<view class="shuzi">{{item.views_count}}</view>
 							</view>
-							<view class="fenxiang" bindtap="share">
-								<image src="/images/tubiao/1-11.png"></image>
+
+							<view class="toTop">
+								<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+									<view class="modals-cancel" bindtap="hideModal"></view>
+									<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+										<text>相关产品</text>
+										<text class=" into" bindtap="handlecha">x</text>
+										<block wx:for="{{anlixiaq.CaseProductList}}" wx:for-index="indexs" wx:for-item="item" wx:key="indexs">
+											<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+												<view class="floor">
+													<image src="{{item.product_url}}"></image>
+												</view>
+												<view class="content">
+													<view class="left">{{item.name}}</view>
+												</view>
+											</view>
+										</block>
+									</view>
+								</view>
+								<view class="fenxiang" bindtap="handleToTop">
+									<image src="/images/tubiao/1-11.png"></image>
+								</view>
 							</view>
-							<view class="shouc" bindtap="collect">
+							<view class="shouc" catchtap="sccp">
 								<image src="/images/tubiao/1-12.png"></image>
 							</view>
-							<view class="xingx" bindtap="star">
+							<view class="xingx" catchtap="star">
 								<image src="/images/tubiao/1-13.png"></image>
 							</view>
 						</view>
@@ -176,27 +197,74 @@
 				<image src="/images/tubiao/1-09.png"></image>
 				<view class="lanbai">爵士灰</view>
 			</view>
-		</view>
-		<view class="jxsnr-tubiao-tu2">
-			<view class="jxsnr-li-lp2">
-				<image src="/images/tubiao/1-10.png"></image>
-				<view class="shuzi">5220</view>
-			</view>
 
-			<view class="tubiaof">
-				<view class="fenxiang">
-					<image src="/images/tubiao/1-11.png"></image>
+
+			<view class="liser">
+				<view class="jxsnr-tubiao-tu2">
+					<view class="jxsnr-li-lp2">
+						<image src="/images/tubiao/1-10.png"></image>
+						<view class="shuzi">5220</view>
+					</view>
+
+					<view class="jxsnr-li-lp2">
+						<image src="/images/tubiao/1-12.png"></image>
+						<view class="shuzi">5220</view>
+					</view>
 				</view>
-				<view class="shouc">
-					<image src="/images/tubiao/1-12.png"></image>
-				</view>
-				<view class="xingx">
-					<image src="/images/tubiao/1-13.png"></image>
+				<view class="tubiaop">
+					<view class="xingx">
+						<image src="/images/tubiao/1-13.png"></image>
+					</view>
+					<view class="fenxiang" bindtap="handleToTop">
+						<image src="/images/tubiao/1-11.png"></image>
+					</view>
 				</view>
 			</view>
-
 		</view>
 	</view>
+
+	<!-- 分享海报 -->
+	<view class="tubiaof">
+		<view class="toTop">
+			<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+				<view class="modals-cancel" bindtap="hideModal"></view>
+				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+					<view class="erweima">
+						<view class="poster">
+							<image src="/../images/shouye/haib.png" bindtap="hanglehb"></image>
+							<view class="haib">生成海报</view>
+						</view>
+						<view class="poster" open-type="share">
+							<image src="/../images/shouye/lianjie.png"></image>
+							<view class="haib">分享链接</view>
+						</view>
+					</view>
+					<view class="qux" bindtap="quxiao">取消</view>
+					<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+						<view class="floor">
+							<image src="{{item.product_url}}"></image>
+						</view>
+						<view class="content">
+							<view class="left">{{item.name}}</view>
+						</view>
+					</view>
+
+					<!--生成海报  -->
+					<!-- <view class='imagePathBox' hidden="{{maskHidden == false}}">
+						<image src="{{imagePath}}" class='shengcheng'></image>
+						<button class='baocun' bindtap='baocun'>保存相册</button>
+						<button open-type="share" class='baocun1'>分享给朋友</button>
+					</view>
+					<view hidden="{{maskHidden == false}}" class="mask"></view>
+					<view class="canvas-box">
+						<canvas style="width: 375px;height: 667px;position:fixed;" canvas-id="mycanvas" />
+					</view> -->
+				</view>
+			</view>
+		</view>
+
+	</view>
+
 
 	<view class="simple">
 		<view class="simple-ul">

@@ -73,5 +73,35 @@
 			<image mode="widthFix" lazy-load="{{true}}" src="{{item.url}}"></image>
 		</view>
 	</block>
+</view>
 
+
+
+
+
+<!-- 底部的收藏 -->
+<view class="collect" wx:if='{{cpxqzt==1}}'>
+	<view class="title">
+		<view class="list-item">
+			<view class="list-right">
+				<image src="/images/tubiao/85.png"></image>
+				<view class="character">5220</view>
+			</view>
+
+		</view>
+		<view class="list-item">
+			<view class="list-right">
+				<image src="/images/tubiao/86.png"></image>
+				<view class="character">收藏</view>
+			</view>
+		</view>
+
+		<view class="list-item">
+			<view class="list-right"  bindtap="handleToTop" >
+				<image src="/images/tubiao/87.png"></image>
+				<view class="character">分享</view>
+			</view>
+		</view>
+
+	</view>
 </view>

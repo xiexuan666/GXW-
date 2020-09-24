@@ -3,36 +3,22 @@ const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    //本地信息
-    bendijxs:{},
+
+    inputVal:'',
+
+    //评论信息
+    comments:{},
     status: true, //评价框显示隐藏
     content: "",
-   
-    appraiseList: [
-      {
-        is_merchant: 0,
-        isOpen: false,
-        change: false,
-        praise: 0,
-        reply_list: [
-        ],
+    userId:'',
+    pinlxinx:'',
+    caseId:'',
+
     
-      },
-      {
-        is_merchant: 0,
-        isOpen: false,
-        change: false,
-        praise: 0,
-        reply_list: [
-        ],
-    
-      },
-    ],
     userpingfen: [          // 天快黑了
       { pingfen: 4 }
     ],
@@ -40,43 +26,55 @@ Page({
   },
 
   // 点击发表评论
-  handlefa: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
-     if ( e.detail.value.input == '') {
-      wx.showToast({
-        title: '请输入内容',
-      })
- 
-    } else  {
-      var that = this;
-      var textarea_item = {};
-      var textareaValue= e.detail.value.input;
-     
-      var release = this.data.release;
-      var id = release.length  
-      textarea_item.textareaValue = textareaValue;
- 
-       release.push(textarea_item);// 将评论内容添加到评论列表
-  
- 
-      this.setData({
-       
-        release: release,
-        releaseFocus: true, //隐藏输入框
-        releaseValue : '' //清空输入框内容
-      })
-      console.log(release)
-     
- 
+  handlefa: function () {
+    if(this.data.pinlxinx.length == 0){
+    }else{
+      var  tha = this
+    var url =baseUrl+"case/caseComment"
+    var gerxinx = wx.getStorageSync('gerxinx')
+    console.log(gerxinx,'评论成功');
+    http.promisServer(url,{
+      brandId:gerxinx.brand_id,
+      userId:gerxinx.id,
+      caseId:tha.data.caseId,
+      comment:tha.data.pinlxinx
+    })
     }
-    
-   
+    var main=this.data.appraiseList;
+    this.setData({
+    appraiseList:main,
+     inputVal:''
+})
   },
-  // 评论案列
-  // handlefa:function(){
+  // 评论输入框
+  pingl:function(e){
+   this.setData({
+    pinlxinx:e.detail.value
+   })
+  },
+
+  // 渲染评论
+  handlepl(){
+    console.log('执行这里');
+    var  tha = this
+     var url =baseUrl+"case/findAllComments"
+     var gerxinx = wx.getStorageSync('gerxinx')
+     var dat= {
+       brandId:gerxinx.brand_id,
+       caseId:tha.data.caseId,
+     }
+     http.promisServer(url,dat).then(resc=> {
+     var commentpl =resc.data.caseList
+       console.log(commentpl,'11111111');
+       tha.setData({comments:commentpl})
+       if(commentpl.length==1){
+         wx.setStorageSync('comments', commentpl[0])
+         return  false
+       }
+     })
+  },
 
 
-  // },
 //拨打电话
 calling: function () {
   var bendijxs=this.data.bendijxs
@@ -117,15 +115,9 @@ calling: function () {
       console.log(this.data.content)
     }
   },
-  /**
-   * 点击回复显示隐藏评价框
-   */
-  chengeStatusTop: function() {
-    let status = this.data.status;
-    this.setData({
-      status: !status
-    })
-  },
+ 
+
+
   // 点赞功能逻辑
   praiseThis: function (e) {
     var index = e.currentTarget.dataset.curindex;
@@ -146,15 +138,7 @@ calling: function () {
       }
     }
   },
-  // 点击展开
-  chooseUnfold: function(e) {
-    var key = e.currentTarget.dataset.key;
-    var val = e.currentTarget.dataset.value;
-    key = key + '.isOpen';
-    this.setData({
-      [key]: !val
-    })
-  },
+
   // 点赞功能逻辑s
   praiseThiss: function (e) {
     var index = e.currentTarget.dataset.curindex;
@@ -214,8 +198,6 @@ calling: function () {
     wx.reLaunch({
       url: '/pages/souye/souye',
     })
-    // app.Jump('/pages/souye/souye')
-
   },
   
   
@@ -223,15 +205,22 @@ calling: function () {
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var caseId = options.caseId;
+    this.setData({
+      caseId:caseId
+
+    })
     var _this = this;
     var tiyan = this.data.userpingfen;
     for (var i = 0; i < tiyan.length; i++) {
-      tiyan[i].pingfenpic = pingxin.pingfen(parseFloat(tiyan[i].pingfen));    //使用函数
+      //tiyan[i].pingfenpic = pingxin.pingfen(parseFloat(tiyan[i].pingfen));    //使用函数
     }
     _this.setData({
       userpingfen: tiyan
     })
+
+    this.handlepl()
+  
 
 
   },

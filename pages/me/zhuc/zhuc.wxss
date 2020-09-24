@@ -1,5 +1,6 @@
 /* pages/me/zhuc/zhuc.wxss */
 @import '/pages/template/loginphone/loginphone.wxss';
+
 page {
   background-color: #fff;
 }
@@ -65,6 +66,7 @@ page {
 
 
 .me-list {
+  position: relative;
   background-color: #fff;
   width: 90%;
   margin: 0 auto;

@@ -17,14 +17,14 @@ Page({
     mtkzt:false,
     // 个信息
     gerxinx:null,
-    //商家状态
-    sjzt:{status:0},
-    //当前状态
-    status:0,
+    cpxqzt:1,
+    cactiv:1,
+    cp:[],
    
   },
-  //个人列表跳转
+  
 
+  //个人列表跳转
   melisttz:function(e){
     console.log(e)
     var ind=app.hdindex(e,'ind')
@@ -57,25 +57,26 @@ Page({
     }
     
   },
-  //申请
-  shenq:function(){
-    app.Jump('me/ruzhu/ruzhu')
-    this.setData({mtkzt:false})
-  },
-  //取消模态框了
-  quxiaomtk:function(){
-    this.setData({mtkzt:false})
-  },
-  //阻止冒泡
-  zhuzi:function(){
-    return false;
-  },
-  // 跳转到注册页面
-  handlezhuc:function(){
-    app.Jump('me/zhuc/zhuc')
-    
-  }
-  ,
+//产品详情导航选择
+cpxzxz:function(e){
+  var ind=app.hdindex(e,'ind')
+
+ var cpxqzt=this.data.cpxqzt;
+ if(ind==cpxqzt){return false}
+ if(ind==1){
+  cpxqzt=1
+  wx.setNavigationBarTitle({ title: '我的收藏'})
+ }
+ if(ind==2){
+  cpxqzt=2
+  wx.setNavigationBarTitle({ title: '我的收藏'})
+ }
+ this.setData({cpxqzt:cpxqzt})
+},
+
+ 
+
+
   /**
    * 生命周期函数--监听页面加载
    */

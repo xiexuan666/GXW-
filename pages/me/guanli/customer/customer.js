@@ -25,8 +25,9 @@ Page({
     cactiv:1,
    
   },
-  //个人列表跳转
 
+  
+  //个人列表跳转
   melisttz:function(e){
     console.log(e)
     var ind=app.hdindex(e,'ind')

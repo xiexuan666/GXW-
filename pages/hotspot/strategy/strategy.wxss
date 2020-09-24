@@ -1,3 +1,4 @@
+@import "/wxParse/wxParse.wxss";
 .banner {
   margin-top: 50rpx;
 }
@@ -30,7 +31,7 @@
 
 .content {
   width: 100%;
-  margin: 0 auto;
+
 }
 
 .imagesize {
@@ -49,4 +50,93 @@
   padding-top: 20rpx;
   text-align: center;
   color: #ccc;
+}
+/* 底部的收藏 */
+.title {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  background: #bd8f60;
+  margin-top: 203rpx;
+  height: 100rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.list-right image {
+  width: 50rpx;
+  height: 50rpx;
+    padding: 0 30rpx;
+}
+
+.list-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+.character {
+  padding: 0  10rpx;
+  color: #fff;
+  font-weight: 300;
+}
+/* 底部名片 */
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding-top: 100rpx;
+  border-radius: 5rpx;
+}
+.goods {
+  display: flex;
+}
+.tab {
+  padding: 0 10rpx;
+}
+.attrs {
+  font-size: 20rpx;
+  font-weight: 300;
+}
+.attrs1 {
+  font-size: 30rpx;
+  font-weight: 300;
+}
+.attrs2 {
+  padding: 20rpx 0;
+  font-size: 27rpx;
+  font-weight: 300;
+}
+
+.collect image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.contact {
+  width: 37%;
+}
+.btn {
+  color: #fff;
+  font-size: 19rpx;
+  font-weight: 300;
+  background-color: red;
+  margin: 20rpx 0;
+}
+.btn image {
+  align-items: center;
+  text-align: center;
+  width: 25rpx;
+  height: 25rpx;
+  padding: 0  5rpx;
 }

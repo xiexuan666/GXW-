@@ -60,11 +60,16 @@ Page({
   },
   // 跳转到管理
   manage:function(){
-wx.navigateTo({
+   wx.navigateTo({
   url: '/pages/me/guanli/guanli',
-})
+  })
   },
-  
+  // 跳转到我的订单
+  myorder:function(){
+    wx.navigateTo({
+    url: '/pages/me/order/order',
+    })
+  } ,
   /**
    * 生命周期函数--监听页面加载
    */

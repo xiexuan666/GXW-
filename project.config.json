@@ -317,6 +317,14 @@
 					"id": -1,
 					"name": "附近门店",
 					"pathName": "pages/me/fujin/fujin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/me/order/order",
+					"query": "",
 					"scene": null
 				}
 			]

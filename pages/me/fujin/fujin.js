@@ -42,6 +42,7 @@ Page({
       }
     })
   },
+
   //  导航
  daohan:function(e){
    var dt=this.data.dt
@@ -54,7 +55,6 @@ Page({
       name:bendijxs.store_name,
       address:bendijxs.address
     })
-    
 },
   //获得最近的经销商
   hdzuij:function(){

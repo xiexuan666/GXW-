@@ -1,0 +1,55 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="/images/tubiao/1-30.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="/images/tubiao/gxw.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+
+<!-- 搜索 -->
+<view class="sous">
+	<view class="sous-nr" bindtap="tzsous">
+		<image src="/images/tubiao/sous.png"></image>
+		<input placeholder="搜索订单"></input>
+	</view>
+</view>
+
+
+
+<!-- 商品订单列表 -->
+<view class="list">
+	<!-- 商品的单选 -->
+	<view class="list-item">
+		<block  wx:key="{{index}}" >
+			<!-- <view class="number">
+				<view class="number1"> 订单号:　20200303001</view>
+			</view> -->
+			<view class="real">
+				<image mode="aspectFill" src="/images/me/V86J986P_4.jpg"></image>
+				<!-- 商品信息右侧 -->
+				<view class="list-right">
+					<view class="character">
+						购买产品:　鱼肚金
+					</view>
+					<view class="price">
+						成交金额:　0
+					</view>
+					<view class="characters">
+						成交时间:　2020.03.03　19:37
+					</view>
+					<view class="delete" bindtap="handleJian">
+						删除订单
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

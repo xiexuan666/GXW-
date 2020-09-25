@@ -1,117 +1,312 @@
-.bgImg {
-  display: block;
-  width: 70%;
-  height: 366rpx;
-  margin: 5% 15%;
+/* pages/me/me.wxss */
+@import '/pages/template/loginphone/loginphone.wxss';
+
+page {
+  background-color: #e7e7e7;
 }
 
-.shareText {
-  color: #333;
-  font-size: 28rpx;
-  margin-top: 50rpx;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
 
-.shareText .text {
-  line-height: 60rpx;
+/* 头部 */
+.jinx-t {
   width: 100%;
-  padding: 0 15%;
-  box-sizing: border-box;
-  display: block;
-  color: #333;
+  background-color: #bababa;
 }
 
-.shareText .text2 {
-  text-align: right;
-}
-
-.btntxt {
-  color: #333;
-  font-size: 26rpx;
-}
-
-.imgBox {
-  text-align: center;
+.jinx-tnr {
   width: 100%;
-  margin-top: 60rpx;
-  padding-bottom: 120rpx;
-  display: flex;
+  position: relative;
+  height: 440rpx;
 }
 
-.img {
-  display: inline-block;
+.jinx-bei {
   width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
 }
 
-.m_l {
-  margin-left: 180rpx;
-}
-
-.zfbtn {
-  display: flex;
-  flex-direction: column;
-  font-size: 28rpx;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-}
-
-.zfbtn image {
-  width: 70rpx;
-  height: 70rpx;
-}
-
-button[class="zfbtn"]::after {
-  border: 0;
-}
-
-button[class="zfbtn m_l"]::after {
-  border: 0;
-}
-
-.imagePathBox {
+.jinx-bei image {
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
 }
 
-.shengcheng {
-  width: 80%;
-  height: 80%;
-  position: fixed;
-  top: 50rpx;
+.jinx-toux {
+  width: 100%;
+
+  position: absolute;
   left: 50%;
-  margin-left: -40%;
-  z-index: 10;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.baocun {
-  display: block;
-  width: 80%;
-  height: 70rpx;
-  padding: 0;
-  line-height: 70rpx;
+.jinx-sao {
+  float: right;
+  padding-right: 80rpx;
+  padding-top: 135rpx;
+}
+
+.jinx-sao image {
+  width: 90rpx;
+  height: 80rpx;
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name-p {
+  color: #ffffff;
   text-align: center;
-  position: fixed;
-  bottom: 50rpx;
-  left: 10%;
-  color: #fff;
-  font-size: 32rpx;
-  border-radius: 24rpx;
-  background: #bd8f60;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+}
+
+/* 头部 end*/
+/* 我的列表 */
+.me-list {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50rpx;
+}
+
+.me-list-ul {
+  width: 100%;
+  margin-top: -50rpx;
+  margin-bottom: 50rpx;
 
 }
 
-button[class="baocun"]::after {
-  border: 0;
+/**钱包**/
+.gernqb {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.gernqb image {
+  width: 100%;
+  height: 350rpx;
+
+}
+
+.vcenter {
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  font-size: 40rpx;
+  color: #fff;
+  font-weight: 300;
+
+}
+
+.balance {
+  position: absolute;
+  left: 40%;
+  top: 44%;
+  font-size: 28rpx;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+.recharge {
+  position: absolute;
+  /* left: 40%; */
+  top: 54%;
+  font-size: 32rpx;
+  color: #fff;
+  font-weight: 300;
+  /* text-align: center; */
+}
+.top {
+  padding: 20rpx   140rpx;
+}
+
+.sum1 {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+/**钱包end**/
+.me-list-li {
+  width: 100%;
+  height: 90rpx;
+
+}
+
+.me-list-lil {
+  float: left;
+  position: relative;
+  padding-left: 100rpx;
+  line-height: 90rpx;
+  color: #595757;
+  font-weight: 300;
+  font-size: 30rpx;
+}
+
+.me-list-lil image {
+  position: absolute;
+  top: 35rpx;
+  left: 65rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.me-list-lir {
+  float: right;
+  padding-right: 40rpx;
+  padding-top: 26rpx;
+
+}
+
+.me-list-lir image {
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 我的列表 end*/
+
+
+/* 申请模态框 */
+.shenqmot {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.shenqmot-nr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600rpx;
+  background: #ffffff;
+
+}
+
+.shenqmot-nrt {
+  color: #C59A6A;
+  font-size: 34rpx;
+  text-align: center;
+  margin-top: 34rpx;
+}
+
+.shenqmot-nrc {
+  overflow: scroll;
+  width: 520rpx;
+  height: 600rpx;
+  margin: 0 auto;
+  border: 1px solid #DCDCDD;
+  border-radius: 8rpx;
+  padding: 10rpx;
+  padding-left: 16rpx;
+  margin-top: 16rpx;
+  padding-bottom: 40rpx;
+}
+
+.shenqmot-nrp {
+  font-size: 27rpx;
+  color: #595757;
+}
+
+.shenqmot-nrb {
+  width: 540rpx;
+  background: #C29562;
+  margin: 0 auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin-top: 26rpx;
+  margin-bottom: 26rpx;
+  color: #ffffff;
+  font-size: 34rpx;
+  font-weight: 100;
+}
+
+
+
+/* 底部名片 */
+.list-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding-top: 100rpx;
+  border-radius: 5rpx;
+}
+
+.goods {
+  display: flex;
+  margin: 0 20rpx;
+
+}
+
+.tab {
+  padding: 0 10rpx;
+
+}
+
+.attrs {
+  font-size: 20rpx;
+  font-weight: 300;
+}
+
+.attrs1 {
+  font-size: 30rpx;
+  font-weight: 300;
+}
+
+.attrs2 {
+  padding: 10rpx 0;
+  font-size: 27rpx;
+  font-weight: 300;
+}
+
+.collect image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.contact {
+  width: 37%;
+}
+
+.btn {
+  color: #fff;
+  font-size: 19rpx;
+  font-weight: 300;
+  background-color: #d0111b;
+  margin: 20rpx 0;
+  align-items: center;
+  text-align: center;
+}
+
+.btn image {
+  align-items: center;
+  text-align: center;
+  width: 25rpx;
+  height: 25rpx;
+  padding: 0 5rpx;
 }

@@ -1,133 +1,99 @@
-// pages/me/ruzhu1/ruzhu2.js
+// pages/me/me.js
 const app = getApp();
-var date = new Date();//调用系统时间函数
+const http = app.globalData.http;
+const baseUrl = app.globalData.baseUrl;
 Page({
-  
 
   /**
    * 页面的初始数据
    */
-  data: {
-    img: "/images/tubiao/1-14.png",
-    wechat: "/images/tubiao/wechat.png",
-    xiazai: "/images/tubiao/xiazai.png",
-    share:"/images/tubiao/tx.png",
-    maskHidden: false,
-    name: "",
-  },
   
+  data: {
+    //授权登录状态
+    souq:true,
+    //  手机授权状态
+    sj:true,
+    //申请模态框
+    mtkzt:false,
+    // 个信息
+    gerxinx:null,
+    //商家状态
+    sjzt:{status:0},
+    //当前状态
+    status:0,
+   
+  },
+  //个人列表跳转
+
+  melisttz:function(e){
+    console.log(e)
+    var ind=app.hdindex(e,'ind')
+    console.log(ind)
+    switch (ind) {
+      case '0':
+        var gerxinx = wx.getStorageSync('gerxinx')
+        if (!gerxinx) {
+          this.setData({souq: false})
+          return false
+        }
+        app.Jump('me/shouc/shouc')
+        break;
+    }
+    
+  },
+  //申请
+  shenq:function(){
+    app.Jump('me/ruzhu/ruzhu')
+    this.setData({mtkzt:false})
+  },
+  //取消模态框了
+  quxiaomtk:function(){
+    this.setData({mtkzt:false})
+  },
+  //阻止冒泡
+  zhuzi:function(){
+    return false;
+  },
+  // 跳转到注册页面
+  handlezhuc:function(){
+    app.Jump('me/zhuc/zhuc')
+  },
+  // 跳转到管理
+  manage:function(){
+wx.navigateTo({
+  url: '/pages/me/guanli/guanli',
+})
+  },
   
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (a) {
+  onLoad: function (options) {
     
-
-  },
-  //将canvas转换为图片保存到本地，然后将图片路径传给image图片的src
-  createNewImg: function () {
-    var that = this;
-    var context = wx.createCanvasContext('mycanvas');
-    context.setFillStyle("#fff")
-    context.fillRect(0, 0, 375, 667)
-    var path = "/images/tubiao/tx.png";
-    context.drawImage(path, 56, 56, 262, 349);
-    var path5 = "/images/me.png";
-    var path2 = "/images/tubiao/erwema.jpg";
-    var name = that.data.name;
-    context.drawImage(path2, 56, 400, 263, 121);
-  
-    //绘制左下角文字
-    context.setFontSize(14);
-    context.setFillStyle('#333');
-    context.setTextAlign('left');
-    context.fillText("长按识别查看", 70, 560);
-    context.stroke();
-    context.setFontSize(14);
-    context.setFillStyle('#333');
-    context.setTextAlign('left');
-    context.fillText("冠星王陶瓷未来家看文章", 70, 580);
-    context.stroke();
-   
-    //绘制右下角小程序二维码
-    context.drawImage(path5, 230, 530,80,80);
-
-    context.draw();
-    //将生成好的图片保存到本地
-    setTimeout(function () {
-      wx.canvasToTempFilePath({
-        canvasId: 'mycanvas',
-        success: function (res) {
-          var tempFilePath = res.tempFilePath;
-          that.setData({
-            imagePath: tempFilePath,
-            canvasHidden: true
-          });
-        },
-        fail: function (res) {
-          console.log(res);
-        }
-      });
-    }, 200);
-  },
-  //点击保存到相册
-  baocun: function () {
-    var that = this
-    wx.saveImageToPhotosAlbum({
-      filePath: that.data.imagePath,
-      success(res) {
-        wx.showModal({
-          content: '海报已保存到相册',
-          showCancel: false,
-          confirmText: '确定',
-          confirmColor: '#333',
-          success: function (res) {
-            if (res.confirm) {
-              console.log('用户点击确定');
-              /* 该隐藏的隐藏 */
-              that.setData({
-                maskHidden: false
-              })
-            }
-          }, fail: function (res) {
-            console.log(11111)
-          }
-        })
-      }
-    })
-  },
-  //点击生成
-  formSubmit: function (e) {
-    var that = this;
-    this.setData({
-      maskHidden: false
-    });
-    wx.showToast({
-      title: '海报生成中...',
-      icon: 'loading',
-      duration: 1000
-    });
-    setTimeout(function () {
-      wx.hideToast()
-      that.createNewImg();
-      that.setData({
-        maskHidden: true
-      });
-    }, 1000)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+ 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    if(!app.globalData.status){
+      app.banbzt().then(resc=>{
+        this.setData({status:app.globalData.status})
+      })
+    }else{
+      this.setData({status:app.globalData.status})
+    }
+    
+    
+    //获取缓存信息
+    this.huqhcgrxin()
   },
 
   /**
@@ -149,6 +115,9 @@ Page({
    */
   onPullDownRefresh: function () {
 
+
+
+    
   },
 
   /**
@@ -162,14 +131,86 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return {
-      title: "一起来学习小程序吧~",
-      success: function (res) {
-        console.log(res, "转发成功")
-      },
-      fail: function (res) {
-        console.log(res, "转发失败")
-      }
+
+  },
+  onShareTimeline: function (){},
+  //关闭弹窗
+  tancxiaos: function(e) {
+    this.setData({
+      souq: true
+    })
+    this.setData({
+      sj: true
+    })
+  },
+  //获取缓存信息
+  huqhcgrxin(){
+    var tha=this
+    var gerxinx = wx.getStorageSync('gerxinx')
+    if(gerxinx){
+      tha.hqshangzt(gerxinx)
+      this.setData({gerxinx})
+      return false
     }
-  }
+      app.huoqopenid()
+      .then((openid)=>app.cuncgerxinx(openid))
+      .then(gerxinx=>{
+        tha.hqshangzt(gerxinx)
+        tha.setData({gerxinx})
+      })
+  },
+  //获取当前商家状态
+  hqshangzt(gerxinx){
+    var tha=this
+    var dat={userid:gerxinx.id,brandid:'1'}
+    var url = baseUrl + 'store/storestatus' 
+    http.promisServer(url,dat).then(function(resc){
+      if(resc.status=="000"){
+        console.log(resc,'商家状态')
+        var sjzt=resc.data
+        wx.setStorage({ key:"sjzt", data:sjzt})
+        tha.setData({sjzt:sjzt})
+      }
+    })
+  },
+
+  //没有用防止事件传给父元素
+  meiy: function() {
+  },
+  //点击弹出登录
+  dianjidl: function () {
+    this.setData({souq: false})
+  },
+  //登录
+  bindGetUserInfo: function(e) {
+    var tha=this;
+    wx.clearStorage()
+     // 获得当前地址
+    app.dtxx()
+    
+    if (e.detail.userInfo) {
+      wx.showToast({title: '获取用户授权中',icon: 'loading',duration: 3000})
+      app.denlus()
+      .then(res=>{
+        tha.setData({ souq: true,sj:false,gerxinx:res})
+        wx.hideToast()
+      })
+    } else {
+      this.setData({souq: true})
+    }
+  },
+  //手机授权
+  getPhoneNumber(e) {
+    var tha = this
+    //获取手机号
+    var gerxinx = wx.getStorageSync('gerxinx')
+    if(gerxinx&&gerxinx.phone){
+      tha.setData({sj: true})
+      return false
+    }
+    var openid=gerxinx.open_id
+    app.getphone(e,openid).then(res=>{
+      tha.setData({sj: true,gerxinx:res})
+    })
+  },
 })

@@ -31,6 +31,22 @@ Page({
    annrshuz:[],
    titile:''
   },
+    //拨打电话
+    calling: function () {
+      var bendijxs=this.data.bendijxs
+      if(!bendijxs){
+        return false
+      }
+      wx.makePhoneCall({
+        phoneNumber: bendijxs.phone, //此号码并非真实电话号码，仅用于测试
+        success: function () {
+          console.log("拨打电话成功！")
+        },
+        fail: function () {
+          console.log("拨打电话失败！")
+        }
+      })
+    },
   
  //请求轮播
  handlelun:function() {
@@ -148,9 +164,7 @@ Page({
         hideModal: true
       })
     }, 100)//先执行下滑动画，再隐藏模块，再隐藏模块
- 
   },
-    
 
 // 跳转到案例
 tzcase:function(){

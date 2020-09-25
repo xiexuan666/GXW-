@@ -70,6 +70,24 @@ Page({
     url: '/pages/me/order/order',
     })
   } ,
+    // 跳转到收货地址
+    address:function(){
+      wx.navigateTo({
+      url: '/pages/me/address/address',
+      })
+    } ,
+    // 跳转到个人钱包
+    wallet:function(){
+      wx.navigateTo({
+      url: '/pages/me/wallet/wallet',
+     })
+    },
+    // 跳转到活动参与
+    activity:function(){
+    wx.navigateTo({
+      url: '/pages/me/activity/activity',
+    })
+    },
   /**
    * 生命周期函数--监听页面加载
    */

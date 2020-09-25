@@ -7,11 +7,11 @@
           <input type="text" placeholder="请填写收货人姓名" value="{{consigneeName}}" bindblur="consigneeNameInput" placeholder-class="phcolor"></input>
         </view>
         <view class="address-right">
-          <image src="../../../img/icon/icon-add-address-user.png"></image>
+          <image src="/images/tubiao/46.png"></image>
         </view>
       </view>
       <view class="address-msg">
-        <view class="item-msg">手机号码</view>
+        <view class="item-msg">联系电话</view>
         <view class="section">
           <input type="number" placeholder="请填写收货人手机号码" value="{{phone}}" maxlength="11" bindblur="phoneInput" placeholder-class="phcolor"></input>
         </view>
@@ -22,7 +22,7 @@
           <input disabled="disabled" placeholder="省市区县、乡镇等" value="{{consigneeRegion}}" bindblur="consigneeRegionInput" placeholder-class="phcolor"></input>
         </view>
         <view class="address-rights" bindtap='select'>
-          <image src="../../../img/icon/icon-site-location.png"></image>
+          <image src="/images/tubiao/40.png"></image>
           <view>定位</view>
         </view>
       </view>
@@ -43,9 +43,8 @@
       <view class="default-setting">
         <view class="defaul-setting-left">
           <view>设置默认地址</view>
-          <view>提醒：每次下单会默认推荐使用该地址</view>
         </view>
-        <image class="defaul-setting-right" src="../../../img/icon/icon-off-by-default.png"></image>
+        <image class="defaul-setting-right" src="/images/tubiao/46.png"></image>
       </view>
     </view>
   </view>

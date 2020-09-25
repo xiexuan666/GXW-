@@ -39,7 +39,7 @@
 		</view>
 
 
-		<view class="me-list-li" data-ind="0" bindtap="myorder"  >
+		<view class="me-list-li" data-ind="0" bindtap="myorder">
 			<view class="me-list-lil">我的订单<image src="/images/tubiao/38.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -47,7 +47,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" data-ind="0">
+		<view class="me-list-li" data-ind="0" bindtap="address">
 			<view class="me-list-lil">收货地址<image src="/images/tubiao/40.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -62,7 +62,7 @@
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" data-ind="0">
+		<view class="me-list-li" data-ind="0" bindtap="wallet">
 			<view class="me-list-lil">个人钱包<image src="/images/tubiao/47.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -70,7 +70,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" data-ind="0">
+		<view class="me-list-li" data-ind="0" bindtap="activity" >
 			<view class="me-list-lil">活动参与<image src="/images/tubiao/47.png"></image>
 			</view>
 			<view class="me-list-lir">

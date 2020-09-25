@@ -1,0 +1,22 @@
+<view class="address">
+	<view class="address-ul">
+
+		<view class="xinz" bindtap="address">
+			<view class="diz">+新增收货地址</view>
+		</view>
+		<view class="address-li">
+			<view class="tupian">
+				<image src="/images/tubiao/1-24.png"></image>
+			</view>
+
+			<!-- 搜索产品 -->
+			<view class="sous">
+				<view class="sous-nr" bindtap="tzsous">
+					<image src="/images/tubiao/sous.png"></image>
+					<input placeholder="请输入您的收货地址"></input>
+				</view>
+			</view>
+		</view>
+
+	</view>
+</view>

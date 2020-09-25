@@ -16,17 +16,3 @@
 
 
 
-<view class="me-list">
-	<view class="me-list-ul">
-		<view class="me-list-li">
-			<view class="me-list-lil">
-				<!-- <view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1}}" data-ind="{{1}}" bindtap="cpxzxz">个人收藏</view>
-				<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2}}" data-ind="{{2}}" bindtap="cpxzxz">发送案例</view> -->
-			</view>
-		</view>
-	</view>
-</view>
-
-
-
-

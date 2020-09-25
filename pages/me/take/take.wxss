@@ -4,7 +4,7 @@
 }
  
 .address-msg {
-  height: 128rpx;
+  height: 80rpx;
   display: flex;
   align-items: center;
   background: #FFFFFF;
@@ -86,7 +86,7 @@
   border-radius: 20rpx;
 }
 .labels-active {
-  background: #F73C41 !important;
+  background: #be8f61 !important;
   color: #FFFFFF !important;
 }
 /* 默认设置 */
@@ -114,7 +114,7 @@
 .btn {
   width: 680rpx;
   height: 88rpx;
-  background: #F73C41;
+  background: #be8f61;
   color: #FFFFFF;
   position: fixed;
   bottom: 55rpx;

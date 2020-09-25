@@ -69,34 +69,34 @@ Page({
     if (consigneeName == "") {
       wx: wx.showToast({
         title: '请输入姓名',
-        image: "../../../img/icon/icon-reminder.png"
+        image: "/images/tubiao/46.png"
       })
       return false
     }
     else if (phone == "") {
       wx: wx.showToast({
         title: '请输入手机号码',
-        image: "../../../img/icon/icon-reminder.png"
+        image: "/images/tubiao/46.png"
       })
       return false
     }
     else if (consigneeRegion == "") {
       wx: wx.showToast({
         title: '请选择所在地区',
-        image: "../../../img/icon/icon-reminder.png"
+        image: "/images/tubiao/46.png"
       })
       return false
     }
     else if (detailedAddress == "") {
       wx: wx.showToast({
         title: '请输入详细地址',
-        image: "../../../img/icon/icon-reminder.png"
+        image: "/images/tubiao/46.png"
       })
       return false
     }
     else {
       wx.navigateTo({
-        url: '../../my/my-delivery-address/index',
+        url: '/pages/me/address',
       })
     }
   },

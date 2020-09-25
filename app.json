@@ -46,7 +46,11 @@
     "pages/souye/share/share",
     "pages/souye/poster/poster",
     "pages/me/fujin/fujin",
-    "pages/me/order/order"
+    "pages/me/order/order",
+    "pages/me/address/address",
+    "pages/me/take/take",
+    "pages/me/wallet/wallet",
+    "pages/me/activity/activity"
 
     
 

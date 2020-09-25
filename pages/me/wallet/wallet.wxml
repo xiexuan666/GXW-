@@ -1,0 +1,14 @@
+	<view class="me-list-ul">
+		<view class="gernqb">
+			<image src="/images/tubiao/50.png"></image>
+			<view class="vcenter">个人钱包</view>
+			<view class="balance">
+				<view class="sum">我的余额</view>
+				<view class="sum1">￥0.00</view>
+			</view>
+			<view class="recharge">
+				<text class="top">充值</text>
+				<text class="top">提现</text>
+			</view>
+		</view>
+	</view>

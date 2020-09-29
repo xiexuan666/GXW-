@@ -50,7 +50,12 @@
     "pages/me/address/address",
     "pages/me/take/take",
     "pages/me/wallet/wallet",
-    "pages/me/activity/activity"
+    "pages/me/activity/activity",
+    "pages/me/message/message",
+    "pages/me/coupon/coupon",
+    "pages/me/discount/discount",
+    "pages/me/containe/containe",
+    "pages/me/guanli/code/code"
 
     
 

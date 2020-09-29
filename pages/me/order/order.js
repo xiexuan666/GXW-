@@ -5,10 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    //本地商品列表
+    goods: [],
   },
-//数量加1
-handleJian(e) {
+  //数量加1
+  handleJian(e) {
 
     wx.showModal({
       title: '提示',
@@ -28,7 +29,7 @@ handleJian(e) {
         })
       }
     })
-},
+  },
 
   /**
    * 生命周期函数--监听页面加载

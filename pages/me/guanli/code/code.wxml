@@ -1,0 +1,29 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="/images/tubiao/1-30.png"></image>
+		</view>
+
+	</view>
+</view>
+
+
+
+
+
+
+
+<view class="eweim">
+	<view class="eweim-li">
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="/images/tubiao/90.png"></image>
+			</view>
+      <view class="name-p">符导购</view>
+		</view>
+		<view class="eweim-tnr">
+			<image src="/images/tubiao/89.png"></image>
+		</view>
+	</view>
+</view>

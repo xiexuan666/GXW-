@@ -13,93 +13,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    animationAddressMenu: {},
-    addressMenuIsShow: false,
-    value: [0, 0, 0],
-    provinces: [],
-    citys: [],
-    areas: [],
-    consigneeName: "", 
-    phone: "",
-    consigneeRegion: "",
-    detailedAddress: "",
-    labelList: ["家", "公司", "学校"],            //标签
-    labelDefault: 0,              // 标签默认,
- 
+    isSubmit: false,
+  warn: "",
+  phone: "",
+  pwd: "",
+  isPub: false,
+  sex: "男"
     
   },
-  consigneeNameInput: function(e) {
-    
-    this.setData({
-      consigneeName: e.detail.value
-    })
-  },
-  phoneInput: function(e) {
-    
-    this.setData({
-      phone: e.detail.value
-    })
-  },
-  consigneeRegionInput: function (e) {
-   
-    this.setData({
-      consigneeRegion: e.detail.value
-    })
-  },
-  detailedAddressInput: function (e) {
-    this.setData({
-      detailedAddress: e.detail.value
-    })
-  },
-  chooseLabelSelect: function(e) {
-    var index = e.currentTarget.dataset.index;
-    this.setData({
-      labelDefault: index
-    })
-  },
-  submit: function() {
-    var consigneeName = this.data.consigneeName;
-    console.log(consigneeName)
-    var phone = this.data.phone;
-    console.log(phone)
-    var consigneeRegion = this.data.consigneeRegion;
-    console.log(consigneeRegion)
-    var detailedAddress = this.data.detailedAddress
-    console.log(detailedAddress)
-    if (consigneeName == "") {
-      wx: wx.showToast({
-        title: '请输入姓名',
-        image: "../../../img/icon/icon-reminder.png"
-      })
-      return false
-    }
-    else if (phone == "") {
-      wx: wx.showToast({
-        title: '请输入手机号码',
-        image: "../../../img/icon/icon-reminder.png"
-      })
-      return false
-    }
-    else if (consigneeRegion == "") {
-      wx: wx.showToast({
-        title: '请选择所在地区',
-        image: "../../../img/icon/icon-reminder.png"
-      })
-      return false
-    }
-    else if (detailedAddress == "") {
-      wx: wx.showToast({
-        title: '请输入详细地址',
-        image: "../../../img/icon/icon-reminder.png"
-      })
-      return false
-    }
-    else {
-      wx.navigateTo({
-        url: '../../my/my-delivery-address/index',
-      })
-    }
-  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

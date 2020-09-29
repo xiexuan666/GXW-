@@ -1,0 +1,202 @@
+<!-- 热点视频和装修 -->
+<view class="product-cpanli">
+	<view class="cpanli-nr">
+		<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+			点赞
+			<view class="cpanli-nr-lid"></view>
+		</view>
+		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+			评论
+			<view class="cpanli-nr-lid"></view>
+		</view>
+	</view>
+</view>
+
+
+
+
+<!-- 全部 -->
+<view class="cpxq-dh" wx:if='{{cactiv==1}}'>
+	<view class="cpxq-dhnr">
+		<view class="cpxq-dhul">
+			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1?'active':''}} " data-ind="{{1}}" bindtap="cpxzxz">热点视频</view>
+			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}} " data-ind="{{2}}" bindtap="cpxzxz">攻略</view>
+			<view class="cpxq-dhnrp cpxqp3 {{cpxqzt==3?'active':''}} " data-ind="{{3}}" bindtap="cpxzxz">案例</view>
+			<view class="cpxq-dhnrp cpxqp4 {{cpxqzt==4?'active':''}} " data-ind="{{4}}" bindtap="cpxzxz">收到的赞</view>
+		</view>
+	</view>
+</view>
+
+
+<!-- 内容 -->
+<!-- <view class="list" wx:if='{{cactiv==1&&cpxqzt==2}}'>
+	<block>
+		<navigator url="/pages/hotspot/strategy/strategy?id=1" class="goods-list">
+			<image src="/images/tubiao/1-08.jpg">
+			</image>
+			<view class="goods-list-right">
+				<view class="goods-title">
+					[爆款推荐]这个夏天，冠星王瓷砖让
+					你体验不—样的清凉。
+				</view>
+				<view class="simple-li-r">
+					<view class="cotione">
+						<view class="jxsnr-li-time">5220</view>
+					</view>
+					<view class="cotione1">
+						<view class="jxsnr-li-r">2020.09.01</view>
+					</view>
+				</view>
+			</view>
+		</navigator>
+	</block>
+</view> -->
+
+
+
+
+
+<!-- 热点视频 -->
+<view class="videolist" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="videolist-title">
+		<block>
+			<view class="video">
+				<view class="photo">
+					<image src="/images/tubiao/1-08.jpg"></image>
+					<view class="biaoq">厨房</view>
+				</view>
+				<view class="name">
+					<view class="names">
+						<image src="/images/tubiao/tx.png"></image>
+						<text>村上村树</text>
+					</view>
+
+					<view class="shouc">
+						<image src="/images/tubiao/33sc.png"></image>
+						<text>11</text>
+					</view>
+				</view>
+			</view>
+			<view class="ruhe">
+				<view>[如何装修]开放式厨房太空...</view>
+				<image src="/images/tubiao/chak.png"></image>
+				<text>5220</text>
+			</view>
+
+		</block>
+	</view>
+</view>
+
+
+<!-- 案例 -->
+<view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+	<view class="anlilist-ul">
+		<block>
+			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
+				<view class="anlilist-liimg">
+					<image mode="aspectFill" lazy-load="{{true}}" src="/images/tubiao/1-08.jpg"></image>
+				</view>
+				<view class="jxsnr-li-l  jxsnr-li-lsa">
+					<view class="jxsnr-tubiao-tu1">
+						<view class="jxsnr-li-lp">
+							<image src="/images/tubiao/1-09.png"></image>
+							<view class="lanbai">芬兰白</view>
+						</view>
+						<view class="liser">
+							<view class="jxsnr-tubiao-tu2">
+								<view class="jxsnr-li-lp2">
+									<image src="/images/tubiao/1-10.png"></image>
+									<view class="shuzi">5220</view>
+								</view>
+								<view class="jxsnr-li-lp2" catchtap="collect" data-ind="{{index}}">
+									<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+									<image wx:if="{{items.sczt}}" src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
+									<view class="shuzi">5220</view>
+								</view>
+							</view>
+							<view class="tubiaop">
+								<view class="xingx" catchtap="star" data-ind="{{index}}">
+									<image wx:if="{{!items.scztt}}" src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
+									<image wx:if="{{items.scztt}}" src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+								</view>
+								<view class="fenxiang">
+									<image src="/images/tubiao/1-11.png"></image>
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="simple">
+					<view class="simple-ul">
+						<view class="simple-ul-p">[现代简约]客厅案例</view>
+						<view class="simple-li">佛山280m私宅|4年落地，只为雅奢生活</view>
+					</view>
+					<view class="simple-li-r">
+						<view class="cotione">
+							<view class="jxsnr-li-time">广东省佛山市禅城区</view>
+						</view>
+						<view class="cotione1">
+							<view class="jxsnr-li-r">2020.09.01</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+
+
+<!-- 收到的赞 -->
+<view class="appraise-user" wx:if='{{cactiv==1&&cpxqzt==4}}'>
+	<view class="possess-layout margin-layouts">
+		<view class="main" bindtap="handlepl">
+			<block>
+				<view class="username-appraise-top">
+					<view class="username">
+						<image src="/images/tubiao/tx.png"></image>
+						<view>天快黑了</view>
+					</view>
+				</view>
+				<view class="appraise-content">
+					<text>一天前</text>
+					<view>评论雅奢生活</view>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 评论 -->
+<view class="appraise-user" wx:if='{{cactiv==2}}'>
+	<view class="possess-layout margin-layouts">
+		<view class="main" bindtap="handlepl">
+			<block>
+				<view class="username-appraise-top">
+					<view class="username">
+						<image src="/images/tubiao/tx.png"></image>
+						<view>天快黑了</view>
+					</view>
+				</view>
+				<view class="appraise-content">
+					<text>一天前</text>
+					<view>评论雅奢生活</view>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>
+
+
+<!-- 底部评论 -->
+<view class="appraise-btn" wx:if='{{cactiv==2}}'>
+	<form catchsubmit="tijiaoform" catchreset="formReset">
+		<view class="appraise-btn-left">
+			<image src="/images/tubiao/1-06.png"></image>
+			<input placeholder="回复评论" bindinput="pingl" value="{{inputVal}}"></input>
+			<view class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</view>
+		</view>
+	</form>
+</view>

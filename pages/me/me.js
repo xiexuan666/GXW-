@@ -88,6 +88,18 @@ Page({
       url: '/pages/me/activity/activity',
     })
     },
+    // 跳转到信息活动
+    message:function(){
+      wx.navigateTo({
+        url: '/pages/me/message/message',
+      })
+    },
+    // 跳转到我的卡券
+    coupon:function(){
+     wx.navigateTo({
+       url: '/pages/me/coupon/coupon',
+     })
+    },
   /**
    * 生命周期函数--监听页面加载
    */

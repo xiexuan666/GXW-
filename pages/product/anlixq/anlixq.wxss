@@ -321,8 +321,10 @@ appraise-content view text:nth-child(2) {
 }
 
 
-/* 底部 */
 
+
+
+/* 底部 */
 .appraise-btn {
 
   height: 97.3rpx;

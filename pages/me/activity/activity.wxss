@@ -86,6 +86,11 @@
   width: 700rpx;
 
 }
+.left {
+  margin-top: -30rpx;
+  margin-left: 55rpx;
+
+}
 .left  image  {
   width: 25rpx;
   height: 25rpx;

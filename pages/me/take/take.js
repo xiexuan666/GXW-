@@ -1,4 +1,5 @@
 var app = getApp()
+var address = require("../../../utils/mock");
 Page({
   /**
     * 控件当前显示的数据

@@ -23,22 +23,17 @@
 		<view class="list">
 			<view class="list-item">
 				<view class="list-right">
-					<image src="/images/tubiao/1-11.png"></image>
+					<image src="/images/tubiao/107.png"></image>
 				</view>
-				<view class="character">分享获客</view>
+				<view class="character">系统获客</view>
 			</view>
 			<view class="list-item">
 				<view class="list-right">
-					<image src="/images/tubiao/1-11.png"></image>
-				</view>
-				<view class="character">智能海报</view>
-			</view>
-			<view class="list-item">
-				<view class="list-right">
-					<image src="/images/tubiao/1-11.png"></image>
+					<image src="/images/tubiao/107.png"></image>
 				</view>
 				<view class="character">卡券核销</view>
 			</view>
+
 		</view>
 	</view>
 </view>

@@ -51,8 +51,9 @@
   font-size: 30rpx;
   font-weight: 300;
 }
-
 /* 头部 end*/
+
+
 /* 优惠券活动 */
 
 .activity-ul {
@@ -120,7 +121,7 @@
 }
 
 .jxsnr-li-rp {
-  width: 100%;
+  width: 65%;
   font-size: 24rpx;
   font-weight: 100;
 }

@@ -17,23 +17,25 @@
 <!-- 活动 -->
 <view class="recommend" wx:if='{{cactiv==1}}'>
 	<view class="history">
-		<view class="activity">
-			<image src="/images/tubiao/1-08.jpg"></image>
-		</view>
-		<view class="right">
-			<view class="right-li">
-				<view class="right-ul">
-					免费参与限时邀请解锁千元红包活动
+		<block>
+			<view class="activity">
+				<image src="/images/tubiao/1-08.jpg"></image>
+			</view>
+			<view class="right">
+				<view class="right-li">
+					<view class="right-ul">
+						免费参与限时邀请解锁千元红包活动
+					</view>
+					<view class="right-l">
+						活动时问:2020.05.30-09.00至 2020.05.30-12.00
+					</view>
 				</view>
-				<view class="right-l">
-					活动时问:2020.05.30-09.00至 2020.05.30-12.00
+				<view class="left" bindtap="fenxiang">
+					<image src="/images/tubiao/1-11.png"></image>
+					分享
 				</view>
 			</view>
-			<view class="left" bindtap="fenxiang">
-				<image src="/images/tubiao/1-11.png"></image>
-				分享
-			</view>
-		</view>
+		</block>
 	</view>
 </view>
 
@@ -113,4 +115,3 @@
 		</view>
 	</view>
 </view>
-

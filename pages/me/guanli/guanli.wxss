@@ -7,7 +7,7 @@ page {
 /* 头部 */
 .jinx-t {
   width: 100%;
-  background-color: #bababa;
+  /* background-color: #bababa; */
 }
 
 .jinx-tnr {
@@ -32,7 +32,6 @@ page {
 
 .jinx-toux {
   width: 100%;
-
   position: absolute;
   left: 50%;
   top: 50%;
@@ -52,13 +51,25 @@ page {
 }
 
 .name-p {
-  color: #ffffff;
+  /* color: #ffffff; */
   text-align: center;
   margin-top: 20rpx;
   font-size: 35rpx;
   font-weight: 300;
 }
 
+
+.jinx-sao {
+  position: relative;
+  float: right;
+  padding-right: 80rpx;
+  padding-top: 70rpx;
+}
+
+.jinx-sao image {
+  width: 70rpx;
+  height: 70rpx;
+}
 /* 头部 end*/
 
 

@@ -11,6 +11,9 @@
 			<view class="toux-img" wx:if="{{gerxinx}}">
 				<image src="{{gerxinx.wx_photo}}"></image>
 			</view>
+			<view class="toux-img" wx:if="{{!gerxinx}}" bindtap="dianjidl">
+				<image src="/images/tubiao/weiden.png"></image>
+			</view>
 			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
 		</view>
 		<view class="jinx-sao">
@@ -55,7 +58,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" data-ind="0">
+		<view class="me-list-li" data-ind="0" bindtap="coupon">
 			<view class="me-list-lil">我的卡券<image src="/images/tubiao/41.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -70,7 +73,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" data-ind="0" bindtap="activity" >
+		<view class="me-list-li" data-ind="0" bindtap="activity">
 			<view class="me-list-lil">活动参与<image src="/images/tubiao/47.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -84,7 +87,7 @@
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" data-ind="0">
+		<view class="me-list-li" data-ind="0" bindtap="message">
 			<view class="me-list-lil">信息中心<image src="/images/tubiao/44.png"></image>
 			</view>
 			<view class="me-list-lir">

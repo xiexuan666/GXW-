@@ -1,0 +1,84 @@
+page {
+  background-color: #e7e7e7;
+}
+
+/* 头部 */
+.jinx-t {
+  width: 100%;
+
+}
+
+.jinx-tnr {
+  width: 100%;
+  position: relative;
+  height: 440rpx;
+}
+
+.name-p {
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.jinx-bei {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.jinx-bei image {
+  width: 100%;
+}
+
+.jinx-toux {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  transform: translate(-50%, -50%);
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 80%;
+  height: 80%;
+  border-radius: 40%;
+}
+
+/* 头部 end*/
+.eweim {
+  width: 90%;
+  height: 1000rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  margin-top: -250rpx;
+  border-radius: 25rpx;
+  margin-bottom: 50rpx;
+}
+
+.eweim-li {
+
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.eweim-tnr image {
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.eweim-tnr {
+
+  padding-top: 300rpx;
+}

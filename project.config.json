@@ -333,6 +333,40 @@
 					"pathName": "pages/me/address/address",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "信息中心",
+					"pathName": "pages/me/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的卡券",
+					"pathName": "pages/me/coupon/coupon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "优惠券活动",
+					"pathName": "pages/me/discount/discount",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "优惠券活动详情",
+					"pathName": "pages/me/containe/containe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的二维码",
+					"pathName": "pages/me/guanli/code/code",
+					"scene": null
 				}
 			]
 		}

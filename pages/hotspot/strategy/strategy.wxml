@@ -25,7 +25,6 @@
 	<template is="wxParse" data="{{wxParseData:article.nodes}}" />
 </view>
 
-
 		<!-- foot -->
 		<view class="list-item">
 			<view class="goods">
@@ -40,13 +39,18 @@
 						店主:村上
 					</view>
 					<view class="attrs">
-						广东省佛山市禅城区南庄镇中国陶瓷总部基地
+						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
 					</view>
 				</view>
-
 				<view class="contact">
-					<button class="btn"><image src="/images/tubiao/1-21.png"></image> 联系店主</button>
-					<button class="btn"><image src="/images/tubiao/1-22.png"></image>在线咨询</button>
+					<button class="btn">
+						<image src="/images/tubiao/1-21.png"></image>
+						<view>联系店主</view>
+					</button>
+					<button class="btn">
+						<image src="/images/tubiao/1-22.png"></image>
+						<view>在线咨询</view>
+					</button>
 				</view>
 			</view>
 		</view>
@@ -56,9 +60,8 @@
 
 
 
-
 <!-- 底部的收藏 -->
-<view class="collect" >
+<view class="collects" >
 	<view class="title">
 		<view class="list-item1">
 			<view class="list-right">

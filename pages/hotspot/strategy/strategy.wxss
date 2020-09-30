@@ -86,8 +86,11 @@
   color: #fff;
   font-weight: 300;
 }
+
+
 /* 底部名片 */
 .list-item {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,45 +101,70 @@
   padding-top: 100rpx;
   border-radius: 5rpx;
 }
+
 .goods {
   display: flex;
+  margin: 0 20rpx;
+
 }
+
 .tab {
   padding: 0 10rpx;
+
 }
+
 .attrs {
-  font-size: 20rpx;
+  font-size: 18rpx;
   font-weight: 300;
 }
+
 .attrs1 {
-  font-size: 30rpx;
+  font-size: 26rpx;
   font-weight: 300;
 }
+
 .attrs2 {
-  padding: 20rpx 0;
-  font-size: 27rpx;
+  padding: 10rpx 0;
+  font-size: 25rpx;
   font-weight: 300;
+}
+
+.collect {
+  margin: 0 10rpx;
 }
 
 .collect image {
-  width: 50rpx;
-  height: 50rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50rpx;
 }
 
 .contact {
-  width: 37%;
+  width: 40%;
 }
+
 .btn {
+  display: flex;
   color: #fff;
   font-size: 19rpx;
   font-weight: 300;
-  background-color: red;
-  margin: 20rpx 0;
+  background-color: #d0111b;
+  margin: 20rpx 20rpx;
+  align-items: center;
+  text-align: center;
+  width: 75%;
 }
+
 .btn image {
   align-items: center;
   text-align: center;
   width: 25rpx;
   height: 25rpx;
-  padding: 0  5rpx;
+  padding: 0 5rpx;
+}
+
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
 }

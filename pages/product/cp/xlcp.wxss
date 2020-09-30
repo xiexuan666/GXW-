@@ -147,6 +147,7 @@
   display: inline-block;
 }
 
+
 /* 底部名片 */
 .list-item {
   height: 100%;
@@ -168,48 +169,50 @@
 }
 
 .tab {
-  padding: 0 20rpx;
+  padding: 0 10rpx;
 
 }
 
 .attrs {
-  font-size: 20rpx;
+  font-size: 18rpx;
   font-weight: 300;
-}
-.attrs image {
-  width: 25rpx;
-  height: 25rpx;
 }
 
 .attrs1 {
-  font-size: 30rpx;
+  font-size: 26rpx;
   font-weight: 300;
 }
 
 .attrs2 {
   padding: 10rpx 0;
-  font-size: 27rpx;
+  font-size: 25rpx;
   font-weight: 300;
 }
 
+.collect {
+  margin: 0 10rpx;
+}
+
 .collect image {
-  width: 100rpx;
-  height: 100rpx;
+  width: 150rpx;
+  height: 150rpx;
   border-radius: 50rpx;
 }
 
 .contact {
-  width: 37%;
+  width: 40%;
 }
 
 .btn {
+  display: flex;
   color: #fff;
   font-size: 19rpx;
   font-weight: 300;
   background-color: #d0111b;
-  margin: 20rpx 0;
+  margin: 20rpx 20rpx;
   align-items: center;
   text-align: center;
+  width: 70%;
 }
 
 .btn image {
@@ -218,4 +221,15 @@
   width: 25rpx;
   height: 25rpx;
   padding: 0 5rpx;
+}
+
+/* .attrs {
+  display: flex;
+  align-items: center;
+  text-align: center;
+} */
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
 }

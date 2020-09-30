@@ -36,8 +36,10 @@
 			</view>
 		</view>
 	</view>
-	<!-- 经销商内容 -->
 
+
+
+	<!-- 经销商内容 -->
 	<view class="jxsnr-ul">
 		<view class="jxsnr-li  ">
 			<view class="jxsnr-li-rs">满499减20</view>
@@ -85,8 +87,5 @@
 			<view>到点验证消费</view>
 		</view>
 	</view>
-
-
-
 
 </view>

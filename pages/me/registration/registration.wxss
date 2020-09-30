@@ -1,0 +1,70 @@
+.apply {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.apply-r {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.apply-im image {
+  width: 680rpx;
+  height: 250rpx;
+}
+
+.down {
+  font-size: 26rpx;
+  font-weight: 100;
+}
+
+.jul {
+  margin: 0 10rpx;
+  background-color: #be8f61;
+  color: #fff;
+}
+
+.juli {
+  padding: 30rpx 0;
+  display: flex;
+}
+
+/* 倒计时 */
+.tui-countdown-content {
+  font-size: 12px;
+  margin: 0 50rpx;
+}
+
+.mianfsj {
+  font-size: 33rpx;
+  font-weight: 600;
+}
+
+.shij {
+  margin: 30rpx 0;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.dizhi {
+  margin: 30rpx 0;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+.addres {
+  font-size: 30rpx;
+ 
+}
+.wenz {
+  margin: 30rpx  0;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+.apply-ims image {
+  width: 680rpx;
+  height: 250rpx;
+}
+.apply-ims {
+  margin: 50rpx   0;
+}

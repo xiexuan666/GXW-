@@ -45,47 +45,37 @@
 
 
 
-<!-- 设计 -->
-<!-- <view class="design">
-	<view class="design-li">
-		<image src="/images/tubiao/1-26.png"></image>
-	</view>
-</view> -->
-
-
 <!-- 家居设计师 -->
 <view class=" history">
 	<view class="search">
-		<view class="portrait">
-			<image src="/images/tubiao/tx.png" mode="aspectFill"></image>
+		<view class="tp">
+			<image src="/images/tubiao/1-20.png"></image>
 		</view>
-		<view class="cun">
-			<view>村上　　家居设计师</view>
-			<view class="tup">
-				<image src="/images/tubiao/1-24.png"></image>
-				广东省佛山市禅城区南庄镇中国陶瓷总部基地
+		<view class="sheji">
+			<view class="portrait">
+				<image src="/images/tubiao/tx.png" mode="aspectFill"></image>
 			</view>
-		</view>
-		<view class="boda">
-			<view class="lister" bindtap="calling">
-				<image src="/images/tubiao/1-21.png"></image>
-				一键拨打
+			<view class="cun">
+				<view>村上　　家居设计师</view>
+				<view class="tup">
+					<image src="/images/tubiao/1-24.png"></image>
+					广东省佛山市禅城区南庄镇中国陶瓷总部基地
+				</view>
 			</view>
-			<view class="zix">
-				<image src="/images/tubiao/1-22.png"></image>
-				咨询店主
+			<view class="boda">
+				<view class="lister" bindtap="calling">
+					<image src="/images/tubiao/1-21.png"></image>
+					一键拨打
+				</view>
+				<view class="zix">
+					<image src="/images/tubiao/1-22.png"></image>
+					咨询店主
+				</view>
 			</view>
 		</view>
 	</view>
 </view>
-
-
-
-
-
-
-
-<!-- 设计end -->
+<!-- 家居设计师end -->
 
 
 <!-- 产品展示 -->

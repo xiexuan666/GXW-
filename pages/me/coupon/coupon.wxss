@@ -71,16 +71,15 @@ page {
 }
 
 .coupon-list .item {
-  
+
   width: 90%;
   height: 200rpx;
   margin-bottom: 20rpx;
-  margin: 0 auto;
+  margin: 50rpx auto;
 
 }
 
 .coupon-list .item .float-li {
-
   width: 450rpx;
   height: 100%;
   border-right: 3rpx solid #be8f61;
@@ -91,10 +90,11 @@ page {
   padding-right: 20rpx;
   height: 100%;
   color: #c99361;
+ 
 }
 
 .coupon-left {
-  
+
   position: relative;
 }
 
@@ -124,9 +124,10 @@ page {
 }
 
 .coupon-left .t4 {
-  left: 224rpx;
+  left: 255rpx;
   top: 116rpx;
   font-size: 24rpx;
+
 }
 
 .coupon-left .t5 {
@@ -135,11 +136,14 @@ page {
   font-size: 24rpx;
 }
 
+
+
 .coupon-rig .t {
   text-align: center
 }
 
 .coupon-rig .t1 {
+
   font-size: 40rpx;
   padding: 30rpx 0 10rpx 0;
 }
@@ -199,37 +203,10 @@ page {
 }
 
 .stamp03 {
-  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30rpx, #D24161 30rpx);
-  background-size: 10rpx 10rpx;
-  background-position: 9rpx 3rpx;
-  background: #f7f8f8;
-  border: 5rpx solid #be8f61;
-  border-radius: 25rpx;
-}
 
-.stamp04 {
-  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30rpx, #D24161 30rpx);
   background-size: 10rpx 10rpx;
   background-position: 9rpx 3rpx;
-  background: #f7f8f8;
-  border: 5rpx solid #be8f61;
-  border-radius: 25rpx;
-}
-
-.stamp05 {
-  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30rpx, #D24161 30rpx);
-  background-size: 10rpx 10rpx;
-  background-position: 9rpx 3rpx;
-  background: #f7f8f8;
-  border: 5rpx solid #be8f61;
-  border-radius: 25rpx;
-}
-
-.stamp05 {
-  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30rpx, #D24161 30rpx);
-  background-size: 10rpx 10rpx;
-  background-position: 9rpx 3rpx;
-  background: #f7f8f8;
-  border: 5rpx solid #be8f61;
+  background: #c9caca;
+  border: 5rpx solid #c9caca;
   border-radius: 25rpx;
 }

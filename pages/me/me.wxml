@@ -103,7 +103,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="melisttz" data-ind="2" wx:if="{{sjzt.status==0&&status}}">
+		<view class="me-list-li" bindtap="merchant" data-ind="0">
 			<view class="me-list-lil">商家入驻<image src="/images/tubiao/48.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -143,19 +143,20 @@
 						店主:村上
 					</view>
 					<view class="attrs">
-						广东省佛山市禅城区南庄镇中国陶瓷总部基地
+						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
 					</view>
 				</view>
 				<view class="contact">
 					<button class="btn">
-						<image src="/images/tubiao/1-21.png"></image> 联系店主
+						<image src="/images/tubiao/1-21.png"></image>
+						<view>联系店主</view>
 					</button>
 					<button class="btn">
-						<image src="/images/tubiao/1-22.png"></image>在线咨询
+						<image src="/images/tubiao/1-22.png"></image>
+						<view>在线咨询</view>
 					</button>
 				</view>
 			</view>
 		</view>
-
 	</view>
 </view>

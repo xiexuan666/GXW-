@@ -55,7 +55,9 @@
     "pages/me/coupon/coupon",
     "pages/me/discount/discount",
     "pages/me/containe/containe",
-    "pages/me/guanli/code/code"
+    "pages/me/guanli/code/code",
+    "pages/me/registration/registration",
+    "pages/me/merchant/merchant"
 
     
 

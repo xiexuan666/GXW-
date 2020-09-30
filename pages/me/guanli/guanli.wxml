@@ -45,7 +45,7 @@
 		</view>
 
 		<view class="me-list-li" bindtap="kehmanage">
-			<view class="me-list-lil">客户管理
+			<view class="me-list-lil">用户管理
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
@@ -53,7 +53,7 @@
 		</view>
 
 		<view class="me-list-li" bindtap="zixmanage">
-			<view class="me-list-lil">咨询管理
+			<view class="me-list-lil">攻略管理
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
@@ -75,6 +75,21 @@
 			</view>
 		</view>
 
+		<view class="me-list-li" bindtap="ddanmanage">
+			<view class="me-list-lil">订单管理
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+
+		<view class="me-list-li" bindtap="yuymanage">
+			<view class="me-list-lil">预约信息
+			</view>
+			<view class="me-list-lir">
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
 
 		<view class="me-list-li" bindtap="dianpmanage">
 			<view class="me-list-lil">店铺设置

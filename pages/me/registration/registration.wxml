@@ -1,0 +1,79 @@
+<view class="apply">
+	<view class="apply-r">
+		<view class="apply-im">
+			<image src="/images/tubiao/98.png" mode="widthFix"></image>
+		</view>
+		<view class="juli">
+			<view class="count">
+				<view class="down">
+					<view class="daoj"><text class="jul">倒计时</text>距离活动结束还有</view>
+				</view>
+			</view>
+
+			<view class='tui-countdown-content' wx:for="{{countDownList}}" wx:key="countDownList">
+				<text class='tui-conutdown-box'>{{item.day}}</text>天
+				<text class='tui-conutdown-box'>{{item.hou}}</text>时
+				<text class='tui-conutdown-box'>{{item.min}}</text>分
+				<text class='tui-conutdown-box tui-countdown-bg'>{{item.sec}}</text>秒
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+
+<view class="apply">
+	<view class="apply-r">
+		<view class="time">
+			<view class="mianfsj">
+				免费活动
+			</view>
+			<view class="shij"><text style="color:#be8f61">活动时间:</text> 2020.05.30-09:00至2020.06.30-12:00</view>
+		</view>
+
+		<view class="mend">
+			<view class="addres">
+				<view class="dizhi"><text class="jul">门店地址</text> 广东省佛山市禅城区南庄镇陶瓷总部基地</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="apply">
+	<view class="apply-r">
+		<view class="mianfsj">
+			活动规则
+		</view>
+		<view class="wenz">
+			境送到筒三方士大夫店这三个森岛帆高十多个电饭悯里求安慰阿萨德安抚胶时啊，科技
+			王安慰茭弗森正常许更何况收款户打了个收款户-
+			的双方备疏府邮门做事风格再爱货大臧佳宿裁付款VB讴歌。地方爱送到第三方士大夫店
+			这三个森岛帆高十多个电饭蜗里求安慰阿萨德安抚接时啊。发送到第三方士太夫店这三
+			个森岛帆高十多个电饭恫里求安慰阿萨德安既按时啊。科技王安慰艾弗森正常许更何况
+			收款户打了个数款户-
+			的双方备政府邮门做事风格再发货大臧佳宿黄付款VE讴歌。地方观送到第三方士太夫店
+			这三个森岛帆离十多个电饭锅里求安慰阿萨德安抚按时啊，科技更铜况牧款户打了个。
+			的双方备政府部门做事风格再爱货大臧佳宿费付款VB讴歌。地方发送到第三方。
+
+		</view>
+
+	</view>
+</view>
+
+
+
+<view class="apply">
+	<view class="apply-r">
+		<view class="mianfsj">
+			活动详情
+		</view>
+		<view class="apply-ims">
+			<image src="/images/tubiao/99.png" mode="widthFix"></image>
+		</view>
+
+	</view>
+</view>

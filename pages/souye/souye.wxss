@@ -9,7 +9,24 @@
 }
 
 /* 轮播图end */
+/* 设计 */
+.tp {
+  width: 100%;
+  margin: 0 auto;
+}
 
+.tp image {
+  width: 705rpx;
+  height: 250rpx;
+}
+
+.sheji {
+  padding: 0 20rpx;
+  display: flex;
+  position: absolute;
+  align-items: center;
+
+}
 
 /* 导航 */
 .daoh {
@@ -111,13 +128,14 @@
   text-align: center;
   display: flex;
 }
+
 .liser {
   align-items: center;
   text-align: center;
   display: flex;
   padding: 20rpx 0;
   padding-left: 180rpx;
-  
+
 }
 
 .jxsnr-li-lp image {
@@ -125,7 +143,9 @@
   height: 35rpx;
 }
 
-
+.lanbai {
+  padding: 0 10rpx;
+}
 
 .jxsnr-li-lp2 {
   align-items: center;
@@ -325,6 +345,10 @@
   width: 100rpx;
   height: 100rpx;
   border-radius: 50rpx;
+}
+
+.tup {
+  padding: 20rpx 0;
 }
 
 .tup image {

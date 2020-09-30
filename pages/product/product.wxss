@@ -380,8 +380,16 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   font-weight: 300;
   color: #595757;
 }
+.lanbai {
+  padding: 0 20rpx;
+}
 
 .jxsnr-li-time {
+  font-size: 25rpx;
+  font-weight: 300;
+  color: #595757;
+}
+.jxsnr-li-r {
   font-size: 25rpx;
   font-weight: 300;
   color: #595757;
@@ -412,7 +420,7 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   text-align: center;
   display: flex;
   padding: 20rpx 0;
-  padding-left: 260rpx;
+  padding-left: 230rpx;
   
 }
 
@@ -427,6 +435,7 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   align-items: center;
   text-align: center;
   display: flex;
+  padding: 0 10rpx;
 
 }
 

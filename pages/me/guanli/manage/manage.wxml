@@ -44,6 +44,29 @@
 </view>
 
 
+<view class="huodtype">
+	<view class="type">
+		<view class="form">活动类型选择</view>
+		<view class="charge">
+			<image src="/images/tubiao/109.png"></image>
+
+		</view>
+
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <view class="anniu">
 	<button bindtap="subscribe">创建活动</button>
 </view>

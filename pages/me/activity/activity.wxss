@@ -91,9 +91,10 @@
   margin-left: 55rpx;
 
 }
-.left  image  {
-  width: 25rpx;
-  height: 25rpx;
+.fenx  image  {
+  margin-left: 15rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 
 .right {

@@ -86,15 +86,19 @@
   width: 700rpx;
 
 }
+
 .left {
   margin-top: -30rpx;
   margin-left: 55rpx;
 
 }
-.left  image  {
-  width: 25rpx;
-  height: 25rpx;
+
+.fenx image {
+  margin-left: 15rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
+
 
 .right {
   display: flex;
@@ -108,11 +112,11 @@
 .right-ul {
   font-size: 33rpx;
   font-weight: 700;
-  padding: 10rpx  0;
+  padding: 10rpx 0;
 }
 
 .right-l {
   font-size: 22rpx;
   font-weight: 300;
-  padding: 10rpx  0;
+  padding: 10rpx 0;
 }

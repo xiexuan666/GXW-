@@ -98,7 +98,8 @@
 							<view class="liser">
 								<view class="tubiaop">
 									<view class="fenxiang">
-										<image src="/images/tubiao/1-11.png"></image>
+										<image src="/images/tubiao/fangx.png"></image>
+										<text>发送</text>
 									</view>
 								</view>
 							</view>

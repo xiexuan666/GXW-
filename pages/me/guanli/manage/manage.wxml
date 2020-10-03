@@ -28,13 +28,16 @@
 	</view>
 </view>
 
-<!-- 未发布活动 -->
 
+
+<!-- 未发布活动 -->
 <view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
 	<view class="search">
 		您暂时没有发布的活动哦~
 	</view>
 </view>
+
+
 
 <!-- 已下架活动 -->
 <view class="header" wx:if='{{cactiv==1&&cpxqzt==4}}'>
@@ -47,11 +50,50 @@
 <view class="huodtype">
 	<view class="type">
 		<view class="form">活动类型选择</view>
-		<view class="charge">
-			<image src="/images/tubiao/109.png"></image>
+		<block>
+			<view class="charge">
+				<view class="tup">
+					<image src="/images/tubiao/109.png"></image>
+				</view>
+				<view class="lists">
+					<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+					<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
+				</view>
+			</view>
+		</block>
 
+		<view class="charge">
+			<view class="tup">
+				<image src="/images/tubiao/109.png"></image>
+			</view>
+			<view class="lists">
+				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
+			</view>
 		</view>
 
+
+		<view class="charge">
+			<view class="tup">
+				<image src="/images/tubiao/109.png"></image>
+			</view>
+			<view class="lists">
+				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+				<view style="font-size: 26rpx; font-weight: 300; padding: 20rpx 0;">免费活动报名创建</view>
+			</view>
+		</view>
+
+
+
+		<view class="charge">
+			<view class="tup">
+				<image src="/images/tubiao/109.png"></image>
+			</view>
+			<view class="lists">
+				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
+			</view>
+		</view>
 	</view>
 </view>
 

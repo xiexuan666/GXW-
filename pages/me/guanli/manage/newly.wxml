@@ -2,11 +2,13 @@
 <view class="price">
 	<view class="title">
 		<view class="goods-title">
-			<view class="collect">活动详情</view>
+			<view class="collect">
+     <image src=""></image>
+			</view>
 		</view>
 
 
-	
+
 
 
 

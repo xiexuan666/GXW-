@@ -20,7 +20,7 @@
 
 <view class="me-list">
 	<view class="me-list-ul">
-		<form>
+		<form catchsubmit="tijiaoform" catchreset="formReset">
 
 			<view class="me-list-li">
 				<view class="me-list-lil">商家名称</view>
@@ -53,13 +53,21 @@
 			</view>
 
 			<view class="me-list-li">
-				<view class="me-list-lil">详细地址
-				</view>
-				<view class="me-list-lir">
+				<view class="me-list-lil">详细地址</view>
+				<view class="me-list-lil">
 					<input class="form-lir-input dz" value="{{address}}" name="address" placeholder="请选择详细地址"></input>
 				</view>
+				<view class="xuanzdz" bindtap="wzxuanz">选择地址</view>
 			</view>
-
+			<view class="me-list-li"  style="display: none;"  >
+				<view class="me-list-lil">经度</view>
+				<view class="me-list-lir"><input class="form-lir-input" maxlength="{{-1}}" name="jingdu" value="{{longitude}}" disabled placeholder="选择地址即可获得经纬度"></input></view>
+			</view>
+			<view class="me-list-li"  style="display: none;" >
+				<view class="me-list-lil">纬度</view>
+				<view class="me-list-lir">
+				<input class="form-lir-input" maxlength="{{-1}}" name="weidu" value="{{latitude}}" disabled placeholder="选择地址即可获得经纬度"></input></view>
+			</view>
 
 
 			<view class="me-list-li">
@@ -84,12 +92,11 @@
 				</view>
 			</view>
 
-
-
 			<view class="shanctup">
 				<view class="shanctup-ul">
 					<view class="shanctup-li">
 						<view class="shanctup-li-p1">商家LOGO (222*222, 限1张)</view>
+						<view class="shanctup-li-p2">长按删除图片,点击放大图片</view>
 						<view class="shanctup-li-img">
 							<block wx:for="{{tupian}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 								<view class="shanctup-li-imgli" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shanc" data-img="{{item}}">
@@ -98,12 +105,13 @@
 							</block>
 						</view>
 						<view class="shanctupbutton" bindtap="shangctup">
-							<!-- <image mode="widthFix" src="/images/tubiao/zaop.png"></image> -->
+							<image mode="widthFix" src="/images/tubiao/zaop.png"></image>
 							<view class="shanctupbutton-p">添加图片</view>
 						</view>
 					</view>
 					<view class="shanctup-li">
 						<view class="shanctup-li-p1">二维码 (222*222, 限1张)</view>
+						<view class="shanctup-li-p2">长按删除图片,点击放大图片</view>
 						<view class="shanctup-li-img">
 							<block wx:for="{{erwm}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 								<view class="shanctup-li-imgli shanctup-li-imglis" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shancer" data-img="{{item}}">
@@ -112,20 +120,22 @@
 							</block>
 						</view>
 						<view class="shanctupbutton" bindtap="shangcerw">
-							<!-- <image mode="widthFix" src="/images/tubiao/zaop.png"></image> -->
+							<image mode="widthFix" src="/images/tubiao/zaop.png"></image>
 							<view class="shanctupbutton-p">添加图片</view>
 						</view>
 					</view>
 				</view>
+				<view class="shuom">
+					<view class="shuom-p">说明：入驻申请通过后，我们将及时与您联系，提交保证金与开店费，店铺开通。</view>
+				</view>
 			</view>
-
 
 			<view class="btn-area">
 				<button style="" formType="submit">提交申请</button>
-				<!-- <button style=""  bindtap="qianzhif">提交申请</button> -->
-
-				<!-- <button style="margin: 30rpx 0" formType="reset">重置</button> -->
 			</view>
+
+
+
 		</form>
 	</view>
 </view>

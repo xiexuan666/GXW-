@@ -66,6 +66,7 @@
   width: 700rpx;
   text-align: center;
 }
+
 .search {
   color: #888;
 }
@@ -91,4 +92,40 @@ button {
   font-size: 24rpx;
   color: #ccc;
   margin-bottom: 30rpx;
+}
+
+/* 活动类型 */
+.huodtype {
+  background-color: #fbf7f8;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.type {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  font-size: 33rpx;
+  font-weight: 500;
+  margin: 30rpx 0;
+}
+
+.lists {
+  margin: 0 20rpx;
+
+ 
+}
+
+.tup image {
+  width: 250rpx;
+  height: 150rpx;
+  border-radius: 25rpx;
+}
+
+.charge {
+  display: flex;
+  align-items: center;
+  margin: 20rpx  0;
 }

@@ -203,7 +203,7 @@ Page({
   //获取当前商家状态
   hqshangzt(gerxinx) {
     var tha = this
-    var dat = { userid: gerxinx.id, brandid: '1' }
+    var dat = { userid: gerxinx.id, brandid: '2' }
     var url = baseUrl + 'store/storestatus'
     http.promisServer(url, dat).then(function (resc) {
       if (resc.status == "000") {

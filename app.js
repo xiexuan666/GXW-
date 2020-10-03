@@ -20,9 +20,9 @@ App({
 
   globalData: {
     userInfo: null,
-    //  baseUrl:"http://192.168.0.105:8087/gxwslyk/",
+     baseUrl:"http://192.168.0.105:8087/gxwslyk/",
     // baseUrl:"https://cdn.juesedao.cn/gxw/1.png",
-    baseUrl:"http://192.168.0.160:8087/gxwslyk/",
+    // baseUrl:"http://192.168.0.160:8087/gxwslyk/",
     dtkey:'77ABZ-KQC62-FVJUB-C7TTO-4DX6T-7WB2J',
     http: http,
     status: 0,
@@ -238,7 +238,7 @@ App({
     var url = this.globalData.baseUrl + "store/findstoreByAddress"
     var dat={
       address,
-      brandid:'1'
+      brandid:'2'
     }
     var p = new Promise(function(resolve, reject) {
       http.promisServer(url, dat).then(resc=>{

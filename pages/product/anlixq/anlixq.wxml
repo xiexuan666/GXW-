@@ -2,17 +2,24 @@
 
 <view class="titleimg">
 	<view class="header">
-		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{anlixiaq.zhuye}}"></image>
+		<!--  index图片 -->
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
 	</view>
+	<!-- 列表框 -->
 	<view class="wenzi">
 		<view class="wenzis">
-			大户型现代
+			<view class="wenzis_label">标签</view>
+			{{pagesubscript.type_name}} · {{pagesubscript.huxing}}
+			<view class="wenzis_left"></view>
 		</view>
 		<view class="wenzis">
-			240m
+			<view class="wenzis_label">面积</view>
+			{{pagesubscript.mianji}}㎡
+			<view class="wenzis_left"></view>
 		</view>
 		<view class="wenzis">
-			广东省佛山市
+			<view class="wenzis_label">地区</view>
+			{{pagesubscript.chengshi}}
 		</view>
 	</view>
 </view>
@@ -22,9 +29,12 @@
 <!-- 案列简介 -->
 <view class="total">
 	<view class="check">
-		<view class="anl">案列简介</view>
+		<view class="anl">
+			<view class="case_round"></view>
+			案列简介
+		</view>
 		<view class="prices">
-			阿hi粉红色的几节课很符合看是货返iOS发黄齑淡饭哈卡就发货扣水电费好哈设计费黄色款哈师范就是卡货返萨金凤凰暗示法很快就货返看上去安徽省会计法会尽快
+			{{pagesubscript.case_synopsis}}
 		</view>
 		<view class="header">
 			<image mode="widthFix" bindtap="dakerw" src="/images/tubiao/1-08.jpg"></image>
@@ -37,60 +47,61 @@
 
 
 
-<scroll-view scroll-x="true">
-	<view class="banner" scroll-x="true">
+
+<view class="banner">
+	<view class="keting">
 		<view class="chanp">
+			<view class="case_round"></view>
 			选用产品
 		</view>
-		<block wx:key="index1" wx:for-item="item" wx:for-index="index1" >
+		<view class="ket">
 			<view class="cizhuan">
 				<image src="/images/tubiao/9.png"></image>
 				<view class="lists-item">客厅-V157J939P</view>
 			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-		</block>
+		</view>
 	</view>
-</scroll-view>
+
+</view>
+
 
 
 <!-- 评价 -->
 <view class="appraise-user">
+	<view class="appraise-user_top">
+		<view class="case_round"></view>
+		<text>该案例评论</text>
+		<view class='Top_Good'>
+			<view class="Top_Good_header">
+				<view class="header" wx:for="{{findAllComment}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+
+					<image src="{{item.wx_photo}}" wx:if='{{index<3}}'></image>
+				</view>
+			</view>
+			<view class="Top_Good_Text">
+				<text >{{pagesubscript.great}}人觉得很赞</text>
+				<image src="/images/tubiao/dain.png" mode="widthFix"></image>
+			</view>
+		</view>
+	</view>
+
 	<view class="possess-layout margin-layouts">
 		<view class="main" bindtap="handlepl">
 
-			<block wx:for="{{comments}}" wx:key="index1" wx:for-item="item" wx:for-index="index1">
+			<block wx:for="{{findAllComment}}" wx:key="index1" wx:for-item="item" wx:for-index="index1">
 				<view class="username-appraise-top">
 					<view class="username">
 						<image src="{{item.wx_photo}}"></image>
 						<view>{{item.wx_name}}</view>
 					</view>
 					<view>
-						<image class="praise" src="{{item.change? '/images/tubiao/dain.png': '/images/tubiao/dianzan.png'}}" data-curindex="{{index1}}" bindtap="praiseThiss"></image>
+						<!-- <image class="praise" src="{{item.change? '/images/tubiao/dain.png': '/images/tubiao/dianzan.png'}}" data-curindex="{{index1}}" bindtap="praiseThiss"></image> -->
 						<view class="amount {{item.change? 'hover-active': ''}}">{{item.great}}</view>
 					</view>
 				</view>
 				<view class="appraise-content">
-					<text>{{item.comment}}</text>
 					<view>{{item.create_time}}</view>
+					<text class="pl">{{item.comment}}</text>
 				</view>
 			</block>
 
@@ -98,13 +109,15 @@
 	</view>
 </view>
 
+
+
 <!-- 底部评论 -->
 <view class="appraise-btn">
-	<form catchsubmit="tijiaoform" catchreset="formReset">
+	<form catchsubmit="tijiaoform" catchreset="formReset"  >
 		<view class="appraise-btn-left">
-			<image src="/images/tubiao/1-06.png"></image>
+			<image src="/images/tubiao/81.png"></image>
 			<input placeholder="我要评论" bindinput="pingl" value="{{inputVal}}"></input>
-			<view class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</view>
+			<button class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</button>
 		</view>
 	</form>
 </view>
@@ -114,20 +127,20 @@
 	<view class="title">
 		<view class="list-item">
 			<view class="list-right">
-				<image src="/images/tubiao/chak.png"></image>
+				<image src="/images/tubiao/chak.png" mode="widthFix"></image>
 				<view class="character">5220</view>
 			</view>
 		</view>
 		<view class="list-item" catchtap="star" data-ind="{{index}}">
 
 			<view class="list-right">
-				<image src="/images/tubiao/shouc.png"></image>
+				<image src="/images/tubiao/shouc.png" mode="widthFix"></image>
 				<view class="character">收藏</view>
 			</view>
 		</view>
 		<view class="list-item">
 			<view class="list-right">
-				<image src="/images/tubiao/fangx.png"></image>
+				<image src="/images/tubiao/fangx.png" mode="widthFix"></image>
 				<view class="character">分享</view>
 			</view>
 		</view>
@@ -136,32 +149,26 @@
 
 
 
-<!-- 家居设计师 -->
-<view class=" history">
-	<view class="search">
-		<view class="portrait">
-			<image src="/images/tubiao/tx.png" mode="aspectFill"></image>
-		</view>
-		<view class="cun">
-			<view>村上　　家居设计师</view>
-			<view class="tup">
-				<image src="/images/tubiao/1-24.png"></image>
-				广东省佛山市禅城区南庄镇中国陶瓷总部基地
+		<!-- foot -->
+		<view class="list-item1">
+			<view class="goods">
+				<view class="collect1">
+					<image src="/images/tubiao/gxw.png"></image>
+				</view>
+				<view class="tab">
+					<view class="attrs2">
+						　村上　　家居设计师
+					</view>
+					<view class="attrs">
+						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+					</view>
+				</view>
+				<view class="contact">
+					<image src="/images/tubiao/lianxi.png"></image>
+					<image src="/images/tubiao/zaixian.png"></image>
+				</view>
 			</view>
 		</view>
-		<view class="boda">
-			<view class="lister" bindtap="calling">
-				<image src="/images/tubiao/1-21.png"></image>
-				一键拨打
-			</view>
-			<view class="zix">
-				<image src="/images/tubiao/1-22.png"></image>
-				咨询店主
-			</view>
-		</view>
-	</view>
-</view>
-
 
 
 <view class="toTop" bindtap="handleToTop">

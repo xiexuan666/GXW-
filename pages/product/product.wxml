@@ -1,11 +1,14 @@
 <!--pages/product/product.wxml-->
 <!-- 系列视频列表 -->
 <import src="/pages/template/splist/spslist.wxml" />
+
 <!-- 产品或案例 -->
 <view class="product-cpanli">
 	<view class="cpanli-nrb" wx:if='{{cactiv==2}}'>
 		<view class="cpanli-nrbli {{twoactiv==1?'cpanli-nrbli-activ':''}} " data-ind="{{1}}" bindtap="anlixuanz">全国案例</view>
+		<view class="cpanli-nrbli" >|</view>
 		<view class="cpanli-nrbli {{twoactiv==2?'cpanli-nrbli-activ':''}} " data-ind="{{2}}" bindtap="anlixuanz">本地案例</view>
+<!-- <import src='/pages/template/haibao/haibao.wxml'/> -->
 	</view>
 </view>
 
@@ -56,25 +59,25 @@
 				<view class="jxsnr-li-l  jxsnr-li-lsa">
 					<view class="jxsnr-tubiao-tu1">
 						<view class="jxsnr-li-lp">
-							<image src="/images/tubiao/1-09.png"></image>
+							<image src="/images/tubiao/1-09.png" mode="widthFix"></image>
 							<view class="lanbai">{{item.type_name}}</view>
 						</view>
 						<view class="liser">
 							<view class="jxsnr-tubiao-tu2">
 								<view class="jxsnr-li-lp2">
-									<image src="/images/tubiao/1-10.png"></image>
+									<image src="/images/tubiao/1-10.png" mode="widthFix"></image>
 									<view class="shuzi">{{item.preview}}</view>
 								</view>
 								<view class="jxsnr-li-lp2" catchtap="collect" data-ind="{{index}}">
-									<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
-									<image wx:if="{{items.sczt}}" src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
-									<view class="shuzi">{{item.preview}}</view>
+									<image wx:if='{{item.dianzhan}}' src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
+									<image wx:else   src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+									<view class="shuzi">{{item.great}}</view>
 								</view>
 							</view>
 							<view class="tubiaop">
 								<view class="xingx" catchtap="star" data-ind="{{index}}">
-									<image wx:if="{{!items.scztt}}" src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
-									<image wx:if="{{items.scztt}}" src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+									<image  wx:if='{{item.collection}}' src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+									<image  wx:else  src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
 								</view>
 								<view class="fenxiang">
 									<image src="/images/tubiao/1-11.png"></image>
@@ -85,7 +88,7 @@
 				</view>
 				<view class="simple">
 					<view class="simple-ul">
-						<view class="simple-ul-p">{{item.shuxing}}</view>
+						<view class="simple-ul-p">【{{item.type_name}}】 {{item.huxing}}</view>
 						<view class="simple-li">{{item.name}}</view>
 					</view>
 					<view class="simple-li-r">

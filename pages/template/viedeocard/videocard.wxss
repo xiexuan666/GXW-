@@ -1,0 +1,99 @@
+/* pages/template/viedeocard/videocard.wxss */
+.viedoLayout{
+  width:90vw;
+  /* background-color: blueviolet; */
+  padding-left: -20rpx;
+  padding-right: -20rpx;
+  display: flex;
+  flex-flow: wrap row;
+  margin: auto;
+  margin-top: 40rpx;
+  /* justify-content: space-between; */
+}
+.viedoBody{
+  height:500rpx;
+  background-color: brown;
+  width:50%;
+  transform: scale(0.9);
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  box-shadow:0rpx 10rpx 5rpx #999;
+  /* margin-top: 20rpx; */
+}
+.videoImage{
+  height:85%;
+  overflow: hidden;
+  position: relative;
+}
+.videoImage .TitleIcon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-flow: column;
+}
+.videoImage .TitleIcon .title{
+  background-color: rgba(102, 102, 102, 0.692);
+  padding: 5rpx;
+  font-size: 26rpx;
+  color: rgb(245, 245, 245);
+  padding-bottom: 10rpx;
+}
+.videoImage .TitleIcon .icon{
+  border-radius: 50rpx;
+  background-color: teal;
+  height: 50rpx;
+  width: 50rpx;
+  margin: auto;
+}
+.videoImage image{
+  height:100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.tabBar{
+  width: 100%;
+  height: 15%;
+  display: flex;
+}
+.tabBarImage{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabBarImage image{
+  display: block;
+  border-radius: 50rpx;
+  width:50%;
+  height:50%;
+}
+.tabBarText{
+  flex:2;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  color: #666;
+}
+.tabBargreat{
+  flex:1.5;
+  display: flex;
+}
+.tabBargreat .icon{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.tabBargreat .icon image{
+  height:40rpx;
+  width: 40rpx;
+}
+.tabBargreat .text{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

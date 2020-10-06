@@ -1,0 +1,60 @@
+<!--pages/template/comments/comments.wxml-->
+<template name="comments" data="great">
+<!-- 头部 -->
+<view class="commentsTop">
+  <view class="commentsTopText">
+    该案例评论 
+  </view>
+  <view class="commentsTopRound"></view>
+  <view class="commentsTopTitle">
+    <view class="headerList">
+      <view class="header">
+        <image mode="scaleToFill" src="{{Common[0].wx_photo}}"></image>
+      </view>
+      <view class="header">
+        <image mode="scaleToFill" src="{{Common[1].wx_photo}}"></image>
+      </view>
+      <view class="header">
+        <image mode="scaleToFill" src="{{Common[2].wx_photo}}"></image>
+      </view>
+    </view>
+    <view class="great">
+      <view class="greatText">{{great}}人觉得很赞</view>
+      <view class="greatIcon" catchtap="addgreat">
+        <image wx:if='{{dianzhan}}' src="/images/tubiao/dain.png" mode="aspectFit	"></image>
+        <image wx:else src="/images/tubiao/dianzan.png" mode="aspectFit	"></image>
+      </view>
+    </view>
+  </view>
+  
+</view>
+
+<!-- 主体 -->
+<view class="commentsContent">
+  <!-- 用以控制渲染程序的标签 -->
+  <block wx:for='{{Common}}' wx:index='index' wx:item='item'>
+    <!-- 评论详情 -->
+    <view class="commentsContentText">
+      <text>{{item.common}}</text>
+    </view>
+    <!-- 评论头像&点赞 -->
+    <view class="commentsContentTop">
+    <!-- 评论头像及姓名 -->
+      <view class="PicName">
+        <view class="pic">
+          <image src="{{item.wx_photo}}" mode="aspectFit"></image>
+        </view>  
+        <view class="text">{{item.wx_name}}</view>  
+      </view>
+      <!-- 点赞攻略 -->
+      <view class="Icon">
+        <view class="text">{{item.great}}</view>
+        <view class="pic" catchtap="addCommon">
+          <image src="/images/tubiao/dianzan.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- <view class="commentsRelease"></view> -->
+</template>

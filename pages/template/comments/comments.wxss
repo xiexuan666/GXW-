@@ -1,0 +1,170 @@
+/* pages/template/comments/comments.wxss */
+/* 评论头部 */
+.commentsTop{
+  width: 90vw;
+  position: relative;
+  margin: auto;
+  border-bottom: 1px solid #999;
+}
+/* 圆点 */
+.commentsTopRound{
+  position: absolute;
+  border-radius: 50rpx;
+  width:40rpx;
+  height:40rpx;
+  background:#bd8f60;
+  top:2.5rpx;
+  z-index: -1;
+}
+/* 文字 */
+.commentsTopText{
+  color:#666;
+  margin-left: 15rpx;
+}
+/* 第二行 */
+.commentsTopTitle{
+  width:95%;
+  height: 40rpx;
+  margin-top: 20rpx;
+  display:flex;
+  flex-direction: row;
+  padding-bottom:35rpx;
+}
+/* 头像列表 */
+.commentsTopTitle .headerList{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+/* 头像设置 */
+.commentsTopTitle .headerList .header{
+  border-radius: 50rpx;
+  height: 50rpx;
+  width: 50rpx;
+  overflow: hidden;
+}
+.commentsTopTitle .headerList .header image{
+  width: 100%;
+  height: 100%;
+}
+/* 点赞数量&点赞事件 */
+.great{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+.commentsTopTitle .great .greatText{
+  margin-left: auto;
+  font-size: 26rpx;
+  color: #bd8f60;
+}
+.commentsTopTitle .great .greatIcon{
+  padding-left: 20rpx;
+}
+.commentsTopTitle .great .greatIcon image{
+  width:40rpx;
+  height:40rpx;
+  margin-top: -8.5rpx;
+}
+
+
+/* 评论主体 */
+.commentsContent{
+  height: 460rpx;
+  overflow: scroll;
+  width: 100vw;
+  margin-top:20rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
+.commentsContentTop{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.commentsContentTop .PicName{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-left:10rpx;
+}
+.commentsContentTop .PicName .pic{
+  border-radius: 50rpx;
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+.commentsContentTop .PicName .pic image{
+  height: 100%;
+  width: 100%;
+}
+.commentsContentTop .PicName .text{
+  font-size: 26rpx;
+  line-height: 50rpx;
+}
+
+
+.commentsContentTop .Icon{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  padding-right:20rpx;
+}
+.commentsContentTop .Icon .pic image{ 
+  height:30rpx;
+  width: 30rpx;
+  margin-top:-4rpx;
+}
+/* 评论文本 */
+.commentsContentText{
+  height: 40rpx;
+  width:90%;
+  font-size: 26rpx;
+  margin: auto;
+  padding-bottom: 20rpx;
+  padding-top: 15rpx;
+}
+.commentsContentText text{
+  margin-left:75rpx;
+  line-height: 40rpx;
+}
+
+
+/*  */
+.commentsRelease{
+  width: 100vw;
+  height: 20rpx;
+  background: brown;
+}
+
+
+
+
+
+
+
+
+
+/* 避免混淆代码，将重复的，微小的偏移移动到这里 */
+
+/* 头像列表的偏移 */
+.commentsTopTitle .headerList .header:nth-child(1){
+ margin-right: -15rpx;
+ margin-left:10rpx;
+}
+.commentsTopTitle .headerList .header:nth-child(3){
+  margin-left: -15rpx;
+}
+
+/* 评论点赞按钮偏移 */
+.commentsContentTop .Icon .text{ 
+  margin-left: auto;
+  margin-right: 20rpx;
+}

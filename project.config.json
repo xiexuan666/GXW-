@@ -16,6 +16,7 @@
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+		"uglifyFileName": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -25,11 +26,13 @@
 			"outputPath": ""
 		},
 		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"compileHotReLoad": false,
+		"useIsolateContext": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.2",
-	"appid": "wxe049bcffef9a81dc",
+	"appid": "wxd7f7434681f3e76e",
 	"projectname": "gxwslyk",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -366,27 +369,6 @@
 					"id": -1,
 					"name": "我的二维码",
 					"pathName": "pages/me/guanli/code/code",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "活动",
-					"pathName": "pages/hotspot/hotspot",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "活动报名",
-					"pathName": "pages/me/registration/registration",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "入驻须知",
-					"pathName": "pages/me/merchant/merchant",
 					"scene": null
 				}
 			]

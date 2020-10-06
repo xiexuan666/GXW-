@@ -34,7 +34,8 @@
 					<view class="fenx">
 						<image src="/images/tubiao/fangx.png"></image>
 					</view>
-					<view>分享</view>
+					<view  style="font-size: 24rpx;">分享</view>
+
 				</view>
 			</view>
 		</block>
@@ -62,7 +63,7 @@
 				<view class="fenx">
 					<image src="/images/tubiao/fangx.png"></image>
 				</view>
-				<view>分享</view>
+				<view  style="font-size: 24rpx;">分享</view>
 			</view>
 		</view>
 	</view>
@@ -89,7 +90,7 @@
 				<view class="fenx">
 					<image src="/images/tubiao/fangx.png"></image>
 				</view>
-				<view>分享</view>
+				<view  style="font-size: 24rpx;">分享</view>
 			</view>
 		</view>
 	</view>
@@ -118,7 +119,7 @@
 				<view class="fenx">
 					<image src="/images/tubiao/fangx.png"></image>
 				</view>
-				<view>分享</view>
+					<view  style="font-size: 24rpx;">分享</view>
 			</view>
 		</view>
 	</view>

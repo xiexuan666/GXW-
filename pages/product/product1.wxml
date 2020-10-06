@@ -51,7 +51,7 @@
 		<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 			<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}">
 				<view class="cpbottom-img">
-					<image mode="aspectFit" lazy-load="{{true}}" src="{{item.product_url}}"></image>
+					<image mode="scaleToFill" lazy-load="{{true}}" src="{{item.product_url}}"></image>
 				</view>
 				<view class="cpbottom-bot">
 					<view class="cpbottom-botp">{{item.name}}</view>
@@ -70,3 +70,26 @@
 
 
 
+		<!-- foot -->
+		<view class="list-item">
+			<view class="goods">
+				<view class="collect">
+					<image src="/images/tubiao/gxw.png"></image>
+				</view>
+				<view class="tab">
+					<view class="attrs1">
+						冠星王陶瓷
+					</view>
+					<view class="attrs2">
+						店主:　村上
+					</view>
+					<view class="attrs">
+						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+					</view>
+				</view>
+				<view class="contact">
+					<image src="/images/tubiao/lianxi.png"></image>
+					<image src="/images/tubiao/zaixian.png"></image>
+				</view>
+			</view>
+		</view>

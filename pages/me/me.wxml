@@ -5,8 +5,13 @@
 <!-- 获取手机 -->
 <template is="phone" data="{{sj: sj}}" />
 
+
 <view class="jinx-t">
 	<view class="jinx-tnr">
+
+		<view class="jinx_bgpic">
+			<image src="/images/tubiao/1-30.png"></image>
+		</view>
 		<view class="jinx-toux">
 			<view class="toux-img" wx:if="{{gerxinx}}">
 				<image src="{{gerxinx.wx_photo}}"></image>
@@ -33,11 +38,17 @@
 			<view class="vcenter">个人钱包</view>
 			<view class="balance">
 				<view class="sum">我的余额</view>
-				<view class="sum1">￥0.00</view>
+				<view class="sum1">￥500</view>
 			</view>
 			<view class="recharge">
-				<text class="top">充值</text>
-				<text class="top">提现</text>
+				<view class="me">
+					<view class="top" style=" border-right: 1px solid #fff;">充值<image src="/images/tubiao/58.png"></image>
+					</view>
+				</view>
+				<view class="me">
+					<view class="top">体现<image src="/images/tubiao/59.png"></image>
+					</view>
+				</view>
 			</view>
 		</view>
 
@@ -168,21 +179,15 @@
 						冠星王陶瓷
 					</view>
 					<view class="attrs2">
-						店主:村上
+						店主:　村上
 					</view>
 					<view class="attrs">
 						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
 					</view>
 				</view>
 				<view class="contact">
-					<button class="btn">
-						<image src="/images/tubiao/1-21.png"></image>
-						<view>联系店主</view>
-					</button>
-					<button class="btn">
-						<image src="/images/tubiao/1-22.png"></image>
-						<view>在线咨询</view>
-					</button>
+					<image src="/images/tubiao/lianxi.png"></image>
+					<image src="/images/tubiao/zaixian.png"></image>
 				</view>
 			</view>
 		</view>

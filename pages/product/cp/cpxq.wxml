@@ -15,7 +15,7 @@
 
 
 <!-- 产品故事 -->
-<view class="cpxqgus" wx:if='{{cpxqzt==1}}'>
+<!-- <view class="cpxqgus" wx:if='{{cpxqzt==1}}'>
 	<view class="cpxqgus-nr">
 		<view class="cpxqgus-nrtimg">
 			<image mode="widthFix" lazy-load="{{true}}" src="{{cpxiaqs.product_image}}"></image>
@@ -50,7 +50,7 @@
 			</view>
 			<view class="cpxqgus-nrtp">
 				{{cpxiaqs.product_synopsis}}
-			</view>
+			</view> -->
 
 			<!-- <view class="cpxqgus-nrbul">
 				<block wx:for="{{cpxiaqs.product_guige}}" wx:for-index="index" wx:for-item="item" wx:key="index">
@@ -62,20 +62,21 @@
 					</view>
 				</block>
 			</view> -->
-		</view>
+		<!-- </view>
 	</view>
-</view>
+</view> -->
 
 
-<view class="yitu" wx:if='{{cpxqzt==2}}'>
+<!-- <view class="yitu" wx:if='{{cpxqzt==2}}'>
 	<block wx:for="{{cpxiaqs.product_images}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 		<view class="yitu-img" bindtap="dakerw" data-img="{{item.url}}">
 			<image mode="widthFix" lazy-load="{{true}}" src="{{item.url}}"></image>
 		</view>
 	</block>
+</view> -->
+<view class="listpic">
+<image src="/images/pic/xguo.jpg" mode="widthFix"></image>
 </view>
-
-
 
 
 

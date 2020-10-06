@@ -4,7 +4,7 @@
 }
 
 .cpanli-nr {
-  padding-top: 20rpx;
+  /* padding-top: 20rpx; */
   overflow: hidden;
   width: 700rpx;
   margin: 0rpx auto;
@@ -88,15 +88,16 @@
 }
 
 .left {
-  margin-top: -30rpx;
+  margin-top: -15rpx;
   margin-left: 55rpx;
 
 }
 
 .fenx image {
-  margin-left: 15rpx;
-  width: 50rpx;
-  height: 50rpx;
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  
 }
 
 

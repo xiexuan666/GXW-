@@ -1,34 +1,50 @@
-<!-- <view class="banner">
+<view class="banner">
 	<view class="banner-ul">
 		<view class="bannerlist">
 			<view class="banner-li">
-				【如何装修】好砖就该这样贴，4招教你玩出铺贴美感
+				【{{strategy.name}}】{{strategy.title}}
 			</view>
 			<view class="banner-lir">
-				花了大价钱的砖就铺成这?不是吧阿sir
 			</view>
 			<view class="submit">
-				在装修的时候，
-				选对瓷砖，只是成功的第一步，
-				怎么铺贴，也是决定最终效果的关键点哦。
+				{{strategy.context}}
 			</view>
 		</view>
 		<view class='imagesize'>
-			<image src="/images/tubiao/1-08.jpg" class='in-image'>
+			<image src="{{strategy.images}}" class='in-image'>
 			</image>
 		</view>
-    <view class="gxw">(图片源于:冠星王陶瓷)</view>
+		<view class="gxw">(图片源于 ：冠星王陶瓷)</view>
 	</view>
-</view> -->
+</view>
 <view class="content">
 	<import src="/wxParse/wxParse.wxml" />
-	<template is="wxParse" data="{{wxParseData:article.nodes}}" />
+	<!-- <template is="wxParse" data="{{wxParseData:article.nodes}}" /> -->
 </view>
 
-		<!-- foot -->
+
+
+
+
+
+<!-- comments:评论渲染模板 -->
+<import src='/pages/template/comments/comments'/>
+<template is="comments"  data="{{great:strategy.great,Common:Common,dianzhan:strategy.dianzhan}}"></template>
+<!-- 添加评论 -->
+<view class="Input">
+	<image class="Icon" src="/images/tubiao/1-06.png" mode="heightFix" ></image>
+	<input class="addCommom" confirm-type='send' type="text" value="{{InputText}}"  bindinput='getText' bindfocus='clearInput'></input>
+	<button class="button" bindtap="common">发送</button>
+</view>
+
+
+
+
+
+	<!-- foot -->
 		<view class="list-item">
 			<view class="goods">
-				<view class="collect">
+				<view class="collect1">
 					<image src="/images/tubiao/gxw.png"></image>
 				</view>
 				<view class="tab">
@@ -36,21 +52,15 @@
 						冠星王陶瓷
 					</view>
 					<view class="attrs2">
-						店主:村上
+						店主:　村上
 					</view>
 					<view class="attrs">
 						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
 					</view>
 				</view>
 				<view class="contact">
-					<button class="btn">
-						<image src="/images/tubiao/1-21.png"></image>
-						<view>联系店主</view>
-					</button>
-					<button class="btn">
-						<image src="/images/tubiao/1-22.png"></image>
-						<view>在线咨询</view>
-					</button>
+					<image src="/images/tubiao/lianxi.png"></image>
+					<image src="/images/tubiao/zaixian.png"></image>
 				</view>
 			</view>
 		</view>
@@ -61,7 +71,7 @@
 
 
 <!-- 底部的收藏 -->
-<view class="collects" >
+<view class="collect">
 	<view class="title">
 		<view class="list-item1">
 			<view class="list-right">
@@ -71,8 +81,9 @@
 
 		</view>
 		<view class="list-item1">
-			<view class="list-right">
-				<image src="/images/tubiao/86.png"></image>
+			<view class="list-right" catchtap="Collection">
+				<image src="/images/tubiao/1-13.png" wx:if="{{Collectionstate}}"></image>
+				<image src="/images/tubiao/86.png" wx:else></image>
 				<view class="character">收藏</view>
 			</view>
 		</view>
@@ -85,5 +96,3 @@
 		</view>
 	</view>
 </view>
-
-

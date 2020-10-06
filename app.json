@@ -56,12 +56,11 @@
     "pages/me/discount/discount",
     "pages/me/containe/containe",
     "pages/me/guanli/code/code",
+    "pages/template/haibao/haibao",
+    "pages/template/comments/comments",
     "pages/me/registration/registration",
-    "pages/me/merchant/merchant"
-
-    
-
-
+    "pages/me/merchant/merchant",
+    "pages/template/viedeocard/videocard"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -74,49 +73,41 @@
       "desc": "你的位置信息将用于小程序地图的定位"
     }
   },
-
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#B18A5E",
     "backgroundColor": "#ffffff",
-    "borderStyle":"white",
+    "borderStyle": "white",
     "list": [
       {
-        "pagePath":"pages/souye/souye",
+        "pagePath": "pages/souye/souye",
         "text": "首页",
-        "iconPath":"/images/tubiao/1-16.png",
-        "selectedIconPath":"/images/tubiao/111.png"
-      
-      
+        "iconPath": "/images/tubiao/1-16.png",
+        "selectedIconPath": "/images/tubiao/111.png"
       },
       {
-        "pagePath":"pages/product/product",
+        "pagePath": "pages/product/product",
         "text": "案例",
-        "iconPath":"/images/tubiao/1-17.png",
-        "selectedIconPath":"/images/tubiao/112.png"
-
-       
+        "iconPath": "/images/tubiao/1-17.png",
+        "selectedIconPath": "/images/tubiao/112.png"
       },
       {
-        "pagePath":"pages/hotspot/hotspot",
+        "pagePath": "pages/hotspot/hotspot",
         "text": "活动",
-        "iconPath":"/images/tubiao/1-15.png",
-        "selectedIconPath":"/images/tubiao/1-15.png"
-       
+        "iconPath": "/images/tubiao/1-15.png",
+        "selectedIconPath": "/images/tubiao/1-15.png"
       },
       {
-        "pagePath":"pages/jinxs/jinxs",
+        "pagePath": "pages/jinxs/jinxs",
         "text": "攻略",
-        "iconPath":"/images/tubiao/1-18.png",
-        "selectedIconPath":"/images/tubiao/113.png"
-       
+        "iconPath": "/images/tubiao/1-18.png",
+        "selectedIconPath": "/images/tubiao/113.png"
       },
       {
-        "pagePath":"pages/me/me",
+        "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath":"/images/tubiao/1-19.png",
-        "selectedIconPath":"/images/tubiao/114.png"
-       
+        "iconPath": "/images/tubiao/1-19.png",
+        "selectedIconPath": "/images/tubiao/114.png"
       }
     ]
   },

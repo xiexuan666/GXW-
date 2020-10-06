@@ -12,6 +12,9 @@
   justify-content: center;
   font-size: 33rpx;
   font-weight: 700;
+  color: #666;
+  text-align: center;
+
 }
 
 .banner-lir {
@@ -22,11 +25,14 @@
 }
 
 .submit {
-  text-align: center;
   align-content: center;
   font-size: 28rpx;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 50rpx;
+  letter-spacing: 6rpx;
+  line-height: 45rpx;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
 }
 
 .content {
@@ -60,7 +66,7 @@
 .title {
   display: flex;
   background: #bd8f60;
-  margin-top: 203rpx;
+  /* margin-top: 203rpx; */
   height: 100rpx;
   text-align: center;
   justify-content: center;
@@ -86,30 +92,27 @@
   color: #fff;
   font-weight: 300;
 }
-
-
 /* 底部名片 */
 .list-item {
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50rpx 0;
+  margin: 50rpx 0;
   box-sizing: border-box;
   background-color: #ffffff;
-  padding-top: 100rpx;
-  border-radius: 5rpx;
+
+  
 }
 
 .goods {
   display: flex;
   margin: 0 20rpx;
-
+  border: 1px  dashed  #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx  0;
 }
 
 .tab {
-  padding: 0 10rpx;
+  padding: 0 20rpx;
 
 }
 
@@ -125,42 +128,28 @@
 
 .attrs2 {
   padding: 10rpx 0;
-  font-size: 25rpx;
-  font-weight: 300;
+  font-size: 23rpx;
+  font-weight: 200;
 }
 
-.collect {
+.collect1 {
   margin: 0 10rpx;
 }
 
-.collect image {
-  width: 150rpx;
-  height: 150rpx;
+.collect1 image {
+  width: 130rpx;
+  height: 130rpx;
   border-radius: 50rpx;
 }
 
 .contact {
-  width: 40%;
-}
+  width: 30%;
+  margin-top: 20rpx;
 
-.btn {
-  display: flex;
-  color: #fff;
-  font-size: 19rpx;
-  font-weight: 300;
-  background-color: #d0111b;
-  margin: 20rpx 20rpx;
-  align-items: center;
-  text-align: center;
-  width: 75%;
 }
-
-.btn image {
-  align-items: center;
-  text-align: center;
-  width: 25rpx;
-  height: 25rpx;
-  padding: 0 5rpx;
+.contact  image {
+  width: 175rpx;
+  height: 45rpx;
 }
 
 
@@ -168,3 +157,43 @@
   width: 25rpx;
   height: 25rpx;
 }
+
+
+/* 引入组件样式 */
+@import '/pages/template/comments/comments.wxss';
+
+/* 添加评论样式 */
+.Input{
+  width: 100vw;
+  /* background-color: chartreuse; */
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.Input input{
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 15rpx;
+  width:80%;
+  height:60rpx;
+  padding-left:60rpx;
+}
+.Input .Icon{
+  height:40rpx;
+  position: absolute;
+  left: 55rpx;
+  top: 12.5rpx;
+}
+.Input .button{
+  height:62rpx;
+  width:125rpx;
+  right:45.5rpx;
+  position: absolute;
+  background-color: #bd8f60;
+  line-height: 62rpx;
+  /* left: 55rpx; */
+  /* top: 12.5rpx; */
+}
+
+

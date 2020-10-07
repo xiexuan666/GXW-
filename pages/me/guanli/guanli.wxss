@@ -63,7 +63,7 @@ page {
   position: relative;
   float: right;
   padding-right: 80rpx;
-  padding-top: 70rpx;
+  padding-top: 145rpx;
 }
 
 .jinx-sao image {

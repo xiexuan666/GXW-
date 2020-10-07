@@ -59,8 +59,6 @@
 	<!-- <view class="commentsRelease"></view> -->
 </template>
 
-
-
 <!-- 设家居计师 -->
 <template name="card">
 	<!-- <image src="{{imgsrc}}"></image> -->
@@ -68,7 +66,7 @@
 		<image class="list_pic" src="/images/tubiao/1-20.png" mode="scaleToFill"></image>
 		<view class="num1">
 			<view class="header">
-				<image src="/images/tubiao/tx.png" class="tx"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png" class="tx"></image>
 			</view>
 		</view>
 		<view class="num2">
@@ -101,7 +99,7 @@
 	<view class="list-item">
 		<view class="goods">
 			<view class="collect">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 			</view>
 			<view class="tab">
 				<view class="attrs1">
@@ -128,7 +126,7 @@
 	<view class="list-item">
 		<view class="goods">
 			<view class="collect">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 			</view>
 			<view class="tab">
 				<view class="attrs2">

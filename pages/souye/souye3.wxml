@@ -4,11 +4,11 @@
 		<view class="jinx-t">
 			<view class="jinx-tnr">
 				<view class="jinx-bei">
-					<image src="/images/tubiao/1-30.png"></image>
+					<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 				</view>
 				<view class="jinx-toux">
 					<view class="toux-img">
-						<image src="/images/tubiao/gxw.png"></image>
+						<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 					</view>
 					<view class="name-p">冠星王总部</view>
 				</view>

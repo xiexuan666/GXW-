@@ -1,26 +1,58 @@
 var http = require('./http');
-// var userId = wx.getStorageSync('gerxinx').id;
 // 获取基本信息 接口、版本号、用户id
 function Getuser(){
     const app = getApp();
+    let uid;
+    if(wx.getStorageSync('gerxinx')){
+         uid = wx.getStorageSync('gerxinx').id
+    }else{
+        uid = null
+    }
     let user ={
         baseUrl:app.globalData.baseUrl,
         brandid:app.globalData.brandid,
-        userid:wx.getStorageSync('gerxinx').id
+        userid:uid
     }
     return user;
 }
 /**
-//    *点赞事件
-//     userId:用户信息
-//     brandId:版本号
-//     caseId:案例id
-//     需要接收一个值为案例id
+ * 页面跳转--判断页面栈进行不同的跳转
+ * 页面传值--判断不同类型并转化成可页面传值的数据流
+ * 全局变量--暂时用不上
  */
-function Getgreat(){
-    console.log('获取点赞事件');
+function Jump(url,arry){
+    // 判断类型
+    let type =  Object.prototype.toString.call(arry);
+    console.log(url,value,type);
+    let value = JSON.stringify(arry);
+    if(url == 'souye/souye' || 'product/product' || 'hotspot/hotspot' ||' jinxs/jinxs' ||' me/me'){
+        wx.switchTab({
+            url: '/pages/'+url+'?value='+value
+          }) 
+    }else{
+        return false
+    }
+    wx.navigateTo({
+      url: '/pages/'+url+'?value='+value,
+      success:(res=>{
+          console.log('跳转成功');
+      }),
+      fail:(err=>{
+        console.log(err);
+      })
+    })
 }
-
+/**
+ * 判断用户登录状态--检查是否有缓存信息
+*/
+function checkUser(){
+    let user = wx.getStorageSync('gerxinx');
+    if (!user) {
+      return false
+    }else{
+        return true
+    }
+}
 /** 
  *添加收藏的产品
     将产品添加到我的收藏
@@ -174,20 +206,38 @@ function setCommon(urls,uid){
 }
 /*  可重用的点赞方法
     **activity/strategy/greatStrategy  攻略点赞
-    
+    activity/hot/greatVideo  视频点赞
+    case/caseGreat  案例点赞
     参数:
         userId：用户id
-        strategyId：攻略id
+        strategyId：攻略id:uid
         brandId：版本id
     URl:根据接口调整，提高重用性
+
+    重用：video视频点赞需要videoid
+          案例点赞需要caseId
 */
-function addgreat(url,uid){
+function addgreat(url,uid,videoid){
     let {baseUrl,brandid,userid} = Getuser();
     let data = {
         userId:userid,
         strategyId:uid,
         brandId:brandid,
     }
+    if(videoid){
+        console.log('是视频点赞',videoid);
+        data={
+            userId:userid,
+            videoId:videoid,
+            brandId:brandid,
+        }
+    }else{
+        console.log('不是视频点赞',videoid);
+        console.log(data);
+    }
+    
+
+
     let Url = baseUrl+url;
     console.log(data,Url);
     return http.promisServer(Url,data)
@@ -213,8 +263,28 @@ function getVideo(urls){
     return http.promisServer(url,data);
 }
 
+
+/**
+ * 获取案例--首页和推荐页
+ * 参数：
+ *      版本id
+ * 
+ * URl:重用性的接口
+ *  */ 
+function getGerxinx(url){
+    let {baseUrl,brandid,userid} = Getuser();
+    let urls = baseUrl + url;
+    let data = {
+        brandid:brandid,
+        userId:userid
+    }
+    return http.promisServer(urls,data);
+}
+
+
 module.exports = {
-    Getgreat:Getgreat,
+    checkUser:checkUser,
+    Jump:Jump,
     getProduct:getProduct,
     addProduct:addProduct,
     getstrategy:getstrategy,
@@ -222,5 +292,6 @@ module.exports = {
     addCollection:addCollection,
     setCommon:setCommon,
     addgreat:addgreat,
-    getVideo:getVideo
+    getVideo:getVideo,
+    getGerxinx:getGerxinx
 }

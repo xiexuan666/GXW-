@@ -116,6 +116,7 @@ Page({
     // 攻略id
     let strategyId = that.data.strategy.id;
     getInformation.addgreat(url, strategyId).then(res => {
+      console.log(res);
       that.setData({
         'strategy.dianzhan': res.flag
       })

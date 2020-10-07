@@ -36,30 +36,6 @@
 </template>
 
 
-<!-- 家居设计师Card -->
-<!-- <view class=" history">
-	<view class="search">
-		<view class="tp">
-			<image src="/images/tubiao/1-20.png"></image>
-		</view>
-		<view class="sheji">
-			<view class="portrait">
-				<image src="/images/tubiao/tx.png" mode="aspectFill"></image>
-			</view>
-			<view class="cun">
-				<view>村上　　家居设计师</view>
-				<view class="tup">
-					<image src="/images/tubiao/1-24.png"></image>
-					广东省佛山市禅城区南庄镇中国陶瓷总部基地
-				</view>
-			</view>
-			<view class="boda">
-		      
-			</view>
-		</view>
-	</view>
-</view> -->
-<!-- 家居设计师end -->
 
 
 <!-- 产品展示 -->

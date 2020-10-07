@@ -37,7 +37,7 @@
 			{{pagesubscript.case_synopsis}}
 		</view>
 		<view class="header">
-			<image mode="widthFix" bindtap="dakerw" src="/images/tubiao/1-08.jpg"></image>
+			<image mode="widthFix" bindtap="dakerw" src="https://cdn.juesedao.cn/gxw/ridianshiping.jpg"></image>
 		</view>
 	</view>
 </view>
@@ -153,7 +153,7 @@
 <view class="list-item6">
 	<view class="goods">
 		<view class="collect1">
-			<image src="/images/tubiao/gxw.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 		</view>
 		<view class="tab">
 	

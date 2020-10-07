@@ -8,29 +8,41 @@
                 <view class="title">
                   卫生间  
                 </view>
-                <view class="icon"></view>
+                <view class="icon" bindtap="Jumpvideo" data-index="{{index}}">
+                  <image src="/images/tubiao/video.png" mode="scaleToFill"></image>
+                </view>
             </view>
             <image src="{{item.photo}}" mode="aspectFill"></image>
           </view>
           <view class="tabBar">
             <view class="tabBarImage">
-                <image src="/images/tubiao/gxw.png" mode="aspectFit"></image>
+                <image src="{{item.wx_photo}}" mode="aspectFit"></image>
             </view>
             <view class="tabBarText">
-              夏数村数
+              {{item.wx_name}}
             </view>
             <view class="tabBargreat">
-              <view class="icon">
-                <image src="/images/tubiao/12-12.png" mode="aspectFit"></image>
+              <view class="icon" catchtap="addgreat" data-index="{{index}}">
+                <image wx:if='{{item.dianzhan}}' src="/images/tubiao/12-28.png" mode="aspectFit"></image>
+                <image wx:else  src="/images/tubiao/12-12.png" mode="aspectFit"></image>
               </view>
               <view class="text">
-                  1111
+                 {{item.great}}
               </view>
             </view>
           </view>
-
+        <!-- 底部信息栏 -->
+        <view class="Info">
+          <view class="InfoText">
+            <text>[{{item.title}}]</text>
+            <text>{{item.context}}</text>
+          </view>
+          <view class="InfoLook">
+            <image src="/images/tubiao/chak.png" mode="aspectFill	"></image>
+            <text>52220</text>
+          </view>
         </view>
-        <view class="Info"></view>
+        </view>
         </block>
     </view>
 </template>

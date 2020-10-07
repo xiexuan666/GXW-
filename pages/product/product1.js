@@ -571,18 +571,18 @@
        userid:gerxinx.id,
  
      }
-     http.promisServer(url, dat).then(resc=>{
-       var sclist=resc.data.productCollectionList
-       cp.forEach(el1 => {
-         sclist.forEach(el2 => {
-           if(el1&&el2&&el1.id==el2.id){
-             el1.sczt=true
-           }
-         });
-       });
-       this.setData({cp})
-       console.log(resc.data.productCollectionList,'收藏列表')
-     })
+    //  http.promisServer(url, dat).then(resc=>{
+    //    var sclist=resc.data.productCollectionList
+    //    cp.forEach(el1 => {
+    //      sclist.forEach(el2 => {
+    //        if(el1&&el2&&el1.id==el2.id){
+    //          el1.sczt=true
+    //        }
+    //      });
+    //    });
+    //    this.setData({cp})
+    //    console.log(resc.data.productCollectionList,'收藏列表')
+    //  })
      
    },
    //收藏产品
@@ -595,34 +595,34 @@
     console.log(productid);
     console.log('点击了收藏页面');
     getInformation.addProduct(productid);
-    //  var tha=this
-    //  var gerxinx = wx.getStorageSync('gerxinx')
-    //  var cp=this.data.cp
-    //  var ind=app.hdindex(e,'ind')
-    //  if(!gerxinx){
-    //    wx.showToast({title: '没有登录',icon: 'none',duration: 700})
-    //    return false
-    //  }
-    //  var url = baseUrl + "production/productCollectionSaves"
-    //  var dat={
-    //    brandid:app.globalData.baseUrl,
-    //    userid:gerxinx.id,
-    //    productid:cp[ind].id
-    //  }
-    //  console.log(dat,"收藏状态改变前")
-    //  http.promisServer(url, dat).then(resc=>{
-    //    if(resc.status==0){
-    //      cp[ind].sczt=false
-    //      this.setData({cp})
-    //      wx.showToast({title: '取消收藏',icon: 'none',duration: 800})
-    //    }else{
-    //      cp[ind].sczt=true
-    //      this.setData({cp})
-    //      wx.showToast({title: '收藏成功',icon: 'none',duration: 800})
-    //    }
+     var tha=this
+     var gerxinx = wx.getStorageSync('gerxinx')
+     var cp=this.data.cp
+     var ind=app.hdindex(e,'ind')
+     if(!gerxinx){
+       wx.showToast({title: '没有登录',icon: 'none',duration: 700})
+       return false
+     }
+     var url = baseUrl + "case/caseGreat"
+     var dat={
+       brandid:app.globalData.baseUrl,
+       userid:gerxinx.id,
+       productid:cp[ind].id
+     }
+     console.log(dat,"收藏状态改变前")
+     http.promisServer(url, dat).then(resc=>{
+       if(resc.status==0){
+         cp[ind].productList[ind].sczt=false
+         this.setData({cp})
+         wx.showToast({title: '取消收藏',icon: 'none',duration: 800})
+       }if(resc.status==1){
+         cp[ind].productList[ind].sczt=true
+         this.setData({cp})
+         wx.showToast({title: '收藏成功',icon: 'none',duration: 800})
+       }
       
-    //    console.log(resc,'收藏状态改变')
-    //  })
+       console.log(resc,'收藏状态改变')
+     })
    },
    //获得当地区
    hdzuij:function(){

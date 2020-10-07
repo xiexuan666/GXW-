@@ -82,7 +82,7 @@
 
 /* 评论主体 */
 .commentsContent {
-  height: 460rpx;
+  height:1000rpx;
   overflow: scroll;
   width: 100vw;
   margin-top: 20rpx;
@@ -145,8 +145,8 @@
   width: 90%;
   font-size: 26rpx;
   margin: auto;
-  padding-bottom: 20rpx;
-  padding-top: 15rpx;
+  padding-bottom: 30rpx;
+  padding-top: 20rpx;
 }
 
 .commentsContentText text {
@@ -161,6 +161,13 @@
   height: 20rpx;
   background: brown;
 }
+
+
+
+
+
+
+
 
 
 
@@ -187,9 +194,6 @@
   margin-left: auto;
   margin-right: 20rpx;
 }
-
-
-
 
 
 
@@ -328,9 +332,9 @@
   margin: 50rpx 0;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px  dashed  #ccc;
+  border: 1px dashed #ccc;
   border-radius: 15rpx;
-  padding: 50rpx  0;
+  padding: 50rpx 0;
 }
 
 .goods {
@@ -375,7 +379,8 @@
   margin-top: 20rpx;
 
 }
-.contact  image {
+
+.contact image {
   width: 175rpx;
   height: 45rpx;
 }

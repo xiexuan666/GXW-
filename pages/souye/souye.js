@@ -78,14 +78,14 @@ Page({
   },
 
   //请求轮播 视频
-  // requestlunb: function () {
-  //   var tha = this
-  //   var url = baseUrl + 'banner/index'
-  //   http.promisServer(url).then(res => {
-  //     tha.setData({ lunb: res.data.allbannerList })
-  //   })
+  requestlunb: function () {
+    var tha = this
+    var url = baseUrl + 'banner/index'
+    http.promisServer(url).then(res => {
+      tha.setData({ lunb: res.data.allbannerList })
+    })
 
-  // },
+  },
 
   //请求推荐系列
   qingqtuijxili: function () {
@@ -424,95 +424,107 @@ Page({
   // 点击点赞事件
   great: function (event) {
     var that = this;
-    // 获取点击下标
-    var subscript = event.currentTarget.dataset['index'];
-    getInformation.Getgreat();
-    // 获取轮播图数据
-    let greatid = that.data.lunbs;
-    //获取用户缓存
-    let user = wx.getStorageSync('gerxinx');
-    // 当用户没登录时
-    if (!user) {
+    let check = getInformation.checkUser();
+    // 执行点赞操作
+    if (check) {
+      console.log('来点赞吧');
+      // 获取点击下标
+      var subscript = event.currentTarget.dataset['index'];
+      // 获取轮播图数据
+      let greatid = that.data.lunbs;
+      //获取用户缓存
+      let user = wx.getStorageSync('gerxinx');
+      // 获取点击数据表的id
+      let caseid = greatid[subscript].id;
+      //设置请求路径
+      let url = baseUrl + "case/caseGreat";
+      // 设置请求参数
+      var dat = {
+        brandId: '2',
+        userId: user.id,
+        caseId: caseid
+      };
+      console.log(dat, url);
+      // 获取默认的点赞数
+      let great = greatid[subscript].great;
+      http.promisServer(url, dat).then(res => {
+        console.log('点赞的判断值：', res.flag);
+        if (res.flag) {
+          // 点赞成功，点赞数+1 更新视图，修改图标高亮状态
+          let good = great + 1;
+          that.setData({
+            ['lunbs[' + subscript + '].great']: good,
+            ['lunbs[' + subscript + '].dianzhan']: res.flag,
+          });
+          wx.showToast({ title: '点赞成功', icon: 'none', duration: 500, mask: true })
+        } else {
+          // 取消点赞,点赞数-1，更新视图
+          let good = great - 1;
+          that.setData({
+            ['lunbs[' + subscript + '].great']: good,
+            ['lunbs[' + subscript + '].dianzhan']: res.flag
+          })
+          console.log('点击的案例下标：', subscript);
+          wx.showToast({ title: '取消点赞', icon: 'none', duration: 800, mask: true })
+        }
+      })
+
+    } else {
+      // 当用户没登录时
       wx.showToast({ title: '没有登录', icon: 'none', duration: 700 })
       return false
     };
-    // 获取点击数据表的id
-    let caseid = greatid[subscript].id;
-    //设置请求路径
-    let url = baseUrl + "case/caseGreat";
-    // 设置请求参数
-    var dat = {
-      brandId: '2',
-      userId: user.id,
-      caseId: caseid
-    };
-    console.log(dat, url);
-    // 获取默认的点赞数
-    let great = greatid[subscript].great;
-    http.promisServer(url, dat).then(res => {
-      console.log('点赞的判断值：', res.flag);
-      if (res.flag) {
-        // 点赞成功，点赞数+1 更新视图，修改图标高亮状态
-        let good = great + 1;
-        that.setData({
-          ['lunbs[' + subscript + '].great']: good,
-          ['lunbs[' + subscript + '].dianzhan']: res.flag,
-        });
-      } else {
-        // 取消点赞,点赞数-1，更新视图
-        let good = great - 1;
-        that.setData({
-          ['lunbs[' + subscript + '].great']: good,
-          ['lunbs[' + subscript + '].dianzhan']: res.flag
-        })
-        console.log('点击的案例下标：', subscript);
-      }
-    })
   },
+
   //  点击收藏
   collection: function (e) {
     console.log('首页的收藏事件');
     /* 需要参数为 
       版本id 用户id 所选案例id 
     */
-    var that = this;
-    var gerxinx = wx.getStorageSync('gerxinx');
-    var index = app.hdindex(e, 'ind');
-    var case_id = that.data.lunbs[index].id;
-    var brand_id = app.globalData.brandid;
-    let data = {
-      brand_id: brand_id,
-      user_id: gerxinx.id,
-      case_id: case_id,
-      case_type_id: 1,
-    }
-    let url = baseUrl + "case/allCaseCollectionSaves";
-    console.log(data, url);
-
-    var lunbo = that.data.lunbs;
-    http.promisServer(url, data).then(resc => {
-      console.log(resc);
-      if (resc.status == 0) {
-        lunbo[index].scztt = false;
-        console.log(index);
-        // 取消收藏
-        this.setData({
-          lunbo,
-          ['lunbs[' + index + '].collection']: lunbo[index].scztt
-        })
-        wx.showToast({ title: '取消收藏', icon: 'none', duration: 800 })
-      } else {
-        lunbo[index].scztt = true;
-        that.data.lunbs[index].collection = true;
-        this.setData({
-          lunbo,
-          ['lunbs[' + index + '].collection']: lunbo[index].scztt
-        })
-        wx.showToast({ title: '收藏成功', icon: 'none', duration: 800 })
+    let check = getInformation.checkUser();
+    if (check) {
+      var that = this;
+      var gerxinx = wx.getStorageSync('gerxinx');
+      var index = app.hdindex(e, 'ind');
+      var case_id = that.data.lunbs[index].id;
+      var brand_id = app.globalData.brandid;
+      let data = {
+        brand_id: brand_id,
+        user_id: gerxinx.id,
+        case_id: case_id,
+        case_type_id: 1,
       }
+      let url = baseUrl + "case/allCaseCollectionSaves";
+      console.log(data, url);
 
-      console.log(resc, '收藏状态改变')
-    })
+      var lunbo = that.data.lunbs;
+      http.promisServer(url, data).then(resc => {
+        console.log(resc);
+        if (resc.status == 0) {
+          lunbo[index].scztt = false;
+          console.log(index);
+          // 取消收藏
+          this.setData({
+            lunbo,
+            ['lunbs[' + index + '].collection']: lunbo[index].scztt
+          })
+          wx.showToast({ title: '取消收藏', icon: 'none', duration: 800, mask: true })
+        } else {
+          lunbo[index].scztt = true;
+          that.data.lunbs[index].collection = true;
+          this.setData({
+            lunbo,
+            ['lunbs[' + index + '].collection']: lunbo[index].scztt
+          })
+          wx.showToast({ title: '收藏成功', icon: 'none', duration: 800, mask: true })
+        }
+        console.log(resc, '收藏状态改变')
+      })
+    } else {
+      wx.showToast({ title: '没有登录', icon: 'none', duration: 700 })
+      return false
+    }
   }
 })
 

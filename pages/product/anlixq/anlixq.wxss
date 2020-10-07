@@ -625,7 +625,7 @@ appraise-content view text:nth-child(2) {
   display: inline-block;
 font-size: 26rpx;
   padding-right: 45rpx;
-  padding-left: 75rpx;
+  padding-left: 60rpx;
 }
 
 

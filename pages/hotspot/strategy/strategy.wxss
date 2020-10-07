@@ -180,7 +180,7 @@
 
 .Input input {
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   border-radius: 15rpx;
   width: 80%;
   height: 60rpx;
@@ -193,17 +193,17 @@
   left: 55rpx;
   top: 12.5rpx; */
   width: 100rpx;
-  height: 50rpx;
+  height: 44rpx;
   margin-left: 50rpx;
   margin-right: 9rpx;
-  margin-top: 13rpx;
+  margin-top: 15rpx;
   position: absolute;
 }
 
 .Input .button {
-  height: 62rpx;
-  width: 125rpx;
-  right: 45.5rpx;
+  height: 64rpx;
+  /* width: 125rpx; */
+  right: 43.5rpx;
   position: absolute;
   background-color: #bd8f60;
   line-height: 62rpx;

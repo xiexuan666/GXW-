@@ -1,3 +1,4 @@
+@import '/pages/template/comments/comments.wxss';
 /* 轮播图 */
 .lbswiper {
   height: 540rpx;

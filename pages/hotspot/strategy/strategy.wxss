@@ -1,4 +1,5 @@
 @import "/wxParse/wxParse.wxss";
+
 .banner {
   margin-top: 50rpx;
 }
@@ -57,6 +58,7 @@
   text-align: center;
   color: #ccc;
 }
+
 /* 底部的收藏 */
 .title {
   width: 700rpx;
@@ -75,40 +77,42 @@
 }
 
 
-.list-right image {
+.list-right .image {
   width: 50rpx;
   height: 50rpx;
-    padding: 0 30rpx;
+  padding: 0 30rpx;
 }
 
 .list-right {
   display: flex;
   align-items: center;
   text-align: center;
-  
+
 }
+
 .character {
-  padding: 0  10rpx;
+  padding: 0 10rpx;
   color: #fff;
   font-weight: 300;
 }
+
 /* 底部名片 */
-.list-item {
+.list-item6 {
   height: 100%;
   display: flex;
-  margin: 50rpx 0;
+  margin: 30rpx 0;
   box-sizing: border-box;
   background-color: #ffffff;
 
-  
+
 }
 
 .goods {
   display: flex;
   margin: 0 20rpx;
-  border: 1px  dashed  #ccc;
+  border: 1px dashed #ccc;
   border-radius: 15rpx;
-  padding: 30rpx  0;
+  padding: 30rpx 0;
 }
 
 .tab {
@@ -142,12 +146,13 @@
   border-radius: 50rpx;
 }
 
-.contact {
+.contacts {
   width: 30%;
   margin-top: 20rpx;
 
 }
-.contact  image {
+
+.contacts image {
   width: 175rpx;
   height: 45rpx;
 }
@@ -163,37 +168,46 @@
 @import '/pages/template/comments/comments.wxss';
 
 /* 添加评论样式 */
-.Input{
+.Input {
   width: 100vw;
   /* background-color: chartreuse; */
   height: 50rpx;
   display: flex;
   flex-direction: row;
   position: relative;
+  margin-bottom: 55rpx;
 }
-.Input input{
+
+.Input input {
   margin: auto;
   border: 1px solid black;
   border-radius: 15rpx;
-  width:80%;
-  height:60rpx;
-  padding-left:60rpx;
+  width: 80%;
+  height: 60rpx;
+  padding-left: 60rpx;
 }
-.Input .Icon{
-  height:40rpx;
+
+.Input .Icon {
+  /* height:40rpx;
   position: absolute;
   left: 55rpx;
-  top: 12.5rpx;
+  top: 12.5rpx; */
+  width: 100rpx;
+  height: 50rpx;
+  margin-left: 50rpx;
+  margin-right: 9rpx;
+  margin-top: 13rpx;
+  position: absolute;
 }
-.Input .button{
-  height:62rpx;
-  width:125rpx;
-  right:45.5rpx;
+
+.Input .button {
+  height: 62rpx;
+  width: 125rpx;
+  right: 45.5rpx;
   position: absolute;
   background-color: #bd8f60;
   line-height: 62rpx;
+  z-index: 3;
   /* left: 55rpx; */
   /* top: 12.5rpx; */
 }
-
-

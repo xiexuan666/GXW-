@@ -206,7 +206,6 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   box-sizing: border-box;
   background-color: #ffffff;
 
-  
 }
 
 .goods {

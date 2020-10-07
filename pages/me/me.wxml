@@ -169,7 +169,22 @@
 
 
 		<!-- foot -->
-		<view class="list-item">
+
+		<import src='/pages/template/comments/comments' />
+		<template is="ceramic" data="{{list:'imasrc////',num:3}}">
+		</template>
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <view class="list-item">
 			<view class="goods">
 				<view class="collect">
 					<image src="/images/tubiao/gxw.png"></image>
@@ -190,6 +205,6 @@
 					<image src="/images/tubiao/zaixian.png"></image>
 				</view>
 			</view>
-		</view>
+		</view>-->
 	</view>
 </view>

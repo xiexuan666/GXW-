@@ -1,60 +1,147 @@
 <!--pages/template/comments/comments.wxml-->
 <template name="comments" data="great">
-<!-- 头部 -->
-<view class="commentsTop">
-  <view class="commentsTopText">
-    该案例评论 
-  </view>
-  <view class="commentsTopRound"></view>
-  <view class="commentsTopTitle">
-    <view class="headerList">
-      <view class="header">
-        <image mode="scaleToFill" src="{{Common[0].wx_photo}}"></image>
-      </view>
-      <view class="header">
-        <image mode="scaleToFill" src="{{Common[1].wx_photo}}"></image>
-      </view>
-      <view class="header">
-        <image mode="scaleToFill" src="{{Common[2].wx_photo}}"></image>
-      </view>
-    </view>
-    <view class="great">
-      <view class="greatText">{{great}}人觉得很赞</view>
-      <view class="greatIcon" catchtap="addgreat">
-        <image wx:if='{{dianzhan}}' src="/images/tubiao/dain.png" mode="aspectFit	"></image>
-        <image wx:else src="/images/tubiao/dianzan.png" mode="aspectFit	"></image>
-      </view>
-    </view>
-  </view>
-  
-</view>
+	<!-- 头部 -->
+	<view class="commentsTop">
+		<view class="commentsTopText">
+			该案例评论
+		</view>
+		<view class="commentsTopRound"></view>
+		<view class="commentsTopTitle">
+			<view class="headerList">
+				<view class="header">
+					<image mode="scaleToFill" src="{{Common[0].wx_photo}}"></image>
+				</view>
+				<view class="header">
+					<image mode="scaleToFill" src="{{Common[1].wx_photo}}"></image>
+				</view>
+				<view class="header">
+					<image mode="scaleToFill" src="{{Common[2].wx_photo}}"></image>
+				</view>
+			</view>
+			<view class="great">
+				<view class="greatText">{{great}}人觉得很赞</view>
+				<view class="greatIcon" catchtap="addgreat">
+					<image wx:if='{{dianzhan}}' src="/images/tubiao/dain.png" mode="aspectFit	"></image>
+					<image wx:else src="/images/tubiao/dianzan.png" mode="aspectFit	"></image>
+				</view>
+			</view>
+		</view>
 
-<!-- 主体 -->
-<view class="commentsContent">
-  <!-- 用以控制渲染程序的标签 -->
-  <block wx:for='{{Common}}' wx:index='index' wx:item='item'>
-    <!-- 评论详情 -->
-    <view class="commentsContentText">
-      <text>{{item.common}}</text>
-    </view>
-    <!-- 评论头像&点赞 -->
-    <view class="commentsContentTop">
-    <!-- 评论头像及姓名 -->
-      <view class="PicName">
-        <view class="pic">
-          <image src="{{item.wx_photo}}" mode="aspectFit"></image>
-        </view>  
-        <view class="text">{{item.wx_name}}</view>  
-      </view>
-      <!-- 点赞攻略 -->
-      <view class="Icon">
-        <view class="text">{{item.great}}</view>
-        <view class="pic" catchtap="addCommon">
-          <image src="/images/tubiao/dianzan.png" mode="widthFix"></image>
-        </view>
-      </view>
-    </view>
-  </block>
-</view>
-<!-- <view class="commentsRelease"></view> -->
+	</view>
+
+	<!-- 主体 -->
+	<view class="commentsContent">
+		<!-- 用以控制渲染程序的标签 -->
+		<block wx:for='{{Common}}' wx:index='index' wx:item='item'>
+			<!-- 评论详情 -->
+			<view class="commentsContentText">
+				<text>{{item.common}}</text>
+			</view>
+			<!-- 评论头像&点赞 -->
+			<view class="commentsContentTop">
+				<!-- 评论头像及姓名 -->
+				<view class="PicName">
+					<view class="pic">
+						<image src="{{item.wx_photo}}" mode="aspectFit"></image>
+					</view>
+					<view class="text">{{item.wx_name}}</view>
+				</view>
+				<!-- 点赞攻略 -->
+				<view class="Icon">
+					<view class="text">{{item.great}}</view>
+					<view class="pic" catchtap="addCommon">
+						<image src="/images/tubiao/dianzan.png" mode="widthFix"></image>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+	<!-- <view class="commentsRelease"></view> -->
+</template>
+
+
+
+<!-- 设家居计师 -->
+<template name="card">
+	<!-- <image src="{{imgsrc}}"></image> -->
+	<view class="list">
+		<image class="list_pic" src="/images/tubiao/1-20.png" mode="scaleToFill"></image>
+		<view class="num1">
+			<view class="header">
+				<image src="/images/tubiao/tx.png" class="tx"></image>
+			</view>
+		</view>
+		<view class="num2">
+			<view class="text">
+				村上　家居设计师
+			</view>
+			<view class="text1">
+				<image src="/images/tubiao/boda.png" class="dh" mode="aspectFit"></image>
+				<image src="/images/tubiao/zixu.png" class="dh" mode="aspectFit"></image>
+				<image src="/images/tubiao/dh.png" class="dh" mode="aspectFit"></image>
+			</view>
+			<view class="title">
+				<image src="/images/tubiao/40.png" mode="aspectFit"></image>
+				<text>广东省佛山市禅城区南庄镇中国陶瓷总部基地</text>
+
+			</view>
+		</view>
+		<view class="num3">
+			<view class="tow">
+				<image class="list-pic" src="/images/tubiao/erwema.jpg" mode="widthFix"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+
+<!-- 冠星王陶瓷 -->
+<template name="ceramic">
+	<view class="list-item">
+		<view class="goods">
+			<view class="collect">
+				<image src="/images/tubiao/gxw.png"></image>
+			</view>
+			<view class="tab">
+				<view class="attrs1">
+					冠星王陶瓷
+				</view>
+				<view class="attrs2">
+					店主:　村上
+				</view>
+				<view class="attrs">
+					<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+				</view>
+			</view>
+			<view class="contact">
+				<image src="/images/tubiao/lianxi.png"></image>
+				<image src="/images/tubiao/zaixian.png"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+<!-- 冠星王陶瓷1 -->
+<template name="ceramics">
+	<view class="list-item">
+		<view class="goods">
+			<view class="collect">
+				<image src="/images/tubiao/gxw.png"></image>
+			</view>
+			<view class="tab">
+				<view class="attrs2">
+					村上:家居设计师
+				</view>
+				<view class="attrs">
+					<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+				</view>
+			</view>
+			<view class="contact">
+				<image src="/images/tubiao/lianxi.png"></image>
+				<image src="/images/tubiao/zaixian.png"></image>
+			</view>
+		</view>
+	</view>
 </template>

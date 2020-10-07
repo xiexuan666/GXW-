@@ -15,38 +15,29 @@
 <!-- 导航 -->
 <view class="daoh">
 	<view class="daoh-ul">
-		<view class="daoh-li " bindtap="tzcase">
-			<image mode="widthFix" src="/images/tubiao/1-02.png"></image>
-			<view class="daoh-li-text">CASE</view>
-			<view class="daoh-li-p">看案例</view>
-		</view>
-		<view class="daoh-li " bindtap="tzproduct">
-			<image mode="widthFix" src="/images/tubiao/1-03.png"></image>
-			<view class="daoh-li-text">PRODUCT</view>
-			<view class="daoh-li-p">找产品</view>
-		</view>
-		<view class="daoh-li " bindtap="tzstrategy">
-			<image mode="widthFix" src="/images/tubiao/1-04.png"></image>
-			<view class="daoh-li-text">STRATEGY</view>
-			<view class="daoh-li-p">做攻略</view>
-		</view>
-		<view class="daoh-li " bindtap="tzbrand">
-			<image mode="widthFix" src="/images/tubiao/1-05.png"></image>
-			<view class="daoh-li-text">BRAND</view>
-			<view class="daoh-li-p">逛品牌</view>
-		</view>
-		<view class="daoh-li " bindtap="tzroom">
-			<image mode="widthFix" src="/images/tubiao/1-06.png"></image>
-			<view class="daoh-li-text">RESERVATION</view>
-			<view class="daoh-li-p">约量房</view>
-		</view>
+		<block wx:for='{{data}}' wx:index='index' wx:item='item'>
+			<view class="daoh-li " bindtap="Jump" data-index="{{index}}">
+				<image mode="widthFix" src="{{item.image}}"></image>
+				<view class="daoh-li-text">{{item.title}}</view>
+				<view class="daoh-li-p">{{item.content}}</view>
+			</view>
+		</block>
 	</view>
 </view>
 
 
 
+
+
 <!-- 家居设计师Card -->
-<view class=" history">
+
+<import src='/pages/template/comments/comments' />
+<template is="card" data="{{list:'imasrc////',num:3}}">
+</template>
+
+
+<!-- 家居设计师Card -->
+<!-- <view class=" history">
 	<view class="search">
 		<view class="tp">
 			<image src="/images/tubiao/1-20.png"></image>
@@ -67,7 +58,7 @@
 			</view>
 		</view>
 	</view>
-</view>
+</view> -->
 <!-- 家居设计师end -->
 
 
@@ -103,7 +94,7 @@
 					<image src="/images/tubiao/1-09.png"></image>
 					<view class="lanbai">爵士灰</view>
 				</view>
-					<view class="liser">
+				<view class="liser">
 					<view class="jxsnr-tubiao-tu2">
 						<view class="jxsnr-li-lp2">
 							<image mode="aspectFit" src="/images/tubiao/1-10.png"></image>

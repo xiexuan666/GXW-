@@ -22,7 +22,33 @@ Page({
     hideModal: true, //模态框的状态  true-隐藏  false-显示
     animationData: {},
     annrshuz: [],
-
+    data: [
+      {
+        title: 'case',
+        image: '/images/tubiao/1-02.png',
+        content: '看案例'
+      },
+      {
+        title: 'PRODUCT',
+        image: '/images/tubiao/1-03.png',
+        content: '找产品'
+      },
+      {
+        title: 'STRATEGY',
+        image: '/images/tubiao/1-04.png',
+        content: '做攻略'
+      },
+      {
+        title: 'BRAND',
+        image: '/images/tubiao/1-05.png',
+        content: '逛品牌'
+      },
+      {
+        title: 'RESERVATION',
+        image: '/images/tubiao/1-06.png',
+        content: '约量房'
+      }
+    ]
   },
   //拨打电话
   calling: function () {
@@ -40,33 +66,32 @@ Page({
       }
     })
   },
-
   //请求轮播
   handlelun: function () {
     var tha = this
     var url = baseUrl + 'banner/index'
     console.log(url);
     http.promisServer(url).then(res => {
-      // tha.setData({lunb:res.data.allbannerList})
       console.log(res.data.allbannerList, '请求轮播图')
     })
 
   },
+
   //请求轮播 视频
-  requestlunb: function () {
-    var tha = this
-    var url = baseUrl + 'banner/index'
-    http.promisServer(url).then(res => {
-      tha.setData({ lunb: res.data.allbannerList })
-      console.log(res.data.allbannerList, '请求轮播图')
-    })
+  // requestlunb: function () {
+  //   var tha = this
+  //   var url = baseUrl + 'banner/index'
+  //   http.promisServer(url).then(res => {
+  //     tha.setData({ lunb: res.data.allbannerList })
+  //   })
 
-  },
+  // },
+
   //请求推荐系列
   qingqtuijxili: function () {
     var tha = this
-    var url = baseUrl + 'series/tuijianSeriesPage'
-    http.promisServer(url, { brandid: '1' }).then(res => {
+    var url = baseUrl + 'series/tuijianSeriesPage';
+    http.promisServer(url, { brandid: '2' }).then(res => {
       tha.setData({ xilie: res.data.allseriessLists })
       console.log(res, '推荐系列')
     })
@@ -74,13 +99,9 @@ Page({
   //请求推荐案例
   qingqtuianli: function () {
     var tha = this
-    var url = baseUrl + 'case/tuijianCasePage'
-    http.promisServer(url, { brandid: '2' }).then(res => {
+    var url = 'case/tuijianCasePage';
+    getInformation.getGerxinx(url).then(res => {
       tha.setData({ lunbs: res.data.tuijianCaseList })
-      console.log(res, "推荐案例");
-      for (let i = 0; i < tha.data.lunbs.length; i++) {
-
-      }
     })
   },
   // 显示遮罩层
@@ -162,44 +183,36 @@ Page({
     }, 100)//先执行下滑动画，再隐藏模块，再隐藏模块
   },
 
-  // 跳转到案例
-  tzcase: function () {
-    wx.reLaunch({
-      url: '/pages/product/product?zhi=2',
-    })
+  /**
+   *  导航栏跳转
+   */
+  Jump: function (e) {
+    var index = app.hdindex(e, 'index');
+    console.log(index);
+    switch (index) {
+      case 0:
+        getInformation.Jump('product/product')
+        break;
+      case 1:
+        getInformation.Jump('product/product1')
+        break;
+      case 2:
+        getInformation.Jump('jinxs/jinxs')
+        break;
+      case 3:
+        getInformation.Jump('souye/souye2')
+        break;
+      case 4:
+        getInformation.Jump('souye/souye3')
+        break;
+      case 5:
+
+        break;
+      default:
+        ;
+    }
   },
 
-  // 跳转到案例
-  tzcpanliye: function () {
-    wx.reLaunch({
-      url: '/pages/product/product?zhi=2',
-    })
-  },
-
-  // 跳转量房
-  tzroom: function () {
-    wx.navigateTo({
-      url: '/pages/souye/souye3',
-    })
-  },
-  // 跳转到装修攻略
-  tzstrategy: function () {
-    wx.reLaunch({
-      url: '/pages/jinxs/jinxs',
-    })
-  },
-  // 跳转到品牌
-  tzbrand: function () {
-    wx.navigateTo({
-      url: "/pages/souye/souye2"
-    })
-  },
-  // 跳转到产品
-  tzproduct: function () {
-    wx.navigateTo({
-      url: "/pages/product/product1"
-    })
-  },
   // 跳转到海报
   hanglehb: function () {
     wx.navigateTo({
@@ -214,21 +227,6 @@ Page({
     //请求轮播
     this.requestlunb()
 
-    // 检测登录状态
-    if (wx.getStorageSync('gerxinx')) {
-      console.log('有缓存，敬请浪');
-      this.onShow();
-    } else {
-      console.log('没缓存，要登录');
-      // 获取openID,需要获取登录接口
-      // app.huoqopenid().then(res=>{
-      //   console.log(res);
-      //   app.cuncgerxinx(res).then(gerxinx=>{
-      //     console.log(wx.getStorageSync('gerxinx'));
-      //     this.onLoad();
-      //   })
-      // })
-    }
 
   },
   //将canvas转换为图片保存到本地，然后将图片路径传给image图片的src

@@ -402,13 +402,53 @@ Page({
     // 执行点赞操作
     if(check){  
       console.log('来点赞吧');
-      // 获取点击下标
-      var subscript = event.currentTarget.dataset['index'];
+    // 获取点击下标
+    var subscript = event.currentTarget.dataset['index'];
+    // 获取轮播图数据
+    let greatid = that.data.lunbs;
+    //获取用户缓存
+    let user = wx.getStorageSync('gerxinx');
+    // 获取点击数据表的id
+    let caseid = greatid[subscript].id;
+    //设置请求路径
+    let url = baseUrl + "case/caseGreat";
+    // 设置请求参数
+    var dat = {
+      brandId: '2',
+      userId: user.id,
+      caseId: caseid
+    };
+    console.log(dat, url);
+    // 获取默认的点赞数
+    let great = greatid[subscript].great;
+    http.promisServer(url, dat).then(res => {
+      console.log('点赞的判断值：', res.flag);
+      if (res.flag) {
+        // 点赞成功，点赞数+1 更新视图，修改图标高亮状态
+        let good = great + 1;
+        that.setData({
+          ['lunbs[' + subscript + '].great']: good,
+          ['lunbs[' + subscript + '].dianzhan']: res.flag,
+        });
+        wx.showToast({ title: '点赞成功', icon: 'none', duration: 500 ,mask:true})
+      } else {
+        // 取消点赞,点赞数-1，更新视图
+        let good = great - 1;
+        that.setData({
+          ['lunbs[' + subscript + '].great']: good,
+          ['lunbs[' + subscript + '].dianzhan']: res.flag
+        })
+        console.log('点击的案例下标：',subscript);
+        wx.showToast({ title: '取消点赞', icon: 'none', duration: 800 ,mask:true})
+      }
+    })
       
     }else{
-      // 发起登录请求
-      console.log('登录去吧')
-    }
+     // 当用户没登录时
+      wx.showToast({ title: '没有登录', icon: 'none', duration: 700 })
+      return false
+    };
+    },
   
     // if()
     // // 获取点击下标
@@ -454,13 +494,14 @@ Page({
     //     console.log('点击的案例下标：',subscript);
     //   }
     // })
-  },
   //  点击收藏
   collection: function (e) {
     console.log('首页的收藏事件');
     /* 需要参数为 
       版本id 用户id 所选案例id 
     */
+   let check = getInformation.checkUser();
+   if(check){
     var that = this;
     var gerxinx = wx.getStorageSync('gerxinx');
     var index = app.hdindex(e, 'ind');
@@ -496,9 +537,12 @@ Page({
         })
         wx.showToast({ title: '收藏成功', icon: 'none', duration: 800 })
       }
-
       console.log(resc, '收藏状态改变')
     })
+  }else{
+    wx.showToast({ title: '没有登录', icon: 'none', duration: 700 })
+    return false
+  }
   }
 })
 

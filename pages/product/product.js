@@ -656,6 +656,8 @@ Page({
   //点赞案列
   collect:function(e){
     var tha=this;
+    let check = getInformation.checkUser();
+    if(check){
     // 获取缓存的用户信息
     var gerxinx = wx.getStorageSync('gerxinx');
     var annrshuz=this.data.annrshuz;
@@ -684,6 +686,7 @@ Page({
           ['annrshuz['+ind+'].great']:great,
           ['annrshuz['+ind+'].dianzhan']:res.flag
         })
+        wx.showToast({ title: '点赞成功', icon: 'none', duration: 500 ,mask:true})
       }else{
         // 取消点赞
         let great = tha.data.annrshuz[ind].great-1;
@@ -691,6 +694,7 @@ Page({
           ['annrshuz['+ind+'].great']:great,
           ['annrshuz['+ind+'].dianzhan']:res.flag
         })
+        wx.showToast({ title: '取消点赞', icon: 'none', duration: 500 ,mask:true})
       }
     })
     // 
@@ -711,11 +715,17 @@ Page({
     //   // this.setData({})
     //   console.log(resc,'点赞状态改变')
     // })
+  }else{
+    wx.showToast({ title: '没有登录', icon: 'none', duration: 700 })
+    return false
+  }
   },
   
    //收藏产品
    star:function(e){
     var tha=this
+    let check = getInformation.checkUser();
+    if(check){
     var gerxinx = wx.getStorageSync('gerxinx');
     var annrshuz=this.data.annrshuz
     var ind=app.hdindex(e,'ind')
@@ -752,6 +762,10 @@ Page({
      
       console.log(resc,'收藏状态改变')
     })
+  }else{
+    wx.showToast({ title: '没有登录', icon: 'none', duration: 700 })
+    return false
+  }
   },
   //获得当地区
   hdzuij:function(){

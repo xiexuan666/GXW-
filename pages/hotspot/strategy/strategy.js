@@ -76,6 +76,7 @@ Page({
         if(res.flag){
         wx.showLoading({
             title: '评论成功',
+            mask:true
         })
         //更新评论
         that.onShow();
@@ -87,7 +88,13 @@ Page({
           wx.hideLoading()
         },500)
         }else{
-          console.log('评论失败');
+          wx.showLoading({
+            title: '评论失败',
+            mask:true
+        })
+        setTimeout(function () {
+          wx.hideLoading()
+        },500)
         }
       })
       // 获取评论区的高度
@@ -124,11 +131,13 @@ Page({
       if(res.flag){
         that.setData({
           'strategy.great':num+1
-        })
+        });
+        wx.showToast({ title: '点赞成功', icon: 'none', duration: 500 ,mask:true})
       }else{
         that.setData({
           'strategy.great':num-1
         })
+        wx.showToast({ title: '点赞失败', icon: 'none', duration: 500 ,mask:true})
       }
     })
   },

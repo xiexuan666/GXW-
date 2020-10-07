@@ -70,6 +70,11 @@ Page({
     }
     http.promisServer(url,data).then(res=>{
       console.log(res);
+      if(res.flag){
+        wx.showToast({ title: '评论成功', icon: 'none', duration: 500 ,mask:true})
+      }else{
+        wx.showToast({ title: '评论失败', icon: 'none', duration: 500 ,mask:true})
+      }
       that.GetFindComment();
     })
 

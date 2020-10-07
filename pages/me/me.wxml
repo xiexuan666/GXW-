@@ -5,13 +5,8 @@
 <!-- 获取手机 -->
 <template is="phone" data="{{sj: sj}}" />
 
-
 <view class="jinx-t">
 	<view class="jinx-tnr">
-
-		<view class="jinx_bgpic">
-			<image src="/images/tubiao/1-30.png"></image>
-		</view>
 		<view class="jinx-toux">
 			<view class="toux-img" wx:if="{{gerxinx}}">
 				<image src="{{gerxinx.wx_photo}}"></image>
@@ -38,17 +33,11 @@
 			<view class="vcenter">个人钱包</view>
 			<view class="balance">
 				<view class="sum">我的余额</view>
-				<view class="sum1">￥500</view>
+				<view class="sum1">￥0.00</view>
 			</view>
 			<view class="recharge">
-				<view class="me">
-					<view class="top" style=" border-right: 1px solid #fff;">充值<image src="/images/tubiao/58.png"></image>
-					</view>
-				</view>
-				<view class="me">
-					<view class="top">体现<image src="/images/tubiao/59.png"></image>
-					</view>
-				</view>
+				<text class="top">充值</text>
+				<text class="top">提现</text>
 			</view>
 		</view>
 
@@ -114,7 +103,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="merchant" data-ind="0">
+		<view class="me-list-li" bindtap="merchant" wx:if='{{app.globalData.brandid==2?true:flase}}' data-ind="0">
 			<view class="me-list-lil">商家入驻<image src="/images/tubiao/48.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -122,7 +111,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="handlezhuc">
+		<view class="me-list-li" bindtap="handlezhuc" wx:if='{{app.globalData.brandid==2?true:flase}}' >
 			<view class="me-list-lil">注册<image src="/images/tubiao/49.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -130,15 +119,15 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="manage">
-			<view class="me-list-lil">我的评论<image src="/images/tubiao/44.png"></image>
+		<view class="me-list-li" >
+			<view class="me-list-lil" >我的评论<image src="/images/tubiao/44.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="manage">
+		<view class="me-list-li" >
 			<view class="me-list-lil">我的点赞<image src="/images/tubiao/42.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -147,8 +136,8 @@
 		</view>
 
 
-		<view class="me-list-li" bindtap="manage">
-			<view class="me-list-lil">管理入口<image src="/images/tubiao/41.png"></image>
+		<view class="me-list-li">
+			<view class="me-list-lil" wx:if='{{app.globalData.brandid==2?true:flase}}' >管理入口<image src="/images/tubiao/41.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
@@ -158,7 +147,7 @@
 
 
 
-		<view class="me-list-li" bindtap="manage">
+		<view class="me-list-li" bindtap="manage" wx:if='{{app.globalData.brandid==2?true:flase}}' >
 			<view class="me-list-lil">商家管理<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -179,15 +168,21 @@
 						冠星王陶瓷
 					</view>
 					<view class="attrs2">
-						店主:　村上
+						店主:村上
 					</view>
 					<view class="attrs">
 						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
 					</view>
 				</view>
 				<view class="contact">
-					<image src="/images/tubiao/lianxi.png"></image>
-					<image src="/images/tubiao/zaixian.png"></image>
+					<button class="btn">
+						<image src="/images/tubiao/1-21.png"></image>
+						<view>联系店主</view>
+					</button>
+					<button class="btn">
+						<image src="/images/tubiao/1-22.png"></image>
+						<view>在线咨询</view>
+					</button>
 				</view>
 			</view>
 		</view>

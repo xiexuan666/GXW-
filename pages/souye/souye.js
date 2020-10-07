@@ -22,7 +22,33 @@ Page({
     hideModal: true, //模态框的状态  true-隐藏  false-显示
     animationData: {},
     annrshuz: [],
-
+    data:[
+            {
+              title:'case',
+              image:'/images/tubiao/1-02.png',
+              content:'看案例'
+            },
+            {
+              title:'PRODUCT',
+              image:'/images/tubiao/1-03.png',
+              content:'找产品'
+            },
+            {
+              title:'STRATEGY',
+              image:'/images/tubiao/1-04.png',
+              content:'做攻略'
+            },
+            {
+              title:'BRAND',
+              image:'/images/tubiao/1-05.png',
+              content:'逛品牌'
+            },
+            {
+              title:'RESERVATION',
+              image:'/images/tubiao/1-06.png',
+              content:'约量房'
+            }
+    ]
   },
   //拨打电话
   calling: function () {
@@ -47,26 +73,27 @@ Page({
     var url = baseUrl + 'banner/index'
     console.log(url);
     http.promisServer(url).then(res => {
-      // tha.setData({lunb:res.data.allbannerList})
       console.log(res.data.allbannerList, '请求轮播图')
     })
 
   },
+
   //请求轮播 视频
   requestlunb: function () {
     var tha = this
     var url = baseUrl + 'banner/index'
     http.promisServer(url).then(res => {
       tha.setData({ lunb: res.data.allbannerList })
-      console.log(res.data.allbannerList, '请求轮播图')
     })
 
   },
+
+
   //请求推荐系列
   qingqtuijxili: function () {
     var tha = this
-    var url = baseUrl + 'series/tuijianSeriesPage'
-    http.promisServer(url, { brandid: '1' }).then(res => {
+    var url = baseUrl + 'series/tuijianSeriesPage';
+    http.promisServer(url, { brandid: '2' }).then(res => {
       tha.setData({ xilie: res.data.allseriessLists })
       console.log(res, '推荐系列')
     })
@@ -74,13 +101,9 @@ Page({
   //请求推荐案例
   qingqtuianli: function () {
     var tha = this
-    var url = baseUrl + 'case/tuijianCasePage'
-    http.promisServer(url, { brandid: '2' }).then(res => {
+    var url = 'case/tuijianCasePage';
+    getInformation.getGerxinx(url).then(res=>{
       tha.setData({ lunbs: res.data.tuijianCaseList })
-      console.log(res, "推荐案例");
-      for (let i = 0; i < tha.data.lunbs.length; i++) {
-
-      }
     })
   },
   // 显示遮罩层
@@ -116,7 +139,7 @@ Page({
 
   },
 
-  clearPosters: function () {
+  handlecha: function () {
     var that = this;
     var animation = wx.createAnimation({
       duration: 800,//动画的持续时间 默认800ms   数值越大，动画越慢   数值越小，动画越快
@@ -162,44 +185,34 @@ Page({
     }, 100)//先执行下滑动画，再隐藏模块，再隐藏模块
   },
 
-  // 跳转到案例
-  tzcase: function () {
-    wx.reLaunch({
-      url: '/pages/product/product?zhi=2',
-    })
-  },
+/**
+ *  导航栏跳转
+ */
+  Jump:function(e){
+    var index=app.hdindex(e,'index');
+    console.log(index);
+    switch (index) {
+      case 0:
+        getInformation.Jump('product/product')
+      break;
+      case 1:
+        getInformation.Jump('product/product1')
+      break;
+      case 2:
+        getInformation.Jump('jinxs/jinxs')
+      break;
+      case 3:
+        getInformation.Jump('souye/souye2')
+      break;
+      case 4:
+        getInformation.Jump('souye/souye3')
+      break;
+      case 5:
 
-  // 跳转到案例
-  tzcpanliye: function () {
-    wx.reLaunch({
-      url: '/pages/product/product?zhi=2',
-    })
-  },
-
-  // 跳转量房
-  tzroom: function () {
-    wx.navigateTo({
-      url: '/pages/souye/souye3',
-    })
-  },
-  // 跳转到装修攻略
-  tzstrategy: function () {
-    wx.reLaunch({
-      url: '/pages/jinxs/jinxs',
-    })
-  },
-  // 跳转到品牌
-  tzbrand: function () {
-    wx.navigateTo({
-      url: "/pages/souye/souye2"
-    })
-  },
-  // 跳转到产品
-  tzproduct: function () {
-    wx.navigateTo({
-      url: "/pages/product/product1"
-    })
-  },
+      break;
+      default:
+      ;
+}},
   // 跳转到海报
   hanglehb: function () {
     wx.navigateTo({
@@ -213,23 +226,8 @@ Page({
   onLoad: function (options) {
     //请求轮播
     this.requestlunb()
-
-    // 检测登录状态
-    if (wx.getStorageSync('gerxinx')) {
-      console.log('有缓存，敬请浪');
-      this.onShow();
-    } else {
-      console.log('没缓存，要登录');
-      // 获取openID,需要获取登录接口
-      // app.huoqopenid().then(res=>{
-      //   console.log(res);
-      //   app.cuncgerxinx(res).then(gerxinx=>{
-      //     console.log(wx.getStorageSync('gerxinx'));
-      //     this.onLoad();
-      //   })
-      // })
-    }
-
+    //推荐系列
+    //  this.qingqtuijxili()
   },
   //将canvas转换为图片保存到本地，然后将图片路径传给image图片的src
   createNewImg: function () {
@@ -238,54 +236,25 @@ Page({
     context.setFillStyle("#fff")
     context.fillRect(0, 0, 375, 667)
     var path = "/images/tubiao/1-14.png";
-    context.drawImage(path, 0, 0, 400, 350);
+    context.drawImage(path, 56, 56, 262, 349);
     var path5 = "/images/tubiao/code.jpg";
-    var path2 = "/images/tubiao/tx.png";
+    var path2 = "/images/tubiao/text1.png";
     var name = that.data.name;
-    context.drawImage(path2, 24, 380, 60, 60, 200, 560);
-    //绘制中间文字
+    context.drawImage(path2, 56, 400, 263, 121);
+    //绘制左下角文字
     context.setFontSize(14);
-    context.setFillStyle('#ccc');
+    context.setFillStyle('#333');
     context.setTextAlign('left');
-    context.fillText("LUCAS", 105, 400);
-    context.stroke();
-    context.setFontSize(14);
-    context.setFillStyle('#696969');
-    context.setTextAlign('left');
-    context.fillText("在冠星王陶瓷未来家上看文章", 105, 430);
+    context.fillText("长按识别查看", 70, 560);
     context.stroke();
     context.setFontSize(14);
-    context.setFillStyle('#000');
+    context.setFillStyle('#333');
     context.setTextAlign('left');
-    context.fillText("【现代简约佛山280m2私宅│4年落地只为“雅奢生活”】", 19, 470);
+    context.fillText("冠星王陶瓷未来家看文章", 70, 580);
     context.stroke();
-    context.setFontSize(12);
-    context.setFillStyle('#ccc');
-    context.setTextAlign('left');
-    context.fillText("广东省-佛山市-禅城区", 20, 500);
-    context.stroke();
-    context.setFontSize(12);
-    context.setFillStyle('#ccc');
-    context.setTextAlign('left');
-    context.fillText("2020.09.01", 280, 500);
-    context.stroke();
-    context.fillStyle = 'rgb(105,105,105)';
-    context.fillRect(20, 520, 340, 0.5);
-    //绘制左下角小程序二维码
-    context.drawImage(path5, 20, 530, 100, 100, 70, 560);
-    //绘制右下角文字
-    context.setFontSize(16);
-    context.setFillStyle('#ccc');
-    context.setTextAlign('left');
-    context.fillText("长按识别查看", 145, 570);
-    context.stroke();
-    context.setFontSize(16);
-    context.setFillStyle('#ccc');
-    context.setTextAlign('left');
-    context.fillText("冠星王陶瓷未来家看文章", 145, 600);
-    context.stroke();
+    //绘制右下角小程序二维码
+    context.drawImage(path5, 230, 530, 80, 80);
     context.draw();
-
     //将生成好的图片保存到本地
     setTimeout(function () {
       wx.canvasToTempFilePath({
@@ -310,7 +279,7 @@ Page({
       filePath: that.data.imagePath,
       success(res) {
         wx.showModal({
-          content: '保存成功',
+          content: '海报已保存到相册',
           showCancel: false,
           confirmText: '确定',
           confirmColor: '#333',
@@ -360,8 +329,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    //推荐案例
-    this.qingqtuianli()
+       //推荐案例
+       this.qingqtuianli()
 
   },
 
@@ -411,7 +380,6 @@ Page({
 
 
   ,
-
   // 点击附带参数跳转案例详情页面
   JumpCase: function (event) {
     var that = this;
@@ -423,53 +391,69 @@ Page({
       url: '/pages/product/anlixq/anlixq?Arrys=' + set,
     })
   },
-  // 点击点赞事件
+  /**
+   * 点赞事件
+   * 判断有没有用户登录值
+   * 执行登录或者点赞操作
+   *  */
   great: function (event) {
     var that = this;
-    // 获取点击下标
-    var subscript = event.currentTarget.dataset['index'];
-    getInformation.Getgreat();
-    // 获取轮播图数据
-    let greatid = that.data.lunbs;
-    //获取用户缓存
-    let user = wx.getStorageSync('gerxinx');
-    // 当用户没登录时
-    if (!user) {
-      wx.showToast({ title: '没有登录', icon: 'none', duration: 700 })
-      return false
-    };
-    // 获取点击数据表的id
-    let caseid = greatid[subscript].id;
-    //设置请求路径
-    let url = baseUrl + "case/caseGreat";
-    // 设置请求参数
-    var dat = {
-      brandId: '2',
-      userId: user.id,
-      caseId: caseid
-    };
-    console.log(dat, url);
-    // 获取默认的点赞数
-    let great = greatid[subscript].great;
-    http.promisServer(url, dat).then(res => {
-      console.log('点赞的判断值：', res.flag);
-      if (res.flag) {
-        // 点赞成功，点赞数+1 更新视图，修改图标高亮状态
-        let good = great + 1;
-        that.setData({
-          ['lunbs[' + subscript + '].great']: good,
-          ['lunbs[' + subscript + '].dianzhan']: res.flag,
-        });
-      } else {
-        // 取消点赞,点赞数-1，更新视图
-        let good = great - 1;
-        that.setData({
-          ['lunbs[' + subscript + '].great']: good,
-          ['lunbs[' + subscript + '].dianzhan']: res.flag
-        })
-        console.log('点击的案例下标：', subscript);
-      }
-    })
+    let check = getInformation.checkUser();
+    // 执行点赞操作
+    if(check){  
+      console.log('来点赞吧');
+      // 获取点击下标
+      var subscript = event.currentTarget.dataset['index'];
+      
+    }else{
+      // 发起登录请求
+      console.log('登录去吧')
+    }
+  
+    // if()
+    // // 获取点击下标
+    // var subscript = event.currentTarget.dataset['index'];
+    // // 获取轮播图数据
+    // let greatid = that.data.lunbs;
+    // //获取用户缓存
+    // let user = wx.getStorageSync('gerxinx');
+    // // 当用户没登录时
+    // if (!user) {
+    //   wx.showToast({ title: '没有登录', icon: 'none', duration: 700 })
+    //   return false
+    // };
+    // // 获取点击数据表的id
+    // let caseid = greatid[subscript].id;
+    // //设置请求路径
+    // let url = baseUrl + "case/caseGreat";
+    // // 设置请求参数
+    // var dat = {
+    //   brandId: '2',
+    //   userId: user.id,
+    //   caseId: caseid
+    // };
+    // console.log(dat, url);
+    // // 获取默认的点赞数
+    // let great = greatid[subscript].great;
+    // http.promisServer(url, dat).then(res => {
+    //   console.log('点赞的判断值：', res.flag);
+    //   if (res.flag) {
+    //     // 点赞成功，点赞数+1 更新视图，修改图标高亮状态
+    //     let good = great + 1;
+    //     that.setData({
+    //       ['lunbs[' + subscript + '].great']: good,
+    //       ['lunbs[' + subscript + '].dianzhan']: res.flag,
+    //     });
+    //   } else {
+    //     // 取消点赞,点赞数-1，更新视图
+    //     let good = great - 1;
+    //     that.setData({
+    //       ['lunbs[' + subscript + '].great']: good,
+    //       ['lunbs[' + subscript + '].dianzhan']: res.flag
+    //     })
+    //     console.log('点击的案例下标：',subscript);
+    //   }
+    // })
   },
   //  点击收藏
   collection: function (e) {
@@ -498,17 +482,17 @@ Page({
         lunbo[index].scztt = false;
         console.log(index);
         // 取消收藏
-        this.setData({
+        this.setData({ 
           lunbo,
-          ['lunbs[' + index + '].collection']: lunbo[index].scztt
-        })
+          ['lunbs[' + index + '].collection']:lunbo[index].scztt
+         })
         wx.showToast({ title: '取消收藏', icon: 'none', duration: 800 })
       } else {
         lunbo[index].scztt = true;
         that.data.lunbs[index].collection = true;
-        this.setData({
+        this.setData({ 
           lunbo,
-          ['lunbs[' + index + '].collection']: lunbo[index].scztt
+          ['lunbs[' + index + '].collection']:lunbo[index].scztt
         })
         wx.showToast({ title: '收藏成功', icon: 'none', duration: 800 })
       }

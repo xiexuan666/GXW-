@@ -66,7 +66,7 @@
 .title {
   display: flex;
   background: #bd8f60;
-  /* margin-top: 203rpx; */
+  margin-top: 203rpx;
   height: 100rpx;
   text-align: center;
   justify-content: center;
@@ -94,68 +94,57 @@
 }
 /* 底部名片 */
 .list-item {
-  height: 100%;
   display: flex;
-  margin: 50rpx 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
   box-sizing: border-box;
   background-color: #ffffff;
-
-  
+  padding-top: 100rpx;
+  border-radius: 5rpx;
 }
-
 .goods {
   display: flex;
-  margin: 0 20rpx;
-  border: 1px  dashed  #ccc;
-  border-radius: 15rpx;
-  padding: 30rpx  0;
 }
-
 .tab {
-  padding: 0 20rpx;
-
+  padding: 0 10rpx;
 }
-
 .attrs {
-  font-size: 18rpx;
+  font-size: 20rpx;
   font-weight: 300;
 }
-
 .attrs1 {
-  font-size: 26rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+}
+.attrs2 {
+  padding: 20rpx 0;
+  font-size: 27rpx;
   font-weight: 300;
 }
 
-.attrs2 {
-  padding: 10rpx 0;
-  font-size: 23rpx;
-  font-weight: 200;
-}
-
-.collect1 {
-  margin: 0 10rpx;
-}
-
-.collect1 image {
-  width: 130rpx;
-  height: 130rpx;
-  border-radius: 50rpx;
+.collect image {
+  width: 50rpx;
+  height: 50rpx;
 }
 
 .contact {
-  width: 30%;
-  margin-top: 20rpx;
-
+  width: 37%;
 }
-.contact  image {
-  width: 175rpx;
-  height: 45rpx;
+.btn {
+  color: #fff;
+  font-size: 19rpx;
+  font-weight: 300;
+  background-color: red;
+  margin: 20rpx 0;
 }
-
-
-.attrs image {
+.btn image {
+  align-items: center;
+  text-align: center;
   width: 25rpx;
   height: 25rpx;
+  padding: 0  5rpx;
 }
 
 
@@ -178,6 +167,7 @@
   width:80%;
   height:60rpx;
   padding-left:60rpx;
+  font-size: 28rpx;
 }
 .Input .Icon{
   height:40rpx;
@@ -186,14 +176,14 @@
   top: 12.5rpx;
 }
 .Input .button{
-  height:62rpx;
+  height:65rpx;
   width:125rpx;
-  right:45.5rpx;
+  right:43.5rpx;
   position: absolute;
   background-color: #bd8f60;
   line-height: 62rpx;
+  font-size: 28rpx;
+  z-index: 3;
   /* left: 55rpx; */
   /* top: 12.5rpx; */
 }
-
-

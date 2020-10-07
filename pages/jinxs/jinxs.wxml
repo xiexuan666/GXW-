@@ -14,13 +14,11 @@
 
 
 
-
 <!-- 热点视频 -->
 <view class="videolist" wx:if='{{cactiv==2}}'>
 	<import src='/pages/template/viedeocard/videocard'/>
 		<template is="videocard" data="{{video:video}}"></template>
 </view>
-
 
 
 <!-- 搜索 -->

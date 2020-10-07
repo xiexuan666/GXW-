@@ -60,7 +60,8 @@
     "pages/template/comments/comments",
     "pages/me/registration/registration",
     "pages/me/merchant/merchant",
-    "pages/template/viedeocard/videocard"
+    "pages/template/viedeocard/videocard",
+    "pages/video/video"
   ],
   "window": {
     "backgroundTextStyle": "light",

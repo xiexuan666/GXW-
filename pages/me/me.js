@@ -125,10 +125,12 @@ Page({
    */
   onShow: function () {
     if (!app.globalData.status) {
+      console.log('你进来了')
       app.banbzt().then(resc => {
         this.setData({ status: app.globalData.status })
       })
     } else {
+      console.log('你没进来')
       this.setData({ status: app.globalData.status })
     }
 

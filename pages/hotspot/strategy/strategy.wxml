@@ -7,14 +7,14 @@
 			<view class="banner-lir">
 			</view>
 			<view class="submit">
-				{{strategy.context}}
+			{{strategy.context}}
 			</view>
 		</view>
 		<view class='imagesize'>
 			<image src="{{strategy.images}}" class='in-image'>
 			</image>
 		</view>
-		<view class="gxw">(图片源于 ：冠星王陶瓷)</view>
+    <view class="gxw">(图片源于 ：冠星王陶瓷)</view>
 	</view>
 </view>
 <view class="content">
@@ -41,10 +41,20 @@
 
 
 
-	<!-- foot -->
+
+
+
+
+
+
+
+
+
+
+		<!-- foot -->
 		<view class="list-item">
 			<view class="goods">
-				<view class="collect1">
+				<view class="collect">
 					<image src="/images/tubiao/gxw.png"></image>
 				</view>
 				<view class="tab">
@@ -52,15 +62,16 @@
 						冠星王陶瓷
 					</view>
 					<view class="attrs2">
-						店主:　村上
+						店主:村上
 					</view>
 					<view class="attrs">
-						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+						广东省佛山市禅城区南庄镇中国陶瓷总部基地
 					</view>
 				</view>
+
 				<view class="contact">
-					<image src="/images/tubiao/lianxi.png"></image>
-					<image src="/images/tubiao/zaixian.png"></image>
+					<button class="btn"><image src="/images/tubiao/1-21.png"></image> 联系店主</button>
+					<button class="btn"><image src="/images/tubiao/1-22.png"></image>在线咨询</button>
 				</view>
 			</view>
 		</view>
@@ -70,8 +81,9 @@
 
 
 
+
 <!-- 底部的收藏 -->
-<view class="collect">
+<view class="collect" >
 	<view class="title">
 		<view class="list-item1">
 			<view class="list-right">
@@ -82,7 +94,7 @@
 		</view>
 		<view class="list-item1">
 			<view class="list-right" catchtap="Collection">
-				<image src="/images/tubiao/1-13.png" wx:if="{{Collectionstate}}"></image>
+					<image src="/images/tubiao/1-13.png" wx:if="{{Collectionstate}}"></image>
 				<image src="/images/tubiao/86.png" wx:else></image>
 				<view class="character">收藏</view>
 			</view>
@@ -96,3 +108,5 @@
 		</view>
 	</view>
 </view>
+
+

@@ -23,7 +23,7 @@
 
 
 
-<!-- 选择案例 -->
+<!-- 选择案例头部 -->
 <view class="xuanz" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="xuanz-nr">
 		<block wx:for="{{anlishuj}}" wx:for-index="index" wx:for-item="item" wx:key="index">
@@ -33,7 +33,7 @@
 					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
 						<view class="xuanz-nr-li">
 							<block wx:for="{{item.children}}" wx:for-index="indexs" wx:for-item="items" wx:key="index">
-								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{index}}" data-idc="{{items.id}}">
+								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{index}}" data-title="{{items.title}}" data-index="{{indexs}}" data-idc="{{items.id}}">
 									{{items.title}}
 									<view class="xuanz-nr-lix">x</view>
 								</view>

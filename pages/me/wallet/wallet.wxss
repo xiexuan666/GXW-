@@ -1,4 +1,6 @@
 /**钱包**/
+
+
 .gernqb {
   width: 95%;
   margin: 0 auto;
@@ -14,7 +16,7 @@
 .vcenter {
   position: absolute;
   left: 38%;
-  top: 5%;
+  top: 15%;
   font-size: 40rpx;
   color: #fff;
   font-weight: 300;
@@ -23,50 +25,30 @@
 
 .balance {
   position: absolute;
-  left: 41%;
-  top: 35%;
+  left: 40%;
+  top: 44%;
   font-size: 28rpx;
   color: #fff;
   font-weight: 300;
   text-align: center;
-
-
-
 }
 
 .recharge {
-  display: flex;
   position: absolute;
-  top: 73%;
+  top: 78%;
   font-size: 32rpx;
   color: #fff;
   font-weight: 300;
-  border-top: 1px solid #fff;
-  left: 5%;
-
 }
 
 .top {
-  float: left;
-  position: relative;
-  padding: 25rpx 127rpx;
+  padding: 20rpx 140rpx;
 }
-
-.top image {
-  float: right;
-  position: absolute;
-  top: 25rpx;
-  left: 65rpx;
-  width: 45rpx;
-  height: 45rpx;
-}
-
 
 .sum1 {
   font-size: 40rpx;
   font-weight: 700;
 }
-
 
 /**钱包end**/
 

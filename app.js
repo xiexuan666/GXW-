@@ -11,23 +11,20 @@ const getInformation = require('utils/getInformation.js');
 App({
   onLaunch: function () {
     //获得定位授权地址信息
-    this.dwsouq()
+    this.dwsouq();
    //是否曾经登录过
-   this.isdenlu()
+   this.isdenlu();
    //版本状态
-   this.banbzt()
+   this.banbzt();
    //加载产品无限列表
-   this.qiangcp()
-    // 
-
-    console.log(wx.getStorageSync('gerxinx').id)
+   this.qiangcp();
   },
 
   globalData: {
     userInfo: null,
     //  baseUrl:"http://192.168.0.105:8087/gxwslyk/",
-    // baseUrl:"https://md.juesedao.com/gxwslyk/",
-    baseUrl:"http://192.168.0.160:8087/gxwslyk/",
+    baseUrl:"https://md.juesedao.com/gxwslyk/",
+    // baseUrl:"http://192.168.0.160:8087/gxwslyk/",
     dtkey:'77ABZ-KQC62-FVJUB-C7TTO-4DX6T-7WB2J',
     http: http,
     getInformation:getInformation,
@@ -98,7 +95,7 @@ App({
           var nr={skub,titlej}
           resolve(nr)
         })
-        console.log(titlej,'产品无限列表')
+        // console.log(titlej,'产品无限列表')
       })
     })
     return p;
@@ -120,7 +117,7 @@ App({
         }
         resolve(skub)
         tha.globalData.skub=skub
-        console.log(skub,'产品列表可能性')
+        // console.log(skub,'产品列表可能性')
       })
     })
     return p;
@@ -139,7 +136,6 @@ App({
           }})
         }else{
           tha.dtxx()
-          console.log('有定位授权')
         }
       }
     })
@@ -188,16 +184,13 @@ App({
   },
   //获得经纬度不授权不提示
   huodjwds:function(){
-    
     var p = new Promise(function(resolve, reject) {
       wx.getLocation({
         type: 'gcj02',
         success (res) {
-          console.log( res,'经纬度')
           resolve(res)
         },
         fail(e){
-          console.log(e,'669')
         }
       })
     })
@@ -218,7 +211,6 @@ App({
    formSubmit(latitude, longitude) {
     var tha = this;
     var p = new Promise(function(resolve, reject) {
-      console.log(latitude,longitude) 
       qqmapsdk.reverseGeocoder({
         location: {
           latitude: latitude,
@@ -230,7 +222,6 @@ App({
             data:res.result
           })
           resolve(res.result)
-          console.log(res,"地址获得地区")
         },
 
       })
@@ -250,7 +241,7 @@ App({
     var p = new Promise(function(resolve, reject) {
       http.promisServer(url, dat).then(resc=>{
         var benjxslist=resc.data.storeList
-        console.log(benjxslist,'本地经销商列表')
+        // console.log(benjxslist,'本地经销商列表')
         if(benjxslist.length==1){
           resolve(benjxslist[0])
           wx.setStorageSync('bendijxs', benjxslist[0])
@@ -385,7 +376,8 @@ App({
       var p = new Promise(function(resolve, reject) {
 
         // 查询本地cookies是否有用户信息
-      var gerxinx = wx.getStorageSync('gerxinx')
+      var gerxinx = wx.getStorageSync('gerxinx');
+      // 有的话就直接返回
       if(gerxinx){return false;}
       tha.huoqopenid()
       .then((openid)=>tha.cuncgerxinx(openid))
@@ -453,8 +445,15 @@ App({
                 code: res.code
               },
               success: function(res) {
-                console.log(res, 'getOpenId')
+                console.log(res, 'getOpenId');
+                console.log('我已经获取到了openid',res.data.data.openid);
                 var openid = res.data.data['openid']
+                tha.cuncgerxinx(openid).then(gerxinx=>{
+                //将下来的数据存储到本地缓存
+                wx.setStorageSync('gerxinx',gerxinx);
+                //重新加载页面
+                tha.onShow()
+                })
                 if (openid) {
                   resolve(openid)
                 }

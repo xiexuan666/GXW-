@@ -72,7 +72,6 @@
 
 /* 评论主体 */
 .commentsContent{
-  height: 460rpx;
   overflow: scroll;
   width: 100vw;
   margin-top:20rpx;
@@ -143,6 +142,13 @@
   height: 20rpx;
   background: brown;
 }
+
+
+
+
+
+
+
 
 
 

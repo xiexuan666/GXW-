@@ -1,3 +1,4 @@
+const { addgreat } = require("../../utils/getInformation");
 
 const app = getApp();
 const http = app.globalData.http;
@@ -194,6 +195,53 @@ Page({
     })
 
   },
+  /**
+   * 点赞事件--实时更新页面上的点赞数
+   * 获取下标，获取视频id
+   * 调用getInfoemation封装好的接口进行点赞操作
+   * 根据res.flag值对判断值和页面数组进行更改
+   */ 
+  addgreat:function(e){
+    var that = this;
+    var index=app.hdindex(e,'index');
+    let url = 'activity/hot/greatVideo';
+    let videoid = that.data.video[index].videoId;
+    getInformation.addgreat(url,undefined,videoid).then(res=>{
+      if(res.flag){
+        let great =  that.data.video[index].great+1;
+        that.setData({
+          ['video['+index+'].dianzhan']:res.flag,
+          ['video['+index+'].great']:great,
+        })
+      }else{
+        let great =  that.data.video[index].great-1;
+        that.setData({
+          ['video['+index+'].dianzhan']:res.flag,
+          ['video['+index+'].great']:great,
+        })
+      }
+    })
+  },
+
+  /**
+   * 跳转事件--使用自己封装的方法进行跳转
+   * 
+   */
+  Jumpvideo:function(e){
+    var that = this;
+    var index=app.hdindex(e,'index');
+    wx.showToast({
+      title: '视频还没准备好哦',
+      icon: 'none',
+      duration: 2000
+    })
+    // console.log('跳转到viedo页面',index,that.data.video[index]);
+    // let value = that.data.video[index];
+    // let url = 'video/video';
+    // getInformation.Jump(url,value);
+  },
+
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -207,8 +255,13 @@ Page({
    */
   onShow: function () {
     var that = this;
-    console.log(wx.getStorageSync('gerxinx').id);
-    getInformation.getstrategy(undefined,wx.getStorageSync('gerxinx').id).then(res=>{
+    let uid;
+    if(wx.getStorageSync('gerxinx')){
+         uid = wx.getStorageSync('gerxinx').id
+    }else{
+        uid = null
+    }
+    getInformation.getstrategy(undefined,uid).then(res=>{
       for(let i=0;i<res.data.length;i++){
         let data = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].update_time);
         res.data[i].update_time = data;
@@ -280,5 +333,8 @@ Page({
       }
     });
   }
+
+
+
 })
 

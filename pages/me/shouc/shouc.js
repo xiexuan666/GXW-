@@ -58,7 +58,7 @@ Page({
     }else if(ind == 2){
       cpxqzt = 2
       // 请求数据、需要做判断避免重复请求
-      getInformation.getProduct(2).then(res=>{
+      getInformation.getProduct(2).then(res=>{ 
         console.log(res)
         that.setData({
           product:res
@@ -287,7 +287,8 @@ Page({
   onLoad: function (options) {
     var that = this;
     // 请求产品
-    getInformation.getProduct().then(res=>{
+    console.log(wx.getStorageSync('gerxinx').id);
+    getInformation.getProduct(undefined,undefined,undefined,wx.getStorageSync('gerxinx').id).then(res=>{
       var arry = []
       console.log(res);
       for(let i=0;i<res.length;i++){

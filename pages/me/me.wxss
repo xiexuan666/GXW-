@@ -9,24 +9,7 @@ page {
 /* 头部 */
 .jinx-t {
   width: 100%;
-
-}
-
-.jinx-tnr {
-  position: relative;
-}
-
-.jinx-tnr .jinx_bgpic image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
-}
-
-.toux-img image {
-  height: 170rpx;
-  width: 170rpx;
+  background-color: #bababa;
 }
 
 .jinx-tnr {
@@ -62,17 +45,11 @@ page {
   float: right;
   padding-right: 80rpx;
   padding-top: 135rpx;
-  text-align: center;
-
-}
-
-.saoma {
-  font-size: 25rpx;
 }
 
 .jinx-sao image {
-  width: 60rpx;
-  height: 50rpx;
+  width: 90rpx;
+  height: 80rpx;
 }
 
 .toux-img {
@@ -115,7 +92,6 @@ page {
 .gernqb {
   width: 95%;
   margin: 0 auto;
-  position: relative;
 }
 
 .gernqb image {
@@ -126,8 +102,8 @@ page {
 
 .vcenter {
   position: absolute;
-  left: 38%;
-  top: 5%;
+  left: 40%;
+  top: 38%;
   font-size: 40rpx;
   color: #fff;
   font-weight: 300;
@@ -136,43 +112,25 @@ page {
 
 .balance {
   position: absolute;
-  left: 41%;
-  top: 35%;
+  left: 40%;
+  top: 47%;
   font-size: 28rpx;
   color: #fff;
   font-weight: 300;
   text-align: center;
-
-
-
 }
 
 .recharge {
-  display: flex;
-  /* padding: 19rpx 0; */
   position: absolute;
-  top: 73%;
+  top: 58%;
   font-size: 32rpx;
   color: #fff;
   font-weight: 300;
-  border-top: 1px solid #fff;
-
 }
 
 .top {
-  float: left;
-  position: relative;
-  padding: 25rpx 127rpx;
+  padding: 20rpx 140rpx;
 }
-.top  image {
-  float: right;
-  position: absolute;
-  top: 25rpx;
-  left: 65rpx;
-  width: 45rpx;
-  height: 45rpx;
-}
-
 
 .sum1 {
   font-size: 40rpx;
@@ -287,12 +245,14 @@ page {
 .list-item {
   height: 100%;
   display: flex;
-  margin: 50rpx 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px  dashed  #ccc;
-  border-radius: 15rpx;
-  padding: 50rpx  0;
+  padding-top: 100rpx;
+  border-radius: 5rpx;
 }
 
 .goods {
@@ -302,7 +262,7 @@ page {
 }
 
 .tab {
-  padding: 0 20rpx;
+  padding: 0 10rpx;
 
 }
 
@@ -318,8 +278,8 @@ page {
 
 .attrs2 {
   padding: 10rpx 0;
-  font-size: 23rpx;
-  font-weight: 200;
+  font-size: 25rpx;
+  font-weight: 300;
 }
 
 .collect {
@@ -327,21 +287,40 @@ page {
 }
 
 .collect image {
-  width: 130rpx;
-  height: 130rpx;
+  width: 150rpx;
+  height: 150rpx;
   border-radius: 50rpx;
 }
 
 .contact {
-  width: 30%;
-  margin-top: 20rpx;
-
-}
-.contact  image {
-  width: 175rpx;
-  height: 45rpx;
+  width: 40%;
 }
 
+.btn {
+  display: flex;
+  color: #fff;
+  font-size: 19rpx;
+  font-weight: 300;
+  background-color: #d0111b;
+  margin: 20rpx 20rpx;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.btn image {
+  align-items: center;
+  text-align: center;
+  width: 25rpx;
+  height: 25rpx;
+  padding: 0 5rpx;
+}
+
+/* .attrs {
+  display: flex;
+  align-items: center;
+  text-align: center;
+} */
 
 .attrs image {
   width: 25rpx;

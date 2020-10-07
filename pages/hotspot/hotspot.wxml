@@ -20,7 +20,7 @@
 	<view class="history">
 		<block>
 			<view class="activity">
-				<image src="/images/tubiao/1-08.jpg"></image>
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
 			</view>
 			<view class="right">
 				<view class="right-li">
@@ -48,7 +48,7 @@
 <view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="registration">
 	<view class=" history">
 		<view class="activity">
-			<image src="/images/tubiao/1-01.jpg"></image>
+			<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
 		</view>
 		<view class="right">
 			<view class="right-li">
@@ -75,7 +75,7 @@
 <view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}'>
 	<view class="history">
 		<view class="activity">
-			<image src="/images/tubiao/1-14.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
 		</view>
 		<view class="right">
 			<view class="right-li">

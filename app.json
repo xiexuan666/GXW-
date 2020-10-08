@@ -61,7 +61,12 @@
     "pages/me/registration/registration",
     "pages/me/merchant/merchant",
     "pages/template/viedeocard/videocard",
-    "pages/video/video"
+    "pages/video/video",
+    "pages/me/guanli/manage/yuyue",
+    "pages/me/guanli/shoppers/shoppers",
+    "pages/me/guanli/information/information",
+    "pages/me/guanli/key/key",
+    "pages/me/guanli/column/column"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -84,7 +89,7 @@
         "pagePath": "pages/souye/souye",
         "text": "首页",
         "iconPath": "/images/tubiao/1-16.png",
-        "selectedIconPath": "/images/tubiao/111.png"
+        "selectedIconPath": "/images/tubiao/113.png"
       },
       {
         "pagePath": "pages/product/product",
@@ -102,7 +107,7 @@
         "pagePath": "pages/jinxs/jinxs",
         "text": "攻略",
         "iconPath": "/images/tubiao/1-18.png",
-        "selectedIconPath": "/images/tubiao/113.png"
+        "selectedIconPath": "/images/tubiao/111.png"
       },
       {
         "pagePath": "pages/me/me",

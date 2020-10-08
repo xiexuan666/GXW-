@@ -127,6 +127,12 @@ Page({
       url: '/pages/me/guanli/code/code',
     })
   },
+  // 跳转到预约信息
+  yuymanage: function () {
+    wx.navigateTo({
+      url: '/pages/me/guanli/manage/yuyue',
+    })
+  },
 
 
   /**

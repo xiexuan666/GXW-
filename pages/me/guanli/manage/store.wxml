@@ -52,7 +52,7 @@
 			<view class="me-list-li">
 				<view class="me-list-lil">详细地址</view>
 				<view class="me-list-lil">
-					<input class="form-lir-input dz" value="{{address}}" name="address" placeholder="请选择详细地址"></input>
+					<input class="form-lir-input dz" value="{{address}}" name="address"  placeholder="请选择地址"></input>
 				</view>
 				<view class="xuanzdz" bindtap="wzxuanz">选择地址</view>
 			</view>

@@ -82,7 +82,7 @@
 
 /* 评论主体 */
 .commentsContent {
-  height:1000rpx;
+  height: 1000rpx;
   overflow: scroll;
   width: 100vw;
   margin-top: 20rpx;
@@ -389,4 +389,75 @@
 .attrs image {
   width: 25rpx;
   height: 25rpx;
+}
+
+
+
+/* 店长名片 */
+.user {
+  display: flex;
+  height: 340rpx;
+  width: 95%;
+  position: relative;
+  flex-flow: row;
+  margin: 0 auto;
+
+}
+
+.management {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 60rpx 70rpx;
+}
+
+
+.user .list_pic {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+
+}
+
+.user_li {
+  margin-bottom: 25rpx;
+}
+
+.user_li text {
+  font-size: 40rpx;
+  font-weight: 700;
+
+}
+
+.info .info_l {
+  padding: 10rpx 0;
+  font-size: 26rpx;
+}
+
+
+.user_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_info .user_img .tx {
+  height: 100rpx;
+  width: 100rpx;
+  margin-bottom: 110rpx;
+}
+
+.modify {
+  margin-bottom: 10rpx;
+  border: 1px solid black;
+  padding: 10rpx;
+  border-radius: 15rpx;
+}
+
+.modify .xiug {
+  font-size: 26rpx;
+
 }

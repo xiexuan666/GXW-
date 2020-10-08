@@ -369,6 +369,49 @@
 					"id": -1,
 					"name": "我的二维码",
 					"pathName": "pages/me/guanli/code/code",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "预约信息",
+					"pathName": "pages/me/guanli/manage/yuyue",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户管理",
+					"pathName": "pages/me/guanli/customer/customer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "导购",
+					"pathName": "pages/me/guanli/shoppers/shoppers",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 47,
+					"name": "打包发送",
+					"pathName": "pages/me/guanli/information/information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "一键交接",
+					"pathName": "pages/me/guanli/key/key",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "交接客户",
+					"pathName": "pages/me/guanli/column/column",
+					"query": "",
 					"scene": null
 				}
 			]

@@ -81,7 +81,6 @@
 			<view class="title">
 				<image src="/images/tubiao/40.png" mode="aspectFit"></image>
 				<text>广东省佛山市禅城区南庄镇中国陶瓷总部基地</text>
-
 			</view>
 		</view>
 		<view class="num3">
@@ -139,6 +138,56 @@
 			<view class="contact">
 				<image src="/images/tubiao/lianxi.png"></image>
 				<image src="/images/tubiao/zaixian.png"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+
+
+
+
+<!-- 店长名片 -->
+<template name="users">
+	<view class="user">
+		<image class="list_pic" src="/images/tubiao/9.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+				<text>王店长</text>
+			</view>
+			<view class="info">
+				<view class="info_l">电话:13255555555</view>
+				<view class="info_l">职务:店长</view>
+				<view class="info_l">所属门店:季华路店</view>
+			</view>
+		</view>
+		<view class="user_info">
+			<view class="user_img">
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+<!-- 店长名片2222 -->
+<template name="manager">
+	<view class="user">
+		<image class="list_pic" src="/images/tubiao/9.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+				<text>王店长</text>
+			</view>
+			<view class="info">
+				<view class="info_l">电话:13255555555</view>
+				<view class="info_l">职务:店长</view>
+				<view class="info_l">所属门店:季华路店</view>
+			</view>
+		</view>
+		<view class="user_info">
+			<view class="user_img">
+				<image src="/images/tubiao/70.png" class="tx"></image>
 			</view>
 		</view>
 	</view>

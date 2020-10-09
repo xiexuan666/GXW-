@@ -122,6 +122,7 @@ page {
 
 .number {
   width: 100%;
+  text-align: center;
 
 }
 .number1 {

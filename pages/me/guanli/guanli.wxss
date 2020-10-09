@@ -67,8 +67,8 @@ page {
 }
 
 .jinx-sao image {
-  width: 70rpx;
-  height: 70rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 /* 头部 end*/
 

@@ -1,4 +1,8 @@
 /* 头部 */
+page {
+  background-color: #e7e7e7;
+}
+
 .jinx-t {
   width: 100%;
 }
@@ -45,11 +49,55 @@
 }
 
 .name-p {
-  color: #ffffff;
   text-align: center;
   margin-top: 20rpx;
-  font-size: 35rpx;
+  font-size: 30rpx;
   font-weight: 300;
 }
 
 /* 头部 end*/
+
+
+/* 卡片 */
+.jxsnr {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.jxsnr-ul {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30rpx 0;
+  border-radius: 25rpx;
+  position: absolute;
+  margin-top: -50rpx;
+
+
+}
+
+.jxsnr-ul-r {
+  font-size: 33rpx;
+  padding-left: 50rpx;
+  padding-top: 20rpx;
+}
+
+.jxsnr-li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 50rpx;
+  padding-top: 20rpx;
+}
+
+.jxsnr-tubiao image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.jxsnr-li-lp {
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  font-weight: 300;
+}

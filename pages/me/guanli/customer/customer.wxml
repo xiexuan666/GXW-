@@ -38,36 +38,47 @@
 
 
 
-<!-- 导购 -->
-<view class="shoppers" wx:if='{{cpxqzt==1}}'>
-	<view class="shoppers_r">
-
-		<view class="me-list-li">
-			<view class="me-list-lil">
-				<text class="names">谢会员</text>
-				<image src="/images/tubiao/tx.png"></image>
-			</view>
-			<view class="me-list-lir">
-				<text class="name">谢会员</text>
-				<image src="/images/tubiao/youj.png"></image>
-			</view>
-		</view>
-	</view>
-</view>
-
-
-
 
 <!-- 名片 -->
-<view class="card" wx:if='{{cpxqzt==2}}'>
+<view class="card" wx:if='{{cpxqzt==1}}'>
+
 	<view class="dh_r">
 		<view class="vip">头像　｜　</view>
 		<view class="vip">导购　｜</view>
 		<view class="vip">会员数</view>
 	</view>
-	<view class="shoppers" wx:if='{{cpxqzt==2}}'>
+	<view class="shoppers">
 		<view class="shoppers_r">
-			<view class="me-list-li">
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<checkbox value="all" bindtap="selectall" />
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+					<image src="/images/tubiao/wen.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="btn_r">
+		<button class="btn">删除</button>
+	</view>
+
+</view>
+
+
+
+
+
+
+<!-- 绑定获客 -->
+<view class="binding" wx:if='{{cpxqzt==2}}'>
+	<block>
+		<view class="binding_r">
+			<view class="customer">绑定获客</view>
+			<view class="me-list-l_i">
 				<view class="me-list-lil">
 					<text class="names">谢会员</text>
 					<image src="/images/tubiao/tx.png"></image>
@@ -78,9 +89,99 @@
 				</view>
 			</view>
 		</view>
+	</block>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
 	</view>
-
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
 </view>
+
+
+
+<!-- 系统获客 -->
+<view class="binding" wx:if='{{cpxqzt==2}}'>
+	<block>
+		<view class="binding_rr">
+			<view class="customers">系统获客</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
 
 
 

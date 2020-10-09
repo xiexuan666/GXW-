@@ -31,6 +31,9 @@
     "pages/me/pyquan/pyquan",
     "pages/hotspot/hotspot",
     "pages/hotspot/strategy/strategy",
+    "pages/hotspot/group/group",
+    "pages/hotspot/booking/booking",
+    "pages/hotspot/succeed/succeed",
     "pages/souye/souye3",
     "pages/me/ruzhu1/ruzhu2",
     "pages/me/zhuc/zhuc",
@@ -66,7 +69,8 @@
     "pages/me/guanli/shoppers/shoppers",
     "pages/me/guanli/information/information",
     "pages/me/guanli/key/key",
-    "pages/me/guanli/column/column"
+    "pages/me/guanli/column/column",
+    "pages/me/guanli/indent/indent"
   ],
   "window": {
     "backgroundTextStyle": "light",

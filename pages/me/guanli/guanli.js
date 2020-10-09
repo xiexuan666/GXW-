@@ -133,6 +133,12 @@ Page({
       url: '/pages/me/guanli/manage/yuyue',
     })
   },
+  //跳转到订单管理
+  ddanmanage: function () {
+    wx.navigateTo({
+      url: '/pages/me/guanli/indent/indent',
+    })
+  },
 
 
   /**

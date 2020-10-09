@@ -11,8 +11,18 @@ Page({
   data: {
     cpxqzt: 1,
     hiddenstrategy: 3,
-  },
+    select_all:false,
 
+  },
+  selectall: function() {//全选与反全选
+    var that = this;
+    for (let i = 0; i < that.data.listData.length; i++) {
+    that.data.listData[i].checked = (!that.data.select_all)}
+    that.setData({
+    listData: that.data.listData,
+    select_all: (!that.data.select_all)
+    })
+  },
 
   //产品详情导航选择
   cpxzxz: function (e) {
@@ -55,6 +65,7 @@ Page({
  
     this.setData({ cpxqzt: cpxqzt })
   },
+  
 
 
 

@@ -128,7 +128,7 @@
 			</view>
 
 			<view class="btn-area">
-				<button style="" formType="submit">提交申请</button>
+				<button style="" formType="submit">保存</button>
 			</view>
 
 

@@ -413,6 +413,34 @@
 					"pathName": "pages/me/guanli/column/column",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单管理",
+					"pathName": "pages/me/guanli/indent/indent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拼团活动",
+					"pathName": "pages/hotspot/group/group",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 52,
+					"name": "拼团活动2",
+					"pathName": "pages/hotspot/booking/booking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拼团活动3",
+					"pathName": "pages/hotspot/succeed/succeed",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

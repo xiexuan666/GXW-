@@ -93,7 +93,7 @@
 
 .name {
   font-size: 33rpx;
-  margin-left:50rpx;
+  margin-left: 50rpx;
   /* padding-right: 75rpx;
   color: #595757; */
 }
@@ -143,6 +143,17 @@
   justify-content: center;
   text-align: center;
 }
+.me-list-l_i {
+  width: 95%;
+  height: 90rpx;
+  padding-bottom: 38rpx;
+  margin-top: 10rpx;
+  /* background-color: #fafafa; */
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
 
 .me-list-lil {
   float: left;
@@ -192,16 +203,17 @@
 
 .me-list-lix {
   width: 95%;
-  height: 90rpx;
+  height: 95rpx;
   padding-bottom: 38rpx;
   background-color: #e7e7e7;
   margin: 0 auto;
   border-radius: 25rpx;
 
 }
-.names{
+
+.names {
   margin-left: auto;
-  padding-right:40rpx;
+  padding-right: 40rpx;
   font-size: 30rpx;
 }
 
@@ -255,8 +267,12 @@
   width: 85%;
   margin: 0 auto;
   height: 30rpx;
+}
 
-
+.btn_r {
+  width: 85%;
+  margin: 50rpx auto;
+  height: 30rpx;
 }
 
 .btn {
@@ -289,6 +305,7 @@
   width: 95%;
   margin: 30rpx auto;
 }
+
 .vip {
-  padding: 0  20rpx;
+  padding: 0 20rpx;
 }

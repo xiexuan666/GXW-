@@ -1,4 +1,4 @@
-@import '/pages/template/loginphone/loginphone.wxss';
+
 
 page {
   background-color: #e7e7e7;

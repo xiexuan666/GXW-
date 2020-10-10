@@ -26,8 +26,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    baseUrl: "http://192.168.0.105:8087/gxwslyk/",
-    // baseUrl:"https://md.juesedao.com/gxwslyk/",
+    // baseUrl: "http://192.168.0.105:8087/gxwslyk/",
+    baseUrl:"https://md.juesedao.com/gxwslyk/",
     // baseUrl:"http://192.168.0.160:8087/gxwslyk/",
     dtkey: '77ABZ-KQC62-FVJUB-C7TTO-4DX6T-7WB2J',
     http: http,
@@ -246,6 +246,7 @@ App({
           })
           // 将地址返回
           resolve(res.result)
+          console.log(res,"地址获得地区")
         },
       })
     })

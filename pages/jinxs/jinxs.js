@@ -1,4 +1,3 @@
-const { addgreat } = require("../../utils/getInformation");
 
 const app = getApp();
 const http = app.globalData.http;
@@ -256,13 +255,8 @@ Page({
    */
   onShow: function () {
     var that = this;
-    let uid;
-    if(wx.getStorageSync('gerxinx')){
-         uid = wx.getStorageSync('gerxinx').id
-    }else{
-        uid = null
-    }
-    getInformation.getstrategy(undefined,uid).then(res=>{
+    console.log(wx.getStorageSync('gerxinx').id);
+    getInformation.getstrategy(undefined,wx.getStorageSync('gerxinx').id).then(res=>{
       for(let i=0;i<res.data.length;i++){
         let data = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].update_time);
         res.data[i].update_time = data;
@@ -334,8 +328,5 @@ Page({
       }
     });
   }
-
-
-
 })
 

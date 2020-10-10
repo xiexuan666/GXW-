@@ -554,7 +554,6 @@ appraise-content view text:nth-child(2) {
   width: 90rpx;
   height: 90rpx;
   border-radius: 50%;
-  /* background: #eee; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -562,7 +561,7 @@ appraise-content view text:nth-child(2) {
   font-size: 12px;
   position: fixed;
   right: 67rpx;
-  bottom: 450rpx;
+  bottom: 490rpx;
 }
 
 .toTop image {
@@ -614,7 +613,6 @@ appraise-content view text:nth-child(2) {
 .Top_Good .Top_Good_Text {
   /* display:block; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex: 1;
   text-align: right;

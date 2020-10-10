@@ -1,0 +1,42 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+
+<!-- 卡片 -->
+<view class="jxsnr">
+	<view class="jxsnr-ul">
+		<view class="jxsnr-ul-r">
+			汪会员
+		</view>
+		<view class="jxsnr-li">
+			<view class="jxsnr-tubiao tu1">
+				<image mode="heightFix" src="/images/tubiao/46.png"></image>
+			</view>
+			<view class="jxsnr-li-lp">1355555555</view>
+		</view>
+		<view class="jxsnr-li">
+			<view class="jxsnr-tubiao tu1">
+				<image mode="heightFix" src="/images/tubiao/40.png"></image>
+			</view>
+			<view class="jxsnr-li-lp">佛山市禅城区禅城区禅城区禅城区禅城区</view>
+		</view>
+		<view class="jxsnr-li">
+			<view class="jxsnr-tubiao tu1">
+				<image mode="heightFix" src="/images/tubiao/46.png"></image>
+			</view>
+			<view class="jxsnr-li-lp">2020-03-22</view>
+		</view>
+	</view>
+</view>

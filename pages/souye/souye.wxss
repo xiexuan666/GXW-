@@ -1,3 +1,4 @@
+@import '/pages/template/comments/comments.wxss';
 /* 轮播图 */
 .lbswiper {
   height: 540rpx;
@@ -56,8 +57,8 @@
 }
 
 .daoh-li-p {
-  font-size: 30rpx;
-  font-weight: 300;
+  font-size: 27rpx;
+  font-weight: 700;
   text-align: center;
 
 
@@ -127,7 +128,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top:5rpx;
+  margin-top: 5rpx;
   height: 100%;
 }
 
@@ -155,6 +156,7 @@
 
 .lanbai {
   padding: 0 10rpx;
+  font-weight: 300;
 }
 
 .jxsnr-li-lp2 {
@@ -182,15 +184,11 @@
   width: 35rpx;
   height: 35rpx;
 }
-.xingx{
-  display: flex;
-  flex-direction: row;
-}
+
 .xingx image {
   padding: 0 15rpx;
   width: 35rpx;
   height: 35rpx;
-  margin-top: -10rpx;
 }
 
 .shuzi {
@@ -231,7 +229,7 @@
 .simple-li {
   color: #595757;
   margin-top: 3rpx;
-  padding-left:20rpx;
+  padding-left: 20rpx;
 }
 
 .jxsnr-li-lp {
@@ -242,11 +240,13 @@
   flex: 1;
 
 }
-.jxsnr-li-r{
+
+.jxsnr-li-r {
   padding-right: 20rpx;
 }
 
 .simple-ul {
+  font-size: 29rpx;
   font-weight: 300;
 }
 
@@ -282,7 +282,7 @@
 }
 
 .jxsnr-li-r {
-  font-size: 28rpx;
+  font-size: 24rpx;
   font-weight: 300;
   color: #595757;
 }
@@ -361,13 +361,13 @@
   align-items: center;
   font-weight: 300;
   margin: 0 10rpx;
-  padding: 20rpx 0;
+  /* padding: 20rpx 0; */
 }
 
 .portrait image {
-  width: 100rpx;
-  height: 100rpx;
-  border-radius: 50rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
 }
 
 .tup {
@@ -379,15 +379,9 @@
   height: 25rpx;
 }
 
-.lister image {
-  width: 25rpx;
-  height: 25rpx;
-}
 
-.zix image {
-  width: 25rpx;
-  height: 25rpx;
-}
+
+
 
 .boda {
 
@@ -399,31 +393,6 @@
   padding: 20rpx 20rpx;
 }
 
-
-.lister {
-  background-color: #bd8f60;
-  font-size: 22rpx;
-  font-weight: 300;
-  width: 200rpx;
-  color: #fff;
-  border-radius: 15rpx;
-  margin: -8rpx 0;
-  align-items: center;
-  text-align: center;
-}
-
-.zix {
-  background-color: #bd8f60;
-  font-size: 22rpx;
-  font-weight: 300;
-  width: 200rpx;
-  color: #fff;
-  border-radius: 15rpx;
-  margin: 20rpx 0;
-  align-items: center;
-  text-align: center;
-
-}
 
 
 /*模态框*/
@@ -529,22 +498,70 @@
 
 /* 生成海报 */
 .erweima {
-  align-items: center;
-  text-align: center;
+  margin-top: 60rpx;
+  width: 100%;
   display: flex;
   border-bottom: 1px solid #ccc;
 }
 
-.poster image {
-  width: 50rpx;
-  height: 50rpx;
-}
-
 .poster {
-  margin: 30rpx auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
   align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.poster image {
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+button[class="poster"]::after {
+  border: 0;
+}
+
+button[class="poster m_l"]::after {
+  border: 0;
+}
+
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+
+.baocun {
+  display: block;
+  width: 80%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #fdd668;
 
 }
+
+button[class="baocun"]::after {
+  border: 0;
+}
+
+
 
 .haib {
   padding: 20rpx 0;
@@ -564,47 +581,42 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .imagePathBox {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: #000;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+  margin: 0 auto;
 }
 
 .shengcheng {
-  width: 80%;
+  width: 80vw;
   height: 80%;
-  position: fixed;
-  top: 50rpx;
-  left: 50%;
-  margin-left: -40%;
-  z-index: 10;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 5%;
 }
 
 .baocun {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 52%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+  z-index: 10;
+}
+.baocuns {
   display: block;
   width: 35%;
   height: 70rpx;
@@ -618,7 +630,7 @@
   font-size: 32rpx;
   border-radius: 24rpx;
   background: #bd8f60;
-
+  z-index: 10;
 }
 
 button[class="baocun"]::after {
@@ -645,16 +657,28 @@ button[class="baocun"]::after {
 
 /* 新加的样式 */
 /* card */
-.tuijxilicard{
+.tuijxilicard {
   width: 100%;
 }
-.tuijxiliCardTop{
+
+.tuijxiliCardTop {
   width: 100%;
   /* background: indigo; */
-  display:block;
-  padding-top:20rpx;
+  display: block;
+  padding-top: 20rpx;
 }
-.tuijxiliCardTop image{
+
+.tuijxiliCardTop image {
   width: 100%;
-  display: block;  
+  display: block;
+}
+
+/* mask遮罩层样式 */
+.mask {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  top: 0;
+  left: 0;
 }

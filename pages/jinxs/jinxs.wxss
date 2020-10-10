@@ -1,3 +1,4 @@
+
 @import '/pages/template/viedeocard/videocard.wxss';
 .product-cpanli {
   width: 100%;
@@ -5,7 +6,7 @@
 }
 
 .cpanli-nr {
-  padding-top: 20rpx;
+  /* padding-top: 20rpx; */
   overflow: hidden;
   width: 700rpx;
   margin: 0rpx auto;
@@ -294,3 +295,4 @@
 .active{
   color: black;
 }
+

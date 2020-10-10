@@ -4,22 +4,21 @@
 		<view class="xinz" bindtap="address">
 			<view class="diz">+新增收货地址</view>
 		</view>
-		<view class="address-li">
+		<!-- <view class="address-li">
 			<view class="tupian">
 				<image src="/images/tubiao/1-24.png"></image>
-			</view>
+			</view> -->
 
 			<!-- 搜索产品 -->
-			<view class="sous">
+			<!-- <view class="sous">
 				<view class="sous-nr" bindtap="tzsous">
-					<image src="/images/tubiao/sous.png"></image>
+					<image src="/images/tubiao/sous.png" bindtap="list"></image>
 					<input placeholder="请输入您的收货地址"></input>
 				</view>
 			</view>
-		</view>
+		</view> -->
 	</view>
 </view>
-
 
 
 
@@ -28,9 +27,34 @@
 	<view class="meaddress-li">
 		<view class="diz">
 			<image src="/images/tubiao/1-16.png"></image>
-			<text>我的收获地址</text>
+			<text>我的收货地址</text>
 		</view>
 
+
+		<block wx:for='{{list}}' wx:index='index' wx:item='item'>
+		<view class="list">
+			<view class="listIcon">
+				<view class="icon">默认</view>
+			</view>
+			<view class="listIamger">
+				<image src="{{list[0].wx_photo}}" mode="scaleToFill"></image>
+			</view>
+			<view class="listContent">
+				<view class="title">
+					{{item.name}} 	{{item.phone}}
+				</view>
+				<view class="text">
+					{{item.sheng}}
+					{{item.city}}
+					{{item.region}}
+					{{item.address}}
+				</view>
+			</view>
+			<view class="listFunction">
+				<text bindtap="Modify" data-index="{{index}}"> 编辑 </text>
+			</view>
+		</view>
+		</block>
 	</view>
 
 

@@ -61,7 +61,10 @@
     "pages/me/registration/registration",
     "pages/me/merchant/merchant",
     "pages/template/viedeocard/videocard",
-    "pages/video/video"
+    "pages/video/video",
+    "pages/activity/free",
+    "pages/template/ActivityTemplate/ActivityTemplate",
+    "pages/me/update/shoppersupdate/shoppersupdate"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -23,6 +23,7 @@
 
 
 
+
 <!-- 选择案例头部 -->
 <view class="xuanz" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="xuanz-nr">
@@ -46,7 +47,6 @@
 	</view>
 </view>
 <!-- 选择end -->
-
 
 <!-- 全国案例 -->
 <view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>

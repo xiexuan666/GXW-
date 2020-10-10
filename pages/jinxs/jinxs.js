@@ -230,15 +230,16 @@ Page({
   Jumpvideo:function(e){
     var that = this;
     var index=app.hdindex(e,'index');
-    wx.showToast({
-      title: '视频还没准备好哦',
-      icon: 'none',
-      duration: 2000
-    })
-    // console.log('跳转到viedo页面',index,that.data.video[index]);
-    // let value = that.data.video[index];
-    // let url = 'video/video';
-    // getInformation.Jump(url,value);
+    console.log(index);
+    // wx.showToast({
+    //   title: '视频还没准备好哦',
+    //   icon: 'none',
+    //   duration: 2000
+    // })
+    console.log('跳转到viedo页面',index,that.data.video[index]);
+    let value = that.data.video[index];
+    let url = 'video/video';
+    getInformation.Jump(url,value);
   },
 
 

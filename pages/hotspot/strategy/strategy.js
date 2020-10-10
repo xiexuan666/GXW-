@@ -9,12 +9,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    strategy:[],
+    strategy: [],
     // 收藏icon的状态值
-    Collectionstate:false,
+    Collectionstate: false,
     // 评论参数
-    Common:[],
-    InputText:'快来评论吧',
+    Common: [],
+    InputText: '快来评论吧',
   },
 
   /**
@@ -26,19 +26,19 @@ Page({
     // 添加查看量
     let url = 'activity/strategy/strategyPreview';
     let strategyId = strategy.id;
-    getInformation.addCollection(url,strategyId);
+    getInformation.addCollection(url, strategyId);
     // 添加到data进行渲染
     that.setData({
-      strategy:strategy
+      strategy: strategy
     })
     // 判断是否已经收藏
-    if(strategy.collection){
+    if (strategy.collection) {
       that.setData({
-        Collectionstate:true
+        Collectionstate: true
       })
-    }else{
+    } else {
       that.setData({
-        Collectionstate:false
+        Collectionstate: false
       })
     }
 
@@ -49,52 +49,45 @@ Page({
     *评论框的所有功能
 
   */
-// 实时获取评论输入框内容
-  getText:function(e){
+  // 实时获取评论输入框内容
+  getText: function (e) {
     var value = e.detail.value
     this.setData({
-      InputText:value
+      InputText: value
     });
   },
-// 点击评论功能
-  common:function(){
+  // 点击评论功能
+  common: function () {
     var that = this;
     // 检查文本内容
     let text = that.data.InputText;
     console.log(that.data.InputText)
-    if(text.length == 0){
+    if (text.length == 0) {
       console.log("文本不能为空")
-    }else{
-      let url = baseUrl+"activity/strategy/commonStrategy";
+    } else {
+      let url = baseUrl + "activity/strategy/commonStrategy";
       let data = {
         userId: wx.getStorageSync('gerxinx').id,
-        strategyId:that.data.strategy.id,
-        brandId:app.globalData.brandid,
-        common:text,
+        strategyId: that.data.strategy.id,
+        brandId: app.globalData.brandid,
+        common: text,
       }
-      http.promisServer(url,data).then(res=>{
-        if(res.flag){
-        wx.showLoading({
-            title: '评论成功',
-            mask:true
-        })
-        //更新评论
-        that.onShow();
-        // 清空Input输入框
-        that.setData({
-          InputText:'快来评论吧'
-        })
-        setTimeout(function () {
-          wx.hideLoading()
-        },500)
-        }else{
+      http.promisServer(url, data).then(res => {
+        if (res.flag) {
           wx.showLoading({
-            title: '评论失败',
-            mask:true
-        })
-        setTimeout(function () {
-          wx.hideLoading()
-        },500)
+            title: '评论成功',
+          })
+          //更新评论
+          that.onShow();
+          // 清空Input输入框
+          that.setData({
+            InputText: '快来评论吧'
+          })
+          setTimeout(function () {
+            wx.hideLoading()
+          }, 500)
+        } else {
+          console.log('评论失败');
         }
       })
       // 获取评论区的高度
@@ -103,50 +96,49 @@ Page({
     }
   },
   // 获得焦点时，清空输入框
-  clearInput:function(){
+  clearInput: function () {
     var that = this;
     console.log('清空输入框');
     that.setData({
-      InputText:''
+      InputText: ''
     });
   },
 
-  
+
   /* 
     *点赞功能
   */
-  addgreat:function(){
+  addgreat: function () {
     var that = this;
     console.log('点赞了');
     // url
     let url = 'activity/strategy/greatStrategy'
     // 攻略id
-    let strategyId= that.data.strategy.id;
-    getInformation.addgreat(url,strategyId).then(res=>{
+    let strategyId = that.data.strategy.id;
+    getInformation.addgreat(url, strategyId).then(res => {
+      console.log(res);
       that.setData({
-        'strategy.dianzhan':res.flag
+        'strategy.dianzhan': res.flag
       })
       // 点赞人数判断
       let num = that.data.strategy.great;
-      if(res.flag){
+      if (res.flag) {
         that.setData({
-          'strategy.great':num+1
-        });
-        wx.showToast({ title: '点赞成功', icon: 'none', duration: 500 ,mask:true})
-      }else{
-        that.setData({
-          'strategy.great':num-1
+          'strategy.great': num + 1
         })
-        wx.showToast({ title: '点赞失败', icon: 'none', duration: 500 ,mask:true})
+      } else {
+        that.setData({
+          'strategy.great': num - 1
+        })
       }
     })
   },
- 
 
 
 
 
-// 富文本转换函数
+
+  // 富文本转换函数
   gonglue: function (req) {
     // var tha = this
     // var url = baseUrl + 'banner/index'
@@ -172,14 +164,14 @@ Page({
     // var that = this;
     // WxParse.wxParse('article', 'html', article, that);
   },
-  
+
   // 跳转到海报
-  handleToTop:function(){
+  handleToTop: function () {
     wx.navigateTo({
       url: '/pages/souye/poster/poster',
     })
-      },
-    
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -196,10 +188,11 @@ Page({
     let url = 'activity/strategy/findAllCommon';
     let strategyId = this.data.strategy.id;
     console.log(strategyId);
-    
-    getInformation.setCommon(url,strategyId).then(res=>{
+
+    getInformation.setCommon(url, strategyId).then(res => {
       that.setData({
-        Common:res.data
+        Common: res.data
+        
       })
 
       // 对点赞进行判断和赋值
@@ -216,7 +209,7 @@ Page({
       //     let wx_photo = [];
       //     wx_photo.push(res.data[i].wx_photo);
       //     console.log(wx_photo);
-        // }
+      // }
       // }
       // res.data.forEach(function(item,index){
       //   console.log(item,index);
@@ -225,7 +218,7 @@ Page({
       //   // }else{
       //   //   console.log(item[index].wx_photo);
       //   // }
-        
+
       // })
     });
   },
@@ -265,18 +258,18 @@ Page({
 
   },
   // 收藏攻略
-  Collection:function(){
+  Collection: function () {
     var that = this;
-    var strategyId = that.data.strategy.id; 
-    getInformation.setCollection(strategyId).then(res=>{
+    var strategyId = that.data.strategy.id;
+    getInformation.setCollection(strategyId).then(res => {
       // 改变星星状态
-      if(res.flag){
+      if (res.flag) {
         that.setData({
-          Collectionstate:true
+          Collectionstate: true
         })
-      }else{
+      } else {
         that.setData({
-          Collectionstate:false
+          Collectionstate: false
         })
       }
     });

@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"enhance": false,
 		"postcss": true,
@@ -212,9 +212,9 @@
 					"scene": null
 				},
 				{
-					"id": 21,
-					"name": "pages/jinxs/jinxs",
-					"pathName": "pages/jinxs/jinxs",
+					"id": -1,
+					"name": "热点视频",
+					"pathName": "pages/hotspot/hotspot",
 					"query": "",
 					"scene": null
 				},
@@ -374,9 +374,15 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/video/video",
-					"pathName": "pages/video/video",
+					"name": "免费活动",
+					"pathName": "pages/activity/free",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册页面",
+					"pathName": "pages/me/zhuc/zhuc",
 					"scene": null
 				}
 			]

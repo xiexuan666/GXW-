@@ -6,6 +6,14 @@ Page({
    */
   data: {
     list:[],
+    comments:false,
+    functionlist:[
+      {imagurl:'/images/tubiao/wechat.png'},
+      {imagurl:'/images/tubiao/12-12.png'},
+      {imagurl:'/images/tubiao/common.png'},
+      {imagurl:'/images/tubiao/fx.png'},
+      {imagurl:'/images/tubiao/download.png'},
+    ]
   },
 
   /**
@@ -13,8 +21,10 @@ Page({
    */
   onLoad: function (options) {
     console.log(JSON.parse(options.value));
+    let photo = JSON.parse(options.value).wx_photo
     this.setData({
-      list:JSON.parse(options.value)
+      list:JSON.parse(options.value),
+      ['functionlist['+0+'].imagurl']:photo
     })
   },
 

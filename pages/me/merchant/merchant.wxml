@@ -1,7 +1,8 @@
-<view class="shenqmot">
+<block wx:if='{{status == 0}}'>
+<view class="shenqmot" >
 	<view class="shenqmot-nr" catchtap="zhuzi">
 		<view class="gxw">
-			<image src="/images/tubiao/gxw.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 		</view>
 
 
@@ -34,3 +35,15 @@
 		</view>
 	</view>
 </view>
+</block>
+<block wx:if='{{status == 1}}'>
+	<text>{{text}}</text>
+</block>
+<block wx:if='{{status == 2}}'>
+	<text>{{text}}
+		</text>
+</block>
+<block wx:if='{{status == 3}}'>
+	<text>
+	{{text}}</text>
+</block>

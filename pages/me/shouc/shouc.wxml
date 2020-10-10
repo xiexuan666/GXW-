@@ -1,11 +1,12 @@
+<!-- 头部 -->
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
@@ -23,7 +24,7 @@
 				个人收藏
 				<view class="cpanli-nr-lid"></view>
 			</view>
-				<view class="cpanli_content">|</view>
+			<view class="cpanli_content">|</view>
 			<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
 				导购推送
 				<view class="cpanli-nr-lid"></view>
@@ -41,14 +42,14 @@
 					<view class="cpxq-dhnrp-round {{cpxqzt==1?'cpxq-round':''}}">
 						<view class="cpxq-dhnrp-text">产品</view>
 					</view>
-					</view>
+				</view>
 				<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}} " data-ind="{{2}}" bindtap="cpxzxz">
-				<view class="cpxq-dhnrp-round {{cpxqzt==2?'cpxq-round':''}}" >
+					<view class="cpxq-dhnrp-round {{cpxqzt==2?'cpxq-round':''}}">
 						<view class="cpxq-dhnrp-text">案例</view>
 					</view>
-					</view>
+				</view>
 				<view class="cpxq-dhnrp cpxqp3 {{cpxqzt==3?'active':''}} " data-ind="{{3}}" bindtap="cpxzxz">
-				<view class="cpxq-dhnrp-round {{cpxqzt==3?'cpxq-round':''}}">
+					<view class="cpxq-dhnrp-round {{cpxqzt==3?'cpxq-round':''}}">
 						<view class="cpxq-dhnrp-text">攻略</view>
 					</view>
 				</view>
@@ -76,7 +77,7 @@
 	<view class="cpbottom-nr" wx:if='{{cactiv==1&&cpxqzt==1}}'>
 		<view class="cpbottom-nrul">
 			<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
-				<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" wx:if='{{item.tname == select || select == selecif}}'>	
+				<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" wx:if='{{item.tname == select || select == selecif}}'>
 					<view class="cpbottom-img">
 						<image mode="scaleToFill" lazy-load="{{true}}" mode="scaleToFill" src="{{item.product_url}}">
 						</image>
@@ -99,7 +100,7 @@
 	<view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==2}}'>
 		<view class="anlilist-ul">
 			<block>
-				<view wx:for="{{product}}"  wx:for-index="index" wx:for-item="item" wx:key="index" class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
+				<view wx:for="{{product}}" wx:for-index="index" wx:for-item="item" wx:key="index" class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
 					<view class="anlilist-liimg">
 						<image mode="aspectFill" src="{{item.photo}}"></image>
 					</view>
@@ -112,7 +113,7 @@
 							<view class="liser">
 								<view class="tubiaop">
 									<view class="fenxiang">
-										<image src="/images/tubiao/1-11.png"></image>
+										<image src="/images/tubiao/fangx.png"></image>		
 									</view>
 								</view>
 							</view>
@@ -142,7 +143,7 @@
 	<view class="list" wx:if='{{cactiv==1&&cpxqzt==3}}'>
 		<block>
 			<navigator wx:for='{{strategy}}' wx:for-index="index" wx:for-item="item" wx:key="index" url="/pages/hotspot/strategy/strategy?id=1" class="goods-list">
-			{{item.name}}
+				{{item.name}}
 				<image src="/images/tubiao/1-08.jpg">
 				</image>
 				<view class="goods-list-right">

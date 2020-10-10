@@ -236,10 +236,10 @@ page {
   padding-bottom:50rpx;
 
 }
-
+/* 
 .cpbottom-nrli.zuo {
-  /* margin-right: 25rpx; */
-}
+  margin-right: 25rpx;
+} */
 
 .cpbottom-img {
   width: 100%;
@@ -280,7 +280,7 @@ page {
   right: 0rpx;
   top: -50rpx;
   flex: 1;
-  padding-bottom: 10rpx;
+  padding-bottom: 20rpx;
 }
 
 .shouc .img {
@@ -314,11 +314,12 @@ page {
 /* 产品end */
 /* 案例列表 */
 .anlilist {
-  margin-top:50rpx;
+  margin-top: 38rpx;
   padding-bottom:15rpx;
 }
 
 .anlilist-ul {
+  /* width: 700rpx; */
   margin: 0 auto;
 }
 
@@ -395,7 +396,7 @@ page {
 
 .simple-li {
   color: #595757;
-  font-size: 28rpx;
+  font-size: 27rpx;
   font-weight: 300;
 }
 
@@ -495,17 +496,17 @@ page {
   height: 35rpx;
 }
 
+.fenxiang {
+  padding-left: 120rpx;
+
+}
 .fenxiang image {
   padding: 0 15rpx;
   width: 35rpx;
   height: 35rpx;
 }
 
-.shouc image {
-  /* padding: 0 15rpx; */
-  /* width: 35rpx;
-  height: 35rpx; */
-}
+
 
 .xingx image {
   padding: 0 15rpx;
@@ -654,10 +655,6 @@ page {
 }
 
 /* 新增样式 */
-
-.list{
-  margin-top: 50rpx;
-}
 .cpanli_content{
   margin-top: 10rpx;
   color: #888888;

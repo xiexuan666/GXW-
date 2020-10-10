@@ -527,12 +527,9 @@ function toubu(myData,keys,data,canpxuanz){
 //动态计算头部0
 function toubu0(myData,keys,data,canpxuanz){
   
-  var xuanzjig=arrlength(canpxuanz);
-  console.log('选中的id值：',canpxuanz);
+  var xuanzjig=arrlength(canpxuanz)
   var idjh=''
-  console.log('所有的数据',keys);
   for(var c=0;c<keys.length;c++){ 
-    // 二重筛选
     for(var d=0;d<keys[c].children.length;d++){
       
       if(canpxuanz[c]){

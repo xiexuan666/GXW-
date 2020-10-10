@@ -1,4 +1,5 @@
 @import "/wxParse/wxParse.wxss";
+
 .banner {
   margin-top: 50rpx;
 }
@@ -57,6 +58,7 @@
   text-align: center;
   color: #ccc;
 }
+
 /* 底部的收藏 */
 .title {
   width: 700rpx;
@@ -66,7 +68,7 @@
 .title {
   display: flex;
   background: #bd8f60;
-  margin-top: 203rpx;
+  /* margin-top: 203rpx; */
   height: 100rpx;
   text-align: center;
   justify-content: center;
@@ -75,76 +77,90 @@
 }
 
 
-.list-right image {
+.list-right .image {
   width: 50rpx;
   height: 50rpx;
-    padding: 0 30rpx;
+  padding: 0 30rpx;
 }
 
 .list-right {
   display: flex;
   align-items: center;
   text-align: center;
-  
+
 }
+
 .character {
-  padding: 0  10rpx;
+  padding: 0 10rpx;
   color: #fff;
   font-weight: 300;
 }
+
 /* 底部名片 */
-.list-item {
+.list-item6 {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50rpx 0;
+  margin: 30rpx 0;
   box-sizing: border-box;
   background-color: #ffffff;
-  padding-top: 100rpx;
-  border-radius: 5rpx;
+
+
 }
+
 .goods {
   display: flex;
+  margin: 0 20rpx;
+  border: 1px dashed #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx 0;
 }
+
 .tab {
-  padding: 0 10rpx;
+  padding: 0 20rpx;
+
 }
+
 .attrs {
-  font-size: 20rpx;
+  font-size: 18rpx;
   font-weight: 300;
 }
+
 .attrs1 {
-  font-size: 30rpx;
+  font-size: 26rpx;
   font-weight: 300;
 }
+
 .attrs2 {
-  padding: 20rpx 0;
-  font-size: 27rpx;
-  font-weight: 300;
+  padding: 10rpx 0;
+  font-size: 23rpx;
+  font-weight: 200;
 }
 
-.collect image {
-  width: 50rpx;
-  height: 50rpx;
+.collect1 {
+  margin: 0 10rpx;
 }
 
-.contact {
-  width: 37%;
+.collect1 image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50rpx;
 }
-.btn {
-  color: #fff;
-  font-size: 19rpx;
-  font-weight: 300;
-  background-color: red;
-  margin: 20rpx 0;
+
+.contacts {
+  width: 30%;
+  margin-top: 20rpx;
+
 }
-.btn image {
-  align-items: center;
-  text-align: center;
+
+.contacts image {
+  width: 175rpx;
+  height: 45rpx;
+}
+
+
+.attrs image {
   width: 25rpx;
   height: 25rpx;
-  padding: 0  5rpx;
 }
 
 
@@ -152,37 +168,45 @@
 @import '/pages/template/comments/comments.wxss';
 
 /* 添加评论样式 */
-.Input{
+.Input {
   width: 100vw;
   /* background-color: chartreuse; */
   height: 50rpx;
   display: flex;
   flex-direction: row;
   position: relative;
+  margin-bottom: 55rpx;
 }
-.Input input{
+
+.Input input {
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   border-radius: 15rpx;
-  width:80%;
-  height:60rpx;
-  padding-left:60rpx;
-  font-size: 28rpx;
+  width: 80%;
+  height: 60rpx;
+  padding-left: 60rpx;
 }
-.Input .Icon{
-  height:40rpx;
+
+.Input .Icon {
+  /* height:40rpx;
   position: absolute;
   left: 55rpx;
-  top: 12.5rpx;
+  top: 12.5rpx; */
+  width: 100rpx;
+  height: 44rpx;
+  margin-left: 50rpx;
+  margin-right: 9rpx;
+  margin-top: 15rpx;
+  position: absolute;
 }
-.Input .button{
-  height:65rpx;
-  width:125rpx;
-  right:43.5rpx;
+
+.Input .button {
+  height: 64rpx;
+  /* width: 125rpx; */
+  right: 43.5rpx;
   position: absolute;
   background-color: #bd8f60;
   line-height: 62rpx;
-  font-size: 28rpx;
   z-index: 3;
   /* left: 55rpx; */
   /* top: 12.5rpx; */

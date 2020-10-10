@@ -1,0 +1,97 @@
+<template name="activity">
+	这是活动页面的模板
+	{{array[0]}}
+
+	<!-- 头部 -->
+	<view class="activityTop">
+		<view class="image">
+			<image src="/images/tubiao/89.png"></image>
+		</view>
+		<view class="text">
+			<view class="Title">
+				<text>活动主题页面</text>
+			</view>
+			<view class="content">
+				<text>画面尺寸比例:16:9</text>
+			</view>
+		</view>
+		<view class="Smalllabel">
+			<text>更改</text>
+		</view>
+	</view>
+
+	<!-- 表单 -->
+	<!-- 表单一 -->
+	<view class="form">
+		<view class="formLayout">
+			<!-- 表单标题 -->
+			<view class="form-title">
+				<p>标题</p>
+				<input class="inputs" type="text"></input>
+			</view>
+
+			<!-- 活动内容框 -->
+			<view class="form-richText">
+				<p>填补活动内荣/规则</p>
+				<input class="inputs"></input>
+			</view>
+
+			<!-- 活动基本内容设置 -->
+			<view class="basicContent">
+				<view class="inputSet">
+					<span class='text'>开始时间</span>
+					<picker class="picker" mode='date' bindchange="bindDateChange" bindcancel='pickEnd' value="{{date}}" start='{{date}}' end='2500-09-01'>
+						<!-- input框 -->
+						<input class="inputs" value="{{date}}"></input>
+					</picker>
+				</view>
+				<!--  -->
+				<view class="inputSet">
+					<span class='text'>结束时间</span>
+					<!-- input框 -->
+					<picker class="picker" mode='date' bindchange="bindDateChange" bindcancel='pickEnd' value="{{date}}" start='{{date}}' end='2500-09-01'>
+						<input class="inputs" value="{{date}}"></input>
+					</picker>
+				</view>
+				<!-- 获取地址 -->
+				<view class="inputSet">
+					<span class='text'>门店地址</span>
+					<!-- input框 -->
+					<input class="inputs" bindtap="getaddress" placeholder="{{addresstwo}}" placeholder-class="placeholderStyle"></input>
+				</view>
+
+				<view class="inputSet">
+					<span class='text'>详细地址</span>
+					<!-- input框 -->
+					<input class="inputs"></input>
+				</view>
+				<!--  -->
+				<view class="inputSet">
+					<span class='text'>邀请人数</span>
+					<!-- input框 -->
+					<input class="inputs"></input>
+				</view>
+				<!--  -->
+				<view class="inputSet">
+					<span class='text'>佣金设置</span>
+					<!-- input框 -->
+					<input class="inputs"></input>
+				</view>
+				<!--  -->
+				<view class="inputSet">
+					<span class='text'>活动详情图</span>
+					<!-- input框 --> 
+					<view class="choseImage">
+						<view class="choose"></view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<!-- 底部按钮 -->
+
+	<view class="form-submit">
+		<button class="bottom">活动预览</button>
+	</view>
+</template>

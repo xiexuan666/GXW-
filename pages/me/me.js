@@ -2,6 +2,7 @@
 const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
+const global = app.globalData.global;
 Page({
 
   /**
@@ -21,14 +22,12 @@ Page({
     sjzt: { status: 0 },
     //当前状态
     status: 0,
-
+    ruzhu:false
   },
   //个人列表跳转
 
   melisttz: function (e) {
-    console.log(e)
     var ind = app.hdindex(e, 'ind')
-    console.log(ind)
     switch (ind) {
       case '0':
         var gerxinx = wx.getStorageSync('gerxinx')
@@ -110,6 +109,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    // 判断版本状态，是否显示商家信息
+    if(app.globalData.status == 1){
+      that.setData({
+        ruzhu:true
+      })
+      // 版本显示时才去请求商家信息
+      global.getmerchants();
+    }else{
+      that.setData({
+        ruzhu:false
+      })
+    }
 
   },
 
@@ -125,12 +137,10 @@ Page({
    */
   onShow: function () {
     if (!app.globalData.status) {
-      console.log('你进来了')
       app.banbzt().then(resc => {
         this.setData({ status: app.globalData.status })
       })
     } else {
-      console.log('你没进来')
       this.setData({ status: app.globalData.status })
     }
 
@@ -256,4 +266,23 @@ Page({
       tha.setData({ sj: true, gerxinx: res })
     })
   },
+
+  openCamera:function(){
+    console.log('打开相机');
+    wx.scanCode({
+      onlyFromCamera:true,
+      success (res) {
+        console.log(res)
+        console.log(res.path);
+        wx.navigateTo({
+          url:'/'+res.path,
+        })
+        
+      },
+      fail(e){
+        console.log(e);
+      }
+    })
+    
+  }
 })

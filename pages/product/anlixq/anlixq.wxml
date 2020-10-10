@@ -8,14 +8,14 @@
 	<!-- 列表框 -->
 	<view class="wenzi">
 		<view class="wenzis">
-		<view class="wenzis_label">标签</view>
-		{{pagesubscript.type_name}} · {{pagesubscript.huxing}}
-		<view class="wenzis_left"></view>
+			<view class="wenzis_label">标签</view>
+			{{pagesubscript.type_name}} · {{pagesubscript.huxing}}
+			<view class="wenzis_left"></view>
 		</view>
 		<view class="wenzis">
 			<view class="wenzis_label">面积</view>
 			{{pagesubscript.mianji}}㎡
-				<view class="wenzis_left"></view>
+			<view class="wenzis_left"></view>
 		</view>
 		<view class="wenzis">
 			<view class="wenzis_label">地区</view>
@@ -30,14 +30,14 @@
 <view class="total">
 	<view class="check">
 		<view class="anl">
-		<view class="case_round"></view>
-		案列简介
+			<view class="case_round"></view>
+			案列简介
 		</view>
 		<view class="prices">
 			{{pagesubscript.case_synopsis}}
 		</view>
 		<view class="header">
-			<image mode="widthFix" bindtap="dakerw" src="/images/tubiao/1-08.jpg"></image>
+			<image mode="widthFix" bindtap="dakerw" src="https://cdn.juesedao.cn/gxw/ridianshiping.jpg"></image>
 		</view>
 	</view>
 </view>
@@ -47,40 +47,23 @@
 
 
 
-<scroll-view scroll-x="true">
-	<view class="banner" scroll-x="true">
+
+<view class="banner">
+	<view class="keting">
 		<view class="chanp">
 			<view class="case_round"></view>
 			选用产品
 		</view>
-		<block wx:key="index1" wx:for-item="item" wx:for-index="index1" >
+		<view class="ket">
 			<view class="cizhuan">
 				<image src="/images/tubiao/9.png"></image>
 				<view class="lists-item">客厅-V157J939P</view>
 			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-			<view class="cizhuan">
-				<image src="/images/tubiao/9.png"></image>
-				<view class="lists-item">客厅-V157J939P</view>
-			</view>
-		</block>
+		</view>
 	</view>
-</scroll-view>
+
+</view>
+
 
 
 <!-- 评价 -->
@@ -91,12 +74,13 @@
 		<view class='Top_Good'>
 			<view class="Top_Good_header">
 				<view class="header" wx:for="{{findAllComment}}" wx:key="index" wx:for-item="item" wx:for-index="index">
-						
-						<image src="{{item.wx_photo}}" wx:if='{{index<3}}'></image>
+
+					<image src="{{item.wx_photo}}" wx:if='{{index<3}}'></image>
 				</view>
 			</view>
 			<view class="Top_Good_Text">
-				<text >{{pagesubscript.great}}人觉得很赞</text><image src="/images/tubiao/dain.png" mode="widthFix"></image>
+				<text >{{pagesubscript.great}}人觉得很赞</text>
+				<image src="/images/tubiao/dain.png" mode="widthFix"></image>
 			</view>
 		</view>
 	</view>
@@ -117,7 +101,7 @@
 				</view>
 				<view class="appraise-content">
 					<view>{{item.create_time}}</view>
-					<text>{{item.comment}}</text>
+					<text class="pl">{{item.comment}}</text>
 				</view>
 			</block>
 
@@ -127,45 +111,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- 底部评论 -->
 <view class="appraise-btn">
 	<form catchsubmit="tijiaoform" catchreset="formReset">
 		<view class="appraise-btn-left">
-			<image src="/images/tubiao/1-06.png"></image>
+			<image src="/images/tubiao/pl.png"></image>
 			<input placeholder="我要评论" bindinput="pingl" value="{{inputVal}}"></input>
-			<view class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</view>
+			<button class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</button>
 		</view>
 	</form>
 </view>
@@ -182,13 +134,13 @@
 		<view class="list-item" catchtap="star" data-ind="{{index}}">
 
 			<view class="list-right">
-				<image src="/images/tubiao/shouc.png"  mode="widthFix"></image>
+				<image src="/images/tubiao/shouc.png" mode="widthFix"></image>
 				<view class="character">收藏</view>
 			</view>
 		</view>
 		<view class="list-item">
 			<view class="list-right">
-				<image src="/images/tubiao/fangx.png"  mode="widthFix"></image>
+				<image src="/images/tubiao/fangx.png" mode="widthFix"></image>
 				<view class="character">分享</view>
 			</view>
 		</view>
@@ -197,33 +149,27 @@
 
 
 
-<!-- 家居设计师 -->
-<view class=" history">
-	<view class="search">
-		<view class="portrait">
-			<image src="/images/tubiao/tx.png" mode="aspectFill"></image>
+<!-- foot -->
+<view class="list-item6">
+	<view class="goods">
+		<view class="collect1">
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 		</view>
-		<view class="cun">
-			<view>村上　　家居设计师</view>
-			<view class="tup">
-				<image src="/images/tubiao/1-24.png"></image>
-				广东省佛山市禅城区南庄镇中国陶瓷总部基地
+		<view class="tab">
+	
+			<view class="attrs2">
+				村上 家居设计师
+			</view>
+			<view class="attrs">
+				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
 			</view>
 		</view>
-		<view class="boda">
-			<view class="lister" bindtap="calling">
-				<image src="/images/tubiao/1-21.png"></image>
-				一键拨打
-			</view>
-			<view class="zix">
-				<image src="/images/tubiao/1-22.png"></image>
-				咨询店主
-			</view>
+		<view class="contacts">
+			<image src="/images/tubiao/boda.png" ></image>
+			<image src="/images/tubiao/zixu.png"></image>
 		</view>
 	</view>
 </view>
-
-
 
 <view class="toTop" bindtap="handleToTop">
 	<image src="/images/tubiao/zhu.png"></image>

@@ -23,8 +23,8 @@ function Getuser(){
 function Jump(url,arry){
     // 判断类型
     let type =  Object.prototype.toString.call(arry);
-    console.log(url,value,type);
     let value = JSON.stringify(arry);
+    console.log(url,value,type);
     if(url == 'souye/souye' || 'product/product' || 'hotspot/hotspot' ||' jinxs/jinxs' ||' me/me'){
         wx.switchTab({
             url: '/pages/'+url+'?value='+value
@@ -233,6 +233,7 @@ function addgreat(url,uid,videoid){
         }
     }else{
         console.log('不是视频点赞',videoid);
+        console.log(data);
     }
     
 
@@ -281,6 +282,74 @@ function getGerxinx(url){
 }
 
 
+/**
+ * 用户绑定到附近店家，及线下绑定
+ *  */ 
+
+   function binding(url,data){  
+        console.log('绑定客户');
+        console.log('参数：',url,data);
+        return http.promisServer(url,data);
+   }
+
+/**
+ * 用户扫码后获取小程序码参数
+ * url：固定：/scancode/scanCode/salespersonScanCode
+ * 参数：
+ *     id：二维码返回路径中附带的参数：scene
+ */
+   function parameter(uid){
+    let {baseUrl,brandid,userid} = Getuser();
+    let url = baseUrl + 'scancode/scanCode/salespersonScanCode';
+    let date = {
+        id:uid
+    };
+    return http.promisServer(url,date);
+   }
+   /**
+    * 保存信息
+    */
+   function save(data){
+        let {baseUrl,brandid,userid} = Getuser();
+        /**
+         * url:customer/salesperson/registersalesperson 
+         * 参数：
+         *     data:已经准备好的数组
+         */
+        let url = baseUrl + 'customer/salesperson/registersalesperson';
+        return http.promisServer(url,data)
+   }
+
+
+
+   /* 
+    *获取客户/导购信息
+    *参数
+    *     brand_id     品牌id
+          store_id    商家id
+    * url:/customer/salesperson/salespersonList 
+   */
+    function getcustomer(uid){
+        console.log('获取客户');
+        let {baseUrl,brandid,userid} = Getuser();
+        let url = baseUrl + 'customer/salesperson/salespersonList';
+        let data = {brand_id:brandid,store_id:uid};
+        return  http.promisServer(url,data)
+    }
+    /**
+     *删除客户/导购 
+     *参数：
+            listid：要删除导购的id   例如：20,23,25
+     *url:
+        导购：/customer/salesperson/salespersondelete
+     */
+    function deletcustomer(urls,list){
+        console.log('删除信息');
+        let {baseUrl,brandid,userid} = Getuser();
+        let url = baseUrl + urls;
+        let data = {listid:list};
+        return http.promisServer(url,data);
+    }
 module.exports = {
     checkUser:checkUser,
     Jump:Jump,
@@ -292,5 +361,10 @@ module.exports = {
     setCommon:setCommon,
     addgreat:addgreat,
     getVideo:getVideo,
-    getGerxinx:getGerxinx
+    getGerxinx:getGerxinx,
+    binding:binding,
+    parameter:parameter,
+    save:save,
+    getcustomer:getcustomer,
+    deletcustomer:deletcustomer
 }

@@ -1,0 +1,23 @@
+<view class="titleimg">
+	<view class="header">
+		<!--  index图片 -->
+		<image mode="widthFix" bindtap="dakerw" data-img="{{pagesubscript.zhuye}}" src="https://cdn.juesedao.cn/gxw/anli.png"></image>
+	</view>
+	<!-- 列表框 -->
+	<view class="wenzi">
+		<view class="wenzis">
+			<view class="wenzis_label">标签</view>
+		11 · 11
+			<view class="wenzis_left"></view>
+		</view>
+		<view class="wenzis">
+			<view class="wenzis_label">面积</view>
+		11㎡
+			<view class="wenzis_left"></view>
+		</view>
+		<view class="wenzis">
+			<view class="wenzis_label">地区</view>
+		11
+		</view>
+	</view>
+</view>

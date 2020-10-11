@@ -238,60 +238,26 @@ calling: function () {
    */
   onLoad: function (options) {
     var that = this;
+    // 获取到页面数据进行渲染/首页跳转
+    let Arrys;
     if(options.Arrys){
-      let Arrys = JSON.parse(options.Arrys);
+      Arrys = JSON.parse(options.Arrys);
+      console.log('案例详情',Arrys);
+      that.setData({
+          pagesubscript:Arrys
+      })
+    }else{
+      Arrys = app.globalData.anlixiaq;
+      console.log('案例详情',Arrys);
       that.setData({
         pagesubscript:Arrys
-      })
-      console.log('首页进入',Arrys)
-    }else{
-      console.log('案例页进入',app.globalData.anlixiaq);
-      let caseId =app.globalData.anlixiaq;
-
-      this.setData({
-        pagesubscript:caseId
-      })
-      that.GetFindComment();
-
-      var tiyan = this.data.userpingfen;
-      console.log(tiyan);
-      console.log(tiyan.length);
-      for (var i = 0; i < tiyan.length; i++) {
-        tiyan[i].pingfenpic = pingxin.pingfen(parseFloat(tiyan[i].pingfen));    //使用函数
-      }
-      this.setData({
-        userpingfen: tiyan
-      })
-      
+     })
     }
-    // 获取过来的字符转换成数组用以页面渲染
-    // console.log(app.globalData.userInfo);
     // 获取评论信息
     that.GetFindComment();
 
     // 添加访问量
     that.preview();
-    // 正规流程：
-    // 获取过来的id去请求数据；
-    // var caseId = options.caseId;
-    // console.log(caseId);
-    // console.log(app.globalData.anlixiaq);
-    // this.setData({
-    //   caseId:caseId
-    // })
-    // var _this = this;
-    // var tiyan = this.data.userpingfen;
-    // for (var i = 0; i < tiyan.length; i++) {
-    //   //tiyan[i].pingfenpic = pingxin.pingfen(parseFloat(tiyan[i].pingfen));    //使用函数
-    // }
-    // _this.setData({
-    //   userpingfen: tiyan
-    // })
-
-    // this.handlepl()
-  
-
-
   },
 
   /**
@@ -319,13 +285,7 @@ calling: function () {
     return (typeof str=='string')&&str.constructor==String; 
     },
   onShow: function () {
-    var anlixiaq =app.globalData.anlixiaq;
-    console.log(anlixiaq);
-    console.log(anlixiaq,'案例详情')
-    if(anlixiaq.images&&this.isString(anlixiaq.images)){
-      anlixiaq.images=JSON.parse(anlixiaq.images)
-    }
-    this.setData({anlixiaq})
+
   },
 
   /**
@@ -371,11 +331,8 @@ calling: function () {
     var that = this;
     // 品牌id
     let brandid = app.globalData.brandid;
-    console.log(brandid);
     // 案例id
     let caseid = that.data.pagesubscript.id;
-    console.log(caseid);
-
     // 请求接口
     let url = baseUrl +'case/findAllComment';
     let data= {
@@ -385,12 +342,10 @@ calling: function () {
     }
     // 调用接口
     http.promisServer(url, data).then(res=>{
-      console.log(res.data);
       that.setData({
         findAllComment:res.data
       })
-
-      console.log(that.data.findAllComment);
+      console.log('评论详情',that.data.findAllComment);
     })
   },
 
@@ -410,10 +365,8 @@ calling: function () {
       caseId:caseid,
       userId:userid
     };
-    console.log(Url);
-    console.log(data);
     http.promisServer(Url,data).then(res=>{
-      console.log(res);
+      console.log('用户的查看状态',res);
     })
    } 
   //参数：用户id,案例id,品牌id,

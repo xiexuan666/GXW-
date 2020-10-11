@@ -29,7 +29,8 @@ Page({
     detailedAddress: "",
     labelList: ["家", "公司", "学校"],            //标签
     labelDefault: 0,              // 标签默认,
-    judge:null
+    judge:null,
+    default:1
   },
   consigneeNameInput: function(e) {
     this.setData({
@@ -57,10 +58,22 @@ Page({
       labelDefault: index
     })
   },
+  // swithc状态判断、是否设为默认地址
+  updateswitch:function(e){
+    console.log('设为默认地址',e.detail.value);
+    if(e.detail.value){
+    this.setData({
+      default:1
+    })
+  }else{
+    this.setData({
+      default:0
+    })
+    }
+  },
 
   // 保存地址
   submit: function() {
-    console.log(app.globalData.brandid);
     let userid = wx.getStorageSync('gerxinx').id;
     let brand_id = app.globalData.brandid;
     var consigneeName = this.data.consigneeName;
@@ -98,9 +111,6 @@ Page({
       return false
     }else {
       // 信息无误，发送请求并跳转页面
-      wx.navigateTo({
-        url: '/pages/me/address',
-      })
     let crtlist = consigneeRegion.split('-');
     let data ={
     brandId:brand_id,
@@ -110,7 +120,7 @@ Page({
     sheng:crtlist[0],
     city:crtlist[1],
     region:crtlist[2],
-    default:0,
+    defaults:this.data.default,//默认地址
     address:detailedAddress,
   }
     // 在这里判断值，是否是修改
@@ -134,6 +144,7 @@ Page({
       }, 500);
       
     })
+
   }
   },
 
@@ -176,7 +187,8 @@ Page({
       phone:arry.phone,
       detailedAddress:arry.address,
       consigneeRegion:arry.sheng+'-'+arry.city+'-'+arry.region,
-      judge:arry.id
+      judge:arry.id,
+      default:arry.defaults
     })}
 
     // 默认联动显示北京

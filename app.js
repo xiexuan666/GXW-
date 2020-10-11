@@ -15,7 +15,7 @@ App({
     //获得定位授权地址信息
     this.dwsouq()
     //是否曾经登录过
-    this.isdenlu()
+    // this.isdenlu()
     //版本状态
     this.banbzt()
     //加载产品无限列表
@@ -38,6 +38,8 @@ App({
     jiage: 999999,
     qqmapsdk: qqmapsdk,
     brandid: '2',
+    wxLogin:'',
+    store_status:'',
   },
 
   //一些方法
@@ -136,7 +138,6 @@ App({
       success: res => {
         console.log('用户给予的权限：',res.authSetting);
         // 如果用户没有给予获取位置的权限，请求获取
-        console.log(res.authSetting['scope.userLocation'])
         if (!res.authSetting['scope.userLocation']) {
           wx.authorize({
             scope: 'scope.userLocation', 
@@ -389,7 +390,6 @@ App({
       }
       http.promisServer(url, dta).then(function (resc) {
         console.log(resc.data.shenherecord.status, '版本状态')
-
         if (resc.data.shenherecord.status == 1) {
           var status = resc.data.shenherecord.status
           tha.globalData.status = status
@@ -440,7 +440,7 @@ App({
         console.log('获取到的用户信息：',resc);
         // 如果用户信息不为空，将获取的用户信息存储到缓存
         if (resc.data) { 
-          wx.setStorageSync('gerxinx', resc.data)
+          wx.setStorageSync('gerxinx', resc.data);
         }else{
           console.log('存储用户信息表失败');
         }
@@ -468,7 +468,6 @@ App({
   //获得登录信息 
   huodedenlux: function (openid) {
     var tha = this
-
     var p = new Promise(function (resolve, reject) {
       wx.getUserInfo({
         lang: 'zh_CN',
@@ -490,7 +489,6 @@ App({
         success: function (res) {
           // 从小程序后台请求回来的cod
           console.log( 'cod:',res);
-
           // 获取cod 请求用户openid
           if (res.code) {
             wx.request({

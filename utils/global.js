@@ -38,9 +38,28 @@ function getmerchants(){
     // wx.setStorageSync('MC',);
 }
 
+/*
+  *登录接口
+
+*/
+  function login(){
+    var that = this;
+    var app = getApp();
+    var http = require('./http');
+    // 去除本地缓存
+    wx.clearStorage();
+    // 弹框请求授权
+    wx.showToast({
+      title: '获取用户授权',
+      icon:'loading',
+      duration:3000
+    })
+  }
+
   module.exports={
     //获取商家信息
-    getmerchants,getmerchants
+    getmerchants,getmerchants,
+    login:login
   }
 
 

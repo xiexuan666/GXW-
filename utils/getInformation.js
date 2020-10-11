@@ -123,12 +123,10 @@ function getProduct(uid,text,detailsId,user){
     URL:activity/strategy/findAllStrategy
 */
 function getstrategy(type,user){
-    console.log(user);
     // 解构赋值 ps:和正常获取对象值无异，可以设置默认值
     let {baseUrl,brandid,userId} = Getuser();
     let types = type || 5;
     let userid = userId || user
-    console.log(baseUrl,brandid,userid,types);
     let status = 1;
     let data = {
         status:status,
@@ -137,7 +135,6 @@ function getstrategy(type,user){
         userId:userid
     }
     let url = baseUrl+'activity/strategy/findAllStrategy';
-    console.log(data,url);
     let strategy =http.promisServer(url,data);
     return strategy;
 }
@@ -287,8 +284,6 @@ function getGerxinx(url){
  *  */ 
 
    function binding(url,data){  
-        console.log('绑定客户');
-        console.log('参数：',url,data);
         return http.promisServer(url,data);
    }
 
@@ -333,7 +328,7 @@ function getGerxinx(url){
         console.log('获取客户');
         let {baseUrl,brandid,userid} = Getuser();
         let url = baseUrl + 'customer/salesperson/salespersonList';
-        let data = {brand_id:brandid,store_id:uid};
+        let data = {brand_id:brandid,store_id:1};
         return  http.promisServer(url,data)
     }
     /**

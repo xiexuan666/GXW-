@@ -3,7 +3,7 @@
 <view class="titleimg">
 	<view class="header">
 		<!--  index图片 -->
-		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+		<image mode="widthFix" bindtap="dakerw" data-img="{{pagesubscript.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
 	</view>
 	<!-- 列表框 -->
 	<view class="wenzi">
@@ -128,7 +128,7 @@
 		<view class="list-item">
 			<view class="list-right">
 				<image src="/images/tubiao/chak.png" mode="widthFix"></image>
-				<view class="character">5220</view>
+				<view class="character">{{pagesubscript.preview}}</view>
 			</view>
 		</view>
 		<view class="list-item" catchtap="star" data-ind="{{index}}">

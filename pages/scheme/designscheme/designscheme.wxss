@@ -1,0 +1,8 @@
+/* pages/scheme/designscheme/designscheme.wxss */
+page{
+  background-color: rgb(231, 231, 231);
+}
+@import '/pages/template/component/component';
+.cardlist{
+  margin-top: -50rpx;
+}

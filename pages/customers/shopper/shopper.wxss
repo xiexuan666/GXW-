@@ -1,0 +1,2 @@
+/* pages/customers/shopper/shopper.wxss */
+@import '/pages/template/Administration/Administration.wxss';

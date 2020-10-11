@@ -73,7 +73,14 @@
     "pages/me/guanli/information/information",
     "pages/me/guanli/key/key",
     "pages/me/guanli/column/column",
-    "pages/me/guanli/indent/indent"
+    "pages/me/guanli/indent/indent",
+    "pages/customers/system/system",
+    "pages/template/Administration/Administration",
+    "pages/customers/distribution/distribution",
+    "pages/customers/shopper/shopper",
+    "pages/scheme/designscheme/designscheme",
+    "pages/template/component/component",
+    "pages/scheme/plan/plan"
   ],
   "window": {
     "backgroundTextStyle": "light",

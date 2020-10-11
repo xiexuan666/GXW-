@@ -43,34 +43,9 @@ Page({
     sex:['男','女'],
     value:0,
     user:[],
+    data:'-请选择-',
   },
   //个人列表跳转
-
-  melisttz:function(e){
-  //   let date = {
-  //         user_id:wx.getStorageSync('gerxinx').id,
-  //         brand_id:app.globalData.brandid,   
-  //         store_id :40,  
-  //         shopowner_id :37, 
-  //         superior_id:37,
-  //         waiter_name:'李华',  
-  //         waiter_phone:null,
-  //         wx_code:null,
-  //         address:'广东省佛山市', 
-  //         status:0,
-  //         sex :'男',
-  //         native_place:'广东省佛山',
-  //         birthday:'2020-10-08 11:42:15',
-  //         hobby:'ctrl',
-  //         remark:null,
-  // }
-  // let url = baseUrl + 'customer/salesperson/registersalesperson';
-  // http.promisServer(url,date).then(res=>{
-  //   console.log(res);
-  // })
-
-  },
-
   // 实时添加用户输入的信息
   xueliinput:function(e){
     var that = this;
@@ -82,10 +57,21 @@ Page({
     })
     console.log(that.data.user);
   },
+// 实时获取生日
+bindDateChange: function (e) {
+  let index = app.hdindex(e,'index');
+  let data = this.data.user;
+  data[index] = e.detail.value;
+  this.setData({
+    date:e.detail.value,
+    user:data
+  })
+},
   // 提交时将数据整合
   subscribe:function(e){
     var that = this;
     var user = that.data.user;
+    // 传过来的商家信息
     var storeRecord = that.data.storeRecord;
     let data = {
       // 动态参数
@@ -96,11 +82,11 @@ Page({
       superior_id:storeRecord.userid,
       // 表单数据
       waiter_name:user[0],//用户名
-                          //注册类别user[1]
+      //注册类别user[1]
       waiter_phone:user[2],//联系电话
       wx_code:user[3],//微信号
       address:user[4],//地址
-      sex:user[5],//性别
+      sex:'',//性别
       native_place:user[6],//籍贯
       birthday:user[7],//生日
       hobby:user[8],//爱好
@@ -108,7 +94,13 @@ Page({
       // 默认值
       status:0        
     }
-
+    if(that.data.value){
+      console.log(that.data.value)
+      data.sex = '女';
+    }else{
+      console.log(that.data.value)
+      data.sex = '男';
+    }
     // 发起保存
     console.log(data);
     getInformation.save(data).then(res=>{
@@ -156,7 +148,7 @@ Page({
   // 性别选项选择器
   sexCheck:function(e){
     this.setData({
-      value: e.detail.value
+      value: e.detail.value,
     })
   },
   // 日期选择器
@@ -182,7 +174,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
     if(!app.globalData.status){
       app.banbzt().then(resc=>{
         this.setData({status:app.globalData.status})

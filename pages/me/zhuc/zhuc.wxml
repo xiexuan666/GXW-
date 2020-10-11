@@ -21,16 +21,16 @@
 				<!-- 性别选择框 -->
 				<view wx:if='{{item.value=="性别"}}'>
 					<picker range="{{sex}}" value="{{value}}" bindchange="sexCheck">
-					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{sex[value]}}" value="{{sex[value]}}"></input>
+					<input name="xingm" disabled='{{true}}' bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{sex[value]}}" value="{{sex[value]}}"></input>
 					</picker>
 				</view>
-				<!-- 籍贯选择框 -->
-				<!-- <view wx:elif='{{item.value =="籍贯"}}'>
-					打开省市区选择器 -->
-					<!-- <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
-							<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}"></input>	
-					</picker> -->
-				<!-- </view> -->
+				 <!-- 生日选择框 -->
+				 <view wx:elif='{{item.value =="生日"}}'>
+				 	<picker class="picker" mode='date' bindchange="bindDateChange" bindcancel='pickEnd' data-index="{{index}}"  value="{{date}}" start='{{date}}' end='2500-09-01'>
+						<!-- input框 -->
+						<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" disabled="{{true}}" value="{{date}}"></input>	
+					</picker>
+					</view>
 					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}" wx:else></input>
 				</view>
 			</view>

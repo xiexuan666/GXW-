@@ -1,0 +1,41 @@
+<!--pages/template/Administration/Administration.wxml-->
+<template name="system">
+  <!-- 系统获客卡片-商家管理页面 -->
+  <view class="card" wx:if='{{card}}'>
+    <view class="cardtitle">今日获客/人</view>
+    <view class="card_people">9658</view>
+    <view class="card_icon" catchtap="Jump">分配</view>
+    <image src="/images/tubiao/50.png" class="cardbg"></image>
+  </view>
+  <!-- 所有得用户信息 -->
+
+  <view class="user_table" style="height:{{height}}">
+    <view class="user_header">
+      <!-- 导航栏 -->
+      <block wx:for='{{nav}}' wx:index='index' wx:item='item'>
+        <view class="nav">{{item.value}}</view>
+      </block>
+    </view>
+    <!-- 用户信息内容 -->
+    <view class="user_content">
+      <block wx:for='{{nav}}' wx:index='index' wx:item='item'>
+      <view class="user_form">
+        <view class="user_portrait"> 
+      <view class="check {{item.select?'checkbg':''}}" wx:if='{{selctstatus}}' catchtap="select" data-index="{{index}}">
+      </view>
+        <image src="/images/tubiao/90.png"></image>
+        </view>
+        <view class="user_name">男人</view>
+        <!-- <view class="user_wxAccounts">chenkai15766801500</view> -->
+        <!-- <view class="user_phone">15918968017</view> -->
+        <view class="user_channel">支付后关注</view>
+        </view>
+      </block>
+    </view>
+
+    <!-- 按钮 -->
+    <view class="button" >
+      <button wx:if='{{buttom}}' catchtap="Jumpshopper">分配</button>
+    </view>
+  </view>
+</template>

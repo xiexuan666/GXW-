@@ -50,6 +50,8 @@ Page({
       }
     ],
     card:[],
+    // 是否是系统获客，true为0，false为1
+    system:null,
   },
   //拨打电话
   calling: function () {
@@ -67,25 +69,15 @@ Page({
       }
     })
   },
-  //请求轮播
-  handlelun: function () {
-    var tha = this
-    var url = baseUrl + 'banner/index'
-    console.log(url);
-    http.promisServer(url).then(res => {
-      console.log(res.data.allbannerList, '请求轮播图')
-    })
-
-  },
-
   //请求轮播 视频
   requestlunb: function () {
-    var tha = this
-    var url = baseUrl + 'banner/index'
-    http.promisServer(url).then(res => {
+    var tha = this;
+    var url = baseUrl + 'banner/index';
+    let data={brand_id:app.globalData.brandid,module:1};
+    http.promisServer(url,data).then(res => {
+      console.log('请求轮播图：',res.data.allbannerList);
       tha.setData({ lunb: res.data.allbannerList })
     })
-
   },
 
   //请求推荐系列
@@ -120,7 +112,6 @@ Page({
       that.fadeIn();//调用显示动画
     }, 200)
   },
-
   // 隐藏遮罩层
   hideModal: function () {
     var that = this;
@@ -137,7 +128,6 @@ Page({
     }, 100)//先执行下滑动画，再隐藏模块
 
   },
-
   clearPosters: function () {
     var that = this;
     var animation = wx.createAnimation({
@@ -152,7 +142,6 @@ Page({
       })
     }, 100)//先执行下滑动画，再隐藏模块
   },
-
   //动画集
   fadeIn: function () {
     this.animation.translateY(0).step()
@@ -166,7 +155,6 @@ Page({
       animationData: this.animation.export(),
     })
   },
-
 
   // 取消操作
   quxiao: function () {
@@ -183,7 +171,6 @@ Page({
       })
     }, 100)//先执行下滑动画，再隐藏模块，再隐藏模块
   },
-
   /**
    *  导航栏跳转
    */
@@ -213,27 +200,49 @@ Page({
         ;
     }
   },
-
   // 跳转到海报
   hanglehb: function () {
     wx.navigateTo({
       url: '/pages/souye/poster/poster',
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let scene = decodeURIComponent(options.scene);
+    console.log(scene);
+    console.log(Boolean(scene));
+    if(scene == 'undefined'){
+      this.setData({
+        system:0
+      })
+      wx.showToast({
+        title: '欢迎您的到来',
+        icon: 'none',
+        duration:1000
+      })
+    }else{
+    this.setData({
+      system:1
+    })
+      wx.showToast({
+        title: '欢迎来到冠星王未来家',
+        icon: 'none',
+        duration:1000
+      })
+    }
+    let store_status = this.data.system;
+    app.globalData.wxLogin = '扫描二维码获取的参数';
+    app.globalData.store_status = store_status;
     //请求轮播
-    this.requestlunb()
-
+    this.requestlunb();
     // 系统获客的代码及参数及接口
     // 获取用户id
     let user = wx.getStorageSync('gerxinx');
+    
     //获取商家id
     let shanjia = wx.getStorageSync('bendijxs');
-    console.log(shanjia);
     let data ={
       user_id: user.id,
       brand_id :app.globalData.brandid,
@@ -244,14 +253,17 @@ Page({
       join_remarks:'系统获客'
     }
     let url = app.globalData.baseUrl+'customer/member/userMemberInfo';
-
     getInformation.binding(url,data).then(res=>{
-      console.log('请求下来的数据：',res);
+      console.log('将客户绑定为系统获客',res);
     });
 
 
 
   },
+
+
+
+
   //将canvas转换为图片保存到本地，然后将图片路径传给image图片的src
   createNewImg: function () {
     var that = this;

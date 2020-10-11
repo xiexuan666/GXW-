@@ -36,7 +36,7 @@
 				<view class="defaul-setting-left">
 					<view>设置默认地址</view>
 				</view>
-				<image class="defaul-setting-right" src="/images/tubiao/46.png"></image>
+				<switch checked="{{default}}" bindchange='updateswitch'></switch>
 			</view>
 
       <view class="delete" bindtap="delete">

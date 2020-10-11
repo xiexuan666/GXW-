@@ -1,0 +1,48 @@
+<!--pages/template/viedeocard/videocard.wxml-->
+<template name="videocard" data="video">
+    <view class="viedoLayout">
+    <block wx:for='{{video}}' wx:index='index' wx:item='item'>
+        <view class="viedoBody">
+          <view class="videoImage" bindtap="Jumpvideo" data-index="{{index}}">
+            <view class="TitleIcon">
+                <view class="title">
+                  {{item.product_type}}
+                </view>
+                <view class="icon"  data-index="{{index}}">
+                  <image src="/images/tubiao/video.png" mode="scaleToFill"></image>
+                </view>
+            </view>
+            <image src="{{item.photo}}" mode="aspectFill"></image>
+          </view>
+          <view class="tabBar">
+            <view class="tabBarImage">
+                <image src="{{item.wx_photo}}" mode="aspectFit"></image>
+            </view>
+            <view class="tabBarText">
+              {{item.wx_name}}
+            </view>
+            <view class="tabBargreat">
+              <view class="icon" catchtap="addgreat" data-index="{{index}}">
+                <image wx:if='{{item.dianzhan}}' src="/images/tubiao/12-28.png" mode="aspectFit"></image>
+                <image wx:else  src="/images/tubiao/12-12.png" mode="aspectFit"></image>
+              </view>
+              <view class="text">
+                 {{item.great}}
+              </view>
+            </view>
+          </view>
+        <!-- 底部信息栏 -->
+        <view class="Info">
+          <view class="InfoText">
+            <text>[{{item.title}}]</text>
+            <text>{{item.context}}</text>
+          </view>
+          <view class="InfoLook">
+            <image src="/images/tubiao/chak.png" mode="aspectFill	"></image>
+            <text>{{item.preview}}</text>
+          </view>
+        </view>
+        </view>
+        </block>
+    </view>
+</template>

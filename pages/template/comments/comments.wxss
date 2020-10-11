@@ -1,0 +1,474 @@
+/* pages/template/comments/comments.wxss */
+/* 评论头部 */
+.commentsTop {
+  width: 90vw;
+  position: relative;
+  margin: auto;
+  border-bottom: 1px solid #999;
+}
+
+/* 圆点 */
+.commentsTopRound {
+  position: absolute;
+  border-radius: 50rpx;
+  width: 40rpx;
+  height: 40rpx;
+  background: #bd8f60;
+  top: 2.5rpx;
+  z-index: -1;
+}
+
+/* 文字 */
+.commentsTopText {
+  color: #666;
+  margin-left: 15rpx;
+}
+
+/* 第二行 */
+.commentsTopTitle {
+  width: 95%;
+  height: 40rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 35rpx;
+}
+
+/* 头像列表 */
+.commentsTopTitle .headerList {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* 头像设置 */
+.commentsTopTitle .headerList .header {
+  border-radius: 50rpx;
+  height: 50rpx;
+  width: 50rpx;
+  overflow: hidden;
+}
+
+.commentsTopTitle .headerList .header image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 点赞数量&点赞事件 */
+.great {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+
+.commentsTopTitle .great .greatText {
+  margin-left: auto;
+  font-size: 26rpx;
+  color: #bd8f60;
+}
+
+.commentsTopTitle .great .greatIcon {
+  padding-left: 20rpx;
+}
+
+.commentsTopTitle .great .greatIcon image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: -8.5rpx;
+}
+
+
+/* 评论主体 */
+.commentsContent {
+  height: 1000rpx;
+  overflow: scroll;
+  width: 100vw;
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+.commentsContentTop {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.commentsContentTop .PicName {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10rpx;
+}
+
+.commentsContentTop .PicName .pic {
+  border-radius: 50rpx;
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+
+.commentsContentTop .PicName .pic image {
+  height: 100%;
+  width: 100%;
+}
+
+.commentsContentTop .PicName .text {
+  font-size: 26rpx;
+  line-height: 50rpx;
+}
+
+
+.commentsContentTop .Icon {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  padding-right: 20rpx;
+}
+
+.commentsContentTop .Icon .pic image {
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: -4rpx;
+}
+
+/* 评论文本 */
+.commentsContentText {
+  height: 40rpx;
+  width: 90%;
+  font-size: 26rpx;
+  margin: auto;
+  padding-bottom: 30rpx;
+  padding-top: 20rpx;
+}
+
+.commentsContentText text {
+  margin-left: 75rpx;
+  line-height: 40rpx;
+}
+
+
+/*  */
+.commentsRelease {
+  width: 100vw;
+  height: 20rpx;
+  background: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 避免混淆代码，将重复的，微小的偏移移动到这里 */
+
+/* 头像列表的偏移 */
+.commentsTopTitle .headerList .header:nth-child(1) {
+  margin-right: -15rpx;
+  margin-left: 10rpx;
+}
+
+.commentsTopTitle .headerList .header:nth-child(3) {
+  margin-left: -15rpx;
+}
+
+/* 评论点赞按钮偏移 */
+.commentsContentTop .Icon .text {
+  margin-left: auto;
+  margin-right: 20rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 布局实例 */
+.list {
+  height: 240rpx;
+  width: 95%;
+  display: flex;
+  position: relative;
+  flex-flow: row;
+  margin: 0 auto;
+  /* border: 1px dashed #ccc; */
+}
+
+.list .list_pic {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+
+}
+
+.num1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.num1 .header .tx {
+  border-radius: 75rpx;
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.num2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.num3 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tow {
+  height: 100rpx;
+  width: 100rpx;
+
+}
+
+.tow .list-pic {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.num2 .text {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding-top: 40rpx;
+}
+
+.num2 .title {
+  flex: 1;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  align-items: center;
+}
+
+.num2 .title image {
+  height: 35rpx;
+  width: 35rpx;
+  position: absolute;
+  top: 7%;
+  transform: translate(0%, -50%);
+}
+
+.num2 .title text {
+  flex: 1;
+  padding-left: 60rpx;
+  font-size: 20rpx;
+  margin-top: -45rpx;
+
+}
+
+.num2 .text1 {
+  flex: 1;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -12rpx;
+}
+
+.num2 .text1 .dh {
+  width: 33%;
+  height: 40rpx;
+}
+
+
+
+
+
+
+
+
+
+/* 底部名片 */
+.list-item {
+  height: 100%;
+  display: flex;
+  margin: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px dashed #ccc;
+  border-radius: 15rpx;
+  padding: 50rpx 0;
+}
+
+.goods {
+  display: flex;
+  margin: 0 20rpx;
+
+}
+
+.tab {
+  padding: 0 20rpx;
+
+}
+
+.attrs {
+  font-size: 18rpx;
+  font-weight: 300;
+}
+
+.attrs1 {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+.attrs2 {
+  padding: 10rpx 0;
+  font-size: 23rpx;
+  font-weight: 200;
+}
+
+.collect {
+  margin: 0 10rpx;
+}
+
+.collect image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50rpx;
+}
+
+.contact {
+  width: 30%;
+  margin-top: 20rpx;
+
+}
+
+.contact image {
+  width: 175rpx;
+  height: 45rpx;
+}
+
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+
+
+/* 店长名片 */
+.user {
+  display: flex;
+  height: 340rpx;
+  width: 95%;
+  position: relative;
+  flex-flow: row;
+  margin: 0 auto;
+  position: relative;
+}
+
+.management {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 60rpx 70rpx;
+}
+
+
+.user .list_pic {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+
+}
+
+.user_li {
+  margin-bottom: 25rpx;
+}
+
+.user_li text {
+  font-size: 40rpx;
+  font-weight: 700;
+
+}
+
+.info .info_l {
+  padding: 10rpx 0;
+  font-size: 26rpx;
+}
+
+
+.user_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_info .user_img .tx {
+  height: 100rpx;
+  width: 100rpx;
+  margin-bottom: 110rpx;
+}
+
+.modify {
+  margin-bottom: 10rpx;
+  border: 1px solid black;
+  padding: 10rpx;
+  border-radius: 15rpx;
+}
+
+.modify .xiug {
+  font-size: 26rpx;
+}
+
+/* 二维码 */
+.code {
+  position: absolute;
+  bottom: 20rpx;
+  right: 40rpx;
+}
+
+.code image {
+  width: 80rpx;
+  height: 80rpx;
+}

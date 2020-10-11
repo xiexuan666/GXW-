@@ -1,6 +1,6 @@
 // pages/me/registration/registration.js
 let goodsList = [
-  { actEndTime: '2020/10/01 10:00:43' }
+  { actEndTime: '2020/10/25 10:00:43' }
  
 ]
 Page({

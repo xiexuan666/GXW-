@@ -1,0 +1,49 @@
+<view class="header">
+	<view class="group">
+
+		<view class="fool">
+			<view class="fool_r">
+				<image src="/images/tubiao/tx.png"></image>
+			</view>
+			<view class="script">
+				<view>LUCAS</view>
+				<view>邀请你参与活动,畅享限时优惠</view>
+			</view>
+
+		</view>
+
+		<view class="group_r">
+			<view class="data">开团日期:2020.06.30-12:00</view>
+			<view class="date">活动规则</view>
+			<view class="group_img">
+				<image src="https://cdn.juesedao.cn/gxw/ridianshiping.jpg" mode="widthFix"></image>
+			</view>
+			<view class="name">
+				<view class="designation">
+					<view class="name_r"> 科莫白-DT88211</view>
+					<view class="name_l">规格5IZE.300x600mm</view>
+					<view class="name_l">型号NO123456</view>
+				</view>
+				<view class="pict">
+					<view class="price">299<text style="font-size:33rpx;color:#000">元/片</text></view>
+				</view>
+			</view>
+		</view>
+
+		<view class="canyu">
+			<view style="font-size: 33rpx;font-weight: 700;">免费参与</view>
+			<view style="font-size: 33rpx;font-weight: 700;">拼团活动</view>
+			<view style="font-size: 30rpx;font-weight: 300;">2020年5月30日 12:00 活动截止</view>
+			<image src="/images/tubiao/code.jpg"></image>
+		</view>
+
+	</view>
+</view>
+
+
+
+<view class="baoc" bindtap="handlebc">
+	<view class="bao_c">
+		保存相册
+	</view>
+</view>

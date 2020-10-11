@@ -2,6 +2,7 @@
 const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
+const getInformation = app.globalData.getInformation;
 Page({
 
   /**
@@ -10,34 +11,71 @@ Page({
   data: {
   cpxqzt:1,
   cactiv:1,
+  strategy:[],
+  // 全局控制显示属性
+  hiddenstrategy:5,
+  apphidden:5,
+  // 总数据显示
+  strategyTotal:null,
+  json:null,
+  video:null
   },
    //产品详情导航选择
    cpxzxz:function(e){
+     var that = this;
     var ind=app.hdindex(e,'ind')
-
    var cpxqzt=this.data.cpxqzt;
-   if(ind==cpxqzt){return false}
+   if(ind==cpxqzt){return false};
+   switch(ind){
+
+   }
    if(ind==1){
     cpxqzt=1
-    wx.setNavigationBarTitle({ title: '全部'})
+    wx.setNavigationBarTitle({ title: '全部'});
+    // 查找出现次数
+
+    that.setData({
+      hiddenstrategy:5
+    })
    }
    if(ind==2){
     cpxqzt=2
-    wx.setNavigationBarTitle({ title: '如何选砖'})
+    wx.setNavigationBarTitle({ title: '如何选砖'});
+    var sum =  that.data.strategy;
+    that.query(1,sum);
+    // console.log(sum.map)
+    that.setData({
+      hiddenstrategy:1
+    })
    }
    if(ind==3){
     cpxqzt=3
-    wx.setNavigationBarTitle({ title: '如何装修'})
+    wx.setNavigationBarTitle({ title: '如何装修'});
+    var sum =  that.data.strategy;
+    that.query(2,sum);
+    that.setData({
+      hiddenstrategy:2
+    })
 
    }
    if(ind==4){
     cpxqzt=4
-    wx.setNavigationBarTitle({ title: '爆款推荐'})
+    wx.setNavigationBarTitle({ title: '爆款推荐'});
+    var sum =  that.data.strategy;
+    that.query(3,sum);
+    that.setData({
+      hiddenstrategy:3
+    })
 
    }
    if(ind==5){
     cpxqzt=5
-    wx.setNavigationBarTitle({ title: '新品上市'})
+    wx.setNavigationBarTitle({ title: '新品上市'});
+    var sum =  that.data.strategy;
+    that.query(3,sum);
+    that.setData({
+      hiddenstrategy:4
+    })
 
    }
    this.setData({cpxqzt:cpxqzt})
@@ -145,8 +183,65 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 请求视频接口
+    let url = 'activity/hot/getAllVideo';
+    // 请求视频数量
+    getInformation.getVideo(url).then(res=>{
+      console.log(res);
+      this.setData({
+        video:res.data
+      })
+    })
 
   },
+  /**
+   * 点赞事件--实时更新页面上的点赞数
+   * 获取下标，获取视频id
+   * 调用getInfoemation封装好的接口进行点赞操作
+   * 根据res.flag值对判断值和页面数组进行更改
+   */ 
+  addgreat:function(e){
+    var that = this;
+    var index=app.hdindex(e,'index');
+    let url = 'activity/hot/greatVideo';
+    let videoid = that.data.video[index].videoId;
+    getInformation.addgreat(url,undefined,videoid).then(res=>{
+      if(res.flag){
+        let great =  that.data.video[index].great+1;
+        that.setData({
+          ['video['+index+'].dianzhan']:res.flag,
+          ['video['+index+'].great']:great,
+        })
+      }else{
+        let great =  that.data.video[index].great-1;
+        that.setData({
+          ['video['+index+'].dianzhan']:res.flag,
+          ['video['+index+'].great']:great,
+        })
+      }
+    })
+  },
+
+  /**
+   * 跳转事件--使用自己封装的方法进行跳转
+   * 
+   */
+  Jumpvideo:function(e){
+    var that = this;
+    var index=app.hdindex(e,'index');
+    console.log(index);
+    // wx.showToast({
+    //   title: '视频还没准备好哦',
+    //   icon: 'none',
+    //   duration: 2000
+    // })
+    console.log('跳转到viedo页面',index,that.data.video[index]);
+    let value = that.data.video[index];
+    let url = 'video/video';
+    getInformation.Jump(url,value);
+  },
+
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -159,7 +254,30 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var that = this;
+    console.log(wx.getStorageSync('gerxinx').id);
+    getInformation.getstrategy(undefined,wx.getStorageSync('gerxinx').id).then(res=>{
+      for(let i=0;i<res.data.length;i++){
+        let data = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].update_time);
+        res.data[i].update_time = data;
+        if(res.data[i].type == 1){
+         res.data[i].name = '如何选砖';
+        }else if(res.data[i].type == 2){
+          res.data[i].name = '如何装修';
+        }else if(res.data[i].type == 3){
+          res.data[i].name = '爆款推荐';
+        }else if(res.data[i].type == 4){
+          res.data[i].name = '新品上市';
+        }
+        // 转化成json数据用以页面跳转
+        let json =  JSON.stringify(res.data);
+        that.setData({
+          strategy:res.data,
+          strategyTotal:res.data.length,
+          json:json
+        })
+      }
+    });
   },
 
   /**
@@ -196,4 +314,19 @@ Page({
   onShareAppMessage: function () {
 
   }
+  // 查询方案
+  ,
+  query:function(type,arry){
+    var that = this;
+    console.log(type,arry);
+    arry.forEach(item => {
+      console.log(item)
+      let num;
+      if(item.type == type){
+        num++
+        console.log('xxx',num);
+      }
+    });
+  }
 })
+

@@ -1,0 +1,123 @@
+<!-- 店长卡片 -->
+<import src='/pages/template/comments/comments' />
+<template is="users" data="{{list:'imasrc////',num:3}}">
+</template>
+
+
+
+<!-- 导航 -->
+<view class="title6">
+	<view class="list6">
+		<view class="list-item6" bindtap="daog">
+			<view class="list-right6">
+				<image src="/images/tubiao/dg.png"></image>
+			</view>
+			<view class="character6">新增客户</view>
+		</view>
+		<view class="list-item6" bindtap="mykeh">
+			<view class="list-right6">
+				<image src="/images/tubiao/my.png"></image>
+			</view>
+			<view class="character6">群发助手</view>
+		</view>
+		<view class="list-item6" bindtap="newkeh">
+			<view class="list-right6">
+				<image src="/images/tubiao/xzm.png"></image>
+			</view>
+			<view class="character6">一键交接</view>
+		</view>
+		<view class="list-item6" bindtap="dabao">
+			<view class="list-right6">
+				<image src="/images/tubiao/xz.png"></image>
+			</view>
+			<view class="character6">打包发送</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+<!-- 绑定获客 -->
+<view class="binding">
+	<block>
+		<view class="binding_r">
+			<view class="customer">绑定获客</view>
+			<view class="me-list-li">
+				<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">意向客户</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="me-list-li">
+		<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">意向客户</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-li">
+		<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">意向客户</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-li">
+		<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">意向客户</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 系统获客 -->
+<view class="binding">
+	<block>
+		<view class="binding_rr">
+			<view class="customers">系统获客</view>
+			<view class="me-list-li">
+				<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">意向客户</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="me-list-li">
+		<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">意向客户</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-li">
+		<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">意向客户</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-li">
+		<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">意向客户</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+</view>

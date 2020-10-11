@@ -1,0 +1,117 @@
+.price {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.goods-title {
+  display: flex;
+  background-color: #efefef;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}
+
+.huah {
+  margin: 20rpx 20rpx;
+}
+
+.collect image {
+  width: 250rpx;
+  height: 140rpx;
+
+}
+
+
+
+
+
+.item {
+  margin: 50rpx auto;
+
+}
+
+.user_txt {
+  border-bottom: 2px solid #acabab;
+}
+
+.title_tip {
+  color: #ccc;
+  padding: 20rpx  0;
+}
+
+.username_txtt {
+  border: 1px solid #ccc;
+  height: 300rpx;
+  border-radius: 25rpx;
+  padding-left: 20rpx;
+
+}
+
+
+
+
+
+.time {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25rpx;
+
+}
+
+
+.search {
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.page_row {
+  padding: 10rpx 0;
+}
+
+.text {
+  /* padding: 0 20rpx; */
+  padding-right: 65rpx;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.df_1 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 370rpx;
+  padding-left: 50rpx;
+}
+
+
+
+
+.placeholderStyle {
+  color: #ccc;
+  padding-left: 250rpx;
+}
+
+
+.preview {
+  width: 80%;
+  margin: 50rpx auto;
+}
+
+.btn {
+  color: #fff;
+  background-color: #be8f61;
+  height: 60rpx;
+  line-height: 65rpx;
+  border-radius: 30rpx;
+}

@@ -1,0 +1,4 @@
+<!--pages/commnt/haibao/haibao.wxml-->
+<template name="haibao">
+  这是海报组件
+</template>

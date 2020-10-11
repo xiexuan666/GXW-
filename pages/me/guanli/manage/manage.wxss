@@ -61,15 +61,6 @@
 
 
 
-.header {
-  margin-top: 100rpx;
-  width: 700rpx;
-  text-align: center;
-}
-
-.search {
-  color: #888;
-}
 
 
 /* 按钮 */
@@ -115,7 +106,7 @@ button {
 .lists {
   margin: 0 20rpx;
 
- 
+
 }
 
 .tup image {
@@ -127,5 +118,207 @@ button {
 .charge {
   display: flex;
   align-items: center;
-  margin: 20rpx  0;
+  margin: 20rpx 0;
+}
+
+/* 解锁红包 */
+.header {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+
+.search {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.complete {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f7f8f8;
+}
+
+.complete-r {
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #000;
+
+}
+
+.whole {
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-left: 20rpx;
+}
+
+.all {
+  margin-left: 425rpx;
+  font-size: 26rpx;
+  color: #f7ab08;
+}
+
+
+.release {
+  margin: 20rpx 0;
+}
+
+.release image {
+  width: 100%;
+}
+
+.scroll {
+  margin-left: 20rpx;
+}
+
+.lingq {
+  width: 100%;
+  margin: 20rpx auto;
+  background-color: #f7f8f8;
+}
+
+.draw {
+  display: flex;
+  align-items: center;
+}
+
+.photo image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+}
+
+.ling-q {
+  padding: 20rpx;
+}
+
+
+/* 绑定获客 */
+.binding {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 70rpx;
+}
+
+.binding_rr {
+  margin-top: 50rpx;
+}
+
+.customer {
+  padding: 30rpx 0;
+  font-size: 26rpx;
+  font-weight: 600;
+  padding-left: 50rpx;
+}
+
+.customers {
+  padding: 10rpx 0;
+  font-size: 26rpx;
+  font-weight: 600;
+  padding-left: 50rpx;
+}
+
+.me-list-li {
+  width: 95%;
+  height: 90rpx;
+  padding-bottom: 38rpx;
+  margin-top: 10rpx;
+  background-color: #fafafa;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.me-list-l_i {
+  height: 90rpx;
+  padding-bottom: 38rpx;
+  margin-top: 10rpx;
+}
+
+
+.me-list-lil {
+  float: left;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.me-list-lil image {
+  /* position: absolute; */
+  /* top: 30rpx; */
+  left: 70rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  bottom: 185rpx;
+}
+
+.me-list-lir {
+  float: right;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.name {
+  font-size: 30rpx;
+  float: right;
+}
+
+.me-list-lir image {
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 105rpx;
+
+}
+
+.names {
+  position: absolute;
+  left: 210rpx;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+}
+
+.vote image {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 175rpx;
+}
+
+.mainbav {
+  padding: 10rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainbav image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.topnav {
+  font-size: 26rpx;
+
+}
+
+.chouj {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #f7f8f8;
+  padding: 30rpx;
+}
+.topnav {
+  padding-top: 10rpx;
 }

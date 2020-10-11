@@ -7,7 +7,6 @@ page {
 /* 头部 */
 .jinx-t {
   width: 100%;
-  background-color: #bababa;
 }
 
 .jinx-tnr {

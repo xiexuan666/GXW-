@@ -1,0 +1,53 @@
+<!-- 店长卡片 -->
+<import src='/pages/template/comments/comments' />
+<template is="manager" data="{{list:'imasrc////',num:3}}">
+</template>
+
+<!-- 全选 -->
+<view class="mass">
+	<text>全选</text>
+</view>
+
+
+
+<!-- 绑定获客 -->
+<view class="binding">
+	<block>
+		<view class="binding_r">
+			<view class="me-list-li">
+				<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">意向客户</text>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="binding_r">
+		<view class="me-list-li">
+			<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<text class="name">意向客户</text>
+			</view>
+		</view>
+	</view>
+	<view class="binding_r">
+		<view class="me-list-li">
+			<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<text class="name">意向客户</text>
+			</view>
+		</view>
+	</view>
+	<view class="binding_r">
+		<view class="me-list-li">
+			<view class="me-list-lil">谢会员<image src="/images/tubiao/tx.png"></image>
+			</view>
+			<view class="me-list-lir">
+				<text class="name">意向客户</text>
+			</view>
+		</view>
+	</view>
+</view>

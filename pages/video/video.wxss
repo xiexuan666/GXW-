@@ -1,0 +1,97 @@
+/* pages/video/video.wxss */
+
+@import '/pages/template/comments/comments.wxss';
+page{
+  background-color: #000000;
+}
+.videolayout{
+  height: 80vh;
+  width:90vw;
+  margin: auto;
+}
+video{
+  height: 100%;
+  width: 100%;
+}
+
+/* 视频信息 */
+.videoinfo{
+  width: 90vw;
+  height: 20vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+}
+.videoinfo .watch{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.videoinfo .watch .image{
+  display:flex;
+  align-items: flex-end;
+  margin-left: 20rpx;
+}
+.videoinfo .watch .image image{
+  width:50rpx;
+  height:50rpx;
+
+}
+.videoinfo .watch .text{
+  width: 100%;
+  flex:2;
+  height: 100%;
+  display: flex;
+  align-items:flex-end;
+}
+.videoinfo .watch .text text{
+  display: block;
+  margin-bottom:7.5rpx;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+}
+
+.videoinfo .title{
+  flex: 1;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+}
+
+.sidebar{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-65%);
+  height:500rpx;
+  width:150rpx;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .Function{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sidebar .Function image{
+    display: block;
+    width:50rpx;
+    height:50rpx;
+}
+.sidebar .Function:nth-child(1) image{
+    display: block;
+    border-radius:50%;
+    width:100rpx;
+    height:100rpx;
+    position: absolute;
+}
+.comments{
+  background-color: skyblue;
+  position: absolute;
+  bottom: 0;
+}

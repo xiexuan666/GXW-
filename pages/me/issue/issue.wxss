@@ -1,0 +1,140 @@
+/* 头部 */
+page {
+  background-color: #e7e7e7;
+}
+
+.jinx-t {
+  width: 100%;
+}
+
+.jinx-tnr {
+  width: 100%;
+  position: relative;
+  height: 440rpx;
+}
+
+.jinx-bei {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.jinx-bei image {
+  width: 100%;
+}
+
+.jinx-toux {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name-p {
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+}
+
+/* 头部 end*/
+
+
+.time {
+  position: relative;
+  width: 90%;
+  height: 800rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25rpx;
+  margin-top: -65rpx;
+}
+
+.times {
+  margin-top: 50rpx;
+}
+
+.search {
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.page_row {
+  padding: 10rpx 0;
+}
+
+.text {
+  padding: 0 20rpx;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.df_2 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 400rpx;
+  padding-left: 50rpx;
+
+}
+
+
+.placeholderStyles {
+  color: #ccc;
+  padding-left: 30rpx;
+}
+
+.quer {
+  width: 85%;
+  margin: 50rpx auto;
+}
+
+.btn {
+  color: #fff;
+  background-color: #be8f61;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+}
+
+.search-l {
+  display: flex;
+
+
+
+}
+
+.df_3 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 150rpx;
+  padding-left: 50rpx;
+
+}
+.search-l {
+  margin-left: 50rpx;
+}

@@ -71,7 +71,9 @@ page {
 }
 
 .coupon-list .item {
-
+  /* display: flex;
+  text-align: center;
+  flex-direction: row; */
   width: 90%;
   height: 200rpx;
   margin-bottom: 20rpx;
@@ -90,7 +92,7 @@ page {
   padding-right: 20rpx;
   height: 100%;
   color: #c99361;
- 
+
 }
 
 .coupon-left {

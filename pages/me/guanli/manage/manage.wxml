@@ -12,48 +12,182 @@
 
 
 
-<!-- 参与的活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}'>
-	<view class="search">
-		您暂时没有参加活动哦~
-	</view>
-</view>
-
-
 
 <!-- 正在进行活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}'>
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}'>
 	<view class="search">
-		您暂时没有进行的活动哦~
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
 
 
 
 <!-- 未发布活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}'>
 	<view class="search">
-		您暂时没有发布的活动哦~
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
 
 
 
 <!-- 已下架活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==4}}'>
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
 	<view class="search">
-		您暂时没有下架的活动哦~
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
 
 
+
+
+
+
+<!-- 
 <view class="huodtype">
 	<view class="type">
 		<view class="form">活动类型选择</view>
 		<block>
 			<view class="charge">
 				<view class="tup">
-					<image src="/images/tubiao/109.png"></image>
+					<image src="/images/tubiao/9.png"></image>
 				</view>
 				<view class="lists">
 					<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
@@ -64,10 +198,10 @@
 
 		<view class="charge">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="/images/tubiao/9.png"></image>
 			</view>
 			<view class="lists">
-				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+				<view style="font-size: 33rpx; font-weight: 700;">优惠券活动</view>
 				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
 			</view>
 		</view>
@@ -75,36 +209,43 @@
 
 		<view class="charge">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="/images/tubiao/9.png"></image>
 			</view>
 			<view class="lists">
-				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+				<view style="font-size: 33rpx; font-weight: 700;">商品活动</view>
 				<view style="font-size: 26rpx; font-weight: 300; padding: 20rpx 0;">免费活动报名创建</view>
 			</view>
 		</view>
 
 
+		<view class="charge">
+			<view class="tup">
+				<image src="/images/tubiao/9.png"></image>
+			</view>
+			<view class="lists">
+				<view style="font-size: 33rpx; font-weight: 700;">拼团活动</view>
+				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
+			</view>
+		</view>
 
 		<view class="charge">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="/images/tubiao/9.png"></image>
 			</view>
 			<view class="lists">
-				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+				<view style="font-size: 33rpx; font-weight: 700;">抽奖活动</view>
 				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
 			</view>
 		</view>
 	</view>
 </view>
+ -->
 
 
-
-
-
-
-
-
-
+<!-- <view class="chouj">
+	<view class="column">抽奖活动</view>
+	<view class="topnav">还没创建任何活动</view>
+</view> -->
 
 
 

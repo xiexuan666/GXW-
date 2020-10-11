@@ -38,6 +38,8 @@
 				<view class="dizhi"><text class="jul">门店地址</text> 广东省佛山市禅城区南庄镇陶瓷总部基地</view>
 			</view>
 		</view>
+
+		
 	</view>
 </view>
 
@@ -72,7 +74,7 @@
 			活动详情
 		</view>
 		<view class="apply-ims">
-			<image src="/images/tubiao/99.png" mode="widthFix"></image>
+			<image src="https://cdn.juesedao.cn/gxw/huodong.png" mode="widthFix"></image>
 		</view>
 
 	</view>

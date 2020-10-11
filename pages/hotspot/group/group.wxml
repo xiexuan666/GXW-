@@ -1,0 +1,55 @@
+<view class="header">
+	<view class="group">
+		<view class="group_r">
+			<view class="data">开团日期:2020.06.30-12:00</view>
+			<view class="date">活动规则</view>
+			<view class="group_img">
+				<image src="https://cdn.juesedao.cn/gxw/ridianshiping.jpg" mode="widthFix"></image>
+			</view>
+			<view class="name">
+				<view class="designation">
+					<view class="name_r"> 科莫白-DT88211</view>
+					<view class="name_l">规格5IZE.300x600mm</view>
+					<view class="name_l">型号NO123456</view>
+				</view>
+				<view class="pict">
+					<view class="price">299<text style="font-size:33rpx;color:#000">元/片</text></view>
+				</view>
+			</view>
+		</view>
+
+		<view class="clustering">
+			<view class="lump">还差4人,人满马上成团</view>
+			<view class="profile">
+				<view class="photo">
+					<image src="/images/tubiao/tx.png"></image>
+					<view class="tuan">团长</view>
+				</view>
+			</view>
+			<view class="aniu">
+				<button class="btn_s">一键拼单</button>
+			</view>
+			<view class="foot">
+				<view class="pd">-拼单须知-</view>
+				<view class="kait">
+					<view class="kait_r">
+						<image src="/images/tubiao/94.png" class="haoy"></image>
+						<view class="text">支付开团</view>
+					</view>
+					<view class="kait_r">
+						<image src="/images/tubiao/95.png" class="haoy"></image>
+						<view  class="text">邀请好友</view>
+					</view>
+					<view class="kait_r">
+						<image src="/images/tubiao/96.png" class="haoy"></image>
+						<view  class="text">拼团成功</view>
+					</view>
+					<view class="kait_r">
+						<image src="/images/tubiao/97.png" class="haoy"></image>
+						<view  class="text">商家发货</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

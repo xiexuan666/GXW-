@@ -1,0 +1,76 @@
+@import '/pages/template/comments/comments.wxss';
+
+
+/* 导购 */
+.shoppers {
+  width: 95%;
+  margin: 0 auto;
+
+}
+
+.dh_r {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 300;
+  border-bottom: 1.5px solid #8b8989;
+  padding-bottom: 40rpx;
+}
+
+/* .vip {
+  margin: 0 34rpx;
+} */
+
+/* 名片 */
+.card {
+  width: 95%;
+  margin: 30rpx auto;
+}
+
+
+
+
+
+/**导购**/
+.me-list-lir {
+  margin: 0 25rpx;
+
+
+}
+
+
+
+.me-list-lir image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-top: -10rpx;
+}
+
+.dh_rs {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 300;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx;
+  margin: 20rpx 0;
+}
+
+.name {
+  font-size: 23rpx;
+  font-weight: 300;
+}
+
+/* 删除按钮 */
+.btn_s {
+  margin: 50rpx auto;
+}
+.btnr {
+  width: 60%;
+  background-color: #be8f61;
+  border-radius: 50rpx;
+  color: #fff;
+}

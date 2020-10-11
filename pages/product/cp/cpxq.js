@@ -62,14 +62,14 @@ Page({
     var url = baseUrl + "production/findproductPriceById"
     var dat={
       storeid:bendijxs.id,
-      brandid:'1',
+      brandid:app.globalData.brandid,
       productid:cpxiaqs.id
     }
-    console.log(dat,'data')
+    // console.log(dat,'data')
     http.promisServer(url, dat).then(resc=>{
-      console.log(resc,'价格1111111111111')
+      // console.log(resc,'价格1111111111111')
       if(!resc.data.productprice){
-        console.log(7777777)
+        // console.log(7777777)
         nr.forEach(el => {
           el.jiage=''
         });
@@ -101,8 +101,10 @@ Page({
     return (typeof str=='string')&&str.constructor==String; 
     },
   onLoad: function (options) {
-    console.log(app.globalData.cpxiaqs,'执行了吗')
-    var cpxiaqs=app.globalData.cpxiaqs
+    // console.log(options.arry);
+    console.log(app.globalData.cpxiaqs.id)
+    var cpxiaqs=app.globalData.cpxiaqs;
+
     if(cpxiaqs.product_guige&&this.isString(cpxiaqs.product_guige)){
       cpxiaqs.product_guige=JSON.parse(cpxiaqs.product_guige)
     
@@ -117,7 +119,7 @@ Page({
       this.qingqjiage(cpxiaqs)
     }
     this.setData({cpxiaqs})
-    console.log(cpxiaqs,'案例详情')
+    // console.log(cpxiaqs,'案例详情')
   },
 
   // 跳转到海报

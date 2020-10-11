@@ -1,0 +1,98 @@
+page {
+  background-color: #e7e7e7;
+}
+
+
+/* 头部 */
+.jinx-t {
+  width: 100%;
+  /* background-color: #bababa;
+   */
+}
+
+.jinx-tnr {
+  width: 100%;
+  position: relative;
+  height: 440rpx;
+}
+
+.jinx-bei {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.jinx-bei image {
+  width: 100%;
+}
+
+.jinx-toux {
+  width: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name-p {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+}
+
+/* 头部 end*/
+.product-cpanli {
+  padding-top: 20rpx;
+  width: 100%;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  align-items: center;
+}
+.shouc {
+  width: 90%;
+  background-color: #fff;
+  position: relative;
+  margin-top: -50rpx;
+  margin-bottom: 50rpx;
+  margin: 0 auto;
+  border-radius: 25rpx;
+}
+.goods-title {
+  font-size: 24rpx;
+}
+
+.regsiter  image {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  margin: 30rpx  20rpx;
+}
+.simple-li-r2 {
+  margin: 30rpx  10rpx;
+  display: flex;
+}
+.cotione1 {
+
+  margin-left: 50rpx;
+}

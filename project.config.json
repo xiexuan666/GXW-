@@ -5,30 +5,43 @@
 	},
 	"setting": {
 		"urlCheck": false,
+		"scopeDataCheck": false,
+		"coverView": true,
 		"es6": true,
-		"enhance": false,
 		"postcss": true,
+		"compileHotReLoad": false,
 		"preloadBackgroundData": false,
 		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"nodeModules": true,
 		"autoAudits": false,
+		"newFeature": true,
+		"uglifyFileName": false,
+		"uploadWithSourceMap": true,
+		"useIsolateContext": true,
+		"nodeModules": true,
+		"enhance": false,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
 		"showShadowRootInWxmlPanel": true,
+<<<<<<< HEAD
 		"scopeDataCheck": false,
 		"uglifyFileName": false,
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
+<<<<<<< HEAD
 		},
 		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false,
 		"compileHotReLoad": false,
 		"useIsolateContext": true
+=======
+		}
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.2",
@@ -418,6 +431,8 @@
 					"id": -1,
 					"name": "订单管理",
 					"pathName": "pages/me/guanli/indent/indent",
+<<<<<<< HEAD
+=======
 					"query": "",
 					"scene": null
 				},
@@ -437,6 +452,47 @@
 				},
 				{
 					"id": -1,
+					"name": "拼团活动3",
+					"pathName": "pages/hotspot/succeed/succeed",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册页面",
+					"pathName": "pages/me/zhuc/zhuc",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/hotspot/group/group",
+					"pathName": "pages/hotspot/group/group",
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+<<<<<<< HEAD
+					"name": "拼团活动",
+					"pathName": "pages/hotspot/group/group",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 52,
+					"name": "拼团活动2",
+=======
+					"name": "pages/hotspot/booking/booking",
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
+					"pathName": "pages/hotspot/booking/booking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+<<<<<<< HEAD
 					"name": "拼团活动3",
 					"pathName": "pages/hotspot/succeed/succeed",
 					"query": "",
@@ -517,6 +573,10 @@
 					"name": "你喜欢的方案",
 					"pathName": "pages/me/guanli/precept/precept",
 					"query": "",
+=======
+					"name": "pages/hotspot/succeed/succeed",
+					"pathName": "pages/hotspot/succeed/succeed",
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 					"scene": null
 				}
 			]

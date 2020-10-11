@@ -462,6 +462,7 @@
 }
 
 /* 二维码 */
+<<<<<<< HEAD
 .code {
   position: absolute;
   bottom: 20rpx;
@@ -470,5 +471,14 @@
 
 .code image {
   width: 80rpx;
+=======
+.code{
+  position: absolute;
+  bottom:20rpx;
+  right:40rpx;
+}
+.code image{
+  width:80rpx;
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
   height: 80rpx;
 }

@@ -1,5 +1,8 @@
 var app = getApp()
 var address = require("../../../utils/mock");
+const http = app.globalData.http;
+const baseUrl = app.globalData.baseUrl;
+const getInformation = app.globalData.getInformation;
 Page({
   /**
     * 控件当前显示的数据
@@ -26,23 +29,19 @@ Page({
     detailedAddress: "",
     labelList: ["家", "公司", "学校"],            //标签
     labelDefault: 0,              // 标签默认,
- 
-    
+    judge:null
   },
   consigneeNameInput: function(e) {
-    
     this.setData({
       consigneeName: e.detail.value
     })
   },
   phoneInput: function(e) {
-    
     this.setData({
       phone: e.detail.value
     })
   },
   consigneeRegionInput: function (e) {
-   
     this.setData({
       consigneeRegion: e.detail.value
     })
@@ -58,53 +57,128 @@ Page({
       labelDefault: index
     })
   },
+
+  // 保存地址
   submit: function() {
+    console.log(app.globalData.brandid);
+    let userid = wx.getStorageSync('gerxinx').id;
+    let brand_id = app.globalData.brandid;
     var consigneeName = this.data.consigneeName;
-    console.log(consigneeName)
     var phone = this.data.phone;
-    console.log(phone)
     var consigneeRegion = this.data.consigneeRegion;
-    console.log(consigneeRegion)
-    var detailedAddress = this.data.detailedAddress
-    console.log(detailedAddress)
+    console.log(consigneeRegion);
+    var detailedAddress = this.data.detailedAddress;
+    // 判断用户是否有输入值
     if (consigneeName == "") {
-      wx: wx.showToast({
+      wx.showToast({
         title: '请输入姓名',
         image: "/images/tubiao/46.png"
       })
       return false
     }
     else if (phone == "") {
-      wx: wx.showToast({
+       wx.showToast({
         title: '请输入手机号码',
         image: "/images/tubiao/46.png"
       })
       return false
     }
     else if (consigneeRegion == "") {
-      wx: wx.showToast({
+       wx.showToast({
         title: '请选择所在地区',
         image: "/images/tubiao/46.png"
       })
       return false
     }
     else if (detailedAddress == "") {
-      wx: wx.showToast({
+       wx.showToast({
         title: '请输入详细地址',
         image: "/images/tubiao/46.png"
       })
       return false
-    }
-    else {
+    }else {
+      // 信息无误，发送请求并跳转页面
       wx.navigateTo({
         url: '/pages/me/address',
       })
+    let crtlist = consigneeRegion.split('-');
+    let data ={
+    brandId:brand_id,
+    userId:userid,
+    phone:phone,
+    name:consigneeName,
+    sheng:crtlist[0],
+    city:crtlist[1],
+    region:crtlist[2],
+    default:0,
+    address:detailedAddress,
+  }
+    // 在这里判断值，是否是修改
+    if(this.data.judge){
+    data.addressId=this.data.judge
+    }else{
+
     }
+    let url = baseUrl + 'activity/address/saveAddress';
+    console.log(data,url);
+    http.promisServer(url,data).then(res=>{
+      console.log(res);
+      wx.showToast({
+        title: '地址保存成功',
+        image: "/images/tubiao/46.png"
+      })
+      setTimeout(function(){ 
+        wx.reLaunch({
+          url: '/pages/me/address/address',
+        })
+      }, 500);
+      
+    })
+  }
+  },
+
+  // 删除地址
+  delete:function(){
+    let userid = wx.getStorageSync('gerxinx').id;
+    let brand_id = app.globalData.brandid;
+    let addressId = this.data.judge;
+
+    let data={
+      brandId:brand_id,
+      userId:userid,
+      addressId:addressId
+    }
+    let url = baseUrl + 'activity/address/deleteAddress';
+    console.log(data,url)
+    http.promisServer(url,data).then(res=>{
+      console.log(res);
+      wx.showToast({
+        title: '地址已删除',
+        image: "/images/tubiao/46.png"
+      })
+      setTimeout(function(){ 
+        wx.reLaunch({
+          url: '/pages/me/address/address',
+        })
+      }, 500);
+    })
+
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if(options.arry){
+    let arry =  JSON.parse(options.arry);
+    console.log(arry)
+    this.setData({
+      consigneeName:arry.name,
+      phone:arry.phone,
+      detailedAddress:arry.address,
+      consigneeRegion:arry.sheng+'-'+arry.city+'-'+arry.region,
+      judge:arry.id
+    })}
+
     // 默认联动显示北京
     var id = address.provinces[0].id
     this.setData({

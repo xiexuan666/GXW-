@@ -65,8 +65,11 @@ page {
   padding-top: 135rpx;
   text-align: center;
   position: absolute;
+<<<<<<< HEAD
   top:0;
   right: 0;
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 }
 
 .saoma {

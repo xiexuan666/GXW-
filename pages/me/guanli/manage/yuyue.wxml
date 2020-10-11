@@ -38,8 +38,11 @@
 			</view>
 			<view class="jxsnr-li-lp">2020-03-22</view>
 		</view>
+<<<<<<< HEAD
 		<view class="keh">
 			<image src="/images/tubiao/lianx.png"></image>
 		</view>
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 	</view>
 </view>

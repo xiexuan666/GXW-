@@ -19,6 +19,7 @@
   padding: 10rpx;
   border-radius: 10rpx;
   color: #fff;
+<<<<<<< HEAD
   top: 180rpx;
 }
 .floor_r {
@@ -41,11 +42,15 @@
   border-radius: 25rpx;
   width: 50%;
   text-align: center;
+=======
+
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 }
 
 .floor-title {
   margin-left: 350rpx;
 }
+<<<<<<< HEAD
 .price {
   font-size: 32rpx;
   font-weight: 700;
@@ -55,6 +60,8 @@
   font-weight: 300;
 }
 
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 
 
 

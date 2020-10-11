@@ -193,6 +193,8 @@
 					<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
 					<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
 				</view>
+
+				<icon type="success" color="{{item.select ? 'red' : 'gray' }}" bindtap="handleSelect" data-index="{{index}}"></icon>
 			</view>
 		</block>
 

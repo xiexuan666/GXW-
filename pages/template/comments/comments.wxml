@@ -148,7 +148,10 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 <!-- 店长名片 -->
 <template name="users">
 	<view class="user">
@@ -175,4 +178,28 @@
 </template>
 
 
+<<<<<<< HEAD
 
+=======
+<!-- 店长名片2222 -->
+<template name="manager">
+	<view class="user">
+		<image class="list_pic" src="/images/tubiao/9.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+				<text>{{merchants.shopowner}}</text>
+			</view>
+			<view class="info">
+				<view class="info_l">电话:13255555555</view>
+				<view class="info_l">职务:店长</view>
+				<view class="info_l">所属门店:asdaqwd</view>
+			</view>
+		</view>
+		<view class="user_info">
+			<view class="user_img">
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+	</view>
+</template>
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b

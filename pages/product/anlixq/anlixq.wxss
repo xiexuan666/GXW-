@@ -573,10 +573,18 @@ appraise-content view text:nth-child(2) {
 .appraise-user_top {
   width: 100%;
   height: 100rpx;
+<<<<<<< HEAD
+=======
+  /* background: lightseagreen; */
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
   position: relative;
 }
 
 .appraise-user_top .Top_Good {
+<<<<<<< HEAD
+=======
+  /* background: lightslategrey; */
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
   height: 50%;
   width: 94%;
   padding-top: 20rpx;
@@ -609,6 +617,10 @@ appraise-content view text:nth-child(2) {
 }
 
 .Top_Good .Top_Good_Text {
+<<<<<<< HEAD
+=======
+  /* display:block; */
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
   display: flex;
   align-items: center;
   flex: 1;

@@ -1,6 +1,10 @@
 <!-- 店长卡片 -->
 <import src='/pages/template/comments/comments' />
+<<<<<<< HEAD
 <template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<template is="users" data="{{list:'imasrc////',num:3}}" data="{{user:merchants}}">
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 </template>
 
 
@@ -41,7 +45,13 @@
 
 <!-- 名片 -->
 <view class="card" wx:if='{{cpxqzt==1}}'>
+<<<<<<< HEAD
 	<view class="dh_r">
+=======
+
+	<view class="dh_r">
+		<!-- <checkbox checked="{{check}}"  bindtap="Future"></checkbox> -->
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 		<view class="vip"></view>
 		<view class="vip">头像</view>
 		<view class="vip">导购</view>
@@ -86,7 +96,10 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 <!-- 绑定获客 -->
 <view class="binding" wx:if='{{cpxqzt==2}}'>
 	<block>

@@ -1,4 +1,10 @@
 {
+<<<<<<< HEAD
   "usingComponents": {},
   "navigationBarTitleText":"用户管理"
+=======
+  "usingComponents": {
+  },
+  "navigationBarTitleText":"导购管理"
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .price {
   width: 90%;
   margin: 0 auto;
@@ -114,4 +115,22 @@
   height: 60rpx;
   line-height: 65rpx;
   border-radius: 30rpx;
+=======
+
+
+.collect {
+  font-size: 33rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 日期 */
+.section {
+  margin-top: 50rpx;
+  text-align: center;
+  background: #f7f7f7;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 }

@@ -48,7 +48,12 @@ Page({
         image: '/images/tubiao/1-06.png',
         content: '约量房'
       }
+<<<<<<< HEAD
     ]
+=======
+    ],
+    card:[],
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
   },
   //拨打电话
   calling: function () {
@@ -227,6 +232,31 @@ Page({
     //请求轮播
     this.requestlunb()
 
+<<<<<<< HEAD
+=======
+    // 系统获客的代码及参数及接口
+    // 获取用户id
+    let user = wx.getStorageSync('gerxinx');
+    //获取商家id
+    let shanjia = wx.getStorageSync('bendijxs');
+    console.log(shanjia);
+    let data ={
+      user_id: user.id,
+      brand_id :app.globalData.brandid,
+      store_id:shanjia.id,
+      superior_id:shanjia.userid,
+      level:4,
+      join_type:'系统获客',
+      join_remarks:'系统获客'
+    }
+    let url = app.globalData.baseUrl+'customer/member/userMemberInfo';
+
+    getInformation.binding(url,data).then(res=>{
+      console.log('请求下来的数据：',res);
+    });
+
+
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 
   },
   //将canvas转换为图片保存到本地，然后将图片路径传给image图片的src
@@ -428,7 +458,10 @@ Page({
     let check = getInformation.checkUser();
     // 执行点赞操作
     if (check) {
+<<<<<<< HEAD
       console.log('来点赞吧');
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
       // 获取点击下标
       var subscript = event.currentTarget.dataset['index'];
       // 获取轮播图数据
@@ -449,7 +482,10 @@ Page({
       // 获取默认的点赞数
       let great = greatid[subscript].great;
       http.promisServer(url, dat).then(res => {
+<<<<<<< HEAD
         console.log('点赞的判断值：', res.flag);
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
         if (res.flag) {
           // 点赞成功，点赞数+1 更新视图，修改图标高亮状态
           let good = great + 1;
@@ -465,7 +501,10 @@ Page({
             ['lunbs[' + subscript + '].great']: good,
             ['lunbs[' + subscript + '].dianzhan']: res.flag
           })
+<<<<<<< HEAD
           console.log('点击的案例下标：', subscript);
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
           wx.showToast({ title: '取消点赞', icon: 'none', duration: 800, mask: true })
         }
       })

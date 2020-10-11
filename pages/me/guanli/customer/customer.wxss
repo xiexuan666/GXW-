@@ -35,13 +35,47 @@
 .shoppers {
   width: 95%;
   margin: 30rpx auto;
+<<<<<<< HEAD
+}
+
+.shoppers_r {
+=======
 }
 
 .shoppers_r {
   width: 100%;
+}
+
+/* 
+.dh_r {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 33rpx;
+  font-weight: 700;
+  border-top: 1px solid #8b8989;
+  border-bottom: 1px solid #8b8989;
+  padding: 20rpx;
+} */
+
+.daogou {
+  margin-right: 100rpx;
+}
+
+
+
+
+/**导购导航end**/
+.me-list-li {
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
+  width: 100%;
+  height: 90rpx;
+  /* border-bottom: 1px solid #ccc; */
+  padding-bottom: 38rpx;
 
 }
 
+<<<<<<< HEAD
 /* 
 .dh_r {
   display: flex;
@@ -96,6 +130,32 @@
   margin-left: 50rpx;
   /* padding-right: 75rpx;
   color: #595757; */
+=======
+.me-list-lil {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+.me-list-lil image {
+  position: absolute;
+  /* top: 30rpx;
+  left: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%; */
+}
+
+.me-list-lir {
+  float: right;
+  height: 100%;
+  /* background-color:; */
+}
+
+.name {
+  font-size: 33rpx;
+  /* padding-right: 75rpx;
+  color: #595757; */
 }
 
 .me-list-lir image {
@@ -103,9 +163,20 @@
   /* width: 30rpx;
   height: 30rpx; */
 
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
+}
+
+.me-list-lir image {
+  float: right;
+  /* width: 30rpx;
+  height: 30rpx; */
+
+<<<<<<< HEAD
 }
 
 
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 
 
 /* 绑定获客 */
@@ -118,6 +189,7 @@
 .binding_rr {
   margin-top: 50rpx;
 }
+<<<<<<< HEAD
 
 .customer {
   padding: 30rpx 0;
@@ -126,6 +198,16 @@
   padding-left: 50rpx;
 }
 
+=======
+
+.customer {
+  padding: 30rpx 0;
+  font-size: 26rpx;
+  font-weight: 600;
+  padding-left: 50rpx;
+}
+
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 .customers {
   padding: 10rpx 0;
   font-size: 26rpx;
@@ -135,6 +217,13 @@
 
 .me-list-li {
   width: 95%;
+<<<<<<< HEAD
+  height: 90rpx;
+  padding-bottom: 38rpx;
+  margin-top: 10rpx;
+  background-color: #fafafa;
+  margin: 0 auto;
+=======
   height: 90rpx;
   padding-bottom: 38rpx;
   margin-top: 10rpx;
@@ -143,7 +232,20 @@
   justify-content: center;
   text-align: center;
 }
+.me-list-l_i {
+  width:100%;
+  height: 90rpx;
+  /* padding-bottom: 38rpx; */
+  /* margin-top: 10rpx; */
+  /* background-color: #fafafa; */
+  margin: 0 auto;
+  display: flex;
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
+  justify-content: center;
+  text-align: center;
+}
 
+<<<<<<< HEAD
 .me-list-l_i {
   width: 95%;
   height: 90rpx;
@@ -153,8 +255,32 @@
   margin: 0 auto;
   justify-content: center;
   text-align: center;
-}
+=======
 
+.me-list{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.me-list:nth-child(1){
+  flex:0.5;
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
+}
+.me-list:nth-child(6){
+  flex:0.5;
+}
+.me-list image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.me-list:nth-child(6) image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.me-list-lir {
+
+<<<<<<< HEAD
 
 .me-list-lil {
   float: left;
@@ -163,6 +289,8 @@
   display: flex;
   align-items: flex-end;
 
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 }
 
 .me-list-lil image {
@@ -174,6 +302,7 @@
   border-radius: 50%;
 }
 
+<<<<<<< HEAD
 .me-list-lir {
   float: right;
   height: 100%;
@@ -181,6 +310,8 @@
   display: flex;
   align-items: flex-end;
 }
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
 
 .name {
   font-size: 30rpx;
@@ -213,8 +344,11 @@
 }
 
 .names {
+<<<<<<< HEAD
   margin-left: auto;
   padding-right: 40rpx;
+=======
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
   font-size: 30rpx;
 }
 
@@ -305,6 +439,7 @@
 .card {
   width: 95%;
   margin: 30rpx auto;
+<<<<<<< HEAD
 }
 
 .vip {
@@ -326,3 +461,23 @@
   flex: 0.5;
   border-right: none;
 }
+=======
+}
+
+.vip {
+  flex: 1;
+  border-right: 1rpx solid black;
+  font-size: 26rpx;
+}
+.vip:nth-child(1){
+  flex: 0.5;
+  border-right: none;
+}
+.vip:nth-child(5){
+  border-right: none;
+}
+.vip:nth-child(6){
+  flex: 0.5;
+  border-right: none;
+}
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b

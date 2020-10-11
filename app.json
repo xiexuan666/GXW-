@@ -64,11 +64,18 @@
     "pages/me/merchant/merchant",
     "pages/template/viedeocard/videocard",
     "pages/video/video",
+<<<<<<< HEAD
+=======
+    "pages/activity/free",
+    "pages/template/ActivityTemplate/ActivityTemplate",
+    "pages/me/update/shoppersupdate/shoppersupdate",
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
     "pages/me/guanli/manage/yuyue",
     "pages/me/guanli/shoppers/shoppers",
     "pages/me/guanli/information/information",
     "pages/me/guanli/key/key",
     "pages/me/guanli/column/column",
+<<<<<<< HEAD
     "pages/me/guanli/indent/indent",
     "pages/me/issue/issue",
     "pages/me/guanli/category/category",
@@ -81,6 +88,9 @@
     "pages/me/guanli/control/control",
     "pages/me/guanli/precept/precept"
 
+=======
+    "pages/me/guanli/indent/indent"
+>>>>>>> 27159c16110f0cab8d2c8e10cd995bc164ca595b
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -60,12 +60,21 @@
     "pages/me/containe/containe",
     "pages/me/guanli/code/code",
     "pages/template/haibao/haibao",
+<<<<<<< HEAD
     "pages/template/ActivityTemplate/ActivityTemplate",
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     "pages/template/comments/comments",
     "pages/me/registration/registration",
     "pages/me/merchant/merchant",
     "pages/template/viedeocard/videocard",
     "pages/video/video",
+<<<<<<< HEAD
+=======
+    "pages/activity/free",
+    "pages/template/ActivityTemplate/ActivityTemplate",
+    "pages/me/update/shoppersupdate/shoppersupdate",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     "pages/me/guanli/manage/yuyue",
     "pages/me/guanli/shoppers/shoppers",
     "pages/me/guanli/information/information",
@@ -73,6 +82,7 @@
     "pages/me/guanli/column/column",
     "pages/me/guanli/indent/indent",
     "pages/customers/system/system",
+<<<<<<< HEAD
     "pages/customers/distribution/distribution",
     "pages/customers/shopper/shopper",
     "pages/template/Administration/Administration",
@@ -98,6 +108,14 @@
     "pages/me/guanli/manage/zixu/zixu"
 
    
+=======
+    "pages/template/Administration/Administration",
+    "pages/customers/distribution/distribution",
+    "pages/customers/shopper/shopper",
+    "pages/scheme/designscheme/designscheme",
+    "pages/template/component/component",
+    "pages/scheme/plan/plan"
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -22,18 +22,29 @@ Page({
   },
    //产品详情导航选择
    cpxzxz:function(e){
+<<<<<<< HEAD
      var that = this;
     var ind=app.hdindex(e,'ind')
    var cpxqzt=this.data.cpxqzt;
    if(ind==cpxqzt){return false};
    switch(ind){
 
+=======
+    var that = this;
+    var ind=app.hdindex(e,'ind')
+    var cpxqzt=this.data.cpxqzt;
+    if(ind==cpxqzt){return false};
+    switch(ind){
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
    }
    if(ind==1){
     cpxqzt=1
     wx.setNavigationBarTitle({ title: '全部'});
     // 查找出现次数
+<<<<<<< HEAD
 
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     that.setData({
       hiddenstrategy:5
     })
@@ -72,7 +83,11 @@ Page({
     cpxqzt=5
     wx.setNavigationBarTitle({ title: '新品上市'});
     var sum =  that.data.strategy;
+<<<<<<< HEAD
     that.query(3,sum);
+=======
+    that.query(4,sum);
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     that.setData({
       hiddenstrategy:4
     })
@@ -83,7 +98,6 @@ Page({
 
   //案例头部选择
   anlitopxuanz:function(e){
-    console.log(e,9999)
     var ind=app.hdindex(e,'ind')
     var id=app.hdindex(e,'idc')
     var cpzt=app.hdindex(e,'cpzt')
@@ -110,16 +124,14 @@ Page({
       anlixuanz:anlixuanz,
       anlizfcid:fanhui.idzfc,
     })
-
     if(fanhui.idzfc==''){
       this.antoucclear(1)
       wx.showToast({title: '没有相关结果',icon: 'none',duration: 700})
       return false
     }
     //查询案例出内容
-    this.chaxchuanlinr(fanhui.idzfc,1)
+    this.chaxchuanlinr(fanhui.idzfc,1);
   },
-
    // 查询出案例 id字符串 页数 1  
   // num 1第一次添加 2
   chaxchuanlinr(idzfc,page,num){
@@ -142,8 +154,7 @@ Page({
     var dat={
       page,
       findCaseById:idzfc
-    }
-
+    } 
     http.promisServer(url, dat).then(resc=>{
       var annrshuz= annrshuzs.concat(resc.data.CaseList)
       var anlifuhejieg=resc.data.casessCount
@@ -187,13 +198,68 @@ Page({
     let url = 'activity/hot/getAllVideo';
     // 请求视频数量
     getInformation.getVideo(url).then(res=>{
+<<<<<<< HEAD
       console.log(res);
+=======
+      console.log('请求到的视频',res);
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
       this.setData({
         video:res.data
       })
     })
+<<<<<<< HEAD
+=======
 
   },
+  /**
+   * 点赞事件--实时更新页面上的点赞数
+   * 获取下标，获取视频id
+   * 调用getInfoemation封装好的接口进行点赞操作
+   * 根据res.flag值对判断值和页面数组进行更改
+   */ 
+  addgreat:function(e){
+    var that = this;
+    var index=app.hdindex(e,'index');
+    let url = 'activity/hot/greatVideo';
+    let videoid = that.data.video[index].videoId;
+    getInformation.addgreat(url,undefined,videoid).then(res=>{
+      if(res.flag){
+        let great =  that.data.video[index].great+1;
+        that.setData({
+          ['video['+index+'].dianzhan']:res.flag,
+          ['video['+index+'].great']:great,
+        })
+      }else{
+        let great =  that.data.video[index].great-1;
+        that.setData({
+          ['video['+index+'].dianzhan']:res.flag,
+          ['video['+index+'].great']:great,
+        })
+      }
+    })
+  },
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+
+  /**
+   * 跳转事件--使用自己封装的方法进行跳转
+   * 
+   */
+  Jumpvideo:function(e){
+    var that = this;
+    var index=app.hdindex(e,'index');
+    console.log(index);
+    // wx.showToast({
+    //   title: '视频还没准备好哦',
+    //   icon: 'none',
+    //   duration: 2000
+    // })
+    console.log('跳转到viedo页面',index,that.data.video[index]);
+    let value = that.data.video[index];
+    let url = 'video/video';
+    getInformation.Jump(url,value);
+  },
+
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -270,6 +336,7 @@ Page({
   ,
   query:function(type,arry){
     var that = this;
+<<<<<<< HEAD
     console.log(type,arry);
     arry.forEach(item => {
       console.log(item)
@@ -279,6 +346,18 @@ Page({
         console.log('xxx',num);
       }
     });
+=======
+    let types = type;
+    let num = 0;
+    arry.forEach(res=>{
+      if(res.type == types){
+        num++
+      }
+    })
+    that.setData({
+      strategyTotal:num
+    })
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
   }
 })
 

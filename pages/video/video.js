@@ -6,6 +6,17 @@ Page({
    */
   data: {
     list:[],
+<<<<<<< HEAD
+=======
+    comments:false,
+    functionlist:[
+      {imagurl:'/images/tubiao/wechat.png'},
+      {imagurl:'/images/tubiao/12-12.png'},
+      {imagurl:'/images/tubiao/common.png'},
+      {imagurl:'/images/tubiao/fx.png'},
+      {imagurl:'/images/tubiao/download.png'},
+    ]
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
   },
 
   /**
@@ -13,8 +24,15 @@ Page({
    */
   onLoad: function (options) {
     console.log(JSON.parse(options.value));
+<<<<<<< HEAD
     this.setData({
       list:JSON.parse(options.value)
+=======
+    let photo = JSON.parse(options.value).wx_photo
+    this.setData({
+      list:JSON.parse(options.value),
+      ['functionlist['+0+'].imagurl']:photo
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     })
   },
 

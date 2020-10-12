@@ -238,6 +238,7 @@ calling: function () {
    */
   onLoad: function (options) {
     var that = this;
+<<<<<<< HEAD
     if(options.Arrys){
       let Arrys = JSON.parse(options.Arrys);
       that.setData({
@@ -291,7 +292,28 @@ calling: function () {
     // this.handlepl()
   
 
+=======
+    // 获取到页面数据进行渲染/首页跳转
+    let Arrys;
+    if(options.Arrys){
+      Arrys = JSON.parse(options.Arrys);
+      console.log('案例详情',Arrys);
+      that.setData({
+          pagesubscript:Arrys
+      })
+    }else{
+      Arrys = app.globalData.anlixiaq;
+      console.log('案例详情',Arrys);
+      that.setData({
+        pagesubscript:Arrys
+     })
+    }
+    // 获取评论信息
+    that.GetFindComment();
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 
+    // 添加访问量
+    that.preview();
   },
 
   /**
@@ -319,6 +341,7 @@ calling: function () {
     return (typeof str=='string')&&str.constructor==String; 
     },
   onShow: function () {
+<<<<<<< HEAD
     var anlixiaq =app.globalData.anlixiaq;
     console.log(anlixiaq);
     console.log(anlixiaq,'案例详情')
@@ -326,6 +349,9 @@ calling: function () {
       anlixiaq.images=JSON.parse(anlixiaq.images)
     }
     this.setData({anlixiaq})
+=======
+
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
   },
 
   /**
@@ -371,11 +397,16 @@ calling: function () {
     var that = this;
     // 品牌id
     let brandid = app.globalData.brandid;
+<<<<<<< HEAD
     console.log(brandid);
     // 案例id
     let caseid = that.data.pagesubscript.id;
     console.log(caseid);
 
+=======
+    // 案例id
+    let caseid = that.data.pagesubscript.id;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     // 请求接口
     let url = baseUrl +'case/findAllComment';
     let data= {
@@ -385,12 +416,19 @@ calling: function () {
     }
     // 调用接口
     http.promisServer(url, data).then(res=>{
+<<<<<<< HEAD
       console.log(res.data);
       that.setData({
         findAllComment:res.data
       })
 
       console.log(that.data.findAllComment);
+=======
+      that.setData({
+        findAllComment:res.data
+      })
+      console.log('评论详情',that.data.findAllComment);
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     })
   },
 
@@ -410,10 +448,15 @@ calling: function () {
       caseId:caseid,
       userId:userid
     };
+<<<<<<< HEAD
     console.log(Url);
     console.log(data);
     http.promisServer(Url,data).then(res=>{
       console.log(res);
+=======
+    http.promisServer(Url,data).then(res=>{
+      console.log('用户的查看状态',res);
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     })
    } 
   //参数：用户id,案例id,品牌id,

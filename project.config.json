@@ -14,21 +14,31 @@
 		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+<<<<<<< HEAD
 		"enhance": false,
 		"nodeModules": true,
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 		"uglifyFileName": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		},
+<<<<<<< HEAD
 		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false,
 		"compileHotReLoad": false,
 		"useIsolateContext": true
+=======
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.2",
@@ -64,13 +74,6 @@
 		"miniprogram": {
 			"current": -1,
 			"list": [
-				{
-					"id": -1,
-					"name": "首页",
-					"pathName": "pages/souye/souye",
-					"query": "",
-					"scene": null
-				},
 				{
 					"id": -1,
 					"name": "我的",
@@ -418,6 +421,8 @@
 					"id": -1,
 					"name": "订单管理",
 					"pathName": "pages/me/guanli/indent/indent",
+<<<<<<< HEAD
+=======
 					"query": "",
 					"scene": null
 				},
@@ -443,6 +448,46 @@
 					"scene": null
 				},
 				{
+					"id": -1,
+					"name": "注册页面",
+					"pathName": "pages/me/zhuc/zhuc",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+<<<<<<< HEAD
+					"name": "拼团活动",
+					"pathName": "pages/hotspot/group/group",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 52,
+					"name": "拼团活动2",
+					"pathName": "pages/hotspot/booking/booking",
+=======
+					"name": "pages/hotspot/group/group",
+					"pathName": "pages/hotspot/group/group",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+<<<<<<< HEAD
+					"name": "拼团活动3",
+					"pathName": "pages/hotspot/succeed/succeed",
+=======
+					"name": "pages/hotspot/booking/booking",
+					"pathName": "pages/hotspot/booking/booking",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+					"query": "",
+					"scene": null
+				},
+				{
+<<<<<<< HEAD
 					"id": 54,
 					"name": "今日获客",
 					"pathName": "pages/customers/system/system",
@@ -460,39 +505,68 @@
 					"id": 56,
 					"name": "获客分配之后",
 					"pathName": "pages/customers/shopper/shopper",
+=======
+					"id": -1,
+					"name": "pages/hotspot/succeed/succeed",
+					"pathName": "pages/hotspot/succeed/succeed",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 					"query": "",
 					"scene": null
 				},
 				{
+<<<<<<< HEAD
 					"id": 57,
 					"name": "设计方案",
 					"pathName": "pages/scheme/designscheme/designscheme",
+=======
+					"id": -1,
+					"name": "修改导购信息",
+					"pathName": "pages/me/update/shoppersupdate/shoppersupdate",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 					"query": "",
 					"scene": null
 				},
 				{
+<<<<<<< HEAD
 					"id": 58,
 					"name": "设计案例",
 					"pathName": "pages/scheme/plan/plan",
+=======
+					"id": 59,
+					"name": "免费活动",
+					"pathName": "pages/activity/free",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 					"query": "",
 					"scene": null
 				},
 				{
+<<<<<<< HEAD
 					"id": 59,
 					"name": "你喜欢的案例",
 					"pathName": "pages/me/guanli/Works/Works",
+=======
+					"id": -1,
+					"name": "系统获客",
+					"pathName": "pages/customers/system/system",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 60,
+<<<<<<< HEAD
 					"name": "王店长",
 					"pathName": "pages/me/guanli/shop/shop",
+=======
+					"name": "系统获客",
+					"pathName": "pages/customers/system/system",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 61,
+<<<<<<< HEAD
 					"name": "你喜欢的方案",
 					"pathName": "pages/me/guanli/precept/precept",
 					"query": "",
@@ -572,13 +646,23 @@
 					"id": 72,
 					"name": "核销码",
 					"pathName": "pages/me/guanli/Verification/Verification",
+=======
+					"name": "设计方案",
+					"pathName": "pages/scheme/designscheme/designscheme",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 					"query": "",
 					"scene": null
 				},
 				{
+<<<<<<< HEAD
 					"id": 73,
 					"name": "视频管理",
 					"pathName": "pages/me/guanli/manage/zixu/zixu",
+=======
+					"id": -1,
+					"name": "方案",
+					"pathName": "pages/scheme/plan/plan",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 					"query": "",
 					"scene": null
 				}

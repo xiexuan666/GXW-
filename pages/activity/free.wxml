@@ -1,0 +1,15 @@
+<!--pages/activity/free.wxml-->
+<import src='/pages/template/ActivityTemplate/ActivityTemplate'/>
+<!-- 
+  组件参数:
+          array:自定义pick数组
+          index:pick数组下标（自定义或某些pick数组需要）
+          time:时间pick的值
+          date:开始日期pick的值
+          dates:结束日期pick的值
+          addresstwo:地址的值
+ -->
+<template is="activity" data="{{array:array,index:index,time:time,date:date,dates:dates,addresstwo:addresstwo}}">
+
+
+</template>

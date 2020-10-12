@@ -2,6 +2,7 @@
 const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
+const getInformation = app.globalData.getInformation;
 Page({
 
   /**
@@ -21,6 +22,7 @@ Page({
     sjzt:{status:0},
     //当前状态
     status:0,
+<<<<<<< HEAD
    
   },
   //个人列表跳转
@@ -56,6 +58,92 @@ Page({
         break;
     }
     
+=======
+    // 扫二维码获取到的id
+    scene:null,
+    // 商户信息：
+    storeRecord:[],
+    // 渲染input框的数组
+    list:[
+      {value:'姓名',prompt:'请输入真实姓名'},
+      {value:'注册类别',prompt:''},
+      {value:'联系电话',prompt:''},
+      {value:'微信号',prompt:''},
+      {value:'现居地',prompt:''},
+      {value:'性别',prompt:'请选择'},
+      {value:'籍贯',prompt:'请选择'},
+      {value:'生日',prompt:'请选择'},
+      {value:'爱好',prompt:''},
+      {value:'备注',prompt:''},
+    ],
+    // 男女选择
+    sex:['男','女'],
+    value:0,
+    user:[],
+    data:'-请选择-',
+  },
+  //个人列表跳转
+  // 实时添加用户输入的信息
+  xueliinput:function(e){
+    var that = this;
+    let index =app.hdindex(e,'index');
+    let data = that.data.user;
+    data[index] = e.detail.value;
+    that.setData({
+      user:data
+    })
+    console.log(that.data.user);
+  },
+// 实时获取生日
+bindDateChange: function (e) {
+  let index = app.hdindex(e,'index');
+  let data = this.data.user;
+  data[index] = e.detail.value;
+  this.setData({
+    date:e.detail.value,
+    user:data
+  })
+},
+  // 提交时将数据整合
+  subscribe:function(e){
+    var that = this;
+    var user = that.data.user;
+    // 传过来的商家信息
+    var storeRecord = that.data.storeRecord;
+    let data = {
+      // 动态参数
+      user_id:wx.getStorageSync('gerxinx').id,
+      brand_id:'2',
+      store_id:storeRecord.id,
+      shopowner_id:storeRecord.userid,
+      superior_id:storeRecord.userid,
+      // 表单数据
+      waiter_name:user[0],//用户名
+      //注册类别user[1]
+      waiter_phone:user[2],//联系电话
+      wx_code:user[3],//微信号
+      address:user[4],//地址
+      sex:'',//性别
+      native_place:user[6],//籍贯
+      birthday:user[7],//生日
+      hobby:user[8],//爱好
+      remark:user[9],//备注
+      // 默认值
+      status:0        
+    }
+    if(that.data.value){
+      console.log(that.data.value)
+      data.sex = '女';
+    }else{
+      console.log(that.data.value)
+      data.sex = '男';
+    }
+    // 发起保存
+    console.log(data);
+    getInformation.save(data).then(res=>{
+      console.log(res);
+    })
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
   },
   //申请
   shenq:function(){
@@ -80,8 +168,42 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
     
+=======
+    console.log(options.scene);
+    // 拿到第一个参数请求商家信息
+      if(options.scene){
+        // 调用parameter获取商家信息
+        getInformation.parameter(options.scene).then(res=>{
+          console.log(res.data.storeRecord);
+          this.setData({
+            storeRecord:res.data.storeRecord
+          });
+          console.log(this.data.storeRecord);
+        })
+      }else{
+        return false
+      }
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
   },
+  // 性别选项选择器
+  sexCheck:function(e){
+    this.setData({
+      value: e.detail.value,
+    })
+  },
+  // 日期选择器
+  bindRegionChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      region: e.detail.value
+    })
+  },
+/**
+ * 获取用户输入的信息
+ */ 
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -101,9 +223,13 @@ Page({
     }else{
       this.setData({status:app.globalData.status})
     }
+<<<<<<< HEAD
     
     
     //获取缓存信息
+=======
+    //获取缓存信息、商家状态
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     this.huqhcgrxin()
   },
 
@@ -170,7 +296,11 @@ Page({
   //获取当前商家状态
   hqshangzt(gerxinx){
     var tha=this
+<<<<<<< HEAD
     var dat={userid:gerxinx.id,brandid:'1'}
+=======
+    var dat={userid:gerxinx.id,brandid:app.globalData.brandid}
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
     var url = baseUrl + 'store/storestatus' 
     http.promisServer(url,dat).then(function(resc){
       if(resc.status=="000"){

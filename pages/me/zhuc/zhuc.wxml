@@ -6,12 +6,17 @@
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+=======
+				<image src="{{storeRecord.logo}}"></image>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 			</view>
-			<view class="name-p">冠星王总部</view>
+			<view class="name-p">{{storeRecord.shopowner}}</view>
 		</view>
 	</view>
 </view>
+<<<<<<< HEAD
 
 
 
@@ -55,10 +60,33 @@
 			<view class="me-list-lil">备注</view>
 			<view class="me-list-lir">
 				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+=======
+<block wx:for='{{list}}' wx:index='index' wx:item='item'>
+	<view class="me-list">
+		<view class="me-list-ul">
+			<view class="me-list-li" bindtap="melisttz" data-index="{{index}}">
+				<view class="me-list-lil">{{item.value}}</view>
+				<view class="me-list-lir">
+				<!-- 性别选择框 -->
+				<view wx:if='{{item.value=="性别"}}'>
+					<picker range="{{sex}}" value="{{value}}" bindchange="sexCheck">
+					<input name="xingm" disabled='{{true}}' bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{sex[value]}}" value="{{sex[value]}}"></input>
+					</picker>
+				</view>
+				 <!-- 生日选择框 -->
+				 <view wx:elif='{{item.value =="生日"}}'>
+				 	<picker class="picker" mode='date' bindchange="bindDateChange" bindcancel='pickEnd' data-index="{{index}}"  value="{{date}}" start='{{date}}' end='2500-09-01'>
+						<!-- input框 -->
+						<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" disabled="{{true}}" value="{{date}}"></input>	
+					</picker>
+					</view>
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}" wx:else></input>
+				</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 			</view>
 		</view>
 	</view>
-</view>
+</block>
 
 
 

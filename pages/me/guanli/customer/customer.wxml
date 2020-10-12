@@ -1,6 +1,10 @@
 <!-- 店长卡片 -->
 <import src='/pages/template/comments/comments' />
+<<<<<<< HEAD
 <template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<template is="users" data="{{list:'imasrc////',num:3}}" data="{{user:merchants}}">
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 </template>
 
 
@@ -43,6 +47,7 @@
 <view class="card" wx:if='{{cpxqzt==1}}'>
 
 	<view class="dh_r">
+<<<<<<< HEAD
 		<view class="vip">头像　｜　</view>
 		<view class="vip">导购　｜</view>
 		<view class="vip">会员数</view>
@@ -64,6 +69,44 @@
 	</view>
 	<view class="btn_r">
 		<button class="btn">删除</button>
+=======
+		<!-- <checkbox checked="{{check}}"  bindtap="Future"></checkbox> -->
+		<view class="vip"></view>
+		<view class="vip">头像</view>
+		<view class="vip">导购</view>
+		<view class="vip">会员数</view>
+		<view class="vip">是否审核</view>
+		<view class="vip"></view>
+	</view>
+	<view class="shoppers">
+	<block wx:for='{{shopperslist}}' wx:index='index' wx:item='item'>
+		<view class="shoppers_r">
+			<view class="me-list-l_i">
+				<view class="me-list">
+					<checkbox bindtap="selectall" checked='{{false}}' data-index="{{item.id}}" />
+				</view>
+				<view class="me-list">
+				<image src="{{item.waiter_qr_code}}"></image>
+				</view>
+				<view class="me-list">
+				<text class="names">{{item.waiter_name}}</text>
+				</view>
+				<view class="me-list">
+			<text class="name">{{item.member_count}}</text>
+				</view>
+				<view class="me-list">
+			<text class="name">已审核</text>
+				</view>
+				<view class="me-list">
+			<image src="/images/tubiao/wen.png" bindtap="update" data-index="{{index}}"></image>
+				</view>
+
+			</view>
+		</view></block>
+	</view>
+	<view class="btn_r">
+		<button class="btn" bindtap="delete">删除</button>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 	</view>
 
 </view>

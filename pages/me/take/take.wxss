@@ -55,6 +55,13 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+.delete{
+  text-align: right;
+  font-size: 24rpx;
+  margin-right: 30rpx;
+  color:#FF5722;
+}
  
 
 /* 默认设置 */

@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+// pages/video/video.js
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 Page({
 
   /**
@@ -5,6 +12,14 @@ Page({
    */
   data: {
     list:[],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
     comments:false,
     functionlist:[
       {imagurl:'/images/tubiao/wechat.png'},
@@ -13,6 +28,13 @@ Page({
       {imagurl:'/images/tubiao/fx.png'},
       {imagurl:'/images/tubiao/download.png'},
     ]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
   },
 
   /**
@@ -20,10 +42,27 @@ Page({
    */
   onLoad: function (options) {
     console.log(JSON.parse(options.value));
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    this.setData({
+      list:JSON.parse(options.value)
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
     let photo = JSON.parse(options.value).wx_photo
     this.setData({
       list:JSON.parse(options.value),
       ['functionlist['+0+'].imagurl']:photo
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
     })
   },
 
@@ -75,4 +114,12 @@ Page({
   onShareAppMessage: function () {
 
   }
+<<<<<<< HEAD
 }) 
+=======
+<<<<<<< HEAD
+}) 
+=======
+})
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04

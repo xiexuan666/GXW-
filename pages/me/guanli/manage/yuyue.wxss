@@ -100,6 +100,10 @@ page {
   padding-left: 20rpx;
   font-size: 28rpx;
   font-weight: 300;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 }
 .keh {
   float: right;
@@ -108,4 +112,11 @@ page {
 .keh image {
   width: 175rpx;
   height: 40rpx;
+<<<<<<< HEAD
 } 
+=======
+} 
+=======
+}
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04

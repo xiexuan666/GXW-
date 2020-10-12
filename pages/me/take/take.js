@@ -138,7 +138,13 @@ Page({
         image: "/images/tubiao/46.png"
       })
       setTimeout(function(){ 
+<<<<<<< HEAD
         wx.navigateBack()
+=======
+        wx.reLaunch({
+          url: '/pages/me/address/address',
+        })
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
       }, 500);
       
     })

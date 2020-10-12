@@ -76,7 +76,20 @@ page {
   flex-direction: row; */
   width: 90%;
   height: 200rpx;
+<<<<<<< HEAD
   margin: 10rpx auto;
+=======
+<<<<<<< HEAD
+  margin: 10rpx auto;
+=======
+<<<<<<< HEAD
+  margin: 10rpx auto;
+=======
+  margin-bottom: 20rpx;
+  margin: 0 auto;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 
 }
 
@@ -332,11 +345,27 @@ page {
 }
 
 .dianzo {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
   margin-left: 100rpx;
   font-size: 24rpx;
   padding: 0 10rpx;
   padding-bottom: 20rpx;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+  margin: 0 100rpx;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 }
 
 .title image {

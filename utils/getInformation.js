@@ -23,8 +23,23 @@ function Getuser(){
 function Jump(url,arry){
     // 判断类型
     let type =  Object.prototype.toString.call(arry);
+<<<<<<< HEAD
     console.log(url,value,type);
     let value = JSON.stringify(arry);
+=======
+<<<<<<< HEAD
+    console.log(url,value,type);
+    let value = JSON.stringify(arry);
+=======
+<<<<<<< HEAD
+    console.log(url,value,type);
+    let value = JSON.stringify(arry);
+=======
+    let value = JSON.stringify(arry);
+    console.log(url,value,type);
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
     if(url == 'souye/souye' || 'product/product' || 'hotspot/hotspot' ||' jinxs/jinxs' ||' me/me'){
         wx.switchTab({
             url: '/pages/'+url+'?value='+value
@@ -123,12 +138,34 @@ function getProduct(uid,text,detailsId,user){
     URL:activity/strategy/findAllStrategy
 */
 function getstrategy(type,user){
+<<<<<<< HEAD
     console.log(user);
+=======
+<<<<<<< HEAD
+    console.log(user);
+=======
+<<<<<<< HEAD
+    console.log(user);
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
     // 解构赋值 ps:和正常获取对象值无异，可以设置默认值
     let {baseUrl,brandid,userId} = Getuser();
     let types = type || 5;
     let userid = userId || user
+<<<<<<< HEAD
     console.log(baseUrl,brandid,userid,types);
+=======
+<<<<<<< HEAD
+    console.log(baseUrl,brandid,userid,types);
+=======
+<<<<<<< HEAD
+    console.log(baseUrl,brandid,userid,types);
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
     let status = 1;
     let data = {
         status:status,
@@ -137,7 +174,18 @@ function getstrategy(type,user){
         userId:userid
     }
     let url = baseUrl+'activity/strategy/findAllStrategy';
+<<<<<<< HEAD
     console.log(data,url);
+=======
+<<<<<<< HEAD
+    console.log(data,url);
+=======
+<<<<<<< HEAD
+    console.log(data,url);
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
     let strategy =http.promisServer(url,data);
     return strategy;
 }
@@ -282,6 +330,81 @@ function getGerxinx(url){
 }
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+/**
+ * 用户绑定到附近店家，及线下绑定
+ *  */ 
+
+   function binding(url,data){  
+        return http.promisServer(url,data);
+   }
+
+/**
+ * 用户扫码后获取小程序码参数
+ * url：固定：/scancode/scanCode/salespersonScanCode
+ * 参数：
+ *     id：二维码返回路径中附带的参数：scene
+ */
+   function parameter(uid){
+    let {baseUrl,brandid,userid} = Getuser();
+    let url = baseUrl + 'scancode/scanCode/salespersonScanCode';
+    let date = {
+        id:uid
+    };
+    return http.promisServer(url,date);
+   }
+   /**
+    * 保存信息
+    */
+   function save(data){
+        let {baseUrl,brandid,userid} = Getuser();
+        /**
+         * url:customer/salesperson/registersalesperson 
+         * 参数：
+         *     data:已经准备好的数组
+         */
+        let url = baseUrl + 'customer/salesperson/registersalesperson';
+        return http.promisServer(url,data)
+   }
+
+
+
+   /* 
+    *获取客户/导购信息
+    *参数
+    *     brand_id     品牌id
+          store_id    商家id
+    * url:/customer/salesperson/salespersonList 
+   */
+    function getcustomer(uid){
+        console.log('获取客户');
+        let {baseUrl,brandid,userid} = Getuser();
+        let url = baseUrl + 'customer/salesperson/salespersonList';
+        let data = {brand_id:brandid,store_id:1};
+        return  http.promisServer(url,data)
+    }
+    /**
+     *删除客户/导购 
+     *参数：
+            listid：要删除导购的id   例如：20,23,25
+     *url:
+        导购：/customer/salesperson/salespersondelete
+     */
+    function deletcustomer(urls,list){
+        console.log('删除信息');
+        let {baseUrl,brandid,userid} = Getuser();
+        let url = baseUrl + urls;
+        let data = {listid:list};
+        return http.promisServer(url,data);
+    }
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 module.exports = {
     checkUser:checkUser,
     Jump:Jump,
@@ -293,5 +416,22 @@ module.exports = {
     setCommon:setCommon,
     addgreat:addgreat,
     getVideo:getVideo,
+<<<<<<< HEAD
     getGerxinx:getGerxinx
+=======
+<<<<<<< HEAD
+    getGerxinx:getGerxinx
+=======
+<<<<<<< HEAD
+    getGerxinx:getGerxinx
+=======
+    getGerxinx:getGerxinx,
+    binding:binding,
+    parameter:parameter,
+    save:save,
+    getcustomer:getcustomer,
+    deletcustomer:deletcustomer
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 }

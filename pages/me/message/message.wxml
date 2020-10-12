@@ -28,6 +28,7 @@
 </view>
 
 
+<<<<<<< HEAD
 
 
 <!-- 热点视频 -->
@@ -93,13 +94,26 @@
 			</view>
 		</block>
 	</view>
+=======
+
+
+<!-- 热点视频 -->
+<view class="videolist" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<import src='/pages/template/viedeocard/videocard' />
+	<template is="videocard" data="{{video:video}}"></template>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 </view>
 
 
 
+<<<<<<< HEAD
 
 
 <!-- <view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+=======
+<!-- 案例 -->
+<view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 	<view class="anlilist-ul">
 		<block>
 			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">

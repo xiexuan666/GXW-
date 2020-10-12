@@ -1,0 +1,3 @@
+/* pages/customers/system/system.wxss */
+/* 系统获客查看 */
+@import '/pages/template/Administration/Administration.wxss';

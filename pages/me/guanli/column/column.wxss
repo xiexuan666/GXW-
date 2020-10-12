@@ -1,0 +1,82 @@
+@import '/pages/template/comments/comments.wxss';
+
+
+/* 全选 */
+.mass {
+  width: 95%;
+  margin: 0 auto;
+ 
+}
+
+.mass text {
+  float: right;
+  color: #be8f61;
+  border: 1px solid #be8f61;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+  width: 15%;
+  text-align: center;
+  margin: 20rpx 20rpx;
+
+}
+
+
+
+
+/* 绑定获客 */
+.binding {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 70rpx;
+  margin-top: 100rpx;
+}
+
+.binding_rr {
+  margin-top: 50rpx;
+}
+
+.me-list-li {
+  width: 90%;
+  height: 90rpx;
+  padding-bottom: 38rpx;
+  margin-top: 10rpx;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.me-list-lil {
+  float: left;
+  position: relative;
+  padding-left: 210rpx;
+  line-height: 90rpx;
+  color: #666;
+  font-weight: 300;
+  font-size: 30rpx;
+  padding-top: 30rpx;
+}
+
+.me-list-lil image {
+  position: absolute;
+  top: 30rpx;
+  left: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.me-list-lir {
+  float: right;
+  padding-right: 40rpx;
+  padding-top: 52rpx;
+
+}
+
+.name {
+  font-size: 30rpx;
+  padding-right: 75rpx;
+  color: #666;
+  font-weight: 300;
+}

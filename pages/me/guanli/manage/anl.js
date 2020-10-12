@@ -8,6 +8,13 @@ Page({
 
   },
 
+  // 跳转到新增页面
+  category: function () {
+    wx.navigateTo({
+      url: '/pages/me/guanli/category/category',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

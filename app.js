@@ -6,6 +6,8 @@ qqmapsdk = new QQMapWX({
   key: '4UWBZ-VMMKD-VH74S-HKGF4-YTCTQ-5KBBD'
 });
 const http = require('utils/http.js');
+
+const getInformation = require('utils/getInformation.js');
 App({
   onLaunch: function () {
     //获得定位授权地址信息
@@ -16,15 +18,19 @@ App({
    this.banbzt()
    //加载产品无限列表
    this.qiangcp()
+    // 
+
+    console.log(wx.getStorageSync('gerxinx').id)
   },
 
   globalData: {
     userInfo: null,
-     baseUrl:"http://192.168.0.105:8087/gxwslyk/",
-    // baseUrl:"https://cdn.juesedao.cn/gxw/1.png",
+    //  baseUrl:"http://192.168.0.105:8087/gxwslyk/",
+    baseUrl:"https://md.juesedao.com/gxwslyk/",
     // baseUrl:"http://192.168.0.160:8087/gxwslyk/",
     dtkey:'77ABZ-KQC62-FVJUB-C7TTO-4DX6T-7WB2J',
     http: http,
+    getInformation:getInformation,
     status: 0,
     banben:'1.0.1',
     jiage:999999,
@@ -35,7 +41,8 @@ App({
    //一些方法
   //跳转页面Jum('')
   Jump: function (url, query) {
-    var url = '/pages/' + url + "?"
+    var url = '/pages/' + url + "?";
+    // console.log(!query);
     if(!query){
       wx.navigateTo({url: url,fail:function(){console.log('跳转失败'+url)}})
       return false;
@@ -376,6 +383,8 @@ App({
   isdenlu(){
     var tha=this
       var p = new Promise(function(resolve, reject) {
+
+        // 查询本地cookies是否有用户信息
       var gerxinx = wx.getStorageSync('gerxinx')
       if(gerxinx){return false;}
       tha.huoqopenid()
@@ -414,7 +423,7 @@ App({
     })
     return p;
   },
-  //获得登录信息
+  //获得登录信息 
   huodedenlux:function(openid){
     var tha = this
     var p = new Promise(function(resolve, reject) {
@@ -483,7 +492,7 @@ App({
       province,
       city,
       district,
-      brandid:'1'
+      brandid:'2'
       }
     //存储到后台
     var p = new Promise(function(resolve, reject) {

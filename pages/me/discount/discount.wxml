@@ -2,11 +2,11 @@
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
@@ -14,30 +14,24 @@
 </view>
 
 
-
-
 <!-- 领取优惠券 -->
 <view class="coupon-list">
-	<view class="coupon-listl">
-		<view class="xiangs">当前优惠　下单立享</view>
-		<view class="item stamp stamp01 ">
-			<!-- 左侧 -->
-			<view class="float-li t1">
-				<view class="coupon-left">
-					<view class="t t1">￥</view>
-					<view class="t t2">20</view>
-					<view class="t t3">满499使用</view>
-					<view class="t t4">有效期</view>
-					<view class="t t5">2020.09.30-10.05</view>
-				</view>
-			</view>
-			<!-- 右侧 -->
-			<view class="float-li-rig">
-				<view class="coupon-rig">
-					<view class="t1 t">立即领取</view>
-				</view>
+	<view class="xiangs">当前优惠　下单立享</view>
+	<view class="item stamp stamp01 " bindtap="containe">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">20</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+				<view class="t t6"> </view>
+				<!-- 二维码 -->
+				<view class="t t7"> </view>
 			</view>
 		</view>
+
 	</view>
 	<view class="item stamp stamp02 ">
 		<!-- 左侧 -->
@@ -48,35 +42,27 @@
 				<view class="t t3">满499使用</view>
 				<view class="t t4">有效期</view>
 				<view class="t t5">2020.09.30-10.05</view>
+				<view class="t t6"> </view>
+				<!-- 二维码 -->
+				<view class="t t7"> </view>
 			</view>
 		</view>
-		<!-- 右侧 -->
-		<view class="float-li-rig">
-			<view class="coupon-rig">
-				<view class="t1 t">立即领取</view>
 
-			</view>
-		</view>
-		<i></i>
 	</view>
 	<view class="item stamp stamp03 ">
 		<!-- 左侧 -->
 		<view class="float-li t1">
 			<view class="coupon-left">
-				<view class="t t1">￥</view>
-				<view class="t t2">100</view>
-				<view class="t t3">满499使用</view>
-				<view class="t t4">有效期</view>
-				<view class="t t5">2020.09.30-10.05</view>
+				<view class="d d1">￥</view>
+				<view class="d d2">100</view>
+				<view class="d d3">满499使用</view>
+				<view class="d d4">有效期</view>
+				<view class="d d5">2020.09.30-10.05</view>
+				<view class="d d6"> </view>
+				<view class="d d7">已使用</view>
 			</view>
 		</view>
-		<!-- 右侧 -->
-		<view class="float-li-rig">
-			<view class="coupon-rig">
-				<view class="t1 t">立即领取</view>
-			</view>
-		</view>
-		<i></i>
+
 	</view>
 
 

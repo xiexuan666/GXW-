@@ -92,12 +92,12 @@ Page({
     if(ind==1){
       
      cactiv=1
-     wx.setNavigationBarTitle({ title: '优惠活动'})
+     wx.setNavigationBarTitle({ title: '引流数据'})
     }
     if(ind==2){
      this.chaxchuanlinr('',1,1)
      cactiv=2
-     wx.setNavigationBarTitle({ title: '优惠活动'})
+     wx.setNavigationBarTitle({ title: '排行榜'})
     }
     console.log(cactiv)
     this.setData({cactiv:cactiv})

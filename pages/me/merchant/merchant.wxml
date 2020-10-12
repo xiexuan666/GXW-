@@ -1,7 +1,7 @@
 <view class="shenqmot">
 	<view class="shenqmot-nr" catchtap="zhuzi">
 		<view class="gxw">
-			<image src="/images/tubiao/gxw.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 		</view>
 
 

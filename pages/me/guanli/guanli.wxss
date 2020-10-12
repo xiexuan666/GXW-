@@ -63,12 +63,12 @@ page {
   position: relative;
   float: right;
   padding-right: 80rpx;
-  padding-top: 70rpx;
+  padding-top: 145rpx;
 }
 
 .jinx-sao image {
-  width: 70rpx;
-  height: 70rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 /* 头部 end*/
 

@@ -46,20 +46,20 @@
   
 }
 .cpanli-nrb{
-  margin-top: 27rpx;
+  /* margin-top: 27rpx; */
   width: 100%;
   height: 70rpx;
-  background: #DCDCDD;
+  /* background: #DCDCDD; */
   text-align: center;
   font-size: 26rpx;
   
 }
 .cpanli-nrbli{
   display: inline-block;
-  line-height: 70rpx;
+  /* line-height: 70rpx; */
   padding: 0rpx 10rpx;
   font-weight: 300;
-  color: #868585;
+  /* color: #868585; */
 }
 .cpanli-nrbli-activ{
   color: #C29562;
@@ -69,7 +69,7 @@
 /* 搜索 */
 .sous{
   width: 100%;
-  margin-top: 27rpx;
+  margin-top: 0rpx;
 }
 .sous-nr{
   width: 706rpx;
@@ -354,11 +354,12 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   text-align: center;
   padding: 20rpx 0;
   font-weight: 300;
-
+  flex: 1;
 }
 
 
 .simple-ul {
+  font-size: 27rpx;
   font-weight: 300;
 }
 
@@ -381,7 +382,7 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   color: #595757;
 }
 .lanbai {
-  padding: 0 20rpx;
+  padding: 0 6rpx;
 }
 
 .jxsnr-li-time {
@@ -405,41 +406,60 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 /* 五个小图标 */
 .jxsnr-tubiao-tu2 {
   display: flex;
+  margin-left: auto;
+  height: 100%;
 }
 
 .jxsnr-tubiao-tu1 {
   display: flex;
+  /* background: lawngreen; */
+  width: 100%;
 }
 
 .tubiaop {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:5rpx;
+  height: 100%;
+}
+
+.jxsnr-li-l {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  /* background: khaki; */
 }
 
 .liser {
   align-items: center;
   text-align: center;
   display: flex;
-  padding: 20rpx 0;
-  padding-left: 230rpx;
-  
+  /* background: lightcoral; */
+  flex: 1;
+  margin-left: auto;
 }
 
 .jxsnr-li-lp image {
   width: 35rpx;
   height: 35rpx;
+  margin-top: 5rpx;
 }
 
-
+.lanbai {
+  padding: 0 10rpx;
+}
 
 .jxsnr-li-lp2 {
   align-items: center;
   text-align: center;
+  justify-content: center;
   display: flex;
-  padding: 0 10rpx;
-
 }
 
 .jxsnr-li-lp2 image {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
   width: 35rpx;
   height: 35rpx;
 }
@@ -455,14 +475,17 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
   width: 35rpx;
   height: 35rpx;
 }
-
+.xingx{
+  display: flex;
+  flex-direction: row;
+}
 .xingx image {
   padding: 0 15rpx;
   width: 35rpx;
   height: 35rpx;
+  margin-top: -10rpx;
 }
 
 .shuzi {
   color: #c59262;
 }
-

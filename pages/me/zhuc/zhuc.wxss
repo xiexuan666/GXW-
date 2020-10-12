@@ -125,15 +125,8 @@ page {
 
 }
 
-.df_2 {
-  width: 400rpx;
-  height: 190rpx;
-  border: 1px solid #ccc;
-  border-radius: 25rpx;
-}
+
 /* 我的列表 end*/
-
-
 
 
 /* 按钮 */
@@ -142,7 +135,7 @@ button::after {
 }
 
 button {
-  margin-top: 60px;
+  margin-top: 25px;
   width: 300px;
   border-radius: 30px;
   background: #bd8f60;
@@ -157,5 +150,3 @@ button {
   color: #ccc;
   margin-bottom: 30rpx;
 }
-
-

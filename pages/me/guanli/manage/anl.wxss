@@ -1,1 +1,147 @@
-/* pages/me/guanli/manage/anl.wxss */
+/* pages/template/component/component.wxss */
+page {
+  background-color: #e7e7e7;
+}
+.top{
+  width: 100vw;
+  position: relative;
+}
+.top image{
+  width: 100%;
+}
+.card_portrait{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card_portrait image{
+  height: 200rpx;
+  width:200rpx;
+}
+.card_name{
+  margin-top:30rpx;
+}
+
+
+
+/* 卡片模块 */
+.cardList{
+  width: 90vw;
+  overflow: hidden;
+  background-color: white;
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+  border-radius:15rpx;
+  transform: translateX(-50%);
+  margin-bottom:40rpx;
+  padding-bottom: 40rpx;
+  margin-top: -50rpx;
+}
+.cardnav{
+  width:100%;
+  height:40rpx;
+  text-align: right;
+}
+.cards{
+  position: relative;
+  width:85%;
+  margin:auto;
+  margin-top:40rpx;
+}
+
+.round{
+  position: absolute;
+  height:25rpx;
+  width:25rpx;
+  left: -25rpx;
+  border-radius: 50rpx;
+  border: 1rpx solid rgb(87, 87, 87);
+  top:5rpx;
+}
+.roundstatus{
+  background-color: rgb(189, 143, 96);
+  border: none;
+}
+.cardsContent{
+  width: 100%;
+  padding-top: 30rpx;
+}
+.cardsContent image{
+  width: 100%;
+  height: 355rpx;
+  border-radius:30rpx;
+}
+.card_Title{
+  font-size: 32rpx;
+  color: rgb(100, 100, 100);
+}
+.card_label{
+  margin-top: 10rpx;
+}
+.label{
+  background-color: rgb(230, 230, 230);
+  font-size: 22rpx;
+  padding:0rpx 20rpx 0rpx 20rpx;
+  margin-right: 20rpx;
+}
+
+.title{
+  position: absolute;
+  right:50rpx;
+  top:55rpx;
+  color: rgb(100, 100, 100);
+}
+.labelFocus{
+  background-color: rgb(85, 85, 85);
+  color: rgb(240, 240, 240);
+}
+
+
+.buttom{
+  width:90%;
+  margin: auto;
+  margin-top:30rpx;
+  color: rgb(240, 240, 240);
+}
+.buttomTwo{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.addbutton{
+  flex: 1;
+  height:65rpx;
+  background-color: rgb(189, 143, 96);
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  margin-right:10rpx;
+  color: rgb(240, 240, 240);
+}
+.deletbutton{
+  flex: 1;
+  height:65rpx;
+  margin-left:10rpx;
+  background-color: rgb(189, 143, 96);
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  color: rgb(240, 240, 240);
+}
+.buttomOne{
+  margin-top: 20rpx;
+}
+.buttomOne button{
+  height:65rpx;
+  background-color: rgb(189, 143, 96);
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  color: rgb(240, 240, 240);
+}

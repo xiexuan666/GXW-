@@ -1,0 +1,151 @@
+@import '/pages/template/loginphone/loginphone.wxss';
+
+page {
+  background-color: #fff;
+}
+
+
+/* 头部 */
+.jinx-t {
+  width: 100%;
+  background-color: #bababa;
+}
+
+.jinx-tnr {
+  width: 100%;
+  position: relative;
+  height: 440rpx;
+}
+
+.jinx-bei {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.jinx-bei image {
+  width: 100%;
+}
+
+.jinx-toux {
+  width: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name-p {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+}
+
+/* 头部 end*/
+
+
+
+.me-list {
+  position: relative;
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50rpx;
+}
+
+.me-list-ul {
+  width: 100%;
+  margin-top: -50rpx;
+  padding-bottom: 50rpx;
+
+}
+
+.me-list-li {
+  width: 100%;
+  height: 90rpx;
+  /* background-color: #ffffff; */
+  /* margin-bottom: 3rpx; */
+
+}
+
+.me-list-lil {
+  float: left;
+  position: relative;
+  padding-left: 100rpx;
+  line-height: 90rpx;
+  color: #595757;
+  font-weight: 300;
+  font-size: 30rpx;
+}
+
+.me-list-lil image {
+  position: absolute;
+  top: 35rpx;
+  left: 65rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.me-list-lir {
+  float: right;
+  padding-right: 40rpx;
+  padding-top: 26rpx;
+
+}
+
+.me-list-lir image {
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.df_1 {
+  border: 1px solid #ccc;
+  border-radius: 25rpx;
+
+}
+
+
+/* 我的列表 end*/
+
+
+/* 按钮 */
+button::after {
+  border: none;
+}
+
+button {
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 30px;
+  background: #bd8f60;
+  color: white;
+  padding: 0rpx 100rpx;
+  margin-bottom: 30rpx;
+}
+
+.keffoot {
+  text-align: center;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-bottom: 30rpx;
+} 

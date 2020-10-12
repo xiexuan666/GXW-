@@ -2,11 +2,11 @@
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
@@ -27,6 +27,9 @@
 				<view class="t t3">满499使用</view>
 				<view class="t t4">有效期</view>
 				<view class="t t5">2020.09.30-10.05</view>
+				<view class="t t6">  </view>	
+					<!-- 二维码 -->
+					<view class="t t7">  </view>	
 			</view>
 		</view>
 		<!-- 右侧 -->
@@ -36,10 +39,8 @@
 			</view>
 		</view>
 	</view>
-
-
-
 	<!-- 经销商内容 -->
+
 	<view class="jxsnr-ul">
 		<view class="jxsnr-li  ">
 			<view class="jxsnr-li-rs">满499减20</view>
@@ -47,14 +48,14 @@
 		<!-- 地址 -->
 		<view class="jxsnr-li">
 			<view class="jxsnr-tubiao tu1">
-				<image mode="heightFix" src="/images/tubiao/24.png"></image>
+				<image mode="heightFix" src="/images/tubiao/24.png" ></image>
 			</view>
 			<view class="jxsnr-li-rp">冠星王总部</view>
 		</view>
 		<!-- 时间 -->
 		<view class="jxsnr-li  ">
 			<view class="jxsnr-tubiao tu1">
-				<image mode="heightFix" src="/images/tubiao/46.png"></image>
+				<image mode="heightFix" src="/images/tubiao/24.png"></image>
 			</view>
 			<view class="jxsnr-li-r">09:00-22:00</view>
 		</view>
@@ -87,5 +88,8 @@
 			<view>到点验证消费</view>
 		</view>
 	</view>
+
+
+
 
 </view>

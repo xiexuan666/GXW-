@@ -16,6 +16,7 @@
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+		"uglifyFileName": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -25,11 +26,13 @@
 			"outputPath": ""
 		},
 		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"compileHotReLoad": false,
+		"useIsolateContext": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.2",
-	"appid": "wxe049bcffef9a81dc",
+	"appid": "wxd7f7434681f3e76e",
 	"projectname": "gxwslyk",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -371,22 +374,226 @@
 				},
 				{
 					"id": -1,
-					"name": "活动",
-					"pathName": "pages/hotspot/hotspot",
+					"name": "预约信息",
+					"pathName": "pages/me/guanli/manage/yuyue",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "活动报名",
-					"pathName": "pages/me/registration/registration",
+					"name": "用户管理",
+					"pathName": "pages/me/guanli/customer/customer",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "入驻须知",
-					"pathName": "pages/me/merchant/merchant",
+					"name": "导购",
+					"pathName": "pages/me/guanli/shoppers/shoppers",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 47,
+					"name": "打包发送",
+					"pathName": "pages/me/guanli/information/information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "一键交接",
+					"pathName": "pages/me/guanli/key/key",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "交接客户",
+					"pathName": "pages/me/guanli/column/column",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单管理",
+					"pathName": "pages/me/guanli/indent/indent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拼团活动",
+					"pathName": "pages/hotspot/group/group",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 52,
+					"name": "拼团活动2",
+					"pathName": "pages/hotspot/booking/booking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拼团活动3",
+					"pathName": "pages/hotspot/succeed/succeed",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 54,
+					"name": "今日获客",
+					"pathName": "pages/customers/system/system",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 55,
+					"name": "获客分配",
+					"pathName": "pages/customers/distribution/distribution",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 56,
+					"name": "获客分配之后",
+					"pathName": "pages/customers/shopper/shopper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 57,
+					"name": "设计方案",
+					"pathName": "pages/scheme/designscheme/designscheme",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 58,
+					"name": "设计案例",
+					"pathName": "pages/scheme/plan/plan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 59,
+					"name": "你喜欢的案例",
+					"pathName": "pages/me/guanli/Works/Works",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 60,
+					"name": "王店长",
+					"pathName": "pages/me/guanli/shop/shop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 61,
+					"name": "你喜欢的方案",
+					"pathName": "pages/me/guanli/precept/precept",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 62,
+					"name": "pages/me/guanli/newly/newly",
+					"pathName": "pages/me/guanli/newly/newly",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 63,
+					"name": "案例收藏",
+					"pathName": "pages/me/guanli/favorite/favorite",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 64,
+					"name": "新增订单",
+					"pathName": "pages/me/guanli/exportr/exportr",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 65,
+					"name": "你喜欢的攻略",
+					"pathName": "pages/me/guanli/control/control",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 66,
+					"name": "你喜欢的产品",
+					"pathName": "pages/me/guanli/commodity/commodity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 67,
+					"name": "活动截止",
+					"pathName": "pages/me/activity/free1/free1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 68,
+					"name": "邀好友 领奖励",
+					"pathName": "pages/me/activity/free2/free2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 69,
+					"name": "助力领奖",
+					"pathName": "pages/me/activity/free3/free3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 70,
+					"name": "优惠券活动",
+					"pathName": "pages/me/guanli/activity/coupon_fabu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 71,
+					"name": "优惠券活动核销",
+					"pathName": "pages/me/guanli/activity/coupon_merchant",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 72,
+					"name": "核销码",
+					"pathName": "pages/me/guanli/Verification/Verification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 73,
+					"name": "视频管理",
+					"pathName": "pages/me/guanli/manage/zixu/zixu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 74,
+					"name": "发布优惠券",
+					"pathName": "pages/me/issue/issue",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 75,
+					"name": "注册账号",
+					"pathName": "pages/me/update/shoppersupdate/shoppersupdate",
+					"query": "",
 					"scene": null
 				}
 			]

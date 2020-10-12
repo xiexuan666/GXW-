@@ -109,11 +109,11 @@ Page({
   },
 
   //跳转到产品管理
-  chanpmanage: function () {
-    wx.navigateTo({
-      url: '/pages/me/guanli/manage/chanp',
-    })
-  },
+  // chanpmanage: function () {
+  //   wx.navigateTo({
+  //     url: '/pages/me/guanli/manage/chanp',
+  //   })
+  // },
 
   //跳转到咨询管理
   zixmanage: function () {
@@ -125,6 +125,18 @@ Page({
   handlesao: function () {
     wx.navigateTo({
       url: '/pages/me/guanli/code/code',
+    })
+  },
+  // 跳转到预约信息
+  yuymanage: function () {
+    wx.navigateTo({
+      url: '/pages/me/guanli/manage/yuyue',
+    })
+  },
+  //跳转到订单管理
+  ddanmanage: function () {
+    wx.navigateTo({
+      url: '/pages/me/guanli/indent/indent',
     })
   },
 

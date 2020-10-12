@@ -25,7 +25,7 @@ page {
   float: left;
   padding-right: 20rpx;
   font-size: 28rpx;
-  color: #888888;
+  color: #C8C9CA;
   font-weight: 300;
   position: relative;
   height: 56rpx;
@@ -39,8 +39,9 @@ page {
 
 .cpanli-nr-liactive {
   color: #595757;
+  font-weight: 400;
   /* font-size: 44rpx; */
-  font-weight: 700;
+
 }
 
 .cpanli-nr-liactive .cpanli-nr-lid {
@@ -89,7 +90,8 @@ page {
 
 .tab {
   font-size: 30rpx;
-  font-weight: 700;
+  font-weight: bolder;
+  color: #595757;
 }
 
 .list {
@@ -106,10 +108,15 @@ page {
 .list-item {
   padding: 0 40rpx;
 }
+.character{
+  font-size: 25rpx;
+  color: #7C7B7B;
+  
+}
 
 .list-right image {
-  width: 100rpx;
-  height: 100rpx;
+  width: 70rpx;
+  height: 70rpx;
 }
 
 /* 数据面板 */
@@ -121,7 +128,7 @@ page {
   background-color: #fff;
   margin: 0 auto;
   border-radius: 25rpx;
-  height: 200rpx;
+  height: 160rpx;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -132,9 +139,9 @@ page {
 }
 
 .characters {
-  font-size: 30rpx;
-  font-weight: 600;
-  padding: 20rpx 0;
+  font-size: 25rpx;
+  font-weight: 500;
+  padding: 20rpx 10rpx;
 }
 
 
@@ -144,9 +151,10 @@ page {
   width: 90%;
   margin: 0  auto;
   margin-bottom: 100rpx;
+ 
 }
 .ul {
-  display: flex;
+ height: 755rpx; 
   background-color: #fff;
   flex-direction: row;
   flex-wrap: wrap;
@@ -159,9 +167,171 @@ page {
   align-items: center;
   border-radius: 25rpx;
 }
+.yemianbig{
+  display: grid;
+  grid-template-columns: 33.5% 33.5% 33.5%;
+  margin-left: 15rpx;
+  width: 95%;
+  padding-top: 20rpx;
+}
 .link {
+  border-right: #E7E7E7 solid 1rpx;
+  border-bottom: #E7E7E7 solid 1rpx;
+  padding: 20% 0 20% 0;
+}
+.linkaa{
+  border-bottom: #E7E7E7 solid 1rpx;
+  padding: 20% 0 20% 0;
+}
+.linkbb{
+  border-right: #E7E7E7 solid 1rpx;
+  padding: 20% 0 20% 0;
+} 
+.linkcc{
+  padding: 20% 0 20% 0;
+}
+.link_child{
+  
+  color: #7C7B7B;
+  font-size: 25rpx;
+}
+.shuz{
+  padding-top: 20rpx;
+  font-size: 40rpx;
+  color: #BD8F60;
+}
+.big{
+  width: 100%;
+  
+}
+.mybig{
+  display: flex;
+  width: 95%;
+ margin-left: 15rpx;
+  font-size: 30rpx;
+  padding: 20rpx 0  20rpx 0;
+  border-bottom: #E7E7E7 solid 1rpx;
+}
+.a{
+  flex: 1;
+  text-align: right;
+}
+.b{
+  flex: 1;
+}
+.c{
+  flex: 1;
+  text-align: left;
+}
+.mymy{
+  color: #424242;
+}
+.youyou{
+  color: #C8C9CA;
+}
+.secondbig{
+  margin-left: 15rpx;
+  width: 95%;
+  border-bottom: #E7E7E7 solid 1rpx;
+  color: #464646;
+}
+.d{
+  padding: 10rpx 0 10rpx 0;
+}
+.below_one{
+  font-size: 25rpx;
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 20rpx 0 15rpx 0 ;
+}
+.day{
+  width: 25%;
+  background-color: #BD8F60;
+  padding: 20rpx 0 20rpx;
+}
+.daym{
+  width: 25%;
+  padding: 20rpx 0 20rpx;
+}
+.below_two{
+  font-size: 25rpx;
+  display: flex;
+  color: white;
+  text-align: center;
  
-  padding: 50rpx  50rpx;
+
+}
+.mendian{
+  width: 50%;
+  background-color: #BD8F60;
+  border-radius: 0 0  0 20rpx;
+  padding: 20rpx 0 20rpx 0 ;
+}
+.daogou{
+  width: 50%;
+  background-color: #BD8F60;
+  border-radius: 0 0 20rpx 0;
+  padding: 20rpx 0 20rpx 0;
+}
+.mm{
+  width: 50%;
+  padding: 20rpx 0 20rpx 0 ;
 }
 
 
+.list-msg {
+ 
+  background-color: #fff;
+  position: relative;
+}
+
+.list-msg1 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-msg .list-msg2 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #E7E7E7;
+  padding: 0 10rpx;
+  
+}
+
+.select_box {
+  background-color: #eee;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.5s;
+}
+
+@keyframes myfirst {
+  from {
+      height: 0rpx;
+  }
+
+  to {
+      height: 210rpx;
+  }
+}
+
+.select_one {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #E7E7E7;
+}
+.img{
+  position:absolute;
+  right:10px;top:4px;
+
+}
+.mytext{
+  width: 90%;
+}

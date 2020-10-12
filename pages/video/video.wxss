@@ -7,6 +7,20 @@ page{
 .videolayout{
   height: 80vh;
   width:90vw;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  background-color: seagreen;
+  margin: auto;
+}
+.videoinfo{
+  width: 90vw;
+  height: 20vh;
+  background-color: seashell;
+  margin: auto;
+}
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   margin: auto;
 }
 video{
@@ -61,10 +75,25 @@ video{
   font-size: 26rpx;
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 .sidebar{
   position: absolute;
   right: 0;
   top: 50%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  transform: translateY(-50%);
+  height:500rpx;
+  width: 200rpx;
+  background-color: sienna;
+}
+
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   transform: translateY(-65%);
   height:500rpx;
   width:150rpx;
@@ -90,8 +119,16 @@ video{
     height:100rpx;
     position: absolute;
 }
+<<<<<<< HEAD
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 .comments{
   background-color: skyblue;
   position: absolute;
   bottom: 0;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14

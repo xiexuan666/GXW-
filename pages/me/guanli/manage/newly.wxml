@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 <view class="title">
 	<view class="goods-title">
 		<view class="collect">
 			<image src="/images/tubiao/9.png"></image>
+=======
+<!-- 活动详情 -->
+<view class="price">
+	<view class="title">
+		<view class="goods-title">
+			<view class="collect">活动详情</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 		</view>
 		<view class=" huah">
 			<view class="drawing">活动主画面</view>
@@ -76,7 +84,16 @@
 	</view>
 
 
+<<<<<<< HEAD
 	<view class="preview">
 		<button class="btn">活动预览</button>
+=======
+	
+
+
+
+
+
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 	</view>
 </view>

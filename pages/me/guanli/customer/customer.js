@@ -12,6 +12,7 @@ Page({
     cpxqzt: 1,
     hiddenstrategy: 3,
     select_all:false,
+<<<<<<< HEAD
 
   },
   selectall: function() {//全选与反全选
@@ -22,8 +23,41 @@ Page({
     listData: that.data.listData,
     select_all: (!that.data.select_all)
     })
-  },
+=======
+<<<<<<< HEAD
 
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+  },
+  selectall: function() {//全选与反全选
+    var that = this;
+    for (let i = 0; i < that.data.listData.length; i++) {
+    that.data.listData[i].checked = (!that.data.select_all)}
+    that.setData({
+    listData: that.data.listData,
+    select_all: (!that.data.select_all)
+    })
+=======
+    merchants:[],
+    // 导购列表
+    shopperslist:[],
+    // 客戶列表
+    customerlist:[],
+    // 修改的id列表
+    updatalist:[],
+
+<<<<<<< HEAD
+=======
+    // 选择状态
+    // check:false,
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   //产品详情导航选择
   cpxzxz: function (e) {
     var that = this;
@@ -41,6 +75,7 @@ Page({
       that.setData({
         hiddenstrategy: 3
       })
+<<<<<<< HEAD
     }
     if (ind == 2) {
       cpxqzt = 2
@@ -62,10 +97,113 @@ Page({
       })
 
     }
+=======
+    }
+    if (ind == 2) {
+      cpxqzt = 2
+      wx.setNavigationBarTitle({ title: '我的客户' });
+      var sum = that.data.strategy;
+      // that.query(1, sum);
+      // console.log(sum.map)
+      that.setData({
+        hiddenstrategy: 1
+      })
+    }
+    if (ind == 3) {
+      cpxqzt = 3
+      wx.setNavigationBarTitle({ title: '群发助手' });
+      var sum = that.data.strategy;
+      // that.query(2, sum);
+      that.setData({
+        hiddenstrategy: 2
+      })
+
+    }
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
  
     this.setData({ cpxqzt: cpxqzt })
   },
   
+<<<<<<< HEAD
+
+=======
+=======
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    // 获取商家信息
+    this.setData({
+      merchants:wx.getStorageSync('MC')
+    })
+    console.log(this.data.merchants.id);
+    // 获取导购信息
+    getInformation.getcustomer(this.data.merchants.id).then(res=>{
+      console.log(res.data.salespersonList);
+      this.setData({
+        shopperslist:res.data.salespersonList
+      })
+    });
+  },
+  // 选项卡
+  selectall: function(e) {//全选与反全选
+    var that = this;
+    let index= app.hdindex(e,'index');
+    // 将要修改的id拼入数组
+    let update =that.data.updatalist;
+    update.push(index);
+    // 将id进行筛选，去除重复选项
+    update = Array.from(new Set(update));
+    // 更新数组
+    that.setData({
+      updatalist:update
+    });
+    console.log(that.data.updatalist);    
+    },
+  // 放大图片
+  amplification:function(){
+  let imag =  this.data.merchants.store_qrcode_url;
+    wx.previewImage({
+      current: imag, // 当前显示图片的http链接
+      urls: [imag]
+    })
+  },
+  // 跳转到注册页面，进行修改操作
+  update:function(e){
+    // 获取下标取得数组
+    let index = app.hdindex(e,'index');
+    console.log(index);
+    let arry = this.data.shopperslist[index];
+    // 将数组转化为json数组，进行传递;
+    wx.navigateTo({
+      url: '/pages/me/update/shoppersupdate/shoppersupdate?arry='+JSON.stringify(arry),
+    })
+  },
+
+  //删除导购
+  delete:function(){
+    console.log('delet');
+    var that = this;
+    // 控制路径
+    let url =  'customer/salesperson/salespersondelete';
+    // 处理数组
+    let listid = that.data.updatalist.join(',');
+    console.log(listid);
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+
+     getInformation.deletcustomer(url,listid).then(res=>{
+      console.log(res);
+      wx.showToast({
+        title: '删除成功',
+        icon: 'success',
+        duration:800
+      })
+      that.onShow();
+    })
+  },
+
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 
 
 
@@ -75,17 +213,70 @@ Page({
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
 
 
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 
 
 
   // 跳转到导购管理
+<<<<<<< HEAD
+=======
+=======
+    //产品详情导航选择
+    cpxzxz: function (e) {
+      var that = this;
+      var ind = app.hdindex(e, 'ind');
+      var cpxqzt = this.data.cpxqzt;
+      if (ind == cpxqzt) { return false };
+      switch (ind) {
+      }
+      if (ind == 1) {
+        cpxqzt = 1
+        wx.setNavigationBarTitle({ title: '导购管理' });
+        // 查找出现次数
+        that.setData({
+          hiddenstrategy: 3
+        })
+      }
+      if (ind == 2) {
+        cpxqzt = 2
+        wx.setNavigationBarTitle({ title: '我的客户' });
+        var sum = that.data.strategy;
+        // that.query(1, sum);
+        // console.log(sum.map)
+        that.setData({
+          hiddenstrategy: 1
+        })
+      }
+      if (ind == 3) {
+        cpxqzt = 3
+        wx.setNavigationBarTitle({ title: '群发助手' });
+        var sum = that.data.strategy;
+        // that.query(2, sum);
+        that.setData({
+          hiddenstrategy: 2
+        })
+  
+      }
+   
+      this.setData({ cpxqzt: cpxqzt })
+    },
+  // 跳转到导购管理？
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   daog: function () {
     wx.navigateTo({
       url: '/pages/me/guanli/shoppers/shoppers',
     })
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   },
   fasong: function () {
     wx.navigateTo({
@@ -97,12 +288,39 @@ Page({
    */
   onLoad: function (options) {
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   },
+  fasong: function () {
+    wx.navigateTo({
+      url: '/pages/me/guanli/information/information',
+    })
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+  },
+
+
+  /* 
+    暂时被废弃的功能
+      // 全选
+      // Future:function(){
+      //   let check = this.data.check;
+      //   console.log(check);
+      //   this.setData({
+      //     check:!check
+      //   })
+      // },
+  */
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 
   },
 
@@ -111,7 +329,14 @@ Page({
    */
   onShow: function () {
 
+<<<<<<< HEAD
+=======
   },
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+  },
+
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 
   /**
    * 生命周期函数--监听页面隐藏

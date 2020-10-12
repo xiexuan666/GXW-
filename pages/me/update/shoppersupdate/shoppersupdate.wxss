@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/* pages/me/zhuc/zhuc.wxss */
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 @import '/pages/template/loginphone/loginphone.wxss';
 
 page {
@@ -148,4 +152,8 @@ button {
   font-size: 24rpx;
   color: #ccc;
   margin-bottom: 30rpx;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14

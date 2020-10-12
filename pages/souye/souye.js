@@ -48,7 +48,18 @@ Page({
         image: '/images/tubiao/1-06.png',
         content: '约量房'
       }
+<<<<<<< HEAD
     ]
+=======
+<<<<<<< HEAD
+    ]
+=======
+    ],
+    card:[],
+    // 是否是系统获客，true为0，false为1
+    system:null,
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   },
   //拨打电话
   calling: function () {
@@ -66,6 +77,10 @@ Page({
       }
     })
   },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   //请求轮播
   handlelun: function () {
     var tha = this
@@ -77,14 +92,20 @@ Page({
 
   },
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   //请求轮播 视频
   requestlunb: function () {
-    var tha = this
-    var url = baseUrl + 'banner/index'
-    http.promisServer(url).then(res => {
+    var tha = this;
+    var url = baseUrl + 'banner/index';
+    let data={brand_id:app.globalData.brandid,module:1};
+    http.promisServer(url,data).then(res => {
+      console.log('请求轮播图：',res.data.allbannerList);
       tha.setData({ lunb: res.data.allbannerList })
     })
-
   },
 
   //请求推荐系列
@@ -119,7 +140,6 @@ Page({
       that.fadeIn();//调用显示动画
     }, 200)
   },
-
   // 隐藏遮罩层
   hideModal: function () {
     var that = this;
@@ -136,7 +156,13 @@ Page({
     }, 100)//先执行下滑动画，再隐藏模块
 
   },
+<<<<<<< HEAD
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   clearPosters: function () {
     var that = this;
     var animation = wx.createAnimation({
@@ -151,7 +177,6 @@ Page({
       })
     }, 100)//先执行下滑动画，再隐藏模块
   },
-
   //动画集
   fadeIn: function () {
     this.animation.translateY(0).step()
@@ -165,7 +190,6 @@ Page({
       animationData: this.animation.export(),
     })
   },
-
 
   // 取消操作
   quxiao: function () {
@@ -182,7 +206,13 @@ Page({
       })
     }, 100)//先执行下滑动画，再隐藏模块，再隐藏模块
   },
+<<<<<<< HEAD
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   /**
    *  导航栏跳转
    */
@@ -219,16 +249,78 @@ Page({
       url: '/pages/souye/poster/poster',
     })
   },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let scene = decodeURIComponent(options.scene);
+    console.log(scene);
+    console.log(Boolean(scene));
+    if(scene == 'undefined'){
+      this.setData({
+        system:0
+      })
+      wx.showToast({
+        title: '欢迎您的到来',
+        icon: 'none',
+        duration:1000
+      })
+    }else{
+    this.setData({
+      system:1
+    })
+      wx.showToast({
+        title: '欢迎来到冠星王未来家',
+        icon: 'none',
+        duration:1000
+      })
+    }
+    let store_status = this.data.system;
+    app.globalData.wxLogin = '扫描二维码获取的参数';
+    app.globalData.store_status = store_status;
     //请求轮播
+<<<<<<< HEAD
     this.requestlunb()
+<<<<<<< HEAD
+=======
+=======
+    this.requestlunb();
+    // 系统获客的代码及参数及接口
+    // 获取用户id
+    let user = wx.getStorageSync('gerxinx');
+    
+    //获取商家id
+    let shanjia = wx.getStorageSync('bendijxs');
+    let data ={
+      user_id: user.id,
+      brand_id :app.globalData.brandid,
+      store_id:shanjia.id,
+      superior_id:shanjia.userid,
+      level:4,
+      join_type:'系统获客',
+      join_remarks:'系统获客'
+    }
+    let url = app.globalData.baseUrl+'customer/member/userMemberInfo';
+    getInformation.binding(url,data).then(res=>{
+      console.log('将客户绑定为系统获客',res);
+    });
+
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 
 
   },
+
+
+
+
   //将canvas转换为图片保存到本地，然后将图片路径传给image图片的src
   createNewImg: function () {
     var that = this;
@@ -428,7 +520,14 @@ Page({
     let check = getInformation.checkUser();
     // 执行点赞操作
     if (check) {
+<<<<<<< HEAD
       console.log('来点赞吧');
+=======
+<<<<<<< HEAD
+      console.log('来点赞吧');
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
       // 获取点击下标
       var subscript = event.currentTarget.dataset['index'];
       // 获取轮播图数据
@@ -449,7 +548,14 @@ Page({
       // 获取默认的点赞数
       let great = greatid[subscript].great;
       http.promisServer(url, dat).then(res => {
+<<<<<<< HEAD
         console.log('点赞的判断值：', res.flag);
+=======
+<<<<<<< HEAD
+        console.log('点赞的判断值：', res.flag);
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
         if (res.flag) {
           // 点赞成功，点赞数+1 更新视图，修改图标高亮状态
           let good = great + 1;
@@ -465,7 +571,14 @@ Page({
             ['lunbs[' + subscript + '].great']: good,
             ['lunbs[' + subscript + '].dianzhan']: res.flag
           })
+<<<<<<< HEAD
           console.log('点击的案例下标：', subscript);
+=======
+<<<<<<< HEAD
+          console.log('点击的案例下标：', subscript);
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
           wx.showToast({ title: '取消点赞', icon: 'none', duration: 800, mask: true })
         }
       })

@@ -4,6 +4,7 @@
 		<view class="xians-mind">
 			<view class="menus">
 				<view class="floor">拼团须知</view>
+<<<<<<< HEAD
 			</view>
 			<view class="floor-title">
 				<view class="floor_r">
@@ -17,6 +18,20 @@
 				<image src="/images/tubiao/tuan.png" mode="widthFix"></image>
 			</view>
 
+=======
+				<view class="floor-title">
+					<view class="floor_r">
+						拼团成功
+					</view>
+					<view class="floor_r">
+						拼团成功
+					</view>
+				</view>
+				<view class="group_img">
+					<!-- <image src="https://cdn.juesedao.cn/gxw/ridianshiping.jpg" mode="widthFix"></image> -->
+				</view>
+			</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 		</view>
 
 
@@ -57,4 +72,8 @@
 
 	</view>
 
+<<<<<<< HEAD
 </view> 
+=======
+</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14

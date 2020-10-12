@@ -154,19 +154,49 @@
 		<image class="list_pic" src="/images/tubiao/9.png" mode="scaleToFill"></image>
 		<view class=" management">
 			<view class="user_li">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 				<text>王店长</text>
 			</view>
 			<view class="info">
 				<view class="info_l">电话:13255555555</view>
 				<view class="info_l">职务:店长</view>
 				<view class="info_l">所属门店:季华路店</view>
+<<<<<<< HEAD
+=======
+=======
+				<text>名称：{{user.shopowner}}</text>
+			</view>
+			<view class="info">
+				<view class="info_l">电话:{{user.phone}}</view>
+				<view class="info_l">职务:店长</view>
+				<view class="info_l">所属门店:{{user.address}}</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 			</view>
 		</view>
 		<view class="user_info">
 			<view class="user_img">
+<<<<<<< HEAD
 				<image src="/images/tubiao/70.png" class="tx"></image>
 			</view>
 		</view>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+=======
+				<image src="{{user.logo}}" class="tx"></image>
+			</view>
+		</view>
+	<view class="code" catchtap="amplification">
+		<image src="{{user.store_qrcode_url}}" ></image>
+	</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 	</view>
 </template>
 
@@ -177,12 +207,28 @@
 		<image class="list_pic" src="/images/tubiao/9.png" mode="scaleToFill"></image>
 		<view class=" management">
 			<view class="user_li">
+<<<<<<< HEAD
 				<text>王店长</text>
+=======
+<<<<<<< HEAD
+				<text>王店长</text>
+=======
+				<text>{{merchants.shopowner}}</text>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 			</view>
 			<view class="info">
 				<view class="info_l">电话:13255555555</view>
 				<view class="info_l">职务:店长</view>
+<<<<<<< HEAD
 				<view class="info_l">所属门店:季华路店</view>
+=======
+<<<<<<< HEAD
+				<view class="info_l">所属门店:季华路店</view>
+=======
+				<view class="info_l">所属门店:asdaqwd</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 			</view>
 		</view>
 		<view class="user_info">

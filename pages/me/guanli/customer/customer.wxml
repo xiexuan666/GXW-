@@ -1,6 +1,14 @@
 <!-- 店长卡片 -->
 <import src='/pages/template/comments/comments' />
+<<<<<<< HEAD
 <template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<<<<<<< HEAD
+<template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<template is="users" data="{{list:'imasrc////',num:3}}" data="{{user:merchants}}">
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 </template>
 
 
@@ -13,6 +21,7 @@
 				<image src="/images/tubiao/dg.png"></image>
 			</view>
 			<view class="character6 ">导购管理</view>
+<<<<<<< HEAD
 		</view>
 		<view class="list-item6  cpxqp2 {{cpxqzt==2?'active':''}}" data-ind="{{2}}" bindtap="cpxzxz">
 			<view class="list-right6">
@@ -30,6 +39,25 @@
 			<view class="list-right6">
 				<image src="/images/tubiao/xz.png"></image>
 			</view>
+=======
+		</view>
+		<view class="list-item6  cpxqp2 {{cpxqzt==2?'active':''}}" data-ind="{{2}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/my.png"></image>
+			</view>
+			<view class="character6 ">我的客户</view>
+		</view>
+		<view class="list-item6  cpxqp3 {{cpxqzt==3?'active':''}}" data-ind="{{3}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/xzm.png"></image>
+			</view>
+			<view class="character6 ">群发助手</view>
+		</view>
+		<view class="list-item6" bindtap="fasong">
+			<view class="list-right6">
+				<image src="/images/tubiao/xz.png"></image>
+			</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 			<view class="character6 ">打包发送</view>
 		</view>
 	</view>
@@ -41,7 +69,36 @@
 
 <!-- 名片 -->
 <view class="card" wx:if='{{cpxqzt==1}}'>
+<<<<<<< HEAD
 	<view class="dh_r">
+=======
+
+	<view class="dh_r">
+<<<<<<< HEAD
+		<view class="vip">头像　｜　</view>
+		<view class="vip">导购　｜</view>
+		<view class="vip">会员数</view>
+	</view>
+	<view class="shoppers">
+		<view class="shoppers_r">
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<checkbox value="all" bindtap="selectall" />
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+					<image src="/images/tubiao/wen.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="btn_r">
+		<button class="btn">删除</button>
+=======
+		<!-- <checkbox checked="{{check}}"  bindtap="Future"></checkbox> -->
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 		<view class="vip"></view>
 		<view class="vip">头像</view>
 		<view class="vip">导购</view>
@@ -77,6 +134,10 @@
 	</view>
 	<view class="btn_r">
 		<button class="btn" bindtap="delete">删除</button>
+<<<<<<< HEAD
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 	</view>
 
 </view>
@@ -86,7 +147,10 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 <!-- 绑定获客 -->
 <view class="binding" wx:if='{{cpxqzt==2}}'>
 	<block>

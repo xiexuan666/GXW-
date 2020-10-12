@@ -1,7 +1,10 @@
 /* 头部 */
+<<<<<<< HEAD
 page {
   background-color: #e7e7e7;
 }
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 .jinx-t {
   width: 100%;
 }
@@ -52,6 +55,7 @@ page {
   font-size: 35rpx;
   font-weight: 300;
 }
+<<<<<<< HEAD
 
 /* 头部 end*/
 
@@ -97,3 +101,6 @@ page {
   background-color: #ededed;
   width: 50%;
 } 
+=======
+/* 头部 end*/
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14

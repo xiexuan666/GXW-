@@ -100,6 +100,7 @@ page {
   padding-left: 20rpx;
   font-size: 28rpx;
   font-weight: 300;
+<<<<<<< HEAD
 }
 .keh {
   float: right;
@@ -109,3 +110,6 @@ page {
   width: 175rpx;
   height: 40rpx;
 } 
+=======
+}
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14

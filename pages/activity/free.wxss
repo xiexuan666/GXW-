@@ -1,0 +1,2 @@
+/* pages/activity/free.wxss */
+@import '/pages/template/ActivityTemplate/ActivityTemplate.wxss';

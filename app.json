@@ -60,12 +60,28 @@
     "pages/me/containe/containe",
     "pages/me/guanli/code/code",
     "pages/template/haibao/haibao",
+<<<<<<< HEAD
     "pages/template/ActivityTemplate/ActivityTemplate",
+=======
+<<<<<<< HEAD
+    "pages/template/ActivityTemplate/ActivityTemplate",
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
     "pages/template/comments/comments",
     "pages/me/registration/registration",
     "pages/me/merchant/merchant",
     "pages/template/viedeocard/videocard",
     "pages/video/video",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "pages/activity/free",
+    "pages/template/ActivityTemplate/ActivityTemplate",
+    "pages/me/update/shoppersupdate/shoppersupdate",
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
     "pages/me/guanli/manage/yuyue",
     "pages/me/guanli/shoppers/shoppers",
     "pages/me/guanli/information/information",
@@ -73,6 +89,10 @@
     "pages/me/guanli/column/column",
     "pages/me/guanli/indent/indent",
     "pages/customers/system/system",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
     "pages/customers/distribution/distribution",
     "pages/customers/shopper/shopper",
     "pages/template/Administration/Administration",
@@ -95,11 +115,25 @@
     "pages/me/guanli/activity/coupon_fabu",
     "pages/me/guanli/activity/coupon_merchant",
     "pages/me/guanli/Verification/Verification",
+<<<<<<< HEAD
     "pages/me/guanli/manage/zixu/zixu",
     "pages/me/issue/issue",
     "pages/me/update/shoppersupdate/shoppersupdate"
 
    
+=======
+    "pages/me/guanli/manage/zixu/zixu"
+
+   
+=======
+    "pages/template/Administration/Administration",
+    "pages/customers/distribution/distribution",
+    "pages/customers/shopper/shopper",
+    "pages/scheme/designscheme/designscheme",
+    "pages/template/component/component",
+    "pages/scheme/plan/plan"
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -401,7 +401,15 @@
   position: relative;
   flex-flow: row;
   margin: 0 auto;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+  position: relative;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 }
 
 .management {
@@ -459,5 +467,23 @@
 
 .modify .xiug {
   font-size: 26rpx;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+}
+
+/* 二维码 */
+.code{
+  position: absolute;
+  bottom:20rpx;
+  right:40rpx;
+}
+.code image{
+  width:80rpx;
+  height: 80rpx;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 }

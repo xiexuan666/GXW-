@@ -22,20 +22,46 @@ Page({
   },
    //产品详情导航选择
    cpxzxz:function(e){
+<<<<<<< HEAD
     var that = this;
     var ind=app.hdindex(e,'ind')
     var cpxqzt=this.data.cpxqzt;
     if(ind==cpxqzt){return false};
     switch(ind){
+=======
+<<<<<<< HEAD
+     var that = this;
+    var ind=app.hdindex(e,'ind')
+   var cpxqzt=this.data.cpxqzt;
+   if(ind==cpxqzt){return false};
+   switch(ind){
+
+=======
+    var that = this;
+    var ind=app.hdindex(e,'ind')
+    var cpxqzt=this.data.cpxqzt;
+    if(ind==cpxqzt){return false};
+    switch(ind){
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
    }
    if(ind==1){
     cpxqzt=1
     wx.setNavigationBarTitle({ title: '全部'});
     // 查找出现次数
+<<<<<<< HEAD
     var sum = that.data.strategy;
     that.setData({
       hiddenstrategy:5
       ,strategyTotal:sum.length
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+    that.setData({
+      hiddenstrategy:5
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
     })
    }
    if(ind==2){
@@ -45,8 +71,12 @@ Page({
     that.query(1,sum);
     // console.log(sum.map)
     that.setData({
+<<<<<<< HEAD
       hiddenstrategy:1,
      
+=======
+      hiddenstrategy:1
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
     })
    }
    if(ind==3){
@@ -73,7 +103,15 @@ Page({
     cpxqzt=5
     wx.setNavigationBarTitle({ title: '新品上市'});
     var sum =  that.data.strategy;
+<<<<<<< HEAD
     that.query(4,sum);
+=======
+<<<<<<< HEAD
+    that.query(3,sum);
+=======
+    that.query(4,sum);
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
     that.setData({
       hiddenstrategy:4
     })
@@ -184,11 +222,20 @@ Page({
     let url = 'activity/hot/getAllVideo';
     // 请求视频数量
     getInformation.getVideo(url).then(res=>{
+<<<<<<< HEAD
       console.log('请求到的视频',res);
+=======
+<<<<<<< HEAD
+      console.log(res);
+=======
+      console.log('请求到的视频',res);
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
       this.setData({
         video:res.data
       })
     })
+<<<<<<< HEAD
 
   },
   /**
@@ -218,6 +265,10 @@ Page({
       }
     })
   },
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 
   /**
    * 跳转事件--使用自己封装的方法进行跳转
@@ -237,6 +288,55 @@ Page({
     let url = 'video/video';
     getInformation.Jump(url,value);
   },
+  /**
+   * 点赞事件--实时更新页面上的点赞数
+   * 获取下标，获取视频id
+   * 调用getInfoemation封装好的接口进行点赞操作
+   * 根据res.flag值对判断值和页面数组进行更改
+   */ 
+  addgreat:function(e){
+    var that = this;
+    var index=app.hdindex(e,'index');
+    let url = 'activity/hot/greatVideo';
+    let videoid = that.data.video[index].videoId;
+    getInformation.addgreat(url,undefined,videoid).then(res=>{
+      if(res.flag){
+        let great =  that.data.video[index].great+1;
+        that.setData({
+          ['video['+index+'].dianzhan']:res.flag,
+          ['video['+index+'].great']:great,
+        })
+      }else{
+        let great =  that.data.video[index].great-1;
+        that.setData({
+          ['video['+index+'].dianzhan']:res.flag,
+          ['video['+index+'].great']:great,
+        })
+      }
+    })
+  },
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+
+  /**
+   * 跳转事件--使用自己封装的方法进行跳转
+   * 
+   */
+  Jumpvideo:function(e){
+    var that = this;
+    var index=app.hdindex(e,'index');
+    console.log(index);
+    // wx.showToast({
+    //   title: '视频还没准备好哦',
+    //   icon: 'none',
+    //   duration: 2000
+    // })
+    console.log('跳转到viedo页面',index,that.data.video[index]);
+    let value = that.data.video[index];
+    let url = 'video/video';
+    getInformation.Jump(url,value);
+  },
+
+
 
 
 
@@ -315,6 +415,20 @@ Page({
   ,
   query:function(type,arry){
     var that = this;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    console.log(type,arry);
+    arry.forEach(item => {
+      console.log(item)
+      let num;
+      if(item.type == type){
+        num++
+        console.log('xxx',num);
+      }
+    });
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
     let types = type;
     let num = 0;
     arry.forEach(res=>{
@@ -325,6 +439,10 @@ Page({
     that.setData({
       strategyTotal:num
     })
+<<<<<<< HEAD
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
   }
 })
 

@@ -3,7 +3,15 @@
 <view class="titleimg">
 	<view class="header">
 		<!--  index图片 -->
+<<<<<<< HEAD
 		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+		<image mode="widthFix" bindtap="dakerw" data-img="{{pagesubscript.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 	</view>
 	<!-- 列表框 -->
 	<view class="wenzi">
@@ -128,7 +136,14 @@
 		<view class="list-item">
 			<view class="list-right">
 				<image src="/images/tubiao/chak.png" mode="widthFix"></image>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
 				<view class="character">5220</view>
+=======
+				<view class="character">{{pagesubscript.preview}}</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
 			</view>
 		</view>
 		<view class="list-item" catchtap="star" data-ind="{{index}}">

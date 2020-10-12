@@ -1,0 +1,745 @@
+/* pages/product/anlixq/anlixq.wxss  */
+
+page {
+  background-color: #ffffff;
+}
+
+.titleimg {
+  width: 700rpx;
+  margin: 0 auto;
+
+}
+
+.titleimg image {
+  width: 100%;
+  border-top-right-radius: 35rpx;
+  border-top-left-radius: 35rpx;
+}
+
+.wenzi {
+  display: flex;
+  background-color: #bd8f60;
+  border-bottom-right-radius: 35rpx;
+  border-bottom-left-radius: 35rpx;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10rpx;
+}
+
+.wenzis {
+  padding: 20rpx 30rpx;
+  color: #fff;
+  font-size: 28rpx;
+  flex: 1;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  padding-top: 20rpx;
+  /* background-color: orange; */
+}
+
+.wenzis .wenzis_label {
+  position: absolute;
+  top: 10rpx;
+  left: 40rpx;
+  font-size: 12rpx;
+  color: #efefef;
+}
+
+.wenzis .wenzis_left {
+  position: absolute;
+  right: 0;
+  height: 80%;
+  background-color: #ffffff;
+  width: 1px;
+  top: 9rpx;
+}
+
+.total {
+  margin: 30rpx auto;
+  width: 100vw;
+}
+
+.check {
+  /* width: 700rpx; */
+  padding-right: 45rpx;
+  padding-left: 45rpx;
+
+  margin: 0 auto;
+
+}
+
+.prices image {
+  width: 100%;
+}
+
+.anl {
+  padding: 10rpx 0;
+  font-size: 30rpx;
+  font-weight: 300;
+  /* background: #F73C41;
+   */
+  position: relative;
+}
+
+.prices {
+  padding: 50rpx 0;
+  font-weight: 300;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.titles {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.cizhuan image {
+  width: 200rpx;
+  height: 130rpx;
+  border-radius: 15rpx;
+}
+
+.list {
+  padding: 10rpx 0;
+  font-size: 33rpx;
+  font-weight: 700;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.banner {
+  height: 160rpx;
+  width: 90%;
+  padding-left: 45rpx;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.ket {
+  width: 100%;
+  margin: 30rpx auto;
+  display: flex;
+}
+
+.lists-item {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+/* 用户评价内容 */
+.appraise-user {
+  width: 660rpx;
+  margin: 75rpx auto;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  padding-right: 45rpx;
+  padding-left: 45rpx;
+  margin-top: 120rpx;
+  /* overflow: hidden; */
+}
+
+.user-comment {
+  border-bottom: 1px solid #efefef;
+}
+
+.comment-user {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  height: 104rpx;
+}
+
+.user {
+  height: 100rpx;
+  display: flex;
+  align-self: center;
+}
+
+.user-head-portrait {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 10rpx;
+}
+
+.user-name {
+  align-self: center;
+  font-size: 20rpx;
+}
+
+.user-name view:nth-child(2) image {
+  width: 14rpx;
+  height: 14rpx;
+}
+
+.appraise-date {
+  align-self: center;
+  color: #666666;
+  padding-top: 20rpx;
+}
+
+.appraise-content {
+  width: 550rpx;
+  font-size: 24rpx;
+  /* margin: 0rpx 0 19rpx; */
+  margin-left: 65rpx;
+  /* background:lightsalmon; */
+}
+
+.appraise-content view {
+  line-height: 36rpx;
+}
+
+.appraise-content view text:nth-child(1) {
+  color: #999999;
+}
+
+appraise-content view text:nth-child(2) {
+  color: #000000;
+}
+
+.evaluate-content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #000000;
+}
+
+.ellipsis {
+  /* -webkit-line-clamp: 5; */
+  opacity: 0.75;
+}
+
+.unellipsis {
+  -webkit-line-clamp: 0;
+  opacity: 1;
+}
+
+.content-jian {
+  float: right;
+}
+
+.appraise-base {
+  margin: 0 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20rpx;
+  height: 40rpx;
+}
+
+
+
+.choice {
+  color: #8a8a8a;
+  align-self: center;
+}
+
+.write-back {
+  display: flex;
+  color: #666666;
+  align-self: center;
+}
+
+.write-back view {
+  display: flex;
+  align-items: center;
+}
+
+.write-back view:nth-child(1) {
+  margin-right: 72rpx;
+}
+
+.write-back view:nth-child(1) image {
+  width: 28rpx;
+  height: 25rpx;
+}
+
+.write-back view:nth-child(2) image {
+  width: 27rpx;
+  height: 26rpx;
+}
+
+.hover-active {
+  color: #F73C41;
+}
+
+.wrte-back-img {
+  width: 28rpx;
+  height: 28rpx;
+  align-self: center;
+  margin-right: 10rpx;
+}
+
+
+/* 评价 */
+
+.username-appraise-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32rpx;
+}
+
+.username-appraise-tops {
+  display: flex;
+  justify-content: space-between;
+}
+
+.username-appraise-top view:nth-child(2),
+.username-appraise-tops view:nth-child(2) {
+  text-align: center;
+}
+
+.username-appraise-top .username,
+.username-appraise-tops .username {
+  display: flex;
+  font-size: 20rpx;
+  color: #666666;
+}
+
+.username-appraise-top .username image,
+.username-appraise-tops .username image {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.username-appraise-top .praise,
+.username-appraise-tops .praise {
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.amount {
+  font-size: 20rpx;
+  color: #999999;
+}
+
+.pl {
+  width: 100rpx;
+}
+
+
+
+.appraise-content text:nth-child(1) {
+  font-size: 20rpx;
+  line-height: 30rpx;
+  color: #000000;
+  margin-right: 17rpx;
+}
+
+.appraise-content text:nth-child(2) {
+  /* width: 100rpx; */
+  font-size: 20rpx;
+  color: #999999;
+}
+
+.reply-username {
+  margin: 0 0 0 68rpx;
+}
+
+.reply-usernames {
+  height: 80rpx;
+  overflow: hidden;
+  margin: 0 0 0 68rpx;
+}
+
+.reply-usernames-active {
+  height: 100% !important;
+}
+
+
+
+
+
+/* 底部 */
+.main {
+  height: 460rpx;
+  overflow: scroll;
+  margin-top: 25rpx;
+}
+
+.appraise-btn {
+
+  height: 97.3rpx;
+  background: #FFFFFF;
+  /* position: fixed; */
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 21rpx;
+}
+
+.appraise-btn .appraise-btn-left {
+  height: 64rpx;
+  width: 680rpx;
+  background: #ffffff;
+  border-radius: 32rpx;
+  margin-right: 26rpx;
+  font-size: 24rpx;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.appraise-btn .appraise-btn-left image {
+  width: 100rpx;
+  height: 50rpx;
+  margin-left: 28rpx;
+  margin-right: 9rpx;
+  margin-top: 10rpx;
+}
+
+.appraise-btn-right {
+  display: flex;
+  width: 26%;
+  height: 64rpx;
+  background-color: #bd8f60;
+  border-radius: 20rpx;
+  font-size: 32rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 310rpx;
+}
+
+
+
+/* 常用工具 */
+.title {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.contact {
+  margin: 30rpx 0;
+}
+
+.tab {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 25rpx;
+  height: 200rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item {
+  padding: 0 15rpx;
+}
+
+.list-right image {
+  padding: 0 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.list-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* padding: 0 20rpx; */
+}
+
+.collect {
+  width: 90%;
+  margin: 40rpx auto;
+}
+
+
+
+/* 设计 */
+.history {
+  width: 700rpx;
+  margin: 50rpx auto;
+}
+
+.search {
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+
+}
+
+.cun {
+  font-size: 22rpx;
+  align-items: center;
+  font-weight: 300;
+  margin: 0 10rpx;
+  padding: 20rpx 0;
+}
+
+.portrait image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.tup image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.lister image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.zix image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.boda {
+
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 30%;
+  height: 50rpx;
+  color: #fff;
+  padding: 20rpx 20rpx;
+}
+
+
+.lister {
+  background-color: #bd8f60;
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 200rpx;
+  color: #fff;
+  border-radius: 15rpx;
+  margin: -8rpx 0;
+  align-items: center;
+  text-align: center;
+}
+
+.zix {
+  background-color: #bd8f60;
+  font-size: 22rpx;
+  font-weight: 300;
+  width: 200rpx;
+  color: #fff;
+  border-radius: 15rpx;
+  margin: 20rpx 0;
+  align-items: center;
+  text-align: center;
+
+}
+
+.toTop {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  position: fixed;
+  right: 67rpx;
+  bottom: 490rpx;
+}
+
+.toTop image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/* 新添加的样式 */
+.appraise-user_top {
+  width: 100%;
+  height: 100rpx;
+  /* background: lightseagreen; */
+  position: relative;
+}
+
+.appraise-user_top .Top_Good {
+  /* background: lightslategrey; */
+  height: 50%;
+  width: 94%;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #666666;
+}
+
+.Top_Good {
+  display: flex;
+  width: 100%;
+}
+
+.Top_Good_header {
+  display: flex;
+  flex: 1;
+}
+
+.Top_Good_header .header image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+}
+
+.Top_Good_header .header:nth-child(1) {
+  margin-right: -10rpx;
+}
+
+.Top_Good_header .header:nth-child(3) {
+  margin-left: -10rpx;
+}
+
+.Top_Good .Top_Good_Text {
+  /* display:block; */
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: right;
+
+}
+
+.Top_Good .Top_Good_Text text {
+  display: inline-block;
+font-size: 26rpx;
+  padding-right: 45rpx;
+  padding-left: 60rpx;
+}
+
+
+/* 新加样式 */
+/* 案例文字的圆 */
+.case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+.anl .case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 10rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+/* 案例图片的大小 */
+.check .header {
+  width: 100%;
+}
+
+.check .header image {
+  width: 100%;
+}
+
+/* 选用产品的圆点 */
+.chanp {
+  position: relative;
+}
+
+.Top_Good_Text image {
+  width: 40rpx;
+  margin-top: -10rpx;
+}
+
+/* 评论的距离 */
+.margin-layouts {
+  padding-top: 25rpx;
+}
+
+/* 底部名片 */
+.list-item6 {
+  height: 100%;
+  display: flex;
+  margin: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  
+}
+
+.goods {
+  display: flex;
+  margin: 0 20rpx;
+  border: 1px  dashed  #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx  0;
+}
+
+.tab {
+  padding: 0 20rpx;
+
+}
+
+.attrs {
+  font-size: 18rpx;
+  font-weight: 300;
+  margin-top: 30rpx;
+}
+
+.attrs1 {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+.attrs2 {
+  padding: 10rpx 0;
+  font-size: 23rpx;
+  font-weight: 200;
+  padding-top: 14rpx;
+}
+
+.collect1 {
+  margin: 0 10rpx;
+}
+
+.collect1 image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50rpx;
+}
+
+.contacts {
+  width: 30%;
+  margin-top: 20rpx;
+
+}
+.contacts  image {
+  width: 175rpx;
+  height: 45rpx;
+}
+
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
+}
+

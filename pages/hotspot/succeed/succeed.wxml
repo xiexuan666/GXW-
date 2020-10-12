@@ -1,0 +1,59 @@
+<view class="xians">
+	<view class="xians-nr">
+
+		<view class="xians-mind">
+			<view class="menus">
+				<view class="floor">拼团须知</view>
+				<view class="floor-title">
+					<view class="floor_r">
+						拼团成功
+					</view>
+					<view class="floor_r">
+						拼团成功
+					</view>
+				</view>
+				<view class="group_img">
+					<!-- <image src="https://cdn.juesedao.cn/gxw/ridianshiping.jpg" mode="widthFix"></image> -->
+				</view>
+			</view>
+		</view>
+
+
+
+		<view class="floor-content">
+			<view class="floor-left">你的拼团好友</view>
+			<view class="floor-right">
+				<view class="toTop">
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="arrow">
+					<view class="price">江伟娜</view>
+					<view class="goods-title">开团时间：2018-05-06 11:34:23</view>
+				</view>
+			</view>
+			<view class="floor-right">
+				<view class="toTop">
+					<image src="/images/tubiao/70.png"></image>
+				</view>
+				<view class="arrow">
+					<view class="price">我像海鸥展翅飞</view>
+					<view class="goods-title">参团时间：2018-05-06 11:34:23</view>
+				</view>
+			</view>
+			<view class="floor-right">
+				<view class="toTop">
+					<image src="/images/tubiao/90.png"></image>
+				</view>
+				<view class="arrow">
+					<view class="price">小螺号嘀嘀的吹</view>
+					<view class="goods-title">参团时间：2018-05-06 11:34:23</view>
+				</view>
+			</view>
+		</view>
+
+
+
+
+	</view>
+
+</view>

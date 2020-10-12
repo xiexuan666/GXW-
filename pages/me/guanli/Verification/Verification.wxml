@@ -1,0 +1,35 @@
+<!--pages/me/guanli/Verification/Verification.wxml-->
+<view class="mingx">
+    <view class="shuru">
+      <input placeholder="请输入核销码"></input>
+    </view>
+    <view class="button">
+      <view class="btn_one">
+        <button class="sousuo_btn" bindtap="sousuo">搜索</button>
+        
+      </view>
+      <view class="btn_two">
+        <button class="saoma_btn">扫码</button>
+      </view>
+      </view>
+      <view class="main" wx:if='{{check}}'> 
+        <view class="myfont">
+          <view class="hexiaoma">核销码：20122222</view>
+          <view class="a">
+            <view class="youxiao">有效期：</view>
+            <view class="shijian">2020.03.03-2020.09.31
+            </view>
+          </view>
+          <view class="dizhimax">
+            <view class="address">店铺地址：</view><view class="dizhi">佛山市禅城区陶瓷总佛山
+            </view>
+          </view>
+        </view>
+        <view class="vessel_btn">
+          <button class="queren_btn" bindtap="submit">确认核销</button>
+        </view>
+      </view>
+    <view>
+
+    </view>
+</view>

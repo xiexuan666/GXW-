@@ -1,0 +1,78 @@
+<!-- 店长名片 -->
+<view class="user">
+	<image class="list_pic" src="/images/tubiao/9.png" mode="scaleToFill"></image>
+	<view class=" management">
+		<view class="user_li">
+			<text>王店长</text>
+		</view>
+		<view class="info">
+			<view class="info_l">职务:店长</view>
+			<view class="info_l">所属门店:季华路店</view>
+			<view class="info_l">新增订单</view>
+		</view>
+	</view>
+	<view class="user_info">
+		<view class="user_img">
+			<image src="/images/tubiao/70.png" class="tx"></image>
+		</view>
+	</view>
+</view>
+
+<!-- 导购订单 -->
+<view class="vote">
+	<view class="partner">
+		<view class="link">
+			<view class="copyright">导购订单</view>
+		</view>
+		<view class="category">
+			<view class="create">
+				<view class="brand">导购</view>
+				<view class="edit">订单数</view>
+			</view>
+
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 我的订单 -->
+<view class="list">
+	<view class="list-item">
+		<view class="link">
+			<view class="copyright">我的订单</view>
+		</view>
+		<view class="real">
+			<view class="number">
+				<view class="number1"> 订单号:　20200303001</view>
+			</view>
+			<view class="list-right">
+				<view class="character">
+					符会员　　购买产品:　鱼肚金
+				</view>
+				<view class="characters">
+					成交时间:　2020.03.03　19:37
+				</view>
+				<view class="export">
+					<view class="delete" bindtap="handleJian">
+						修改订单
+					</view>
+					<view class="delete" bindtap="handleJian">
+						删除订单
+					</view>
+				</view>
+			</view>
+
+		</view>
+	</view>
+</view>

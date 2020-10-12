@@ -1,0 +1,122 @@
+/* 拼团 */
+.header {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #be8f61;
+  border-radius: 50rpx;
+  position: relative;
+}
+
+.group {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.fool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx auto;
+}
+
+.script {
+  padding: 0 20rpx;
+}
+
+.fool_r image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+
+.group_r {
+  position: relative;
+}
+
+.data {
+  margin-top: 50rpx;
+  padding: 15rpx;
+  position: absolute;
+  background-color: #f6ab04;
+  color: #fff;
+  font-weight: 300;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-left: -20rpx;
+  padding-left: 30rpx;
+}
+
+.date {
+  width: 60rpx;
+  margin-left: 570rpx;
+  padding: 10rpx;
+  position: absolute;
+  background-color: #cfad8a;
+  color: #fff;
+  font-weight: 300;
+  opacity: 0.8;
+  font-size: 24rpx;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+}
+
+
+.group_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  margin: 30rpx 30rpx;
+  padding-bottom: 50rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.name_r {
+  font-size: 33rpx;
+  font-weight: 300;
+  margin-bottom: 20rpx;
+
+}
+
+.name_l {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+.pict {
+  margin-left: 185rpx;
+}
+
+.price {
+  color: #be8f61;
+  font-size: 50rpx;
+}
+
+.canyu {
+  text-align: center;
+  align-items: center;
+}
+
+.canyu image {
+  width: 200rpx;
+  height: 200rpx;
+
+}
+
+.baoc {
+  width: 90%;
+  margin: 50rpx auto;
+  background-color: #f1f1f1;
+
+}
+
+.bao_c {
+  text-align: center;
+  align-items: center;
+  padding: 50rpx;
+}

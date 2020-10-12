@@ -50,9 +50,8 @@
 			</view>
 			<view class="cpxqgus-nrtp">
 				{{cpxiaqs.product_synopsis}}
-			</view>
-
-			<!-- <view class="cpxqgus-nrbul">
+			</view> -->
+<view class="cpxqgus-nrbul">
 				<block wx:for="{{cpxiaqs.product_guige}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 					<view class="cpxqgus-nrbli">
 						<view class="cpxli-tu" bindtap="dakerw" data-img="{{item.url}}">
@@ -61,7 +60,7 @@
 
 					</view>
 				</block>
-			</view> -->
+			</view> 
 		</view>
 	</view>
 </view>
@@ -74,8 +73,9 @@
 		</view>
 	</block>
 </view>
-
-
+<view class="listpic">
+<image src="/images/pic/xguo.jpg" mode="widthFix"></image>
+</view>
 
 
 

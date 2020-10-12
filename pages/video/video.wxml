@@ -1,0 +1,15 @@
+<!--pages/video/video.wxml-->
+<view class="videolayout">
+
+</view>
+<view class="videoinfo">
+
+</view>
+
+<view class="sidebar">
+
+</view>
+<view class="comments">
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view>

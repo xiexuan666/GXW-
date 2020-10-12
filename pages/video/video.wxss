@@ -1,0 +1,33 @@
+/* pages/video/video.wxss */
+
+@import '/pages/template/comments/comments.wxss';
+page{
+  background-color: #000000;
+}
+.videolayout{
+  height: 80vh;
+  width:90vw;
+  background-color: seagreen;
+  margin: auto;
+}
+.videoinfo{
+  width: 90vw;
+  height: 20vh;
+  background-color: seashell;
+  margin: auto;
+}
+.sidebar{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height:500rpx;
+  width: 200rpx;
+  background-color: sienna;
+}
+
+.comments{
+  background-color: skyblue;
+  position: absolute;
+  bottom: 0;
+}

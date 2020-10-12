@@ -23,6 +23,8 @@
   margin: 0 10rpx;
   background-color: #be8f61;
   color: #fff;
+  padding: 5rpx;
+  border-radius: 13rpx;
 }
 
 .juli {

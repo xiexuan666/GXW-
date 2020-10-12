@@ -1,0 +1,20 @@
+<view class="hd">
+  <image class="free2" src="/images/activity/free2.jpg"></image>
+  <button class="button1">我也要助力领奖!</button>
+  <view class="text1">
+  ............................... <view class="text2"> 好友助力进度 1/8 </view> .................................</view>
+  <view class="tupiao">
+    <image  class="touxiang" src="/images/tubiao/70.png"></image>
+    <image  class="touxiang" src="/images/tubiao/70.png"></image>
+    <image  class="touxiang" src="/images/tubiao/70.png"></image>
+    <image  class="touxiang" src="/images/tubiao/70.png"></image>
+  </view>
+  <view class="tupiao2">
+    <image class="touxiang2" src="/images/tubiao/59.png"></image>
+    <image class="touxiang2" src="/images/tubiao/59.png"></image>
+    <image class="touxiang2" src="/images/tubiao/59.png"></image>
+    <image class="touxiang2" src="/images/tubiao/59.png"></image>
+  </view>
+  <button class="button2">我也要助力领奖</button>
+</view>
+

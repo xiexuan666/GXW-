@@ -1,0 +1,121 @@
+
+
+<view class="hander">
+	<view class="a a1">优惠券活动</view>
+	<view class="a a2">查看全部</view>
+</view>
+<!-- 领取优惠券 -->
+<view class="coupon-list">
+	<view class="item stamp stamp01 " bindtap="containe">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">20</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+			</view>
+		</view>
+	</view>
+		
+			<view class="float-tu">
+				<view class="coupon-botton">
+					<view class="u u1"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/fangx.png'></image></view>
+					<view class="u u2"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image></view>
+					<view class="u u3"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image></view>
+				</view>
+				<view  class="coupon-botton_right">
+						<view class="r r1"></view>
+						<view class="r r2">已领取：</view>
+						<view class="r r3">3500</view>
+						<view class="r r4"></view>
+						<view class="r r5">已核销：</view>
+						<view class="r r6">2800</view>
+						<view class="rbig">
+							<view class="r r7">分享</view>
+							<view class="r r8">修改</view>
+							<view class="r r9">删除</view>
+						</view>
+				</view>
+			</view>
+
+
+</view>
+<view class="coupon-list">
+	<view class="item stamp stamp02 ">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">50</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+			</view>
+		</view>
+		</view>
+	
+		
+			<view class="float-tu">
+				<view class="coupon-botton">
+					<view class="u u1"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/fangx.png'></image></view>
+					<view class="u u2"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image></view>
+					<view class="u u3"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image></view>
+				</view>
+				<view  class="coupon-botton_right">
+						<view class="r r1"></view>
+						<view class="r r2">已领取：</view>
+						<view class="r r3">3</view>
+						<view class="r r4"></view>
+						<view class="r r5">已核销：</view>
+						<view class="r r6">3</view>
+						<view class="rbig">
+							<view class="r r7">分享</view>
+							<view class="r r8">修改</view>
+							<view class="r r9">删除</view>
+						</view>
+				</view>
+			</view>
+
+
+
+
+	</view>
+	<view class="coupon-list">
+	<view class="item stamp stamp02 ">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">100</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+			</view>
+		</view>
+		
+	
+	</view>
+			<view class="float-tu">
+				<view class="coupon-botton">
+					<view class="u u1"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/fangx.png'></image></view>
+					<view class="u u2"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image></view>
+					<view class="u u3"><image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image></view>
+				</view>
+				<view  class="coupon-botton_right">
+						<view class="r r1"></view>
+						<view class="r r2">已领取：</view>
+						<view class="r r3">3500</view>
+						<view class="r r4"></view>
+						<view class="r r5">已核销：</view>
+						<view class="r r6">2800</view>
+							<view class="rbig">
+							<view class="r r7">分享</view>
+							<view class="r r8">修改</view>
+							<view class="r r9">删除</view>
+						</view>
+				</view>
+			</view>
+
+</view>

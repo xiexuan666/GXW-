@@ -2,11 +2,11 @@
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
@@ -19,41 +19,42 @@
 
 <view class="me-list">
 	<view class="me-list-ul">
-		<view class="me-list-li">
-			<view class="me-list-lil">姓　　名</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">姓名</view>
 			<view class="me-list-lir">
 				<input name="xingm" bindinput="xueliinput" class="df_1" placeholder="请输入真实姓名"></input>
 			</view>
 		</view>
-		<view class="me-list-li">
+
+
+		<view class="me-list-li" bindtap="melisttz">
 			<view class="me-list-lil">联系电话</view>
 			<view class="me-list-lir">
 				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
 			</view>
 		</view>
-		<view class="me-list-li">
-			<view class="me-list-lil">微 信 号</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">微信号</view>
 			<view class="me-list-lir">
 				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
 			</view>
 		</view>
-		<view class="me-list-li">
+		<view class="me-list-li" bindtap="melisttz">
 			<view class="me-list-lil">现居地址</view>
 			<view class="me-list-lir">
 				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
 			</view>
 		</view>
-
-		<view class="me-list-li">
-			<view class="me-list-lil">爱　　好</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">爱好</view>
 			<view class="me-list-lir">
 				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
 			</view>
 		</view>
-		<view class="me-list-li">
-			<view class="me-list-lil">备　　注</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">备注</view>
 			<view class="me-list-lir">
-				<input name="xingm" bindinput="xueliinput" class="df_2"></input>
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
 			</view>
 		</view>
 	</view>

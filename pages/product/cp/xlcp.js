@@ -64,7 +64,7 @@ Page({
     }
     var url = baseUrl + "production/productCollectionSaves"
     var dat={
-      brandid:'1',
+      brandid:app.globalData.brandid,
       userid:gerxinx.id,
       productid:cp[ind].productList[inds].id
     }
@@ -99,7 +99,7 @@ Page({
     var tha=this
     var url = baseUrl + "series/selectSeriesTypeByguige"
     var dat={
-      brandid:'1',
+      brandid:app.globalData.brandid,
       productIdList:cps.cdid,
       guigeIdList:cps.geid
     }

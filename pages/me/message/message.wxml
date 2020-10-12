@@ -28,64 +28,14 @@
 </view>
 
 
-<!-- 内容 -->
-<!-- <view class="list" wx:if='{{cactiv==1&&cpxqzt==2}}'>
-	<block>
-		<navigator url="/pages/hotspot/strategy/strategy?id=1" class="goods-list">
-			<image src="/images/tubiao/1-08.jpg">
-			</image>
-			<view class="goods-list-right">
-				<view class="goods-title">
-					[爆款推荐]这个夏天，冠星王瓷砖让
-					你体验不—样的清凉。
-				</view>
-				<view class="simple-li-r">
-					<view class="cotione">
-						<view class="jxsnr-li-time">5220</view>
-					</view>
-					<view class="cotione1">
-						<view class="jxsnr-li-r">2020.09.01</view>
-					</view>
-				</view>
-			</view>
-		</navigator>
-	</block>
-</view> -->
-
-
-
 
 
 <!-- 热点视频 -->
 <view class="videolist" wx:if='{{cactiv==1&&cpxqzt==1}}'>
-	<view class="videolist-title">
-		<block>
-			<view class="video">
-				<view class="photo">
-					<image src="/images/tubiao/1-08.jpg"></image>
-					<view class="biaoq">厨房</view>
-				</view>
-				<view class="name">
-					<view class="names">
-						<image src="/images/tubiao/tx.png"></image>
-						<text>村上村树</text>
-					</view>
-
-					<view class="shouc">
-						<image src="/images/tubiao/33sc.png"></image>
-						<text>11</text>
-					</view>
-				</view>
-			</view>
-			<view class="ruhe">
-				<view>[如何装修]开放式厨房太空...</view>
-				<image src="/images/tubiao/chak.png"></image>
-				<text>5220</text>
-			</view>
-
-		</block>
-	</view>
+	<import src='/pages/template/viedeocard/videocard' />
+	<template is="videocard" data="{{video:video}}"></template>
 </view>
+
 
 
 <!-- 案例 -->
@@ -94,7 +44,7 @@
 		<block>
 			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
 				<view class="anlilist-liimg">
-					<image mode="aspectFill" lazy-load="{{true}}" src="/images/tubiao/1-08.jpg"></image>
+					<image mode="aspectFill" lazy-load="{{true}}" src="https://cdn.juesedao.cn/gxw/ridianshiping.jpg"></image>
 				</view>
 				<view class="jxsnr-li-l  jxsnr-li-lsa">
 					<view class="jxsnr-tubiao-tu1">

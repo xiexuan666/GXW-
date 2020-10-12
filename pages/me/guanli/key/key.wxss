@@ -1,0 +1,112 @@
+@import '/pages/template/comments/comments.wxss';
+
+/* 导航 */
+.title6 {
+  width: 92%;
+  margin: 20rpx auto;
+}
+
+.list6 {
+  width: 100%;
+  display: flex;
+  background-color: #fafafa;
+  border-radius: 25rpx;
+  height: 200rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item6 {
+  padding: 0 40rpx;
+}
+
+.list-right6 image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.character6 {
+  font-size: 24rpx;
+  color: #be8f61;
+}
+
+/* 绑定获客 */
+.binding {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 70rpx;
+}
+
+
+
+.binding_rr {
+  margin-top: 50rpx;
+}
+
+.customer {
+  padding: 30rpx 0;
+  font-size: 26rpx;
+  font-weight: 600;
+  padding-left: 50rpx;
+}
+
+.customers {
+  padding: 10rpx 0;
+  font-size: 26rpx;
+  font-weight: 600;
+  padding-left: 50rpx;
+}
+
+.me-list-li {
+  width: 90%;
+  height: 90rpx;
+  padding-bottom: 38rpx;
+  margin-top: 10rpx;
+  background-color: #fafafa;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.me-list-lil {
+  float: left;
+  position: relative;
+  padding-left: 210rpx;
+  line-height: 90rpx;
+  color: #666;
+  font-weight: 300;
+  font-size: 30rpx;
+  padding-top: 30rpx;
+}
+
+.me-list-lil image {
+  position: absolute;
+  top: 30rpx;
+  left: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.me-list-lir {
+  float: right;
+  padding-right: 40rpx;
+  padding-top: 52rpx;
+
+}
+
+.name {
+  font-size: 30rpx;
+  padding-right: 75rpx;
+  color: #666;
+  font-weight: 300;
+}
+
+.me-list-lir image {
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+
+}

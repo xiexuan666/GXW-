@@ -1,2 +1,55 @@
-<!--pages/me/guanli/manage/zixu.wxml-->
-<text>pages/me/guanli/manage/zixu.wxml</text>
+<!-- 热点视频和装修 -->
+<view class="product-cpanli">
+	<view class="cpanli-nr">
+		<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+			装修攻略
+			<view class="cpanli-nr-lid"></view>
+		</view>
+		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+			热点视频
+			<view class="cpanli-nr-lid"></view>
+		</view>
+	</view>
+</view>
+
+
+
+
+<!-- 热点视频 -->
+<view class="videolist" wx:if='{{cactiv==2}}'>
+	<import src='/pages/template/viedeocard/videocard' />
+	<template is="videocard" data="{{video:video}}"></template>
+</view>
+
+
+
+<!-- 内容 -->
+<view class="list" wx:if='{{cactiv==1}}'>
+	<block>
+		<navigator wx:for='{{strategy}}' wx:index='index' wx:item='item' url="/pages/hotspot/strategy/strategy?arry={{json}}&id={{index}}" class="goods-list" wx:if='{{item.type == hiddenstrategy || hiddenstrategy == apphidden}}'>
+			<image src="{{item.photo}}">
+			</image>
+			<view class="goods-list-right">
+				<view class="goods-title">
+					【{{item.name}}】{{item.title}}
+				</view>
+				<view class="simple-li-r">
+					<view class="cotione">
+						<image src="/images/tubiao/1-10.png" mode=""></image>
+						<view class="jxsnr-li-time">{{item.preview}}</view>
+					</view>
+					<view class="cotione1">
+						<view class="jxsnr-li-r">{{item.update_time}}</view>
+					</view>
+				</view>
+			</view>
+		</navigator>
+	</block>
+</view>
+
+
+
+<view class="bott" wx:if='{{cactiv==1}}'>
+	<button class="add" bindtap="category">新增</button>
+	<button class="dele">删除</button>
+</view> 

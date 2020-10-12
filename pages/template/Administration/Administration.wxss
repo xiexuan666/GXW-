@@ -1,0 +1,187 @@
+page{
+  background-color: rgb(231,231,231);
+}
+.card{
+  height:30vh;
+  width: 90vw;
+  margin:auto;
+  border-radius: 20rpx;
+  /* background-color: chocolate; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  position: relative;
+  color: aliceblue;
+  background-size: cover;
+}
+.cardbg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+.cardtitle{
+  margin-bottom:40rpx;
+  font-size: 40rpx;
+  letter-spacing:3rpx;
+  font-weight: 300;
+}
+.card_people{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.card_icon{
+  position: absolute;
+  top: 30rpx;
+  right: 25rpx;
+  border: 1rpx solid rgb(251, 250, 250);
+  font-weight: 200;
+  border-radius:18rpx;
+  font-size:26rpx;
+  /* padding-left: 20rpx; */
+  /* padding-right: 20rpx; */
+  /* padding-right: 20rpx; */
+  /* padding-right: 20rpx; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 0rpx 30rpx 5rpx 30rpx;
+}
+
+
+.user_table{
+  width:90vw;
+  height: 60vh;
+  background-color:rgb(255, 255, 255);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top:10rpx;
+  border-radius: 15rpx;
+  padding-bottom: 30rpx;
+  position: relative;
+  color: rgb(89, 87, 87);
+}
+.user_header{
+  width: 95%;
+  /* background-color: tomato; */
+  height:90rpx;
+  display: flex;
+  flex-direction: row;
+}
+.nav:nth-child(1)::after{
+  visibility: hidden;
+}
+.nav:nth-child(5){
+  flex:1;
+}
+.nav{
+  flex:1;
+  display: flex;
+  height:80rpx;
+  justify-content: center;
+  align-items:center;
+  font-size:28rpx;
+  position:relative;
+  border-bottom: 3rpx solid rgb(165,165,165);
+}
+.nav::after{
+  content: "";
+  position: absolute;
+  display: block;
+  height:25rpx;
+  width:1px;
+  background-color: rgb(165,165,165);
+  top:31rpx;
+  left: 0;
+}
+.user_content{
+  width: 95%;
+  height:80%;
+  overflow:scroll;
+  /* background-color: cadetblue; */
+}
+.user_form{
+  height:80rpx;
+  /* background-color: rgb(130, 130, 138); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 24rpx;
+  text-align: center;
+  position: relative;
+  border-bottom: 1rpx solid rgb(232,232,232);
+}
+
+.check{
+  left: -8rpx;
+  width:25rpx;
+  height:25rpx;
+  border-radius: 50rpx;
+  border: 1rpx solid #666;
+  margin-left: -65rpx;
+  margin-right: 30rpx;
+}
+.checkbg{
+  background-color: rgb(189, 143, 96);
+  border: none;
+}
+.user_portrait{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_portrait image{
+  height: 50rpx;
+  width: 50rpx;
+  display:block;
+  border-radius: 50rpx;
+}
+.user_name{
+  flex:1;
+}
+.user_wxAccounts{
+  flex: 1;
+  font-size: 24rpx;
+  overflow: scroll;
+}
+.user_wxAccounts:hover{
+  color: aqua;
+}
+.user_phone{
+  flex: 1;
+  font-size: 24rpx;
+  overflow: scroll;
+}
+.user_channel{
+  flex: 1;
+}
+
+.button{
+  width:95%;
+  height:13%;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  position: relative;
+  /* display: flex; */
+  /* align-items: center; */
+}
+.button button{
+  position: absolute;
+  bottom: 0;
+  width:80%;
+  height:70rpx;
+  font-size: 28rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgb(197, 146, 98);
+}

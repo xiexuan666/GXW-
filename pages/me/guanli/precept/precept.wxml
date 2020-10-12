@@ -1,0 +1,34 @@
+	<!-- 头部 -->
+	<view class="jinx-t">
+		<view class="jinx-tnr">
+			<view class="jinx-bei">
+				<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+			</view>
+			<view class="jinx-toux">
+				<view class="toux-img">
+					<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+				</view>
+				<view class="name-p">冠星王总部</view>
+			</view>
+		</view>
+	</view>
+
+
+
+	<view class="shouc">
+		<view class="jinx-nr">
+			<view class="themes">
+				<image src="https://cdn.juesedao.cn/gxw/anli.png"></image>
+				<view class="base">西安2B0m2私宅|4年落地，职位适合设计M</view>
+			</view>
+
+			<view class="wrap">
+				<view class="mainNav"># 现代</view>
+				<view class="mainNav"># 西安</view>
+				<view class="mainNav"># 平层</view>
+
+			</view>
+
+
+		</view>
+	</view>

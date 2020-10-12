@@ -1,0 +1,104 @@
+/* pages/me/guanli/Verification/Verification.wxss */
+.mingx{
+  width: 100%;
+  padding-top: 50rpx;
+}
+.shuru{
+  width: 77%;
+  margin:auto;
+  padding: 30rpx 30rpx;
+  background-color: #f7f8f8;
+  border-radius:15rpx;
+}
+/* 按钮栏 */
+.button{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 40rpx auto;
+  justify-content: center;
+  padding:20rpx 0;
+}
+.btn_one{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.btn_two{ 
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.sousuo_btn{
+  background-color: #BD8F60;
+  color: white;
+  width: 90%;
+  border-radius:30rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.saoma_btn{
+  background-color: #BD8F60;
+  color: white;
+  width: 90%;
+  border-radius:30rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.main{
+  width: 86%;
+  margin: auto;
+  color:#8E8E8D;
+  background-color: #f7f8f8;
+  border-radius:15rpx;
+}
+.myfont{
+  margin: 0 40rpx;
+  padding-top: 20rpx;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  line-height: 70rpx;
+}
+.vessel_btn{
+  height: 70rpx;
+  padding: 30rpx;
+  padding-bottom: 50rpx;
+}
+.queren_btn{
+  background-color: #BD8F60;
+  border-radius:30rpx;
+  color: white;
+  width: 60%;
+  height: 70rpx;
+  font-size: 30rpx;
+}
+.dizhimax{
+  display: flex;
+}
+.dizhi{
+  flex:1;
+  width: 80%;
+  line-height: 2;
+  padding-top: 9rpx;
+  /* line-height:60rpx; */
+  /* font-size: 26rpx; */
+}
+.a{
+  display: flex;
+}
+.shijian{
+  flex:1;
+  width: 30%;
+  word-wrap:break-word; 
+  word-break:break-all;
+  line-height: 2;
+  padding-top: 9rpx;
+}
+button::after { border: none }

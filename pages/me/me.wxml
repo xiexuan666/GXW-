@@ -5,8 +5,13 @@
 <!-- 获取手机 -->
 <template is="phone" data="{{sj: sj}}" />
 
+
 <view class="jinx-t">
 	<view class="jinx-tnr">
+
+		<view class="jinx_bgpic">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
 		<view class="jinx-toux">
 			<view class="toux-img" wx:if="{{gerxinx}}">
 				<image src="{{gerxinx.wx_photo}}"></image>
@@ -16,7 +21,7 @@
 			</view>
 			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
 		</view>
-		<view class="jinx-sao">
+		<view class="jinx-sao" bindtap="openCamera"  >
 			<image src="/images/tubiao/61.png"></image>
 			<view class="saoma">扫一扫</view>
 		</view>
@@ -33,11 +38,17 @@
 			<view class="vcenter">个人钱包</view>
 			<view class="balance">
 				<view class="sum">我的余额</view>
-				<view class="sum1">￥0.00</view>
+				<view class="sum1">￥500</view>
 			</view>
 			<view class="recharge">
-				<text class="top">充值</text>
-				<text class="top">提现</text>
+				<view class="me">
+					<view class="top" style=" border-right: 1px solid #fff;">充值<image src="/images/tubiao/58.png"></image>
+					</view>
+				</view>
+				<view class="me">
+					<view class="top">体现<image src="/images/tubiao/59.png"></image>
+					</view>
+				</view>
 			</view>
 		</view>
 
@@ -119,7 +130,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="manage">
+		<view class="me-list-li" >
 			<view class="me-list-lil">我的评论<image src="/images/tubiao/44.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -127,7 +138,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="manage">
+		<view class="me-list-li" >
 			<view class="me-list-lil">我的点赞<image src="/images/tubiao/42.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -136,7 +147,7 @@
 		</view>
 
 
-		<view class="me-list-li" bindtap="manage">
+		<view class="me-list-li" >
 			<view class="me-list-lil">管理入口<image src="/images/tubiao/41.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -158,33 +169,9 @@
 
 
 		<!-- foot -->
-		<view class="list-item">
-			<view class="goods">
-				<view class="collect">
-					<image src="/images/tubiao/gxw.png"></image>
-				</view>
-				<view class="tab">
-					<view class="attrs1">
-						冠星王陶瓷
-					</view>
-					<view class="attrs2">
-						店主:村上
-					</view>
-					<view class="attrs">
-						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
-					</view>
-				</view>
-				<view class="contact">
-					<button class="btn">
-						<image src="/images/tubiao/1-21.png"></image>
-						<view>联系店主</view>
-					</button>
-					<button class="btn">
-						<image src="/images/tubiao/1-22.png"></image>
-						<view>在线咨询</view>
-					</button>
-				</view>
-			</view>
-		</view>
+
+		<import src='/pages/template/comments/comments' />
+		<template is="ceramic" data="{{list:'imasrc////',num:3}}">
+		</template>
 	</view>
 </view>

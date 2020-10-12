@@ -1,5 +1,6 @@
 /* pages/me/me.wxss */
 @import '/pages/template/loginphone/loginphone.wxss';
+@import '/pages/template/comments/comments.wxss';
 
 page {
   background-color: #e7e7e7;
@@ -9,7 +10,24 @@ page {
 /* 头部 */
 .jinx-t {
   width: 100%;
-  background-color: #bababa;
+
+}
+
+.jinx-tnr {
+  position: relative;
+}
+
+.jinx-tnr .jinx_bgpic image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+.toux-img image {
+  height: 170rpx;
+  width: 170rpx;
 }
 
 .jinx-tnr {
@@ -45,11 +63,17 @@ page {
   float: right;
   padding-right: 80rpx;
   padding-top: 135rpx;
+  text-align: center;
+
+}
+
+.saoma {
+  font-size: 25rpx;
 }
 
 .jinx-sao image {
-  width: 90rpx;
-  height: 80rpx;
+  width: 60rpx;
+  height: 50rpx;
 }
 
 .toux-img {
@@ -92,6 +116,7 @@ page {
 .gernqb {
   width: 95%;
   margin: 0 auto;
+  position: relative;
 }
 
 .gernqb image {
@@ -102,8 +127,8 @@ page {
 
 .vcenter {
   position: absolute;
-  left: 40%;
-  top: 38%;
+  left: 38%;
+  top: 5%;
   font-size: 40rpx;
   color: #fff;
   font-weight: 300;
@@ -112,25 +137,43 @@ page {
 
 .balance {
   position: absolute;
-  left: 40%;
-  top: 47%;
+  left: 41%;
+  top: 35%;
   font-size: 28rpx;
   color: #fff;
   font-weight: 300;
   text-align: center;
+
+
+
 }
 
 .recharge {
+  display: flex;
+  /* padding: 19rpx 0; */
   position: absolute;
-  top: 58%;
+  top: 73%;
   font-size: 32rpx;
   color: #fff;
   font-weight: 300;
+  border-top: 1px solid #fff;
+
 }
 
 .top {
-  padding: 20rpx 140rpx;
+  float: left;
+  position: relative;
+  padding: 25rpx 127rpx;
 }
+.top  image {
+  float: right;
+  position: absolute;
+  top: 25rpx;
+  left: 65rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
 
 .sum1 {
   font-size: 40rpx;
@@ -241,88 +284,3 @@ page {
 
 
 
-/* 底部名片 */
-.list-item {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50rpx 0;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  padding-top: 100rpx;
-  border-radius: 5rpx;
-}
-
-.goods {
-  display: flex;
-  margin: 0 20rpx;
-
-}
-
-.tab {
-  padding: 0 10rpx;
-
-}
-
-.attrs {
-  font-size: 18rpx;
-  font-weight: 300;
-}
-
-.attrs1 {
-  font-size: 26rpx;
-  font-weight: 300;
-}
-
-.attrs2 {
-  padding: 10rpx 0;
-  font-size: 25rpx;
-  font-weight: 300;
-}
-
-.collect {
-  margin: 0 10rpx;
-}
-
-.collect image {
-  width: 150rpx;
-  height: 150rpx;
-  border-radius: 50rpx;
-}
-
-.contact {
-  width: 40%;
-}
-
-.btn {
-  display: flex;
-  color: #fff;
-  font-size: 19rpx;
-  font-weight: 300;
-  background-color: #d0111b;
-  margin: 20rpx 20rpx;
-  align-items: center;
-  text-align: center;
-  width: 90%;
-}
-
-.btn image {
-  align-items: center;
-  text-align: center;
-  width: 25rpx;
-  height: 25rpx;
-  padding: 0 5rpx;
-}
-
-/* .attrs {
-  display: flex;
-  align-items: center;
-  text-align: center;
-} */
-
-.attrs image {
-  width: 25rpx;
-  height: 25rpx;
-}

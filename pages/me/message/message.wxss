@@ -1,3 +1,6 @@
+
+@import '/pages/template/viedeocard/videocard.wxss';
+
 .product-cpanli {
   width: 100%;
   margin: 0rpx auto;
@@ -407,7 +410,7 @@
   text-align: center;
   display: flex;
   padding: 20rpx 0;
-  padding-left: 235rpx;
+  padding-left: 260rpx;
 
 }
 
@@ -722,6 +725,7 @@ appraise-content view text:nth-child(2) {
   justify-content: center;
   color: #fff;
   margin-left: 310rpx;
+  line-height: 60rpx;
 }
 
 

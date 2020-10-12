@@ -97,7 +97,7 @@ Page({
     var url = baseUrl + "store/findstoreByAddress"
     var dat = {
       addressc,
-      brandid: '1'
+      brandid: '2'
     }
     http.promisServer(url, dat).then(resc => {
       var benjxslist = resc.data.storeList

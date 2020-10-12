@@ -1,0 +1,17 @@
+<view class="hd">
+  <image class="free2" src="/images/activity/free2.jpg"></image>
+  <text class="text">
+  ..............................................................................................
+  </text>
+  <view class="wenzi">
+    <text>2020 年 5 月 30 日 12:00 活动截止</text>
+  </view>
+  <view class='imagesize'>
+    <image class="xiaoma" src="/images/activity/xiaoma.jpg"></image>
+  </view>
+</view>
+<view class="hd2">
+  <view class="wenzi2">
+    <text class="wenzi3"> 保 存 相 册 </text>
+  </view>
+</view>

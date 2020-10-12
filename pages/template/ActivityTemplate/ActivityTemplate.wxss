@@ -1,0 +1,167 @@
+/* pages/template/ActivityTemplate/ActivityTemplate.wxss */
+
+.activityTop{
+  height: 300rpx;
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  border-radius: 30rpx;
+  overflow: hidden;
+  position: relative;
+  background-color:#999;
+}
+.activityTop .image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activityTop .image image{
+ height:75%;
+ width:90%;
+ display: flex;
+ margin-left:20rpx;
+}
+.activityTop .text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.activityTop .text .Title{
+  flex: 1;
+  display: flex;
+  align-items:center;
+}
+.activityTop .text .content{
+ flex: 1;
+ align-items: center;
+ display: flex;
+}
+.activityTop .text .Title text{
+display: block;
+margin-top:40rpx;
+margin-left: 30rpx;
+font-size:32rpx;
+letter-spacing: 3rpx;
+}
+.activityTop .text .content text{
+display:block;
+margin-top: -40rpx;
+margin-left: 30rpx;
+font-size: 24rpx;
+letter-spacing:3rpx;
+}
+.Smalllabel{
+  position: absolute;
+  top:40rpx;
+  right:35rpx;
+  height: 50rpx;
+  width: 100rpx;
+  font-size: 24rpx;
+  text-align: right;
+  /* color: ; */
+}
+
+.form{
+}
+.form-title{
+  width: 100%;
+}
+.formLayout{
+  width:90%;
+  margin: auto;
+}
+.form-title p{
+  font-size:32rpx;
+}
+.form-title input{
+  width: 100%;
+  height:60rpx;
+  border-bottom: 2rpx solid #999;
+}
+
+.form-richText{
+  width: 100%;
+}
+.form-richText p{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  height:60rpx;
+  display: inline-block;
+  line-height:60rpx;
+}
+.form-richText .inputs{
+  height: 200rpx;
+  width: 100%;
+  border: 1rpx solid #999;
+  border-radius:20rpx;
+}
+
+.basicContent{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  position: relative;
+}
+.basicContent .inputSet{
+   display: flex;
+   flex-direction: row;
+}
+.basicContent .inputSet .text{
+   flex:1;
+   display: flex;
+   align-items: center;
+}
+.basicContent .inputSet .inputs{
+   flex:3;
+   height:50rpx;
+   border-radius: 15rpx;
+   border: 1rpx solid #999;
+}
+.basicContent .inputSet .picker{
+  right: 0;
+  z-index: 10;
+  flex: 3;
+}
+
+.inputSet:nth-child(7) .text{
+  display: flex;
+  align-items: flex-start;
+}
+/* 上传图片 */
+.choseImage{
+  flex: 3;
+  height:350rpx;
+  display: flex;
+  justify-content: center;
+}
+.choose{
+  width: 80%;
+  height:80%;
+  border: 1rpx solid black;
+  border-radius: 15rpx;
+}
+
+.form-submit{
+  width: 100vw;
+}
+/* 底部按钮 */
+.bottom{
+  width:90%;
+  border-radius:35rpx;
+  margin-bottom: 50rpx;
+}
+/* .time-picker{
+  height: 100rpx;
+  width: 100rpx;
+} */
+
+
+
+
+
+
+/* 去除默认样式 */
+button::after { border: none }
+ 
+input { outline: none;border: none;list-style: none }

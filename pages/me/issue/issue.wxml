@@ -1,0 +1,69 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="time">
+	<view class="times">
+		<form catchsubmit="tijiaoform" catchreset="formReset">
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">面额</text>
+						<input name="mobile" value="{{shopowner}}" class="df_2" placeholder="请输入优惠券金额" placeholder-class="placeholderStyles" />
+					</view>
+				</view>
+			</view>
+
+			<view class='page_row'>
+				<view class="search-l">
+					<view class="df search_arr">
+						<text class="text">满</text>
+						<input name="mobile_r" value="{{shopowner}}" class="df_3" placeholder="￥" placeholder-class="placeholderStyle-s" />
+					</view>
+					<view class="df search_arr">
+						<text class="text">减</text>
+						<input name="mobile_r" value="{{shopowner}}" class="df_3" placeholder="￥" placeholder-class="placeholderStyle-s" />
+					</view>
+				</view>
+			</view>
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">核销码</text>
+						<input name="mobile" value="{{shopowner}}" class="df_2" placeholder-class="placeholderStyles" />
+					</view>
+				</view>
+			</view>
+
+			<view class='page_row'>
+				<view class="search-l">
+					<view class="df search_arr">
+						<text class="text">有效期</text>
+						<input name="mobile_r" value="{{shopowner}}" class="df_3" placeholder="-请选择-" placeholder-class="placeholderStyle-s" />
+					</view>
+					<view class="df search_arr">
+						<text class="text">至</text>
+						<input name="mobile_r" value="{{shopowner}}" class="df_3" placeholder="-请选择-" placeholder-class="placeholderStyle-s" />
+					</view>
+				</view>
+			</view>
+		</form>
+
+		<view class="quer">
+			<button class="btn">确认发布</button>
+		</view>
+	</view>
+</view> 

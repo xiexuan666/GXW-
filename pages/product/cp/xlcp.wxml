@@ -26,13 +26,15 @@
 					</view>
 					<view class="cpbottom-bot">
 						<view class="cpbottom-botp">{{items.name}}</view>
-						<view class="shouc" catchtap="sccp" data-ind="{{index}}" data-inds="{{indexs}}">
-							<view class="img">
+						<view class="shouc">
+							<!-- 收藏按钮 -->
+							<view class="img" catchtap="sccp" data-ind="{{index}}" data-inds="{{indexs}}">
 								<image wx:if="{{!item.sczt}}" src="/images/tubiao/1-13.png"></image>
 								<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
 							</view>
+							<!-- 分享按钮 -->
 							<view class="shouc-p">
-								<image src="/images/tubiao/fangx.png" class="img"></image>
+								<image src="/images/tubiao/fengx.png" class="img"></image>
 							</view>
 						</view>
 					</view>
@@ -45,31 +47,55 @@
 
 
 <!-- foot -->
-<view class="list-item">
+<view class="list-item6">
 	<view class="goods">
-		<view class="collect">
-			<image src="/images/tubiao/gxw.png"></image>
+		<view class="collect1">
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 		</view>
 		<view class="tab">
-			<view class="attrs1">
-				冠星王陶瓷
-			</view>
+	
 			<view class="attrs2">
-				店主:村上
+				村上 家居设计师
 			</view>
 			<view class="attrs">
 				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
 			</view>
 		</view>
-		<view class="contact">
-			<button class="btn">
-				<image src="/images/tubiao/1-21.png"></image>
-				<view>联系店主</view>
-			</button>
-			<button class="btn">
-				<image src="/images/tubiao/1-22.png"></image>
-				<view>在线咨询</view>
-			</button>
+		<view class="contacts">
+			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" ></image>
+			<image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png"></image>
+		</view>
+	</view>
+</view>
+
+
+
+
+
+
+<!-- 底部的收藏 -->
+<view class="collects">
+	<view class="title">
+		<view class="list-item1">
+			<view class="list-right">
+				<image src="/images/tubiao/85.png" class="image"></image>
+				<view class="character">{{strategy.great}}</view>
+			</view>
+
+		</view>
+		<view class="list-item1">
+			<view class="list-right" catchtap="Collection">
+				<image src="/images/tubiao/1-13.png" wx:if="{{Collectionstate}}" class="image"></image>
+				<image src="/images/tubiao/86.png" class="image" wx:else></image>
+				<view class="character">收藏</view>
+			</view>
+		</view>
+
+		<view class="list-item1">
+			<view class="list-right" bindtap="handleToTop">
+				<image src="/images/tubiao/fx.png" class="image"></image>
+				<view class="character">分享</view>
+			</view>
 		</view>
 	</view>
 </view>

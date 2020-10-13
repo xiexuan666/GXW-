@@ -1,0 +1,69 @@
+<!--pages/template/component/component.wxml-->
+<template name="TopCard">
+  <view class="top">
+    <image class="cardbg" src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+    <view class="card_portrait">
+      <image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+      <view class="card_name">冠星王未来家</view>
+    </view>
+  </view>
+</template>
+
+<template name='CardList'>
+  <view class="cardList" style="margin-top:{{marginTop}}">
+  <view class="cardnav">
+    <view class="nav_left">
+    </view>
+    <view class="nav_right">
+    <view class="title">
+    管理
+    </view>
+    </view>
+  </view>
+  <block wx:for='{{1}}'>
+    <view class="cards">
+    <!-- 是否需要遠點 -->
+      <view class="round {{1==2?'roundstatus' : ''}}"></view>
+      <!-- 卡片所在 -->
+        <view class="cardsContent">
+          <image src="https://cdn.juesedao.cn/gxw/anli.png"></image>
+        </view>
+        <!-- 下方文字 -->
+        <view class="card_text">
+          <view class="card_Title">
+          西安280名实在，四年落地，只为符合适合实际阿斯达
+          </view>
+          <view class="card_label">
+          <block>
+            <text class="label {{1==1?'labelFocus':''}}" >#西安</text>
+          </block>
+            <text class="label">#西安</text>
+          </view>
+        </view>
+    </view>
+
+  </block>
+  <view class="buttom">
+  <view class="buttomTwo">
+    <button class="addbutton">新增</button>
+    <button class="deletbutton">删除</button>
+  </view>
+  <view class="buttomOne">
+    <button>保存</button>
+  </view>
+  </view>
+  </view>
+</template>
+
+
+<template name="Buttom">
+  <view class="buttom">
+    <view class="buttomTwo">
+      <button class="addbutton">新增</button>
+      <button class="deletbutton">删除</button>
+    </view>
+    <view class="buttomOne">
+      <button>保存</button>
+    </view>
+    </view>
+</template>

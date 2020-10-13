@@ -1,14 +1,36 @@
-<!-- 头部 -->
-<view class="jinx-t">
-	<view class="jinx-tnr">
-		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
-		</view>
-		<view class="jinx-toux">
-			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+<!-- 店长卡片 -->
+<import src='/pages/template/comments/comments' />
+<template is="users" data="{{list:'imasrc////',num:3}}">
+</template>
+
+
+
+<!-- 导航 -->
+<view class="title6">
+	<view class="list6">
+		<view class="list-item6 cpxqp1 {{cpxqzt==1?'active':''}}" data-ind="{{1}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/dg.png"></image>
 			</view>
-			<view class="name-p">冠星王总部</view>
+			<view class="character6 ">导购管理</view>
+		</view>
+		<view class="list-item6  cpxqp2 {{cpxqzt==2?'active':''}}" data-ind="{{2}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/my.png"></image>
+			</view>
+			<view class="character6 ">我的客户</view>
+		</view>
+		<view class="list-item6  cpxqp3 {{cpxqzt==3?'active':''}}" data-ind="{{3}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/xzm.png"></image>
+			</view>
+			<view class="character6 ">群发助手</view>
+		</view>
+		<view class="list-item6" bindtap="fasong">
+			<view class="list-right6">
+				<image src="/images/tubiao/xz.png"></image>
+			</view>
+			<view class="character6 ">打包发送</view>
 		</view>
 	</view>
 </view>
@@ -16,11 +38,193 @@
 
 
 
-<view class="cpxq-dh">
-	<view class="cpxq-dhnr">
-		<view class="cpxq-dhul">
-			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1}}" data-ind="{{1}}" bindtap="cpxzxz">发送产品</view>
-			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2}}" data-ind="{{2}}" bindtap="cpxzxz">发送案例</view>
+
+<!-- 名片 -->
+<view class="card" wx:if='{{cpxqzt==1}}'>
+	<view class="dh_r">
+		<view class="vip"></view>
+		<view class="vip">头像</view>
+		<view class="vip">导购</view>
+		<view class="vip">会员数</view>
+		<view class="vip">是否审核</view>
+		<view class="vip"></view>
+	</view>
+	<view class="shoppers">
+		<block wx:for='{{shopperslist}}' wx:index='index' wx:item='item'>
+			<view class="shoppers_r">
+				<view class="me-list-l_i">
+					<view class="me-list">
+						<checkbox bindtap="selectall" checked='{{false}}' data-index="{{item.id}}" />
+					</view>
+					<view class="me-list">
+						<image src="{{item.waiter_qr_code}}"></image>
+					</view>
+					<view class="me-list">
+						<text class="names">{{item.waiter_name}}</text>
+					</view>
+					<view class="me-list">
+						<text class="name">{{item.member_count}}</text>
+					</view>
+					<view class="me-list">
+						<text class="name">已审核</text>
+					</view>
+					<view class="me-list">
+						<image src="/images/tubiao/wen.png" bindtap="update" data-index="{{index}}"></image>
+					</view>
+
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+
+
+
+
+
+
+<!-- 绑定获客 -->
+<view class="binding" wx:if='{{cpxqzt==1}}'>
+	<block>
+		<view class="binding_r"  bindtap="message">
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+
+	<view class="btn_r">
+		<button class="btn" bindtap="delete">删除</button>
+	</view>
+
+</view>
+
+
+
+
+
+<!-- 系统获客 -->
+<view class="binding" wx:if='{{cpxqzt==2}}'>
+	<block>
+		<view class="binding_rr">
+			<view class="customers">系统获客</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 群发助手 -->
+<view class="wrapper" wx:if='{{cpxqzt==3}}'>
+	<view class="msg">
+		<view class="me-list-lix">
+			<view class="me-list-lilx">分别发送给
+			</view>
+			<view class="me-list-lir">
+				<text class="name">谢会员</text>
+				<image src="/images/tubiao/youj.png"></image>
+			</view>
+		</view>
+		<view class="service">
+			<view class="partner">
+				<view class="vote">礼享51,1元抵1000元!</view>
+				<view class="vote">礼享51,1元抵1000元!</view>
+				<view class="vote">礼享51,1元抵1000元!</view>
+			</view>
+			<view class="tips">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+			</view>
+		</view>
+		<view class="btns">
+			<button class="btn">发送</button>
 		</view>
 	</view>
 </view>

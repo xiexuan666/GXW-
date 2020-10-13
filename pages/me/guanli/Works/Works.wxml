@@ -1,0 +1,65 @@
+	<!-- 头部 -->
+	<view class="jinx-t">
+		<view class="jinx-tnr">
+			<view class="jinx-bei">
+				<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+			</view>
+			<view class="jinx-toux">
+				<view class="toux-img">
+					<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+				</view>
+				<view class="name-p">冠星王总部</view>
+			</view>
+		</view>
+	</view>
+
+
+
+	<view class="shouc">
+
+		<!-- 全国案例 -->
+		<view class="anlilist">
+			<view class="anlilist-ul">
+				<block>
+					<view class="anlilist-li" bindtap="anlitz">
+						<view class="anlilist-liimg">
+							<image mode="aspectFill" src="https://cdn.juesedao.cn/gxw/anli.png"></image>
+						</view>
+						<view class="jxsnr-li-l  jxsnr-li-lsa">
+							<view class="jxsnr-tubiao-tu1">
+								<view class="jxsnr-li-lp">
+									<image src="/images/tubiao/1-09.png"></image>
+									<view class="lanbai">爵士灰</view>
+								</view>
+								<view class="liser">
+									<view class="tubiaop">
+										<view class="fenxiang">
+											<image src="/images/tubiao/fangx.png"></image>
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="simple">
+							<view class="simple-ul">
+								<view class="simple-ul-p">[现代简约] 盈佳美地</view>
+								<view class="simple-li">【佛山280m'私宅│4年落地，只为“雅奢生活”
+								</view>
+							</view>
+							<view class="simple-li-r">
+								<view class="cotione">
+									<view class="jxsnr-li-time">
+									广东省佛山市禅城区
+									</view>
+								</view>
+								<view class="cotione1">
+									<view class="jxsnr-li-r">2020.09.01</view>
+								</view>
+							</view>
+						</view>
+					</view>
+				</block>
+			</view>
+		</view>
+
+	</view>

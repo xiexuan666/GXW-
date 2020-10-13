@@ -1,3 +1,6 @@
+
+@import '/pages/template/viedeocard/videocard.wxss';
+
 .product-cpanli {
   width: 100%;
   margin: 0rpx auto;
@@ -255,63 +258,50 @@
   color: #595757;
 }
 
+
 /* 案例列表 */
-.anlilist {
+.anlilist{
   margin-top: 38rpx;
 }
-
-.anlilist-ul {
+.anlilist-ul{
   width: 700rpx;
   margin: 0 auto;
 }
-
-.anlilist-li {
+.anlilist-li{
   width: 100%;
   margin-bottom: 40rpx;
-  /* box-shadow: 0 0 15rpx 0rpx #ccc; */
 
 }
-
-.anlilist-liimg {
+.anlilist-liimg{
   width: 100%;
   overflow: hidden;
   height: 440rpx;
 }
-
-.anlilist-liimg image {
+.anlilist-liimg image{
   width: 100%;
 }
-
-.anlilist-lib {
-  background-color: #F7F7F7;
+.anlilist-lib{
+  background-color:#F7F7F7;
   padding-bottom: 10px;
-
+  
 }
-
-.anlilist-libs {
+.anlilist-libs{
   height: 120rpx;
 }
-
-.anlilist-libp1 {
+.anlilist-libp1{
   color: #716F6F;
   padding-left: 24rpx;
   font-size: 30rpx;
   font-weight: 300;
   padding-top: 28rpx;
 }
-
-.anlilist-libp2 {
+.anlilist-libp2{
   padding-top: 3rpx;
   color: #716F6F;
   padding-left: 24rpx;
   font-size: 24rpx;
   font-weight: 100;
 }
-
-
-
-
-
 
 .produt {
   width: 690rpx;
@@ -349,11 +339,12 @@
   text-align: center;
   padding: 20rpx 0;
   font-weight: 300;
-
+  flex: 1;
 }
 
 
 .simple-ul {
+  font-size: 27rpx;
   font-weight: 300;
 }
 
@@ -375,8 +366,16 @@
   font-weight: 300;
   color: #595757;
 }
+.lanbai {
+  padding: 0 6rpx;
+}
 
 .jxsnr-li-time {
+  font-size: 25rpx;
+  font-weight: 300;
+  color: #595757;
+}
+.jxsnr-li-r {
   font-size: 25rpx;
   font-weight: 300;
   color: #595757;
@@ -392,13 +391,26 @@
 /* 五个小图标 */
 .jxsnr-tubiao-tu2 {
   display: flex;
+  margin-left: auto;
+  height: 100%;
 }
 
 .jxsnr-tubiao-tu1 {
   display: flex;
+  width: 100%;
 }
 
 .tubiaop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:5rpx;
+  height: 100%;
+}
+
+.jxsnr-li-l {
+  align-items: center;
+  text-align: center;
   display: flex;
 }
 
@@ -406,26 +418,31 @@
   align-items: center;
   text-align: center;
   display: flex;
-  padding: 20rpx 0;
-  padding-left: 235rpx;
-
+  
+  flex: 1;
+  margin-left: auto;
 }
 
 .jxsnr-li-lp image {
   width: 35rpx;
   height: 35rpx;
+  margin-top: 5rpx;
 }
 
-
+.lanbai {
+  padding: 0 10rpx;
+}
 
 .jxsnr-li-lp2 {
   align-items: center;
   text-align: center;
+  justify-content: center;
   display: flex;
-
 }
 
 .jxsnr-li-lp2 image {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
   width: 35rpx;
   height: 35rpx;
 }
@@ -441,11 +458,15 @@
   width: 35rpx;
   height: 35rpx;
 }
-
+.xingx{
+  display: flex;
+  flex-direction: row;
+}
 .xingx image {
   padding: 0 15rpx;
   width: 35rpx;
   height: 35rpx;
+  margin-top: -10rpx;
 }
 
 .shuzi {
@@ -722,6 +743,7 @@ appraise-content view text:nth-child(2) {
   justify-content: center;
   color: #fff;
   margin-left: 310rpx;
+  line-height: 60rpx;
 }
 
 

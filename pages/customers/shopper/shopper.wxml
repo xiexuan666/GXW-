@@ -1,0 +1,3 @@
+<!--pages/customers/shopper/shopper.wxml-->
+<import src='/pages/template/Administration/Administration'/>
+<template is="system" data="{{nav:nav,select:select,selctstatus:1,card:false,height:'95vh',buttom:true}}"></template>

@@ -71,19 +71,19 @@ page {
 }
 
 .coupon-list .item {
-
+  /* display: flex;
+  text-align: center;
+  flex-direction: row; */
   width: 90%;
   height: 200rpx;
-  margin-bottom: 20rpx;
-  margin: 20rpx auto;
+  margin: 10rpx auto;
 
 }
 
 .coupon-list .item .float-li {
-
   width: 450rpx;
   height: 100%;
-  border-right: 3rpx solid #be8f61;
+ 
 }
 
 .coupon-list .item .float-li-rig {
@@ -91,10 +91,11 @@ page {
   padding-right: 20rpx;
   height: 100%;
   color: #c99361;
+
 }
 
 .coupon-left {
-
+  text-align: center;
   position: relative;
 }
 
@@ -102,15 +103,23 @@ page {
   position: absolute;
   color: #c99361;
 }
+.coupon-left .t {
+  position: absolute;
+  color: #c99361;
+}
 
 .coupon-left .t1 {
+  width: 15%;
+  font-size: 50rpx;
   margin-top: 50rpx;
   left: 10rpx;
-  top: 50rpx
+  top: 20rpx;
+
 }
 
 .coupon-left .t2 {
-  left: 30rpx;
+  width: 40%;
+  left: 50rpx;
   top: 50rpx;
   font-size: 80rpx;
   font-weight: bold
@@ -120,19 +129,34 @@ page {
   left: 220rpx;
   top: 50rpx;
   width: 200rpx;
-  font-size: 30rpx;
+  font-size: 23rpx;
 }
 
 .coupon-left .t4 {
-  left: 224rpx;
-  top: 116rpx;
-  font-size: 24rpx;
+  left: 280rpx;
+  top: 93rpx;
+  font-size: 23rpx;
+
 }
 
 .coupon-left .t5 {
   left: 224rpx;
-  top: 150rpx;
-  font-size: 24rpx;
+  top: 130rpx;
+  font-size: 23rpx;
+}
+
+.coupon-left .t6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #C99361 solid 1rpx;
+}
+.coupon-left .t7 {
+  background-color: violet;
+  width: 140rpx;
+  height: 140rpx;
+  left: 450rpx;
+  top: 30rpx;  
 }
 
 .coupon-rig .t {
@@ -184,7 +208,7 @@ page {
   background-size: 10rpx 10rpx;
   background-position: 9rpx 3rpx;
   background: #f7f8f8;
-  border: 5rpx solid #be8f61;
+  border: 1rpx solid #be8f61;
   border-radius: 25rpx;
 
 }
@@ -254,12 +278,12 @@ page {
   overflow: hidden;
   align-items: center;
   text-align: center;
-  padding: 10rpx 20rpx;
+  padding: 10rpx 0;
 }
 
 .jxsnr-tubiao image {
-  width: 50rpx;
-  height: 50rpx;
+  width: 30rpx;
+  height: 30rpx;
 }
 
 .jxsnr-li-rp {
@@ -278,8 +302,10 @@ page {
 }
 
 .jxsnr-li-rs {
-  font-size: 33rpx;
+  font-size: 30rpx;
   color: #be8f61;
+  padding: 10rpx;
+
 }
 
 
@@ -288,23 +314,29 @@ page {
 
 .shij {
   text-align: center;
-  color: #666;
-  font-size: 26rpx;
-  font-weight: 300;
+  color: #D2D2D3;
+  font-size: 24rpx;
   margin: 80rpx 0;
-  padding: 50rpx 0;
-  border-bottom: 1px solid #c99361;
+  padding: 10rpx 0;
+ 
 }
 
 .dianz {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   text-align: center;
+  border-top: 1px solid #c99361;
+  padding: 50rpx 0;
+
 }
 
 .dianzo {
-  margin: 0 70rpx;
+  margin-left: 100rpx;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+  padding-bottom: 20rpx;
+
 }
 
 .title image {

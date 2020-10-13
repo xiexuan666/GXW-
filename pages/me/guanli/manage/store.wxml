@@ -1,20 +1,17 @@
+<!-- 头部 -->
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
 	</view>
 </view>
-
-
-
-
 
 
 
@@ -55,7 +52,7 @@
 			<view class="me-list-li">
 				<view class="me-list-lil">详细地址</view>
 				<view class="me-list-lil">
-					<input class="form-lir-input dz" value="{{address}}" name="address" placeholder="请选择详细地址"></input>
+					<input class="form-lir-input dz" value="{{address}}" name="address"  placeholder="请选择地址"></input>
 				</view>
 				<view class="xuanzdz" bindtap="wzxuanz">选择地址</view>
 			</view>
@@ -131,7 +128,7 @@
 			</view>
 
 			<view class="btn-area">
-				<button style="" formType="submit">提交申请</button>
+				<button style="" formType="submit">保存</button>
 			</view>
 
 

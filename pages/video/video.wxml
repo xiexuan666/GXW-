@@ -1,0 +1,29 @@
+<!--pages/video/video.wxml-->
+<view class="videolayout">
+  <video id="video" src="{{list.video}}" controls='{{false}}' autoplay='true'></video>
+</view>
+<view class="videoinfo">
+  <view class="watch">
+    <view class="image">
+      <image src="/images/tubiao/chak.png" mode="aspectFit"></image>
+    </view>
+    <view class="text">
+      <text>{{list.preview}}</text>
+    </view>
+  </view>
+  <view class="title">
+    [{{list.title}}] {{list.context}}
+  </view>
+</view>
+
+<view class="sidebar">
+<block wx:for='{{functionlist}}' wx:index='index' wx:item='item'>
+  <view class="Function">
+    <image  src="{{item.imagurl}}" mode="aspectFit"></image>
+  </view>
+  </block>
+</view>
+<view class="comments" wx:if='{{comments}}'>
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view> 

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 
   <view class="top">
     <image class="cardbg" src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
@@ -64,3 +68,48 @@
       <button>保存</button>
     </view>
     </view>
+<<<<<<< HEAD
+=======
+=======
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+<<<<<<< HEAD
+
+
+
+<view class="jinxt">
+	<view class="jinx-nr">
+		<view class="guan"  bindtap="management">
+			<view class="project">管理</view>
+		</view>
+		<view class="themes">
+			<image src="https://cdn.juesedao.cn/gxw/anli.png"></image>
+			<view class="base">西安2B0m2私宅|4年落地，职位适合设计M</view>
+		</view>
+
+
+
+		<view class="bott">
+			<button class="add"  bindtap="category">新增</button>
+			<button class="dele">删除</button>
+		</view>
+
+
+	</view>
+</view> 
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8

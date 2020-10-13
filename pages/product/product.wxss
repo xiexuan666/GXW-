@@ -489,6 +489,7 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 .shuzi {
   color: #c59262;
 }
+<<<<<<< HEAD
 
 
 
@@ -781,3 +782,5 @@ button[class="baocun"]::after {
   top: 0;
   left: 0;
 }
+=======
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8

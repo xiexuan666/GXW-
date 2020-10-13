@@ -6,7 +6,11 @@
 
 
 <!-- 导航 -->
+<<<<<<< HEAD
 <!-- <view class="title6">
+=======
+<view class="title6">
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 	<view class="list6">
 		<view class="list-item6" bindtap="daog">
 			<view class="list-right6">
@@ -33,7 +37,11 @@
 			<view class="character6">打包发送</view>
 		</view>
 	</view>
+<<<<<<< HEAD
 </view> -->
+=======
+</view>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 
 
 

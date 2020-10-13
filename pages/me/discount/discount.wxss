@@ -111,9 +111,23 @@ page {
   margin-top: 50rpx;
   left: 10rpx;
   top: 20rpx;
+<<<<<<< HEAD
 
 }
+=======
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 
+}
+.xiangs {
+  width: 90%;
+  position: relative;
+  color: #c99361;
+  margin-top: -50rpx;
+  margin-bottom: 50rpx;
+  padding: 50rpx  0;
+  font-size: 42rpx;
+  text-align: center;
+}
 .coupon-left .t2 {
   width: 40%;
   left: 50rpx;
@@ -140,6 +154,7 @@ page {
   left: 224rpx;
   top: 130rpx;
   font-size: 23rpx;
+<<<<<<< HEAD
 }
 
 .coupon-left .t6 {
@@ -176,6 +191,8 @@ page {
   top: 50rpx;
   font-size: 80rpx;
   font-weight: bold  
+=======
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 }
 .coupon-left .d3 {
   left: 220rpx;
@@ -183,6 +200,84 @@ page {
   width: 200rpx;
   font-size: 23rpx;
 
+}
+
+.coupon-left .d4 {
+  left: 280rpx;
+  top: 93rpx;
+  font-size: 23rpx;
+
+
+<<<<<<< HEAD
+}
+.coupon-left .d5 {
+  left: 224rpx;
+  top: 130rpx;
+  font-size: 23rpx;
+}
+.coupon-left .d6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #9F9FA0 solid 1rpx;
+}
+.coupon-left .d7 {
+  top: 60rpx;
+  left: 430rpx;
+  font-size: 50rpx;
+  width: 40%;
+  color: #9F9FA0;
+}
+.coupon-rig .t {
+  text-align: center;
+  color:#9F9FA0;
+=======
+.coupon-left .t6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #C99361 solid 1rpx;
+}
+.coupon-left .t7 {
+  background-color: violet;
+  width: 140rpx;
+  height: 140rpx;
+  left: 450rpx;
+  top: 30rpx;  
+}
+.coupon-left .d{
+  position: absolute;
+  color: white;
+}
+.coupon-left .d1 {
+  width: 15%;
+  font-size: 50rpx;
+  margin-top: 50rpx;
+  left: 10rpx;
+  top: 20rpx;
+}
+.coupon-left .d2 {
+  width: 40%;
+  left: 50rpx;
+  top: 50rpx;
+  font-size: 80rpx;
+  font-weight: bold  
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+}
+.coupon-left .d3 {
+  left: 220rpx;
+  top: 50rpx;
+  width: 200rpx;
+  font-size: 23rpx;
+
+<<<<<<< HEAD
+.coupon-rig .t1 {
+
+  font-size: 40rpx;
+  padding: 30rpx 0 10rpx 0;
+}
+
+=======
 }
 
 .coupon-left .d4 {
@@ -221,6 +316,7 @@ page {
   padding: 30rpx 0 10rpx 0;
 }
 
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 
 .note {
   background: #faeab7

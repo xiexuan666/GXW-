@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 <!--pages/me/guanli/manage/zixu.wxml-->
 <view class="product-cpanli">
   <view class="cpanli-nr">
@@ -174,4 +178,21 @@
 
   </form>
 
+<<<<<<< HEAD
+=======
+=======
+<!-- 热点视频和装修 -->
+<view class="product-cpanli">
+	<view class="cpanli-nr">
+		<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+			装修攻略
+			<view class="cpanli-nr-lid"></view>
+		</view>
+		<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+			热点视频
+			<view class="cpanli-nr-lid"></view>
+		</view>
+	</view>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 </view>

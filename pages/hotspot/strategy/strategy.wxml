@@ -58,8 +58,13 @@
 			</view>
 		</view>
 		<view class="contact">
+<<<<<<< HEAD
 			<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png"></image>
 			<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+=======
+			<image src="/images/tubiao/lianxi.png"></image>
+			<image src="/images/tubiao/zaixian.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 		</view>
 	</view>
 </view>
@@ -88,7 +93,11 @@
 		</view>
 
 		<view class="list-item1">
+<<<<<<< HEAD
 			<view class="list-right" >
+=======
+			<view class="list-right" bindtap="handleToTop">
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 				<image src="/images/tubiao/87.png" class="image"></image>
 				<view class="character">分享</view>
 			</view>

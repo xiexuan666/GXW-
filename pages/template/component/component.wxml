@@ -1,7 +1,15 @@
 <!--pages/template/component/component.wxml-->
 <template name="TopCard">
   <view class="top">
+<<<<<<< HEAD
     <image class="cardbg" src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+=======
+<<<<<<< HEAD
+    <image class="cardbg" src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+=======
+    <image class="cardbg" src="/images/tubiao/1-30.png"></image>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
     <view class="card_portrait">
       <image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
       <view class="card_name">冠星王未来家</view>

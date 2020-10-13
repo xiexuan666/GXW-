@@ -71,6 +71,7 @@ page {
   width: 90%;
   margin: 0 auto;
   border-radius: 50rpx;
+  font-size: 28rpx;
 }
 
 .me-list-ul {

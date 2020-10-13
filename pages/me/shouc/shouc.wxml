@@ -85,10 +85,17 @@
 					<view class="cpbottom-bot">
 						<view class="cpbottom-botp">{{item.name}}</view>
 						<view class="shoucc" catchtap="sccp" data-ind="{{index}}">
+<<<<<<< HEAD
 							<!-- <view class="shouc-p">收藏</view> -->
 							<view class="img">
 								<!-- <image wx:if="{{!item.sczt}}" src="/images/tubiao/43.png"></image> -->
 								<!-- <image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image> -->
+=======
+							<view class="shouc-p">收藏</view>
+							<view class="img">
+								<image wx:if="{{!item.sczt}}" src="/images/tubiao/43.png"></image>
+								<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 							</view>
 						</view>
 					</view>
@@ -113,7 +120,11 @@
 							<view class="liser">
 								<view class="tubiaop">
 									<view class="fenxiang">
+<<<<<<< HEAD
 										<!-- <image src="/images/tubiao/fangx.png"></image>		 -->
+=======
+										<image src="/images/tubiao/fangx.png"></image>		
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 									</view>
 								</view>
 							</view>
@@ -142,8 +153,14 @@
 	<!-- 攻略 -->
 	<view class="list" wx:if='{{cactiv==1&&cpxqzt==3}}'>
 		<block>
+<<<<<<< HEAD
 			<navigator wx:for='{{strategy}}' wx:for-index="index" wx:for-item="item" wx:key="index" bindtap="jumpstrategy" data-index="{{index}}" class="goods-list">
 				<image src="{{item.photo}}">
+=======
+			<navigator wx:for='{{strategy}}' wx:for-index="index" wx:for-item="item" wx:key="index" url="/pages/hotspot/strategy/strategy?id=1" class="goods-list">
+				{{item.name}}
+				<image src="/images/tubiao/1-08.jpg">
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 				</image>
 				<view class="goods-list-right">
 					<view class="goods-title">

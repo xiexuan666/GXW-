@@ -923,7 +923,31 @@ Page({
   /*** 页面上拉触底事件的处理函数*/
 
   onReachBottom: function () {
+<<<<<<< HEAD
  
+=======
+    // var cactiv=this.data.cactiv
+    // var twoactiv=this.data.twoactiv
+    // if(cactiv==2&&twoactiv==1){
+    //   var anlipage=this.data.anlipage
+    //   var anlizfcid=this.data.anlizfcid
+    //   anlipage++
+    //   this.chaxchuanlinr(anlizfcid,anlipage,2)
+    // }
+    // if(cactiv==1&&this.data.cpxians){
+    //   var cppage=this.data.cppage
+    //   var cpzfcid=this.data.cpzfcid
+    //   cppage++
+    //   this.chaxchucpnr(cpzfcid,cppage,2)
+    // }
+    // if(cactiv==2&&twoactiv==2){
+    //   var bendanlipage=this.data.bendanlipage
+    //   var bendanlidq=this.data.bendanlidq
+    //   bendanlipage++
+    //   this.qingqdangd(bendanlidq,bendanlipage,2)
+
+    // }
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
   },
 
   /**

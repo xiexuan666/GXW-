@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+/* pages/me/zhuc/zhuc.wxss */
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 @import '/pages/template/loginphone/loginphone.wxss';
 
 page {
@@ -148,4 +158,16 @@ button {
   font-size: 24rpx;
   color: #ccc;
   margin-bottom: 30rpx;
+<<<<<<< HEAD
 } 
+=======
+<<<<<<< HEAD
+} 
+=======
+<<<<<<< HEAD
+} 
+=======
+}
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8

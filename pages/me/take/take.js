@@ -138,7 +138,17 @@ Page({
         image: "/images/tubiao/46.png"
       })
       setTimeout(function(){ 
+<<<<<<< HEAD
         wx.navigateBack()
+=======
+<<<<<<< HEAD
+        wx.navigateBack()
+=======
+        wx.reLaunch({
+          url: '/pages/me/address/address',
+        })
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
       }, 500);
       
     })

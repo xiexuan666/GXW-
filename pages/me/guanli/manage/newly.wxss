@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 .price {
   width: 90%;
   margin: 0 auto;
@@ -114,4 +121,28 @@
   height: 60rpx;
   line-height: 65rpx;
   border-radius: 30rpx;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+
+.collect {
+  font-size: 33rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 日期 */
+.section {
+  margin-top: 50rpx;
+  text-align: center;
+  background: #f7f7f7;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 }

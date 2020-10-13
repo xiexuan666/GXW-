@@ -178,14 +178,18 @@
 	</view>
 </view>
 
-
+<!-- 
 <view class="huodtype">
 	<view class="type">
 		<view class="form">活动类型选择</view>
 		<block>
 			<view class="charge">
 				<view class="tup">
+<<<<<<< HEAD
 					<image src="https://cdn.juesedao.cn/gxw/69cd37b33753473e9d3f73f12b5662bf"></image>
+=======
+					<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 				</view>
 				<view class="lists">
 					<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
@@ -198,7 +202,11 @@
 
 		<view class="charge">
 			<view class="tup">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/5f45a804cef8476b812bd2e75529df11"></image>
+=======
+				<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 			</view>
 			<view class="lists">
 				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
@@ -209,7 +217,11 @@
 
 		<view class="charge">
 			<view class="tup">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/b526e11d857c413db64c082afcb81fc7"></image>
+=======
+				<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 			</view>
 			<view class="lists">
 				<view style="font-size: 33rpx; font-weight: 700;">优惠券活动</view>
@@ -221,7 +233,11 @@
 
 		<view class="charge">
 			<view class="tup">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/b227f79b68a84b7ea4945a484fda0db0"></image>
+=======
+				<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 			</view>
 			<view class="lists">
 				<view style="font-size: 33rpx; font-weight: 700;">商品活动</view>
@@ -229,7 +245,7 @@
 			</view>
 		</view>
 	</view>
-</view>
+</view> -->
 
 
 

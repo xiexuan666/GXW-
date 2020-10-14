@@ -1,7 +1,7 @@
 <view class="apply">
 	<view class="apply-r">
 		<view class="apply-im">
-			<image src="/images/tubiao/98.png" mode="widthFix"></image>
+			<image src="https://cdn.juesedao.cn/gxw/qianyuanhongbao.png" mode="widthFix"></image>
 		</view>
 		<view class="juli">
 			<view class="count">
@@ -72,7 +72,7 @@
 			活动详情
 		</view>
 		<view class="apply-ims">
-			<image src="/images/tubiao/99.png" mode="widthFix"></image>
+			<image src="https://cdn.juesedao.cn/gxw/huodong.png" mode="widthFix"></image>
 		</view>
 
 	</view>

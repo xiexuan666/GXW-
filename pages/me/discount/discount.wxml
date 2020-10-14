@@ -2,82 +2,57 @@
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="{{shanjia.logo}}"></image>
 			</view>
-			<view class="name-p">冠星王总部</view>
+			<view class="name-p">{{shanjia.name}}</view>
 		</view>
 	</view>
 </view>
 
 
 
-
 <!-- 领取优惠券 -->
 <view class="coupon-list">
-	<view class="coupon-listl">
-		<view class="xiangs">当前优惠　下单立享</view>
-		<view class="item stamp stamp01 ">
-			<!-- 左侧 -->
-			<view class="float-li t1">
-				<view class="coupon-left">
-					<view class="t t1">￥</view>
-					<view class="t t2">20</view>
-					<view class="t t3">满499使用</view>
-					<view class="t t4">有效期</view>
-					<view class="t t5">2020.09.30-10.05</view>
-				</view>
-			</view>
-			<!-- 右侧 -->
-			<view class="float-li-rig">
-				<view class="coupon-rig">
-					<view class="t1 t">立即领取</view>
-				</view>
-			</view>
-		</view>
-	</view>
-	<view class="item stamp stamp02 ">
+		<block wx:for='{{AllCoupon}}' wx:index='index' wx:if='{{item.situation == "未领取"}}'>
+	<view class="item stamp stamp01 " data-index="{{index}}">
 		<!-- 左侧 -->
 		<view class="float-li t1">
 			<view class="coupon-left">
 				<view class="t t1">￥</view>
-				<view class="t t2">50</view>
-				<view class="t t3">满499使用</view>
+				<view class="t t2">{{item.jian}}</view>
+				<view class="t t3">满{{item.man}}使用</view>
 				<view class="t t4">有效期</view>
-				<view class="t t5">2020.09.30-10.05</view>
+				<view class="t t5">{{item.create_time}}-{{item.end_time}}</view>
+				<view class="t t6">  </view>	 
+					<!-- 二维码 -->
+					<view class="t t7" bindtap="containe" data-index="{{index}}"> 立即领取 </view>	
+					<!-- {{item.usercode}} -->
 			</view>
 		</view>
-		<!-- 右侧 -->
-		<view class="float-li-rig">
-			<view class="coupon-rig">
-				<view class="t1 t">立即领取</view>
-
-			</view>
-		</view>
-		<i></i>
 	</view>
+	</block>
+
+	<block wx:for='{{AllCoupon}}' wx:index='index' wx:if='{{item.situation == "已领取"}}'>
 	<view class="item stamp stamp03 ">
 		<!-- 左侧 -->
 		<view class="float-li t1">
 			<view class="coupon-left">
-				<view class="t t1">￥</view>
-				<view class="t t2">100</view>
-				<view class="t t3">满499使用</view>
-				<view class="t t4">有效期</view>
-				<view class="t t5">2020.09.30-10.05</view>
+				<view class="d d1">￥</view>
+				<view class="d d2">{{item.jian}}</view>
+				<view class="d d3">满{{item.man}}使用</view>
+				<view class="d d4">有效期</view>
+				<view class="d d5">{{item.create_time}}-{{item.end_time}}</view>
+					<view class="d d6">  </view>	
+						<view class="d d7">已领取</view>
 			</view>
 		</view>
-		<!-- 右侧 -->
-		<view class="float-li-rig">
-			<view class="coupon-rig">
-				<view class="t1 t">立即领取</view>
-			</view>
-		</view>
-		<i></i>
+
 	</view>
+		</block>
 
 
 </view>

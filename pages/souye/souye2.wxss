@@ -1,4 +1,4 @@
-.brand-list {
+/* .brand-list {
   width: 700rpx;
   margin: 0 auto;
 }
@@ -18,7 +18,7 @@
 }
 
 .ceramics-title {
-  /* margin-top: 50rpx; */
+  margin-top: 50rpx;
   font-size: 33rpx;
   text-align: center;
   font-weight: 700;
@@ -44,4 +44,13 @@
 .pinpai image {
   width: 640rpx;
   height: 450rpx;
+} */
+
+.header-title {
+  width: 100%;
+  margin: 0 auto;
+}
+.header-title image {
+  width: 100%;
+  text-align: center;
 }

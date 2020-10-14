@@ -21,46 +21,73 @@ Page({
     sjzt: { status: 0 },
     //当前状态
     status: 0,
-  
+    // 扫二维码获取到的id
+    scene: null,
+    // 商户信息：
+    storeRecord: [],
+    // 渲染input框的数组
+    list: [
+      { value: '姓　　名', prompt: '请输入真实姓名' },
+      { value: '注册类别', prompt: '-请选择-' },
+      { value: '联系电话', prompt: '' },
+      { value: '微 信 号', prompt: '' },
+      { value: '现 居 地', prompt: '' },
+      { value: '性　　别', prompt: '-请选择-' },
+      { value: '籍　　贯', prompt: '-请选择-' },
+      { value: '生　　日', prompt: '-请选择-' },
+      { value: '爱　　好', prompt: '' },
+      { value: '备　　注', prompt: '' },
+    ],
+    // 男女选择
+    sex: ['男', '女'],
+    value: 0,
+    user: [],
+
   },
-
-
-
-
-  //个人列表跳转
-  melisttz: function (e) {
-    console.log(e)
-    var ind = app.hdindex(e, 'ind')
-    console.log(ind)
-    switch (ind) {
-      case '0':
-        var gerxinx = wx.getStorageSync('gerxinx')
-        if (!gerxinx) {
-          this.setData({ souq: false })
-          return false
-        }
-        app.Jump('me/shouc/shouc')
-        break;
-      case '1':
-        app.Jump('me/guanli/guanli')
-        break;
-      case '2':
-        var gerxinx = wx.getStorageSync('gerxinx')
-        if (!gerxinx) {
-          this.setData({ souq: false })
-          return false;
-        }
-        this.setData({ mtkzt: true })
-        break;
-      case '3':
-        app.Jump('me/shenhezt/shenhezt')
-        break;
-      default:
-        break;
+  // 实时添加用户输入的信息
+  xueliinput: function (e) {
+    var that = this;
+    let index = app.hdindex(e, 'index');
+    let data = that.data.user;
+    data[index] = e.detail.value;
+    that.setData({
+      user: data
+    })
+    console.log(that.data.user);
+  },
+  // 提交时将数据整合
+  subscribe: function (e) {
+    var that = this;
+    var user = that.data.user;
+    var storeRecord = that.data.storeRecord;
+    let data = {
+      // 动态参数
+      user_id: wx.getStorageSync('gerxinx').id,
+      brand_id: '2',
+      store_id: storeRecord.id,
+      shopowner_id: storeRecord.userid,
+      superior_id: storeRecord.userid,
+      // 表单数据
+      waiter_name: user[0],//用户名
+      //注册类别user[1]
+      waiter_phone: user[2],//联系电话
+      wx_code: user[3],//微信号
+      address: user[4],//地址
+      sex: user[5],//性别
+      native_place: user[6],//籍贯
+      birthday: user[7],//生日
+      hobby: user[8],//爱好
+      remark: user[9],//备注
+      // 默认值
+      status: 0
     }
 
+    // 发起保存
+    console.log(data);
+    getInformation.save(data).then(res => {
+      console.log(res);
+    })
   },
-  
   //申请
   shenq: function () {
     app.Jump('me/ruzhu/ruzhu')
@@ -84,7 +111,33 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options.scene);
+    // 拿到第一个参数请求商家信息
+    if (options.scene) {
+      // 调用parameter获取商家信息
+      getInformation.parameter(options.scene).then(res => {
+        console.log(res.data.storeRecord);
+        this.setData({
+          storeRecord: res.data.storeRecord
+        });
+        console.log(this.data.storeRecord);
+      })
+    } else {
+      return false
+    }
+  },
+  // 性别选项选择器
+  sexCheck: function (e) {
+    this.setData({
+      value: e.detail.value
+    })
+  },
+  // 日期选择器
+  bindRegionChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      region: e.detail.value
+    })
   },
 
   /**
@@ -100,10 +153,10 @@ Page({
   onShow: function () {
     if (!app.globalData.status) {
       app.banbzt().then(resc => {
-        this.setData({ status: app.globalData.status })
+        this.setData({ status:app.globalData.status})
       })
     } else {
-      this.setData({ status: app.globalData.status })
+      this.setData({ status:app.globalData.status})
     }
 
 

@@ -1,4 +1,5 @@
 /* pages/product/anlixq/anlixq.wxss  */
+
 page {
   background-color: #ffffff;
 }
@@ -11,32 +12,63 @@ page {
 
 .titleimg image {
   width: 100%;
-  border-radius: 25rpx;
-
+  border-top-right-radius: 35rpx;
+  border-top-left-radius: 35rpx;
 }
 
 .wenzi {
   display: flex;
   background-color: #bd8f60;
-  border-radius: 15rpx;
-
+  border-bottom-right-radius: 35rpx;
+  border-bottom-left-radius: 35rpx;
   align-items: center;
   justify-content: center;
+  margin-top: -10rpx;
 }
 
 .wenzis {
   padding: 20rpx 30rpx;
   color: #fff;
-  font-size: 30rpx;
+  font-size: 28rpx;
+  flex: 1;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  padding-top: 20rpx;
+  /* background-color: orange; */
+}
+
+.wenzis .wenzis_label {
+  position: absolute;
+  top: 10rpx;
+  left: 40rpx;
+  font-size: 12rpx;
+  color: #efefef;
+}
+
+.wenzis .wenzis_left {
+  position: absolute;
+  right: 0;
+  height: 80%;
+  background-color: #ffffff;
+  width: 1px;
+  top: 9rpx;
 }
 
 .total {
   margin: 30rpx auto;
+  width: 100vw;
 }
 
 .check {
-  width: 700rpx;
+  /* width: 700rpx; */
+  padding-right: 45rpx;
+  padding-left: 45rpx;
+
   margin: 0 auto;
+
 }
 
 .prices image {
@@ -45,13 +77,18 @@ page {
 
 .anl {
   padding: 10rpx 0;
-  font-size: 33rpx;
-  font-weight: 700;
+  font-size: 30rpx;
+  font-weight: 300;
+  /* background: #F73C41;
+   */
+  position: relative;
 }
 
 .prices {
   padding: 50rpx 0;
   font-weight: 300;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
 }
 
 .titles {
@@ -60,8 +97,9 @@ page {
 }
 
 .cizhuan image {
-  width: 150rpx;
-  height: 100rpx;
+  width: 200rpx;
+  height: 130rpx;
+  border-radius: 15rpx;
 }
 
 .list {
@@ -78,14 +116,17 @@ page {
 
 
 .banner {
-  /* position: fixed; */
   height: 160rpx;
-  width: 100%;
-  /* display: flex; */
-  display: -webkit-box;
+  width: 90%;
+  padding-left: 45rpx;
   flex-direction: column;
-  text-align: center;
-  margin: 0rpx 30rpx;
+  margin: 0 auto;
+}
+
+.ket {
+  width: 100%;
+  margin: 30rpx auto;
+  display: flex;
 }
 
 .lists-item {
@@ -95,11 +136,14 @@ page {
 
 /* 用户评价内容 */
 .appraise-user {
-  width: 690rpx;
+  width: 660rpx;
   margin: 75rpx auto;
   border-top-left-radius: 20rpx;
   border-top-right-radius: 20rpx;
-  overflow: hidden;
+  padding-right: 45rpx;
+  padding-left: 45rpx;
+  margin-top: 120rpx;
+  /* overflow: hidden; */
 }
 
 .user-comment {
@@ -144,8 +188,11 @@ page {
 }
 
 .appraise-content {
+  width: 550rpx;
   font-size: 24rpx;
-  margin: 0rpx 0 19rpx;
+  /* margin: 0rpx 0 19rpx; */
+  margin-left: 65rpx;
+  /* background:lightsalmon; */
 }
 
 .appraise-content view {
@@ -190,19 +237,7 @@ appraise-content view text:nth-child(2) {
   height: 40rpx;
 }
 
-.scroll-view-true {
-  margin: 50rpx auto;
-  width: 100%;
-  display: flex;
-  white-space: nowrap;
-}
 
-.scroll-view-true image {
-  width: 230rpx;
-  height: 240rpx;
-  margin-right: 10rpx;
-  padding-bottom: 11rpx;
-}
 
 .choice {
   color: #8a8a8a;
@@ -290,9 +325,11 @@ appraise-content view text:nth-child(2) {
   color: #999999;
 }
 
-.appraise-content {
-  margin: -40rpx 68rpx 30rpx;
+.pl {
+  width: 100rpx;
 }
+
+
 
 .appraise-content text:nth-child(1) {
   font-size: 20rpx;
@@ -302,8 +339,10 @@ appraise-content view text:nth-child(2) {
 }
 
 .appraise-content text:nth-child(2) {
+  /* width: 100rpx; */
   font-size: 20rpx;
   color: #999999;
+  word-wrap: break-word
 }
 
 .reply-username {
@@ -325,6 +364,11 @@ appraise-content view text:nth-child(2) {
 
 
 /* 底部 */
+.main {
+  height: 460rpx;
+  overflow: scroll;
+  margin-top: 25rpx;
+}
 .appraise-btn {
 
   height: 97.3rpx;
@@ -341,7 +385,7 @@ appraise-content view text:nth-child(2) {
   height: 64rpx;
   width: 680rpx;
   background: #ffffff;
-  border-radius: 32rpx;
+  border-radius: 15rpx;
   margin-right: 26rpx;
   font-size: 24rpx;
   color: #999999;
@@ -351,32 +395,80 @@ appraise-content view text:nth-child(2) {
 }
 
 .appraise-btn .appraise-btn-left image {
-  width: 29rpx;
-  height: 22rpx;
+  width: 100rpx;
+  height: 50rpx;
   margin-left: 28rpx;
   margin-right: 9rpx;
+  margin-top: 10rpx;
 }
 
 .appraise-btn-right {
-  width: 30%;
+  display: flex;
+  width: 26%;
   height: 64rpx;
   background-color: #bd8f60;
-  border-radius: 30rpx;
+  border-radius: 12rpx;
   font-size: 32rpx;
   text-align: center;
   justify-content: center;
+  align-items: center;
   color: #fff;
   margin-left: 310rpx;
 }
 
+/* 添加评论样式 */
+.Input {
+  width: 100vw;
+  /* background-color: chartreuse; */
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 55rpx;
+}
 
+.Input input {
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 80%;
+  height: 60rpx;
+  padding-left: 60rpx;
+}
+
+.Input .Icon {
+  /* height:40rpx;
+  position: absolute;
+  left: 55rpx;
+  top: 12.5rpx; */
+  width: 100rpx;
+  height: 44rpx;
+  margin-left: 50rpx;
+  margin-right: 9rpx;
+  margin-top: 15rpx;
+  position: absolute;
+}
+
+.Input .button {
+  height: 64rpx;
+  /* width: 125rpx; */
+  right: 43.5rpx;
+  position: absolute;
+  background-color: #bd8f60;
+  line-height: 62rpx;
+  z-index: 3;
+  /* left: 55rpx; */
+  /* top: 12.5rpx; */
+}
 
 /* 常用工具 */
 .title {
+  width: 100%;
   display: flex;
   text-align: center;
   align-items: center;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .contact {
@@ -400,7 +492,7 @@ appraise-content view text:nth-child(2) {
 }
 
 .list-item {
-  padding: 0 30rpx;
+  padding: 0 15rpx;
 }
 
 .list-right image {
@@ -417,7 +509,7 @@ appraise-content view text:nth-child(2) {
 }
 
 .collect {
-  width: 700rpx;
+  width: 90%;
   margin: 40rpx auto;
 }
 
@@ -505,7 +597,6 @@ appraise-content view text:nth-child(2) {
   width: 90rpx;
   height: 90rpx;
   border-radius: 50%;
-  /* background: #eee; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -513,7 +604,7 @@ appraise-content view text:nth-child(2) {
   font-size: 12px;
   position: fixed;
   right: 67rpx;
-  bottom: 450rpx;
+  bottom: 490rpx;
 }
 
 .toTop image {
@@ -521,8 +612,466 @@ appraise-content view text:nth-child(2) {
   height: 100rpx;
 }
 
+/* 新添加的样式 */
+.appraise-user_top {
+  width: 100%;
+  height: 100rpx;
+  position: relative;
+}
+
+.appraise-user_top .Top_Good {
+  height: 50%;
+  width: 94%;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #666666;
+}
+
+.Top_Good {
+  display: flex;
+  width: 100%;
+}
+
+.Top_Good_header {
+  display: flex;
+  flex: 1;
+}
+
+.Top_Good_header .header image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+}
+
+.Top_Good_header .header:nth-child(1) {
+  margin-right: -10rpx;
+}
+
+.Top_Good_header .header:nth-child(3) {
+  margin-left: -10rpx;
+}
+
+.Top_Good .Top_Good_Text {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: right;
+
+}
+
+.Top_Good .Top_Good_Text text {
+  display: inline-block;
+  font-size: 26rpx;
+  padding-right: 45rpx;
+  padding-left: 60rpx;
+}
+
+
+/* 新加样式 */
+/* 案例文字的圆 */
+.case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+.anl .case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 10rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+/* 案例图片的大小 */
+.check .header {
+  width: 100%;
+}
+
+.check .header image {
+  width: 100%;
+}
+
+/* 选用产品的圆点 */
+.chanp {
+  position: relative;
+}
+
+.Top_Good_Text image {
+  width: 40rpx;
+  margin-top: -10rpx;
+}
+
+/* 评论的距离 */
+.margin-layouts {
+  padding-top: 25rpx;
+}
+
+/* 底部名片 */
+.list-item6 {
+  height: 100%;
+  display: flex;
+  margin: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+
+}
+
+.goods {
+  display: flex;
+  margin: 0 20rpx;
+  border: 1px dashed #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx 0;
+}
+
+.tab {
+  padding: 0 20rpx;
+
+}
+
+.attrs {
+  font-size: 18rpx;
+  font-weight: 300;
+  margin-top: 30rpx;
+}
+
+.attrs1 {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+.attrs2 {
+  padding: 10rpx 0;
+  font-size: 23rpx;
+  font-weight: 200;
+  padding-top: 14rpx;
+}
+
+.collect1 {
+  margin: 0 10rpx;
+}
+
+.collect1 image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50rpx;
+}
+
+.contacts {
+  width: 30%;
+  margin-top: 20rpx;
+
+}
+
+.contacts image {
+  width: 175rpx;
+  height: 45rpx;
+}
+
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+
+/* 海报 */
+
+/*模态框*/
+
+.toTop {
+  border-radius: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  /* position: fixed; */
+  right: 0rpx;
+  top: 485rpx;
+}
+
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-dialog-body {
+  /* overflow: scroll; */
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+
+/* .xuanz-nr-lix {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+  font-size: 33rpx;
+} */
+
+/*动画前初始位置*/
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.menus {
+  display: flex;
+  padding: 15rpx;
+}
+
+.floor image {
+  width: 165rpx;
+  height: 130rpx;
+}
+
+.content {
+  padding: 1rpx 20rpx;
+}
+
+.left {
+  margin: 25rpx 0;
+}
+
+.arrpw-l image {
+  width: 157rpx;
+  height: 59rpx;
+  padding: 0 20rpx;
+}
+
+.into {
+  float: right;
+  font-size: 33rpx;
+}
 
 
 
 
 
+
+
+
+
+
+/* 生成海报 */
+.erweima {
+  margin-top: 60rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.poster image {
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+button[class="poster"]::after {
+  border: 0;
+}
+
+button[class="poster m_l"]::after {
+  border: 0;
+}
+
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+
+.baocun {
+  display: block;
+  width: 80%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #fdd668;
+
+}
+
+button[class="baocun"]::after {
+  border: 0;
+}
+
+
+
+.haib {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  font-weight: 300;
+  color: #cacacb;
+}
+
+.qux {
+  margin-top: 40rpx;
+  font-size: 33rpx;
+  color: #cacacb;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.shengcheng {
+  width: 80vw;
+  height: 80%;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 5%;
+}
+
+.baocun {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 52%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+  z-index: 10;
+}
+
+.baocuns {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+  z-index: 10;
+}
+
+button[class="baocun"]::after {
+  border: 0;
+}
+
+.baocun1 {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 50%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+
+}
+
+
+/* 新加的样式 */
+/* card */
+.tuijxilicard {
+  width: 100%;
+}
+
+.tuijxiliCardTop {
+  width: 100%;
+  /* background: indigo; */
+  display: block;
+  padding-top: 20rpx;
+}
+
+.tuijxiliCardTop image {
+  width: 100%;
+  display: block;
+}
+
+/* mask遮罩层样式 */
+.mask {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  top: 0;
+  left: 0;
+}

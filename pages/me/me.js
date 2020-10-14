@@ -21,10 +21,39 @@ Page({
     sjzt: { status: 0 },
     //当前状态
     status: 0,
-
+    //管理页面的控制
+    ment: 0,
   },
-  //个人列表跳转
 
+  // 一键拨打
+  calling: function () {
+    wx.makePhoneCall({
+      phoneNumber: '0757-85396681', //此号码并非真实电话号码，仅用于测试
+      success: function () {
+        console.log("拨打电话成功！")
+      },
+      fail: function () {
+        console.log("拨打电话失败！")
+      }
+    })
+  },
+// 导航
+  daohan: function () {
+    wx.getLocation({
+      type: 'wgs84',
+      success: function (res) {
+        wx.openLocation({//​使用微信内置地图查看位置。
+          latitude: 23.014746,//要去的纬度-地址
+          longitude: 113.168396,//要去的经度-地址
+          name: "广东省佛山市南海区季华东路31号",
+          address: '广东省佛山市南海区季华东路31号'
+        })
+      }
+    })
+  },
+
+
+  //个人列表跳转
   melisttz: function (e) {
     console.log(e)
     var ind = app.hdindex(e, 'ind')
@@ -101,7 +130,7 @@ Page({
     })
   },
   // 跳转到商家入驻
-  merchant:function(){
+  merchant: function () {
     wx.navigateTo({
       url: '/pages/me/merchant/merchant',
     })
@@ -124,6 +153,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    // 查询版本
     if (!app.globalData.status) {
       app.banbzt().then(resc => {
         this.setData({ status: app.globalData.status })
@@ -131,6 +161,7 @@ Page({
     } else {
       this.setData({ status: app.globalData.status })
     }
+
 
 
     //获取缓存信息
@@ -189,6 +220,7 @@ Page({
     var tha = this
     var gerxinx = wx.getStorageSync('gerxinx')
     if (gerxinx) {
+      // 使用用户信息，查询其商家信息
       tha.hqshangzt(gerxinx)
       this.setData({ gerxinx })
       return false
@@ -207,7 +239,13 @@ Page({
     var url = baseUrl + 'store/storestatus'
     http.promisServer(url, dat).then(function (resc) {
       if (resc.status == "000") {
-        console.log(resc, '商家状态')
+        console.log(resc, '商家状态');
+        console.log(resc.data.message, resc.data.status);
+        if (resc.data.status == 2) {
+          tha.setData({
+            ment: 1
+          })
+        }
         var sjzt = resc.data
         wx.setStorage({ key: "sjzt", data: sjzt })
         tha.setData({ sjzt: sjzt })
@@ -254,4 +292,15 @@ Page({
       tha.setData({ sj: true, gerxinx: res })
     })
   },
+  // 相机扫一扫跳转到对应页面
+  sweep: function () {
+    wx.scanCode({
+      success(res) {
+        console.log(res.path);
+        wx.navigateTo({
+          url: '/' + res.path,
+        })
+      }
+    })
+  }
 })

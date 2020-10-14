@@ -1,11 +1,14 @@
 <!--pages/product/product.wxml-->
 <!-- 系列视频列表 -->
 <import src="/pages/template/splist/spslist.wxml" />
+
 <!-- 产品或案例 -->
 <view class="product-cpanli">
 	<view class="cpanli-nrb" wx:if='{{cactiv==2}}'>
 		<view class="cpanli-nrbli {{twoactiv==1?'cpanli-nrbli-activ':''}} " data-ind="{{1}}" bindtap="anlixuanz">全国案例</view>
+		<view class="cpanli-nrbli">|</view>
 		<view class="cpanli-nrbli {{twoactiv==2?'cpanli-nrbli-activ':''}} " data-ind="{{2}}" bindtap="anlixuanz">本地案例</view>
+		<!-- <import src='/pages/template/haibao/haibao.wxml'/> -->
 	</view>
 </view>
 
@@ -20,7 +23,8 @@
 
 
 
-<!-- 选择案例 -->
+
+<!-- 选择案例头部 -->
 <view class="xuanz" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="xuanz-nr">
 		<block wx:for="{{anlishuj}}" wx:for-index="index" wx:for-item="item" wx:key="index">
@@ -30,7 +34,7 @@
 					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
 						<view class="xuanz-nr-li">
 							<block wx:for="{{item.children}}" wx:for-index="indexs" wx:for-item="items" wx:key="index">
-								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{index}}" data-idc="{{items.id}}">
+								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{index}}" data-title="{{items.title}}" data-index="{{indexs}}" data-idc="{{items.id}}">
 									{{items.title}}
 									<view class="xuanz-nr-lix">x</view>
 								</view>
@@ -44,7 +48,6 @@
 </view>
 <!-- 选择end -->
 
-
 <!-- 全国案例 -->
 <view class="anlilist" wx:if='{{cactiv==2&&twoactiv==1}}'>
 	<view class="anlilist-ul">
@@ -56,27 +59,27 @@
 				<view class="jxsnr-li-l  jxsnr-li-lsa">
 					<view class="jxsnr-tubiao-tu1">
 						<view class="jxsnr-li-lp">
-							<image src="/images/tubiao/1-09.png"></image>
+							<image src="/images/tubiao/1-09.png" mode="widthFix"></image>
 							<view class="lanbai">{{item.type_name}}</view>
 						</view>
 						<view class="liser">
 							<view class="jxsnr-tubiao-tu2">
 								<view class="jxsnr-li-lp2">
-									<image src="/images/tubiao/1-10.png"></image>
+									<image src="/images/tubiao/1-10.png" mode="widthFix"></image>
 									<view class="shuzi">{{item.preview}}</view>
 								</view>
 								<view class="jxsnr-li-lp2" catchtap="collect" data-ind="{{index}}">
-									<image wx:if="{{!items.sczt}}" src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
-									<image wx:if="{{items.sczt}}" src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
-									<view class="shuzi">{{item.preview}}</view>
+									<image wx:if='{{item.dianzhan}}' src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
+									<image wx:else src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+									<view class="shuzi">{{item.great}}</view>
 								</view>
 							</view>
 							<view class="tubiaop">
 								<view class="xingx" catchtap="star" data-ind="{{index}}">
-									<image wx:if="{{!items.scztt}}" src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
-									<image wx:if="{{items.scztt}}" src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+									<image wx:if='{{item.collection}}' src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+									<image wx:else src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
 								</view>
-								<view class="fenxiang">
+								<view class="fenxiang" catchtap="handleToTop">
 									<image src="/images/tubiao/1-11.png"></image>
 								</view>
 							</view>
@@ -85,7 +88,7 @@
 				</view>
 				<view class="simple">
 					<view class="simple-ul">
-						<view class="simple-ul-p">{{item.shuxing}}</view>
+						<view class="simple-ul-p">【{{item.type_name}}】 {{item.huxing}}</view>
 						<view class="simple-li">{{item.name}}</view>
 					</view>
 					<view class="simple-li-r">
@@ -107,7 +110,7 @@
 
 
 <!-- 本地案例 -->
-<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==2}}'>
+<!-- <view class="anlilist" wx:if='{{cactiv==2&&twoactiv==2}}'>
 	<view class="anlilist-ul">
 		<block wx:for="{{bendanlinr}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 			<view class="anlilist-li" bindtap="bendanlitz" data-ind="{{index}}">
@@ -119,6 +122,121 @@
 				</view>
 			</view>
 		</block>
+	</view>
+</view> -->
+<view class="sous" wx:if='{{cactiv==2&&twoactiv==2}}'>
+	<view class="sous-nr" bindtap="tzsous2">
+		<image src="/images/tubiao/sous.png"></image>
+		<input disabled="{{true}}" placeholder="搜索 按小区查看"></input>
+	</view>
+</view>
+<view class="xuanz" wx:if='{{cactiv==2&&twoactiv==2}}'>
+	<view class="xuanz-nr">
+		<block wx:for="{{anlishuj}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="xuanz-nr-ul">
+				<view class="xuanz-nr-title">{{item.title}}</view>
+				<view class="xuanz-nr-scroll">
+					<scroll-view class="xuanz-nr-li-scroll" scroll-x="true" style="width: 100%">
+						<view class="xuanz-nr-li">
+							<block wx:for="{{item.children}}" wx:for-index="indexs" wx:for-item="items" wx:key="index">
+								<view class="xuanz-nr-li-p  {{items.id==item.xuanz?'xp-active':''}}" wx:if="{{items.spread}}" data-cpzt="{{items.id==item.xuanz?1:0}}" bindtap="anlitopxuanz" data-ind="{{index}}" data-title="{{items.title}}" data-index="{{indexs}}" data-idc="{{items.id}}">
+									{{items.title}}
+									<view class="xuanz-nr-lix">x</view>
+								</view>
+							</block>
+						</view>
+					</scroll-view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+
+
+<view class="anlilist" wx:if='{{cactiv==2&&twoactiv==2}}'>
+	<view class="anlilist-ul">
+		<block wx:for="{{annrshuz}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<view class="anlilist-li" catchtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
+				<view class="anlilist-liimg">
+					<image mode="aspectFill" lazy-load="{{true}}" src="{{item.photo}}"></image>
+				</view>
+				<view class="jxsnr-li-l  jxsnr-li-lsa">
+					<view class="jxsnr-tubiao-tu1">
+						<view class="jxsnr-li-lp">
+							<image src="/images/tubiao/1-09.png" mode="widthFix"></image>
+							<view class="lanbai">{{item.type_name}}</view>
+						</view>
+						<view class="liser">
+							<view class="jxsnr-tubiao-tu2">
+								<view class="jxsnr-li-lp2">
+									<image src="/images/tubiao/1-10.png" mode="widthFix"></image>
+									<view class="shuzi">{{item.preview}}</view>
+								</view>
+								<view class="jxsnr-li-lp2" catchtap="collect" data-ind="{{index}}">
+									<image wx:if='{{item.dianzhan}}' src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
+									<image wx:else src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+									<view class="shuzi">{{item.great}}</view>
+								</view>
+							</view>
+							<view class="tubiaop">
+								<view class="xingx" catchtap="star" data-ind="{{index}}">
+									<image wx:if='{{item.collection}}' src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+									<image wx:else src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
+								</view>
+								<view class="fenxiang" catchtap="handleToTop">
+									<image src="/images/tubiao/fengx.png"></image>
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="simple">
+					<view class="simple-ul">
+						<view class="simple-ul-p">【{{item.type_name}}】 {{item.huxing}}</view>
+						<view class="simple-li">{{item.name}}</view>
+					</view>
+					<view class="simple-li-r">
+						<view class="cotione">
+							<view class="jxsnr-li-time">{{item.chengshi}}</view>
+						</view>
+						<view class="cotione1">
+							<view class="jxsnr-li-r">{{item.update_time}}</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+	<!-- 分享海报 -->
+	<view class="tubiaof" wx:if='{{cactiv==2&&twoactiv==1}}'>
+		<view class="toTop">
+			<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+				<view class="modals-cancel" bindtap="hideModal"></view>
+				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+					<view class="erweima">
+						<button class="poster" bindtap="formSubmit">
+							<image src="/images/shouye/haib.png"></image>
+							<text class="haib">生成海报</text>
+						</button>
+						<button class="poster m_l" open-type="share">
+							<image src="/images/shouye/lianjie.png"></image>
+							<text class="haib">分享链接</text>
+						</button>
+					</view>
+					<view class="qux" bindtap="quxiao">取消</view>
+
+					<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+						<view class="floor">
+							<image src="{{item.product_url}}"></image>
+						</view>
+						<view class="content">
+							<view class="left">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
 
@@ -184,4 +302,49 @@
 </view>
 
 
+<!-- 分享海报 -->
+<view class="tubiaof">
+	<view class="toTop">
+		<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+			<view class="modals-cancel" bindtap="hideModal"></view>
+			<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+				<view class="erweima">
+					<button class="poster" bindtap="formSubmit">
+						<image src="/../images/shouye/haib.png"></image>
+						<text class="haib">生成海报</text>
+					</button>
+					<button class="poster m_l" open-type="share">
+						<image src="/../images/shouye/lianjie.png"></image>
+						<text class="haib">分享链接</text>
+					</button>
+				</view>
+				<view class="qux" bindtap="quxiao">取消</view>
+
+				<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+					<view class="floor">
+						<image src="{{item.product_url}}"></image>
+					</view>
+					<view class="content">
+						<view class="left">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
 <view class="tubiaos">角色道提供技术支持</view>
+
+
+<!-- 海报位置 -->
+<view class='imagePathBox' hidden="{{maskHidden == false}}" wx:if='{{cactiv==2&&twoactiv==1}}'>
+	<view class="mask" catchtap="clearPosters"></view>
+	<image src="{{imagePath}}" class='shengcheng' mode="aspectFit"></image>
+	<button class='baocun' bindtap='baocun'>保存图片到相册</button>
+	<button class="baocuns" open-type="share">分享到群好友</button>
+</view>
+
+<view hidden="{{maskHidden == false}}" class="mask"></view>
+<view class="canvas-box">
+	<canvas style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas" />
+</view>

@@ -12,39 +12,322 @@
 
 
 
-<!-- 参与的活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}'>
-	<view class="search">
-		您暂时没有参加活动哦~
-	</view>
-</view>
 
 
 
 <!-- 正在进行活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}'>
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}'>
 	<view class="search">
-		您暂时没有进行的活动哦~
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
 
 
 
 <!-- 未发布活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}'>
 	<view class="search">
-		您暂时没有发布的活动哦~
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
 
 
 
 <!-- 已下架活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==4}}'>
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
 	<view class="search">
-		您暂时没有下架的活动哦~
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
+
+
+
+
+
+<view class="hander">
+	<view class="a a1">优惠券活动</view>
+	<view class="a a2">查看全部</view>
+</view>
+<!-- 领取优惠券 -->
+<view class="coupon-list">
+	<view class="item stamp stamp01 " bindtap="containe">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">20</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="float-tu">
+		<view class="coupon-botton">
+			<view class="u u1">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/fengx.png'></image>
+			</view>
+			<view class="u u2">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image>
+			</view>
+			<view class="u u3">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image>
+			</view>
+		</view>
+		<view class="coupon-botton_right">
+			<view class="r r1"></view>
+			<view class="r r2">已领取：</view>
+			<view class="r r3">3500</view>
+			<view class="r r4"></view>
+			<view class="r r5">已核销：</view>
+			<view class="r r6">2800</view>
+			<view class="rbig">
+				<view class="r r7">分享</view>
+				<view class="r r8">修改</view>
+				<view class="r r9">删除</view>
+			</view>
+		</view>
+	</view>
+
+
+</view>
+<view class="coupon-list">
+	<view class="item stamp stamp02 ">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">50</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+			</view>
+		</view>
+	</view>
+
+
+	<view class="float-tu">
+		<view class="coupon-botton">
+			<view class="u u1">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/fengx.png'></image>
+			</view>
+			<view class="u u2">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image>
+			</view>
+			<view class="u u3">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image>
+			</view>
+		</view>
+		<view class="coupon-botton_right">
+			<view class="r r1"></view>
+			<view class="r r2">已领取：</view>
+			<view class="r r3">3</view>
+			<view class="r r4"></view>
+			<view class="r r5">已核销：</view>
+			<view class="r r6">3</view>
+			<view class="rbig">
+				<view class="r r7">分享</view>
+				<view class="r r8">修改</view>
+				<view class="r r9">删除</view>
+			</view>
+		</view>
+	</view>
+
+
+
+
+</view>
+<view class="coupon-list">
+	<view class="item stamp stamp02 ">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">100</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+			</view>
+		</view>
+
+
+	</view>
+	<view class="float-tu">
+		<view class="coupon-botton">
+			<view class="u u1">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/fengx.png'></image>
+			</view>
+			<view class="u u2">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image>
+			</view>
+			<view class="u u3">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image>
+			</view>
+		</view>
+		<view class="coupon-botton_right">
+			<view class="r r1"></view>
+			<view class="r r2">已领取：</view>
+			<view class="r r3">3500</view>
+			<view class="r r4"></view>
+			<view class="r r5">已核销：</view>
+			<view class="r r6">2800</view>
+			<view class="rbig">
+				<view class="r r7">分享</view>
+				<view class="r r8">修改</view>
+				<view class="r r9">删除</view>
+			</view>
+		</view>
+	</view>
+
+</view>
+
+
+
+
+
+
+
+
+
 
 
 <view class="huodtype">
@@ -53,18 +336,20 @@
 		<block>
 			<view class="charge">
 				<view class="tup">
-					<image src="/images/tubiao/109.png"></image>
+					<image src="https://cdn.juesedao.cn/gxw/69cd37b33753473e9d3f73f12b5662bf"></image>
 				</view>
 				<view class="lists">
 					<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
 					<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
 				</view>
+
+				<icon type="success" color="{{item.select ? 'red' : 'gray' }}" bindtap="handleSelect" data-index="{{index}}"></icon>
 			</view>
 		</block>
 
 		<view class="charge">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/5f45a804cef8476b812bd2e75529df11"></image>
 			</view>
 			<view class="lists">
 				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
@@ -75,10 +360,10 @@
 
 		<view class="charge">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/b526e11d857c413db64c082afcb81fc7"></image>
 			</view>
 			<view class="lists">
-				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+				<view style="font-size: 33rpx; font-weight: 700;">优惠券活动</view>
 				<view style="font-size: 26rpx; font-weight: 300; padding: 20rpx 0;">免费活动报名创建</view>
 			</view>
 		</view>
@@ -87,10 +372,10 @@
 
 		<view class="charge">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/b227f79b68a84b7ea4945a484fda0db0"></image>
 			</view>
 			<view class="lists">
-				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
+				<view style="font-size: 33rpx; font-weight: 700;">商品活动</view>
 				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
 			</view>
 		</view>

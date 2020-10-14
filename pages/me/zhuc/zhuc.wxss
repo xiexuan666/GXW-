@@ -9,7 +9,6 @@ page {
 /* 头部 */
 .jinx-t {
   width: 100%;
-  background-color: #bababa;
 }
 
 .jinx-tnr {
@@ -124,16 +123,19 @@ page {
   border-radius: 25rpx;
 
 }
-
-.df_2 {
-  width: 400rpx;
-  height: 190rpx;
-  border: 1px solid #ccc;
-  border-radius: 25rpx;
+.placeholderStyle {
+  color: #ccc;
+  padding-left: 10rpx;
 }
+.df_1 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  padding-left: 50rpx;
+}
+
+
+
 /* 我的列表 end*/
-
-
 
 
 /* 按钮 */
@@ -142,7 +144,7 @@ button::after {
 }
 
 button {
-  margin-top: 60px;
+  margin-top: 25px;
   width: 300px;
   border-radius: 30px;
   background: #bd8f60;
@@ -157,5 +159,3 @@ button {
   color: #ccc;
   margin-bottom: 30rpx;
 }
-
-

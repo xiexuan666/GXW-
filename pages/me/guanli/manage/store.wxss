@@ -7,7 +7,6 @@ page {
 /* 头部 */
 .jinx-t {
   width: 100%;
-  background-color: #bababa;
 }
 
 .jinx-tnr {
@@ -220,14 +219,19 @@ page {
 }
 
 .btn-area {
-  background: #ffffff;
+  /* background: #be8f61; */
+
 }
 
 .btn-area button {
-  background: #ffffff;
+  background-color: #be8f61;
   border: 0rpx;
   padding: 10rpx 0rpx;
-  border-radius: 0rpx;
+  border-radius: 40rpx;
+  width: 80%;
+  color: #fff;
+  height: 80rpx;
+  line-height: 60rpx;
 }
 .xuanzdz{
   position: absolute;

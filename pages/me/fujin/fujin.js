@@ -97,7 +97,7 @@ Page({
     var url = baseUrl + "store/findstoreByAddress"
     var dat = {
       addressc,
-      brandid: '1'
+      brandid: '2'
     }
     http.promisServer(url, dat).then(resc => {
       var benjxslist = resc.data.storeList
@@ -123,7 +123,7 @@ Page({
           longitude: bendijxs.position_longitude,
           latitude: bendijxs.position_latitude,
           title: bendijxs.address,
-          iconPath: "../../images/tubiao/dt0.png",
+          iconPath: "/images/tubiao/69.png",
           width: 20,
           height: 30,
           callout: {

@@ -33,9 +33,16 @@
 								<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
 							</view>
 							<!-- 分享按钮 -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 							<view class="shouc-p">
 								<image src="/images/tubiao/fengx.png" class="img"></image>
 							</view>
+=======
+								<view class="shouc-p" ><image src="/images/tubiao/fangx.png" class="img"></image></view>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 						</view>
 					</view>
 				</view>
@@ -46,6 +53,7 @@
 
 
 
+<<<<<<< HEAD
 <!-- foot -->
 <view class="list-item6">
 	<view class="goods">
@@ -53,7 +61,11 @@
 			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 		</view>
 		<view class="tab">
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 			<view class="attrs2">
 				村上 家居设计师
 			</view>
@@ -62,7 +74,11 @@
 			</view>
 		</view>
 		<view class="contacts">
+<<<<<<< HEAD
 			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" bindtap="calling"></image>
+=======
+			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" ></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 			<image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png"></image>
 		</view>
 	</view>
@@ -73,8 +89,11 @@
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 <!-- 底部的收藏 -->
 <view class="collects">
 	<view class="title">
@@ -95,9 +114,74 @@
 
 		<view class="list-item1">
 			<view class="list-right" bindtap="handleToTop">
+<<<<<<< HEAD
 				<image src="/images/tubiao/87.png" class="image"></image>
+=======
+				<image src="/images/tubiao/fx.png" class="image"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 				<view class="character">分享</view>
 			</view>
 		</view>
 	</view>
 </view>
+=======
+		<!-- foot -->
+		<view class="list-item">
+			<view class="goods">
+				<view class="collect">
+					<image src="/images/tubiao/gxw.png"></image>
+				</view>
+				<view class="tab">
+					<view class="attrs1">
+						冠星王陶瓷
+					</view>
+					<view class="attrs2">
+						店主:村上
+					</view>
+					<view class="attrs">
+					<image  src="/images/tubiao/24.png"></image>	广东省佛山市禅城区南庄镇中国陶瓷总部基地
+					</view>
+				</view>
+				<view class="contact">
+					<button class="btn">
+						<image src="/images/tubiao/1-21.png"></image> 联系店主
+					</button>
+					<button class="btn">
+						<image src="/images/tubiao/1-22.png"></image>在线咨询
+					</button>
+				</view>
+			</view>
+		</view>
+
+
+
+<!-- 分享页面 -->
+<view class="tubiaof">
+		<view class="toTop">
+			<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+				<view class="modals-cancel" bindtap="hideModal"></view>
+				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+					<view class="erweima">
+						<view class="poster">
+							<image src="/../images/shouye/haib.png" bindtap="hanglehb"></image>
+							<view class="haib">生成海报</view>
+						</view>
+						<view class="poster" open-type="share">
+							<image src="/../images/shouye/lianjie.png"></image>
+							<view class="haib">分享链接</view>
+						</view>
+					</view>
+					<view class="qux" bindtap="quxiao">取消</view>
+					<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+						<view class="floor">
+							<image src="{{item.product_url}}"></image>
+						</view>
+						<view class="content">
+							<view class="left">{{item.name}}</view>
+						</view>
+					</view>
+					</view>
+					</view>
+					</view>
+					</view>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8

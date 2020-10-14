@@ -82,7 +82,15 @@
 
 /* 评论主体 */
 .commentsContent {
+<<<<<<< HEAD
   height: 300rpx;
+=======
+<<<<<<< HEAD
+  height: 300rpx;
+=======
+  height: 1000rpx;
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   overflow: scroll;
   width: 100vw;
   margin-top: 20rpx;
@@ -144,7 +152,11 @@
   height: 40rpx;
   width: 90%;
   font-size: 26rpx;
+<<<<<<< HEAD
   margin: 10rpx auto;
+=======
+  margin: auto;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   padding-bottom: 30rpx;
   padding-top: 20rpx;
 }
@@ -152,7 +164,10 @@
 .commentsContentText text {
   margin-left: 75rpx;
   line-height: 40rpx;
+<<<<<<< HEAD
   word-wrap: break-word
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 
@@ -312,9 +327,12 @@
   justify-content: space-between;
   margin-top: -12rpx;
 }
+<<<<<<< HEAD
 .btns {
   opacity:0;
 }
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 .num2 .text1 .dh {
   width: 33%;
@@ -405,7 +423,27 @@
   position: relative;
   flex-flow: row;
   margin: 0 auto;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+  position: relative;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .management {
@@ -463,5 +501,35 @@
 
 .modify .xiug {
   font-size: 26rpx;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+}
+
+/* 二维码 */
+.code{
+  position: absolute;
+  bottom:20rpx;
+  right:40rpx;
+}
+.code image{
+  width:80rpx;
+  height: 80rpx;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }

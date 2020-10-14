@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 @import '/pages/template/comments/comments.wxss';
 /* 轮播图 */
 .lbswiper {
@@ -138,6 +142,7 @@
   display: flex;
   /* background: khaki; */
 }
+<<<<<<< HEAD
 
 .liser {
   align-items: center;
@@ -175,10 +180,52 @@
 
 .fenxiang image {
   padding: 0 15rpx;
+=======
+
+.liser {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  /* background: lightcoral; */
+  flex: 1;
+  margin-left: auto;
+}
+
+.jxsnr-li-lp image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 5rpx;
+}
+
+.lanbai {
+  padding: 0 10rpx;
+  font-weight: 300;
+}
+
+.jxsnr-li-lp2 {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.jxsnr-li-lp2 image {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   width: 35rpx;
   height: 35rpx;
 }
 
+<<<<<<< HEAD
+=======
+.fenxiang image {
+  padding: 0 15rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 .shouc image {
   padding: 0 15rpx;
   width: 35rpx;
@@ -341,6 +388,7 @@
   padding-left: 24rpx;
   font-size: 24rpx;
   font-weight: 100;
+<<<<<<< HEAD
 }
 
 
@@ -380,6 +428,47 @@
 }
 
 
+=======
+}
+
+
+/* 设计 */
+.history {
+  width: 700rpx;
+  margin: 50rpx auto;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+
+}
+
+.cun {
+  font-size: 22rpx;
+  align-items: center;
+  font-weight: 300;
+  margin: 0 10rpx;
+  /* padding: 20rpx 0; */
+}
+
+.portrait image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+}
+
+.tup {
+  padding: 20rpx 0;
+}
+
+.tup image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 
 
@@ -391,6 +480,7 @@
   height: 50rpx;
   color: #fff;
   padding: 20rpx 20rpx;
+<<<<<<< HEAD
 }
 
 
@@ -482,6 +572,99 @@
   padding: 0 20rpx;
 }
 
+=======
+}
+
+
+
+/*模态框*/
+
+.toTop {
+  border-radius: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  /* position: fixed; */
+  right: 0rpx;
+  top: 485rpx;
+}
+
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-dialog-body {
+  /* overflow: scroll; */
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+
+.xuanz-nr-lix {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  /* left: 0; */
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+  font-size: 33rpx;
+}
+
+/*动画前初始位置*/
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.menus {
+  display: flex;
+  padding: 15rpx;
+}
+
+.floor image {
+  width: 165rpx;
+  height: 130rpx;
+}
+
+.content {
+  padding: 1rpx 20rpx;
+}
+
+.left {
+  margin: 25rpx 0;
+}
+
+.arrpw-l image {
+  width: 157rpx;
+  height: 59rpx;
+  padding: 0 20rpx;
+}
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 .into {
   float: right;
   font-size: 33rpx;
@@ -511,6 +694,18 @@
   align-items: center;
   justify-content: center;
   background: #fff;
+<<<<<<< HEAD
+}
+
+.poster image {
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+button[class="poster"]::after {
+  border: 0;
+=======
 }
 
 .poster image {
@@ -527,6 +722,172 @@ button[class="poster m_l"]::after {
   border: 0;
 }
 
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.bgImg{
+  display: block;
+  width: 100%;
+  height: 366rpx;
+}
+.mine{
+  display: block;
+  text-align: center;
+  color: #333;
+  margin-top: 44rpx;
+}
+.code{
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 76rpx;
+  font-weight: bold;
+  margin-top: 30rpx;
+}
+.who{
+  display: block;
+  margin-top: 80rpx;
+  font-size: 32rpx;
+  color: #333;
+  text-align: center;
+}
+.inputBox{
+  text-align: center;
+  margin-top: 44rpx;
+}
+.input{
+  text-align: center;
+  width: 440rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+  background: #f5f5f5;
+  font-size: 32rpx;
+  display: inline-block;
+}
+.btn{
+  width: 160rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+  background:linear-gradient(90deg,rgba(255,226,0,1),rgba(255,200,11,1));
+  box-shadow: 0px 4px 8px 0px rgba(255,200,11,0.5); 
+  color:#333;
+  font-size: 32rpx;
+  display: inline-block;
+  line-height: 88rpx;
+  margin-left: 40rpx;
+}
+button[class="btn"]::after {
+  border: 0;
+} 
+.tishi{
+  display: block;
+  text-align: center;
+  color: #999;
+  margin-top: 30rpx;
+}
+.shareText{
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+  margin-top: 100rpx;
+}
+.imgBox{
+  text-align: center;
+  width: 100%;
+  margin-top:60rpx;
+  padding-bottom: 120rpx;
+}
+.img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.m_l{
+  margin-left: 180rpx;
+}
+.zfbtn{
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background: transparent;
+  outline: none;
+  border: 0;
+  padding: 0;
+}
+button[class="zfbtn"]::after {
+  border: 0;
+} 
+button[class="zfbtn m_l"]::after {
+  border: 0;
+} 
+.imagePathBox{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+<<<<<<< HEAD
+
+
+.baocun {
+  display: block;
+  width: 80%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #fdd668;
+
+}
+
+button[class="baocun"]::after {
+  border: 0;
+}
+
+
+
+.haib {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  font-weight: 300;
+  color: #cacacb;
+}
+
+.qux {
+  margin-top: 40rpx;
+  font-size: 33rpx;
+  color: #cacacb;
+  align-items: center;
+  text-align: center;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+}
+
+button[class="poster m_l"]::after {
+  border: 0;
+}
+
+<<<<<<< HEAD
 .imagePathBox {
   width: 100%;
   height: 100%;
@@ -579,6 +940,8 @@ button[class="baocun"]::after {
 }
 
 
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 
 .imagePathBox {
@@ -622,10 +985,34 @@ button[class="baocun"]::after {
   height: 70rpx;
   padding: 0;
   line-height: 70rpx;
+<<<<<<< HEAD
+=======
+=======
+.shengcheng{
+  width: 80%;
+  height: 80%;
+  position: fixed;
+  top: 50rpx;
+  left: 50%;
+  margin-left: -40%;
+  z-index: 10;
+}
+.baocun{
+  display: block;
+  width: 80%;
+  height: 80rpx;
+  padding: 0;
+  line-height: 80rpx;
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   text-align: center;
   position: fixed;
   bottom: 50rpx;
   left: 10%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   color: #fff;
   font-size: 32rpx;
   border-radius: 24rpx;
@@ -681,4 +1068,20 @@ button[class="baocun"]::after {
   background-color: black;
   top: 0;
   left: 0;
+<<<<<<< HEAD
 }
+=======
+}
+=======
+  background: #ffe200;
+  color: #333;
+  font-size: 32rpx;
+  border-radius: 44rpx;
+}
+button[class="baocun"]::after{
+  border: 0;
+}
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d

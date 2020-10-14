@@ -185,7 +185,10 @@
   width: 80%;
   height: 60rpx;
   padding-left: 60rpx;
+<<<<<<< HEAD
   color: #808080;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .Input .Icon {
@@ -211,5 +214,8 @@
   z-index: 3;
   /* left: 55rpx; */
   /* top: 12.5rpx; */
+<<<<<<< HEAD
   color: #fff;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }

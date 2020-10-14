@@ -7,12 +7,16 @@ Page({
   data: {
 
   },
+<<<<<<< HEAD
   // 跳转到拼团
   share: function () {
     wx.navigateTo({
       url: '/pages/hotspot/booking/booking',
     })
   },
+=======
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   /**
    * 生命周期函数--监听页面加载
    */

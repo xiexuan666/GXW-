@@ -69,6 +69,10 @@ Page({
       cpxqzt = 3
       // 请求数据、需要做判断避免重复请求
       getInformation.getProduct(3).then(res=>{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
         console.log(res);
         for(let i=0;i<res.length;i++){
           let data = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res[i].update_time);
@@ -89,6 +93,14 @@ Page({
           strategy:res
         })
         console.log(this.data.strategy);
+<<<<<<< HEAD
+=======
+=======
+        that.setData({
+          strategy:res
+        })
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
       })
       wx.setNavigationBarTitle({ title: '攻略' })
     }
@@ -196,6 +208,19 @@ Page({
     console.log(cp[ind]);
     app.globalData.cpxiaqs = cp[ind];
     app.Jump('product/cp/cpxq');
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    // var state = 1;
+    // getInformation.getProduct(state,undefined,cp[ind].product_id).then(res=>{
+    //   console.log(res[0].id);
+    //   //  将获取的详情设置到全局变量
+    //   app.globalData.cpxiaqs = res[0];
+    //   app.Jump('product/cp/cpxq');
+    // })
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   },
   // 跳转案例详情
   anlitz:function(e){
@@ -206,6 +231,10 @@ Page({
     // 获取对应的案例id
     console.log(that)
     console.log('我点击了案例',int);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
     console.log(this.data.product[int]);
     // Arrys
     wx.navigateTo({
@@ -220,6 +249,11 @@ Page({
     wx.navigateTo({
       url: '/pages/hotspot/strategy/strategy?arry=' + JSON.stringify(this.data.strategy) + '&id=' + index,
     })
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   },
 
   //收藏产品

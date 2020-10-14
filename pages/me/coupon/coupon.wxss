@@ -127,7 +127,10 @@ page {
   top: 50rpx;
   width: 200rpx;
   font-size: 23rpx;
+<<<<<<< HEAD
   letter-spacing: 3rpx;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .coupon-left .t4 {
@@ -141,6 +144,7 @@ page {
   left: 224rpx;
   top: 130rpx;
   font-size: 23rpx;
+<<<<<<< HEAD
 }
 
 .coupon-left .t6 {
@@ -193,6 +197,54 @@ page {
   top: 50rpx;
   font-size: 80rpx;
   font-weight: bold  
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+}
+.coupon-left .d3 {
+  left: 220rpx;
+  top: 50rpx;
+  width: 200rpx;
+  font-size: 23rpx;
+
+<<<<<<< HEAD
+}
+
+.coupon-left .d4 {
+  left: 280rpx;
+  top: 93rpx;
+  font-size: 23rpx;
+
+=======
+.coupon-left .t6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #C99361 solid 1rpx;
+}
+.coupon-left .t7 {
+  background-color: violet;
+  width: 140rpx;
+  height: 140rpx;
+  left: 450rpx;
+  top: 30rpx;  
+}
+.coupon-left .d{
+  position: absolute;
+  color: white;
+}
+.coupon-left .d1 {
+  width: 15%;
+  font-size: 50rpx;
+  margin-top: 50rpx;
+  left: 10rpx;
+  top: 20rpx;
+}
+.coupon-left .d2 {
+  width: 40%;
+  left: 50rpx;
+  top: 50rpx;
+  font-size: 80rpx;
+  font-weight: bold  
 }
 .coupon-left .d3 {
   left: 220rpx;
@@ -207,6 +259,7 @@ page {
   top: 93rpx;
   font-size: 23rpx;
 
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 }
 .coupon-left .d5 {

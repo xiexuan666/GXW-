@@ -100,7 +100,10 @@
 .canyu {
   text-align: center;
   align-items: center;
+<<<<<<< HEAD
   margin: 30rpx  0;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .canyu image {

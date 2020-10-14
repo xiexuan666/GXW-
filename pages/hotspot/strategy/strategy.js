@@ -15,6 +15,7 @@ Page({
     // 评论参数
     Common: [],
     InputText: '快来评论吧',
+<<<<<<< HEAD
   },
 
   // 一键拨打
@@ -28,6 +29,8 @@ Page({
         console.log("拨打电话失败！")
       }
     })
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   },
 
 
@@ -55,6 +58,11 @@ Page({
         Collectionstate: false
       })
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   },
   /* 
 
@@ -177,6 +185,15 @@ Page({
     // WxParse.wxParse('article', 'html', article, that);
   },
 
+<<<<<<< HEAD
+=======
+  // 跳转到海报
+  handleToTop: function () {
+    wx.navigateTo({
+      url: '/pages/souye/poster/poster',
+    })
+  },
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -198,7 +215,11 @@ Page({
     getInformation.setCommon(url, strategyId).then(res => {
       that.setData({
         Common: res.data
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
       })
 
       // 对点赞进行判断和赋值

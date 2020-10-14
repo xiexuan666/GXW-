@@ -80,10 +80,17 @@ Page({
       return false
     }
     var url = baseUrl + "production/productCollectionSaves"
+<<<<<<< HEAD
     var dat = {
       brandid: app.globalData.brandid,
       userid: gerxinx.id,
       productid: cp[ind].productList[inds].id
+=======
+    var dat={
+      brandid:app.globalData.brandid,
+      userid:gerxinx.id,
+      productid:cp[ind].productList[inds].id
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
     }
     console.log(dat, "收藏状态改变前")
     http.promisServer(url, dat).then(resc => {
@@ -134,10 +141,17 @@ Page({
   qingqcp: function (cps) {
     var tha = this
     var url = baseUrl + "series/selectSeriesTypeByguige"
+<<<<<<< HEAD
     var dat = {
       brandid: app.globalData.brandid,
       productIdList: cps.cdid,
       guigeIdList: cps.geid
+=======
+    var dat={
+      brandid:app.globalData.brandid,
+      productIdList:cps.cdid,
+      guigeIdList:cps.geid
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
     }
     console.log(dat, 9999)
     http.promisServer(url, dat).then(resc => {

@@ -93,6 +93,10 @@
 
 .photo {
   margin-top: 50rpx;
+<<<<<<< HEAD
+=======
+  margin-left: 30rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 }
 
@@ -108,7 +112,11 @@
   background-color: #be8f61;
   color: #fff;
   padding: 5rpx;
+<<<<<<< HEAD
   width: 85%;
+=======
+  width: 15%;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   text-align: center;
   border-radius: 10rpx;
 }
@@ -152,6 +160,7 @@
 .text {
   font-size: 26rpx;
   color: #be8f61;
+<<<<<<< HEAD
 }
 
 .profile {
@@ -167,4 +176,6 @@
   height: 100rpx;
   border-radius: 50rpx;
   margin: 13rpx;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }

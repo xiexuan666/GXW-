@@ -33,7 +33,15 @@
 				<view class="number1"> 订单号:　20200303001</view>
 			</view>
 			<view class="real">
+<<<<<<< HEAD
 				<image mode="aspectFill" src="https://cdn.juesedao.cn/gxw/danpian.png"></image>
+=======
+<<<<<<< HEAD
+				<image mode="aspectFill" src="https://cdn.juesedao.cn/gxw/danpian.png"></image>
+=======
+				<image mode="aspectFill" src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 				<!-- 商品信息右侧 -->
 				<view class="list-right">
 					<view class="character">

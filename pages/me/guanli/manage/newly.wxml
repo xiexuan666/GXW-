@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <view class="goods-title">
 	<view class="collect">
 		<image src="https://cdn.juesedao.cn/gxw/0cf2401c4d0b4fed807e690a21c28966"></image>
@@ -34,9 +35,120 @@
 		<textarea class="flex-itemm-text" type="text" value="{{neirong}}" name="neirong">
 
       </textarea>
+=======
+<<<<<<< HEAD
+<view class="title">
+	<view class="goods-title">
+		<view class="collect">
+			<image src="https://cdn.juesedao.cn/gxw/0cf2401c4d0b4fed807e690a21c28966"></image>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+<view class="title">
+	<view class="goods-title">
+		<view class="collect">
+			<image src="/images/tubiao/9.png"></image>
+<<<<<<< HEAD
+=======
+=======
+<!-- 活动详情 -->
+<view class="price">
+	<view class="title">
+		<view class="goods-title">
+			<view class="collect">活动详情</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+		</view>
+		<view class=" huah">
+			<view class="drawing">活动主画面</view>
+			<view class="size">画画尺寸比例16:9</view>
+		</view>
+	</view>
+	<view class='item'>
+		<view class='title_tip'>标题</view>
+		<view class='username_txt'>
+			<input type='text' class='user_txt' placeholder-class='input_style' />
+		</view>
+	</view>
+	<view class='item'>
+		<view class='title_tip'>请补充活动内容/规则</view>
+		<view class='username_txtt'>
+			<input type='text' class='usertxt' placeholder-class='input_styles' />
+		</view>
+	</view>
+	<view class="time">
+		<view class="times">
+			<form catchsubmit="tijiaoform" catchreset="formReset">
+				<picker mode="date" value="{{date}}" start="2020-01-01" end="" bindchange="bindDateChange">
+					<view class="date" name="date">
+						<view class='page_row'>
+							<view class="search">
+								<view class="df search_arr">
+									<text class="text">开始时间</text>
+									<input name="xingm" value="{{date}}" placeholder="-请选择-" placeholder-class="placeholderStyle" class="df_1"></input>
+								</view>
+							</view>
+						</view>
+					</view>
+				</picker>
+				<picker mode="date" value="{{data}}" start="2020-01-01" end="" bindchange="bindDateChange">
+					<view class="date" name="date">
+						<view class='page_row'>
+							<view class="search">
+								<view class="df search_arr">
+									<text class="text">结束时间</text>
+									<input name="xingm" value="{{date}}" placeholder="-请选择-" placeholder-class="placeholderStyle" class="df_1"></input>
+								</view>
+							</view>
+						</view>
+					</view>
+				</picker>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">门店地址</text>
+							<input name="xingm" class="df_1" value="{{address}}" placeholder="-请选择-" placeholder-class="placeholderStyle" />
+						</view>
+					</view>
+				</view>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">邀请人数</text>
+							<input name="xingm" value="{{phone}}" class="df_1" placeholder="-请选择-" placeholder-class="placeholderStyle" />
+						</view>
+					</view>
+				</view>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">佣金设置</text>
+							<input name="xingm" value="{{phone}}" class="df_1" placeholder="-请选择-" placeholder-class="placeholderStyle" />
+						</view>
+					</view>
+				</view>
+			</form>
+		</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 	</view>
 
 
+<<<<<<< HEAD
+	<view class="preview">
+		<button class="btn">活动预览</button>
+=======
+<<<<<<< HEAD
+	<view class="preview">
+		<button class="btn">活动预览</button>
+=======
+<<<<<<< HEAD
+	<view class="preview">
+		<button class="btn">活动预览</button>
+=======
+	
 
 
 	<view class="time">
@@ -100,6 +212,7 @@
 				</view>
 
 
+<<<<<<< HEAD
 			</form>
 		</view>
 	</view>
@@ -107,5 +220,10 @@
 
 	<view class="preview">
 		<button class="btn">活动预览</button>
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 	</view>
 </view>

@@ -127,7 +127,11 @@ button {
 .charge {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   margin: 20rpx 0;
+=======
+  margin: 20rpx  0;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 
@@ -201,7 +205,10 @@ button {
 
 .ling-q {
   padding: 20rpx;
+<<<<<<< HEAD
   margin-right: 515rpx;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 
@@ -265,7 +272,10 @@ button {
   height: 80rpx;
   border-radius: 50%;
   bottom: 185rpx;
+<<<<<<< HEAD
   margin-left: 40rpx;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .me-list-lir {
@@ -331,6 +341,7 @@ button {
   background-color: #f7f8f8;
   padding: 30rpx;
 }
+<<<<<<< HEAD
 
 .topnav {
   padding-top: 10rpx;
@@ -628,3 +639,8 @@ button {
   border: 5rpx solid #c9caca;
   border-radius: 25rpx;
 }
+=======
+.topnav {
+  padding-top: 10rpx;
+} 
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d

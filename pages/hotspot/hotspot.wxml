@@ -35,7 +35,11 @@
 					<view class="fenx">
 						<image src="/images/tubiao/fengx.png"></image>
 					</view>
+<<<<<<< HEAD
 					<view style="font-size: 24rpx;">分享</view>
+=======
+					<view  style="font-size: 24rpx;">分享</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 				</view>
 			</view>
 		</block>
@@ -63,7 +67,11 @@
 				<view class="fenx">
 					<image src="/images/tubiao/fengx.png"></image>
 				</view>
+<<<<<<< HEAD
 				<view style="font-size: 24rpx;">分享</view>
+=======
+				<view  style="font-size: 24rpx;">分享</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 			</view>
 		</view>
 	</view>
@@ -90,7 +98,11 @@
 				<view class="fenx">
 					<image src="/images/tubiao/fengx.png"></image>
 				</view>
+<<<<<<< HEAD
 				<view style="font-size: 24rpx;">分享</view>
+=======
+				<view  style="font-size: 24rpx;">分享</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 			</view>
 		</view>
 	</view>

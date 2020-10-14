@@ -35,8 +35,11 @@
 			<view style="font-size: 33rpx;font-weight: 700;">拼团活动</view>
 			<view style="font-size: 30rpx;font-weight: 300;">2020年5月30日 12:00 活动截止</view>
 			<image src="/images/tubiao/code.jpg"></image>
+<<<<<<< HEAD
 			<view>长按/扫码识别小程序</view>
 			<view>参与活动</view>
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 		</view>
 
 	</view>

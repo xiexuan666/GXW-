@@ -6,9 +6,15 @@
 <view class="product-cpanli">
 	<view class="cpanli-nrb" wx:if='{{cactiv==2}}'>
 		<view class="cpanli-nrbli {{twoactiv==1?'cpanli-nrbli-activ':''}} " data-ind="{{1}}" bindtap="anlixuanz">全国案例</view>
+<<<<<<< HEAD
 		<view class="cpanli-nrbli">|</view>
 		<view class="cpanli-nrbli {{twoactiv==2?'cpanli-nrbli-activ':''}} " data-ind="{{2}}" bindtap="anlixuanz">本地案例</view>
 		<!-- <import src='/pages/template/haibao/haibao.wxml'/> -->
+=======
+		<view class="cpanli-nrbli" >|</view>
+		<view class="cpanli-nrbli {{twoactiv==2?'cpanli-nrbli-activ':''}} " data-ind="{{2}}" bindtap="anlixuanz">本地案例</view>
+<!-- <import src='/pages/template/haibao/haibao.wxml'/> -->
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 	</view>
 </view>
 
@@ -70,14 +76,23 @@
 								</view>
 								<view class="jxsnr-li-lp2" catchtap="collect" data-ind="{{index}}">
 									<image wx:if='{{item.dianzhan}}' src="/images/tubiao/22.png" lazy-load="{{true}}"></image>
+<<<<<<< HEAD
 									<image wx:else src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+=======
+									<image wx:else   src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 									<view class="shuzi">{{item.great}}</view>
 								</view>
 							</view>
 							<view class="tubiaop">
 								<view class="xingx" catchtap="star" data-ind="{{index}}">
+<<<<<<< HEAD
 									<image wx:if='{{item.collection}}' src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
 									<image wx:else src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
+=======
+									<image  wx:if='{{item.collection}}' src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
+									<image  wx:else  src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 								</view>
 								<view class="fenxiang" catchtap="handleToTop">
 									<image src="/images/tubiao/1-11.png"></image>

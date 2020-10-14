@@ -61,9 +61,12 @@ Page({
     bendanlipage: 0,
     //系列视频列表
     xilievideolist: [],
+<<<<<<< HEAD
     // 海报是否隐藏显示
     maskHidden: false,
     hideModal: true, //模态框的状态  true-隐藏  false-显示
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
     //视频列表属性
     attr: {
       w: 700,
@@ -460,7 +463,10 @@ Page({
     }
     return arr;
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   //跳转到案例详情
   anlitz: function (e) {
     var ind = app.hdindex(e, 'ind')
@@ -823,6 +829,7 @@ Page({
       var bendcount = resc.data.bendiCasesCount
       console.log(bendanlinr, bendcount, '本地案例')
       tha.setData({ bendanlinr, bendcount, bendanlidq: dqdz, bendanlipage: page })
+<<<<<<< HEAD
     })
   },
   // 显示遮罩层
@@ -904,12 +911,17 @@ Page({
       })
     }, 100)//先执行下滑动画，再隐藏模块，再隐藏模块
   },
+=======
+    })
+  },
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
+<<<<<<< HEAD
   },
   //将canvas转换为图片保存到本地，然后将图片路径传给image图片的src
   createNewImg: function () {
@@ -1027,6 +1039,8 @@ Page({
         maskHidden: true
       });
     }, 1000)
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   },
 
 
@@ -1125,6 +1139,12 @@ Page({
   /*** 页面上拉触底事件的处理函数*/
 
   onReachBottom: function () {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+ 
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
     // var cactiv=this.data.cactiv
     // var twoactiv=this.data.twoactiv
     // if(cactiv==2&&twoactiv==1){
@@ -1146,6 +1166,10 @@ Page({
     //   this.qingqdangd(bendanlidq,bendanlipage,2)
 
     // }
+<<<<<<< HEAD
+=======
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   },
 
   /**

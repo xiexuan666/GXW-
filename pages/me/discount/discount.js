@@ -26,7 +26,32 @@ Page({
     that.setData({
       shanjia:list
     })
+<<<<<<< HEAD
     this.open();
+=======
+    // 请求该店铺优惠券
+    let url = baseUrl + 'coupon/queryActivityAllCoupon';
+    let data = {
+      userId:32,
+      brandId:app.globalData.brandid,
+      state:2,
+      storeId:1
+    }
+    http.promisServer(url,data).then(res=>{
+      console.log(res);
+      for(let i=0;i<res.data.length;i++){
+        console.log(i)
+        let card = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].create_time);
+        let end = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].end_time);
+        console.log(card[0].slice(5));
+        res.data[i].create_time = card[0].replace('-','.');
+        res.data[i].end_time = end[0].slice(5).replace('-','.');
+      }
+      that.setData({
+        AllCoupon:res.data
+      })
+    })
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   },
   open:function(){
     var that = this;

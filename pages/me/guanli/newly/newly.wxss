@@ -1,9 +1,29 @@
+<<<<<<< HEAD
 /* pages/me/guanli/manage/zixu.wxss */
 
+=======
+<<<<<<< HEAD
+/* pages/me/guanli/manage/zixu.wxss */
+
+=======
+<<<<<<< HEAD
+/* pages/me/guanli/manage/zixu.wxss */
+
+=======
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 page {
   background-color: #e7e7e7;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 .product-cpanli {
   width: 100%;
   margin: 0rpx auto;
@@ -12,6 +32,24 @@ page {
 }
 
 .cpanli-nr {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+.product-cpanli {
+  background-color: #fff;
+  width: 100%;
+  margin: 0rpx auto;
+
+}
+
+.cpanli-nr {
+
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   overflow: hidden;
   width: 700rpx;
   margin: 0rpx auto;
@@ -26,7 +64,19 @@ page {
   float: left;
   padding-right: 20rpx;
   font-size: 28rpx;
+<<<<<<< HEAD
   color: #888;
+=======
+<<<<<<< HEAD
+  color: #888;
+=======
+<<<<<<< HEAD
+  color: #888;
+=======
+  color: #888888;
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   font-weight: 300;
   position: relative;
   height: 56rpx;
@@ -52,6 +102,13 @@ page {
   height: 13rpx;
   width: 13rpx;
   border-radius: 50%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   background-color: #c8c9ca;
 }
 
@@ -236,3 +293,14 @@ input { outline: none;border: none;list-style: none }
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+  background-color: #C8C9CA;
+
+}
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d

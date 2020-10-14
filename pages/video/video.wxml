@@ -1,5 +1,29 @@
 <!--pages/video/video.wxml-->
 <view class="videolayout">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+</view>
+<view class="videoinfo">
+
+</view>
+
+<view class="sidebar">
+
+</view>
+<view class="comments">
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   <video id="video" src="{{list.video}}" controls='{{false}}' autoplay='true'></video>
 </view>
 <view class="videoinfo">
@@ -24,6 +48,31 @@
   </block>
 </view>
 <view class="comments" wx:if='{{comments}}'>
+<<<<<<< HEAD
 <import  src='/pages/template/comments/comments' />
 <template is="comments" data="{{top:none,list:3}}"></template>
 </view> 
+=======
+<<<<<<< HEAD
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view> 
+=======
+<<<<<<< HEAD
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view> 
+=======
+<<<<<<< HEAD
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view> 
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d

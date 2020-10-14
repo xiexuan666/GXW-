@@ -70,6 +70,7 @@ page {
   width: 90%;
   margin: 0 auto;
   border-radius: 50rpx;
+  font-size: 28rpx;
 }
 
 .me-list-ul {
@@ -123,6 +124,7 @@ page {
   border-radius: 25rpx;
 
 }
+<<<<<<< HEAD
 .placeholderStyle {
   color: #ccc;
   padding-left: 10rpx;
@@ -132,8 +134,11 @@ page {
   border-radius: 15rpx;
   padding-left: 50rpx;
 }
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 
+/* 我的列表 end*/
 
 /* 我的列表 end*/
 

@@ -120,11 +120,19 @@
 				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
 					<view class="erweima">
 						<button class="poster" bindtap="formSubmit">
+<<<<<<< HEAD
 							<image src="/images/shouye/haib.png"></image>
 							<text class="haib">生成海报</text>
 						</button>
 						<button class="poster m_l" open-type="share">
 							<image src="/images/shouye/lianjie.png"></image>
+=======
+							<image src="/../images/shouye/haib.png"></image>
+							<text class="haib">生成海报</text>
+						</button>
+						<button class="poster m_l" open-type="share">
+							<image src="/../images/shouye/lianjie.png"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 							<text class="haib">分享链接</text>
 						</button>
 					</view>

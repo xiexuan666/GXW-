@@ -73,8 +73,9 @@
 		</view>
 	</block>
 </view>
-
-
+<view class="listpic">
+<image src="/images/pic/xguo.jpg" mode="widthFix"></image>
+</view>
 
 
 <!-- 底部的收藏 -->

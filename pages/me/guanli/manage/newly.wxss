@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 .price {
   width: 90%;
   margin: 0 auto;
@@ -9,12 +19,19 @@
 }
 
 .goods-title {
+<<<<<<< HEAD
   width: 95%;
   margin: 0 auto;
   display: flex;
   background-color: #efefef;
   padding: 20rpx;
   border-radius: 30rpx;
+=======
+  display: flex;
+  background-color: #efefef;
+  padding: 20rpx;
+  border-radius: 15rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .huah {
@@ -64,7 +81,10 @@
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 25rpx;
+<<<<<<< HEAD
   margin-top: 50rpx;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 }
 
@@ -79,7 +99,12 @@
 }
 
 .text {
+<<<<<<< HEAD
   padding-right: 110rpx;
+=======
+  /* padding: 0 20rpx; */
+  padding-right: 65rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .df {
@@ -92,7 +117,11 @@
 .df_1 {
   border: 1px solid #ccc;
   border-radius: 15rpx;
+<<<<<<< HEAD
   width: 330rpx;
+=======
+  width: 370rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   padding-left: 50rpx;
 }
 
@@ -101,7 +130,11 @@
 
 .placeholderStyle {
   color: #ccc;
+<<<<<<< HEAD
   padding-left: 200rpx;
+=======
+  padding-left: 250rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 
@@ -116,6 +149,7 @@
   height: 60rpx;
   line-height: 65rpx;
   border-radius: 30rpx;
+<<<<<<< HEAD
 }
 
 
@@ -165,4 +199,30 @@
 }
 .flex_item {
   margin-top: -165rpx;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+
+.collect {
+  font-size: 33rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 日期 */
+.section {
+  margin-top: 50rpx;
+  text-align: center;
+  background: #f7f7f7;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }

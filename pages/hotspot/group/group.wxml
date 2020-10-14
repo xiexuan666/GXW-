@@ -25,12 +25,17 @@
 					<image src="/images/tubiao/tx.png"></image>
 					<view class="tuan">团长</view>
 				</view>
+<<<<<<< HEAD
 				<view class="xuxian"></view>
 				<view class="xuxian"></view>
 				<view class="xuxian"></view>
 				<view class="xuxian"></view>
 			</view>
 			<view class="aniu" bindtap="share">
+=======
+			</view>
+			<view class="aniu">
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 				<button class="btn_s">一键拼单</button>
 			</view>
 			<view class="foot">
@@ -42,6 +47,7 @@
 					</view>
 					<view class="kait_r">
 						<image src="/images/tubiao/95.png" class="haoy"></image>
+<<<<<<< HEAD
 						<view class="text">邀请好友</view>
 					</view>
 					<view class="kait_r">
@@ -51,6 +57,17 @@
 					<view class="kait_r">
 						<image src="/images/tubiao/97.png" class="haoy"></image>
 						<view class="text">商家发货</view>
+=======
+						<view  class="text">邀请好友</view>
+					</view>
+					<view class="kait_r">
+						<image src="/images/tubiao/96.png" class="haoy"></image>
+						<view  class="text">拼团成功</view>
+					</view>
+					<view class="kait_r">
+						<image src="/images/tubiao/97.png" class="haoy"></image>
+						<view  class="text">商家发货</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 					</view>
 				</view>
 			</view>

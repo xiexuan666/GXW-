@@ -3,7 +3,27 @@
 <view class="titleimg">
 	<view class="header">
 		<!--  index图片 -->
+<<<<<<< HEAD
 		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+		<image mode="widthFix" bindtap="dakerw" data-img="{{pagesubscript.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 	</view>
 	<!-- 列表框 -->
 	<view class="wenzi">
@@ -56,7 +76,15 @@
 		</view>
 		<view class="ket">
 			<view class="cizhuan">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/danpian.png"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/danpian.png"></image>
+=======
+				<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 				<view class="lists-item">客厅-V157J939P</view>
 			</view>
 		</view>
@@ -113,11 +141,21 @@
 
 <!-- 底部评论 -->
 <view class="appraise-btn">
+<<<<<<< HEAD
 	<view class="appraise-btn-left">
 		<image src="/images/tubiao/pl.png"></image>
 		<input placeholder="我要评论" bindinput="pingl" value="{{inputVal}}"></input>
 		<button class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</button>
 	</view>
+=======
+	<form catchsubmit="tijiaoform" catchreset="formReset">
+		<view class="appraise-btn-left">
+			<image src="/images/tubiao/pl.png"></image>
+			<input placeholder="我要评论" bindinput="pingl" value="{{inputVal}}"></input>
+			<button class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</button>
+		</view>
+	</form>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 </view>
 
 
@@ -126,6 +164,7 @@
 	<view class="title">
 		<view class="list-item">
 			<view class="list-right">
+<<<<<<< HEAD
 				<image src="/images/tubiao/1-10.png" mode="widthFix"></image>
 				<view class="character">{{pagesubscript.preview}}</view>
 			</view>
@@ -134,12 +173,43 @@
 			<view class="list-right" catchtap="collection" data-ind="{{index}}">
 				<image wx:if='{{pagesubscript.collection}}' src="/images/tubiao/222.png" lazy-load="{{true}}"></image>
 				<image wx:else src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+=======
+				<image src="/images/tubiao/chak.png" mode="widthFix"></image>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+				<view class="character">5220</view>
+=======
+				<view class="character">{{pagesubscript.preview}}</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+			</view>
+		</view>
+		<view class="list-item" catchtap="star" data-ind="{{index}}">
+
+			<view class="list-right">
+				<image src="/images/tubiao/shouc.png" mode="widthFix"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 				<view class="character">收藏</view>
 			</view>
 		</view>
 		<view class="list-item" catchtap="handleToTop">
 			<view class="list-right">
+<<<<<<< HEAD
 				<image src="/images/tubiao/1-11.png" mode="widthFix"></image>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/fengx.png" mode="widthFix"></image>
+=======
+				<image src="/images/tubiao/fangx.png" mode="widthFix"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 				<view class="character">分享</view>
 			</view>
 		</view>
@@ -187,7 +257,11 @@
 			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 		</view>
 		<view class="tab">
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 			<view class="attrs2">
 				村上 家居设计师
 			</view>
@@ -196,8 +270,18 @@
 			</view>
 		</view>
 		<view class="contacts">
+<<<<<<< HEAD
 			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" bindtap="calling" catchtap="calling"></image>
 			<image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png"></image>
+=======
+<<<<<<< HEAD
+			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" ></image>
+			<image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png"></image>
+=======
+			<image src="/images/tubiao/boda.png" ></image>
+			<image src="/images/tubiao/zixu.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 		</view>
 	</view>
 </view>

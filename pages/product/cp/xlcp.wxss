@@ -172,18 +172,29 @@
 }
 
 .attrs {
-  font-size: 18rpx;
+  font-size: 20rpx;
   font-weight: 300;
   margin-top: 30rpx;
+<<<<<<< HEAD
+=======
+}
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .attrs1 {
-  font-size: 26rpx;
+  font-size: 30rpx;
   font-weight: 300;
 }
 
 .attrs2 {
   padding: 10rpx 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   font-size: 23rpx;
   font-weight: 200;
   padding-top: 14rpx;
@@ -196,6 +207,45 @@
 .collect1 image {
   width: 130rpx;
   height: 130rpx;
+<<<<<<< HEAD
+  border-radius: 50rpx;
+}
+
+.contacts {
+  width: 30%;
+  margin-top: 20rpx;
+
+}
+.contacts  image {
+  width: 175rpx;
+  height: 45rpx;
+}
+
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+
+
+
+/* 底部的收藏 */
+.title {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  background: #bd8f60;
+  /* margin-top: 203rpx; */
+  height: 100rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+=======
   border-radius: 50rpx;
 }
 
@@ -254,3 +304,52 @@
   color: #fff;
   font-weight: 300;
 }
+=======
+  font-size: 27rpx;
+  font-weight: 300;
+}
+
+.collect image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.contact {
+  width: 37%;
+}
+
+.btn {
+  color: #fff;
+  font-size: 19rpx;
+  font-weight: 300;
+  background-color: #d0111b;
+  margin: 20rpx 0;
+  align-items: center;
+  text-align: center;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+}
+
+
+.list-right .image {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 0 30rpx;
+}
+<<<<<<< HEAD
+
+.list-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+.character {
+  padding: 0 10rpx;
+  color: #fff;
+  font-weight: 300;
+}
+=======
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d

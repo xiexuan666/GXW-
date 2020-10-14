@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 <!-- 热点视频和装修 -->
 <view class="product-cpanli">
 	<view class="cpanli-nr">
@@ -52,4 +62,195 @@
 <view class="bott" wx:if='{{cactiv==1}}'>
 	<button class="add" bindtap="category">新增</button>
 	<button class="dele">删除</button>
+<<<<<<< HEAD
 </view> 
+=======
+<<<<<<< HEAD
+</view> 
+=======
+<<<<<<< HEAD
+</view> 
+=======
+</view> 
+=======
+<!--pages/me/guanli/manage/zixu.wxml-->
+<view class="product-cpanli">
+  <view class="cpanli-nr">
+    <view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+      装修攻略
+      <view class="cpanli-nr-lid"></view>
+    </view>
+    <view class="cpanli-nr-li">|</view>
+    <view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+      热点视频
+      <view class="cpanli-nr-lid"></view>
+    </view>
+  </view>
+</view>
+
+
+<view class="view-save-css" wx:if='{{cactiv==2}}'>
+
+  <form catchsubmit="tijiaoform" catchreset="formReset">
+
+    <view class="flex-wrp">
+      <view class="flex-item bc_green">视频分类</view>
+      <view class="flex-item bc_red">
+        <input class="flex-item-input" type="text" name="shipingfenlei" value="{{latitude}}" placeholder="选择地址即可获得经纬度">
+
+        </input>
+      </view>
+    </view>
+
+    <view class="flex-wrp">
+      <view class="flex-item bc_green">标题</view>
+      <view class="flex-item bc_red">
+        <input class="flex-item-input" type="text" name="biaoti" value="{{latitude}}" placeholder="选择地址即可获得经纬度">
+        </input>
+      </view>
+    </view>
+
+    <view class="flex-wrp">
+      <view class="flex-item bc_green">内容</view>
+      <view class="flex-item bc_red">
+
+      </view>
+    </view>
+
+
+
+    <view class="flex-itemm">
+      <textarea class="flex-itemm-text" type="text" value="{{neirong}}" name="neirong">
+
+      </textarea>
+    </view>
+
+    <view class="shanctup">
+      <view class="shanctup-ul">
+        <view class="shanctup-li">
+          <view class="shanctup-li-p1">视频封面 (680*400,限1张)</view>
+          <view class="shanctup-li-p2">长按删除图片,点击放大图片</view>
+          <view class="shanctup-li-img">
+            <block wx:for="{{tupian}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+              <view class="shanctup-li-imgli shanctup-li-imgli" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shanc" data-img="{{item}}">
+                <image mode="widthFix" src="{{item}}"></image>
+              </view>
+            </block>
+          </view>
+          <view class="shanctupbutton" bindtap="shangctup">
+            <image mode="widthFix" src="/images/tubiao/zaop.png"></image>
+            <view class="shanctupbutton-p">添加图片</view>
+          </view>
+        </view>
+
+        <view class="shanctup-li">
+          <view class="shanctup-li-p1">上传视频</view>
+          <view class="shanctup-li-p2">长按删除视频</view>
+          <view class="shanctup-li-img">
+            <block wx:for="{{tupian}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+              <view class="shanctup-li-imgli shanctup-li-imgli" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shanc" data-img="{{item}}">
+                <image mode="widthFix" src="{{item}}"></image>
+              </view>
+            </block>
+          </view>
+          <view class="shanctupbutton" bindtap="shangctup">
+            <image mode="widthFix" src="/images/tubiao/zaop.png"></image>
+            <view class="shanctupbutton-p">添加视频</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="anniu">
+      <button formType="submit">保存</button>
+    </view>
+
+  </form>
+
+</view>
+
+<!-- 装修攻略 -->
+<view class="view-save-html" wx:if='{{cactiv==1}}'>
+
+
+  <form catchsubmit="tijiaoform" catchreset="formReset">
+
+    <view class="flex-wrp">
+      <view class="flex-item bc_green">视频分类</view>
+      <view class="flex-item bc_red">
+        <input class="flex-item-input" type="text" name="shipingfenlei" value="{{latitude}}" placeholder="选择地址即可获得经纬度">
+
+        </input>
+      </view>
+    </view>
+
+    <view class="flex-wrp">
+      <view class="flex-item bc_green">标题</view>
+      <view class="flex-item bc_red">
+        <input class="flex-item-input" type="text" name="biaoti" value="{{latitude}}" placeholder="选择地址即可获得经纬度">
+        </input>
+      </view>
+    </view>
+
+    <view class="flex-wrp">
+      <view class="flex-item bc_green">内容</view>
+      <view class="flex-item bc_red">
+
+      </view>
+    </view>
+
+
+
+    <view class="flex-itemm">
+      <textarea class="flex-itemm-text" type="text" value="{{neirong}}" name="neirong">
+
+      </textarea>
+    </view>
+
+    <!-- <view class="shanctup">
+      <view class="shanctup-ul">
+        <view class="shanctup-li">
+          <view class="shanctup-li-p1">视频封面 (680*400,限1张)</view>
+          <view class="shanctup-li-p2">长按删除图片,点击放大图片</view>
+          <view class="shanctup-li-img">
+            <block wx:for="{{tupian}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+              <view class="shanctup-li-imgli shanctup-li-imgli" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shanc" data-img="{{item}}">
+                <image mode="widthFix" src="{{item}}"></image>
+              </view>
+            </block>
+          </view>
+          <view class="shanctupbutton" bindtap="shangctup">
+            <image mode="widthFix" src="/images/tubiao/zaop.png"></image>
+            <view class="shanctupbutton-p">添加图片</view>
+          </view>
+        </view>
+
+        <view class="shanctup-li">
+          <view class="shanctup-li-p1">上传视频</view>
+          <view class="shanctup-li-p2">长按删除视频</view>
+          <view class="shanctup-li-img">
+            <block wx:for="{{tupian}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+              <view class="shanctup-li-imgli shanctup-li-imgli" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shanc" data-img="{{item}}">
+                <image mode="widthFix" src="{{item}}"></image>
+              </view>
+            </block>
+          </view>
+          <view class="shanctupbutton" bindtap="shangctup">
+            <image mode="widthFix" src="/images/tubiao/zaop.png"></image>
+            <view class="shanctupbutton-p">添加视频</view>
+          </view>
+      </view>
+    </view>
+        </view> -->
+
+    <view class="anniu">
+      <button formType="submit">保存</button>
+    </view>
+
+  </form>
+
+</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d

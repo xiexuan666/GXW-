@@ -10,6 +10,7 @@ Page({
   addCommon: function () {
     console.log('对攻略点赞');
   },
+<<<<<<< HEAD
   calling: function () {
     console.log('撒大声地')
     wx.makePhoneCall({
@@ -79,4 +80,8 @@ Page({
   onShareAppMessage: function () {
 
   }
+=======
+
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 })

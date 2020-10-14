@@ -7,11 +7,15 @@ Page({
   data: {
 
   },
+<<<<<<< HEAD
   invitation:function(){
     wx.navigateTo({
       url: '/pages/me/activity/free1/free1',
     })
   },
+=======
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   /**
    * 生命周期函数--监听页面加载
    */

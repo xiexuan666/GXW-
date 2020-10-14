@@ -76,7 +76,28 @@ page {
   flex-direction: row; */
   width: 90%;
   height: 200rpx;
+<<<<<<< HEAD
   margin: 10rpx auto;
+=======
+<<<<<<< HEAD
+  margin: 10rpx auto;
+=======
+<<<<<<< HEAD
+  margin: 10rpx auto;
+=======
+<<<<<<< HEAD
+  margin: 10rpx auto;
+=======
+<<<<<<< HEAD
+  margin: 10rpx auto;
+=======
+  margin-bottom: 20rpx;
+  margin: 0 auto;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 }
 
@@ -143,6 +164,23 @@ page {
   left: 224rpx;
   top: 130rpx;
   font-size: 23rpx;
+<<<<<<< HEAD
+=======
+}
+
+.coupon-left .t6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #C99361 solid 1rpx;
+}
+.coupon-left .t7 {
+  background-color: violet;
+  width: 140rpx;
+  height: 140rpx;
+  left: 450rpx;
+  top: 30rpx;  
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .coupon-left .t6 {
@@ -325,7 +363,15 @@ page {
 }
 
 .dianz {
+<<<<<<< HEAD
   width: 70%;
+=======
+<<<<<<< HEAD
+  width: 75%;
+=======
+  width: 70%;
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   margin: 0 auto;
   display: flex;
   text-align: center;
@@ -335,11 +381,39 @@ page {
 }
 
 .dianzo {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
   margin-left: 100rpx;
   font-size: 24rpx;
   padding: 0 10rpx;
   padding-bottom: 20rpx;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+  margin: 0 100rpx;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 }
 
 .title image {

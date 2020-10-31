@@ -27,6 +27,7 @@ Page({
     app.Jump('me/shangcanli/xingzeng')
   },
 
+<<<<<<< HEAD
   //请求案例列表
   rqcase:function(){
     var tha=this
@@ -57,6 +58,15 @@ Page({
     this.setData({gerxinx,sjzt})
     this.rqcase()
   },
+=======
+  // 跳转到新增页面
+  category: function () {
+    wx.navigateTo({
+      url: '/pages/me/guanli/category/category',
+    })
+  },
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 生命周期函数--监听页面加载
    */

@@ -127,7 +127,14 @@ page {
   top: 50rpx;
   width: 200rpx;
   font-size: 23rpx;
+<<<<<<< HEAD
   letter-spacing: 3rpx;
+=======
+<<<<<<< HEAD
+  letter-spacing: 3rpx;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .coupon-left .t4 {
@@ -141,6 +148,7 @@ page {
   left: 224rpx;
   top: 130rpx;
   font-size: 23rpx;
+<<<<<<< HEAD
 }
 
 .coupon-left .t6 {
@@ -193,6 +201,9 @@ page {
   top: 50rpx;
   font-size: 80rpx;
   font-weight: bold  
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 .coupon-left .d3 {
   left: 220rpx;
@@ -200,6 +211,39 @@ page {
   width: 200rpx;
   font-size: 23rpx;
 
+<<<<<<< HEAD
+=======
+.coupon-left .t6 {
+  top:25rpx;
+  left: 430rpx;
+  height:135rpx;  
+  border-right: #C99361 solid 1px;
+}
+.coupon-left .t7 {
+  width: 140rpx;
+  height: 140rpx;
+  left: 450rpx;
+  top:18rpx;  
+  position: relative;
+}
+.coupon-left .t7 image{
+ height: 100%;
+ width: 100%;
+}
+.hexiao{
+  position: absolute;
+  height:35rpx;
+  width:230rpx;
+  right: 0;
+  bottom: 0;
+  color: rgba(231, 231, 231);
+  font-size:20rpx;
+  line-height: 35rpx;
+  padding-left:40rpx;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  background-color:#C99361;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .coupon-left .d4 {
@@ -207,6 +251,114 @@ page {
   top: 93rpx;
   font-size: 23rpx;
 
+<<<<<<< HEAD
+
+}
+.coupon-left .d5 {
+  left: 224rpx;
+  top: 130rpx;
+  font-size: 23rpx;
+}
+.coupon-left .d6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #9F9FA0 solid 1rpx;
+}
+.coupon-left .d7 {
+  top: 60rpx;
+  left: 430rpx;
+  font-size: 50rpx;
+  width: 40%;
+  color: #9F9FA0;
+}
+.coupon-rig .t {
+  text-align: center;
+  color:#9F9FA0;
+=======
+.coupon-left .d{
+  position: absolute;
+  color: white;
+}
+.coupon-left .d1 {
+  width: 15%;
+  font-size: 50rpx;
+  margin-top: 50rpx;
+  left: 10rpx;
+  top: 20rpx;
+}
+.coupon-left .d2 {
+  width: 40%;
+  left: 50rpx;
+  top: 50rpx;
+  font-size: 80rpx;
+  font-weight: bold  
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+}
+.coupon-left .d3 {
+  left: 220rpx;
+  top: 50rpx;
+  width: 200rpx;
+  font-size: 23rpx;
+
+<<<<<<< HEAD
+}
+
+.coupon-left .d4 {
+  left: 280rpx;
+  top: 93rpx;
+  font-size: 23rpx;
+
+=======
+.coupon-left .t6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #C99361 solid 1rpx;
+}
+.coupon-left .t7 {
+  background-color: violet;
+  width: 140rpx;
+  height: 140rpx;
+  left: 450rpx;
+  top: 30rpx;  
+}
+.coupon-left .d{
+  position: absolute;
+  color: white;
+}
+.coupon-left .d1 {
+  width: 15%;
+  font-size: 50rpx;
+  margin-top: 50rpx;
+  left: 10rpx;
+  top: 20rpx;
+}
+.coupon-left .d2 {
+  width: 40%;
+  left: 50rpx;
+  top: 50rpx;
+  font-size: 80rpx;
+  font-weight: bold  
+}
+.coupon-left .d3 {
+  left: 220rpx;
+  top: 50rpx;
+  width: 200rpx;
+  font-size: 23rpx;
+
+<<<<<<< HEAD
+=======
+}
+
+.coupon-left .d4 {
+  left: 280rpx;
+  top: 93rpx;
+  font-size: 23rpx;
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 
 }
 .coupon-left .d5 {
@@ -238,6 +390,7 @@ page {
   padding: 30rpx 0 10rpx 0;
 }
 
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 .note {
   background: #faeab7

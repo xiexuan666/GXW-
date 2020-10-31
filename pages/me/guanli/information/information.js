@@ -2,7 +2,11 @@
 const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
+<<<<<<< HEAD
 const getInformation = app.globalData.getInformation;
+=======
+const getInformation = app.globalData .getInformation;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 Page({
 
   /**
@@ -13,6 +17,7 @@ Page({
     cactiv: 1,
     //产品假数据
     cp: [],
+<<<<<<< HEAD
     product: [],
     strategy: [],
     show: false,//控制下拉列表的显示隐藏，false隐藏、true显示
@@ -21,6 +26,15 @@ Page({
     select: '全部产品',
     selecif: '全部产品',
     modalHidden: true
+=======
+    product:[],
+    strategy:[],
+    show: false,//控制下拉列表的显示隐藏，false隐藏、true显示
+    selectData: ['品尚宝石蓝', '品尚宝鱼肚金', '品尚雪山兰'],//下拉列表的数据
+    index: 0,//选择的下拉列表下标
+    select:'全部产品',
+    selecif:'全部产品'
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
   // 点击下拉显示框
   selectTap() {
@@ -32,16 +46,26 @@ Page({
   optionTap(e) {
     let Index = e.currentTarget.dataset.index;//获取点击的下拉列表的下标
     console.log(Index);
+<<<<<<< HEAD
     if (Index == undefined) {
       this.setData({
         select: '全部产品'
+=======
+    if(Index == undefined){
+      this.setData({
+        select:'全部产品'
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
       })
     }
     var data = this.data.selectData;
     this.setData({
       index: Index,
       show: !this.data.show,
+<<<<<<< HEAD
       select: data[Index]
+=======
+      select : data[Index]
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     });
   },
   //产品详情导航选择
@@ -53,6 +77,7 @@ Page({
     if (ind == 1) {
       cpxqzt = 1
       // 请求数据、需要做判断避免重复请求
+<<<<<<< HEAD
       getInformation.getProduct(1).then(res => {
       })
       wx.setNavigationBarTitle({ title: '产品' })
@@ -72,6 +97,27 @@ Page({
       getInformation.getProduct(3).then(res => {
         that.setData({
           strategy: res
+=======
+      getInformation.getProduct(1).then(res=>{
+      })
+      wx.setNavigationBarTitle({ title: '产品' })
+    }else if(ind == 2){
+      cpxqzt = 2
+      // 请求数据、需要做判断避免重复请求
+      getInformation.getProduct(2).then(res=>{
+        console.log(res)
+        that.setData({
+          product:res
+        })
+      })
+      wx.setNavigationBarTitle({ title: '案例' })
+    }else if(ind == 3){
+      cpxqzt = 3
+      // 请求数据、需要做判断避免重复请求
+      getInformation.getProduct(3).then(res=>{
+        that.setData({
+          strategy:res
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
         })
       })
       wx.setNavigationBarTitle({ title: '攻略' })
@@ -189,14 +235,24 @@ Page({
     // })
   },
   // 跳转案例详情
+<<<<<<< HEAD
   anlitz: function (e) {
     var that = this;
     var int = app.hdindex(e, 'ind');
+=======
+  anlitz:function(e){
+    var that  = this;
+    var int = app.hdindex(e,'ind');
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     // 设置自己的state为案例
     var state = 2;
     // 获取对应的案例id
     console.log(that)
+<<<<<<< HEAD
     console.log('我点击了案例', int);
+=======
+    console.log('我点击了案例',int);
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
 
   //收藏产品
@@ -288,16 +344,24 @@ Page({
   onLoad: function (options) {
     var that = this;
     // 请求产品
+<<<<<<< HEAD
     getInformation.getProduct().then(res => {
       var arry = []
       console.log(res);
       for (let i = 0; i < res.length; i++) {
+=======
+    getInformation.getProduct().then(res=>{
+      var arry = []
+      console.log(res);
+      for(let i=0;i<res.length;i++){
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
         arry.push(res[i].tname);
       }
       let select = Array.from(new Set(arry));
       select.unshift('全部产品');
       console.log(select);
       that.setData({
+<<<<<<< HEAD
         selectData: select,
         cp: res
       })
@@ -331,6 +395,13 @@ Page({
     })
   },
 
+=======
+        selectData:select,
+        cp:res
+      })
+    })
+  },
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -8,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     //开始日期
     date: '',
     // 结束日期
@@ -22,6 +23,24 @@ Page({
     commission: '',
     //图像数组
     tupian: [],
+=======
+    //选择日期
+    date: '',
+
+  },
+
+  // 预约日期
+  datePickerBindchange: function (e) {
+    this.setData({
+      dateValue: e.detail.value,
+
+    })
+  },
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
 
   // 预约日期
@@ -94,7 +113,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
   },
 

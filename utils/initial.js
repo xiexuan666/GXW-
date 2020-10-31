@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // 生成海报// 
 function sethaibao(data){
@@ -302,3 +303,16 @@ module.exports={
   sethaibao:sethaibao,
   sceneInfo:sceneInfo
 }
+=======
+/**
+ * 登录小程序时需要的参数值
+ * 1、用户经纬度（用以获取最近商家）/ 需要用户位置授权
+ * 2、版本状态 (用以控制入驻页面的显示，同时是页面数据请求的重要参数)
+*/
+
+/**
+ * 获取用户经纬度
+*/
+
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

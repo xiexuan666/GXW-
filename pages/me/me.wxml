@@ -7,7 +7,14 @@
 
 <view class="jinx-t">
 	<view class="jinx-tnr">
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		<view class="jinx_bgpic">
 			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
@@ -20,7 +27,27 @@
 			</view>
 			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
 		</view>
+<<<<<<< HEAD
 		<view class="jinx-sao" bindtap="sweep">
+=======
+<<<<<<< HEAD
+		<view class="jinx-sao" bindtap="sweep">
+=======
+<<<<<<< HEAD
+		<view class="jinx-sao" bindtap="sweep">
+=======
+<<<<<<< HEAD
+		<view class="jinx-sao" bindtap="sweep">
+=======
+<<<<<<< HEAD
+		<view class="jinx-sao" bindtap="openCamera"  >
+=======
+		<view class="jinx-sao" bindtap="openCamera">
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<image src="/images/tubiao/61.png"></image>
 			<view class="saoma">扫一扫</view>
 		</view>
@@ -32,8 +59,13 @@
 
 <view class="me-list">
 	<view class="me-list-ul">
+<<<<<<< HEAD
 		<view class="gernqb" style="display:none">
 			<!-- <image src="/images/tubiao/50.png"></image> -->
+=======
+		<view class="gernqb">
+			<image src="https://cdn.juesedao.cn/gxw/beijing2.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<view class="vcenter">个人钱包</view>
 			<view class="balance">
 				<view class="sum">我的余额</view>
@@ -45,7 +77,23 @@
 					</view>
 				</view>
 				<view class="me">
+<<<<<<< HEAD
 					<view class="top">提现<image src="/images/tubiao/59.png"></image>
+=======
+<<<<<<< HEAD
+					<view class="top">提现<image src="/images/tubiao/59.png"></image>
+=======
+<<<<<<< HEAD
+					<view class="top">提现<image src="/images/tubiao/59.png"></image>
+=======
+<<<<<<< HEAD
+					<view class="top">提现<image src="/images/tubiao/59.png"></image>
+=======
+					<view class="top">体现<image src="/images/tubiao/59.png"></image>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					</view>
 				</view>
 			</view>
@@ -105,24 +153,63 @@
 			</view>
 		</view> -->
 
+<<<<<<< HEAD
 		<view class="me-list-li" data-ind="7"><button class="kefu" open-type="contact">联系客服</button>
 			<view class="me-list-lil">联系客服 <image src="/images/tubiao/46.png"></image>
+=======
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="merchant" data-ind="0"  wx:if='{{sjzt.status}}'>
+			<view class="me-list-lil">商家入驻 <image src="/images/tubiao/48.png"></image>
+=======
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="merchant" data-ind="0"  wx:if='{{sjzt.status}}'>
+			<view class="me-list-lil">商家入驻 <image src="/images/tubiao/48.png"></image>
+=======
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="merchant" data-ind="0"  wx:if='{{sjzt.status}}'>
+			<view class="me-list-lil">商家入驻 <image src="/images/tubiao/48.png"></image>
+=======
+		<view class="me-list-li" bindtap="merchant" data-ind="0" wx:if='{{ruzhu}}'>
+			<view class="me-list-lil">商家入驻<image src="/images/tubiao/48.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
+<<<<<<< HEAD
 		<view class="me-list-li" bindtap="merchant" data-ind="8" wx:if='{{status}}'>
 			<view class="me-list-lil">商家入驻 <image src="/images/tubiao/48.png"></image>
+=======
+		<view class="me-list-li" bindtap="handlezhuc" wx:if='{{ruzhu}}'>
+			<view class="me-list-lil">注册<image src="/images/tubiao/49.png"></image>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
+<<<<<<< HEAD
 		<!-- 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+<!-- 
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		<view class="me-list-li" bindtap="manage">
+=======
+		<view class="me-list-li" >
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 			<view class="me-list-lil">我的评论<image src="/images/tubiao/44.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -130,16 +217,38 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="manage">
+		<view class="me-list-li" >
 			<view class="me-list-lil">我的点赞<image src="/images/tubiao/42.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view> -->
+<<<<<<< HEAD
 
 <!-- 
 	 <view class="me-list-li" bindtap="manage" wx:if='{{ment}}' style="display:none">
+=======
+
+
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="manage" wx:if='{{sjzt.status && ment}}'>
+=======
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="manage" wx:if='{{sjzt.status && ment}}'>
+=======
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="manage" wx:if='{{sjzt.status && ment}}'>
+=======
+<<<<<<< HEAD
+		<view class="me-list-li" >
+=======
+		<view class="me-list-li" bindtap="manage" wx:if='{{ruzhu}}'>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<view class="me-list-lil">管理入口<image src="/images/tubiao/41.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -150,7 +259,24 @@
 
 
 
+<<<<<<< HEAD
 		<view class="me-list-li" bindtap="manage" wx:if='{{ment}}'  data-ind="9"  >
+=======
+
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="manage" wx:if='{{sjzt.status && ment}}'>
+=======
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="manage" wx:if='{{sjzt.status && ment}}'>
+=======
+<<<<<<< HEAD
+		<view class="me-list-li" bindtap="manage" wx:if='{{sjzt.status && ment}}'>
+=======
+		<view class="me-list-li" bindtap="manage" wx:if='{{ruzhu}}'>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<view class="me-list-lil">商家管理<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -163,6 +289,10 @@
 
 
 		<!-- foot -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		<import src='/pages/template/comments/comments' />
 		<template is="ceramic" data="{{list:'imasrc////',num:3}}">
 		</template>

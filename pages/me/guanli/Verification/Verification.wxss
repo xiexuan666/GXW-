@@ -78,6 +78,7 @@
   width: 60%;
   height: 70rpx;
   font-size: 30rpx;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,14 +86,26 @@
 .dizhimax{
   display: flex;
   
+=======
+}
+.dizhimax{
+  display: flex;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 .dizhi{
   flex:1;
   width: 80%;
+<<<<<<< HEAD
   display: flex;
 }
 .address{
   display: flex;
+=======
+  line-height: 2;
+  padding-top: 9rpx;
+  /* line-height:60rpx; */
+  /* font-size: 26rpx; */
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 .a{
   display: flex;
@@ -102,11 +115,16 @@
   width: 30%;
   word-wrap:break-word; 
   word-break:break-all;
+<<<<<<< HEAD
   display: flex;
   align-items: center;
 }
 .youxiao{
   display: flex;
   align-items: center;
+=======
+  line-height: 2;
+  padding-top: 9rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 button::after { border: none }

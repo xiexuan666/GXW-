@@ -26,6 +26,7 @@ Page({
     that.setData({
       shanjia:list
     })
+<<<<<<< HEAD
     this.open();
   },
   open:function(){
@@ -44,6 +45,52 @@ Page({
       for(let i=0;i<res.data.length;i++){
         let card = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].create_time);
         let end = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].end_time);
+=======
+<<<<<<< HEAD
+    this.open();
+=======
+    // 请求该店铺优惠券
+    let url = baseUrl + 'coupon/queryActivityAllCoupon';
+    let data = {
+      userId:32,
+      brandId:app.globalData.brandid,
+      state:2,
+      storeId:1
+    }
+    http.promisServer(url,data).then(res=>{
+      console.log(res);
+      for(let i=0;i<res.data.length;i++){
+        console.log(i)
+        let card = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].create_time);
+        let end = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].end_time);
+        console.log(card[0].slice(5));
+        res.data[i].create_time = card[0].replace('-','.');
+        res.data[i].end_time = end[0].slice(5).replace('-','.');
+      }
+      that.setData({
+        AllCoupon:res.data
+      })
+    })
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+  },
+  open:function(){
+    var that = this;
+    // 请求该店铺优惠券
+    let url = baseUrl + 'coupon/queryActivityAllCoupon';
+    let data = {
+      userId:32,
+      brandId:app.globalData.brandid,
+      state:2,
+      storeId:1
+    }
+    http.promisServer(url,data).then(res=>{
+      console.log(res);
+      for(let i=0;i<res.data.length;i++){
+        console.log(i)
+        let card = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].create_time);
+        let end = /\d{4}-\d{1,2}-\d{1,2}/g.exec(res.data[i].end_time);
+        console.log(card[0].slice(5));
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
         res.data[i].create_time = card[0].replace('-','.').replace('-','.');
         res.data[i].end_time = end[0].slice(5).replace('-','.');
       }
@@ -60,6 +107,7 @@ Page({
   containe:function(e){
     var that = this;
     let index = app.hdindex(e,'index');
+<<<<<<< HEAD
     let url = baseUrl + 'coupon/getCoupons';
     let data = {
       userId:wx.getStorageSync('gerxinx').id,
@@ -67,6 +115,15 @@ Page({
       status:1,
       couponId:this.data.AllCoupon[index].c_id,
       storeId:this.data.AllCoupon[index].store_id,
+=======
+    console.log(index);
+    let url = baseUrl + 'coupon/getCoupons';
+    let data = {
+      userId:32,
+      brandId:app.globalData.brandid,
+      status:1,
+      couponId:this.data.AllCoupon[index].c_id
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     }
     console.log(this.data.AllCoupon);
     console.log(data);

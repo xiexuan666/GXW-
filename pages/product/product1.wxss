@@ -249,7 +249,11 @@ uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
 
 .contact {
   width: 30%;
+<<<<<<< HEAD
   margin-top: 55rpx;
+=======
+  margin-top: 20rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 }
 .contact  image {

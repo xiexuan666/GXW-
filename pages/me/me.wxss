@@ -60,9 +60,43 @@ page {
 }
 
 .jinx-sao {
+<<<<<<< HEAD
   position: absolute;
   right:70rpx;
   top:75rpx;
+=======
+<<<<<<< HEAD
+  position: absolute;
+  right:70rpx;
+  top:75rpx;
+=======
+<<<<<<< HEAD
+  position: absolute;
+  right:70rpx;
+  top:75rpx;
+=======
+<<<<<<< HEAD
+  position: absolute;
+  right:70rpx;
+  top:75rpx;
+=======
+  float: right;
+  padding-right: 80rpx;
+  padding-top: 135rpx;
+  text-align: center;
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+  position: absolute;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .saoma {
@@ -162,6 +196,29 @@ page {
   float: left;
   position: relative;
   padding: 25rpx 127rpx;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+}
+.top  image {
+  float: right;
+  position: absolute;
+  top: 25rpx;
+  left: 65rpx;
+  width: 45rpx;
+  height: 45rpx;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 .top  image {
   float: right;
@@ -173,6 +230,14 @@ page {
 }
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 .sum1 {
   font-size: 40rpx;
   font-weight: 700;

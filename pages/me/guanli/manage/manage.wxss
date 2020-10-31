@@ -151,8 +151,12 @@ button {
   flex: 1.5;
 }
 
+<<<<<<< HEAD
 .tup {
   flex: 1.5;
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .tup image {
@@ -164,11 +168,19 @@ button {
 .charge {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   margin: 20rpx 0;
 }
 
 .topnav {
   font-size: 20rpx;
+=======
+<<<<<<< HEAD
+  margin: 20rpx 0;
+=======
+  margin: 20rpx  0;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 
@@ -188,7 +200,11 @@ button {
 .complete {
   width: 100%;
   margin: 0 auto;
+<<<<<<< HEAD
   background-color: #F7F7F7;
+=======
+  background-color: #f7f8f8;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .complete-r {
@@ -207,6 +223,7 @@ button {
 .all {
   margin-left: 425rpx;
   font-size: 26rpx;
+<<<<<<< HEAD
   color: #BD8F60;
 }
 
@@ -221,6 +238,23 @@ button {
 }
 
 
+=======
+  color: #f7ab08;
+}
+
+
+.release {
+  margin: 20rpx 0;
+}
+
+.release image {
+  width: 100%;
+}
+
+.scroll {
+  margin-left: 20rpx;
+}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 .lingq {
   width: 100%;
@@ -241,6 +275,7 @@ button {
 
 .ling-q {
   padding: 20rpx;
+<<<<<<< HEAD
   margin-right: 515rpx;
 }
 
@@ -309,6 +344,49 @@ button {
 .ling-q {
   padding: 20rpx;
   margin-right: 515rpx;
+=======
+<<<<<<< HEAD
+  margin-right: 515rpx;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+}
+
+
+/* 绑定获客 */
+.binding {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 70rpx;
+}
+
+.binding_rr {
+  margin-top: 50rpx;
+}
+
+.customer {
+  padding: 30rpx 0;
+  font-size: 26rpx;
+  font-weight: 600;
+  padding-left: 50rpx;
+}
+
+.customers {
+  padding: 10rpx 0;
+  font-size: 26rpx;
+  font-weight: 600;
+  padding-left: 50rpx;
+}
+
+.me-list-li {
+  width: 95%;
+  height: 90rpx;
+  padding-bottom: 38rpx;
+  margin-top: 10rpx;
+  background-color: #fafafa;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .me-list-l_i {
@@ -335,7 +413,14 @@ button {
   height: 80rpx;
   border-radius: 50%;
   bottom: 185rpx;
+<<<<<<< HEAD
   margin-left: 40rpx;
+=======
+<<<<<<< HEAD
+  margin-left: 40rpx;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .me-list-lir {
@@ -350,10 +435,13 @@ button {
   font-size: 30rpx;
   float: right;
 }
+<<<<<<< HEAD
 .names {
   position: absolute;
   left: 210rpx;
 }
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 .me-list-lir image {
   float: right;
@@ -363,6 +451,7 @@ button {
 
 }
 
+<<<<<<< HEAD
 
 
 
@@ -375,13 +464,59 @@ button {
 }
 
 
+=======
+.names {
+  position: absolute;
+  left: 210rpx;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+}
+
+.vote image {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 175rpx;
+}
+
+.mainbav {
+  padding: 10rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainbav image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.topnav {
+  font-size: 26rpx;
+
+}
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 .chouj {
   width: 85%;
   margin: 0 auto;
   background-color: #f7f8f8;
   padding: 30rpx;
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+.topnav {
+  padding-top: 10rpx;
+}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 
 
@@ -395,10 +530,18 @@ button {
 
 /* 头部 end*/
 .hander {
+<<<<<<< HEAD
   width: 100%;
   position: relative;
   margin-bottom: 20rpx;
   background-color: #EEEEEF;
+=======
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  background-color: #F7F7F7;
+  border-radius: 25rpx 25rpx 0 0;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   height: 100rpx;
   bottom: -15rpx;
   display: flex;
@@ -408,8 +551,11 @@ button {
   width: 90%;
   height: 60rpx;
   border-bottom: 1rpx solid #595757;
+<<<<<<< HEAD
   text-align: left;
   line-height: 60rpx;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .a1 {
@@ -417,7 +563,10 @@ button {
   margin: auto;
   font-weight: 550;
   padding-left: 16px;
+<<<<<<< HEAD
   line-height: 40rpx;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .a2 {
@@ -428,15 +577,25 @@ button {
   padding-right: 30rpx;
   margin-top: 35rpx;
   height: 45rpx;
+<<<<<<< HEAD
   line-height: 12rpx;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 /* 我的卡券 */
 .coupon-list {
+<<<<<<< HEAD
   width: 100%;
   position: relative;
   margin: 0 auto;
   background-color: #EEEEEF;
+=======
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  background-color: #F7F7F7;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   border-radius: 25rpx;
   margin-bottom: 10rpx;
   height: 100%;
@@ -525,6 +684,7 @@ button {
 
 .float-tu {
   width: 100%;
+<<<<<<< HEAD
   height: 90rpx;
   margin-top: 20rpx;
   display: flex;
@@ -576,11 +736,24 @@ button {
 }
 
 
+=======
+  height: 100%;
+}
+
+.coupon-botton {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+}
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 .u {
   height: 42rpx;
 }
 
 .u1 {
+<<<<<<< HEAD
   margin-left: auto;
   margin-right: 26rpx;
 }
@@ -590,32 +763,72 @@ button {
 }
 
 
+=======
+  margin-left: 450rpx;
+  padding-top: 13rpx;
+
+}
+
+.u2 {
+  margin-left: 32rpx;
+  padding-top: 13rpx;
+}
+
+.u3 {
+  margin-left: 37rpx;
+  padding-top: 13rpx;
+}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 .coupon-botton_right {
   position: relative;
   display: flex;
+<<<<<<< HEAD
   margin-left: 15rpx;
 }
 
 .r {
   color: #595757;
+=======
+
+}
+
+.r {
+  margin: 10rpx auto;
+  color: #595757;
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .r1 {
   width: 20rpx;
   height: 20rpx;
   background-color: #C99361;
+<<<<<<< HEAD
   margin-left: 20rpx;
   margin-right: 8rpx;
   margin-top: 5rpx;
+=======
+  margin: 17rpx 0 0 20rpx;
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .r2 {
   color: #595757;
+<<<<<<< HEAD
+=======
+  margin-left: 5px;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   font-size: 27rpx;
 }
 
 .r3 {
+<<<<<<< HEAD
+=======
+
+  margin-left: -24rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   font-size: 26rpx;
 }
 
@@ -623,26 +836,44 @@ button {
   width: 20rpx;
   height: 20rpx;
   background-color: #C99361;
+<<<<<<< HEAD
   margin-left: 20rpx;
   margin-right: 8rpx;
   margin-top: 5rpx;
 }
 
 .r5 {
+=======
+  margin: 17rpx 30rpx 0 0rpx;
+
+}
+
+.r5 {
+  margin-left: -20rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   font-size: 26rpx;
 }
 
 .r6 {
+<<<<<<< HEAD
+=======
+  margin-left: -20rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   font-size: 26rpx;
 }
 
 .r7 {
   font-size: 22rpx;
+<<<<<<< HEAD
   margin-left: auto;
 }
 
 .rtext {
   margin-left: 120rpx;
+=======
+  margin-left: 16rpx;
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .r8 {
@@ -658,9 +889,14 @@ button {
 }
 
 .rbig {
+<<<<<<< HEAD
   display: flex;
   width: 290rpx;
   margin-left: auto;
+=======
+  width: 36%;
+  display: flex;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .note {
@@ -690,7 +926,11 @@ button {
   background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30rpx, #F39B00 30rpx);
   background-size: 10rpx 10rpx;
   background-position: 9rpx 3rpx;
+<<<<<<< HEAD
   background: #F7F7F7;
+=======
+  background: #f7f8f8;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   border: 1rpx solid #be8f61;
   border-radius: 25rpx;
 
@@ -713,6 +953,7 @@ button {
   border: 5rpx solid #c9caca;
   border-radius: 25rpx;
 }
+<<<<<<< HEAD
 
 .u11 {
   margin-left: auto;
@@ -731,3 +972,10 @@ button {
 
 
 
+=======
+=======
+.topnav {
+  padding-top: 10rpx;
+} 
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

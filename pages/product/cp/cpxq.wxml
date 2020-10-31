@@ -32,7 +32,35 @@
 			<view class="cpxqgus-nrb-h4">
 				 规格参数
 			</view>
+<<<<<<< HEAD
 			<view class="cpxqgus-nrbul">
+=======
+			<view class="cpxqgus-nrblit">
+				<view class="cpxqgus-nrblitl">
+					<view class="cpxqgus-nrblitlp1">型号:NO.123456 </view>
+					<view class="cpxqgus-nrblitlp2">
+						<view class="cpxqgus-nrblitlp2s1">规格:</view>
+						<view class="cpxqgus-nrblitlp2s2">SIZE:300x600mm</view>
+					</view>
+
+				</view>
+
+				<view class="cpxqgus-nrblitr" wx:if="{{item.jiage}}">
+					<view class="cpxqgus-nrblitrp2">元/片</view>
+					<view class="cpxqgus-nrblitrp1">299</view>
+				</view>
+			</view>
+			<view class="cpxqgus-nrtimg">
+				<image mode="widthFix" lazy-load="{{true}}" src="{{cpxiaqs.product_image}}"></image>
+			</view>
+			<view class="cpxqgus-nrtimg">
+				<image mode="widthFix" lazy-load="{{true}}" src="{{cpxiaqs.product_image}}"></image>
+			</view>
+			<view class="cpxqgus-nrtp">
+				{{cpxiaqs.product_synopsis}}
+			</view> -->
+<view class="cpxqgus-nrbul">
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<block wx:for="{{cpxiaqs.product_guige}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 					<view class="cpxqgus-nrbli">
 						<view class="cpxli-tu" bindtap="dakerw" data-img="{{item.url}}">
@@ -57,9 +85,13 @@
 					</view>
 					    
 				</block>
+<<<<<<< HEAD
 				   
 			</view>
 			   
+=======
+			</view> 
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 	</view>
 </view>
@@ -77,6 +109,14 @@
 		</view>
 	</block>
 </view>
+<<<<<<< HEAD
+=======
+<view class="listpic">
+<image src="/images/pic/xguo.jpg" mode="widthFix"></image>
+</view>
+
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 <!-- 底部的收藏 -->
 <view class="collect" wx:if='{{cpxqzt==1}}'>
 	<view class="title">

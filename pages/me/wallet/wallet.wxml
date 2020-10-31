@@ -12,7 +12,11 @@
 					</view>
 				</view>
 				<view class="me">
+<<<<<<< HEAD
 					<view class="top">提现<image src="/images/tubiao/59.png"></image>
+=======
+					<view class="top">体现<image src="/images/tubiao/59.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					</view>
 				</view>
 			</view>

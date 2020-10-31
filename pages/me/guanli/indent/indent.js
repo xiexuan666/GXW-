@@ -24,11 +24,16 @@ Page({
     show: false,//控制下拉列表的显示隐藏，false隐藏、true显示
     selectData: ['品尚宝石蓝', '品尚宝鱼肚金', '品尚雪山兰'],//下拉列表的数据
     index: 0,//选择的下拉列表下标
+<<<<<<< HEAD
     tihuoWay: '-请选择-',
+=======
+    select: '-请选择-',
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     selecif: '全部产品'
   },
 
   // 点击下拉显示框
+<<<<<<< HEAD
   // selectTap() {
   //   this.setData({
   //     show: !this.data.show
@@ -76,6 +81,31 @@ Page({
     })
   },
 
+=======
+  selectTap() {
+    this.setData({
+      show: !this.data.show
+    });
+  },
+  // 点击下拉列表
+  optionTap(e) {
+    let Index = e.currentTarget.dataset.index;//获取点击的下拉列表的下标
+    console.log(Index);
+    if (Index == undefined) {
+      this.setData({
+        select: '全部产品'
+      })
+    }
+    var data = this.data.selectData;
+    this.setData({
+      index: Index,
+      show: !this.data.show,
+      select: data[Index]
+    });
+  },
+
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   //渲染内容
   xuanr: function (sjzt) {
     if (sjzt.status == 3 || sjzt.status == 2) {

@@ -1,14 +1,18 @@
 // pages/me/guanli/Verification/Verification.js
+<<<<<<< HEAD
 const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
 const getInformation = app.globalData.getInformation;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     type:'',
     hidden:false,
     content:null,
@@ -18,11 +22,15 @@ Page({
     jc2:null,
     jc3:null,
     jc4:null
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+<<<<<<< HEAD
   onLoad: function (option) {
     const scene = decodeURIComponent(option);
     // 可以获取到二维码值的方法
@@ -154,12 +162,26 @@ Page({
       }
     })
   },
+=======
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
 
   },
+<<<<<<< HEAD
   // 搜索
   sousuo:function(){
     var that = this;
@@ -213,6 +235,37 @@ Page({
         })
     }
   },
+=======
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 用户点击右上角分享
    */

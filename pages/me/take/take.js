@@ -138,7 +138,25 @@ Page({
         image: "/images/tubiao/46.png"
       })
       setTimeout(function(){ 
+<<<<<<< HEAD
         wx.navigateBack()
+=======
+<<<<<<< HEAD
+        wx.navigateBack()
+=======
+<<<<<<< HEAD
+        wx.navigateBack()
+=======
+<<<<<<< HEAD
+        wx.navigateBack()
+=======
+        wx.reLaunch({
+          url: '/pages/me/address/address',
+        })
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
       }, 500);
       
     })

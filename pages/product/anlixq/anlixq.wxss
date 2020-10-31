@@ -125,14 +125,20 @@ page {
   padding-left: 45rpx;
   flex-direction: column;
   margin: 0 auto;
+<<<<<<< HEAD
   padding-bottom: 30rpx;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .ket {
   width: 100%;
   margin: 30rpx auto;
   display: flex;
+<<<<<<< HEAD
   overflow-x: scroll;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .lists-item {
@@ -348,6 +354,7 @@ appraise-content view text:nth-child(2) {
   /* width: 100rpx; */
   font-size: 20rpx;
   color: #999999;
+  word-wrap: break-word
 }
 
 .reply-username {
@@ -370,11 +377,22 @@ appraise-content view text:nth-child(2) {
 
 /* 底部 */
 .main {
+<<<<<<< HEAD
   /* height: 460rpx; */
   overflow: scroll;
   margin-top: 25rpx;
 }
 
+=======
+  height: 460rpx;
+  overflow: scroll;
+  margin-top: 25rpx;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 .appraise-btn {
 
   height: 97.3rpx;
@@ -391,7 +409,7 @@ appraise-content view text:nth-child(2) {
   height: 64rpx;
   width: 680rpx;
   background: #ffffff;
-  border-radius: 32rpx;
+  border-radius: 15rpx;
   margin-right: 26rpx;
   font-size: 24rpx;
   color: #999999;
@@ -414,7 +432,15 @@ appraise-content view text:nth-child(2) {
   width: 26%;
   height: 64rpx;
   background-color: #bd8f60;
+<<<<<<< HEAD
   border-radius: 20rpx;
+=======
+<<<<<<< HEAD
+  border-radius: 12rpx;
+=======
+  border-radius: 20rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   font-size: 32rpx;
   text-align: center;
   justify-content: center;
@@ -423,7 +449,50 @@ appraise-content view text:nth-child(2) {
   margin-left: 310rpx;
 }
 
+/* 添加评论样式 */
+.Input {
+  width: 100vw;
+  /* background-color: chartreuse; */
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 55rpx;
+}
 
+.Input input {
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 80%;
+  height: 60rpx;
+  padding-left: 60rpx;
+}
+
+.Input .Icon {
+  /* height:40rpx;
+  position: absolute;
+  left: 55rpx;
+  top: 12.5rpx; */
+  width: 100rpx;
+  height: 44rpx;
+  margin-left: 50rpx;
+  margin-right: 9rpx;
+  margin-top: 15rpx;
+  position: absolute;
+}
+
+.Input .button {
+  height: 64rpx;
+  /* width: 125rpx; */
+  right: 43.5rpx;
+  position: absolute;
+  background-color: #bd8f60;
+  line-height: 62rpx;
+  z-index: 3;
+  /* left: 55rpx; */
+  /* top: 12.5rpx; */
+}
 
 /* 常用工具 */
 .title {
@@ -725,6 +794,7 @@ font-size: 26rpx;
   margin: 0 10rpx;
 }
 
+<<<<<<< HEAD
 .collect1 image {
   width: 130rpx;
   height: 130rpx;
@@ -925,6 +995,852 @@ button[class="baocun"]::after {
 }
 
 
+=======
+/* 新添加的样式 */
+.appraise-user_top {
+  width: 100%;
+  height: 100rpx;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  /* background: lightseagreen; */
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+  position: relative;
+}
+
+.appraise-user_top .Top_Good {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  /* background: lightslategrey; */
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+  height: 50%;
+  width: 94%;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #666666;
+}
+<<<<<<< HEAD
+
+.Top_Good {
+  display: flex;
+  width: 100%;
+}
+
+.Top_Good_header {
+  display: flex;
+  flex: 1;
+}
+
+.Top_Good_header .header image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+}
+
+.Top_Good_header .header:nth-child(1) {
+  margin-right: -10rpx;
+}
+
+.Top_Good_header .header:nth-child(3) {
+  margin-left: -10rpx;
+}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+
+.Top_Good .Top_Good_Text {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: right;
+
+<<<<<<< HEAD
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.shengcheng {
+  width: 80vw;
+  height: 80%;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 5%;
+}
+
+.baocun {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 52%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+  z-index: 10;
+}
+
+.baocuns {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+  z-index: 10;
+}
+
+button[class="baocun"]::after {
+  border: 0;
+}
+
+.baocun1 {
+  display: block;
+  width: 35%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 50%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #bd8f60;
+
+=======
+}
+
+.Top_Good .Top_Good_Text text {
+  display: inline-block;
+  font-size: 26rpx;
+  padding-right: 45rpx;
+  padding-left: 60rpx;
+}
+
+
+/* 新加样式 */
+/* 案例文字的圆 */
+.case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+.anl .case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 10rpx;
+  z-index: -1;
+  left: -18rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+}
+
+/* 案例图片的大小 */
+.check .header {
+  width: 100%;
+}
+
+.check .header image {
+  width: 100%;
+}
+
+/* 选用产品的圆点 */
+.chanp {
+  position: relative;
+}
+
+.Top_Good_Text image {
+  width: 40rpx;
+  margin-top: -10rpx;
+}
+
+/* 评论的距离 */
+.margin-layouts {
+  padding-top: 25rpx;
+}
+
+/* 底部名片 */
+.list-item6 {
+  height: 100%;
+  display: flex;
+  margin: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+<<<<<<< HEAD
+=======
+
+}
+
+.goods {
+  display: flex;
+  margin: 0 20rpx;
+  border: 1px dashed #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx 0;
+}
+
+.tab {
+  padding: 0 20rpx;
+
+}
+
+.attrs {
+  font-size: 18rpx;
+  font-weight: 300;
+  margin-top: 30rpx;
+}
+
+.attrs1 {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+.attrs2 {
+  padding: 10rpx 0;
+  font-size: 23rpx;
+  font-weight: 200;
+  padding-top: 14rpx;
+}
+
+.collect1 {
+  margin: 0 10rpx;
+}
+
+.collect1 image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50rpx;
+}
+
+.contacts {
+  width: 30%;
+  margin-top: 20rpx;
+
+}
+
+.contacts image {
+  width: 175rpx;
+  height: 45rpx;
+}
+
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+
+/* 海报 */
+
+/*模态框*/
+
+.toTop {
+  border-radius: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  /* position: fixed; */
+  right: 0rpx;
+  top: 485rpx;
+}
+
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-dialog-body {
+  /* overflow: scroll; */
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+
+/* .xuanz-nr-lix {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+  font-size: 33rpx;
+} */
+
+/*动画前初始位置*/
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.menus {
+  display: flex;
+  padding: 15rpx;
+}
+
+.floor image {
+  width: 165rpx;
+  height: 130rpx;
+}
+
+.content {
+  padding: 1rpx 20rpx;
+}
+
+.left {
+  margin: 25rpx 0;
+}
+
+.arrpw-l image {
+  width: 157rpx;
+  height: 59rpx;
+  padding: 0 20rpx;
+}
+
+.into {
+  float: right;
+  font-size: 33rpx;
+=======
+
+.Top_Good {
+  display: flex;
+  width: 100%;
+}
+
+.Top_Good_header {
+  display: flex;
+  flex: 1;
+}
+
+.Top_Good_header .header image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+}
+
+.Top_Good_header .header:nth-child(1) {
+  margin-right: -10rpx;
+}
+
+.Top_Good_header .header:nth-child(3) {
+  margin-left: -10rpx;
+}
+
+.Top_Good .Top_Good_Text {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  /* display:block; */
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: right;
+
+}
+
+.Top_Good .Top_Good_Text text {
+  display: inline-block;
+font-size: 26rpx;
+  padding-right: 45rpx;
+  padding-left: 60rpx;
+}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+
+
+/* 新加样式 */
+/* 案例文字的圆 */
+.case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+.anl .case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 10rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+/* 案例图片的大小 */
+.check .header {
+  width: 100%;
+}
+
+.check .header image {
+  width: 100%;
+}
+
+/* 选用产品的圆点 */
+.chanp {
+  position: relative;
+}
+
+.Top_Good_Text image {
+  width: 40rpx;
+  margin-top: -10rpx;
+}
+
+/* 评论的距离 */
+.margin-layouts {
+  padding-top: 25rpx;
+}
+
+/* 底部名片 */
+.list-item6 {
+  height: 100%;
+  display: flex;
+  margin: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  
+}
+
+.goods {
+  display: flex;
+  margin: 0 20rpx;
+  border: 1px  dashed  #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx  0;
+}
+
+.tab {
+  padding: 0 20rpx;
+<<<<<<< HEAD
+
+}
+
+.attrs {
+  font-size: 18rpx;
+  font-weight: 300;
+  margin-top: 30rpx;
+}
+
+.attrs1 {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+.attrs2 {
+  padding: 10rpx 0;
+  font-size: 23rpx;
+  font-weight: 200;
+  padding-top: 14rpx;
+}
+
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+
+}
+
+<<<<<<< HEAD
+.attrs {
+  font-size: 18rpx;
+  font-weight: 300;
+  margin-top: 30rpx;
+}
+
+.attrs1 {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+=======
+/* 新加样式 */
+/* 案例文字的圆 */
+.case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+.anl .case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 10rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+/* 案例图片的大小 */
+.check .header {
+  width: 100%;
+}
+
+.check .header image {
+  width: 100%;
+}
+
+/* 选用产品的圆点 */
+.chanp {
+  position: relative;
+}
+
+.Top_Good_Text image {
+  width: 40rpx;
+  margin-top: -10rpx;
+}
+
+/* 评论的距离 */
+.margin-layouts {
+  padding-top: 25rpx;
+}
+
+/* 底部名片 */
+.list-item6 {
+  height: 100%;
+  display: flex;
+  margin: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  
+}
+
+.goods {
+  display: flex;
+  margin: 0 20rpx;
+  border: 1px  dashed  #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx  0;
+}
+
+.tab {
+  padding: 0 20rpx;
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+
+}
+
+<<<<<<< HEAD
+.attrs {
+  font-size: 18rpx;
+  font-weight: 300;
+  margin-top: 30rpx;
+}
+
+.attrs1 {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+=======
+/* 新加样式 */
+/* 案例文字的圆 */
+.case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+.anl .case_round {
+  background: #bd8f60;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 10rpx;
+  z-index: -1;
+  left: -18rpx;
+}
+
+/* 案例图片的大小 */
+.check .header {
+  width: 100%;
+}
+
+.check .header image {
+  width: 100%;
+}
+
+/* 选用产品的圆点 */
+.chanp {
+  position: relative;
+}
+
+.Top_Good_Text image {
+  width: 40rpx;
+  margin-top: -10rpx;
+}
+
+/* 评论的距离 */
+.margin-layouts {
+  padding-top: 25rpx;
+}
+
+/* 底部名片 */
+.list-item6 {
+  height: 100%;
+  display: flex;
+  margin: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  
+}
+
+.goods {
+  display: flex;
+  margin: 0 20rpx;
+  border: 1px  dashed  #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx  0;
+}
+
+.tab {
+  padding: 0 20rpx;
+
+}
+
+.attrs {
+  font-size: 18rpx;
+  font-weight: 300;
+  margin-top: 30rpx;
+}
+
+.attrs1 {
+  font-size: 26rpx;
+  font-weight: 300;
+}
+
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+.attrs2 {
+  padding: 10rpx 0;
+  font-size: 23rpx;
+  font-weight: 200;
+  padding-top: 14rpx;
+}
+
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+.collect1 {
+  margin: 0 10rpx;
+}
+
+.collect1 image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50rpx;
+}
+
+.contacts {
+  width: 30%;
+  margin-top: 20rpx;
+
+}
+.contacts  image {
+  width: 175rpx;
+  height: 45rpx;
+}
+
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+}
+
+
+
+
+
+
+
+
+
+
+/* 生成海报 */
+.erweima {
+  margin-top: 60rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.poster image {
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+button[class="poster"]::after {
+  border: 0;
+}
+
+button[class="poster m_l"]::after {
+  border: 0;
+}
+
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+
+.baocun {
+  display: block;
+  width: 80%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #fdd668;
+
+}
+
+button[class="baocun"]::after {
+  border: 0;
+}
+
+
+
+.haib {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  font-weight: 300;
+  color: #cacacb;
+}
+
+.qux {
+  margin-top: 40rpx;
+  font-size: 33rpx;
+  color: #cacacb;
+  align-items: center;
+  text-align: center;
+}
+
+
 
 
 .imagePathBox {
@@ -1002,6 +1918,7 @@ button[class="baocun"]::after {
 }
 
 
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 /* 新加的样式 */
 /* card */
 .tuijxilicard {
@@ -1028,9 +1945,12 @@ button[class="baocun"]::after {
   background-color: black;
   top: 0;
   left: 0;
+<<<<<<< HEAD
 }
 /* 丢掉海报 */
 .canvas-box{
   position: absolute;
   top: -700px;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }

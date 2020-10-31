@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <view class="app.id">
 <block wx:item='item' wx:index='index'>
 
@@ -70,4 +71,75 @@
 		</view>
 	</view>
 </block>
+=======
+<view class="apply">
+	<view class="apply-r">
+		<view class="apply-im">
+			<image src="https://cdn.juesedao.cn/gxw/qianyuanhongbao.png" mode="widthFix"></image>
+		</view>
+		<view class="juli">
+			<view class="count">
+				<view class="down">
+					<view class="daoj"><text class="jul">倒计时</text>距离活动结束还有</view>
+				</view>
+			</view>
+
+			<view class='tui-countdown-content' wx:for="{{countDownList}}" wx:key="countDownList">
+				<text class='tui-conutdown-box'>{{item.day}}</text>天
+				<text class='tui-conutdown-box'>{{item.hou}}</text>时
+				<text class='tui-conutdown-box'>{{item.min}}</text>分
+				<text class='tui-conutdown-box tui-countdown-bg'>{{item.sec}}</text>秒
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+
+<view class="apply">
+	<view class="apply-r">
+		<view class="time">
+			<view class="mianfsj">
+				<text>秒杀</text> 秒杀活动
+			</view>
+			<view class="shij"><text style="color:#be8f61">活动时间:</text> 2020.05.30-09:00至2020.06.30-12:00</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 产品故事 -->
+<view class="cpxqgus">
+	<view class="cpxqgus-nr">
+		<view class="cpxqgus-nrb-h4">
+			科莫白
+		</view>
+		<view class="cpxqgus-nrblit">
+			<view class="cpxqgus-nrblitl">
+				<view class="cpxgus-nrbl">型号:NO.123456 </view>
+				<view class="cxqs-nt">规格:SIZE:300x600mm</view>
+			</view>
+		</view>
+
+
+		<view class="cpxqgus-nrtimg">
+			<image mode="widthFix" src="https://cdn.juesedao.cn/gxw/danpian2.png"></image>
+		</view>
+
+
+		<view class="foots">
+			<view class="money">
+				<view class="qian">￥299.00</view>
+			</view>
+			<view class="mas">
+				<view class="qiangg">马上抢购</view>
+			</view>
+		</view>
+
+
+	</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>

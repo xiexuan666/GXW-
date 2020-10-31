@@ -76,7 +76,11 @@
 
 	<!-- 产品 -->
 	<view class="cpbottom-nr" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+<<<<<<< HEAD
 		<!-- <view class="cpbottom-nrul">
+=======
+		<view class="cpbottom-nrul">
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 				<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" wx:if='{{item.tname == select || select == selecif}}'>
 					<view class="cpbottom-img">
@@ -95,6 +99,7 @@
 					</view>
 				</view>
 			</block>
+<<<<<<< HEAD
 		</view> -->
 		<view class="cpbottom-nrul">
 			<view class="cpbottom-nrli " >
@@ -119,16 +124,22 @@
 
 				</view>
 			</view>
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 		<view class="button_r">
 			<view class="button_rl">
 				<button class="btn_s">发送至</button>
+<<<<<<< HEAD
 				<button class="btn_l" bindtap="erweima">生成二维码</button>
 				<modal  hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
 					<view>
 						<image class="imagess" src="https://cdn.juesedao.cn/gxw/1bf25bb976ee4e5ba1fe0494a962a3e7" mode='aspectFill'></image>
 					</view>
 				</modal>
+=======
+				<button class="btn_l">生成二维码</button>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="button_rr">
 				<button class="btn_r">取消</button>

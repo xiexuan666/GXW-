@@ -7,7 +7,11 @@
 					<input type="text" placeholder="请填写收货人姓名" value="{{consigneeName}}" bindblur="consigneeNameInput" placeholder-class="phcolor"></input>
 				</view>
 				<view class="address-right">
+<<<<<<< HEAD
 					<image src="/images/tubiao/1-19.png"></image>
+=======
+					<image src="/images/tubiao/46.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 			</view>
 			<view class="address-msg">

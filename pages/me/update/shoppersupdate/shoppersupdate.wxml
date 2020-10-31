@@ -18,7 +18,40 @@
 			<view class="me-list-li" bindtap="melisttz" data-index="{{index}}">
 				<view class="me-list-lil">{{item.value}}</view>
 				<view class="me-list-lir">
+<<<<<<< HEAD
 					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="请输入真实姓名"></input>
+=======
+<<<<<<< HEAD
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="请输入真实姓名"></input>
+=======
+<<<<<<< HEAD
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="请输入真实姓名"></input>
+=======
+<<<<<<< HEAD
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="请输入真实姓名"></input>
+=======
+<<<<<<< HEAD
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="请输入真实姓名"></input>
+=======
+				<!-- 性别选择框 -->
+				<view wx:if='{{item.value=="性别"}}'>
+					<picker range="{{sex}}" value="{{value}}" bindchange="sexCheck">
+					<input name="xingm" disabled='{{true}}' bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{sex[value]}}" value="{{sex[value]}}"></input>
+					</picker>
+				</view>
+				 <!-- 生日选择框 -->
+				 <view wx:elif='{{item.value =="生日"}}'>
+				 	<picker class="picker" mode='date' bindchange="bindDateChange" bindcancel='pickEnd' data-index="{{index}}"  value="{{date}}" start='{{date}}' end='2500-09-01'>
+						<!-- input框 -->
+						<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" disabled="{{true}}" value="{{date}}"></input>	
+					</picker>
+					</view>
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}" wx:else></input>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 			</view>
 		</view>
@@ -29,4 +62,24 @@
 
 <view class="anniu">
 	<button bindtap="subscribe">确认提交</button>
+<<<<<<< HEAD
 </view> 
+=======
+<<<<<<< HEAD
+</view> 
+=======
+<<<<<<< HEAD
+</view> 
+=======
+<<<<<<< HEAD
+</view> 
+=======
+<<<<<<< HEAD
+</view> 
+=======
+</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

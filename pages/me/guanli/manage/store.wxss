@@ -236,11 +236,20 @@ page {
 .btn-area button {
   background-color: #be8f61;
   border: 0rpx;
+<<<<<<< HEAD
   border-radius: 40rpx;
   width: 80%;
   color: #fff;
   height:60rpx;
   line-height:60rpx;
+=======
+  padding: 10rpx 0rpx;
+  border-radius: 40rpx;
+  width: 80%;
+  color: #fff;
+  height: 80rpx;
+  line-height: 60rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 .xuanzdz{
   position: absolute;

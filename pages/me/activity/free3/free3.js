@@ -7,7 +7,19 @@ Page({
   data: {
 
   },
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+  accept:function(){
+    wx.navigateTo({
+      url: '/pages/me/activity/free2/free2',
+    })
+  },
+=======
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 生命周期函数--监听页面加载
    */

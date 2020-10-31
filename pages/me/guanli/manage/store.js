@@ -50,8 +50,6 @@ Page({
     // 控制入驻
     ruzhu:0
   },
-
-  
   //个人列表跳转
   melisttz: function (e) {
     console.log(e)
@@ -85,7 +83,6 @@ Page({
     }
 
   },
-
   //渲染内容
   xuanr: function (sjzt) {
     if (sjzt.status == 3 || sjzt.status == 2) {
@@ -112,7 +109,6 @@ Page({
       })
     }
   },
-
   //现金购买
   qianzhif: function (name) {
     var gerxinx = this.data.gerxinx
@@ -245,10 +241,8 @@ Page({
     tjnr.userid = userid
     tjnr.brandid = brandid
     tjnr.opentime = opentime
+    tjnr.page = 'pages/me/zhuc/zhuc'
     console.log(tjnr, '提交之前的结果')
-
-
-
     if (sjzt && sjzt.record && sjzt.record.id) {
       console.log(sjzt, '商家状态')
       if (sjzt.record.status == 1) {
@@ -274,6 +268,8 @@ Page({
   formtij(tjnr) {
     var tha = this
     var url = baseUrl + "store/storeJoin"
+    // 用户扫码后跳转的路径
+    tjnr.page = 'pages/me/zhuc/zhuc'
     http.promisServer(url, tjnr).then(resc => {
       console.log(resc.status, '提交内容后结果')
       if (resc.status == '000') {

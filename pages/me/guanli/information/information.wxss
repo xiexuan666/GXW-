@@ -257,7 +257,10 @@ page {
   transform: scale(0.9);
   border: 1rpx #f4f4f6 solid;
   /* transform: rotateZ(90deg); */
+<<<<<<< HEAD
   border-radius: 30rpx;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .cpbottom-bot {
@@ -733,6 +736,7 @@ page {
   color: #fff;
   font-size: 26rpx;
   font-weight: 300;
+<<<<<<< HEAD
 }
 .tupiana {
   width: 20rpx;
@@ -742,4 +746,6 @@ page {
   width: 600rpx;
   height: 800rpx;
 
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }

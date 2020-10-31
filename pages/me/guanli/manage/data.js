@@ -129,6 +129,7 @@ Page({
     if (ind == cactiv) {
       return false
     }
+<<<<<<< HEAD
     if (ind == 1) {
 
       cactiv = 1
@@ -138,6 +139,17 @@ Page({
       this.chaxchuanlinr('', 1, 1)
       cactiv = 2
       wx.setNavigationBarTitle({ title: '排行榜' })
+=======
+    if(ind==1){
+      
+     cactiv=1
+     wx.setNavigationBarTitle({ title: '引流数据'})
+    }
+    if(ind==2){
+     this.chaxchuanlinr('',1,1)
+     cactiv=2
+     wx.setNavigationBarTitle({ title: '排行榜'})
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     }
     console.log(cactiv)
     this.setData({ cactiv: cactiv })

@@ -1,8 +1,15 @@
 // pages/me/registration/registration.js
+<<<<<<< HEAD
 
 const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
+=======
+let goodsList = [
+  { actEndTime: '2020/10/25 10:00:43' }
+ 
+]
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 Page({
 
   /**

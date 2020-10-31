@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .image1{
   width: 100%;
   display: block;
@@ -104,3 +105,94 @@
 }
 
 
+=======
+/* pages/me/activity/free2/free2.wxss */
+.hd{
+  border: 2rpx solid white;
+   border-radius: 10rpx;
+   height: 966px;
+   width: 100%; 
+    margin: auto;
+    background-color:#4b67b0 ;
+ } 
+
+ .free2{
+  width: 100%;
+  height: 466px;
+  border-radius:10rpx;
+}
+.button1{
+  background-color: #e9431d;
+color: white;
+width: 417rpx;
+letter-spacing: 5rpx;
+border-radius: 30rpx;
+height: 66rpx;
+line-height: 66rpx;
+font-size: 30rpx;
+margin-top: 20rpx;
+}
+
+.text1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 10rpx;
+  padding-top: 34rpx;
+  letter-spacing:1rpx;
+}
+.text2{
+  font-size: 19rpx;
+letter-spacing: 5rpx;
+line-height: 14rpx;
+padding-top: 20rpx
+}
+
+.touxiang{
+  width: 85rpx;
+height: 83rpx;
+margin-bottom: 2rpx;
+}
+
+.tupiao{
+  margin-top: 99rpx;
+text-align: center;
+}
+
+.touxiang2{
+  width: 80rpx;
+height: 88rpx;
+margin-left: 71rpx;
+}
+
+.tupiao2{
+  margin-top: 42rpx;
+  padding-left: 20px;
+}
+
+.button2{
+  background-color: #fac217;
+color:#e13714 ;
+width: 534rpx;
+letter-spacing: 5rpx;
+border-radius: 37rpx;
+height: 66rpx;
+line-height: 65rpx;
+font-size: 30rpx;
+margin-top: 137rpx;
+
+}
+
+.button3{
+  background-color: #fac217;
+color:#e13714 ;
+width: 534rpx;
+letter-spacing: 5rpx;
+border-radius: 37rpx;
+height: 66rpx;
+line-height: 65rpx;
+font-size: 30rpx;
+margin-top: 27rpx;
+}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

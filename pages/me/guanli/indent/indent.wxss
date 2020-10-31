@@ -226,6 +226,7 @@ button {
   border-bottom: 1px solid #efefef;
   padding: 10rpx;
   color: #ccc;
+<<<<<<< HEAD
 }
 
 
@@ -292,4 +293,6 @@ button {
   height: 60rpx;
   line-height: 60rpx;
   border-bottom: 1px solid #E7E7E7;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }

@@ -1,13 +1,17 @@
 // pages/me/activity/free2/free2.js
+<<<<<<< HEAD
 const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     list:[],
     user:[],
     // 圖片
@@ -16,10 +20,24 @@ Page({
     
   },
 
+=======
+
+  },
+<<<<<<< HEAD
+  invitation:function(){
+    wx.navigateTo({
+      url: '/pages/me/activity/free1/free1',
+    })
+  },
+=======
+
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
     // 判断用户有没有登录
     if(wx.getStorageSync('gerxinx')){
 
@@ -45,6 +63,9 @@ Page({
     this.setData({
       list:JSON.parse(options.arr)
     })
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
 
   /**
@@ -58,6 +79,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+<<<<<<< HEAD
     let url = baseUrl + 'activity/free/free';
     let data = {
       brandId:app.globalData.brandid,
@@ -105,6 +127,11 @@ yaoqin:function(){
     })
 })
 },
+=======
+
+  },
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 生命周期函数--监听页面隐藏
    */

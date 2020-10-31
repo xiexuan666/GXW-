@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- 未发布活动 -->
 <view class="header" >
 	<view class="search">
@@ -53,10 +54,70 @@
 					<view class="mainbav">
 						<image src="/images/tubiao/fengx.png"></image>
 						<view class="topnav">删除</view>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+<!-- 产品展示 -->
+<view class="produt">
+	<view class="toub">
+		<view class="toub-nr">
+			<view class="toub-nrl">
+				<view class="toub-nrlp1">
+					<image mode="widthFix" src="/images/tubiao/1-25.png" class="sheng"></image>
+				</view>
+				<view class="anl-ul">
+					<view class="anl-li">
+						Case案例赏析
+					</view>
+				</view>
+			</view>
+			<view class="toub-nrr" bindtap="tzcpanliye">
+				<view class="toub-nrlp2">/ 更多</view>
+			</view>
+		</view>
+	</view>
+
+
+	<!-- 案例 -->
+	<view class="tuijxilicard">
+		<view class="tuijxiliCardTop" catchtap='JumpCase' data-index="{{index}}">
+			<image src="https://cdn.juesedao.cn/gxw/anli.png" mode='aspectFill'></image>
+		</view>
+		<view class="jxsnr-li-l  jxsnr-li-lsa">
+			<view class="jxsnr-tubiao-tu1">
+				<view class="jxsnr-li-lp">
+					<image src="/images/tubiao/1-09.png"></image>
+					<view class="lanbai">爵士灰</view>
+				</view>
+				<view class="liser">
+					<view class="jxsnr-tubiao-tu2">
+						<view class="jxsnr-li-lp2">
+							<image mode="aspectFit" src="/images/tubiao/1-10.png"></image>
+							<view class="shuzi">123</view>
+						</view>
+
+						<view class="jxsnr-li-lp2" data-index='{{index}}' catchtap="great">
+							<image mode="aspectFit" src="/images/tubiao/12-28.png" wx:if='{{item.dianzhan}}'></image>
+							<image mode="aspectFit" src="/images/tubiao/12-12.png" wx:else></image>
+							<view class="shuzi">321</view>
+						</view>
+					</view>
+					<view class="tubiaop">
+						<view class="xingx" catchtap="collection" data-ind='{{index}}'>
+							<image mode="aspectFit" src="/images/tubiao/33.png" wx:if='{{item.collection}}'></image>
+							<image src="/images/tubiao/1-13.png" wx:else></image>
+						</view>
+						<view class="fenxiang" bindtap="handleToTop">
+							<image src="/images/tubiao/1-11.png"></image>
+						</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					</view>
 				</view>
 			</view>
 		</view>
+<<<<<<< HEAD
 
 		<view class="lingq">
 			<view class="git">
@@ -70,9 +131,117 @@
 				<view class="me-list-lir">
 					<text class="name">1388888888</text>
 					<image src="/images/tubiao/youj.png"></image>
+=======
+		<view class="simple">
+			<view class="simple-ul">
+				<view class="simple-ul-p">【新中室】平层</view>
+				<view class="simple-li">佛山130m1怡翠尊堤-新中式，如此简洁，又是如此雅致!</view>
+			</view>
+			<view class="simple-li-r">
+				<view class="cotione">
+					<view class="jxsnr-li-time">佛山</view>
+				</view>
+				<view class="cotione1">
+					<view class="jxsnr-li-r">20220</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+	<!-- 分享海报 -->
+	<view class="tubiaof">
+		<view class="toTop">
+			<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+				<view class="modals-cancel" bindtap="hideModal"></view>
+				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+					<view class="erweima">
+						<button class="poster" bindtap="formSubmit">
+							<image src="/../images/shouye/haib.png"></image>
+							<text class="haib">生成海报</text>
+						</button>
+						<button class="poster m_l" open-type="share">
+							<image src="/../images/shouye/lianjie.png"></image>
+							<text class="haib">分享链接</text>
+						</button>
+					</view>
+					<view class="qux" bindtap="quxiao">取消</view>
+
+					<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+						<view class="floor">
+							<image src="{{item.product_url}}"></image>
+						</view>
+						<view class="content">
+							<view class="left">{{item.name}}</view>
+						</view>
+					</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 			</view>
 		</view>
 	</view>
 </view>
 
+<<<<<<< HEAD
+=======
+
+
+
+<!-- 海报位置 -->
+<view class='imagePathBox' hidden="{{maskHidden == false}}">
+	<!-- <view class="mask" catchtap="clearPosters"></view> -->
+	<image src="{{imagePath}}" class='shengcheng' mode="aspectFit"></image>
+	<button class='baocun' bindtap='baocun'>保存图片到相册</button>
+	<button class="baocuns" open-type="share">分享到群好友</button>
+</view>
+
+<view hidden="{{maskHidden == false}}" class="mask"></view>
+<view class="canvas-box">
+	<canvas style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas" />
+<<<<<<< HEAD
+</view>
+=======
+</view>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<view>
+	<image src="{{img}}" class='bgImg'></image>
+	<text class='mine'>我的邀请码</text>
+	<text class='code'>{{code}}</text>
+	<text class='who'>谁邀请你一起吃面?</text>
+	<view class='inputBox'>
+		<input placeholder='输入朋友的验证码' class='input' bindinput='bindKeyInput' />
+		<button bindtap='btnclick' class='btn'>提交</button>
+	</view>
+	<text class='tishi'>输入朋友的邀请码，朋友和你各自获得通用优惠券1张</text>
+	<text class='shareText'>生成海报分享至</text>
+	<view class='imgBox'>
+		<button open-type="share" class='zfbtn'>
+			<image src="{{wechat}}" class='img'></image>
+		</button>
+		<button class='zfbtn m_l' bindtap='formSubmit'>
+			<image src="{{quan}}" class='img'></image>
+		</button>
+	</view>
+
+	<!--生成海报  -->
+	<!-- <view class="img-box">
+        
+    </view> -->
+	<view class='imagePathBox' hidden="{{maskHidden == false}}">
+		<image src="{{imagePath}}" class='shengcheng'></image>
+		<button class='baocun' bindtap='baocun'>保存相册，分享到朋友圈</button>
+	</view>
+	<view hidden="{{maskHidden == false}}" class="mask"></view>
+	<view class="canvas-box">
+		<canvas style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas" />
+	</view>
+</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

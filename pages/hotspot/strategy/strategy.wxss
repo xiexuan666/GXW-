@@ -1,9 +1,12 @@
 @import "/wxParse/wxParse.wxss";
 
+<<<<<<< HEAD
 page {
   overflow-x: hidden;
 }
 
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 .banner {
   margin-top: 50rpx;
 }
@@ -154,6 +157,7 @@ page {
 .contacts {
   width: 30%;
   margin-top: 20rpx;
+<<<<<<< HEAD
 
 }
 
@@ -511,3 +515,75 @@ button[class="baocun"]::after {
   top: -700px;
 }
 
+=======
+
+}
+
+.contacts image {
+  width: 175rpx;
+  height: 45rpx;
+}
+
+
+.attrs image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+
+/* 引入组件样式 */
+@import '/pages/template/comments/comments.wxss';
+
+/* 添加评论样式 */
+.Input {
+  width: 100vw;
+  /* background-color: chartreuse; */
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 55rpx;
+}
+
+.Input input {
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 80%;
+  height: 60rpx;
+  padding-left: 60rpx;
+<<<<<<< HEAD
+  color: #808080;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+}
+
+.Input .Icon {
+  /* height:40rpx;
+  position: absolute;
+  left: 55rpx;
+  top: 12.5rpx; */
+  width: 100rpx;
+  height: 44rpx;
+  margin-left: 50rpx;
+  margin-right: 9rpx;
+  margin-top: 15rpx;
+  position: absolute;
+}
+
+.Input .button {
+  height: 64rpx;
+  /* width: 125rpx; */
+  right: 43.5rpx;
+  position: absolute;
+  background-color: #bd8f60;
+  line-height: 62rpx;
+  z-index: 3;
+  /* left: 55rpx; */
+  /* top: 12.5rpx; */
+<<<<<<< HEAD
+  color: #fff;
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

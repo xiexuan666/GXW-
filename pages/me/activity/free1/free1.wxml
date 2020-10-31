@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <view>
   <image class="images2" src="https://cdn.juesedao.cn/gxw/682ef6f162d64d5699977010b12a6a8a">
   <view class="images6">
@@ -13,4 +14,22 @@
   </image>
   <image class="images7" src="https://cdn.juesedao.cn/gxw/fad3cac6bcae477a923338db969234df"> 
   </image>
+=======
+<view class="hd">
+  <image class="free2" src="/images/activity/free2.jpg"></image>
+  <text class="text">
+  ..............................................................................................
+  </text>
+  <view class="wenzi">
+    <text>2020 年 5 月 30 日 12:00 活动截止</text>
+  </view>
+  <view class='imagesize'>
+    <image class="xiaoma" src="/images/activity/xiaoma.jpg"></image>
+  </view>
+</view>
+<view class="hd2">
+  <view class="wenzi2">
+    <text class="wenzi3"> 保 存 相 册 </text>
+  </view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>

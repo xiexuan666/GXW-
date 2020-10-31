@@ -68,6 +68,7 @@ Page({
 
 
     var url = baseUrl + "production/findproductPriceById"
+<<<<<<< HEAD
     var dat = {
       storeid: bendijxs.id,
       brandid: app.globalData.brandid,
@@ -77,6 +78,17 @@ Page({
     http.promisServer(url, dat).then(resc => {
       // console.log(resc,'价格1111111111111')
       if (!resc.data.productprice) {
+=======
+    var dat={
+      storeid:bendijxs.id,
+      brandid:app.globalData.brandid,
+      productid:cpxiaqs.id
+    }
+    // console.log(dat,'data')
+    http.promisServer(url, dat).then(resc=>{
+      // console.log(resc,'价格1111111111111')
+      if(!resc.data.productprice){
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
         // console.log(7777777)
         nr.forEach(el => {
           el.jiage = ''
@@ -191,11 +203,19 @@ Page({
   onLoad: function (options) {
     // console.log(options.arry);
     console.log(app.globalData.cpxiaqs.id)
+<<<<<<< HEAD
     var cpxiaqs = app.globalData.cpxiaqs;
 
     if (cpxiaqs.product_guige && this.isString(cpxiaqs.product_guige)) {
       cpxiaqs.product_guige = JSON.parse(cpxiaqs.product_guige)
 
+=======
+    var cpxiaqs=app.globalData.cpxiaqs;
+
+    if(cpxiaqs.product_guige&&this.isString(cpxiaqs.product_guige)){
+      cpxiaqs.product_guige=JSON.parse(cpxiaqs.product_guige)
+    
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     }
     if (cpxiaqs.product_images && this.isString(cpxiaqs.product_images)) {
       cpxiaqs.product_images = JSON.parse(cpxiaqs.product_images)
@@ -206,7 +226,11 @@ Page({
     if (cpxiaqs) {
       this.qingqjiage(cpxiaqs)
     }
+<<<<<<< HEAD
     this.setData({ cpxiaqs })
+=======
+    this.setData({cpxiaqs})
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     // console.log(cpxiaqs,'案例详情')
   },
   //点击保存到相册

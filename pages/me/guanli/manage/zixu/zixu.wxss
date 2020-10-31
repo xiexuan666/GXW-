@@ -126,7 +126,15 @@ input { outline: none;border: none;list-style: none }
 }
 
 .anniu{
+<<<<<<< HEAD
 margin: 50rpx 0;
+=======
+<<<<<<< HEAD
+margin: 50rpx 0;
+=======
+  margin-bottom: 20rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 

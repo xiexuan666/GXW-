@@ -14,26 +14,41 @@
   width: 40rpx;
   height: 40rpx;
   background: #bd8f60;
+<<<<<<< HEAD
   top:7rpx;
   left: 20rpx;
+=======
+  top: 2.5rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   z-index: -1;
 }
 
 /* 文字 */
 .commentsTopText {
   color: #666;
+<<<<<<< HEAD
   margin-left:40rpx;
+=======
+  margin-left: 15rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 /* 第二行 */
 .commentsTopTitle {
   width: 95%;
   height: 40rpx;
+<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   padding-bottom: 35rpx;
   margin-top: 30rpx;
   top:5rpx;
+=======
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 35rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 /* 头像列表 */
@@ -84,7 +99,23 @@
 
 /* 评论主体 */
 .commentsContent {
+<<<<<<< HEAD
   margin-top: 20rpx;
+=======
+<<<<<<< HEAD
+  height: 300rpx;
+=======
+<<<<<<< HEAD
+  height: 300rpx;
+=======
+  height: 1000rpx;
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+  overflow: scroll;
+  width: 100vw;
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   display: flex;
   flex-direction: column;
   flex-direction: column-reverse;
@@ -129,7 +160,10 @@
   align-items: center;
   font-size: 24rpx;
   padding-right: 20rpx;
+<<<<<<< HEAD
   opacity: 0;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .commentsContentTop .Icon .pic image {
@@ -143,7 +177,15 @@
   height: 40rpx;
   width: 90%;
   font-size: 26rpx;
+<<<<<<< HEAD
   margin: auto;
+=======
+<<<<<<< HEAD
+  margin: 10rpx auto;
+=======
+  margin: auto;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   padding-bottom: 30rpx;
   padding-top: 20rpx;
 }
@@ -151,6 +193,13 @@
 .commentsContentText text {
   margin-left: 75rpx;
   line-height: 40rpx;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  word-wrap: break-word
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 
@@ -161,6 +210,7 @@
   background: brown;
 }
 
+<<<<<<< HEAD
 /* 输入框 */
 .buttontemlate{
   position: fixed;
@@ -213,6 +263,11 @@
   line-height: 60rpx;
   color: white;
 }
+=======
+
+
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 
 
@@ -260,6 +315,12 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 /* 布局实例 */
 .list {
   height: 240rpx;
@@ -355,18 +416,31 @@
   display: flex;
   justify-content: space-between;
   margin-top: -12rpx;
+<<<<<<< HEAD
 
 }
+=======
+}
+<<<<<<< HEAD
+.btns {
+  opacity:0;
+}
+=======
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 .num2 .text1 .dh {
   width: 33%;
   height: 40rpx;
+<<<<<<< HEAD
 
 }
 .num2 .text1 .dhs {
   width: 33%;
   height: 40rpx;
   margin-right: 90rpx;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 
@@ -377,8 +451,11 @@
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 /* 底部名片 */
 .list-item {
   height: 100%;
@@ -429,8 +506,13 @@
 }
 
 .contact {
+<<<<<<< HEAD
   width: 33%;
   margin-top: 50rpx;
+=======
+  width: 30%;
+  margin-top: 20rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 }
 
@@ -455,7 +537,31 @@
   position: relative;
   flex-flow: row;
   margin: 0 auto;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+  position: relative;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .management {
@@ -513,5 +619,39 @@
 
 .modify .xiug {
   font-size: 26rpx;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+}
+
+/* 二维码 */
+.code{
+  position: absolute;
+  bottom:20rpx;
+  right:40rpx;
+}
+.code image{
+  width:80rpx;
+  height: 80rpx;
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }

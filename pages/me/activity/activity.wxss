@@ -92,12 +92,19 @@
   margin-left: 55rpx;
 
 }
+<<<<<<< HEAD
 
 .fenx image {
   margin-left: 10rpx;
   width: 40rpx;
   height: 40rpx;
   
+=======
+.fenx  image  {
+  margin-left: 8rpx;
+  width: 40rpx;
+  height: 40rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 

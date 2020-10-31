@@ -15,7 +15,11 @@
 <!-- 导航 -->
 <view class="daoh">
 	<view class="daoh-ul">
+<<<<<<< HEAD
 		<block wx:for='{{data}}'  wx:key="key"  wx:index='index' wx:item='item'>
+=======
+		<block wx:for='{{data}}' wx:index='index' wx:item='item'>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<view class="daoh-li " bindtap="Jump" data-index="{{index}}">
 				<image mode="widthFix" src="{{item.image}}"></image>
 				<view class="daoh-li-text">{{item.title}}</view>
@@ -68,7 +72,11 @@
 			<view class="jxsnr-tubiao-tu1">
 				<view class="jxsnr-li-lp">
 					<image src="/images/tubiao/1-09.png"></image>
+<<<<<<< HEAD
 					<view class="lanbai">{{item.type_name}}</view>
+=======
+					<view class="lanbai">爵士灰</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 				<view class="liser">
 					<view class="jxsnr-tubiao-tu2">
@@ -88,7 +96,11 @@
 							<image mode="aspectFit" src="/images/tubiao/33.png" wx:if='{{item.collection}}'></image>
 							<image src="/images/tubiao/1-13.png" wx:else></image>
 						</view>
+<<<<<<< HEAD
 						<view class="fenxiang" bindtap="handleToTop" data-index="{{index}}">
+=======
+						<view class="fenxiang" bindtap="handleToTop">
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 							<image src="/images/tubiao/1-11.png"></image>
 						</view>
 					</view>
@@ -97,8 +109,13 @@
 		</view>
 		<view class="simple">
 			<view class="simple-ul">
+<<<<<<< HEAD
 				<view class="simple-ul-p">【{{item.name}}】 {{item.huxing}}</view>
 				<!-- <view class="simple-li"  	>{{item.name}}</view> -->
+=======
+				<view class="simple-ul-p">【{{item.type_name}}】 {{item.huxing}}</view>
+				<view class="simple-li">{{item.name}}</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="simple-li-r">
 				<view class="cotione">
@@ -120,11 +137,25 @@
 				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
 					<view class="erweima">
 						<button class="poster" bindtap="formSubmit">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 							<image src="/images/shouye/haib.png"></image>
 							<text class="haib">生成海报</text>
 						</button>
 						<button class="poster m_l" open-type="share">
 							<image src="/images/shouye/lianjie.png"></image>
+<<<<<<< HEAD
+=======
+=======
+							<image src="/../images/shouye/haib.png"></image>
+							<text class="haib">生成海报</text>
+						</button>
+						<button class="poster m_l" open-type="share">
+							<image src="/../images/shouye/lianjie.png"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 							<text class="haib">分享链接</text>
 						</button>
 					</view>
@@ -151,14 +182,25 @@
 
 <!-- 海报位置 -->
 
+<<<<<<< HEAD
 <view class='imagePathBox'  bindtap ='xiaoshi' hidden="{{maskHidden == false}}">
 	<view class="mask" catchtap="clearPosters"></view>
 	<image src="{{imagePath}}" class='shengcheng' mode="aspectFit"></image>
 	<button class='baocun' catchtap='baocun'>保存图片到相册</button>
+=======
+<view class='imagePathBox' hidden="{{maskHidden == false}}">
+	<view class="mask" catchtap="clearPosters"></view>
+	<image src="{{imagePath}}" class='shengcheng' mode="aspectFit"></image>
+	<button class='baocun' bindtap='baocun'>保存图片到相册</button>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	<button class="baocuns" open-type="share">分享到群好友</button>
 </view>
 
 <view hidden="{{maskHidden == false}}" class="mask"></view>
 <view class="canvas-box">
+<<<<<<< HEAD
 	<canvas style="width:375px; height:667px; margin:auto;background:rgba(255,255,255);" canvas-id="canvpos" />
+=======
+	<canvas style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas" />
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>

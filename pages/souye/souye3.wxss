@@ -120,6 +120,7 @@
 .df_1 {
   border: 1px solid #ccc;
   border-radius: 15rpx;
+<<<<<<< HEAD
   width: 400rpx;
   padding-left: 50rpx;
 
@@ -131,6 +132,17 @@
   width: 400rpx;
   padding-left: 50rpx;
 
+=======
+  width: 400rpx;
+  padding-left: 50rpx;
+}
+
+.df_2 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 400rpx;
+  padding-left: 50rpx;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 }
 
@@ -189,11 +201,17 @@ button {
 .placeholderStyle {
   color: #ccc;
   padding-left: 250rpx;
+<<<<<<< HEAD
  
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .placeholderStyles {
   color: #ccc;
   padding-left: 30rpx;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }

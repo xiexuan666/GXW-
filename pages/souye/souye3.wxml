@@ -8,7 +8,11 @@
 				</view>
 				<view class="jinx-toux">
 					<view class="toux-img">
+<<<<<<< HEAD
 						<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+=======
+						<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					</view>
 					<view class="name-p">冠星王总部</view>
 				</view>
@@ -29,7 +33,11 @@
 						<view class="search">
 							<view class="df search_arr">
 								<text class="text">姓　　名</text>
+<<<<<<< HEAD
 								<input name="mobile" model:value="{{shopowner}}" class="df_2" placeholder="请输入真实姓名"
+=======
+								<input name="mobile" value="{{shopowner}}" class="df_2" placeholder="请输入真实姓名"
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 								
 								placeholder-class="placeholderStyles" />
 							</view>
@@ -39,7 +47,11 @@
 						<view class="search">
 							<view class="df search_arr">
 								<text class="text">电　　话</text>
+<<<<<<< HEAD
 								<input name="xingm"  model:value="{{phone}}" class="df_1" placeholder="重新绑定" placeholder-class="placeholderStyle" />
+=======
+								<input name="xingm" value="{{phone}}" class="df_1" placeholder="重新绑定" placeholder-class="placeholderStyle" />
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 							</view>
 						</view>
 					</view>
@@ -58,7 +70,11 @@
 								<view class="search">
 									<view class="df search_arr">
 										<text class="text">上门日期</text>
+<<<<<<< HEAD
 										<input name="xingm"  model:value="{{date}}" placeholder="-请选择-" placeholder-class="placeholderStyle" class="df_1"></input>
+=======
+										<input name="xingm" value="{{date}}" placeholder="-请选择-" placeholder-class="placeholderStyle" class="df_1"></input>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 									</view>
 								</view>
 							</view>

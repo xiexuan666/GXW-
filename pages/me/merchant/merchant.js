@@ -8,98 +8,54 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     status: null,
 
+=======
+    status:0,
+    text:null
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
-  //现金购买
-  qianzhif: function (name) {
-    var gerxinx = this.data.gerxinx
-    //金额
-    // let qian = e.currentTarget.dataset.q * 100;
-    //课程id
-    // var classid = this.data.classxq.id
-    //课程名字
-    var storeusername = name
-    var that = this
-    if (!gerxinx) { return false; }
-    let url = baseUrl + "wxpay/topay"
-    var datas = {
-      openid: gerxinx.open_id,
-      totalfee: app.globalData.jiage,
-      userid: gerxinx.id,
-      storeusername,
-      brandid: '1'
-      // classusername: xinx.wx_name
-    }
-    var p = new Promise(function (resolve, reject) {
-      http.promisServer(url, datas).then(res => {
-        console.log(res, '现金购买调起前')
-        wx.requestPayment({
-          timeStamp: res.data.returncode.timeStamp,
-          nonceStr: res.data.returncode.nonceStr,
-          package: res.data.returncode.package,
-          signType: 'MD5',
-          paySign: res.data.returncode.paySign,
-          success: res => {
-            console.log(res, '支付成功后结果')
-            resolve(true)
-          },
-          fail: () => { console.log(res); },
-          complete: () => { console.log(res); }
-        })
-
+  /**
+   * 生命周期函数--监听页面加载
+   * 获取用户商家状态显示不同页面
+   */
+  onLoad: function (options) {
+    var that = this;
+    // 商家状态
+    let status = wx.getStorageSync('sjzt').status;
+    // 后台返回文字信息
+    let content = wx.getStorageSync("sjzt").message
+    if(status == 0){
+      console.log('你还没有申请入驻');
+      that.setData({
+        status:0,
+        text:''
       })
-    })
-    return p;
-  },
-
-  //提交内容
-  tijiaoform(e) {
-    var tha = this
-    var sjzt = this.data.sjzt
-    var gerxinx = this.data.gerxinx
-    var tjnr = e.detail.value
-    var addresstwo = this.data.addresstwo
-    var userid = gerxinx.id
-    var brandid = '1'
-    var opentime = tjnr.kais + "-" + tjnr.jies
-    var wxhao = this.data.erwm[0]
-    var logo = this.data.tupian[0]
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    tjnr.logo = logo
-    tjnr.addresstwo = addresstwo
-    var pdjieg = this.pdtjnr(tjnr)
-    if (!pdjieg) { return false }
-
-    tjnr.status = 1
-    tjnr.userid = userid
-    tjnr.brandid = brandid
-    tjnr.opentime = opentime
-    console.log(tjnr, '提交之前的结果')
-
-
-
-    if (sjzt && sjzt.record && sjzt.record.id) {
-      console.log(sjzt, '商家状态')
-      if (sjzt.record.status == 1) {
-        tjnr.status = 1
-      }
-      if (sjzt.record.status == 2) {
-        tjnr.status = 2
-      }
-      tjnr.id = sjzt.record.id
-      tha.formtij(tjnr)
-      return false
+    }else if(status == 1){
+      console.log('你已经缴费并申请入驻了，请等待审核');
+      that.setData({
+        status:1,
+        text:content
+      })
+    }else if(status == 2){
+      console.log('你已审核通过');
+      wx.navigateTo({
+        url: '/pages/me/guanli/guanli',
+      })
+      that.setData({
+        status:2,
+        text:content
+      })
+    }else if(status == 3){
+      console.log('你提交的信息有误，请重新提交');
+      that.setData({
+        status:3,
+        text:content
+      })
     }
-    //支付现金
-    this.qianzhif(tjnr.shopowner).then(res => {
-      if (res) {
-        // 提交
-        tha.formtij(tjnr)
-      }
-    })
-
   },
+<<<<<<< HEAD
   //真正向服务器提交内容
   // shenq(tjnr) {
   //   var tha = this
@@ -143,6 +99,13 @@ Page({
 
 
   },
+=======
+  // 同意协议跳转页面
+  shenq:function(){
+    app.Jump('me/guanli/manage/store')
+  },
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
   /**
    * 生命周期函数--监听页面初次渲染完成

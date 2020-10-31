@@ -1,6 +1,30 @@
 <!-- 店长卡片 -->
 <import src='/pages/template/comments/comments' />
+<<<<<<< HEAD
 <template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<<<<<<< HEAD
+<template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<<<<<<< HEAD
+<template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<<<<<<< HEAD
+<template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<<<<<<< HEAD
+<template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<<<<<<< HEAD
+<template is="users" data="{{list:'imasrc////',num:3}}">
+=======
+<template is="users" data="{{list:'imasrc////',num:3}}" data="{{user:merchants}}">
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </template>
 
 
@@ -13,6 +37,14 @@
 				<image src="/images/tubiao/dg.png"></image>
 			</view>
 			<view class="character6 ">导购管理</view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
 		</view>
 		<view class="list-item6  cpxqp2 {{cpxqzt==2?'active':''}}" data-ind="{{2}}" bindtap="cpxzxz">
 			<view class="list-right6">
@@ -31,6 +63,57 @@
 				<image src="/images/tubiao/xz.png"></image>
 			</view>
 			<view class="character6 ">打包发送</view>
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+		</view>
+		<view class="list-item6  cpxqp2 {{cpxqzt==2?'active':''}}" data-ind="{{2}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/my.png"></image>
+			</view>
+			<view class="character6 ">我的客户</view>
+		</view>
+		<view class="list-item6  cpxqp3 {{cpxqzt==3?'active':''}}" data-ind="{{3}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/xzm.png"></image>
+			</view>
+			<view class="character6 ">群发助手</view>
+		</view>
+		<view class="list-item6" bindtap="fasong">
+			<view class="list-right6">
+				<image src="/images/tubiao/xz.png"></image>
+			</view>
+=======
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+		</view>
+		<view class="list-item6  cpxqp2 {{cpxqzt==2?'active':''}}" data-ind="{{2}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/my.png"></image>
+			</view>
+			<view class="character6 ">我的客户</view>
+		</view>
+		<view class="list-item6  cpxqp3 {{cpxqzt==3?'active':''}}" data-ind="{{3}}" bindtap="cpxzxz">
+			<view class="list-right6">
+				<image src="/images/tubiao/xzm.png"></image>
+			</view>
+			<view class="character6 ">群发助手</view>
+		</view>
+		<view class="list-item6" bindtap="fasong">
+			<view class="list-right6">
+				<image src="/images/tubiao/xz.png"></image>
+			</view>
+<<<<<<< HEAD
+			<view class="character6 ">打包发送</view>
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+			<view class="character6 ">打包发送</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 	</view>
 </view>
@@ -41,6 +124,7 @@
 
 <!-- 名片 -->
 <view class="card" wx:if='{{cpxqzt==1}}'>
+<<<<<<< HEAD
 	<view class="dh_r">
 		<!-- <view class="vip"></view> -->
 		<view class="vip">头像</view>
@@ -49,6 +133,58 @@
 		<!-- <view class="vip"></view> -->
 	</view>
 	<view class="shoppers">
+=======
+<<<<<<< HEAD
+	<view class="dh_r">
+=======
+<<<<<<< HEAD
+	<view class="dh_r">
+=======
+<<<<<<< HEAD
+	<view class="dh_r">
+=======
+
+	<view class="dh_r">
+<<<<<<< HEAD
+		<view class="vip">头像　｜　</view>
+		<view class="vip">导购　｜</view>
+		<view class="vip">会员数</view>
+	</view>
+	<view class="shoppers">
+		<view class="shoppers_r">
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<checkbox value="all" bindtap="selectall" />
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+					<image src="/images/tubiao/wen.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="btn_r">
+		<button class="btn">删除</button>
+=======
+		<!-- <checkbox checked="{{check}}"  bindtap="Future"></checkbox> -->
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+		<view class="vip"></view>
+		<view class="vip">头像</view>
+		<view class="vip">导购</view>
+		<view class="vip">会员数</view>
+		<view class="vip">是否审核</view>
+		<view class="vip"></view>
+	</view>
+	<view class="shoppers">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		<block wx:for='{{shopperslist}}' wx:index='index' wx:item='item'>
 			<view class="shoppers_r">
 				<view class="me-list-l_i">
@@ -75,6 +211,47 @@
 			</view>
 		</block>
 	</view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+	<block wx:for='{{shopperslist}}' wx:index='index' wx:item='item'>
+		<view class="shoppers_r">
+			<view class="me-list-l_i">
+				<view class="me-list">
+					<checkbox bindtap="selectall" checked='{{false}}' data-index="{{item.id}}" />
+				</view>
+				<view class="me-list">
+				<image src="{{item.waiter_qr_code}}"></image>
+				</view>
+				<view class="me-list">
+				<text class="names">{{item.waiter_name}}</text>
+				</view>
+				<view class="me-list">
+			<text class="name">{{item.member_count}}</text>
+				</view>
+				<view class="me-list">
+			<text class="name">已审核</text>
+				</view>
+				<view class="me-list">
+			<image src="/images/tubiao/wen.png" bindtap="update" data-index="{{index}}"></image>
+				</view>
+
+			</view>
+		</view></block>
+	</view>
+	<view class="btn_r">
+		<button class="btn" bindtap="delete">删除</button>
+<<<<<<< HEAD
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+	</view>
+
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>
 
 
@@ -82,11 +259,19 @@
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 <!-- 绑定获客 -->
 <view class="binding" wx:if='{{cpxqzt==1}}'>
 	<block>
 		<view class="binding_r"  bindtap="message">
+<<<<<<< HEAD
 			<view class="me-list-l_i">
 				<view class="me-list-lil">
 					<text class="names">心如止水</text>
@@ -94,6 +279,29 @@
 				</view>
 				<view class="me-list-lir">
 					<text class="name">125</text>
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+<!-- 绑定获客 -->
+<view class="binding" wx:if='{{cpxqzt==2}}'>
+	<block>
+		<view class="binding_r">
+			<view class="customer">绑定获客</view>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					<image src="/images/tubiao/youj.png"></image>
 				</view>
 			</view>
@@ -101,16 +309,42 @@
 	</block>
 	<view class="me-list-l_i">
 		<view class="me-list-lil">
+<<<<<<< HEAD
 			<text class="names">海阔天空</text>
 			<image src="https://cdn.juesedao.cn/gxw/6d8af08f7d5c4a56a95e709f3954df32"></image>
 		</view>
 		<view class="me-list-lir">
 			<text class="name">50</text>
 			<image src="/images/tubiao/youj.png"></image>
+=======
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
 		</view>
 	</view>
 	<view class="me-list-l_i">
 		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+<<<<<<< HEAD
+		</view>
+=======
+<<<<<<< HEAD
+		</view>
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+<<<<<<< HEAD
 			<text class="names">开心就好</text>
 			<image src="/images/tubiao/90.png"></image>
 		</view>
@@ -130,13 +364,16 @@
 		</view>
 	</view>
 
-	<view class="btn_r">
-		<button class="btn" bindtap="delete">删除</button>
+=======
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
 	</view>
-
 </view>
-
-
 
 
 
@@ -147,11 +384,11 @@
 			<view class="customers">系统获客</view>
 			<view class="me-list-l_i">
 				<view class="me-list-lil">
-					<text class="names">野的像风</text>
-					<image src="/images/tubiao/wxtx.jpg"></image>
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
 				</view>
 				<view class="me-list-lir">
-					<text class="name">36</text>
+					<text class="name">300</text>
 					<image src="/images/tubiao/youj.png"></image>
 				</view>
 			</view>
@@ -159,31 +396,241 @@
 	</block>
 	<view class="me-list-l_i">
 		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+<<<<<<< HEAD
+		</view>
+	</view>
+
+=======
+<<<<<<< HEAD
+		</view>
+	</view>
+
+=======
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+		</view>
+	</view>
+</view>
+
+
+
+
+
+<<<<<<< HEAD
+<!-- 名片 -->
+<view class="card" wx:if='{{cpxqzt==1}}'>
+	<view class="dh_r">
+		<view class="vip"></view>
+		<view class="vip">头像</view>
+		<view class="vip">导购</view>
+		<view class="vip">会员数</view>
+		<view class="vip">是否审核</view>
+		<view class="vip"></view>
+	</view>
+	<view class="shoppers">
+	<block wx:for='{{shopperslist}}' wx:index='index' wx:item='item'>
+		<view class="shoppers_r">
+			<view class="me-list-l_i">
+				<view class="me-list">
+					<checkbox bindtap="selectall" checked='{{false}}' data-index="{{item.id}}" />
+				</view>
+				<view class="me-list">
+				<image src="{{item.waiter_qr_code}}"></image>
+				</view>
+				<view class="me-list">
+				<text class="names">{{item.waiter_name}}</text>
+				</view>
+				<view class="me-list">
+			<text class="name">{{item.member_count}}</text>
+				</view>
+				<view class="me-list">
+			<text class="name">已审核</text>
+				</view>
+				<view class="me-list">
+			<image src="/images/tubiao/wen.png" bindtap="update" data-index="{{index}}"></image>
+				</view>
+
+			</view>
+		</view></block>
+	</view>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+	<view class="btn_r">
+		<button class="btn" bindtap="delete">删除</button>
+	</view>
+
+</view>
+
+
+
+
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+
+<!-- 绑定获客 -->
+<view class="binding" wx:if='{{cpxqzt==2}}'>
+	<block>
+		<view class="binding_r">
+			<view class="customer">绑定获客</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+			<image src="/images/tubiao/youj.png"></image>
+		</view>
+	</view>
+</view>
+
+
+
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+<!-- 系统获客 -->
+<view class="binding" wx:if='{{cpxqzt==2}}'>
+	<block>
+		<view class="binding_rr">
+			<view class="customers">系统获客</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+<<<<<<< HEAD
+					<text class="names">野的像风</text>
+					<image src="/images/tubiao/wxtx.jpg"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">36</text>
+=======
+					<text class="names">谢会员</text>
+					<image src="/images/tubiao/tx.png"></image>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">300</text>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="me-list-l_i">
+		<view class="me-list-lil">
+<<<<<<< HEAD
 			<text class="names">抹茶落季</text>
 			<image src="https://cdn.juesedao.cn/gxw/fc91de844e2e4f3db4315f250a1a0b77"></image>
 		</view>
 		<view class="me-list-lir">
 			<text class="name">45</text>
+=======
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<image src="/images/tubiao/youj.png"></image>
 		</view>
 	</view>
 	<view class="me-list-l_i">
 		<view class="me-list-lil">
+<<<<<<< HEAD
 			<text class="names">[愿得一人]</text>
 			<image src="https://cdn.juesedao.cn/gxw/83dffe79857244ba9929c71e28982e5c"></image>
 		</view>
 		<view class="me-list-lir">
 			<text class="name">90</text>
+=======
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<image src="/images/tubiao/youj.png"></image>
 		</view>
 	</view>
 	<view class="me-list-l_i">
 		<view class="me-list-lil">
+<<<<<<< HEAD
 			<text class="names">暖寄归人</text>
 			<image src="https://cdn.juesedao.cn/gxw/95508ea2b29a4b3f980641acc0078ad2"></image>
 		</view>
 		<view class="me-list-lir">
 			<text class="name">5　</text>
+=======
+			<text class="names">谢会员</text>
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<text class="name">300</text>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<image src="/images/tubiao/youj.png"></image>
 		</view>
 	</view>
@@ -193,6 +640,17 @@
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 
 
@@ -208,7 +666,11 @@
 			<view class="me-list-lilx">分别发送给
 			</view>
 			<view class="me-list-lir">
+<<<<<<< HEAD
 				<text class="name">香香 </text>
+=======
+				<text class="name">谢会员</text>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
@@ -226,4 +688,4 @@
 			<button class="btn">发送</button>
 		</view>
 	</view>
-</view>
+</view> 

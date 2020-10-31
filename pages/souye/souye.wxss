@@ -394,11 +394,28 @@
 }
 
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+
+
+
+=======
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+
+
+/* 海报 */
+
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 /* 海报 */
 
 /*模态框*/
@@ -517,6 +534,10 @@
   align-items: center;
   justify-content: center;
   background: #fff;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .poster image {
@@ -528,6 +549,145 @@
 button[class="poster"]::after {
   border: 0;
 }
+
+button[class="poster m_l"]::after {
+  border: 0;
+}
+<<<<<<< HEAD
+=======
+
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+
+.baocun {
+  display: block;
+  width: 80%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #fdd668;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+<<<<<<< HEAD
+
+.baocun {
+  display: block;
+  width: 80%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #fdd668;
+
+}
+
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+button[class="baocun"]::after {
+  border: 0;
+}
+
+
+
+.haib {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  font-weight: 300;
+  color: #cacacb;
+=======
+}
+
+.poster image {
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+}
+
+button[class="poster"]::after {
+  border: 0;
+}
+<<<<<<< HEAD
+
+button[class="poster m_l"]::after {
+  border: 0;
+}
+
+.imagePathBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.baocun {
+  display: block;
+  width: 80%;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 50rpx;
+  left: 10%;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #fdd668;
+
+}
+
+button[class="baocun"]::after {
+  border: 0;
+}
+
+
+=======
 
 button[class="poster m_l"]::after {
   border: 0;
@@ -568,6 +728,7 @@ button[class="baocun"]::after {
 }
 
 
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
 
 .haib {
   padding: 20rpx 0;
@@ -587,6 +748,8 @@ button[class="baocun"]::after {
 
 
 
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 .imagePathBox {
   width: 100%;
   height: 100%;
@@ -683,6 +846,7 @@ button[class="baocun"]::after {
 .mask {
   position: absolute;
   height: 100%;
+<<<<<<< HEAD
   width: 0%;
   background-color: black;
   top: 0;
@@ -693,4 +857,10 @@ button[class="baocun"]::after {
 .canvas-box{
   position: absolute;
   top: -700px;
+=======
+  width: 50%;
+  background-color: black;
+  top: 0;
+  left: 0;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }

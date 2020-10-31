@@ -20,7 +20,11 @@
 	<view class="history" wx:if='{{Iprdoues}}'>
 		<block>
 			<view class="activity">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/6bbb4d41c0cf4b5297d7a1cf2db699e0"></image>
+=======
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="right">
 				<view class="right-li">
@@ -34,6 +38,7 @@
 				<view class="left" bindtap="fenxiang">
 					<view class="fenx">
 						<image src="/images/tubiao/fengx.png"></image>
+<<<<<<< HEAD
 					</view>
 					<view style="font-size: 24rpx;">分享</view>
 				</view>
@@ -69,6 +74,14 @@
 						<image src="/images/tubiao/fengx.png"></image>
 					</view>
 					<view style="font-size: 24rpx;">分享</view>
+=======
+					</view>
+<<<<<<< HEAD
+					<view style="font-size: 24rpx;">分享</view>
+=======
+					<view  style="font-size: 24rpx;">分享</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 			</view>
 		</block>
@@ -78,12 +91,16 @@
 
 
 
+<<<<<<< HEAD
 
 
 
 
 
 <view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="group" style="display:none;">
+=======
+<view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="group">
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	<view class=" history">
 		<view class="activity">
 			<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
@@ -101,7 +118,15 @@
 				<view class="fenx">
 					<image src="/images/tubiao/fengx.png"></image>
 				</view>
+<<<<<<< HEAD
 				<view style="font-size: 24rpx;">分享</view>
+=======
+<<<<<<< HEAD
+				<view style="font-size: 24rpx;">分享</view>
+=======
+				<view  style="font-size: 24rpx;">分享</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 	</view>
@@ -110,6 +135,7 @@
 
 
 
+<<<<<<< HEAD
 <view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="speed" style="display:none;">
 	<view class="history">
 		<view class="activity">
@@ -142,11 +168,21 @@
 	<view class="history" data-index='{{index}}'  >
 		<view class="activity">
 			<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+=======
+<view class="recommend" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap="speed">
+	<view class="history">
+		<view class="activity">
+			<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 		<view class="right">
 			<view class="right-li">
 				<view class="right-ul">
+<<<<<<< HEAD
 					秒杀活动
+=======
+					加速分享
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 				<view class="right-l">
 					活动时问:2020.05.30-09.00至 2020.05.30-12.00
@@ -156,7 +192,15 @@
 				<view class="fenx">
 					<image src="/images/tubiao/fengx.png"></image>
 				</view>
+<<<<<<< HEAD
 				<view style="font-size: 24rpx;">分享</view>
+=======
+<<<<<<< HEAD
+				<view style="font-size: 24rpx;">分享</view>
+=======
+				<view  style="font-size: 24rpx;">分享</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 	</view>

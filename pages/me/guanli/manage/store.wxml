@@ -6,7 +6,11 @@
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+=======
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
@@ -51,8 +55,13 @@
 
 			<view class="me-list-li">
 				<view class="me-list-lil">详细地址</view>
+<<<<<<< HEAD
 				<view class="me-list-lir" bindtap="wzxuanz">
 					<input class="form-lir-input dz" value="{{address}}" name="address" disabled='true' placeholder="请选择地址"></input>
+=======
+				<view class="me-list-lil">
+					<input class="form-lir-input dz" value="{{address}}" name="address"  placeholder="请选择地址"></input>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 				<!-- <view class="xuanzdz" bindtap="wzxuanz">选择地址</view> -->
 			</view>

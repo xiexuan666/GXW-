@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--pages/me/shangcanli/guanlianli.wxml-->
 <view class="guananli-t">
   <view class="guananli-tp">管理</view>
@@ -25,3 +26,126 @@
  <view class="adddell adddelgt" bindtap="anlixingzeng">新增</view> 
  <view class="adddelr adddelgt" bindtap="anlisc">删除</view> 
 </view>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+
+  <view class="top">
+    <image class="cardbg" src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+    <view class="card_portrait">
+      <image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+      <view class="card_name">冠星王未来家</view>
+    </view>
+  </view>
+
+
+
+  <view class="cardList" style="margin-top:{{marginTop}}">
+  <view class="cardnav">
+    <view class="nav_left">
+    </view>
+    <view class="nav_right">
+    <view class="title">
+    管理
+    </view>
+    </view>
+  </view>
+  <block wx:for='{{1}}'>
+    <view class="cards">
+    <!-- 是否需要遠點 -->
+      <view class="round {{1==2?'roundstatus' : ''}}"></view>
+      <!-- 卡片所在 -->
+        <view class="cardsContent">
+          <image src="https://cdn.juesedao.cn/gxw/anli.png"></image>
+        </view>
+        <!-- 下方文字 -->
+        <view class="card_text">
+          <view class="card_Title">
+          西安280名实在，四年落地，只为符合适合实际阿斯达
+          </view>
+          <view class="card_label">
+          <block>
+            <text class="label {{1==1?'labelFocus':''}}" >#西安</text>
+          </block>
+            <text class="label">#西安</text>
+          </view>
+        </view>
+    </view>
+
+  </block>
+  <view class="buttom">
+  <view class="buttomTwo">
+    <button class="addbutton">新增</button>
+    <button class="deletbutton">删除</button>
+  </view>
+  <view class="buttomOne">
+    <button>保存</button>
+  </view>
+  </view>
+  </view>
+
+
+
+  <view class="buttom">
+    <view class="buttomTwo">
+      <button class="addbutton">新增</button>
+      <button class="deletbutton">删除</button>
+    </view>
+    <view class="buttomOne">
+      <button>保存</button>
+    </view>
+    </view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+<<<<<<< HEAD
+
+
+
+<view class="jinxt">
+	<view class="jinx-nr">
+		<view class="guan"  bindtap="management">
+			<view class="project">管理</view>
+		</view>
+		<view class="themes">
+			<image src="https://cdn.juesedao.cn/gxw/anli.png"></image>
+			<view class="base">西安2B0m2私宅|4年落地，职位适合设计M</view>
+		</view>
+
+
+
+		<view class="bott">
+			<button class="add"  bindtap="category">新增</button>
+			<button class="dele">删除</button>
+		</view>
+
+
+	</view>
+</view> 
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

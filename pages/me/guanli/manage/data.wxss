@@ -109,6 +109,11 @@ page {
 .list-item {
   padding: 0 40rpx;
 }
+.character{
+  font-size: 25rpx;
+  color: #7C7B7B;
+  
+}
 
 .character {
   font-size: 25rpx;
@@ -154,11 +159,19 @@ page {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 100rpx;
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .ul {
+<<<<<<< HEAD
   height: 755rpx;
+=======
+ height: 755rpx; 
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   background-color: #fff;
   flex-direction: row;
   flex-wrap: wrap;
@@ -171,20 +184,28 @@ page {
   align-items: center;
   border-radius: 25rpx;
 }
+<<<<<<< HEAD
 
 .yemianbig {
+=======
+.yemianbig{
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   display: grid;
   grid-template-columns: 33.5% 33.5% 33.5%;
   margin-left: 15rpx;
   width: 95%;
   padding-top: 20rpx;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 .link {
   border-right: #E7E7E7 solid 1rpx;
   border-bottom: #E7E7E7 solid 1rpx;
   padding: 20% 0 20% 0;
 }
+<<<<<<< HEAD
 
 .linkaa {
   border-bottom: #E7E7E7 solid 1rpx;
@@ -207,10 +228,30 @@ page {
 }
 
 .shuz {
+=======
+.linkaa{
+  border-bottom: #E7E7E7 solid 1rpx;
+  padding: 20% 0 20% 0;
+}
+.linkbb{
+  border-right: #E7E7E7 solid 1rpx;
+  padding: 20% 0 20% 0;
+} 
+.linkcc{
+  padding: 20% 0 20% 0;
+}
+.link_child{
+  
+  color: #7C7B7B;
+  font-size: 25rpx;
+}
+.shuz{
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   padding-top: 20rpx;
   font-size: 40rpx;
   color: #BD8F60;
 }
+<<<<<<< HEAD
 
 .big {
   width: 100%;
@@ -249,29 +290,75 @@ page {
 }
 
 .secondbig {
+=======
+.big{
+  width: 100%;
+  
+}
+.mybig{
+  display: flex;
+  width: 95%;
+ margin-left: 15rpx;
+  font-size: 30rpx;
+  padding: 20rpx 0  20rpx 0;
+  border-bottom: #E7E7E7 solid 1rpx;
+}
+.a{
+  flex: 1;
+  text-align: right;
+}
+.b{
+  flex: 1;
+}
+.c{
+  flex: 1;
+  text-align: left;
+}
+.mymy{
+  color: #424242;
+}
+.youyou{
+  color: #C8C9CA;
+}
+.secondbig{
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   margin-left: 15rpx;
   width: 95%;
   border-bottom: #E7E7E7 solid 1rpx;
   color: #464646;
 }
+<<<<<<< HEAD
 
 .d {
   padding: 10rpx 0 10rpx 0;
 }
 
 .below_one {
+=======
+.d{
+  padding: 10rpx 0 10rpx 0;
+}
+.below_one{
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   font-size: 25rpx;
   display: flex;
   color: white;
   text-align: center;
+<<<<<<< HEAD
   padding: 20rpx 0 15rpx 0;
 }
 
 .day {
+=======
+  padding: 20rpx 0 15rpx 0 ;
+}
+.day{
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   width: 25%;
   background-color: #BD8F60;
   padding: 20rpx 0 20rpx;
 }
+<<<<<<< HEAD
 
 .daym {
   width: 25%;
@@ -279,10 +366,18 @@ page {
 }
 
 .below_two {
+=======
+.daym{
+  width: 25%;
+  padding: 20rpx 0 20rpx;
+}
+.below_two{
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   font-size: 25rpx;
   display: flex;
   color: white;
   text-align: center;
+<<<<<<< HEAD
 
 
 }
@@ -295,11 +390,24 @@ page {
 }
 
 .daogou {
+=======
+ 
+
+}
+.mendian{
+  width: 50%;
+  background-color: #BD8F60;
+  border-radius: 0 0  0 20rpx;
+  padding: 20rpx 0 20rpx 0 ;
+}
+.daogou{
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   width: 50%;
   background-color: #BD8F60;
   border-radius: 0 0 20rpx 0;
   padding: 20rpx 0 20rpx 0;
 }
+<<<<<<< HEAD
 
 .mm {
   width: 50%;
@@ -347,6 +455,11 @@ page {
   to {
     height: 210rpx;
   }
+=======
+.mm{
+  width: 50%;
+  padding: 20rpx 0 20rpx 0 ;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 
 .select_one {
@@ -379,6 +492,7 @@ page {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .carouse {
   color: #fff;
   font-size: 33rpx;
@@ -457,4 +571,60 @@ page {
   font-size: 22rpx;
   font-weight: 300;
   color: #fff;
+=======
+.list-msg {
+ 
+  background-color: #fff;
+  position: relative;
+}
+
+.list-msg1 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-msg .list-msg2 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #E7E7E7;
+  padding: 0 10rpx;
+  
+}
+
+.select_box {
+  background-color: #eee;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.5s;
+}
+
+@keyframes myfirst {
+  from {
+      height: 0rpx;
+  }
+
+  to {
+      height: 210rpx;
+  }
+}
+
+.select_one {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #E7E7E7;
+}
+.img{
+  position:absolute;
+  right:10px;top:4px;
+
+}
+.mytext{
+  width: 90%;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }

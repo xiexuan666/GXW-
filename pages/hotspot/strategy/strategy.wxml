@@ -5,6 +5,12 @@
 				【{{strategy.name}}】{{strategy.title}}
 			</view>
 			<view class="banner-lir">
+<<<<<<< HEAD
+=======
+			</view>
+			<view class="submit">
+				{{strategy.context}}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<!-- <view class="submit">
 				{{strategy.context}}
@@ -12,10 +18,17 @@
 			<rich-text nodes="{{strategy.context}}"></rich-text>
 		</view>
 		<view class='imagesize'>
+<<<<<<< HEAD
 			<!-- <image src="{{strategy.images}}" class='in-image'>
 			</image> -->
 		</view>
 
+=======
+			<image src="{{strategy.images}}" class='in-image'>
+			</image>
+		</view>
+		<view class="gxw">(图片源于 ：冠星王陶瓷)</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	</view>
 </view>
 <view class="content">
@@ -28,8 +41,19 @@
 
 
 <!-- comments:评论渲染模板 -->
+<<<<<<< HEAD
 <import src='/pages/template/comments/comments' />
 <template is="comments" data="{{great:strategy.great,Common:Common,dianzhan:strategy.dianzhan,topstyle:1,topstyle:1,font_color:'#000',bottom:false,botton1:true,scroll:scroll,InputText:InputText}}"></template>
+=======
+<import src='/pages/template/comments/comments'/>
+<template is="comments"  data="{{great:strategy.great,Common:Common,dianzhan:strategy.dianzhan}}"></template>
+<!-- 添加评论 -->
+<view class="Input">
+	<image class="Icon" src="/images/tubiao/pl.png" mode="heightFix" ></image>
+	<input class="addCommom" confirm-type='send' type="text" value="{{InputText}}"  bindinput='getText' bindfocus='clearInput'></input>
+	<button class="button" catchtap="common">发送</button>
+</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 
 
@@ -47,6 +71,12 @@
 			</view>
 			<view class="attrs2">
 				店主:　村上
+<<<<<<< HEAD
+=======
+			</view>
+			<view class="attrs">
+				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="attrs">
 				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
@@ -56,6 +86,23 @@
 			<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png" bindtap="calling"></image>
 			<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
 		</view>
+<<<<<<< HEAD
+=======
+		<view class="contact">
+<<<<<<< HEAD
+			<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png"  bindtap="calling" ></image>
+			<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+=======
+<<<<<<< HEAD
+			<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+=======
+			<image src="/images/tubiao/lianxi.png"></image>
+			<image src="/images/tubiao/zaixian.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+		</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	</view>
 </view>
 
@@ -70,7 +117,11 @@
 		<view class="list-item1">
 			<view class="list-right">
 				<image src="/images/tubiao/85.png" class="image"></image>
+<<<<<<< HEAD
 				<view class="character">{{strategy.great}}</view>
+=======
+				<view class="character">5220</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 
 		</view>
@@ -83,12 +134,25 @@
 		</view>
 
 		<view class="list-item1">
+<<<<<<< HEAD
 			<view class="list-right" catchtap="handleToTop"  data-index='{{index}}'>
+=======
+<<<<<<< HEAD
+			<view class="list-right" >
+=======
+<<<<<<< HEAD
+			<view class="list-right" >
+=======
+			<view class="list-right" bindtap="handleToTop">
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<image src="/images/tubiao/87.png" class="image"></image>
 				<view class="character">分享</view>
 			</view>
 		</view>
 	</view>
+<<<<<<< HEAD
 	<view class="tubiaof" >
 		<view class="toTop">
 			<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
@@ -132,4 +196,6 @@
 <view hidden="{{maskHidden == false}}" class="mask"></view>
 <view class="canvas-box">
 	<canvas style="width:375px; height:667px; margin:auto;background:rgba(255,255,255);" canvas-id="canvpos" />
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>

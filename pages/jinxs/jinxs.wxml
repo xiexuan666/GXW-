@@ -17,8 +17,13 @@
 
 <!-- 热点视频 -->
 <view class="videolist" wx:if='{{cactiv==2}}'>
+<<<<<<< HEAD
 	<import src='/pages/template/viedeocard/videocard' />
 	<template is="videocard" data="{{video:video}}"></template>
+=======
+	<import src='/pages/template/viedeocard/videocard'/>
+		<template is="videocard" data="{{video:video}}"></template>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>
 
 
@@ -51,13 +56,21 @@
 
 <!-- 内容 -->
 <view class="list" wx:if='{{cactiv==1}}'>
+<<<<<<< HEAD
 	<block>
+=======
+	<block >
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		<navigator wx:for='{{strategy}}' wx:index='index' wx:item='item' url="/pages/hotspot/strategy/strategy?arry={{json}}&id={{index}}" class="goods-list" wx:if='{{item.type == hiddenstrategy || hiddenstrategy == apphidden}}'>
 			<image src="{{item.photo}}">
 			</image>
 			<view class="goods-list-right">
 				<view class="goods-title">
+<<<<<<< HEAD
 					【{{item.name}}】{{item.title}}
+=======
+				【{{item.name}}】{{item.title}}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 				<view class="simple-li-r">
 					<view class="cotione">

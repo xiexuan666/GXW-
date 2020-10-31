@@ -143,8 +143,12 @@
   margin-left: auto;
   padding-top: 20rpx;
   padding-bottom: 20rpx;
+<<<<<<< HEAD
   color: #ccc;
   margin-top: 60rpx;
+=======
+  color: #01AAED;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 }
 .diz {
   align-items: center;
@@ -167,6 +171,10 @@
   display: flex;
   letter-spacing:2rpx;
   /* justify-content: center; */
+<<<<<<< HEAD
   color: #ccc;
+=======
+  color: #FFB800;
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   align-items: center;
 }

@@ -1,15 +1,20 @@
+<<<<<<< HEAD
 // pages/me/issue/issue.js
 
 const app = getApp();
 const qqmapsdk = app.globalData.qqmapsdk;
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
+=======
+// pages/me/guanli/issue/issue.js
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     money: '',
     man: '',
     jian: '',
@@ -19,11 +24,16 @@ Page({
     arry: undefined,
   },
 
+=======
+
+  },
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
     if (options.arry) {
       console.log('修改吧');
       console.log(JSON.parse(options.arry));
@@ -52,6 +62,11 @@ Page({
       dates: e.detail.value
     })
   },
+=======
+
+  },
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -65,6 +80,7 @@ Page({
   onShow: function () {
 
   },
+<<<<<<< HEAD
   // 发布release
   release: function () {
     console.log(this.data.money, this.data.man, this.data.jian);
@@ -165,6 +181,9 @@ Page({
       wx.navigateBack()
     })
   },
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 生命周期函数--监听页面隐藏
    */

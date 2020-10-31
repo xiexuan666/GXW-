@@ -1,15 +1,22 @@
 // pages/me/guanli/manage/yuyue.js
+<<<<<<< HEAD
 const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
 const getInformation = app.globalData.getInformation;
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     list:[],
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
 
   /**
@@ -25,6 +32,7 @@ Page({
   onReady: function () {
 
   },
+<<<<<<< HEAD
   // 一键拨打
   calling: function (e) {
     wx.makePhoneCall({
@@ -37,10 +45,14 @@ Page({
       }
     })
   },
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+<<<<<<< HEAD
     let data={
       brandId :app.globalData.brandid,
       storeId:1,
@@ -55,6 +67,9 @@ Page({
       console.log(this.data.list);
       
     })
+=======
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
 
   /**

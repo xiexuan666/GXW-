@@ -12,6 +12,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -105,6 +106,46 @@
 				</view>
 			</view>
 		</view>
+=======
+<<<<<<< HEAD
+
+
+
+<!-- 正在进行活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<view class="search">
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
 		<view class="lingq">
 			<view class="git">
 				<view class="ling-q">已领取</view>
@@ -120,6 +161,82 @@
 				</view>
 			</view>
 		</view>
+	</view>
+</view>
+
+
+
+<!-- 未发布活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}'>
+=======
+
+
+
+<!-- 正在进行活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+	<view class="search">
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+<<<<<<< HEAD
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+=======
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+<<<<<<< HEAD
+						<image src="/images/tubiao/fengx.png"></image>
+=======
+						<image src="/images/tubiao/fangx.png"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+<<<<<<< HEAD
 	</block>
 
 
@@ -176,6 +293,8 @@
 	<view class="hander">
 		<view class="a a1">拼团活动</view>
 		<view class="a a2" bindtap='jumpdiscounts' data-index="{{1}}">查看全部</view>
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	</view>
 	<block wx:for="{{togroup}}" wx:item='item' wx:if='{{index<6}}'>
 		<view class="release">
@@ -227,6 +346,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -361,6 +481,75 @@
 	<view class="hander">
 		<view class="a a1">拼团活动</view>
 		<view class="a a2" bindtap='jumpdiscounts' data-index="{{2}}">查看全部</view>
+=======
+<<<<<<< HEAD
+<!-- 已下架活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+=======
+<!-- 未发布活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}'>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+	<view class="search">
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+<<<<<<< HEAD
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+=======
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+<<<<<<< HEAD
+						<image src="/images/tubiao/fengx.png"></image>
+=======
+						<image src="/images/tubiao/fangx.png"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	</view>
 	<block wx:for="{{puzzle}}" wx:if='{{index<6}}'>
 		<view class="release">
@@ -399,6 +588,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 <!-- 已下架活动 -->
@@ -604,31 +794,262 @@
 			</view>
 		</view>
 	</block>
+=======
+<<<<<<< HEAD
+
+
+<view class="hander">
+	<view class="a a1">优惠券活动</view>
+	<view class="a a2">查看全部</view>
+</view>
+<!-- 领取优惠券 -->
+<view class="coupon-list">
+	<view class="item stamp stamp01 " bindtap="containe">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">20</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+=======
+<!-- 已下架活动 -->
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+	<view class="search">
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
+
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+			</view>
+		</view>
+	</view>
+
+	<view class="float-tu">
+		<view class="coupon-botton">
+			<view class="u u1">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/fengx.png'></image>
+			</view>
+			<view class="u u2">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image>
+			</view>
+			<view class="u u3">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image>
+			</view>
+		</view>
+		<view class="coupon-botton_right">
+			<view class="r r1"></view>
+			<view class="r r2">已领取：</view>
+			<view class="r r3">3500</view>
+			<view class="r r4"></view>
+			<view class="r r5">已核销：</view>
+			<view class="r r6">2800</view>
+			<view class="rbig">
+				<view class="r r7">分享</view>
+				<view class="r r8">修改</view>
+				<view class="r r9">删除</view>
+			</view>
+		</view>
+	</view>
+
+
+</view>
+<view class="coupon-list">
+	<view class="item stamp stamp02 ">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">50</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+			</view>
+		</view>
+	</view>
+
+
+	<view class="float-tu">
+		<view class="coupon-botton">
+			<view class="u u1">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/fengx.png'></image>
+			</view>
+			<view class="u u2">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image>
+			</view>
+			<view class="u u3">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image>
+			</view>
+		</view>
+		<view class="coupon-botton_right">
+			<view class="r r1"></view>
+			<view class="r r2">已领取：</view>
+			<view class="r r3">3</view>
+			<view class="r r4"></view>
+			<view class="r r5">已核销：</view>
+			<view class="r r6">3</view>
+			<view class="rbig">
+				<view class="r r7">分享</view>
+				<view class="r r8">修改</view>
+				<view class="r r9">删除</view>
+			</view>
+		</view>
+	</view>
+
+
+
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+</view>
+<view class="coupon-list">
+	<view class="item stamp stamp02 ">
+		<!-- 左侧 -->
+		<view class="float-li t1">
+			<view class="coupon-left">
+				<view class="t t1">￥</view>
+				<view class="t t2">100</view>
+				<view class="t t3">满499使用</view>
+				<view class="t t4">有效期</view>
+				<view class="t t5">2020.09.30-10.05</view>
+			</view>
+		</view>
+
+
+	</view>
+	<view class="float-tu">
+		<view class="coupon-botton">
+			<view class="u u1">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/fengx.png'></image>
+			</view>
+			<view class="u u2">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/shouc.png'></image>
+			</view>
+			<view class="u u3">
+				<image style='height:40rpx;width:40rpx;' src='/images/tubiao/1-18.png'></image>
+			</view>
+		</view>
+		<view class="coupon-botton_right">
+			<view class="r r1"></view>
+			<view class="r r2">已领取：</view>
+			<view class="r r3">3500</view>
+			<view class="r r4"></view>
+			<view class="r r5">已核销：</view>
+			<view class="r r6">2800</view>
+			<view class="rbig">
+				<view class="r r7">分享</view>
+				<view class="r r8">修改</view>
+				<view class="r r9">删除</view>
+			</view>
+		</view>
+	</view>
+
+<<<<<<< HEAD
+
+<!-- 活动类型选择 -->
+=======
 </view>
 
 
 
-<!-- 活动类型选择 -->
+
+
+
+
+
+
+
+<!-- 
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 <view class="huodtype">
 	<view class="type {{status==1?'linea':''}}" wx-if='{{status}}'>
 		<view class="form">活动类型选择</view>
 		<block>
 			<view class="charge" bindtap="handleSelect" data-index="{{0}}">
 				<view class="tup">
+<<<<<<< HEAD
 					<image src="https://cdn.juesedao.cn/gxw/69cd37b33753473e9d3f73f12b5662bf"></image>
+=======
+<<<<<<< HEAD
+					<image src="https://cdn.juesedao.cn/gxw/69cd37b33753473e9d3f73f12b5662bf"></image>
+=======
+<<<<<<< HEAD
+					<image src="https://cdn.juesedao.cn/gxw/69cd37b33753473e9d3f73f12b5662bf"></image>
+=======
+					<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				</view>
 				<view class="lists">
 					<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
 					<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
 				</view>
 
+<<<<<<< HEAD
 				<icon type="success" color="{{select[0] ? '#C8C9CA' : '#FFB800' }}"></icon>
+=======
+				<icon type="success" color="{{item.select ? 'red' : 'gray' }}" bindtap="handleSelect" data-index="{{index}}"></icon>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</block>
 
 		<view class="charge" bindtap="handleSelect" data-index="{{1}}">
 			<view class="tup">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/5f45a804cef8476b812bd2e75529df11"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/5f45a804cef8476b812bd2e75529df11"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/5f45a804cef8476b812bd2e75529df11"></image>
+=======
+				<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="lists">
 				<view style="font-size: 33rpx; font-weight: 700;">优惠券活动</view>
@@ -651,11 +1072,27 @@
 
 		<view class="charge" bindtap="handleSelect" data-index="{{3}}">
 			<view class="tup">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/b526e11d857c413db64c082afcb81fc7"></image>
 			</view>
 			<view class="lists">
 				<view style="font-size: 33rpx; font-weight: 700;">拼团活动</view>
 				<view style="font-size: 26rpx; font-weight: 300; padding: 20rpx 0;">发起拼团，邀请好友参团</view>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/b526e11d857c413db64c082afcb81fc7"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/b526e11d857c413db64c082afcb81fc7"></image>
+=======
+				<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+			</view>
+			<view class="lists">
+				<view style="font-size: 33rpx; font-weight: 700;">优惠券活动</view>
+				<view style="font-size: 26rpx; font-weight: 300; padding: 20rpx 0;">免费活动报名创建</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<icon type="success" color="{{select[3] ? '#C8C9CA' : '#FFB800' }}"></icon>
 		</view>
@@ -664,16 +1101,32 @@
 
 		<view class="charge" bindtap="handleSelect" data-index="{{4}}">
 			<view class="tup">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/b227f79b68a84b7ea4945a484fda0db0"></image>
 			</view>
 			<view class="lists">
 				<view style="font-size: 33rpx; font-weight: 700;">抽奖活动</view>
 				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">发起拼团，邀请好友参团</view>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/b227f79b68a84b7ea4945a484fda0db0"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/b227f79b68a84b7ea4945a484fda0db0"></image>
+=======
+				<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+			</view>
+			<view class="lists">
+				<view style="font-size: 33rpx; font-weight: 700;">商品活动</view>
+				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<icon type="success" color="{{select[4] ? '#C8C9CA' : '#FFB800' }}"></icon>
 		</view>
 	</view>
-</view>
+</view> -->
 
 
 <view class="anniu">

@@ -6,22 +6,115 @@
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+=======
+				<image src="{{storeRecord.logo}}"></image>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
-			<view class="name-p">冠星王总部</view>
+			<view class="name-p">{{storeRecord.shopowner}}</view>
 		</view>
 	</view>
 </view>
+<<<<<<< HEAD
 
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+<view class="me-list">
+	<view class="me-list-ul">
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">姓名</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1" placeholder="请输入真实姓名"></input>
+			</view>
+		</view>
+
+
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">联系电话</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">微信号</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">现居地址</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">爱好</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+			</view>
+		</view>
+		<view class="me-list-li" bindtap="melisttz">
+			<view class="me-list-lil">备注</view>
+			<view class="me-list-lir">
+				<input name="xingm" bindinput="xueliinput" class="df_1"></input>
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 <block wx:for='{{list}}' wx:index='index' wx:item='item'>
 	<view class="me-list">
 		<view class="me-list-ul">
 			<view class="me-list-li" bindtap="melisttz" data-index="{{index}}">
 				<view class="me-list-lil">{{item.value}}</view>
 				<view class="me-list-lir">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					<!-- 性别选择框 -->
 					<view wx:if='{{item.value=="性别"}}'>
 						<picker range="{{sex}}" value="{{value}}" bindchange="sexCheck">
@@ -35,12 +128,62 @@
 							<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}"></input>	
 					</picker> -->
 					<!-- </view> -->
+<<<<<<< HEAD
 					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}" placeholder-class="placeholderStyle"  wx:else></input>
 				</view>
+=======
+<<<<<<< HEAD
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}" placeholder-class="placeholderStyle"  wx:else></input>
+				</view>
+=======
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}" wx:else></input>
+				</view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+				<!-- 性别选择框 -->
+				<view wx:if='{{item.value=="性别"}}'>
+					<picker range="{{sex}}" value="{{value}}" bindchange="sexCheck">
+					<input name="xingm" disabled='{{true}}' bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{sex[value]}}" value="{{sex[value]}}"></input>
+					</picker>
+				</view>
+				 <!-- 生日选择框 -->
+				 <view wx:elif='{{item.value =="生日"}}'>
+				 	<picker class="picker" mode='date' bindchange="bindDateChange" bindcancel='pickEnd' data-index="{{index}}"  value="{{date}}" start='{{date}}' end='2500-09-01'>
+						<!-- input框 -->
+						<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" disabled="{{true}}" value="{{date}}"></input>	
+					</picker>
+					</view>
+					<input name="xingm" bindinput="xueliinput" data-index="{{index}}" class="df_1" placeholder="{{item.prompt}}" wx:else></input>
+				</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 	</view>
 </block>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 
 <view class="anniu">

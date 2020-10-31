@@ -1,7 +1,11 @@
 <!--pages/template/comments/comments.wxml-->
 <template name="comments" data="great">
 	<!-- 头部 -->
+<<<<<<< HEAD
 	<view class="commentsTop" wx:if='{{topstyle == 1}}'>
+=======
+	<view class="commentsTop">
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		<view class="commentsTopText">
 			该案例评论
 		</view>
@@ -21,6 +25,7 @@
 			<view class="great">
 				<view class="greatText">{{great}}人觉得很赞</view>
 				<view class="greatIcon" catchtap="addgreat">
+<<<<<<< HEAD
 					<!-- <image wx:if='{{dianzhan}}' src="/images/tubiao/dain.png" mode="aspectFit	"></image> -->
 					<!-- <image wx:else src="/images/tubiao/dianzan.png" mode="aspectFit	"></image> -->
 				</view>
@@ -37,6 +42,22 @@
 		<block wx:for='{{Common}}' wx:index='index' wx:item='item'> 
 			<!-- 评论详情 -->
 			<view class="commentsContentText" >
+=======
+					<image wx:if='{{dianzhan}}' src="/images/tubiao/dain.png" mode="aspectFit	"></image>
+					<image wx:else src="/images/tubiao/dianzan.png" mode="aspectFit	"></image>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+	<!-- 主体 -->
+	<view class="commentsContent">
+		<!-- 用以控制渲染程序的标签 -->
+		<block wx:for='{{Common}}' wx:index='index' wx:item='item'>
+			<!-- 评论详情 -->
+			<view class="commentsContentText">
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<text>{{item.common}}</text>
 			</view>
 			<!-- 评论头像&点赞 -->
@@ -49,11 +70,20 @@
 					<view class="text">{{item.wx_name}}</view>
 				</view>
 				<!-- 点赞攻略 -->
+<<<<<<< HEAD
 				<view class="Icon">
+=======
+<<<<<<< HEAD
+				<!-- <view class="Icon">
+=======
+				<view class="Icon">
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					<view class="text">{{item.great}}</view>
 					<view class="pic" catchtap="addCommon">
 						<image src="/images/tubiao/dianzan.png" mode="widthFix"></image>
 					</view>
+<<<<<<< HEAD
 				</view>
 			</view>
 		</block>
@@ -112,14 +142,42 @@
 
 
 
+=======
+<<<<<<< HEAD
+				</view> -->
+=======
+				</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+			</view>
+		</block>
+	</view>
+	<!-- <view class="commentsRelease"></view> -->
+</template>
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 <!-- 设家居计师 -->
 <template name="card">
 	<!-- <image src="{{imgsrc}}"></image> -->
 	<view class="list">
+<<<<<<< HEAD
 		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/beijing.png" mode="scaleToFill"></image>
 		<view class="num1">
 			<view class="header">
 				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242" class="tx"></image>
+=======
+<<<<<<< HEAD
+		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/beijing.png" mode="scaleToFill"></image>
+=======
+<<<<<<< HEAD
+		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/beijing.png" mode="scaleToFill"></image>
+=======
+		<image class="list_pic" src="/images/tubiao/1-20.png" mode="scaleToFill"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+		<view class="num1">
+			<view class="header">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png" class="tx"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 		<view class="num2">
@@ -127,6 +185,10 @@
 				村上　家居设计师
 			</view>
 			<view class="text1">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" class="dh" mode="aspectFit" bindtap="calling" catchtap="calling"></image>
 
 
@@ -135,17 +197,43 @@
 
 
 
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/yijiandaohang.png" class="dhs" mode="aspectFit" bindtap="daohan"> <button class="btns"></button></image>
+=======
+				<image src="https://cdn.juesedao.cn/gxw/yijiandaohang.png" class="dh" mode="aspectFit" bindtap="daohan"> <button class="btns"></button></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 			</view>
 			<view class="title">
 				<image src="/images/tubiao/40.png" mode="aspectFit"></image>
 				<text>广东省佛山市禅城区南庄镇华夏陶瓷博览城陶博二路11座</text>
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" class="dh" mode="aspectFit"></image>
+				<image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png" class="dh" mode="aspectFit"></image>
+				<image src="https://cdn.juesedao.cn/gxw/yijiandaohang.png" class="dh" mode="aspectFit"></image>
+=======
+				<image src="/images/tubiao/boda.png" class="dh" mode="aspectFit"></image>
+				<image src="/images/tubiao/zixu.png" class="dh" mode="aspectFit"></image>
+				<image src="/images/tubiao/dh.png" class="dh" mode="aspectFit"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+			</view>
+			<view class="title">
+				<image src="/images/tubiao/40.png" mode="aspectFit"></image>
+				<text>广东省佛山市禅城区南庄镇中国陶瓷总部基地</text>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 		<view class="num3">
 			<view class="tow">
+<<<<<<< HEAD
 				<image class="list-pic" bindtap='openImages' data-images="" src="/images/tubiao/erwema.jpg" mode="widthFix"></image>
+=======
+				<image class="list-pic" src="/images/tubiao/erwema.jpg" mode="widthFix"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 	</view>
@@ -158,7 +246,11 @@
 	<view class="list-item">
 		<view class="goods">
 			<view class="collect">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+=======
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="tab">
 				<view class="attrs1">
@@ -168,12 +260,32 @@
 					店主:　村上
 				</view>
 				<view class="attrs">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇华夏陶瓷博览城陶博二路11座
 				</view>
 			</view>
 			<view class="contact">
 				<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png" bindtap="calling"></image>
 				<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+<<<<<<< HEAD
+=======
+=======
+					<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+				</view>
+			</view>
+			<view class="contact">
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+=======
+				<image src="/images/tubiao/lianxi.png"></image>
+				<image src="/images/tubiao/zaixian.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 	</view>
@@ -185,19 +297,43 @@
 	<view class="list-item">
 		<view class="goods">
 			<view class="collect">
+<<<<<<< HEAD
 				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+=======
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="tab">
 				<view class="attrs2">
 					村上:家居设计师
 				</view>
 				<view class="attrs">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 					<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇华夏陶瓷博览城陶博二路11座
 				</view>
 			</view>
 			<view class="contact">
 				<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png" bindtap="calling" catchtap="calling"></image>
 				<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+<<<<<<< HEAD
+=======
+=======
+					<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+				</view>
+			</view>
+			<view class="contact">
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+=======
+				<image src="/images/tubiao/lianxi.png"></image>
+				<image src="/images/tubiao/zaixian.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 	</view>
@@ -211,22 +347,109 @@
 <!-- 店长名片 -->
 <template name="users">
 	<view class="user">
+<<<<<<< HEAD
 		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/danpian.png" mode="scaleToFill"></image>
 		<view class=" management">
 			<view class="user_li">
+=======
+<<<<<<< HEAD
+		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/danpian.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+=======
+<<<<<<< HEAD
+		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/danpian.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+=======
+		<image class="list_pic" src="/images/tubiao/9.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<text>王店长</text>
 			</view>
 			<view class="info">
 				<view class="info_l">电话:13255555555</view>
 				<view class="info_l">职务:店长</view>
 				<view class="info_l">所属门店:季华路店</view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+				<text>名称：{{user.shopowner}}</text>
+			</view>
+			<view class="info">
+				<view class="info_l">电话:{{user.phone}}</view>
+				<view class="info_l">职务:店长</view>
+				<view class="info_l">所属门店:{{user.address}}</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 		<view class="user_info">
 			<view class="user_img">
+<<<<<<< HEAD
 				<image src="/images/tubiao/70.png" class="tx"></image>
 			</view>
 		</view>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+=======
+				<image src="{{user.logo}}" class="tx"></image>
+			</view>
+		</view>
+	<view class="code" catchtap="amplification">
+		<image src="{{user.store_qrcode_url}}" ></image>
+	</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	</view>
 </template>
 
@@ -234,15 +457,70 @@
 <!-- 店长名片2222 -->
 <template name="manager">
 	<view class="user">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/danpian.png" mode="scaleToFill"></image>
 		<view class=" management">
 			<view class="user_li">
 				<text>王店长</text>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+		<image class="list_pic" src="/images/tubiao/9.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+<<<<<<< HEAD
+				<text>王店长</text>
+=======
+<<<<<<< HEAD
+				<text>王店长</text>
+=======
+<<<<<<< HEAD
+				<text>王店长</text>
+=======
+				<text>{{merchants.shopowner}}</text>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="info">
 				<view class="info_l">电话:13255555555</view>
 				<view class="info_l">职务:店长</view>
+<<<<<<< HEAD
 				<view class="info_l">所属门店:季华路店</view>
+=======
+<<<<<<< HEAD
+				<view class="info_l">所属门店:季华路店</view>
+=======
+<<<<<<< HEAD
+				<view class="info_l">所属门店:季华路店</view>
+=======
+<<<<<<< HEAD
+				<view class="info_l">所属门店:季华路店</view>
+=======
+<<<<<<< HEAD
+				<view class="info_l">所属门店:季华路店</view>
+=======
+<<<<<<< HEAD
+				<view class="info_l">所属门店:季华路店</view>
+=======
+				<view class="info_l">所属门店:asdaqwd</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 		<view class="user_info">

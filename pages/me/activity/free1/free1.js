@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // pages/me/activity/free/free1.js
+=======
+// pages/me/activity/free1/free1.js
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 Page({
 
   /**

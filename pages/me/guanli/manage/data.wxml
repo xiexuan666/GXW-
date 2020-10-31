@@ -74,7 +74,11 @@
 			</view>
 			<view class="list-items">
 				<view class="list-rights" style="color:#000000;font-size:34rpx;font-weight: 900;">0</view>
+<<<<<<< HEAD
 				<view class="characters">日新获客</view>
+=======
+				<view class="characters" >日新获客</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 	</view>
@@ -83,6 +87,7 @@
 
 
 
+<<<<<<< HEAD
 <!-- 排行榜 -->
 <view class="hyz-nr1" wx:if='{{cactiv==2&&cpxqzt==1}}'>
 	<view class="bei_right">
@@ -293,8 +298,160 @@
 				<view class="link_child">裂变转化占比 </view>
 				<view class="shuz">40%</view>
 			</view>
+=======
+<view class="links" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+		<view class="contact">
+			<view class="tab">活动数据</view>
 		</view>
+	<view class="ul">
+		<view class="big">
+			<view class="mybig">
+			<view class="a" >
+				<view class=" {{cutindex==1 ? 'mymy' : 'youyou'}}"  data-index='1' bindtap="cut"> 正进行活动</view></view>
+			<view class="b">
+				<view class=" {{cutindex==2 ? 'mymy' : 'youyou'}}" data-index='2' bindtap="cut">未发布活动</view></view>
+			<view class="c">
+				<view class=" {{cutindex==3?'mymy':'youyou'}}"  data-index='3' bindtap="cut">以下架活动</view></view>
+		</view>
+		<view class="secondbig">
+				<view class='list-msg'>
+				
+			<!--下拉框  -->
+					<view class='list-msg2' bindtap='bindShowMsg'>
+						<view class="mytext"> <text>{{tihuoWay}}</text> </view>	
+						<view class="img">	<image style='height:10rpx;width:20rpx;' src='/images/tubiao/xiabiao.png'></image>  </view>
+					</view>
+				
+			<!-- 下拉需要显示的列表 -->
+					<view class="select_box" wx:if="{{select}}">
+							<view class="select_one" bindtap="mySelect" data-name="秒杀">秒杀</view>
+							<view class="select_one" bindtap="mySelect" data-name="拼团">拼团</view>
+							<view class="select_one" bindtap="mySelect" data-name="免费活动">免费活动</view>
+					</view>
+			</view>
+		</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+		</view>
+	
+			<view class="yemianbig"  wx:if='{{cutindex==1}}'>
+					<view class="link">
+						<view class="link_child" >推广人数 </view>
+						<view class="shuz">15</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >活动参与人数</view>
+						<view class="shuz">15</view>
+					</view>
+						<view class="linkaa">
+						<view class="link_child" >活动裂变人数 </view>
+						<view class="shuz">8</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >活动转化人数 </view>
+						<view class="shuz">20</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >店主转化数 </view>
+						<view class="shuz">20</view>
+					</view>
+						<view class="linkaa">
+						<view class="link_child" >裂变转化数 </view>
+						<view class="shuz">10</view>
+					</view>
+						<view class="linkbb">
+						<view class="link_child" >活动浏览数 </view>
+						<view class="shuz">500</view>
+					</view>
+						<view class="linkbb">
+						<view class="link_child" >裂变推广数 </view>
+						<view class="shuz">66%</view>
+					</view>
+						<view class="linkcc">
+						<view class="link_child" >裂变转化占比 </view>
+						<view class="shuz">33%</view>
+					</view>
+			</view>
+			<view  class="yemianbig" wx:if='{{cutindex==2}}'>
+						<view class="link">
+						<view class="link_child" >推广人数 </view>
+						<view class="shuz">15</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >活动参与人数</view>
+						<view class="shuz">15</view>
+					</view>
+						<view class="linkaa">
+						<view class="link_child" >活动裂变人数 </view>
+						<view class="shuz">8</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >活动转化人数 </view>
+						<view class="shuz">60</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >店主转化数 </view>
+						<view class="shuz">30</view>
+					</view>
+						<view class="linkaa">
+						<view class="link_child" >裂变转化数 </view>
+						<view class="shuz">15</view>
+					</view>
+						<view class="linkbb">
+						<view class="link_child" >活动浏览数 </view>
+						<view class="shuz">300</view>
+					</view>
+						<view class="linkbb">
+						<view class="link_child" >裂变推广数 </view>
+						<view class="shuz">56%</view>
+					</view>
+						<view class="linkcc">
+						<view class="link_child" >裂变转化占比 </view>
+						<view class="shuz">33%</view>
+					</view>
+			</view>
 
+<<<<<<< HEAD
+=======
+			<view class="yemianbig" wx:if='{{cutindex==3}}'>
+					<view class="link">
+						<view class="link_child" >推广人数 </view>
+						<view class="shuz">15</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >活动参与人数</view>
+						<view class="shuz">20</view>
+					</view>
+						<view class="linkaa">
+						<view class="link_child" >活动裂变人数 </view>
+						<view class="shuz">18</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >活动转化人数 </view>
+						<view class="shuz">10</view>
+					</view>
+						<view class="link">
+						<view class="link_child" >店主转化数 </view>
+						<view class="shuz">30</view>
+					</view>
+						<view class="linkaa">
+						<view class="link_child" >裂变转化数 </view>
+						<view class="shuz">10</view>
+					</view>
+						<view class="linkbb">
+						<view class="link_child" >活动浏览数 </view>
+						<view class="shuz">300</view>
+					</view>
+						<view class="linkbb">
+						<view class="link_child" >裂变推广数 </view>
+						<view class="shuz">66%</view>
+					</view>
+						<view class="linkcc">
+						<view class="link_child" >裂变转化占比 </view>
+						<view class="shuz">40%</view>
+					</view>
+			</view>
+	
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 	</view>
 	<view class="below_one">
@@ -304,7 +461,12 @@
 		<view class="{{cutindex==3?'day':'daym'}}">本月</view>
 	</view>
 	<view class="below_two">
+<<<<<<< HEAD
 		<view class=" {{cutindex==1?'mendian':'mm'}}" data-ind="{{1}}" bindtap="canpiqieh">门店数据</view>
 		<view class=" {{cutindex==3?'daogou':'mm'}}" data-ind="{{2}}" bindtap="canpiqieh">导购排行榜</view>
+=======
+		<view class=" {{cutindex==1?'mendian':'mm'}}">门店数据</view>
+		<view  class=" {{cutindex==3?'daogou':'mm'}}">导购排行榜</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	</view>
 </view>

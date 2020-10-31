@@ -15,9 +15,12 @@ Page({
     // 收藏icon的状态值
     Collectionstate: false,
     strategy: [],
+<<<<<<< HEAD
     // 海报是否隐藏显示
     maskHidden: false,
     hideModal: true, //模态框的状态  true-隐藏  false-显示
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
   // 一键拨打
   calling: function () {
@@ -83,10 +86,23 @@ Page({
       return false
     }
     var url = baseUrl + "production/productCollectionSaves"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     var dat = {
       brandid: app.globalData.brandid,
       userid: gerxinx.id,
       productid: cp[ind].productList[inds].id
+<<<<<<< HEAD
+=======
+=======
+    var dat={
+      brandid:app.globalData.brandid,
+      userid:gerxinx.id,
+      productid:cp[ind].productList[inds].id
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     }
     console.log(dat, "收藏状态改变前")
     http.promisServer(url, dat).then(resc => {
@@ -102,6 +118,7 @@ Page({
       }
       console.log(resc, '收藏状态改变')
 
+<<<<<<< HEAD
     })
   },
   // 显示遮罩层
@@ -174,6 +191,8 @@ Page({
     var animation = wx.createAnimation({
       duration: 800,//动画的持续时间 默认800ms   数值越大，动画越慢   数值越小，动画越快
       timingFunction: 'ease',//动画的效果 默认值是linear
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     })
     this.animation = animation
     that.fadeDown();//调用隐藏动画   
@@ -212,6 +231,7 @@ Page({
         Collectionstate: false
       })
     }
+<<<<<<< HEAD
   },
 
   //将canvas转换为图片保存到本地，然后将图片路径传给image图片的src
@@ -285,6 +305,8 @@ Page({
         }
       });
     }, 200);
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   },
   //点击保存到相册
   baocun: function () {
@@ -337,10 +359,23 @@ Page({
   qingqcp: function (cps) {
     var tha = this
     var url = baseUrl + "series/selectSeriesTypeByguige"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     var dat = {
       brandid: app.globalData.brandid,
       productIdList: cps.cdid,
       guigeIdList: cps.geid
+<<<<<<< HEAD
+=======
+=======
+    var dat={
+      brandid:app.globalData.brandid,
+      productIdList:cps.cdid,
+      guigeIdList:cps.geid
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
     }
     console.log(dat, 9999)
     http.promisServer(url, dat).then(resc => {

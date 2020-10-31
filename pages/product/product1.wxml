@@ -37,7 +37,7 @@
 
 
 <!-- 产品 -->
-<view class="cpbottom-nr" >
+<view class="cpbottom-nr">
 	<view class="cpbottom-nrul">
 		<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 			<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}">
@@ -49,9 +49,14 @@
 					<view class="shouc" catchtap="sccp" data-ind="{{index}}">
 						<view class="shouc-p">收藏</view>
 						<view class="img">
+<<<<<<< HEAD
 				
 							<image wx:if="{{!item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/43.png"></image>
 							<image wx:if="{{item.sczt}}" lazy-load="{{true}}" src="/images/tubiao/33.png"></image>
+=======
+							<image wx:if="{{!item.sczt}}"  src="/images/tubiao/43.png"></image>
+							<image wx:if="{{item.sczt}}"  src="/images/tubiao/33.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 						</view>
 					</view>
 				</view>
@@ -59,10 +64,17 @@
 		</block>
 	</view>
 </view>
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 <!-- foot -->
 <view class="list-item">
 	<view class="goods">
 		<view class="collect">
+<<<<<<< HEAD
 			<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
 		</view>
 		<view class="tab">
@@ -76,6 +88,34 @@
 		<view class="contact">
 			<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png" bindtap="calling"></image>
 			<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+=======
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+		</view>
+		<view class="tab">
+			<view class="attrs1">
+				冠星王陶瓷
+			</view>
+			<view class="attrs2">
+				店主:　村上
+			</view>
+			<view class="attrs">
+				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+			</view>
+		</view>
+		<view class="contact">
+<<<<<<< HEAD
+			<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png" bindtap="calling"></image>
+			<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+=======
+<<<<<<< HEAD
+			<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+=======
+			<image src="/images/tubiao/lianxi.png"></image>
+			<image src="/images/tubiao/zaixian.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 	</view>
 </view>

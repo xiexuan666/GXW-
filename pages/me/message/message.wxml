@@ -28,6 +28,16 @@
 </view>
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 
 
 <!-- 热点视频 -->
@@ -93,13 +103,44 @@
 			</view>
 		</block>
 	</view>
+=======
+
+
+<!-- 热点视频 -->
+<view class="videolist" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+	<import src='/pages/template/viedeocard/videocard' />
+	<template is="videocard" data="{{video:video}}"></template>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
 </view>
 
 
 
+<<<<<<< HEAD
 
 
 <!-- <view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+=======
+<<<<<<< HEAD
+
+
+<!-- <view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+=======
+<<<<<<< HEAD
+
+
+<!-- <view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+=======
+<<<<<<< HEAD
+
+
+<!-- <view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+=======
+<!-- 案例 -->
+<view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	<view class="anlilist-ul">
 		<block>
 			<view class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">

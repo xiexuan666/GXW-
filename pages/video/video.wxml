@@ -1,6 +1,35 @@
 <!--pages/video/video.wxml-->
+<<<<<<< HEAD
 <view class="videolayout" bindtap="hiddenCommon">
   <video id="video" src="{{list.video}}" controls='{{false}}' autoplay='true' enable-play-gesture='{{true}}'></video>
+=======
+<view class="videolayout">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+</view>
+<view class="videoinfo">
+
+</view>
+
+<view class="sidebar">
+
+</view>
+<view class="comments">
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+  <video id="video" src="{{list.video}}" controls='{{false}}' autoplay='true'></video>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>
 <view class="videoinfo">
   <view class="watch">
@@ -18,6 +47,7 @@
 
 <view class="sidebar">
 <block wx:for='{{functionlist}}' wx:index='index' wx:item='item'>
+<<<<<<< HEAD
   <view class="Function" catchtap="videofunction" data-index="{{index}}">
     <image  src="{{item.status ? item.imagurl : item.icon}}" mode="aspectFit"></image>
     <button class="functionbotton" open-type="share" wx:if='{{index==3}}'>转发</button>
@@ -31,3 +61,39 @@
 <import  src='/pages/template/comments/comments' />
 <template is="comments" data="{{top:none,list:3,topstyle:2,value:value,Common:videolist,botton:true,font_color:'#fefefe',scroll:scroll,bottom:10}}"></template>
 </view>
+=======
+  <view class="Function">
+    <image  src="{{item.imagurl}}" mode="aspectFit"></image>
+  </view>
+  </block>
+</view>
+<view class="comments" wx:if='{{comments}}'>
+<<<<<<< HEAD
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view> 
+=======
+<<<<<<< HEAD
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view> 
+=======
+<<<<<<< HEAD
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view> 
+=======
+<<<<<<< HEAD
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view> 
+=======
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3}}"></template>
+</view>
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

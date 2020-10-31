@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* pages/me/shangcanli/guanlianli.wxss */
 /* 案例列表 */
 .anlilist{
@@ -127,3 +128,275 @@
   
   background-color: #EEEEEF;
 }
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+/* pages/template/component/component.wxss */
+page {
+  background-color: #e7e7e7;
+}
+.top{
+  width: 100vw;
+  position: relative;
+}
+.top image{
+  width: 100%;
+}
+.card_portrait{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card_portrait image{
+  height: 200rpx;
+  width:200rpx;
+}
+.card_name{
+  margin-top:30rpx;
+}
+
+
+
+/* 卡片模块 */
+.cardList{
+  width: 90vw;
+  overflow: hidden;
+  background-color: white;
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+  border-radius:15rpx;
+  transform: translateX(-50%);
+  margin-bottom:40rpx;
+  padding-bottom: 40rpx;
+  margin-top: -50rpx;
+}
+.cardnav{
+  width:100%;
+  height:40rpx;
+  text-align: right;
+}
+.cards{
+  position: relative;
+  width:85%;
+  margin:auto;
+  margin-top:40rpx;
+}
+
+.round{
+  position: absolute;
+  height:25rpx;
+  width:25rpx;
+  left: -25rpx;
+  border-radius: 50rpx;
+  border: 1rpx solid rgb(87, 87, 87);
+  top:5rpx;
+}
+.roundstatus{
+  background-color: rgb(189, 143, 96);
+  border: none;
+}
+.cardsContent{
+  width: 100%;
+  padding-top: 30rpx;
+}
+.cardsContent image{
+  width: 100%;
+  height: 355rpx;
+  border-radius:30rpx;
+}
+.card_Title{
+  font-size: 32rpx;
+  color: rgb(100, 100, 100);
+}
+.card_label{
+  margin-top: 10rpx;
+}
+.label{
+  background-color: rgb(230, 230, 230);
+  font-size: 22rpx;
+  padding:0rpx 20rpx 0rpx 20rpx;
+  margin-right: 20rpx;
+}
+
+.title{
+  position: absolute;
+  right:50rpx;
+  top:55rpx;
+  color: rgb(100, 100, 100);
+}
+.labelFocus{
+  background-color: rgb(85, 85, 85);
+  color: rgb(240, 240, 240);
+}
+
+
+.buttom{
+  width:90%;
+  margin: auto;
+  margin-top:30rpx;
+  color: rgb(240, 240, 240);
+}
+.buttomTwo{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.addbutton{
+  flex: 1;
+  height:65rpx;
+  background-color: rgb(189, 143, 96);
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  margin-right:10rpx;
+  color: rgb(240, 240, 240);
+}
+.deletbutton{
+  flex: 1;
+  height:65rpx;
+  margin-left:10rpx;
+  background-color: rgb(189, 143, 96);
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  color: rgb(240, 240, 240);
+}
+.buttomOne{
+  margin-top: 20rpx;
+}
+.buttomOne button{
+  height:65rpx;
+  background-color: rgb(189, 143, 96);
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  color: rgb(240, 240, 240);
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+}
+=======
+/* 头部 */
+<<<<<<< HEAD
+page {
+  background-color: #e7e7e7;
+}
+=======
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+.jinx-t {
+  width: 100%;
+}
+
+.jinx-tnr {
+  width: 100%;
+  position: relative;
+  height: 440rpx;
+}
+
+.jinx-bei {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.jinx-bei image {
+  width: 100%;
+}
+
+.jinx-toux {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name-p {
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+}
+<<<<<<< HEAD
+
+/* 头部 end*/
+
+.jinxt {
+  width: 90%;
+  margin: 0 auto;
+
+  border-radius: 25rpx;
+  position: relative;
+}
+.jinx-nr {
+  position: absolute;
+  width: 100%;
+ margin-top: -50rpx;
+ border-radius: 20rpx;
+ justify-content: center;
+ align-items: center;
+ background-color: #fff;
+
+}
+.guan {
+  margin: 20rpx  20rpx;
+}
+.themes {
+  margin: 20rpx  20rpx;
+}
+.themes image {
+  width: 100%;
+  height: 420rpx;
+}
+.bott {
+  margin: 50rpx   20rpx;
+  display: flex;
+
+}
+.add {
+  border: 1px  solid #fdfdfd;
+  background-color: #fff;
+  width: 50%;
+}
+.dele {
+  border: 1px  solid #eeeeee;
+  background-color: #ededed;
+  width: 50%;
+} 
+=======
+/* 头部 end*/
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 .app.id {
+=======
+.apply {
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
   width: 90%;
   margin: 0 auto;
 }

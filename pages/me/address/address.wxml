@@ -33,8 +33,13 @@
 
 		<block wx:for='{{list}}' wx:index='index' wx:item='item'>
 		<view class="list">
+<<<<<<< HEAD
 			<view class="listIcon" >
 				<view class="icon" wx:if='{{item.defaults}}'>默认</view>
+=======
+			<view class="listIcon">
+				<view class="icon">默认</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 			<view class="listIamger">
 				<image src="{{list[0].wx_photo}}" mode="scaleToFill"></image>

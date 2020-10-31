@@ -3,20 +3,52 @@
 <view class="titleimg">
 	<view class="header">
 		<!--  index图片 -->
+<<<<<<< HEAD
 		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.photo}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+<<<<<<< HEAD
+		<image mode="widthFix" bindtap="dakerw" data-img="{{anlixiaq.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+=======
+		<image mode="widthFix" bindtap="dakerw" data-img="{{pagesubscript.zhuye}}" src="{{pagesubscript.zhuye}}"></image>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	</view>
 	<!-- 列表框 -->
 	<view class="wenzi">
 		<view class="wenzis">
 			<view class="wenzis_label">标签</view>
+<<<<<<< HEAD
 			<!-- {{pagesubscript.type_name}} · {{pagesubscript.huxing}} -->
 			{{pagesubscript.huxing}}
+=======
+			{{pagesubscript.type_name}} · {{pagesubscript.huxing}}
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<view class="wenzis_left"></view>
 		</view>
 		<view class="wenzis">
 			<view class="wenzis_label">面积</view>
+<<<<<<< HEAD
 			<!-- {{pagesubscript.mianji}}㎡ -->
 			{{pagesubscript.mianji}}
+=======
+			{{pagesubscript.mianji}}㎡
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<view class="wenzis_left"></view>
 		</view>
 		<view class="wenzis">
@@ -36,10 +68,17 @@
 			案列简介
 		</view>
 		<view class="prices">
+<<<<<<< HEAD
 			{{pagesubscript.case_detail}}
 		</view>
 		<view class="header">
 			<image mode="widthFix" bindtap="dakerw" src="{{pagesubscript.photo}}"></image>
+=======
+			{{pagesubscript.case_synopsis}}
+		</view>
+		<view class="header">
+			<image mode="widthFix" bindtap="dakerw" src="https://cdn.juesedao.cn/gxw/ridianshiping.jpg"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 	</view>
 </view>
@@ -66,19 +105,40 @@
 
 
 
+<<<<<<< HEAD
 <view class="banner" wx:if='{{productlist.length !=0 }}'>
+=======
+
+
+<view class="banner">
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	<view class="keting">
 		<view class="chanp">
 			<view class="case_round"></view>
 			选用产品
 		</view>
 		<view class="ket">
+<<<<<<< HEAD
 			<block wx:for='{{productlist}}' wx:item='item' wx:index='index'>
 				<view class="cizhuan">
 					<image src="https://cdn.juesedao.cn/gxw/danpian.png"></image>
 					<view class="lists-item">{{item.title}}</view>
 				</view>
 			</block>
+=======
+			<view class="cizhuan">
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/danpian.png"></image>
+=======
+<<<<<<< HEAD
+				<image src="https://cdn.juesedao.cn/gxw/danpian.png"></image>
+=======
+				<image src="/images/tubiao/9.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+				<view class="lists-item">客厅-V157J939P</view>
+			</view>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 	</view>
 
@@ -133,11 +193,27 @@
 
 <!-- 底部评论 -->
 <view class="appraise-btn">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	<view class="appraise-btn-left">
 		<image src="/images/tubiao/pl.png"></image>
 		<input placeholder="我要评论" bindinput="pingl" value="{{inputVal}}"></input>
 		<button class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</button>
 	</view>
+<<<<<<< HEAD
+=======
+=======
+	<form catchsubmit="tijiaoform" catchreset="formReset">
+		<view class="appraise-btn-left">
+			<image src="/images/tubiao/pl.png"></image>
+			<input placeholder="我要评论" bindinput="pingl" value="{{inputVal}}"></input>
+			<button class="appraise-btn-right" bindtap="handlefa" name="liuyantext">发表</button>
+		</view>
+	</form>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>
 
 
@@ -146,6 +222,7 @@
 	<view class="title">
 		<view class="list-item">
 			<view class="list-right">
+<<<<<<< HEAD
 				<image src="/images/tubiao/1-10.png" mode="widthFix"></image>
 				<view class="character">{{pagesubscript.preview}}</view>
 			</view>
@@ -154,16 +231,63 @@
 			<view class="list-right" catchtap="collection" data-ind="{{index}}">
 				<image wx:if='{{pagesubscript.collection}}' src="/images/tubiao/33.png" lazy-load="{{true}}"></image>
 				<image wx:else src="/images/tubiao/1-13.png" lazy-load="{{true}}"></image>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/1-10.png" mode="widthFix"></image>
+				<view class="character">{{pagesubscript.preview}}</view>
+			</view>
+		</view>
+		<view class="list-item">
+			<view class="list-right" catchtap="collection" data-ind="{{index}}">
+				<image wx:if='{{pagesubscript.collection}}' src="/images/tubiao/222.png" lazy-load="{{true}}"></image>
+				<image wx:else src="/images/tubiao/1-12.png" lazy-load="{{true}}"></image>
+=======
+				<image src="/images/tubiao/chak.png" mode="widthFix"></image>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c2d852eb919299f0777236b9e73da89733498f14
+>>>>>>> e8e55f3a9c319a6878579450c3c18e28b346fd04
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+				<view class="character">5220</view>
+=======
+				<view class="character">{{pagesubscript.preview}}</view>
+>>>>>>> d24e5d68f2511ff808d7dd102607e5500bf4b225
+			</view>
+		</view>
+		<view class="list-item" catchtap="star" data-ind="{{index}}">
+
+			<view class="list-right">
+				<image src="/images/tubiao/shouc.png" mode="widthFix"></image>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<view class="character">收藏</view>
 			</view>
 		</view>
 		<view class="list-item" catchtap="handleToTop">
 			<view class="list-right">
+<<<<<<< HEAD
 				<image src="/images/tubiao/1-11.png" mode="widthFix"></image>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/1-11.png" mode="widthFix"></image>
+=======
+<<<<<<< HEAD
+				<image src="/images/tubiao/fengx.png" mode="widthFix"></image>
+=======
+				<image src="/images/tubiao/fangx.png" mode="widthFix"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<view class="character">分享</view>
 			</view>
 		</view>
 	</view>
+<<<<<<< HEAD
 
 
 	<!-- 分享海报 -->
@@ -197,45 +321,128 @@
 		</view>
 	</view>
 </view>
+=======
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
+
+
+	<!-- 分享海报 -->
+	<view class="tubiaof">
+		<view class="toTop">
+			<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+				<view class="modals-cancel" bindtap="hideModal"></view>
+				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+					<view class="erweima">
+						<button class="poster" bindtap="formSubmit">
+							<image src="/images/shouye/haib.png"></image>
+							<text class="haib">生成海报</text>
+						</button>
+						<button class="poster m_l" open-type="share">
+							<image src="/images/shouye/lianjie.png"></image>
+							<text class="haib">分享链接</text>
+						</button>
+					</view>
+					<view class="qux" bindtap="quxiao">取消</view>
+
+<<<<<<< HEAD
+=======
+					<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+						<view class="floor">
+							<image src="{{item.product_url}}"></image>
+						</view>
+						<view class="content">
+							<view class="left">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
 
 
 
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 <!-- foot -->
 <view class="list-item6">
 	<view class="goods">
 		<view class="collect1">
+<<<<<<< HEAD
 			<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
 		</view>
 		<view class="tab">
 
+=======
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+		</view>
+		<view class="tab">
+<<<<<<< HEAD
+
+=======
+	
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			<view class="attrs2">
 				村上 家居设计师
 			</view>
 			<view class="attrs">
+<<<<<<< HEAD
 				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇华夏陶瓷博览城陶博二路11座
 			</view>
 		</view>
 		<view class="contacts">
 			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" bindtap="calling" catchtap="calling"></image>
 			<!-- <image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png"></image> -->
+=======
+				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+			</view>
+		</view>
+		<view class="contacts">
+<<<<<<< HEAD
+			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" bindtap="calling" catchtap="calling"></image>
+			<image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png"></image>
+=======
+<<<<<<< HEAD
+			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" ></image>
+			<image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png"></image>
+=======
+			<image src="/images/tubiao/boda.png" ></image>
+			<image src="/images/tubiao/zixu.png"></image>
+>>>>>>> 7c1c0e3919fad4bfaed76d5d78733405b080bbc8
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 	</view>
 </view>
 
+<<<<<<< HEAD
 <view class="toTop" bindtap="handleToTopp">
+=======
+<view class="toTop" bindtap="handleToTop">
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	<image src="/images/tubiao/zhu.png"></image>
 </view>
 
 
 <!-- 海报位置 -->
+<<<<<<< HEAD
 <view class='imagePathBox' bindtap="xiaoshi" hidden="{{maskHidden == false}}">
 	<view class="mask" catchtap="clearPosters"></view>
 	<image src="{{imagePath}}" class='shengcheng' mode="aspectFit"></image>
 	<button class='baocun' catchtap='baocun'>保存图片到相册</button>
+=======
+<view class='imagePathBox' hidden="{{maskHidden == false}}">
+	<view class="mask" catchtap="clearPosters"></view>
+	<image src="{{imagePath}}" class='shengcheng' mode="aspectFit"></image>
+	<button class='baocun' bindtap='baocun'>保存图片到相册</button>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 	<button class="baocuns" open-type="share">分享到群好友</button>
 </view>
 
 <view hidden="{{maskHidden == false}}" class="mask"></view>
 <view class="canvas-box">
+<<<<<<< HEAD
 	<canvas style="width:375px; height:667px; margin:auto;background:rgba(255,255,255);" canvas-id="canvpos" />
+=======
+	<canvas style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas" />
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 </view>

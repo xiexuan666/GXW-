@@ -26,6 +26,10 @@
 				<view class="t t2">{{Details.jian}}</view>
 				<view class="t t3">满{{Details.man}}使用</view>
 				<view class="t t4">有效期</view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 				<view class="t t5">{{Details.create_time}}-{{Details.end_time}}</view>
 				<view class="t t6">  </view>	 
 					<!-- 二维码 -->
@@ -33,6 +37,21 @@
 					<image src="{{Details.qrcode_image}}"></image>
 					 </view>	
 					<!-- {{item.usercode}} -->
+<<<<<<< HEAD
+=======
+=======
+				<view class="t t5">2020.09.30-10.05</view>
+				<view class="t t6">  </view>	
+					<!-- 二维码 -->
+					<view class="t t7">  </view>	
+			</view>
+		</view>
+		<!-- 右侧 -->
+		<view class="float-li-rig">
+			<view class="coupon-rig">
+				<view class="t1 t">优惠券</view>
+>>>>>>> fad09a589a83aee28003e1456ea874447a43011d
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 			</view>
 		</view>
 					<view class="hexiao">

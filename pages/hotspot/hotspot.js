@@ -131,10 +131,22 @@ Page({
       url: '/pages/hotspot/seckill/seckill',
     })
   },
+  // 跳转到拼团
+  group: function () {
+    wx.navigateTo({
+      url: '/pages/hotspot/group/group',
+    })
+  },
+  // 跳转到助力
+  speed: function () {
+    wx.navigateTo({
+      url: '/pages/me/activity/free3/free3',
+    })
+  },
 
   /**
-   * 生命周期函数--监听页面加载
-   */
+     * 生命周期函数--监听页面加载
+     */
   onLoad: function (options) {
 
   },

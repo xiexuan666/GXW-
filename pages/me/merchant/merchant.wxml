@@ -1,7 +1,12 @@
-<view class="shenqmot">
+<block wx:if='{{status == 0}}'>
+<view class="shenqmot" >
 	<view class="shenqmot-nr" catchtap="zhuzi">
 		<view class="gxw">
+<<<<<<< HEAD
 			<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+=======
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052
 		</view>
 
 
@@ -27,4 +32,19 @@
 		</view>
 	</view>
 </view>
+<<<<<<< HEAD
 
+=======
+</block>
+<block wx:if='{{status == 1}}'>
+	<text>{{text}}</text>
+</block>
+<block wx:if='{{status == 2}}'>
+	<text>{{text}}
+		</text>
+</block>
+<block wx:if='{{status == 3}}'>
+	<text>
+	{{text}}</text>
+</block>
+>>>>>>> f18b3e4711d7bf89bb5c53bd2154981f0aba8052

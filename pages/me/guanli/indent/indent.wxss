@@ -1,0 +1,295 @@
+/* 头部 */
+page {
+  background-color: #e7e7e7;
+}
+.jinx-t {
+  width: 100%;
+}
+
+.jinx-tnr {
+  width: 100%;
+  position: relative;
+  height: 440rpx;
+}
+
+.jinx-bei {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.jinx-bei image {
+  width: 100%;
+}
+
+.jinx-toux {
+  width: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name-p {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+}
+
+/* 头部 end*/
+
+/* 输入框 */
+.time {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25rpx;
+  margin-top: -50rpx;
+}
+.times {
+  padding-top: 50rpx;
+  padding-bottom: 100rpx;
+}
+
+.yuyue-title {
+  /* width: 700rpx; */
+  margin: 0 auto;
+}
+
+.yuyue-start image {
+  width: 250rpx;
+  height: 250rpx;
+  margin-left: 200rpx;
+}
+
+.yuyue-text {
+  margin: 100rpx 0;
+}
+
+.yuyue-p {
+  font-size: 33rpx;
+  text-align: center;
+  font-weight: 300;
+}
+
+.shuzi {
+  width: 100rpx;
+  background-color: #be8f61;
+  border-radius: 15rpx;
+  color: #fff;
+  padding: 7rpx;
+}
+
+
+.search {
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.page_row {
+  padding: 10rpx 0;
+}
+
+.text {
+  padding: 0 20rpx;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.df_1 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 400rpx;
+  padding-left: 50rpx;
+}
+
+.df_2 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 400rpx;
+  padding-left: 50rpx;
+
+}
+
+
+button {
+  margin: 50px auto;
+  width: 300px;
+  border-radius: 30px;
+  background: #bd8f60;
+  color: white;
+  padding: 0rpx 100rpx;
+  line-height: 60rpx;
+}
+
+
+
+
+.placeholderStyle {
+  color: #ccc;
+  padding-left: 250rpx;
+}
+
+.placeholderStyles {
+  color: #ccc;
+  padding-left: 30rpx;
+}
+/* 选择框 */
+.select_box {
+  background: #fff;
+  width: 66%;
+  margin: 30rpx auto;
+  position: relative;
+  border-radius: 15rpx;
+  border: 1px solid #ccc;
+  margin-left: 188rpx;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.xil {
+  padding: 0 30rpx;
+  border-right: 1px solid #ccc;
+}
+
+.select_text {
+  font-size: 30rpx;
+  flex: 1;
+  padding: 0 20rpx;
+  color: #ccc;
+}
+
+.select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.select_img_rotate {
+  transform: rotate(90deg);
+}
+
+.option_box {
+  position: absolute;
+  top: 72rpx;
+  width: 77%;
+  /* border: 1px solid #ccc; */
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+  left: 130rpx;
+  border-radius: 25rpx;
+  z-index: 99;
+}
+
+.option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+  color: #ccc;
+}
+
+
+
+.secondbig {
+  margin-left: 15rpx;
+  width: 60%;
+  border-bottom: #E7E7E7 solid 1rpx;
+  color: #464646;
+}
+.list-msg {
+
+  background-color: #fff;
+  position: relative;
+}
+
+.list-msg1 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-msg .list-msg2 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E7E7E7;
+  padding: 0 10rpx;
+
+}
+
+.mytext {
+  width: 20%;
+}
+
+.img {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+
+}
+.select_box {
+  background-color: #eee;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.5s;
+}
+
+@keyframes myfirst {
+  from {
+    height: 0rpx;
+  }
+
+  to {
+    height: 210rpx;
+  }
+}
+
+.select_one {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #E7E7E7;
+}

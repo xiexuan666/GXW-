@@ -1,0 +1,33 @@
+<!--pages/video/video.wxml-->
+<view class="videolayout" bindtap="hiddenCommon">
+  <video id="video" src="{{list.video}}" controls='{{false}}' autoplay='true' enable-play-gesture='{{true}}'></video>
+</view>
+<view class="videoinfo">
+  <view class="watch">
+    <view class="image">
+      <image src="/images/tubiao/chak.png" mode="aspectFit"></image>
+    </view>
+    <view class="text">
+      <text>{{list.preview}}</text>
+    </view>
+  </view>
+  <view class="title">
+    [{{list.title}}] {{list.context}}
+  </view>
+</view>
+
+<view class="sidebar">
+<block wx:for='{{functionlist}}' wx:index='index' wx:item='item'>
+  <view class="Function" catchtap="videofunction" data-index="{{index}}">
+    <image  src="{{item.status ? item.imagurl : item.icon}}" mode="aspectFit"></image>
+    <button class="functionbotton" open-type="share" wx:if='{{index==3}}'>转发</button>
+  </view>
+  </block>
+</view>
+
+
+
+<view class="comments"  style="{{comments? 'animation: top 0.8s  forwards' : ''}} {{commentsbottom?'': 'animation: bottom 0.8s  forwards'}}">
+<import  src='/pages/template/comments/comments' />
+<template is="comments" data="{{top:none,list:3,topstyle:2,value:value,Common:videolist,botton:true,font_color:'#fefefe',scroll:scroll,bottom:10}}"></template>
+</view>

@@ -1,0 +1,16 @@
+<view class="titleas">
+	<view class="lisier">
+		<view class="logo">
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+		</view>
+		<view class="wenzi">
+			<view>申请得一下权限</view>
+			<view>获得你的公开信息(昵称.头像等)</view>
+
+		</view>
+		<view class="shouq">
+			<button class="btn">授权</button>
+		</view>
+	</view>
+
+</view>

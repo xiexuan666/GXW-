@@ -1,19 +1,24 @@
-<!--pages/product/cp/cpxq.wxml-->
-
+<!-- pages/product/cp/cpxq.wxml -->
 <!-- <view class="zuititles">I.T CERAMICHE</view> -->
 <!-- <view class="zuititle">{{cpxiaqs.name}}</view> -->
 <view class="cpxq-dh">
 	<view class="cpxq-dhnr">
 		<view class="cpxq-dhul">
-			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1?'active':''}} " data-ind="{{1}}" bindtap="cpxzxz">产品故事</view>
-			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}} " data-ind="{{2}}" bindtap="cpxzxz">空间效果</view>
-			<view class="cpxq-dhnrp cpxqp3 {{cpxqzt==3?'active':''}} " data-ind="{{3}}" bindtap="cpxzxz">全景体验</view>
-			<view class="cpxq-dhnrp cpxqp4 {{cpxqzt==4?'active':''}} " data-ind="{{4}}" bindtap="cpxzxz">视频展示</view>
+			<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1?'active':''}} " data-ind="{{1}}" bindtap="cpxzxz">
+				产品故事
+			</view>
+			<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}} " data-ind="{{2}}" bindtap="cpxzxz">
+				空间效果
+			</view>
+			<view class="cpxq-dhnrp cpxqp3 {{cpxqzt==3?'active':''}} " data-ind="{{3}}" bindtap="cpxzxz">
+				全景体验
+			</view>
+			<view class="cpxq-dhnrp cpxqp4 {{cpxqzt==4?'active':''}} " data-ind="{{4}}" bindtap="cpxzxz">
+				视频展示
+			</view>
 		</view>
 	</view>
 </view>
-
-
 <!-- 产品故事 -->
 <view class="cpxqgus" wx:if='{{cpxqzt==1}}'>
 	<view class="cpxqgus-nr">
@@ -25,46 +30,44 @@
 		</view>
 		<view class="cpxqgus-nrb">
 			<view class="cpxqgus-nrb-h4">
-				规格参数
+				 规格参数
 			</view>
-			<view class="cpxqgus-nrblit">
-				<view class="cpxqgus-nrblitl">
-					<view class="cpxqgus-nrblitlp1">型号:NO.123456 </view>
-					<view class="cpxqgus-nrblitlp2">
-						<view class="cpxqgus-nrblitlp2s1">规格:</view>
-						<view class="cpxqgus-nrblitlp2s2">SIZE:300x600mm</view>
-					</view>
-
-				</view>
-
-				<view class="cpxqgus-nrblitr" wx:if="{{item.jiage}}">
-					<view class="cpxqgus-nrblitrp2">元/片</view>
-					<view class="cpxqgus-nrblitrp1">299</view>
-				</view>
-			</view>
-			<view class="cpxqgus-nrtimg">
-				<image mode="widthFix" lazy-load="{{true}}" src="{{cpxiaqs.product_image}}"></image>
-			</view>
-			<view class="cpxqgus-nrtimg">
-				<image mode="widthFix" lazy-load="{{true}}" src="{{cpxiaqs.product_image}}"></image>
-			</view>
-			<view class="cpxqgus-nrtp">
-				{{cpxiaqs.product_synopsis}}
-			</view>
-
-			<!-- <view class="cpxqgus-nrbul">
+			<view class="cpxqgus-nrbul">
 				<block wx:for="{{cpxiaqs.product_guige}}" wx:for-index="index" wx:for-item="item" wx:key="index">
 					<view class="cpxqgus-nrbli">
 						<view class="cpxli-tu" bindtap="dakerw" data-img="{{item.url}}">
 							<image lazy-load="{{true}}" mode="widthFix" src="{{item.url}}"></image>
 						</view>
-
+						<view class="cpxqgus-nrblit">
+							<view class="cpxqgus-nrblitl">
+								<view class="cpxqgus-nrblitlp1">型号:{{item.xinh}} </view>
+								<view class="cpxqgus-nrblitlp2">
+									<view class="cpxqgus-nrblitlp2s1">规格:</view>
+									<view class="cpxqgus-nrblitlp2s2">{{item.guig}}</view>
+									            
+								</view>
+								          
+							</view>
+							<view class="cpxqgus-nrblitr" wx:if="{{item.jiage}}">
+								<view class="cpxqgus-nrblitrp2">元/片</view>
+								<view class="cpxqgus-nrblitrp1">{{item.jiage}}</view>
+							</view>
+						</view>
+						       
 					</view>
+					    
 				</block>
-			</view> -->
+				   
+			</view>
+			   
 		</view>
 	</view>
 </view>
+<video src="{{cpxiaqs.product_view}}" class="viedeos" wx:if='{{cpxqzt==4}}'>
+
+
+</video>
+
 
 
 <view class="yitu" wx:if='{{cpxqzt==2}}'>
@@ -74,11 +77,6 @@
 		</view>
 	</block>
 </view>
-
-
-
-
-
 <!-- 底部的收藏 -->
 <view class="collect" wx:if='{{cpxqzt==1}}'>
 	<view class="title">
@@ -87,7 +85,6 @@
 				<image src="/images/tubiao/85.png"></image>
 				<view class="character">5220</view>
 			</view>
-
 		</view>
 		<view class="list-item">
 			<view class="list-right">
@@ -95,13 +92,54 @@
 				<view class="character">收藏</view>
 			</view>
 		</view>
-
 		<view class="list-item">
-			<view class="list-right"  bindtap="handleToTop" >
+			<view class="list-right" bindtap="handleToTop">
 				<image src="/images/tubiao/87.png"></image>
 				<view class="character">分享</view>
 			</view>
 		</view>
-
 	</view>
+
+	<!-- 分享海报 -->
+	<view class="tubiaof">
+		<view class="toTop">
+			<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+				<view class="modals-cancel" bindtap="hideModal"></view>
+				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+					<view class="erweima">
+						<button class="poster" bindtap="formSubmit">
+							<image src="/images/shouye/haib.png"></image>
+							<text class="haib">生成海报</text>
+						</button>
+						<button class="poster m_l" open-type="share">
+							<image src="/images/shouye/lianjie.png"></image>
+							<text class="haib">分享链接</text>
+						</button>
+					</view>
+					<view class="qux" bindtap="quxiao">取消</view>
+					<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+						<view class="floor">
+							<image src="{{item.product_url}}"></image>
+						</view>
+						<view class="content">
+							<view class="left">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+<!-- 海报位置 -->
+<view class='imagePathBox' bindtap="xiaoshi" hidden="{{maskHidden == false}}">
+	<view class="mask" catchtap="clearPosters"></view>
+	<image src="{{imagePath}}" class='shengcheng' mode="aspectFit"></image>
+	<button class='baocun'  catchtap='baocun'>保存图片到相册</button>
+	<button class="baocuns" open-type="share">分享到群好友</button>
+</view>
+<view hidden="{{maskHidden == false}}" class="mask"></view>
+<view class="canvas-box">
+	<canvas style="width:375px; height:667px; margin:auto;background:rgba(255,255,255);" canvas-id="canvpos" />
 </view>

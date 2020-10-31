@@ -1,8 +1,8 @@
 // pages/me/registration/registration.js
-let goodsList = [
-  { actEndTime: '2020/10/01 10:00:43' }
- 
-]
+
+const app = getApp();
+const http = app.globalData.http;
+const baseUrl = app.globalData.baseUrl;
 Page({
 
   /**
@@ -10,13 +10,23 @@ Page({
    */
   data: {
     countDownList: [],
-    actEndTimeList: []
+    actEndTimeList: [],
+    // 传递过来的页面数据
+    list:null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let arry = JSON.parse(options.arry);
+    console.log(arry);  
+    this.setData({
+      list:arry
+    })
+    let goodsList = [
+      { actEndTime:this.data.list.stop_time }
+    ]
     let endTimeList = [];
     // 将活动的结束时间参数提成一个单独的数组，方便操作
     goodsList.forEach(o => {endTimeList.push(o.actEndTime)})
@@ -65,7 +75,25 @@ Page({
     this.setData({ countDownList: countDownArr})
     setTimeout(this.countDown,1000);
   },
-
+  // 参与
+  participate:function(){
+    console.log('参与活动');
+    let url = baseUrl + 'activity/free/free';
+    let data = {
+      brandId:app.globalData.brandid,
+      userId:wx.getStorageSync('gerxinx').id,
+      storeId:this.data.list.store_id,
+      freeId:this.data.list.id
+    }
+    console.log(data,url)
+    http.promisServer(url,data).then(res=>{
+      console.log(res);
+      
+      wx.navigateTo({
+        url: '/pages/me/activity/free2/free2?arr=' + JSON.stringify(this.data.list),
+      })
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

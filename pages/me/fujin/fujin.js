@@ -12,6 +12,7 @@ Page({
   data: {
     //地图
     dt: {},
+
     //本地信息
     bendijxs: {}
   },
@@ -97,7 +98,7 @@ Page({
     var url = baseUrl + "store/findstoreByAddress"
     var dat = {
       addressc,
-      brandid: '1'
+      brandid: '2'
     }
     http.promisServer(url, dat).then(resc => {
       var benjxslist = resc.data.storeList
@@ -117,13 +118,14 @@ Page({
       longitude: bendijxs.position_longitude,
       latitude: bendijxs.position_latitude,
       scale: "12",
+
       markers: [
         {
           id: 1,
           longitude: bendijxs.position_longitude,
           latitude: bendijxs.position_latitude,
           title: bendijxs.address,
-          iconPath: "../../images/tubiao/dt0.png",
+          iconPath: "/images/tubiao/69.png",
           width: 20,
           height: 30,
           callout: {
@@ -149,8 +151,16 @@ Page({
   },
   // 跳转到优惠券活动
   discount: function () {
+    let arry = this.data.bendijxs;
+    let arr = [
+      arry.logo,
+      arry.store_name,
+      arry.id
+    ]
+    let data = JSON.stringify(arr);
+    console.log('带到优惠券活动的参数：',data);
     wx.navigateTo({
-      url: '/pages/me/discount/discount',
+      url: '/pages/me/discount/discount?data=' + data,
     })
   },
   /**

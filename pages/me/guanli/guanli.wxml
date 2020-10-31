@@ -2,11 +2,11 @@
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
@@ -36,13 +36,13 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="chanpmanage">
+		<!-- <view class="me-list-li" bindtap="chanpmanage">
 			<view class="me-list-lil">产品管理
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
-		</view>
+		</view> -->
 
 		<view class="me-list-li" bindtap="kehmanage">
 			<view class="me-list-lil">用户管理
@@ -59,13 +59,13 @@
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" bindtap="fangamanage">
+		<!-- <view class="me-list-li" bindtap="fangamanage">
 			<view class="me-list-lil">方案管理
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
-		</view>
+		</view> -->
 
 		<view class="me-list-li" bindtap="shujmanage">
 			<view class="me-list-lil">数据管理

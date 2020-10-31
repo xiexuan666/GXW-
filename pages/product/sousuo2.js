@@ -22,7 +22,7 @@ Page({
     
     var url = baseUrl + "case/souSuoCasePage"
     var dat={
-      brandid:'1',
+      brandid:'2',
       name:zhi
     }
     console.log(dat)

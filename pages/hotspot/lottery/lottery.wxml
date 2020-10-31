@@ -1,0 +1,46 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+
+<view class="canvas-container" style='margin:0 auto;'>
+	<view animation="{{animationData}}" class="canvas-content" style='margin:0 auto;'>
+		<canvas style="width: 300px; height: 300px; margin:0 auto;" class="canvas-element" canvas-id="lotteryCanvas"></canvas>
+		<view class="canvas-line">
+			<view class="canvas-litem" wx:for="{{awardsList}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
+		</view>
+		<view class="canvas-list">
+			<view class="canvas-item" wx:for="{{awardsList}}" wx:key="unique">
+				<view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">
+					<text class='canvas-item-text-inner {{scale===1.4?"btnfont":"normal"}}'> {{item.award}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="{{scale===1.4?'btnfont':'normal'}} canvas-btn {{turning?disabled:able}} {{chanceRemain==0?disabled:able}}"></view>
+</view>
+
+
+
+
+<view class="top-item">
+	<view class="jiewu">
+		<view class="wrapper">林海</view>
+		<view class="menu">188****8888</view>
+		<view class="burger">一等奖</view>
+	</view>
+</view>

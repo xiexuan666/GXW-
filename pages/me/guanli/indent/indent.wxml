@@ -1,0 +1,99 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="time">
+	<view class="times">
+		<form catchsubmit="tijiaoform" catchreset="formReset">
+			<picker mode="date" value="{{date}}" start="2020-01-01" end="" bindchange="bindDateChange">
+				<view class="date" name="date">
+					<view class='page_row'>
+						<view class="search">
+							<view class="df search_arr">
+								<text class="text">上门日期</text>
+								<input name="xingm" value="{{date}}" placeholder="-请选择-" placeholder-class="placeholderStyle" class="df_1"></input>
+							</view>
+						</view>
+					</view>
+				</view>
+			</picker>
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">客户姓名</text>
+						<input name="mobile" value="{{shopowner}}" class="df_2" placeholder="-请从客户名单中选择-" placeholder-class="placeholderStyles" />
+					</view>
+				</view>
+			</view>
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">客户电话</text>
+						<input name="xingm" value="{{phone}}" class="df_1" placeholder-class="placeholderStyle" />
+					</view>
+				</view>
+			</view>
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">供货地址</text>
+						<input name="xingm" class="df_1" value="{{address}}" placeholder="获取位置" placeholder-class="placeholderStyle" bindtap="wzxuanz" />
+					</view>
+				</view>
+			</view>
+			<view class='page_row'>
+				<view class="search">
+					<view class="df search_arr">
+						<text class="text">供货总额</text>
+						<input name="xingm" value="{{phone}}" class="df_1" placeholder-class="placeholderStyle" />
+					</view>
+				</view>
+			</view>
+			<!-- <view class='select_box'>
+				<view class='select' catchtap='selectTap'>
+					<text class='select_text'>{{select}}</text>
+					<image class='select_img {{show&&"select_img_rotate"}}' src='/images/tubiao/youj.png'></image>
+				</view>
+				<view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+					<text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+				</view>
+			</view> -->
+			<view class="secondbig">
+				<view class='list-msg'>
+					<!--下拉框  -->
+					<view class='list-msg2' bindtap='bindShowMsg'>
+						<view class="mytext"> <text>{{tihuoWay}}</text> </view>
+						<view class="img">
+							<image style='height:10rpx;width:20rpx;' src='/images/tubiao/xiabiao.png'></image>
+						</view>
+					</view>
+
+					<!-- 下拉需要显示的列表 -->
+					<view class="select_box" wx:if="{{select}}">
+						<view class="select_one" bindtap="mySelect" data-name="秒杀">秒杀</view>
+						<view class="select_one" bindtap="mySelect" data-name="拼团">拼团</view>
+						<view class="select_one" bindtap="mySelect" data-name="免费活动">免费活动</view>
+					</view>
+				</view>
+			</view>
+		</form>
+
+		<view class="buttons">
+			<button class="btn_s">保存</button>
+		</view>
+
+	</view>
+</view>

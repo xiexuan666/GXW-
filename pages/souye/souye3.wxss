@@ -1,7 +1,7 @@
 /* 头部 */
 .jinx-t {
   width: 100%;
-  /* background-color: #bababa; */
+ height: 100%;
 }
 
 .jinx-tnr {
@@ -61,7 +61,7 @@
   width: 90%;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px  solid  #fff;
+  border: 1px solid #fff;
   border-radius: 25rpx;
   margin-top: -50rpx;
 }
@@ -88,6 +88,14 @@
   font-weight: 300;
 }
 
+.shuzi {
+  width: 100rpx;
+  background-color: #be8f61;
+  border-radius: 15rpx;
+  color: #fff;
+  padding: 7rpx;
+}
+
 
 .search {
   font-size: 28rpx;
@@ -111,8 +119,18 @@
 
 .df_1 {
   border: 1px solid #ccc;
-  border-radius: 25rpx;
+  border-radius: 15rpx;
   width: 400rpx;
+  padding-left: 50rpx;
+
+}
+
+.df_2 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 400rpx;
+  padding-left: 50rpx;
+
 
 }
 
@@ -120,17 +138,30 @@ button::after {
   border: none;
 }
 
+.anniu {
+  margin: 105rpx 0;
+}
+
 button {
   margin-top: 25px;
-  width: 300px;
+  /* width: 300px; */
+  width: 80%;
   border-radius: 30px;
   background: #bd8f60;
   color: white;
   padding: 0rpx 100rpx;
   margin-bottom: 30rpx;
+  line-height: 60rpx;
 }
 
 .keffoot {
+  text-align: center;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-bottom: 10rpx;
+}
+
+.keffoots {
   text-align: center;
   font-size: 24rpx;
   color: #ccc;
@@ -153,4 +184,16 @@ button {
   margin-top: 20rpx;
   margin-right: 15rpx;
   z-index: 2;
+}
+
+.placeholderStyle {
+  color: #ccc;
+  padding-left: 250rpx;
+ 
+}
+
+.placeholderStyles {
+  color: #ccc;
+  padding-left: 30rpx;
+
 }

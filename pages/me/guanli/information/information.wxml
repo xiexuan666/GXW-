@@ -1,0 +1,206 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="shouc">
+
+	<!-- 热点视频和装修 -->
+	<view class="product-cpanli">
+		<view class="cpanli-nr">
+			<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+				个人收藏
+				<view class="cpanli-nr-lid"></view>
+			</view>
+			<view class="cpanli_content">|</view>
+			<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+				导购推送
+				<view class="cpanli-nr-lid"></view>
+			</view>
+		</view>
+	</view>
+
+
+
+	<!-- 全部 -->
+	<view class="cpxq-dh" wx:if='{{cactiv==1}}'>
+		<view class="cpxq-dhnr">
+			<view class="cpxq-dhul">
+				<view class="cpxq-dhnrp cpxqp1 {{cpxqzt==1?'active':''}} " data-ind="{{1}}" bindtap="cpxzxz">
+					<view class="cpxq-dhnrp-round {{cpxqzt==1?'cpxq-round':''}}">
+						<view class="cpxq-dhnrp-text">产品</view>
+					</view>
+				</view>
+				<view class="cpxq-dhnrp cpxqp2 {{cpxqzt==2?'active':''}} " data-ind="{{2}}" bindtap="cpxzxz">
+					<view class="cpxq-dhnrp-round {{cpxqzt==2?'cpxq-round':''}}">
+						<view class="cpxq-dhnrp-text">案例</view>
+					</view>
+				</view>
+				<view class="cpxq-dhnrp cpxqp3 {{cpxqzt==3?'active':''}} " data-ind="{{3}}" bindtap="cpxzxz">
+					<view class="cpxq-dhnrp-round {{cpxqzt==3?'cpxq-round':''}}">
+						<view class="cpxq-dhnrp-text">攻略</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+	<view class='select_box' wx:if='{{cactiv==1&&cpxqzt==1}}'>
+		<view class='select' catchtap='selectTap'>
+			<text class="xil">系列</text>
+			<text class='select_text'>{{select}}</text>
+			<image class='select_img {{show&&"select_img_rotate"}}' src='/images/tubiao/youj.png'></image>
+		</view>
+		<view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+			<!-- <text class='option' catchtap="optionTap"  style='{{index==selectData.length-1&&"border:0;"}}'>全部</text> -->
+			<text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+		</view>
+	</view>
+
+
+
+
+
+	<!-- 产品 -->
+	<view class="cpbottom-nr" wx:if='{{cactiv==1&&cpxqzt==1}}'>
+		<!-- <view class="cpbottom-nrul">
+			<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+				<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" wx:if='{{item.tname == select || select == selecif}}'>
+					<view class="cpbottom-img">
+						<image mode="scaleToFill" lazy-load="{{true}}" mode="scaleToFill" src="{{item.product_url}}">
+						</image>
+					</view>
+					<view class="cpbottom-bot">
+						<view class="cpbottom-botp">{{item.name}}</view>
+						<view class="shoucc" catchtap="sccp" data-ind="{{index}}">
+							<view class="shouc-p">收藏</view>
+							<view class="img">
+								<image wx:if="{{!item.sczt}}" src="/images/tubiao/43.png"></image>
+								<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
+							</view>
+						</view>
+					</view>
+				</view>
+			</block>
+		</view> -->
+		<view class="cpbottom-nrul">
+			<view class="cpbottom-nrli " >
+				<image src="/images/tubiao/2222.png" class="tupiana"></image>
+				<view class="cpbottom-img">
+					<image mode="scaleToFill" lazy-load="{{true}}" mode="scaleToFill" src="https://cdn.juesedao.cn/gxw/danpian.png">
+					</image>
+				</view>
+				<view class="cpbottom-bot">
+					<view class="cpbottom-botp">科莫白-DT88211</view>
+
+				</view>
+			</view>
+			<view class="cpbottom-nrli " >
+				<image src="/images/tubiao/11111.png" class="tupiana"></image>
+				<view class="cpbottom-img">
+					<image mode="scaleToFill" lazy-load="{{true}}" mode="scaleToFill" src="https://cdn.juesedao.cn/gxw/a5a0c43e6a094a4b8c9bcc1c8539d0d6">
+					</image>
+				</view>
+				<view class="cpbottom-bot">
+					<view class="cpbottom-botp">科莫白-DT88211</view>
+
+				</view>
+			</view>
+		</view>
+		<view class="button_r">
+			<view class="button_rl">
+				<button class="btn_s">发送至</button>
+				<button class="btn_l" bindtap="erweima">生成二维码</button>
+				<modal  hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+					<view>
+						<image class="imagess" src="https://cdn.juesedao.cn/gxw/1bf25bb976ee4e5ba1fe0494a962a3e7" mode='aspectFill'></image>
+					</view>
+				</modal>
+			</view>
+			<view class="button_rr">
+				<button class="btn_r">取消</button>
+			</view>
+		</view>
+
+	</view>
+	<!-- 全国案例 -->
+	<view class="anlilist" wx:if='{{cactiv==1&&cpxqzt==2}}'>
+		<view class="anlilist-ul">
+			<block>
+				<view wx:for="{{product}}" wx:for-index="index" wx:for-item="item" wx:key="index" class="anlilist-li" bindtap="anlitz" data-ind="{{index}}" data-ids="{{item.id}}">
+					<view class="anlilist-liimg">
+						<image mode="aspectFill" src="{{item.photo}}"></image>
+					</view>
+					<view class="jxsnr-li-l  jxsnr-li-lsa">
+						<view class="jxsnr-tubiao-tu1">
+							<view class="jxsnr-li-lp">
+								<image src="/images/tubiao/1-09.png"></image>
+								<view class="lanbai">爵士灰</view>
+							</view>
+							<view class="liser">
+								<view class="tubiaop">
+									<view class="fenxiang">
+										<image src="/images/tubiao/fangx.png"></image>
+									</view>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class="simple">
+						<view class="simple-ul">
+							<view class="simple-ul-p">[现代简约] 盈佳美地</view>
+							<view class="simple-li">{{item.name}}</view>
+						</view>
+						<view class="simple-li-r">
+							<view class="cotione">
+								<view class="jxsnr-li-time">{{item.chenshi}}</view>
+							</view>
+							<view class="cotione1">
+								<view class="jxsnr-li-r">2020.09.01</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</block>
+		</view>
+	</view>
+
+
+	<!-- 内容 -->
+	<view class="list" wx:if='{{cactiv==1&&cpxqzt==3}}'>
+		<block>
+			<navigator wx:for='{{strategy}}' wx:for-index="index" wx:for-item="item" wx:key="index" url="/pages/hotspot/strategy/strategy?id=1" class="goods-list">
+				{{item.name}}
+				<image src="/images/tubiao/1-08.jpg">
+				</image>
+				<view class="goods-list-right">
+					<view class="goods-title">
+						[爆款推荐]这个夏天，冠星王瓷砖让
+						你体验不—样的清凉。
+					</view>
+					<view class="simple-li-r2">
+						<view class="cotione">
+							<view class="jxsnr-li-time">5220</view>
+						</view>
+						<view class="cotione1">
+							<view class="jxsnr-li-r">2020.09.01</view>
+						</view>
+					</view>
+				</view>
+			</navigator>
+		</block>
+	</view>
+</view>

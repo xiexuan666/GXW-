@@ -1,13 +1,62 @@
-// pages/me/guanli/manage/anl.js
+// pages/me/shangcanli/guanlianli.js
+const app = getApp();
+const http = app.globalData.http;
+const baseUrl = app.globalData.baseUrl;
 Page({
-
   /**
    * 页面的初始数据
-   */
+   */ 
   data: {
-
+    caselist:[]
   },
 
+  
+  //案例删除页面跳转
+  anlisc:function(){
+    app.Jump('me/shangcanli/anlishanc')
+  },
+  //案例新增页面跳转
+  anlixingzeng:function(){
+    app.Jump('me/shangcanli/xingzeng')
+  },
+  //案例修改页面跳转ind
+  anlitz:function(e){
+    var ind=app.hdindex(e,'ind')
+    var caselist=this.data.caselist
+    app.globalData.anlinr=caselist[ind]
+    app.Jump('me/shangcanli/xingzeng')
+  },
+
+  //请求案例列表
+  rqcase:function(){
+    var tha=this
+    var gerxinx=this.data.gerxinx
+    var sjzt=this.data.sjzt
+    var storeid=sjzt
+    
+    var url = baseUrl + "case/bendiCaseindex"
+    var dat={
+      userid:gerxinx.id,
+      brandid:'2',
+      storeid
+    }
+    http.promisServer(url, dat).then(resc=>{
+      var caselist=resc.data.localCaseList
+      this.setData({caselist})
+      console.log(caselist,'案例列表')
+    })
+  },
+  // 初始化
+  init:function(){
+    var gerxinx = wx.getStorageSync('gerxinx')
+    var sjzt = wx.getStorageSync('sjid')
+    if(!gerxinx||!sjzt){
+      app.Jumps('me/me')
+      return false
+    }
+    this.setData({gerxinx,sjzt})
+    this.rqcase()
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -26,7 +75,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.init()
   },
 
   /**

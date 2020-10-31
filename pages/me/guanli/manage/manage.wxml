@@ -12,101 +12,668 @@
 
 
 
-<!-- 参与的活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}'>
-	<view class="search">
-		您暂时没有参加活动哦~
-	</view>
-</view>
 
 
 
 <!-- 正在进行活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}'>
-	<view class="search">
-		您暂时没有进行的活动哦~
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==1}}' bindtap='hidden'>
+
+	<!-- 秒杀活动 -->
+	<view class="hander">
+		<view class="a a1">秒杀活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{1}}">查看全部</view>
 	</view>
+	<block wx:for="{{miaosha}}" wx:item='item' wx:if='{{index<6}}'>
+		<view class="release">
+			<image src="{{item.activity_image}}"></image>
+		</view>
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav">
+					<image src="/images/tubiao/fxx.png"></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/fxx.png"></image>
+					<view class="topnav">发布</view>
+				</view>
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/update.png"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="cancel" wx:if='{{0}}'>
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="cancel" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+
+
+
+	<!-- 免费活动 -->
+	<view class="hander">
+		<view class="a a1">免费活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{1}}">查看全部</view>
+	</view>
+	<block wx:for="{{mianfff}}" wx:item='item' wx:if='{{index<6}}'>
+		<view class="release">
+			<image src="{{item.activity_image}}"></image>
+		</view>
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav">
+					<image src="/images/tubiao/fxx.png"></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/fxx.png"></image>
+					<view class="topnav">发布</view>
+				</view>
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/update.png"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="cancel" wx:if='{{0}}'>
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="cancel" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+
+
+
+
+	<view class="hander">
+		<view class="a a1">优惠券活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{1}}">查看全部</view>
+	</view>
+	<!-- 领取优惠券 -->
+	<block wx:for='{{now}}' wx:item='item' wx:if='{{index<6}}'>
+		<view class="coupon-list">
+			<view class="item stamp stamp01 " bindtap="containe">
+				<!-- 左侧 -->
+				<view class="float-li t1">
+					<view class="coupon-left">
+						<view class="t t1">￥</view>
+						<view class="t t2">{{item.jian}}</view>
+						<view class="t t3">满{{item.man}}使用</view>
+						<view class="t t4">有效期</view>
+						<view class="t t5">{{item.create_time}}-{{item.end_time}}</view>
+					</view>
+				</view>
+			</view>
+			<view class="float-tu">
+				<view class="float_hexiao">
+					<view class="r r1"></view>
+					<view class="r r2">已领取：</view>
+					<view class="r r3">{{item.lingqu}}</view>
+					<view class="r r4"></view>
+					<view class="r r5">已核销：</view>
+					<view class="r r6">{{item.hexiao}}</view>
+				</view>
+				<view class="float_tubiao">
+					<view class="float_tubiao_text" wx:if='{{0}}'>
+						<image src="/images/tubiao/update.png"></image> 修改
+					</view>
+					<view class="float_tubiao_text" wx:if='{{0}}' catchtap="delet" data-id="{{item.id}}">
+						<image src="/images/tubiao/delete.png" catchtap="delet" data-id="{{item.id}}"></image>删除
+					</view>
+					<view class="float_tubiao_text" wx:if='{{0}}'>
+						<image src="/images/tubiao/fengx.png"></image>发布
+					</view>
+					<view class="float_tubiao_text">
+						<image src="/images/tubiao/fengx.png"></image>分享
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+
+
+	<!-- 拼团活动 -->
+	<view class="hander">
+		<view class="a a1">拼团活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{1}}">查看全部</view>
+	</view>
+	<block wx:for="{{togroup}}" wx:item='item' wx:if='{{index<6}}'>
+		<view class="release">
+			<image src="{{item.activity_image}}"></image>
+		</view>
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav"  wx:if='{{0}}'>
+					<image src="/images/tubiao/fxx.png" ></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/fxx.png"></image>
+					<view class="topnav">发布{{item.x_id}}</view>
+				</view>
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/update.png" data-id="{{item.id}}"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="cancel" wx:if='{{0}}'>
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="cancel" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+
 </view>
+
+
+
 
 
 
 <!-- 未发布活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}'>
-	<view class="search">
-		您暂时没有发布的活动哦~
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==2}}' bindtap='hidden'>
+	<!-- 免费活动 -->
+	<view class="hander">
+		<view class="a a1">免费活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{2}}">查看全部</view>
 	</view>
+	<block wx:for="{{mianf}}" wx:if='{{index<6}}'>
+		<view class="release">
+			<image src="{{item.activity_image}}" mode="aspectFill"></image>
+		</view>
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav">
+					<image src="/images/tubiao/fxx.png" data-id="{{item.id}}"></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" catchtap="announce" data-id="{{item.id}}">
+					<image src="/images/tubiao/fxx.png" catchtap="announce" data-id="{{item.id}}"></image>
+					<view class="topnav">发布</view>
+				</view>
+				<view class="mainbav" data-index="{{index}}" catchtap="revision">
+					<image src="/images/tubiao/update.png"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="omit">
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="omit" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="title-hanld">
+			<view class="base">-我的底线暂时就到这里了-</view>
+		</view>
+	</block>
+
+
+
+
+	<!-- 优惠券活动 -->
+	<view class="hander">
+		<view class="a a1">优惠券活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{2}}">查看全部</view>
+	</view>
+	<block wx:for='{{not}}' wx:if='{{index<6}}'>
+		<!--  -->
+		<view class="coupon-list">
+			<view class="item stamp stamp01 " bindtap="containe">
+				<!-- 左侧 -->
+				<view class="float-li t1">
+					<view class="coupon-left">
+						<view class="t t1">￥</view>
+						<view class="t t2">{{item.jian}}</view>
+						<view class="t t3">满{{item.man}}使用</view>
+						<view class="t t4">有效期</view>
+						<view class="t t5">{{item.create_time}}-{{item.end_time}}</view>
+					</view>
+				</view>
+			</view>
+			<view class="float-tu">
+				<view class="float_tubiao">
+					<view class="float_tubiao_text" catchtap="update" data-index="{{index}}">
+						<image src="/images/tubiao/update.png"></image> 修改
+					</view>
+					<view class="float_tubiao_text" catchtap="delet" data-id="{{item.c_id}}">
+						<image src="/images/tubiao/delete.png" catchtap="delet" data-id="{{item.c_id}}"></image>删除
+					</view>
+					<view class="float_tubiao_text" catchtap="release" data-id="{{item.c_id}}">
+						<button open-type='share' class="fenxbutton"></button>
+						<image src="/images/tubiao/fengx.png" catchtap="release" data-id="{{item.c_id}}"></image>发布
+					</view>
+					<view class="float_tubiao_text">
+						<image src="/images/tubiao/fengx.png"></image>分享
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+
+	<!-- 秒杀活动 -->
+	<view class="hander">
+		<view class="a a1">秒杀活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{2}}">查看全部</view>
+	</view>
+	<block wx:for='{{miaosss}}' wx:if='{{index<6}}'>
+		<view class="release">
+			<image src="{{item.activity_image}}" mode="aspectFill"></image>
+		</view>
+
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav">
+					<image src="/images/tubiao/fxx.png"></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" catchtap="issue" data-id="{{item.id}}">
+					<image src="/images/tubiao/fxx.png" catchtap="issue" data-id="{{item.id}}"></image>
+					<view class="topnav">发布</view>
+				</view>
+				<view class="mainbav" data-index="{{index}}" catchtap="amend">
+					<image src="/images/tubiao/update.png"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="remove">
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="remove" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+		<view class="title-hanld">
+			<view class="base">-我的底线暂时就到这里了-</view>
+		</view>
+	</block>
+
+
+
+	<!-- 拼团活动 -->
+	<view class="hander">
+		<view class="a a1">拼团活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{2}}">查看全部</view>
+	</view>
+	<block wx:for="{{puzzle}}" wx:if='{{index<6}}'>
+		<view class="release">
+			<image src="{{item.activity_image}}" mode="aspectFill"></image>
+		</view>
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav">
+					<image src="/images/tubiao/fxx.png"></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" catchtap="publisher" data-id="{{item.id}}">
+					<image src="/images/tubiao/fxx.png" catchtap="publisher" data-id="{{item.id}}"></image>
+					<view class="topnav">发布</view>
+				</view>
+				<view class="mainbav" data-index="{{index}}" catchtap="revision">
+					<image src="/images/tubiao/update.png"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="cancel">
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="cancel" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+		<view class="title-hanld">
+			<view class="base">-我的底线暂时就到这里了-</view>
+		</view>
+	</block>
 </view>
+
+
 
 
 
 <!-- 已下架活动 -->
-<view class="header" wx:if='{{cactiv==1&&cpxqzt==4}}'>
-	<view class="search">
-		您暂时没有下架的活动哦~
+<view class="header" wx:if='{{cactiv==1&&cpxqzt==3}}' bindtap='hidden'>
+	<!-- 免费活动 -->
+	<view class="hander">
+		<view class="a a1">免费活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{3}}">查看全部</view>
 	</view>
+	<block wx:for="{{endfree}}" wx:if='{{index<6}}'>
+		<view class="release">
+			<image src="{{item.activity_image}}"></image>
+		</view>
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav">
+					<image src="/images/tubiao/fxx.png" wx:if='{{0}}'></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/fxx.png"></image>
+					<view class="topnav">发布</view>
+				</view>
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/update.png" data-id="{{item.id}}"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="omit">
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="omit" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+
+
+
+	<view class="hander">
+		<view class="a a1">优惠券活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{3}}">查看全部</view>
+	</view>
+	<!-- 领取优惠券 -->
+	<block wx:for='{{end}}' wx:if='{{index<6}}'>
+		<view class="coupon-list">
+			<view class="item stamp stamp01 " bindtap="containe">
+				<!-- 左侧 -->
+				<view class="float-li t1">
+					<view class="coupon-left">
+						<view class="t t1">￥</view>
+						<view class="t t2">{{item.jian}}</view>
+						<view class="t t3">满{{item.man}}使用</view>
+						<view class="t t4">有效期</view>
+						<view class="t t5">{{item.create_time}}-{{item.end_time}}</view>
+					</view>
+				</view>
+			</view>
+			<view class="float-tu">
+				<view class="float_hexiao">
+					<view class="r r1"></view>
+					<view class="r r2">已领取：</view>
+					<view class="r r3">{{item.lingqu}}</view>
+					<view class="r r4"></view>
+					<view class="r r5">已核销：</view>
+					<view class="r r6">{{item.hexiao}}</view>
+				</view>
+				<view class="float_tubiao">
+					<view class="float_tubiao_text" wx:if='{{0}}'>
+						<image src="/images/tubiao/update.png"></image> 修改
+					</view>
+					<view class="float_tubiao_text" catchtap="delet" data-id="{{item.c_id}}">
+						<image src="/images/tubiao/delete.png" catchtap="delet" data-id="{{item.c_id}}"></image>删除
+					</view>
+					<view class="float_tubiao_text" wx:if='{{0}}'>
+						<image src="/images/tubiao/fxx.png"></image>发布
+					</view>
+					<view class="float_tubiao_text" wx:if='{{0}}'>
+						<image src="/images/tubiao/fxx.png"></image>分享
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+
+
+	<!-- 拼团活动 -->
+	<view class="hander">
+		<view class="a a1">拼团活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{3}}">查看全部</view>
+	</view>
+	<block wx:for="{{tetrad}}">
+		<view class="release">
+			<image src="{{item.activity_image}}"></image>
+		</view>
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav" wx:if='{{0}}'>
+					<image src="/images/tubiao/fxx.png" data-id="{{item.id}}"></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" data-id="{{item.id}}" wx:if='{{0}}'>
+					<image src="/images/tubiao/fxx.png" data-id="{{item.id}}"></image>
+					<view class="topnav">发布{{item.x_id}}</view>
+				</view>
+				<view class="mainbav" data-index="{{index}}" catchtap="revision" wx:if='{{0}}'>
+					<image src="/images/tubiao/update.png" data-id="{{item.id}}"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="cancel" wx:if='{{0}}'>
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="cancel" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
+
+	<!-- 秒杀活动 -->
+	<view class="hander">
+		<view class="a a1">秒杀活动</view>
+		<view class="a a2" bindtap='jumpdiscounts' data-index="{{3}}">查看全部</view>
+	</view>
+	<block wx:for="{{miaoshaa}}">
+		<view class="release">
+			<image src="{{item.activity_image}}"></image>
+		</view>
+		<view class="service">
+			<view class="scroll">
+				<view class="status">{{item.title}}</view>
+				<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+			</view>
+			<view class="nav">
+				<view class="mainbav">
+					<image src="/images/tubiao/fxx.png" data-id="{{item.id}}"></image>
+					<view class="topnav">分享</view>
+				</view>
+				<view class="mainbav" catchtap="" data-id="{{item.id}}">
+					<image src="/images/tubiao/fxx.png" catchtap="" data-id="{{item.id}}"></image>
+					<view class="topnav">发布{{item.x_id}}</view>
+				</view>
+				<view class="mainbav" data-index="{{index}}" catchtap="revision">
+					<image src="/images/tubiao/update.png" data-id="{{item.id}}"></image>
+					<view class="topnav">修改</view>
+				</view>
+
+				<view class="mainbav" data-id="{{item.id}}" catchtap="omit">
+					<image src="/images/tubiao/delete.png"></image>
+					<view class="topnav" catchtap="omit" data-id="{{item.id}}">删除</view>
+				</view>
+			</view>
+		</view>
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</block>
 </view>
 
 
+
+<!-- 活动类型选择 -->
 <view class="huodtype">
-	<view class="type">
+	<view class="type {{status==1?'linea':''}}" wx-if='{{status}}'>
 		<view class="form">活动类型选择</view>
 		<block>
-			<view class="charge">
+			<view class="charge" bindtap="handleSelect" data-index="{{0}}">
 				<view class="tup">
-					<image src="/images/tubiao/109.png"></image>
+					<image src="https://cdn.juesedao.cn/gxw/69cd37b33753473e9d3f73f12b5662bf"></image>
 				</view>
 				<view class="lists">
 					<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
 					<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
 				</view>
+
+				<icon type="success" color="{{select[0] ? '#C8C9CA' : '#FFB800' }}"></icon>
 			</view>
 		</block>
 
-		<view class="charge">
+		<view class="charge" bindtap="handleSelect" data-index="{{1}}">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/5f45a804cef8476b812bd2e75529df11"></image>
 			</view>
 			<view class="lists">
-				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
-				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
+				<view style="font-size: 33rpx; font-weight: 700;">优惠券活动</view>
+				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">需客户交费的活动报名</view>
 			</view>
+			<icon type="success" color="{{select[1] ? '#C8C9CA' : '#FFB800' }}"></icon>
 		</view>
 
 
-		<view class="charge">
+		<view class="charge" bindtap="handleSelect" data-index="{{2}}">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/b526e11d857c413db64c082afcb81fc7"></image>
 			</view>
 			<view class="lists">
-				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
-				<view style="font-size: 26rpx; font-weight: 300; padding: 20rpx 0;">免费活动报名创建</view>
+				<view style="font-size: 33rpx; font-weight: 700;">商品秒杀</view>
+				<view style="font-size: 26rpx; font-weight: 300; padding: 20rpx 0;">限时限额抢购</view>
 			</view>
+			<icon type="success" color="{{select[2] ? '#C8C9CA' : '#FFB800' }}"></icon>
+		</view>
+
+		<view class="charge" bindtap="handleSelect" data-index="{{3}}">
+			<view class="tup">
+				<image src="https://cdn.juesedao.cn/gxw/b526e11d857c413db64c082afcb81fc7"></image>
+			</view>
+			<view class="lists">
+				<view style="font-size: 33rpx; font-weight: 700;">拼团活动</view>
+				<view style="font-size: 26rpx; font-weight: 300; padding: 20rpx 0;">发起拼团，邀请好友参团</view>
+			</view>
+			<icon type="success" color="{{select[3] ? '#C8C9CA' : '#FFB800' }}"></icon>
 		</view>
 
 
 
-		<view class="charge">
+		<view class="charge" bindtap="handleSelect" data-index="{{4}}">
 			<view class="tup">
-				<image src="/images/tubiao/109.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/b227f79b68a84b7ea4945a484fda0db0"></image>
 			</view>
 			<view class="lists">
-				<view style="font-size: 33rpx; font-weight: 700;">免费活动</view>
-				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">免费活动报名创建</view>
+				<view style="font-size: 33rpx; font-weight: 700;">抽奖活动</view>
+				<view style="font-size: 26rpx; font-weight: 300;padding: 20rpx 0;">发起拼团，邀请好友参团</view>
 			</view>
+			<icon type="success" color="{{select[4] ? '#C8C9CA' : '#FFB800' }}"></icon>
 		</view>
 	</view>
 </view>
-
-
-
-
-
-
-
-
-
-
-
 
 
 <view class="anniu">

@@ -1,0 +1,153 @@
+<view class="goods-title">
+	<view class="collect">
+		<image src="https://cdn.juesedao.cn/gxw/0cf2401c4d0b4fed807e690a21c28966"></image>
+	</view>
+	<view class=" huah">
+		<view class="drawing">活动主画面</view>
+		<view class="size">画画尺寸比例16:9</view>
+	</view>
+	<view class="change">
+		<view class="change_li">更改</view>
+	</view>
+</view>
+
+
+
+<view class="title">
+	<view class='item'>
+		<view class='title_tip'>标题</view>
+		<view class='username_txt'>
+			<input type='text' class='user_txt' placeholder-class='input_style'  model:value="{{title}}" />
+		</view>
+	</view>
+	<view class="flex-wrp">
+		<view class="flex-item bc_green">填补充活动内容/规则</view>
+	</view>
+
+	<view class="flex-itemm">
+		<textarea class="flex-itemm-text" type="text" value="{{neirong}}" name="neirong" bindinput="handleneirong" >
+
+      </textarea>
+	</view>
+
+
+
+
+	<view class="time">
+		<view class="times">
+			<form catchsubmit="tijiaoform" catchreset="formReset">
+				<picker mode="date" value="{{date}}"  end="" bindchange="bindDateChange">
+					<view class="date" name="date">
+						<view class='page_row'>
+							<view class="search">
+								<view class="df search_arr">
+									<text class="text">开始时间</text>
+									<input name="xingm" model:value="{{date}}" placeholder="-请选择-" placeholder-class="placeholderStyle" class="df_1"></input>
+								</view>
+							</view>
+						</view>
+					</view>
+				</picker>
+				<picker mode="date" value="{{data}}"  end="" bindchange="bindDateEndChange">
+					<view class="date" name="date">
+						<view class='page_row'>
+							<view class="search">
+								<view class="df search_arr">
+									<text class="text">结束时间</text>
+									<input name="xingm" model:value="{{date2}}" placeholder="-请选择-" placeholder-class="placeholderStyle" class="df_1"></input>
+								</view>
+							</view>
+						</view>
+					</view>
+				</picker>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">门店地址</text>
+							<input name="xingm" class="df_1" value="{{address}}" placeholder-class="placeholderStyle" bindinput="hangldaddress" />
+						</view>
+					</view>
+				</view>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">产品名称</text>
+							<input name="xingm" value="{{name}}" class="df_1" placeholder-class="placeholderStyle"  bindinput="hanglename" />
+						</view>
+					</view>
+				</view>
+				<view class="flex-wrpr">
+					<view class="flex_item bc-green">产品简介</view>
+					<view class="flex_itemm">
+						<textarea class="flex_itemm-texts" type="text" value="{{neirongs}}" name="neirongr"  bindinput="hangleneirongs" >
+            </textarea>
+					</view>
+				</view>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">产品原价</text>
+							<input name="xingm" value="{{product}}" class="df_1" placeholder-class="placeholderStyle"   type="number" bindinput="hangleproduct" />
+						</view>
+					</view>
+				</view>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">秒杀价格</text>
+							<input name="xingm" value="{{seckill}}" class="df_1" placeholder-class="placeholderStyle"   type="number"  bindinput="hangleseckill" />
+						</view>
+					</view>
+				</view>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">限购数量</text>
+							<input name="xingm" value="{{quantity}}" class="df_1" placeholder-class="placeholderStyle"    type="number" bindinput="hanglequantity"  />
+						</view>
+					</view>
+				</view>
+				<view class='page_row'>
+					<view class="search">
+						<view class="df search_arr">
+							<text class="text">规　　格</text>
+							<input name="xingm" value="{{specification}}" class="df_1" placeholder-class="placeholderStyle"    type="number" bindinput="hanglespecification"   />
+						</view>
+					</view>
+				</view>
+				<view class="shanctup-li">
+					<view class="shanctup-li-p1">产品图片</view>
+					<view class="shanctup-li-img">
+						<block wx:for="{{tupian}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+							<view class="shanctup-li-imgli" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shanc" data-img="{{item}}">
+								<image src="{{item}}"></image>
+							</view>
+						</block>
+					</view>
+					<view class="shanctupbutton" bindtap="shangctup">
+						<!-- <image mode="widthFix" src="/images/tubiao/zaop.png"></image> -->
+						<view class="shanctupbutton-p">添加图片</view>
+					</view>
+				</view>
+				<view class="shanctup-li">
+					<view class="shanctup-li-p1">活动详情图</view>
+					<view class="shanctup-li-img">
+						<block wx:for="{{picture}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+							<view class="shanctup-li-imgli" data-ind="{{index}}" catchtap="dakerw" catchlongtap="shanc" data-img="{{item}}">
+								<image src="{{item}}"></image>
+							</view>
+						</block>
+					</view>
+					<view class="shanctupbutton" bindtap="shangcerw">
+						<!-- <image mode="widthFix" src="/images/tubiao/zaop.png"></image> -->
+						<view class="shanctupbutton-p">添加图片</view>
+					</view>
+				</view>
+			</form>
+		</view>
+	</view>
+
+	<view class="preview">
+		<button class="btn" bindtap="activities">活动预览</button>
+	</view>
+</view>

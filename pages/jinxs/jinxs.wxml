@@ -14,52 +14,24 @@
 
 
 
+
 <!-- 热点视频 -->
 <view class="videolist" wx:if='{{cactiv==2}}'>
-	<view class="videolist-title">
-		<view class="videosp">
-			<image src="/images/tubiao/1-08.jpg"></image>
-			<view class="detail">
-				<text>村上村树</text>
-				<image src="/images/tubiao/1-12.png"></image>11
-			</view>
-		</view>
-
-		<view class="videotext">
-			<view class="video-p">
-				[如何装修]开放式厨房大空...
-			</view>
-		</view>
-	</view>
-
-	<view class="videolist-title">
-		<view class="videosp">
-			<image src="/images/tubiao/1-08.jpg"></image>
-			<view class="detail">
-				<text>村上村树</text>
-				<image src="/images/tubiao/1-12.png"></image>11
-			</view>
-		</view>
-
-		<view class="videotext">
-			<view class="video-p">
-				[如何装修]开放式厨房大空...
-			</view>
-		</view>
-	</view>
+	<import src='/pages/template/viedeocard/videocard' />
+	<template is="videocard" data="{{video:video}}"></template>
 </view>
 
 
+
 <!-- 搜索 -->
-<view class="sous" wx:if='{{cactiv==1}}'>
+<view class="sous" wx:if='{{cactiv==1}}'  style="display: none;">
 	<view class="sous-nr" bindtap="tzsous">
-		<!-- <image src="/images/tubiao/sous.png"></image> -->
 		<input placeholder="搜索"></input>
 	</view>
 </view>
 
 
-<!-- 全部 -->
+<!-- 全部导航栏 -->
 <view class="cpxq-dh" wx:if='{{cactiv==1}}'>
 	<view class="cpxq-dhnr">
 		<view class="cpxq-dhul">
@@ -71,29 +43,29 @@
 		</view>
 		<view class="data">
 			<view class="data-r">
-				共1120条数据
+				共{{strategyTotal}}条数据
 			</view>
 		</view>
 	</view>
 </view>
 
 <!-- 内容 -->
-<view class="list" wx:if='{{cactiv==1&&cpxqzt==1}}' >
-	<block >
-		<navigator url="/pages/hotspot/strategy/strategy?id=1" class="goods-list">
-			<image src="/images/tubiao/1-08.jpg">
+<view class="list" wx:if='{{cactiv==1}}'>
+	<block>
+		<navigator wx:for='{{strategy}}' wx:index='index' wx:item='item' url="/pages/hotspot/strategy/strategy?arry={{json}}&id={{index}}" class="goods-list" wx:if='{{item.type == hiddenstrategy || hiddenstrategy == apphidden}}'>
+			<image src="{{item.photo}}">
 			</image>
 			<view class="goods-list-right">
 				<view class="goods-title">
-					[爆款推荐]这个夏天，冠星王瓷砖让
-					你体验不—样的清凉。
+					【{{item.name}}】{{item.title}}
 				</view>
 				<view class="simple-li-r">
 					<view class="cotione">
-						<view class="jxsnr-li-time">5220</view>
+						<image src="/images/tubiao/1-10.png" mode=""></image>
+						<view class="jxsnr-li-time">{{item.preview}}</view>
 					</view>
 					<view class="cotione1">
-						<view class="jxsnr-li-r">2020.09.01</view>
+						<view class="jxsnr-li-r">{{item.update_time}}</view>
 					</view>
 				</view>
 			</view>

@@ -1,4 +1,4 @@
-<!--pages/template/sp/sp.wxml-->
+<!-- pages/template/sp/sp.wxml -->
 <!-- 多个视频播放 -->
 <template name="videolist">
   <view class="videolist-nr" data-wz="视频模板sp/sp"  wx:if="{{status}}" >

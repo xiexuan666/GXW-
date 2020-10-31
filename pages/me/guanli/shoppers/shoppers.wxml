@@ -1,0 +1,41 @@
+<!-- 店长卡片 -->
+<import src='/pages/template/comments/comments' />
+<template is="users" data="{{list:'imasrc////',num:3}}">
+</template>
+
+
+
+
+
+<!-- 名片 -->
+<view class="card">
+	<view class="dh_r">
+		<view class="vip">头像　｜　</view>
+		<view class="vip">导购　　</view>
+		<view class="vip">　会员数</view>
+	</view>
+</view>
+
+
+
+<!-- 导购 -->
+<view class="shoppers">
+	<view class="dh_rs">
+		<view class="me-list-lir">
+			<image src="/images/tubiao/tx.png"></image>
+		</view>
+		<view class="me-list-lir">
+			<view class="name">符导购</view>
+		</view>
+		<view class="me-list-lir">
+			<view class="name">300</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 删除按钮 -->
+<view class="btn_s">
+	<button class="btnr">删除</button>
+</view>

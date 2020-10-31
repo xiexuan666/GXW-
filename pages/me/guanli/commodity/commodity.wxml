@@ -1,0 +1,43 @@
+	<!-- 头部 -->
+	<view class="jinx-t">
+		<view class="jinx-tnr">
+			<view class="jinx-bei">
+				<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+			</view>
+			<view class="jinx-toux">
+				<view class="toux-img">
+					<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+				</view>
+				<view class="name-p">冠星王总部</view>
+			</view>
+		</view>
+	</view>
+
+
+
+	<view class="shouc">
+		<!-- 产品 -->
+		<view class="cpbottom-nr">
+			<view class="cpbottom-nrul">
+				<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+					<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" wx:if='{{item.tname == select || select == selecif}}'>
+						<view class="cpbottom-img">
+							<image mode="scaleToFill" lazy-load="{{true}}" mode="scaleToFill" src="{{item.product_url}}">
+							</image>
+						</view>
+						<view class="cpbottom-bot">
+							<view class="cpbottom-botp">{{item.name}}</view>
+							<view class="shoucc" catchtap="sccp" data-ind="{{index}}">
+								<view class="shouc-p">收藏</view>
+								<view class="img">
+									<image wx:if="{{!item.sczt}}" src="/images/tubiao/43.png"></image>
+									<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
+								</view>
+							</view>
+						</view>
+					</view>
+				</block>
+			</view>
+		</view>
+
+	</view>

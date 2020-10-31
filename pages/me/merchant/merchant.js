@@ -8,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    status: null,
 
   },
   //现金购买
@@ -122,15 +123,24 @@ Page({
   //     url: 'pages/me/guanli/manage/store',
   //   })
   // },
-  shenq:function(){
+  shenq: function () {
+    if(this.data.status == 2){
+      wx.showToast({
+        title: '已入驻成功',
+        icon: 'success',
+        duration: 1000
+      })
+      return false;
+    }
     app.Jump('me/guanli/manage/store')
-   
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
 
   },
 
@@ -145,7 +155,34 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    console.log('商家状态：',wx.getStorageSync('sjzt'));
+    let status = wx.getStorageSync('sjzt');
+    console.log('状态啊',status.status);
+    this.setData({
+      status:status.status
+    })
 
+    if (status.status == 2) {
+      var that = this
+      wx.showModal({
+        title: '提示',
+        content: '恭喜你入驻成功',
+        success: function (res) {
+          if (res.confirm) {
+            setTimeout(function () {
+              wx.reLaunch({
+                url: '/pages/me/me',
+              })
+            }, 1000);
+          } else if (res.cancel) {
+            console.log('用户点击了取消');
+
+          }
+
+        }
+      })
+
+    }
   },
 
   /**

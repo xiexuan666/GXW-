@@ -38,7 +38,6 @@ Page({
     gerxinx: '',
     //实时省市区
     addresstwo: '',
-
     //从新申请渲染需要的
     //商家名称
     storename: '',
@@ -47,8 +46,9 @@ Page({
     //联系人
     shopowner: '',
     //商家信息
-    sjzt: { status: 0 }
-
+    sjzt: { status: 0 },
+    // 控制入驻
+    ruzhu:0
   },
 
   
@@ -109,7 +109,6 @@ Page({
         timesend: open_time[1],
         tupian: tupian,
         erwm: erwm,
-
       })
     }
   },
@@ -159,6 +158,74 @@ Page({
 
   //提交内容
   tijiaoform(e) {
+    console.log(wx.getStorageSync('sjid'));
+    // 如果商家id不为空的话，保存就是修改的操作
+    if(wx.getStorageSync('sjid') == null){
+      
+    }else{
+      let url = baseUrl + 'store/storeJoin';
+      let data = e.detail.value;
+      data.id = wx.getStorageSync('sjid');
+      data.brandid=2;
+      data.opentime=this.data.timestar+"-"+this.data.timeend;
+      data.logo = this.data.tupian[0];
+      data.status = '';
+      console.log(data);
+      // 判空，脑子不想写函数，就这样搞吧
+      // 先做正则判断电话号码
+      let photo = /^[1][3,4,5,7,8,9][0-9]{9}$/;
+      if(photo.test(e.detail.value.phone)){
+      }else{
+      wx.showModal({
+        title: '提示',
+        content: '号码错误，请输入正确的号码',
+        showCancel: false
+      });
+      return false
+    }
+      if(data.storename == ''){
+        console.log('店铺名空的')
+        wx.showModal({
+          title: '提示',
+          content: '商家名不能为空',
+          showCancel: false
+        });
+        return false
+      }else if(data.type == ''){
+        console.log('地区空的')
+        wx.showModal({
+          title: '提示',
+          content: '地区不能为空',
+          showCancel: false
+        });
+        return false
+      }else if(data.shopowner == ''){
+        console.log('联系人空的')
+        wx.showModal({
+          title: '提示',
+          content: '联系人不能为空',
+          showCancel: false
+        });
+        return false
+      }else if(data.logo == undefined){
+        console.log('图片空的')
+        wx.showModal({
+          title: '提示',
+          content: 'logo不能为空',
+          showCancel: false
+        });
+        return false
+      }
+      delete data.jies
+      delete data.jingdu
+      delete data.kais
+      delete data.weidu
+      // 判空
+      http.promisServer(url,data).then(res=>{
+        console.log(res);
+      })
+      return false
+    }
     var tha = this
     var sjzt = this.data.sjzt
     var gerxinx = this.data.gerxinx
@@ -174,7 +241,6 @@ Page({
     tjnr.addresstwo = addresstwo
     var pdjieg = this.pdtjnr(tjnr)
     if (!pdjieg) { return false }
-
     tjnr.status = 1
     tjnr.userid = userid
     tjnr.brandid = brandid
@@ -323,6 +389,9 @@ Page({
   },
   //上传头像图片
   shangctup: function () {
+    if(this.data.tupian.length >= 1){
+      return false
+    }
     var shul = 1
     app.xuanzup(shul).then(rec => {
       rec.forEach(filePath => {
@@ -507,7 +576,32 @@ Page({
 
 
     //获取缓存信息
-    this.huqhcgrxin()
+    this.huqhcgrxin();
+
+    // 如果是商家直接渲染页面
+    if(wx.getStorageSync('sjid') == null){
+      console.log(this.data.ruzhu);
+      // 用户未入驻
+    }else{
+      let sjxx = wx.getStorageSync('sjzt').record;
+      let images = this.data.tupian;
+      if(images.length == 0){
+        images.push(sjxx.logo);
+      }
+      this.setData({
+        storename:sjxx.store_name,
+        type:sjxx.type,
+        shopowner:sjxx.shopowner,
+        phone:sjxx.phone,
+        address:sjxx.address,
+        longitude:sjxx.position_latitude,
+        latitude:sjxx.position_longitude,
+        timestar:sjxx.open_time.slice(0,5),
+        timeend:sjxx.open_time.slice(6,12),
+        tupian:images,
+        ruzhu:sjxx.join_time
+      })
+    }
   },
 
   /**

@@ -47,7 +47,9 @@ Page({
     http.promisServer(url, dat).then(resc=>{
       console.log(resc,'删除案例结果')
       if(resc.status=="000"){
-        wx.navigateBack({})
+        wx.navigateBack({
+         
+        })
       }
     })
   },
@@ -75,10 +77,11 @@ Page({
     var url = baseUrl + "case/bendiCaseindex"
     var dat={
       userid:gerxinx.id,
-      brandid:'1',
-      storeid:sjzt.record.id
+      brandid:'2',
+      storeid:sjzt
     }
     http.promisServer(url, dat).then(resc=>{
+      console.log(resc.data,'本地案例列表')
       var caselist=resc.data.localCaseList
       caselist=tha.jizt(caselist)
       this.setData({caselist})
@@ -95,7 +98,7 @@ Page({
    // 初始化
    init:function(){
     var gerxinx = wx.getStorageSync('gerxinx')
-    var sjzt = wx.getStorageSync('sjzt')
+    var sjzt = wx.getStorageSync('sjid')
     if(!gerxinx||!sjzt){
       app.Jumps('me/me')
       return false

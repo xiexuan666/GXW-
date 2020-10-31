@@ -1,0 +1,254 @@
+<!--pages/template/comments/comments.wxml-->
+<template name="comments" data="great">
+	<!-- 头部 -->
+	<view class="commentsTop" wx:if='{{topstyle == 1}}'>
+		<view class="commentsTopText">
+			该案例评论
+		</view>
+		<view class="commentsTopRound"></view>
+		<view class="commentsTopTitle">
+			<view class="headerList">
+				<view class="header">
+					<image mode="scaleToFill" src="{{Common[0].wx_photo}}"></image>
+				</view>
+				<view class="header">
+					<image mode="scaleToFill" src="{{Common[1].wx_photo}}"></image>
+				</view>
+				<view class="header">
+					<image mode="scaleToFill" src="{{Common[2].wx_photo}}"></image>
+				</view>
+			</view>
+			<view class="great">
+				<view class="greatText">{{great}}人觉得很赞</view>
+				<view class="greatIcon" catchtap="addgreat">
+					<!-- <image wx:if='{{dianzhan}}' src="/images/tubiao/dain.png" mode="aspectFit	"></image> -->
+					<!-- <image wx:else src="/images/tubiao/dianzan.png" mode="aspectFit	"></image> -->
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="commentsTops" wx:if='{{topstyle == 2}}'>
+		{{Common.length}}条评论
+	</view>
+
+	<scroll-view scroll-y='true' scroll-top='{{scroll}}' style="height:400rpx;width:90%;margin:0 auto;">
+	<view class="commentsContent" style="color:{{font_color}};padding-bottom:{{bottom}}vh;">
+		<!-- 用以控制渲染程序的标签 -->
+		<block wx:for='{{Common}}' wx:index='index' wx:item='item'> 
+			<!-- 评论详情 -->
+			<view class="commentsContentText" >
+				<text>{{item.common}}</text>
+			</view>
+			<!-- 评论头像&点赞 -->
+			<view class="commentsContentTop">
+				<!-- 评论头像及姓名 -->
+				<view class="PicName">
+					<view class="pic">
+						<image src="{{item.wx_photo}}" mode="aspectFit"></image>
+					</view>
+					<view class="text">{{item.wx_name}}</view>
+				</view>
+				<!-- 点赞攻略 -->
+				<view class="Icon">
+					<view class="text">{{item.great}}</view>
+					<view class="pic" catchtap="addCommon">
+						<image src="/images/tubiao/dianzan.png" mode="widthFix"></image>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+	</scroll-view>
+	<!-- 主体 -->
+	<!-- <view class="commentsContent" style='color:{{font_color}}'> -->
+		<!-- 用以控制渲染程序的标签 -->
+		<!-- <block wx:for='{{Common}}' wx:index='index' wx:item='item'>  -->
+			<!-- 评论详情 -->
+			<!-- <view class="commentsContentText" > -->
+				<!-- <text>{{item.common}}</text> -->
+			<!-- </view> -->
+			<!-- 评论头像&点赞 -->
+			<!-- <view class="commentsContentTop"> -->
+				<!-- 评论头像及姓名 -->
+				<!-- <view class="PicName">
+					<view class="pic">
+						<image src="{{item.wx_photo}}" mode="aspectFit"></image>
+					</view>
+					<view class="text">{{item.wx_name}}</view>
+				</view> -->
+				<!-- 点赞攻略 -->
+				<!-- <view class="Icon">
+					<view class="text">{{item.great}}</view>
+					<view class="pic" catchtap="addCommon">
+						<image src="/images/tubiao/dianzan.png" mode="widthFix"></image>
+					</view>
+				</view>
+			</view>
+		</block> -->
+	<!-- </view> -->
+		<!-- 评论组件 -->
+	<view class="buttontemlate" wx:if='{{botton}}'>
+		<input model:value="{{value}}" placeholder="输入评论内容" bindfocus='deletevalue' class="context"></input>
+		<button class="buttons" bindtap="pinlun">发表</button>
+	</view>
+	<!-- 添加评论 -->
+<view class="Input" wx:if='{{botton1}}'>
+	<image class="Icon" src="/images/tubiao/pl.png" mode="heightFix"></image>
+	<input class="addCommom" confirm-type='send' type="text" value="{{InputText}}" placeholder="快来评论吧"  bindinput='getText' bindfocus='clearInput'></input>
+	<button class="button" catchtap="common">发送</button>
+</view>
+	<!-- <view class="commentsRelease"></view> -->
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 设家居计师 -->
+<template name="card">
+	<!-- <image src="{{imgsrc}}"></image> -->
+	<view class="list">
+		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/beijing.png" mode="scaleToFill"></image>
+		<view class="num1">
+			<view class="header">
+				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242" class="tx"></image>
+			</view>
+		</view>
+		<view class="num2">
+			<view class="text">
+				村上　家居设计师
+			</view>
+			<view class="text1">
+				<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" class="dh" mode="aspectFit" bindtap="calling" catchtap="calling"></image>
+
+
+
+				<image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png" class="dh" mode="aspectFit" bindtap="zix"> <button class="btns"></button></image>
+
+
+
+				<image src="https://cdn.juesedao.cn/gxw/yijiandaohang.png" class="dhs" mode="aspectFit" bindtap="daohan"> <button class="btns"></button></image>
+
+			</view>
+			<view class="title">
+				<image src="/images/tubiao/40.png" mode="aspectFit"></image>
+				<text>广东省佛山市禅城区南庄镇华夏陶瓷博览城陶博二路11座</text>
+			</view>
+		</view>
+		<view class="num3">
+			<view class="tow">
+				<image class="list-pic" bindtap='openImages' data-images="" src="/images/tubiao/erwema.jpg" mode="widthFix"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+
+<!-- 冠星王陶瓷 -->
+<template name="ceramic">
+	<view class="list-item">
+		<view class="goods">
+			<view class="collect">
+				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+			</view>
+			<view class="tab">
+				<view class="attrs1">
+					冠星王陶瓷
+				</view>
+				<view class="attrs2">
+					店主:　村上
+				</view>
+				<view class="attrs">
+					<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇华夏陶瓷博览城陶博二路11座
+				</view>
+			</view>
+			<view class="contact">
+				<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png" bindtap="calling"></image>
+				<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+<!-- 冠星王陶瓷1 -->
+<template name="ceramics">
+	<view class="list-item">
+		<view class="goods">
+			<view class="collect">
+				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
+			</view>
+			<view class="tab">
+				<view class="attrs2">
+					村上:家居设计师
+				</view>
+				<view class="attrs">
+					<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇华夏陶瓷博览城陶博二路11座
+				</view>
+			</view>
+			<view class="contact">
+				<image src="https://cdn.juesedao.cn/gxw/lianxidianzhu.png" bindtap="calling" catchtap="calling"></image>
+				<image src="https://cdn.juesedao.cn/gxw/zaixianzixun.png"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+
+
+
+
+<!-- 店长名片 -->
+<template name="users">
+	<view class="user">
+		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/danpian.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+				<text>王店长</text>
+			</view>
+			<view class="info">
+				<view class="info_l">电话:13255555555</view>
+				<view class="info_l">职务:店长</view>
+				<view class="info_l">所属门店:季华路店</view>
+			</view>
+		</view>
+		<view class="user_info">
+			<view class="user_img">
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+<!-- 店长名片2222 -->
+<template name="manager">
+	<view class="user">
+		<image class="list_pic" src="https://cdn.juesedao.cn/gxw/danpian.png" mode="scaleToFill"></image>
+		<view class=" management">
+			<view class="user_li">
+				<text>王店长</text>
+			</view>
+			<view class="info">
+				<view class="info_l">电话:13255555555</view>
+				<view class="info_l">职务:店长</view>
+				<view class="info_l">所属门店:季华路店</view>
+			</view>
+		</view>
+		<view class="user_info">
+			<view class="user_img">
+				<image src="/images/tubiao/70.png" class="tx"></image>
+			</view>
+		</view>
+	</view>
+</template>

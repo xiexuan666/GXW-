@@ -1,0 +1,194 @@
+.price {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.title {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.change {
+  margin-left: 50rpx;
+  font-size: 26rpx;
+}
+
+.goods-title {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #efefef;
+  padding: 20rpx;
+  border-radius: 30rpx;
+}
+
+.huah {
+  margin: 20rpx 20rpx;
+}
+
+.collect image {
+  width: 250rpx;
+  height: 140rpx;
+
+}
+
+
+
+
+
+.item {
+  margin: 50rpx auto;
+
+}
+
+.user_txt {
+  border-bottom: 2px solid #acabab;
+}
+
+.title_tip {
+  color: #ccc;
+  padding: 20rpx 0;
+}
+
+.username_txtt {
+  border: 1px solid #ccc;
+  height: 300rpx;
+  border-radius: 25rpx;
+  padding-left: 20rpx;
+
+}
+
+
+
+
+
+.time {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25rpx;
+  margin-top: 50rpx;
+
+}
+
+
+.search {
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.page_row {
+  padding: 10rpx 0;
+}
+
+.text {
+  padding-right: 110rpx;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.df_1 {
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  width: 330rpx;
+  padding-left: 50rpx;
+}
+
+
+
+
+.placeholderStyle {
+  color: #ccc;
+  padding-left: 200rpx;
+}
+
+
+.preview {
+  width: 80%;
+  margin: 50rpx auto;
+}
+
+.btn {
+  color: #fff;
+  background-color: #be8f61;
+  height: 60rpx;
+  line-height: 65rpx;
+  border-radius: 30rpx;
+}
+
+
+
+/* 填充活动内容 */
+
+.flex-wrp {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex-item {
+  color: #ccc;
+
+}
+
+.flex-itemm {
+  width: 100%;
+  margin: 20rpx auto;
+}
+
+.flex-itemm-text {
+  width: 100%;
+  border: 3rpx solid rgba(34, 34, 34, 0.2);
+  border-radius: 20rpx;
+  height: 255rpx;
+  padding-top: 5rpx;
+}
+
+/* 活动详情图 */
+.flex-wrpr {
+  display: flex;
+  align-items: center;
+}
+
+.flex_itemm-texts {
+  width: 50%;
+  border: 3rpx solid rgba(34, 34, 34, 0.2);
+  border-radius: 20rpx;
+  height: 255rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  width: 400rpx;
+}
+
+.flex_item {
+  margin-top: -165rpx;
+}
+
+.flex_itemm-texttt {
+  width: 50%;
+  border: 3rpx solid rgba(34, 34, 34, 0.2);
+  border-radius: 20rpx;
+  height: 150rpx;
+  margin-top: 20rpx;
+  margin-left: 94rpx;
+  width: 250rpx;
+}
+
+.flex_itemm-tex-t {
+  width: 50%;
+  border: 3rpx solid rgba(34, 34, 34, 0.2);
+  border-radius: 20rpx;
+  height: 150rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  width: 250rpx;
+}

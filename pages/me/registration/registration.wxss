@@ -23,6 +23,8 @@
   margin: 0 10rpx;
   background-color: #be8f61;
   color: #fff;
+  padding: 5rpx;
+  border-radius: 13rpx;
 }
 
 .juli {
@@ -45,6 +47,7 @@
   margin: 30rpx 0;
   padding: 20rpx 0;
   border-bottom: 1px solid #ccc;
+  font-size: 26rpx;
 }
 
 .dizhi {
@@ -67,4 +70,23 @@
 }
 .apply-ims {
   margin: 50rpx   0;
+}
+
+/* 参与按钮 */
+.listbutton{
+  width:90%;
+  border-radius: 40rpx;
+  background-color:#BE8F61;
+  height:65rpx;
+  line-height:65rpx;
+  text-align: center;
+  padding-bottom: 40rpx;
+  display: block;
+  padding-bottom: 40rpx;
+  font-size: 30rpx;
+  color: white;
+}
+.foot{
+  height: 150rpx;
+  width: 100%;
 }

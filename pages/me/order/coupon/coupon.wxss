@@ -1,0 +1,270 @@
+page {
+  background-color: #e7e7e7;
+}
+
+/* 头部 */
+.jinx-t {
+  width: 100%;
+}
+
+.jinx-tnr {
+  width: 100%;
+  position: relative;
+  height: 440rpx;
+}
+
+.jinx-bei {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 440rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.jinx-bei image {
+  width: 100%;
+}
+
+.jinx-toux {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toux-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+
+.toux-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name-p {
+  color: black;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+}
+
+/* 头部 end*/
+
+/* 我的卡券 */
+.coupon-list {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: -50rpx;
+  border-radius: 25rpx;
+  margin-bottom: 50rpx;
+  height: 100%;
+  padding: 50rpx 0;
+}
+
+.coupon-list .item {
+  /* display: flex;
+  text-align: center;
+  flex-direction: row; */
+  width: 90%;
+  height: 200rpx;
+  margin-bottom: 20rpx;
+  margin: 50rpx auto;
+
+}
+
+.coupon-list .item .float-li {
+  width: 450rpx;
+  height: 100%;
+ 
+}
+
+.coupon-list .item .float-li-rig {
+  width: 220rpx;
+  padding-right: 20rpx;
+  height: 100%;
+  color: #c99361;
+
+}
+
+.coupon-left {
+  text-align: center;
+  position: relative;
+}
+
+.coupon-left .t {
+  position: absolute;
+  color: #c99361;
+}
+
+.coupon-left .t1 {
+  width: 15%;
+  font-size: 50rpx;
+  margin-top: 50rpx;
+  left: 10rpx;
+  top: 20rpx;
+
+}
+
+.coupon-left .t2 {
+  width: 40%;
+  left: 50rpx;
+  top: 50rpx;
+  font-size: 80rpx;
+  font-weight: bold
+}
+
+.coupon-left .t3 {
+  left: 220rpx;
+  top: 50rpx;
+  width: 200rpx;
+  font-size: 23rpx;
+}
+
+.coupon-left .t4 {
+  left: 280rpx;
+  top: 93rpx;
+  font-size: 23rpx;
+
+}
+
+.coupon-left .t5 {
+  left: 224rpx;
+  top: 130rpx;
+  font-size: 23rpx;
+}
+
+.coupon-left .t6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #C99361 solid 1rpx;
+}
+.coupon-left .t7 {
+  background-color: violet;
+  width: 140rpx;
+  height: 140rpx;
+  left: 450rpx;
+  top: 30rpx;  
+}
+.coupon-left .d{
+  position: absolute;
+  color: white;
+}
+.coupon-left .d1 {
+  width: 15%;
+  font-size: 50rpx;
+  margin-top: 50rpx;
+  left: 10rpx;
+  top: 20rpx;
+}
+.coupon-left .d2 {
+  width: 40%;
+  left: 50rpx;
+  top: 50rpx;
+  font-size: 80rpx;
+  font-weight: bold  
+}
+.coupon-left .d3 {
+  left: 220rpx;
+  top: 50rpx;
+  width: 200rpx;
+  font-size: 23rpx;
+
+}
+
+.coupon-left .d4 {
+  left: 280rpx;
+  top: 93rpx;
+  font-size: 23rpx;
+
+
+}
+.coupon-left .d5 {
+  left: 224rpx;
+  top: 130rpx;
+  font-size: 23rpx;
+}
+.coupon-left .d6 {
+  top: 30rpx;
+  left: 430rpx;
+  height: 140rpx;  
+  border-right: #9F9FA0 solid 1rpx;
+}
+.coupon-left .d7 {
+  top: 60rpx;
+  left: 430rpx;
+  font-size: 50rpx;
+  width: 40%;
+  color: #9F9FA0;
+}
+.coupon-rig .t {
+  text-align: center;
+  color:#9F9FA0;
+}
+
+.coupon-rig .t1 {
+
+  font-size: 40rpx;
+  padding: 30rpx 0 10rpx 0;
+}
+
+
+.note {
+  background: #faeab7
+}
+
+
+.stamp {
+  width: 700rpx;
+  height: 250rpx;
+  margin-bottom: 50rpx;
+  position: relative;
+  overflow: hidden
+}
+
+.stamp i {
+  position: absolute;
+  left: 20%;
+  top: 90rpx;
+  height: 500rpx;
+  width: 700rpx;
+  background-color: rgba(255, 255, 255, .15);
+  transform: rotate(-30deg);
+}
+
+.stamp01 {
+  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30rpx, #F39B00 30rpx);
+  background-size: 10rpx 10rpx;
+  background-position: 9rpx 3rpx;
+  background: #f7f8f8;
+  border: 1rpx solid #be8f61;
+  border-radius: 25rpx;
+
+}
+
+.stamp02 {
+  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30rpx, #D24161 30rpx);
+  background-size: 10rpx 10rpx;
+  background-position: 9rpx 3rpx;
+  background: #f7f8f8;
+  border: 1rpx solid #be8f61;
+  border-radius: 25rpx;
+}
+
+.stamp03 {
+
+  background-size: 10rpx 10rpx;
+  background-position: 9rpx 3rpx;
+  background: #c9caca;
+  border: 5rpx solid #c9caca;
+  border-radius: 25rpx;
+}

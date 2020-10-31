@@ -1,5 +1,5 @@
 <!-- 品牌 -->
-<view class="brand">
+<!-- <view class="brand">
 	<view class="brand-list">
 		<view class="brand-title">
 			<view class="brand-p">
@@ -37,8 +37,15 @@
 
 		<view class="pinp">
 			<view class="pinpai">
-				<image src="/images/tubiao/1-29.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/pinpai.png"></image>
 			</view>
 		</view>
 	</view>
+</view> -->
+
+
+
+<view class="header-title">
+	<image src="https://cdn.juesedao.cn/gxw/ppzk1.png" mode="widthFix"></image>
+
 </view>

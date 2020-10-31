@@ -4,7 +4,7 @@
 }
 
 .cpanli-nr {
-  padding-top: 20rpx;
+  /* padding-top: 20rpx; */
   overflow: hidden;
   width: 700rpx;
   margin: 0rpx auto;
@@ -86,16 +86,20 @@
   width: 700rpx;
 
 }
+
 .left {
-  margin-top: -30rpx;
+  margin-top: -15rpx;
   margin-left: 55rpx;
 
 }
-.fenx  image  {
-  margin-left: 15rpx;
-  width: 50rpx;
-  height: 50rpx;
+
+.fenx image {
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  
 }
+
 
 .right {
   display: flex;
@@ -109,11 +113,11 @@
 .right-ul {
   font-size: 33rpx;
   font-weight: 700;
-  padding: 10rpx  0;
+  padding: 10rpx 0;
 }
 
 .right-l {
   font-size: 22rpx;
   font-weight: 300;
-  padding: 10rpx  0;
+  padding: 10rpx 0;
 }

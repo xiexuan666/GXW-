@@ -11,8 +11,8 @@
 					</view>
 
 					<view class="videolist-sp">
-						<video id="{{'myVideolist'+index}}" bindpause="ztpause" data-ind="{{index}}" bindplay='ztplay' class="videos" src="{{item.series_video}}" enable-play-gesture binderror="videoErrorCallback" vslide-gesture="{{false}}" show-center-play-btn="{{false}}" custom-cache="{{false}}" autoplay="{{attr.autoplay?attr.autoplay:false}}" loop="{{attr.loop?attr.loop:'false'}}" style="height:{{attr.h?attr.h:'auto'}}rpx;width:{{attr.w?attr.w:'auto'}}rpx" controls="center" >
-						</video>
+						<!-- <video id="{{'myVideolist'+index}}" bindpause="ztpause" data-ind="{{index}}"  bindplay='ztplay' class="videos" src="{{item.series_video}}" enable-play-gesture binderror="videoErrorCallback" vslide-gesture="{{false}}" show-center-play-btn="{{false}}" custom-cache="{{false}}" autoplay="{{attr.autoplay?attr.autoplay:false}}" loop="{{attr.loop?attr.loop:'false'}}" style="height:{{attr.h?attr.h:'auto'}}rpx;width:{{attr.w?attr.w:'auto'}}rpx" controls="center">
+						</video> -->
 					</view>
 				</view>
 				<view class="xiliesplistnr" catchtap="tzxlcp" data-ind="{{index}}">

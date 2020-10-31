@@ -1,0 +1,70 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+<view class="form">
+	<view class="moner">
+		<text class="text">面额</text>
+		<input name="mobile" placeholder='请输入优惠券金额' type="number" model:value="{{money}}" data-index="{{1}}"
+			bindfocus='inpus' />
+	</view>
+
+	<view class="manjian">
+		<view class="man">
+			<text class="text">满</text>
+			<input name="mobile_r" type="number" model:value="{{man}}" placeholder='￥' class="df_3" bindfocus='inpus' />
+		</view>
+		<view class="jian">
+			<text class="text">减</text>
+			<input name="mobile_r" type="number" placeholder='￥' model:value="{{jian}}" class="df_3" bindfocus='inpus' />
+		</view>`
+	</view>
+
+	<view class="dates">
+		<view class="detecreated">
+			<text class="text">有效期</text>
+			<picker class="picker" mode='date' bindchange="bindDateChange" bindcancel='pickEnd' value="{{date}}"
+				start='{{date}}' end='2500-09-01'>
+				<input class="df_3" class="inputs" value="{{date}}" disabled='true'></input>
+			</picker>
+		</view>
+		<view class="deteend">
+			<text class="text">至</text>
+			<picker class="picker" mode='date' bindchange="bindDateChanges" bindcancel='pickEnd' value="{{dates}}"
+				start='{{dates}}' end='2500-09-01'>
+				<input class="df_3" class="inputs" value="{{dates}}" disabled='true'></input>
+			</picker>
+		</view>
+
+
+	</view>
+
+	<view class="quer">
+		<button class="btn" catchtap="release">确认发布</button>
+	</view>
+</view>
+<!--
+
+						<text class="text">有效期</text>
+						<picker class="picker" mode='date' bindchange="bindDateChange" bindcancel='pickEnd' value="{{date}}" start='{{date}}' end='2500-09-01'>
+						input框
+						<input class="df_3" class="inputs" value="{{date}}" disabled='true'></input>
+					</picker>
+					<view class="df search_arr">
+						<text class="text">至</text>
+						<picker class="picker" mode='date' bindchange="bindDateChanges" bindcancel='pickEnd' value="{{dates}}" start='{{dates}}' end='2500-09-01'>
+							input框
+							<input class="df_3" class="inputs" value="{{dates}}" disabled='true'></input>
+						</picker>
+					</view> -->

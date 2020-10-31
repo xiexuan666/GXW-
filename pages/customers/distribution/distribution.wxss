@@ -1,0 +1,2 @@
+/* pages/customers/distribution/distribution.wxss */
+@import '/pages/template/Administration/Administration.wxss';

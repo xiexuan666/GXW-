@@ -3,11 +3,9 @@ const app = getApp();
 const http = app.globalData.http;
 const baseUrl = app.globalData.baseUrl;
 Page({
-
   /**
    * 页面的初始数据
    */
-
   data: {
     //授权登录状态
     souq: true,
@@ -17,14 +15,19 @@ Page({
     mtkzt: false,
     // 个信息
     gerxinx: null,
-    //商家状态
-    sjzt: { status: 0 },
-    //当前状态
-    status: 0,
-
+    //当前版本状态
+    status: app.globalData.status,
+    //管理页面的控制 //商家状态
+    ment:0,
   },
-  //个人列表跳转
+  // 一键拨打
+  calling: function () {
+    wx.makePhoneCall({
+      phoneNumber: '0757-85396681'
+    }) //此号码并非真实电话号码，仅用于测试
+  },
 
+  //个人列表跳转
   melisttz: function (e) {
     console.log(e)
     var ind = app.hdindex(e, 'ind')
@@ -101,7 +104,7 @@ Page({
     })
   },
   // 跳转到商家入驻
-  merchant:function(){
+  merchant: function () {
     wx.navigateTo({
       url: '/pages/me/merchant/merchant',
     })
@@ -110,70 +113,34 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //判断用户是否已登录
+    var gerxinx = wx.getStorageSync('gerxinx');
+    // 强制用户登录
+    if(gerxinx){
+        // 查询商家状态
+        this.huqhcgrxin();
+         // 用户进入的方式
+        console.log('用户进入的渠道',app.globalData.Scene);
+    }else{
+       // 调起登录事件
+       console.log('用户未登陆')
+       this.dianjidl();
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (!app.globalData.status) {
-      app.banbzt().then(resc => {
-        this.setData({ status: app.globalData.status })
-      })
-    } else {
-      this.setData({ status: app.globalData.status })
-    }
-
-
-    //获取缓存信息
-    this.huqhcgrxin()
+    // this.dianjidl();
+    // 更新版本状态
+    this.setData({
+      status: app.globalData.status
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-
-
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
-  },
+  onShareAppMessage: function () {},
   onShareTimeline: function () { },
   //关闭弹窗
   tancxiaos: function (e) {
@@ -187,30 +154,49 @@ Page({
   //获取缓存信息
   huqhcgrxin() {
     var tha = this
-    var gerxinx = wx.getStorageSync('gerxinx')
+    var gerxinx = wx.getStorageSync('gerxinx');
+    console.log('个人信息：',gerxinx);
     if (gerxinx) {
+      // 使用用户信息，查询其商家状态
       tha.hqshangzt(gerxinx)
       this.setData({ gerxinx })
       return false
-    }
-    app.huoqopenid()
-      .then((openid) => app.cuncgerxinx(openid))
-      .then(gerxinx => {
-        tha.hqshangzt(gerxinx)
-        tha.setData({ gerxinx })
-      })
+    }else{
+      // 调起登录事件
+      app.huoqopenid()
+        .then((openid) => app.cuncgerxinx(openid))
+        .then(gerxinx => {
+          tha.hqshangzt(gerxinx)
+          tha.setData({ gerxinx })
+        })
+    } 
+    console.log('商家id：',wx.getStorageSync('sjid')); 
   },
   //获取当前商家状态
   hqshangzt(gerxinx) {
     var tha = this
-    var dat = { userid: gerxinx.id, brandid: '2' }
-    var url = baseUrl + 'store/storestatus'
+    var dat = { userid: gerxinx.id, brandid:app.globalData.brandid}
+    var url = baseUrl + 'store/storestatus';
     http.promisServer(url, dat).then(function (resc) {
+      // 判断商家状态
+      console.log('商家状态：',resc);
       if (resc.status == "000") {
-        console.log(resc, '商家状态')
-        var sjzt = resc.data
-        wx.setStorage({ key: "sjzt", data: sjzt })
-        tha.setData({ sjzt: sjzt })
+        if (resc.data.status == 2) {
+          tha.setData({
+            ment: 1,
+          })
+          var sjzt = resc.data;
+          wx.setStorage({ key: "sjzt", data: sjzt })
+          wx.setStorage({ key: "sjid", data: resc.data.record.id })
+          tha.setData({ sjzt: sjzt });
+          console.log('商家id',resc.data.record.id)
+        }else{
+          console.log('该用户还不是商家');
+          var sjzt = resc.data;
+          wx.setStorage({ key: "sjzt", data: sjzt });
+          wx.setStorage({ key: "sjid", data:null});
+          console.log('商家id',wx.getStorageSync('sjid'));
+        }
       }
     })
   },
@@ -228,7 +214,6 @@ Page({
     wx.clearStorage()
     // 获得当前地址
     app.dtxx()
-
     if (e.detail.userInfo) {
       wx.showToast({ title: '获取用户授权中', icon: 'loading', duration: 3000 })
       app.denlus()
@@ -254,4 +239,15 @@ Page({
       tha.setData({ sj: true, gerxinx: res })
     })
   },
+  // 相机扫一扫跳转到对应页面
+  sweep: function () {
+    wx.scanCode({
+      success(res) {
+        console.log(res.path);
+        wx.navigateTo({
+          url: '/' + res.path,
+        })
+      }
+    })
+  }
 })

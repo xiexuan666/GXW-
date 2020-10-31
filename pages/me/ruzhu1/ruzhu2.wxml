@@ -1,23 +1,78 @@
-  <view class="item stamp stamp03 ">
-  	<!-- 左侧 -->
-  	<view class="float-li t1">
-  		<view class="coupon-left">
-  			<view class="t t1">￥</view>
-  			<view class="t t2">100</view>
-  			<view class="t t3">满499适用</view>
-  			<view class="t t4">有效期2020.09.30-10.05</view>
-  		</view>
-  	</view>
+<!-- 未发布活动 -->
+<view class="header" >
+	<view class="search">
+		<view class="complete">
+			<view class="complete-r">
+				<view class="whole">免费活动</view>
+				<view class="all">查看全部</view>
+			</view>
+			<block wx:for='{{notfree}}' wx:item='item' wx:idnex='index'>
+				<view class="release">
+					<image src="{{item.activity_image}}"></image>
+				</view>
+				<view class="service">
+					<view class="scroll">
+						<view class="status">{{item.title}}</view>
+						<view class="shop">活动时间:{{item.start_time}}-{{item.stop_time}}</view>
+					</view>
+					<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
 
+					<view class="mainbav">
+						<image src="/images/tubiao/fangx.png"></image>
+						<view class="topnav" catchtap="delet" data-id="{{item.id}}">删除</view>
+					</view>
+				</view>
+				</view>
+			</block>
+			<view class="release">
+				<image src="https://cdn.juesedao.cn/gxw/huodong.png"></image>
+			</view>
+			<view class="service">
+				<view class="scroll">
+					<view class="status">免费参加大抽奖</view>
+					<view class="shop">活动时间</view>
+				</view>
+				<view class="nav">
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">分享</view>
+					</view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">修改</view>
+					</view>
 
-  	<!-- 右侧 -->
-  	<view class="float-li-rig">
-  		<view class="coupon-rig">
-  			<view class="t1 t">优惠券</view>
-  			<view class="t2 t">2018-01-17</view>
-  			<view class="t2 t">2018-01-25</view>
-  			<view class="t3 t"><text>立即领取</text></view>
-  		</view>
-  	</view>
-  	<i></i>
-  </view>
+					<view class="mainbav">
+						<image src="/images/tubiao/fengx.png"></image>
+						<view class="topnav">删除</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="lingq">
+			<view class="git">
+				<view class="ling-q">已领取</view>
+			</view>
+			<view class="me-list-l_i">
+				<view class="me-list-lil">
+					<image src="/images/tubiao/tx.png"></image>
+					<text class="names">村上</text>
+				</view>
+				<view class="me-list-lir">
+					<text class="name">1388888888</text>
+					<image src="/images/tubiao/youj.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+

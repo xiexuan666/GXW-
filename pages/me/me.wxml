@@ -1,12 +1,16 @@
-<!--pages/me/me.wxml-->
 <import src="/pages/template/loginphone/loginphone.wxml" />
 <!-- 登录 -->
 <template is="login" data="{{souq: souq}}" />
 <!-- 获取手机 -->
 <template is="phone" data="{{sj: sj}}" />
 
+
 <view class="jinx-t">
 	<view class="jinx-tnr">
+
+		<view class="jinx_bgpic">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
 		<view class="jinx-toux">
 			<view class="toux-img" wx:if="{{gerxinx}}">
 				<image src="{{gerxinx.wx_photo}}"></image>
@@ -16,7 +20,7 @@
 			</view>
 			<view class="name-p" wx:if="{{gerxinx}}">{{gerxinx.wx_name}}</view>
 		</view>
-		<view class="jinx-sao">
+		<view class="jinx-sao" bindtap="sweep">
 			<image src="/images/tubiao/61.png"></image>
 			<view class="saoma">扫一扫</view>
 		</view>
@@ -28,16 +32,22 @@
 
 <view class="me-list">
 	<view class="me-list-ul">
-		<view class="gernqb">
-			<image src="/images/tubiao/50.png"></image>
+		<view class="gernqb" style="display:none">
+			<!-- <image src="/images/tubiao/50.png"></image> -->
 			<view class="vcenter">个人钱包</view>
 			<view class="balance">
 				<view class="sum">我的余额</view>
-				<view class="sum1">￥0.00</view>
+				<view class="sum1">￥500</view>
 			</view>
 			<view class="recharge">
-				<text class="top">充值</text>
-				<text class="top">提现</text>
+				<view class="me">
+					<view class="top" style=" border-right: 1px solid #fff;">充值<image src="/images/tubiao/58.png"></image>
+					</view>
+				</view>
+				<view class="me">
+					<view class="top">提现<image src="/images/tubiao/59.png"></image>
+					</view>
+				</view>
 			</view>
 		</view>
 
@@ -50,7 +60,7 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" data-ind="0" bindtap="address">
+		<view class="me-list-li" data-ind="1" bindtap="address">
 			<view class="me-list-lil">收货地址<image src="/images/tubiao/40.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -58,67 +68,60 @@
 			</view>
 		</view>
 
-		<view class="me-list-li" data-ind="0" bindtap="coupon">
+		<view class="me-list-li" data-ind="2" bindtap="coupon">
 			<view class="me-list-lil">我的卡券<image src="/images/tubiao/41.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" data-ind="0" bindtap="wallet">
+		<view class="me-list-li" data-ind="3" bindtap="wallet">
 			<view class="me-list-lil">个人钱包<image src="/images/tubiao/47.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-
-		<view class="me-list-li" data-ind="0" bindtap="activity">
-			<view class="me-list-lil">活动参与<image src="/images/tubiao/47.png"></image>
+  
+		<view class="me-list-li" data-ind="4" bindtap="activity"   style="display:none">
+			<view class="me-list-lil">活动参与<image src="/images/tubiao/44.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" data-ind="0" bindtap="melisttz">
+		<view class="me-list-li" data-ind="5" bindtap="melisttz">
 			<view class="me-list-lil">我的收藏<image src="/images/tubiao/43.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
-		<view class="me-list-li" data-ind="0" bindtap="message">
+		<!-- <view class="me-list-li" data-ind="6" bindtap="message">
 			<view class="me-list-lil">信息中心<image src="/images/tubiao/44.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
-		</view>
+		</view> -->
 
-		<view class="me-list-li" data-ind="0">
-			<view class="me-list-lil">联系客服<image src="/images/tubiao/46.png"></image>
+		<view class="me-list-li" data-ind="7"><button class="kefu" open-type="contact">联系客服</button>
+			<view class="me-list-lil">联系客服 <image src="/images/tubiao/46.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="merchant" data-ind="0">
-			<view class="me-list-lil">商家入驻<image src="/images/tubiao/48.png"></image>
+		<view class="me-list-li" bindtap="merchant" data-ind="8" wx:if='{{status}}'>
+			<view class="me-list-lil">商家入驻 <image src="/images/tubiao/48.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
 
-		<view class="me-list-li" bindtap="handlezhuc">
-			<view class="me-list-lil">注册<image src="/images/tubiao/49.png"></image>
-			</view>
-			<view class="me-list-lir">
-				<image src="/images/tubiao/youj.png"></image>
-			</view>
-		</view>
-
+		<!-- 
 		<view class="me-list-li" bindtap="manage">
 			<view class="me-list-lil">我的评论<image src="/images/tubiao/44.png"></image>
 			</view>
@@ -133,21 +136,21 @@
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
-		</view>
+		</view> -->
 
-
-		<view class="me-list-li" bindtap="manage">
+<!-- 
+	 <view class="me-list-li" bindtap="manage" wx:if='{{ment}}' style="display:none">
 			<view class="me-list-lil">管理入口<image src="/images/tubiao/41.png"></image>
 			</view>
 			<view class="me-list-lir">
 				<image src="/images/tubiao/youj.png"></image>
 			</view>
 		</view>
+ -->
 
 
 
-
-		<view class="me-list-li" bindtap="manage">
+		<view class="me-list-li" bindtap="manage" wx:if='{{ment}}'  data-ind="9"  >
 			<view class="me-list-lil">商家管理<image src="/images/tubiao/1-13.png"></image>
 			</view>
 			<view class="me-list-lir">
@@ -157,34 +160,11 @@
 
 
 
+
+
 		<!-- foot -->
-		<view class="list-item">
-			<view class="goods">
-				<view class="collect">
-					<image src="/images/tubiao/gxw.png"></image>
-				</view>
-				<view class="tab">
-					<view class="attrs1">
-						冠星王陶瓷
-					</view>
-					<view class="attrs2">
-						店主:村上
-					</view>
-					<view class="attrs">
-						<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
-					</view>
-				</view>
-				<view class="contact">
-					<button class="btn">
-						<image src="/images/tubiao/1-21.png"></image>
-						<view>联系店主</view>
-					</button>
-					<button class="btn">
-						<image src="/images/tubiao/1-22.png"></image>
-						<view>在线咨询</view>
-					</button>
-				</view>
-			</view>
-		</view>
+		<import src='/pages/template/comments/comments' />
+		<template is="ceramic" data="{{list:'imasrc////',num:3}}">
+		</template>
 	</view>
 </view>

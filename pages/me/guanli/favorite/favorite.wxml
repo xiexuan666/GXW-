@@ -1,0 +1,93 @@
+<!-- 头部 -->
+<view class="jinx-t">
+	<view class="jinx-tnr">
+		<view class="jinx-bei">
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
+		</view>
+		<view class="jinx-toux">
+			<view class="toux-img">
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
+			</view>
+			<view class="name-p">冠星王总部</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="shouc">
+
+	<!-- 热点视频和装修 -->
+	<view class="product-cpanli">
+		<view class="cpanli-nr">
+			<view class="cpanli-nr-li {{cactiv==1?'cpanli-nr-liactive':''}}" data-ind="{{1}}" bindtap="canpiqieh">
+				个人收藏
+				<view class="cpanli-nr-lid"></view>
+			</view>
+			<view class="cpanli_content">|</view>
+			<view class="cpanli-nr-li {{cactiv==2?'cpanli-nr-liactive':''}}" data-ind="{{2}}" bindtap="canpiqieh">
+				导购推送
+				<view class="cpanli-nr-lid"></view>
+			</view>
+		</view>
+	</view>
+
+
+
+	<!-- 个人收藏 -->
+	<view class="cpbottom-nr" wx:if='{{cactiv==1}}'>
+		<view class="cpbottom-nrul">
+			<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+				<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" wx:if='{{item.tname == select || select == selecif}}'>
+					<view class="cpbottom-img">
+						<image mode="scaleToFill" lazy-load="{{true}}" mode="scaleToFill" src="{{item.product_url}}">
+						</image>
+					</view>
+					<view class="cpbottom-bot">
+						<view class="cpbottom-botp">{{item.name}}</view>
+						<view class="shoucc" catchtap="sccp" data-ind="{{index}}">
+							<view class="shouc-p">收藏</view>
+							<view class="img">
+								<image wx:if="{{!item.sczt}}" src="/images/tubiao/43.png"></image>
+								<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
+							</view>
+						</view>
+					</view>
+				</view>
+			</block>
+		</view>
+	</view>
+
+
+
+
+	<!-- 个人收导购推送藏 -->
+	<view class="cpbottom-nr" wx:if='{{cactiv==2}}'>
+		<view class="cpbottom-nrul">
+			<block wx:for="{{cp}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+				<view class="cpbottom-nrli {{index%2==0?'zuo':''}}" bindtap="tzcpxq" data-ind="{{index}}" wx:if='{{item.tname == select || select == selecif}}'>
+					<view class="cpbottom-img">
+						<image mode="scaleToFill" lazy-load="{{true}}" mode="scaleToFill" src="{{item.product_url}}">
+						</image>
+					</view>
+					<view class="cpbottom-bot">
+						<view class="cpbottom-botp">{{item.name}}</view>
+						<view class="shoucc" catchtap="sccp" data-ind="{{index}}">
+							<view class="shouc-p">收藏</view>
+							<view class="img">
+								<image wx:if="{{!item.sczt}}" src="/images/tubiao/43.png"></image>
+								<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
+							</view>
+						</view>
+					</view>
+				</view>
+			</block>
+		</view>
+	</view>
+
+
+
+
+
+
+</view>

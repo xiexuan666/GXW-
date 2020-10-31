@@ -4,11 +4,11 @@
 		<view class="jinx-t">
 			<view class="jinx-tnr">
 				<view class="jinx-bei">
-					<image src="/images/tubiao/1-30.png"></image>
+					<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 				</view>
 				<view class="jinx-toux">
 					<view class="toux-img">
-						<image src="/images/tubiao/gxw.png"></image>
+						<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
 					</view>
 					<view class="name-p">冠星王总部</view>
 				</view>
@@ -21,7 +21,7 @@
 			<view class="times">
 				<view class="yuyue-text">
 					<view class="yuyue-p">
-						已有  <text style=" background-color: #be8f61;color:#fff;border-radius: 15rpx;">180054</text>  参与预约
+						已有 <text class="shuzi">18054</text> 参与预约
 					</view>
 				</view>
 				<form catchsubmit="tijiaoform" catchreset="formReset">
@@ -29,7 +29,9 @@
 						<view class="search">
 							<view class="df search_arr">
 								<text class="text">姓　　名</text>
-								<input name="mobile" value="{{shopowner}}" class="df_1" placeholder="请输入真实姓名" />
+								<input name="mobile" model:value="{{shopowner}}" class="df_2" placeholder="请输入真实姓名"
+								
+								placeholder-class="placeholderStyles" />
 							</view>
 						</view>
 					</view>
@@ -37,15 +39,15 @@
 						<view class="search">
 							<view class="df search_arr">
 								<text class="text">电　　话</text>
-								<input name="xingm" value="{{phone}}" class="df_1" placeholder="请输入有效电话" />
+								<input name="xingm"  model:value="{{phone}}" class="df_1" placeholder="重新绑定" placeholder-class="placeholderStyle" />
 							</view>
 						</view>
 					</view>
-					<view class='page_row'>
+					<view class='page_row'  >
 						<view class="search">
 							<view class="df search_arr">
 								<text class="text">测量地址</text>
-								<input name="xingm" class="df_1" value="{{address}}" placeholder="获取位置" bindtap="wzxuanz" />
+								<input name="xingm" class="df_1" value="{{address}}" placeholder="获取位置" placeholder-class="placeholderStyle" bindtap="wzxuanz" />
 							</view>
 						</view>
 					</view>
@@ -56,7 +58,7 @@
 								<view class="search">
 									<view class="df search_arr">
 										<text class="text">上门日期</text>
-										<input name="xingm" value="{{date}}" placeholder="请选择日期" class="df_1"></input>
+										<input name="xingm"  model:value="{{date}}" placeholder="-请选择-" placeholder-class="placeholderStyle" class="df_1"></input>
 									</view>
 								</view>
 							</view>
@@ -68,14 +70,14 @@
 
 
 				<!-- 预约 -->
-				<view class="anniu">
-					<button style="" formType="submit">立即预约</button>
+				<view class="anniu" bindtap="yuyue" >
+					<button  formType="submit"   >立即预约</button>
 				</view>
 				<view class="kef">
 					<view class="keffoot">
 						我们客服人员会及时与您取得联系，
-						感谢您对冠星王陶瓷的信任
 					</view>
+					<view class="keffoots">感谢您对冠星王陶瓷的信任</view>
 				</view>
 			</view>
 		</view>

@@ -11,7 +11,6 @@
 			<image mode="widthFix" lazy-load="{{true}}" src="{{titile.series_photo}}"></image>
 		</view>
 	</view>
-
 </view>
 
 <!-- 产品 -->
@@ -26,13 +25,15 @@
 					</view>
 					<view class="cpbottom-bot">
 						<view class="cpbottom-botp">{{items.name}}</view>
-						<view class="shouc" catchtap="sccp" data-ind="{{index}}" data-inds="{{indexs}}">
-							<view class="img">
+						<view class="shouc">
+							<!-- 收藏按钮 -->
+							<view class="img" catchtap="sccp" data-ind="{{index}}" data-inds="{{indexs}}">
 								<image wx:if="{{!item.sczt}}" src="/images/tubiao/1-13.png"></image>
 								<image wx:if="{{item.sczt}}" src="/images/tubiao/33.png"></image>
 							</view>
-							<view class="shouc-p">
-								<image src="/images/tubiao/fangx.png" class="img"></image>
+							<!-- 分享按钮 -->
+							<view class="shouc-p" >
+								<image src="/images/tubiao/fengx.png" class="img"></image>
 							</view>
 						</view>
 					</view>
@@ -40,36 +41,79 @@
 			</block>
 		</view>
 	</block>
+	
 </view>
 
 
 
 <!-- foot -->
-<view class="list-item">
+<view class="list-item6">
 	<view class="goods">
-		<view class="collect">
-			<image src="/images/tubiao/gxw.png"></image>
+		<view class="collect1">
+			<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 		</view>
 		<view class="tab">
-			<view class="attrs1">
-				冠星王陶瓷
-			</view>
+
 			<view class="attrs2">
-				店主:村上
+				村上 家居设计师
 			</view>
 			<view class="attrs">
-				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇中国陶瓷总部基地
+				<image src="/images/tubiao/24.png"></image> 广东省佛山市禅城区南庄镇华夏陶瓷博览城陶博二路11座
 			</view>
 		</view>
-		<view class="contact">
-			<button class="btn">
-				<image src="/images/tubiao/1-21.png"></image>
-				<view>联系店主</view>
-			</button>
-			<button class="btn">
-				<image src="/images/tubiao/1-22.png"></image>
-				<view>在线咨询</view>
-			</button>
+		<view class="contacts">
+			<image src="https://cdn.juesedao.cn/gxw/yijianboda.png" bindtap="calling"></image>
+			<!-- <image src="https://cdn.juesedao.cn/gxw/zixundianzhu.png"></image> -->
 		</view>
 	</view>
+</view>
+
+
+
+
+
+
+
+
+	<!-- 分享海报 -->
+	<view class="tubiaof" >
+		<view class="toTop">
+			<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+				<view class="modals-cancel" bindtap="hideModal"></view>
+				<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" catchtouchmove="return">
+					<view class="erweima">
+						<button class="poster" bindtap="formSubmit">
+							<image src="/images/shouye/haib.png"></image>
+							<text class="haib">生成海报</text>
+						</button>
+						<button class="poster m_l" open-type="share">
+							<image src="/images/shouye/lianjie.png"></image>
+							<text class="haib">分享链接</text>
+						</button>
+					</view>
+					<view class="qux" bindtap="quxiao">取消</view>
+					<view class="menus " bindtap="handlelist" data-inds="{{indexs}}">
+						<view class="floor">
+							<image src="{{item.product_url}}"></image>
+						</view>
+						<view class="content">
+							<view class="left">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+<!-- 海报位置 -->
+<view class='imagePathBox' hidden="{{maskHidden == false}}" >
+	<view class="mask" catchtap="clearPosters"></view>
+	<image src="{{imagePath}}" class='shengcheng' mode="aspectFit"></image>
+	<button class='baocun' bindtap='baocun'>保存图片到相册</button>
+	<button class="baocuns" open-type="share">分享到群好友</button>
+</view>
+<view hidden="{{maskHidden == false}}" class="mask"></view>
+<view class="canvas-box">
+	<canvas style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas" />
 </view>

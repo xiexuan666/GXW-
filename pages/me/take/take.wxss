@@ -14,8 +14,8 @@
   padding: 0 20rpx;
 }
 .address-right image {
-  width: 32rpx;
-  height: 32rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 .address-rights {
   display: flex;
@@ -55,6 +55,13 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+.delete{
+  text-align: right;
+  font-size: 24rpx;
+  margin-right: 30rpx;
+  color:#FF5722;
+}
  
 
 /* 默认设置 */
@@ -81,7 +88,7 @@
  
 .btn {
   width: 680rpx;
-  height: 88rpx;
+  height: 65rpx;
   background: #be8f61;
   color: #FFFFFF;
   position: fixed;
@@ -90,7 +97,7 @@
   border-radius: 41.5rpx;
   font-size: 36rpx;
   text-align: center;
-  line-height: 88rpx;
+  line-height: 70rpx;
 }
  
 /* 城市选择 */

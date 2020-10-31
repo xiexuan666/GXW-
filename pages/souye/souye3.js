@@ -22,6 +22,15 @@ Page({
     addresstwo: '',
     isSubmit: false,
   },
+
+
+  // // 预约成功
+  // yuyue: function () {
+  //   wx.showModal({
+  //     title: '提示',
+  //     content: '预约成功'
+  //   })
+  // },
   //渲染内容
   xuanr: function (sjzt) {
     if (sjzt.status == 3 || sjzt.status == 2) {
@@ -38,7 +47,7 @@ Page({
         shopowner: record.shopowner,
         phone: record.phone,
         address: record.address,
-        addresstwo: record.address_two,
+        date: record.date,
       })
     }
   },
@@ -93,6 +102,83 @@ Page({
     this.setData({
       date: e.detail.value
     })
+  },
+
+  // 客户提交预约量房信息
+  yuyue: function() {
+    let userid = wx.getStorageSync('gerxinx').id;
+    let brand_id = app.globalData.brandid;
+    var shopowner = this.data.shopowner;
+    var phone = this.data.phone;
+    var address = this.data.address;
+    var date = this.data.date;
+    console.log(phone);
+    console.log(address);
+    console.log(date);
+    
+    console.log(shopowner+'11111111111111111111');
+   
+    // 判断用户是否有输入值
+    if (shopowner == "") {
+      wx.showModal({
+        title: '提示',
+       content: '请输入姓名',
+      })
+      return false
+    }
+    else if (phone == "") {
+       wx.showModal({
+        title: '提示',
+       content: '请输入手机号码',
+      })
+      return false
+    }
+    else if (address == "") {
+       wx.showModal({
+        title: '提示',
+        content: '请选择所在地区',
+      })
+      return false
+    }
+    else if (date == "") {
+       wx.showModal({
+        title: '提示',
+       content: '请选择上门时间',
+      })
+      return false
+    }else {
+      // 信息无误，发送请求并跳转页面
+ 
+    let data ={
+    brandId:brand_id,
+    userId:userid,
+    phone:phone,
+    name:shopowner,
+    date:date,
+    address:address,
+    storeId:wx.getStorageSync('bendijxs').id,
+  }
+    // 在这里判断值，是否是修改
+    if(this.data.judge){
+    data.addressId=this.data.judge
+    }else{
+
+    }
+    let url = baseUrl + 'activity/yuyue/client/save';
+    console.log(data,url);
+    http.promisServer(url,data).then(res=>{
+      console.log(res);
+      wx.showModal({
+        title: '提示',
+        content:'预约成功',
+      })
+      setTimeout(function(){ 
+        wx.navigateBack()
+      }, 500);
+      
+    })
+
+  }
   },
 
   /**

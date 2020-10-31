@@ -1,10 +1,12 @@
+
+@import '/pages/template/viedeocard/videocard.wxss';
 .product-cpanli {
   width: 100%;
   margin: 0rpx auto;
 }
 
 .cpanli-nr {
-  padding-top: 20rpx;
+  /* padding-top: 20rpx; */
   overflow: hidden;
   width: 700rpx;
   margin: 0rpx auto;
@@ -210,6 +212,7 @@
   padding: 20rpx;
   display: flex;
   justify-content: space-between;
+  /* background-color: orchid; */
   /* border-bottom: 1px #eee solid; */
 }
 
@@ -218,6 +221,7 @@
   height: 200rpx;
   flex-shrink: 0;
   border-radius: 25rpx;
+  /* background-color: orchid; */
 }
 
 .goods-list-right {
@@ -258,8 +262,16 @@
   font-size: 28rpx;
   font-weight: 300;
   color: #595757;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
+.cotione image{
+  width:35rpx;
+  height:25rpx;
+  border-radius: 0;
+  padding-right: 10rpx;
+}
 .jxsnr-li-time {
   font-size: 25rpx;
   font-weight: 300;
@@ -277,3 +289,10 @@
   font-weight: 300;
   color: #595757;
 }
+
+/* 新加样式 */
+/* 导航栏标识字体 */
+.active{
+  color: black;
+}
+

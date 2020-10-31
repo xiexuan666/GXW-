@@ -10,6 +10,11 @@ Page({
   data: {
     cpxqzt: 1,
     cactiv: 1,
+    // 正在进行的活动
+    paddingfree: null,
+    // 我参与的活动
+    Iprdoues: null,
+   
   },
 
 
@@ -111,9 +116,19 @@ Page({
     })
   },
   //跳转到活动报名
-  registration: function () {
+  registration: function (e) {
+    let index = app.hdindex(e, 'index')
+    console.log(index);
+    console.log(this.data.paddingfree[index]);
+    let arry = JSON.stringify(this.data.paddingfree[index]);
     wx.navigateTo({
-      url: '/pages/me/registration/registration',
+      url: '/pages/me/registration/registration?arry=' + arry,
+    })
+  },
+  //跳转到秒杀活动
+  seckill: function () {
+    wx.navigateTo({
+      url: '/pages/hotspot/seckill/seckill',
     })
   },
 
@@ -135,7 +150,26 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getfree();
+  },
+  // 查看免费活动所有正在进行的活动
+  getfree: function () {
+    let url = baseUrl + 'activity/free/findByStatusFree';
+    let data = {
+      status: 1,
+      brandId: app.globalData.brandid,
+      // 最近商家的id或绑定的商家id
+      storeId: 1,
+      state: 1
+    }
+    console.log(data, url);
+    http.promisServer(url, data).then(res => {
+      console.log(res);
+      this.setData({
+        paddingfree: res.data
+      })
+    }
+    )
   },
 
   /**

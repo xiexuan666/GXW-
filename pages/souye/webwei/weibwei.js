@@ -1,20 +1,30 @@
 // pages/souye/webwei/weibwei.js
+const app = getApp();
+const http = app.globalData.http;
+const baseUrl = app.globalData.baseUrl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    url:''
+    url: ''
   },
 
   /**
-   * 生命周期函数--监听页面加载
-   */
+ * 生命周期函数--监听页面加载
+ */
   onLoad: function (options) {
-    console.log(options,1121212)
-    this.setData({
-      url: options.url
+    var tha = this
+    console.log(options, 1121212)
+    var url = baseUrl + "production/findproductById"
+    var dat = {
+      productid: options.id
+    }
+    // console.log(dat,'data')
+    http.promisServer(url, dat).then(resc => {
+      console.log(resc.data.productRecord.product_vr, '222')
+      tha.setData({ url: resc.data.productRecord.product_vr })
     })
   },
 

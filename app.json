@@ -31,6 +31,9 @@
     "pages/me/pyquan/pyquan",
     "pages/hotspot/hotspot",
     "pages/hotspot/strategy/strategy",
+    "pages/hotspot/group/group",
+    "pages/hotspot/booking/booking",
+    "pages/hotspot/succeed/succeed",
     "pages/souye/souye3",
     "pages/me/ruzhu1/ruzhu2",
     "pages/me/zhuc/zhuc",
@@ -56,12 +59,54 @@
     "pages/me/discount/discount",
     "pages/me/containe/containe",
     "pages/me/guanli/code/code",
+    "pages/template/haibao/haibao",
+    "pages/template/ActivityTemplate/ActivityTemplate",
+    "pages/template/comments/comments",
     "pages/me/registration/registration",
-    "pages/me/merchant/merchant"
+    "pages/me/merchant/merchant",
+    "pages/template/viedeocard/videocard",
+    "pages/video/video",
+    "pages/me/guanli/manage/yuyue",
+    "pages/me/guanli/shoppers/shoppers",
+    "pages/me/guanli/information/information",
+    "pages/me/guanli/key/key",
+    "pages/me/guanli/column/column",
+    "pages/me/guanli/indent/indent",
+    "pages/customers/system/system",
+    "pages/customers/distribution/distribution",
+    "pages/customers/shopper/shopper",
+    "pages/template/Administration/Administration",
+    "pages/template/component/component",
+    "pages/scheme/designscheme/designscheme",
+    "pages/scheme/plan/plan",
+    "pages/me/guanli/issue/issue",
+    "pages/me/guanli/Works/Works",
+    "pages/me/guanli/shop/shop",
+    "pages/me/guanli/precept/precept",
+    "pages/me/guanli/newly/newly",
+    "pages/me/guanli/favorite/favorite",
+    "pages/me/guanli/exportr/exportr",
+    "pages/me/guanli/control/control",
+    "pages/me/guanli/commodity/commodity",
+    "pages/me/guanli/category/category",
+    "pages/me/activity/free1/free1",
+    "pages/me/activity/free2/free2",
+    "pages/me/activity/free3/free3",
+    "pages/me/guanli/activity/coupon_fabu",
+    "pages/me/guanli/activity/coupon_merchant",
+    "pages/me/guanli/Verification/Verification",
+    "pages/me/guanli/manage/zixu/zixu",
+    "pages/me/issue/issue",
+    "pages/me/update/shoppersupdate/shoppersupdate",
+    "pages/hotspot/seckill/seckill",
+    "pages/hotspot/raffle/raffle",
+    "pages/create/issue/issue",
+    "pages/me/seckill/seckill",
+    "pages/me/draw/draw",
+    "pages/hotspot/lottery/lottery",
+    "pages/me/booking/booking"
 
-    
-
-
+   
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -74,49 +119,41 @@
       "desc": "你的位置信息将用于小程序地图的定位"
     }
   },
-
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#B18A5E",
     "backgroundColor": "#ffffff",
-    "borderStyle":"white",
+    "borderStyle": "white",
     "list": [
       {
-        "pagePath":"pages/souye/souye",
+        "pagePath": "pages/souye/souye",
         "text": "首页",
-        "iconPath":"/images/tubiao/1-16.png",
-        "selectedIconPath":"/images/tubiao/111.png"
-      
-      
+        "iconPath": "/images/tubiao/1-16.png",
+        "selectedIconPath": "/images/tubiao/113.png"
       },
       {
-        "pagePath":"pages/product/product",
+        "pagePath": "pages/product/product",
         "text": "案例",
-        "iconPath":"/images/tubiao/1-17.png",
-        "selectedIconPath":"/images/tubiao/112.png"
-
-       
+        "iconPath": "/images/tubiao/1-17.png",
+        "selectedIconPath": "/images/tubiao/112.png"
       },
       {
-        "pagePath":"pages/hotspot/hotspot",
+        "pagePath": "pages/hotspot/hotspot",
         "text": "活动",
-        "iconPath":"/images/tubiao/1-15.png",
-        "selectedIconPath":"/images/tubiao/1-15.png"
-       
+        "iconPath": "/images/tubiao/1-15.png",
+        "selectedIconPath": "/images/tubiao/1-15.png"
       },
       {
-        "pagePath":"pages/jinxs/jinxs",
+        "pagePath": "pages/jinxs/jinxs",
         "text": "攻略",
-        "iconPath":"/images/tubiao/1-18.png",
-        "selectedIconPath":"/images/tubiao/113.png"
-       
+        "iconPath": "/images/tubiao/1-18.png",
+        "selectedIconPath": "/images/tubiao/111.png"
       },
       {
-        "pagePath":"pages/me/me",
+        "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath":"/images/tubiao/1-19.png",
-        "selectedIconPath":"/images/tubiao/114.png"
-       
+        "iconPath": "/images/tubiao/1-19.png",
+        "selectedIconPath": "/images/tubiao/114.png"
       }
     ]
   },

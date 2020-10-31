@@ -1,0 +1,73 @@
+<view class="app.id">
+<block wx:item='item' wx:index='index'>
+
+
+
+	<view class="apply">
+		<view class="apply-r">
+			<view class="apply-im">
+				<image src="{{anderms.activity_image}}" mode="widthFix"></image>
+			</view>
+			<view class="juli">
+				<view class="count">
+					<view class="down">
+						<view class="daoj"><text class="jul">倒计时</text>距离活动结束还有</view>
+					</view>
+				</view>
+
+				<view class='tui-countdown-content' wx:for="{{countDownList}}" wx:key="countDownList">
+					<text class='tui-conutdown-box'>{{item.day}}</text>天
+					<text class='tui-conutdown-box'>{{item.hou}}</text>时
+					<text class='tui-conutdown-box'>{{item.min}}</text>分
+					<text class='tui-conutdown-box tui-countdown-bg'>{{item.sec}}</text>秒
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="apply">
+		<view class="apply-r">
+			<view class="time">
+				<view class="mianfsj">
+					<text>秒杀</text> 秒杀活动
+				</view>
+				<view class="shij"><text style="color:#be8f61">活动时间:</text>{{anderms.start_time}}至{{anderms.stop_time}}</view>
+			</view>
+		</view>
+	</view>
+
+
+
+	<!-- 产品故事 -->
+	<view class="cpxqgus">
+		<view class="cpxqgus-nr">
+			<view class="cpxqgus-nrb-h4">
+				科莫白
+			</view>
+			<view class="cpxqgus-nrblit">
+				<view class="cpxqgus-nrblitl">
+					<view class="cpxgus-nrbl">型号:NO.123456 </view>
+					<view class="cxqs-nt">规格:SIZE:300x600mm</view>
+				</view>
+			</view>
+
+
+			<view class="cpxqgus-nrtimg">
+				<image mode="widthFix" src="{{anderms.product_image}}"></image>
+			</view>
+
+
+			<view class="foots">
+				<view class="money">
+					<view class="qian">￥{{anderms.product_yuanjia}}</view>
+				</view>
+				<view class="mas">
+					<view class="qiangg">马上抢购</view>
+				</view>
+			</view>
+
+
+		</view>
+	</view>
+</block>
+</view>

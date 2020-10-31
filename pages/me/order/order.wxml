@@ -2,11 +2,11 @@
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/touxiang.png"></image>
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
@@ -25,15 +25,15 @@
 
 
 <!-- 商品订单列表 -->
-<view class="list">
+<view class="list"  style="display: none;" >
 	<!-- 商品的单选 -->
-	<view class="list-item"   >
-		<block  wx:key="{{index}}" >
-			<!-- <view class="number">
+	<view class="list-item">
+		<block wx:key="{{index}}">
+			<view class="number">
 				<view class="number1"> 订单号:　20200303001</view>
-			</view> -->
+			</view>
 			<view class="real">
-				<image mode="aspectFill" src="/images/me/V86J986P_4.jpg"></image>
+				<image mode="aspectFill" src="https://cdn.juesedao.cn/gxw/danpian.png"></image>
 				<!-- 商品信息右侧 -->
 				<view class="list-right">
 					<view class="character">

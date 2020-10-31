@@ -1,0 +1,52 @@
+<view style="background-color:#4e6cfd">
+  <image class="image1" src="https://cdn.juesedao.cn/gxw/682ef6f162d64d5699977010b12a6a8a">
+    <view class="view1">
+      <image class="image2" src="https://cdn.juesedao.cn/gxw/50bfb43c49794b409747bb6626504a66">
+      </image>
+    </view>
+  </image>
+  <view class="view_middle">
+      <view class="view1">
+        <button class="button1">帮TA助力</button>
+      </view>
+      <view class="view2">
+          <text class="view3">..........................................</text>
+          <text class="text1"> 好友助力进度 2/8 </text>
+          <text class="view3">..........................................</text>
+      </view>
+
+      <view class="middle_all">
+        <view class="middle_top">
+          <view class="middle_top_top">
+            <image mode="widthFix" class="head_image" src="https://cdn.juesedao.cn/gxw/d56416f794de42aa9a3f0f525bf81c45"></image>
+
+            <image mode="widthFix" class="head_image" src="https://cdn.juesedao.cn/gxw/3ba6f95c8f90498eb56e6fac2aa49e78"></image>
+
+            <image mode="widthFix" class="head_image" src="https://cdn.juesedao.cn/gxw/c9472e73dcea453796cc6d26f9e247dd"></image>
+
+            <image mode="widthFix" class="head_image" src="https://cdn.juesedao.cn/gxw/c9472e73dcea453796cc6d26f9e247dd"></image>
+          </view>
+          <view class="middle_top_top">
+            <image mode="widthFix" class="head_image" src="https://cdn.juesedao.cn/gxw/c9472e73dcea453796cc6d26f9e247dd"></image>
+
+            <image mode="widthFix" class="head_image" src="https://cdn.juesedao.cn/gxw/c9472e73dcea453796cc6d26f9e247dd"></image>
+
+            <image mode="widthFix" class="head_image" src="https://cdn.juesedao.cn/gxw/c9472e73dcea453796cc6d26f9e247dd"></image>
+
+            <image mode="widthFix" class="head_image" src="https://cdn.juesedao.cn/gxw/c9472e73dcea453796cc6d26f9e247dd"></image>
+          </view>
+        </view>
+
+        <view style="margin-top:100rpx">
+          <view class="middle_bottom">
+            <button class="middle_bottom_btm">我也要助力领奖</button>
+          </view>
+        </view>
+        
+      
+      </view>
+
+      
+  </view>
+  
+</view>

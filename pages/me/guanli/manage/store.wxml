@@ -1,20 +1,17 @@
+<!-- 头部 -->
 <view class="jinx-t">
 	<view class="jinx-tnr">
 		<view class="jinx-bei">
-			<image src="/images/tubiao/1-30.png"></image>
+			<image src="https://cdn.juesedao.cn/gxw/mingpian.png"></image>
 		</view>
 		<view class="jinx-toux">
 			<view class="toux-img">
-				<image src="/images/tubiao/gxw.png"></image>
+				<image src="https://cdn.juesedao.cn/gxw/18655adabbbd420588b323d2357f1242"></image>
 			</view>
 			<view class="name-p">冠星王总部</view>
 		</view>
 	</view>
 </view>
-
-
-
-
 
 
 
@@ -54,10 +51,10 @@
 
 			<view class="me-list-li">
 				<view class="me-list-lil">详细地址</view>
-				<view class="me-list-lil">
-					<input class="form-lir-input dz" value="{{address}}" name="address" placeholder="请选择详细地址"></input>
+				<view class="me-list-lir" bindtap="wzxuanz">
+					<input class="form-lir-input dz" value="{{address}}" name="address" disabled='true' placeholder="请选择地址"></input>
 				</view>
-				<view class="xuanzdz" bindtap="wzxuanz">选择地址</view>
+				<!-- <view class="xuanzdz" bindtap="wzxuanz">选择地址</view> -->
 			</view>
 			<view class="me-list-li"  style="display: none;"  >
 				<view class="me-list-lil">经度</view>
@@ -82,7 +79,7 @@
 			</view>
 
 			<view class="me-list-li">
-				<view class="me-list-lil">入驻时间</view>
+				<view class="me-list-lil"></view>
 				<view class="me-list-lir">
 					<picker mode="time" value="{{timeend}}" name="jies" start="00:00" end="24:00" bindchange="bindTimeChangeend">
 						<view class="picker">
@@ -91,6 +88,18 @@
 					</picker>
 				</view>
 			</view>
+
+
+
+			<view class="me-list-li" wx:if="{{ruzhu}}">
+				<view class="me-list-lil">入驻时间</view>
+				<view class="me-list-lir">
+						<view class="picker">
+							{{ruzhu}}
+						</view>
+				</view>
+			</view>
+			
 
 			<view class="shanctup">
 				<view class="shanctup-ul">
@@ -109,7 +118,7 @@
 							<view class="shanctupbutton-p">添加图片</view>
 						</view>
 					</view>
-					<view class="shanctup-li">
+					<view class="shanctup-li" style="display:none;">
 						<view class="shanctup-li-p1">二维码 (222*222, 限1张)</view>
 						<view class="shanctup-li-p2">长按删除图片,点击放大图片</view>
 						<view class="shanctup-li-img">
@@ -131,11 +140,8 @@
 			</view>
 
 			<view class="btn-area">
-				<button style="" formType="submit">提交申请</button>
+				<button style="" formType="submit">保存</button>
 			</view>
-
-
-
 		</form>
 	</view>
 </view>

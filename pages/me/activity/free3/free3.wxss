@@ -1,0 +1,104 @@
+.image1{
+  width: 100%;
+  display: block;
+  height: 641rpx;
+
+}
+
+.image2{
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: 555rpx;
+}
+
+.image3{
+  width: 100%;
+  height: 1114rpx;
+}
+
+.view1{
+  display: flex;
+  justify-content: center;
+}
+
+.button1{
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  margin-top: 955rpx;
+  background-color: #e9431d;
+  color: white;
+  width: 400rpx;
+  height: 63rpx;
+  border-radius: 42rpx;
+  line-height: 63rpx;
+  font-size: 33rpx;
+  letter-spacing:5rpx;
+}
+
+.view2{
+  color: white;
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   z-index: 99;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 22rpx;
+   margin-top: 1061rpx;
+   display: flex;
+   flex-direction: row;
+}
+
+.view3{
+  letter-spacing:1rpx;
+  font-size: 22rpx;
+  flex: 1.5;
+}
+
+.text1{
+  margin-top: 10rpx;
+}
+
+.view_middle{
+  background-image: url('https://cdn.juesedao.cn/gxw/3806480d40a64d08a8ab7d576636145b');
+  background-repeat:no-repeat;
+
+  background-size:100% 100%;
+  height: 1110rpx;
+
+ -moz-background-size:100% 100%;
+}
+.middle_all{
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 100rpx;
+  margin: 0 auto;
+  margin-top: 500rpx;
+
+}
+.middle_top_top{
+  margin-top: 24rpx;
+}
+.head_image{
+  width: 80rpx;
+  margin-left: 56rpx;
+
+}
+.middle_bottom button{
+  color: #ed3f23;
+  margin-top: 24rpx;
+  background-color: #fac217;
+  border-radius: 40rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-size: 24rpx;
+  font-weight: bolder;
+  width: 90%;
+}
+
+

@@ -1,0 +1,6 @@
+<!--pages/scheme/designscheme/designscheme.wxml-->
+<import src='/pages/template/component/component'/>
+<template is="TopCard">
+</template>
+<template is="CardList" data="{{marginTop:'-50rpx'}}">
+</template>
